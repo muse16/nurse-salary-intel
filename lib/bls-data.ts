@@ -169,26 +169,63 @@ export const stateData: StateData[] = [
   { state: 'Wyoming', avgSalary: 71730, employmentLevel: 5690, costOfLivingIndex: 92.3 }
 ];
 
-export const experienceMultipliers = [\n  { years: '0-1', label: '0-1 years', multiplier: 0.80 },
+export const experienceMultipliers = [
+  { years: '0-1', label: '0-1 years', multiplier: 0.80 },
   { years: '2-3', label: '2-3 years', multiplier: 0.90 },
   { years: '4-6', label: '4-6 years', multiplier: 1.00 },
   { years: '7-10', label: '7-10 years', multiplier: 1.12 },
   { years: '11-15', label: '11-15 years', multiplier: 1.22 },
-  { years: '16+', label: '16+ years', multiplier: 1.30 }\n];
+  { years: '16+', label: '16+ years', multiplier: 1.30 }
+];
 
 export const nursingTrends2026 = {
   nationalGrowth: 6.2,
   avgSalaryIncrease: 3.8,
-  topGrowthSpecialties: [\n    { specialty: 'Nurse Practitioner', growth: 40.0, demand: 'Very High' },
+  topGrowthSpecialties: [
+    { specialty: 'Nurse Practitioner', growth: 40.0, demand: 'Very High' },
     { specialty: 'Nurse Anesthetist', growth: 12.4, demand: 'High' },
     { specialty: 'Travel Nurse', growth: 15.2, demand: 'Very High' },
     { specialty: 'ICU/Critical Care', growth: 8.9, demand: 'High' },
-    { specialty: 'Psychiatric Nurse', growth: 11.7, demand: 'High' }\n  ],
-  topPayingStates: [\n    { state: 'California', avgSalary: 133340, growth: 4.2 },
+    { specialty: 'Psychiatric Nurse', growth: 11.7, demand: 'High' }
+  ],
+  topPayingStates: [
+    { state: 'California', avgSalary: 133340, growth: 4.2 },
     { state: 'Hawaii', avgSalary: 113060, growth: 3.1 },
     { state: 'Massachusetts', avgSalary: 103090, growth: 3.9 },
     { state: 'Oregon', avgSalary: 98630, growth: 3.7 },
-    { state: 'Washington', avgSalary: 97960, growth: 4.1 }\n  ],
-  keyInsights: [\n    'Nursing shortage continues to drive salary increases across all specialties',\n    'Advanced practice roles (NP, CRNA) show highest growth and compensation',\n    'Travel nursing remains highly competitive with premium compensation',\n    'Mental health nursing demand surges with increased awareness',\n    'Rural and underserved areas offering enhanced sign-on bonuses'\n  ]\n};
+    { state: 'Washington', avgSalary: 97960, growth: 4.1 }
+  ],
+  keyInsights: [
+    'Nursing shortage continues to drive salary increases across all specialties',
+    'Advanced practice roles (NP, CRNA) show highest growth and compensation',
+    'Travel nursing remains highly competitive with premium compensation',
+    'Mental health nursing demand surges with increased awareness',
+    'Rural and underserved areas offering enhanced sign-on bonuses'
+  ]
+};
 
-export function calculateSalary(\n  specialtyId: string,\n  state: string,\n  experience: string\n): number {\n  const specialty = nurseSpecialties.find(s => s.id === specialtyId);\n  const stateInfo = stateData.find(s => s.state === state);\n  const expMultiplier = experienceMultipliers.find(e => e.years === experience);\n\n  if (!specialty || !stateInfo || !expMultiplier) {\n    return 0;\n  }\n\n  // Base calculation: specialty average\n  let salary = specialty.avgSalary;\n\n  // Adjust for state cost of living and market\n  const stateFactor = stateInfo.avgSalary / 81220; // National RN average\n  salary *= stateFactor;\n\n  // Adjust for experience\n  salary *= expMultiplier.multiplier;\n\n  return Math.round(salary);\n}
+export function calculateSalary(
+  specialtyId: string,
+  state: string,
+  experience: string
+): number {
+  const specialty = nurseSpecialties.find(s => s.id === specialtyId);
+  const stateInfo = stateData.find(s => s.state === state);
+  const expMultiplier = experienceMultipliers.find(e => e.years === experience);
+
+  if (!specialty || !stateInfo || !expMultiplier) {
+    return 0;
+  }
+
+  // Base calculation: specialty average
+  let salary = specialty.avgSalary;
+
+  // Adjust for state cost of living and market
+  const stateFactor = stateInfo.avgSalary / 81220; // National RN average
+  salary *= stateFactor;
+
+  // Adjust for experience
+  salary *= expMultiplier.multiplier;
+
+  return Math.round(salary);
+}
