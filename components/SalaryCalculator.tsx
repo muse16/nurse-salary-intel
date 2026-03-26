@@ -232,7 +232,7 @@ export default function SalaryCalculator({ onGeneratePDF }: SalaryCalculatorProp
             >
               <Download className="w-5 h-5" />
               Download Salary Report (PDF)
-            </button>\
+            </button>
           )}
         </div>
       )}
