@@ -111,7 +111,7 @@ export default function IntelDashboard() {
               {nursingTrends2026.topGrowthSpecialties.map((specialty, index) => (
                 <div key={index} className="bg-white rounded-lg p-4 flex items-center justify-between">
                   <div className="flex items-center gap-4">
-                    <div className="bg-indigo-100 text-indigo-600 font-bold w-8 h-8 rounded-full flex items-center justify-center">
+                    <div className={`bg-indigo-100 text-indigo-600 font-bold w-8 h-8 rounded-full flex items-center justify-center`}>
                       {index + 1}
                     </div>
                     <div>
