@@ -194,16 +194,16 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {stateData.map(({ state, cities }) => (
               <div key={state} className="border-2 border-gray-200 rounded-lg p-5 hover:border-blue-400 hover:shadow-md transition-all">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
-                  <Award className="w-5 h-5 text-blue-600" />
+                <h3 className=\"text-xl font-bold text-gray-900 mb-3 flex items-center gap-2\">
+                  <Award className=\"w-5 h-5 text-blue-600\" />
                   {state}
                 </h3>
-                <ul className="space-y-2">
+                <ul className=\"space-y-2\">
                   {cities.map(city => (
                     <li key={city}>
                       <Link
                         href={`/salary/${slugify(state)}/${slugify(city)}`}
-                        className="text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1"
+                        className=\"text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1\"
                       >
                         <span>{city}</span>
                       </Link>
@@ -216,86 +216,19 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-red-600 to-red-800 text-white rounded-xl shadow-xl p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">
+        <div className=\"bg-gradient-to-r from-red-600 to-red-800 text-white rounded-xl shadow-xl p-8 text-center\">
+          <h2 className=\"text-3xl font-bold mb-4\">
             Don&apos;t Sign Without Auditing Your Contract
           </h2>
-          <p className="text-xl text-red-100 mb-6 max-w-2xl mx-auto">
+          <p className=\"text-xl text-red-100 mb-6 max-w-2xl mx-auto\">
             Use our free Contract Red Flag Audit Tool to review payment terms, cancellation clauses,
             overtime policies, and more. Protect your rights and maximize your earnings.
           </p>
           <Link
-            href="/audit"
-            className="inline-flex items-center gap-2 bg-white text-red-600 font-bold py-4 px-10 rounded-lg hover:bg-red-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-lg"
-          >
-            <Shield className="w-5 h-5" />
+            href=\"/audit\"
+            className=\"inline-flex items-center gap-2 bg-white text-red-600 font-bold py-4 px-10 rounded-lg hover:bg-red-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-lg\"
+          >\n            <Shield className=\"w-5 h-5\" />
             Start Your Contract Audit
           </Link>
         </div>
-      </main>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white mt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <h3 className="text-xl font-bold mb-3">Nurse Salary Intelligence</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                Transparent salary data and contract analysis for nursing professionals.
-                Powered by BLS data with real market insights.
-              </p>
-              <p className="text-gray-500 text-xs">
-                Data sourced from Bureau of Labor Statistics (BLS) May 2024 with 2026 projections.
-                For informational purposes only.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg font-bold mb-3">Tools</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#calculator" className="text-gray-400 hover:text-white flex items-center gap-2">
-                    <Calculator className="w-4 h-4" />
-                    Salary Calculator
-                  </a>
-                </li>
-                <li>
-                  <a href="#dashboard" className="text-gray-400 hover:text-white flex items-center gap-2">
-                    <TrendingUp className="w-4 h-4" />
-                    Market Dashboard
-                  </a>
-                </li>
-                <li>
-                  <Link href="/audit" className="text-gray-400 hover:text-white flex items-center gap-2">
-                    <Shield className="w-4 h-4" />
-                    Contract Audit
-                  </Link>
-                </li>
-                <li>
-                  <a href="#browse" className="text-gray-400 hover:text-white flex items-center gap-2">
-                    <Database className="w-4 h-4" />
-                    Salary Database
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-bold mb-3">Resources</h3>
-              <ul className="space-y-2 text-sm">
-                <li className="text-gray-400">BLS Data Integration</li>
-                <li className="text-gray-400">2026 Market Projections</li>
-                <li className="text-gray-400">Specialty Comparisons</li>
-                <li className="text-gray-400">State-by-State Analysis</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-400">
-            <p>&copy; 2026 Nurse Salary Intelligence. For informational purposes only.</p>
-            <p className="mt-2 text-xs">
-              Salary estimates based on Bureau of Labor Statistics data. Individual results may vary.
-            </p>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-}
+      </main>\n\n      {/* Footer */}\n      <footer className=\"bg-gray-800 text-white mt-16\">\n        <div className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12\">\n          <div className=\"grid grid-cols-1 md:grid-cols-4 gap-8\">\n            <div className=\"md:col-span-2\">\n              <h3 className=\"text-xl font-bold mb-3\">Nurse Salary Intelligence</h3>\n              <p className=\"text-gray-400 text-sm mb-4\">\n                Transparent salary data and contract analysis for nursing professionals.\n                Powered by BLS data with real market insights.\n              </p>\n              <p className=\"text-gray-500 text-xs\">\n                Data sourced from Bureau of Labor Statistics (BLS) May 2024 with 2026 projections.\n                For informational purposes only.\n              </p>\n            </div>\n            <div>\n              <h3 className=\"text-lg font-bold mb-3\">Tools</h3>\n              <ul className=\"space-y-2 text-sm\">\n                <li>\n                  <a href=\"#calculator\" className=\"text-gray-400 hover:text-white flex items-center gap-2\">\n                    <Calculator className=\"w-4 h-4\" />\n                    Salary Calculator\n                  </a>\n                </li>\n                <li>\n                  <a href=\"#dashboard\" className=\"text-gray-400 hover:text-white flex items-center gap-2\">\n                    <TrendingUp className=\"w-4 h-4\" />\n                    Market Dashboard\n                  </a>\n                </li>\n                <li>\n                  <Link href=\"/audit\" className=\"text-gray-400 hover:text-white flex items-center gap-2\">\n                    <Shield className=\"w-4 h-4\" />\n                    Contract Audit\n                  </Link>\n                </li>\n                <li>\n                  <a href=\"#browse\" className=\"text-gray-400 hover:text-white flex items-center gap-2\">\n                    <Database className=\"w-4 h-4\" />\n                    Salary Database\n                  </a>\n                </li>\n              </ul>\n            </div>\n            <div>\n              <h3 className=\"text-lg font-bold mb-3\">Resources</h3>\n              <ul className=\"space-y-2 text-sm\">\n                <li className=\"text-gray-400\">BLS Data Integration</li>\n                <li className=\"text-gray-400\">2026 Market Projections</li>\n                <li className=\"text-gray-400\">Specialty Comparisons</li>\n                <li className=\"text-gray-400\">State-by-State Analysis</li>\n              </ul>\n            </div>\n          </div>\n          <div className=\"border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-400\">\n            <p>&copy; 2026 Nurse Salary Intelligence. For informational purposes only.</p>\n            <p className=\"mt-2 text-xs\">\n              Salary estimates based on Bureau of Labor Statistics data. Individual results may vary.\n            </p>\n          </div>\n        </div>\n      </footer>\n    </div>\n  );\n}\n
