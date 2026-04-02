@@ -24,9 +24,9 @@ export default function MonetizationSlot({ type, city, state }: MonetizationSlot
           {/* Realistic program cards with affiliate conversion elements */}
           <div className="space-y-3 mb-4">
             <a
-              href="https://nursing-education-network.com?ref=affiliate123"
+              href="https://www.wgu.edu/online-nursing-health-degrees.html"
               target="_blank"
-              rel="noopener noreferrer sponsored"
+              rel="noopener noreferrer"
               className="block bg-white rounded-lg p-4 shadow-sm border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all"
             >
               <div className="flex items-start justify-between mb-2">
@@ -43,9 +43,9 @@ export default function MonetizationSlot({ type, city, state }: MonetizationSlot
             </a>
 
             <a
-              href="https://nursing-education-network.com?ref=affiliate123"
+              href="https://www.aacn.org/certification"
               target="_blank"
-              rel="noopener noreferrer sponsored"
+              rel="noopener noreferrer"
               className="block bg-white rounded-lg p-4 shadow-sm border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all"
             >
               <div className="flex items-start justify-between mb-2">
@@ -61,20 +61,20 @@ export default function MonetizationSlot({ type, city, state }: MonetizationSlot
             </a>
 
             <a
-              href="https://nursing-education-network.com?ref=affiliate123"
+              href="https://www.nurse.com/ce-courses"
               target="_blank"
-              rel="noopener noreferrer sponsored"
+              rel="noopener noreferrer"
               className="block bg-white rounded-lg p-4 shadow-sm border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all"
             >
               <div className="flex items-start justify-between mb-2">
                 <div className="flex-1">
-                  <h4 className="font-semibold text-gray-900 text-sm">Travel Nursing Certification</h4>
-                  <p className="text-xs text-gray-600 mt-1">Travel Nursing Academy</p>
+                  <h4 className="font-semibold text-gray-900 text-sm">Travel Nursing CE Courses</h4>
+                  <p className="text-xs text-gray-600 mt-1">Nurse.com Continuing Education</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-xs text-gray-700">
-                <span>⏱ 6 weeks</span>
-                <span>💰 Free trial</span>
+                <span>⏱ Self-paced</span>
+                <span>💰 Free first course</span>
               </div>
             </a>
           </div>
@@ -82,18 +82,18 @@ export default function MonetizationSlot({ type, city, state }: MonetizationSlot
           {/* Lead-gen form CTA */}
           <div className="bg-white rounded-lg border-2 border-blue-300 p-4">
             <p className="text-sm font-semibold text-gray-900 mb-2">
-              Get Program Info & Pricing
+              Browse Nursing Programs
             </p>
             <a
-              href="https://nursing-education-network.com/request-info?ref=affiliate123"
+              href="https://www.allnursingschools.com"
               target="_blank"
-              rel="noopener noreferrer sponsored"
+              rel="noopener noreferrer"
               className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors text-center text-sm"
             >
-              Request Free Information
+              Compare Accredited Programs
             </a>
             <p className="text-xs text-gray-500 text-center mt-2">
-              Compare accredited programs instantly
+              Free program comparison tool
             </p>
           </div>
         </div>
@@ -119,15 +119,15 @@ export default function MonetizationSlot({ type, city, state }: MonetizationSlot
         {/* Realistic job listings with affiliate links */}
         <div className="space-y-3 mb-4">
           <a
-            href="https://nurse-job-network.com/apply?ref=affiliate123&job=travel-rn"
+            href={`https://www.vivianhealth.com/jobs/travel-nurse${city ? `?location=${encodeURIComponent(`${city}, ${state}`)}` : ''}`}
             target="_blank"
-            rel="noopener noreferrer sponsored"
+            rel="noopener noreferrer"
             className="block bg-white rounded-lg p-4 shadow-sm border border-gray-200 hover:border-green-400 hover:shadow-md transition-all"
           >
             <div className="flex justify-between items-start mb-2">
               <div className="flex-1">
                 <h4 className="font-semibold text-gray-900 text-sm">Travel RN - ICU</h4>
-                <p className="text-xs text-gray-600 mt-1">Aya Healthcare • Multiple Locations</p>
+                <p className="text-xs text-gray-600 mt-1">Vivian Health • Multiple Locations</p>
               </div>
               <span className="text-green-700 font-bold text-sm whitespace-nowrap ml-2">$2,800/wk</span>
             </div>
@@ -138,15 +138,15 @@ export default function MonetizationSlot({ type, city, state }: MonetizationSlot
           </a>
 
           <a
-            href="https://nurse-job-network.com/apply?ref=affiliate123&job=staff-rn"
+            href={`https://www.indeed.com/jobs?q=staff+nurse+rn${city ? `&l=${encodeURIComponent(`${city}, ${state}`)}` : ''}`}
             target="_blank"
-            rel="noopener noreferrer sponsored"
+            rel="noopener noreferrer"
             className="block bg-white rounded-lg p-4 shadow-sm border border-gray-200 hover:border-green-400 hover:shadow-md transition-all"
           >
             <div className="flex justify-between items-start mb-2">
               <div className="flex-1">
                 <h4 className="font-semibold text-gray-900 text-sm">Staff RN - Medical Surgical</h4>
-                <p className="text-xs text-gray-600 mt-1">HCA Healthcare{city && state && ` • ${city}, ${state}`}</p>
+                <p className="text-xs text-gray-600 mt-1">Indeed{city && state && ` • ${city}, ${state}`}</p>
               </div>
               <span className="text-green-700 font-bold text-sm whitespace-nowrap ml-2">$95K/yr</span>
             </div>
@@ -157,9 +157,9 @@ export default function MonetizationSlot({ type, city, state }: MonetizationSlot
           </a>
 
           <a
-            href="https://nurse-job-network.com/apply?ref=affiliate123&job=per-diem"
+            href="https://www.intelycare.com/nurses/"
             target="_blank"
-            rel="noopener noreferrer sponsored"
+            rel="noopener noreferrer"
             className="block bg-white rounded-lg p-4 shadow-sm border border-gray-200 hover:border-green-400 hover:shadow-md transition-all"
           >
             <div className="flex justify-between items-start mb-2">
@@ -182,9 +182,9 @@ export default function MonetizationSlot({ type, city, state }: MonetizationSlot
             See All Nursing Jobs
           </p>
           <a
-            href="https://nurse-job-network.com/browse?ref=affiliate123"
+            href={`https://www.vivianhealth.com/jobs/travel-nurse${city ? `?location=${encodeURIComponent(`${city}, ${state}`)}` : ''}`}
             target="_blank"
-            rel="noopener noreferrer sponsored"
+            rel="noopener noreferrer"
             className="block w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors text-center text-sm"
           >
             Browse 10,000+ Positions

@@ -7,47 +7,51 @@ interface GearItem {
 }
 
 export default function RecommendedGear() {
+  // TODO: Replace YOURTAG with your Amazon Associates tracking ID (e.g. nursesalary-20)
+  // Sign up at: https://affiliate-program.amazon.com
+  const AMAZON_TAG = 'YOURTAG-20';
+
   const gearItems: GearItem[] = [
     {
       name: '3M Littmann Classic III Stethoscope',
       price: '$119.99',
       category: 'Diagnostic Tools',
-      affiliateLink: 'https://amazon.com/?tag=youraffid-20', // Placeholder
+      affiliateLink: `https://www.amazon.com/dp/B000LNPMEI?tag=${AMAZON_TAG}`,
       imageAlt: 'Professional stethoscope'
     },
     {
-      name: 'FIGS Technical Collection Scrubs',
+      name: 'FIGS Raffi Scrub Top',
       price: '$38.00',
       category: 'Medical Apparel',
-      affiliateLink: 'https://amazon.com/?tag=youraffid-20', // Placeholder
+      affiliateLink: `https://www.amazon.com/s?k=figs+scrubs&tag=${AMAZON_TAG}`,
       imageAlt: 'Premium scrubs'
     },
     {
-      name: 'Compression Socks (3-Pack)',
+      name: 'Physix Gear Compression Socks (3-Pack)',
       price: '$24.99',
       category: 'Comfort & Wellness',
-      affiliateLink: 'https://amazon.com/?tag=youraffid-20', // Placeholder
+      affiliateLink: `https://www.amazon.com/dp/B01MAWPZJT?tag=${AMAZON_TAG}`,
       imageAlt: 'Compression socks for nurses'
     },
     {
-      name: 'Nurse Badge Holder with Retractable Reel',
+      name: 'Prestige Medical Retractable Badge Reel',
       price: '$12.99',
       category: 'Accessories',
-      affiliateLink: 'https://amazon.com/?tag=youraffid-20', // Placeholder
+      affiliateLink: `https://www.amazon.com/s?k=nurse+badge+holder+retractable&tag=${AMAZON_TAG}`,
       imageAlt: 'Badge holder'
     },
     {
-      name: 'Penlight Medical Diagnostic Set',
+      name: 'Prestige Medical Penlight (2-Pack)',
       price: '$9.99',
       category: 'Diagnostic Tools',
-      affiliateLink: 'https://amazon.com/?tag=youraffid-20', // Placeholder
+      affiliateLink: `https://www.amazon.com/dp/B000EVQWKC?tag=${AMAZON_TAG}`,
       imageAlt: 'Medical penlight'
     },
     {
       name: 'Nursing Clipboard with Storage',
       price: '$16.99',
       category: 'Organization',
-      affiliateLink: 'https://amazon.com/?tag=youraffid-20', // Placeholder
+      affiliateLink: `https://www.amazon.com/s?k=nursing+clipboard+storage&tag=${AMAZON_TAG}`,
       imageAlt: 'Nursing clipboard'
     },
   ];
