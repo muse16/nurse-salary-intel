@@ -3,140 +3,152 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
+type ItemStatus = null | 'good' | 'check' | 'redflag';
+
+const checklistItems = [
+  {
+    key: 'paymentTerms',
+    title: 'Payment Terms & Schedule',
+    description: 'Verify exact pay rate, frequency (weekly/bi-weekly), and any deductions.',
+    redFlags: 'Vague payment schedules, history of late payments, or unclear deductions from your check.',
+  },
+  {
+    key: 'cancellationClause',
+    title: 'Contract Cancellation Terms',
+    description: 'Understand termination conditions for both you and the facility.',
+    redFlags: 'Hospital can cancel anytime with no penalty, but you face financial consequences for leaving.',
+  },
+  {
+    key: 'overtimePolicy',
+    title: 'Overtime & Mandatory Hours',
+    description: 'Know whether overtime is mandatory, how it\'s compensated, and call requirements.',
+    redFlags: 'Forced overtime without premium pay, or unclear cap on maximum hours per week.',
+  },
+  {
+    key: 'nonCompete',
+    title: 'Non-Compete Clause',
+    description: 'Check for restrictions on future employment in the same geographic area.',
+    redFlags: 'Broad geographic restrictions or extended time periods over 6 months.',
+  },
+  {
+    key: 'housingStipend',
+    title: 'Housing & Lodging Benefits',
+    description: 'Confirm stipend amount, tax treatment, and what happens if housing falls through.',
+    redFlags: 'Taxable stipend, amount inadequate for the area, or no alternative if housing is unavailable.',
+  },
+  {
+    key: 'healthInsurance',
+    title: 'Health Insurance Coverage',
+    description: 'Review plan details, coverage start date, and your out-of-pocket premium costs.',
+    redFlags: 'No coverage offered, delayed start date (30+ days), or excessive employee contribution.',
+  },
+  {
+    key: 'licensureReimbursement',
+    title: 'Licensure & Certification Costs',
+    description: 'Verify reimbursement for state licenses, certifications, and renewals.',
+    redFlags: 'No reimbursement offered, or you must prepay and wait months for repayment.',
+  },
+  {
+    key: 'completionBonus',
+    title: 'Completion Bonus',
+    description: 'Confirm bonus amount, payment timeline, and conditions required to receive it.',
+    redFlags: 'Excessive conditions, prorated unfairly, or bonus withheld for minor infractions.',
+  },
+  {
+    key: 'shiftDifferential',
+    title: 'Shift Differential Pay',
+    description: 'Check night, weekend, and holiday pay premium rates.',
+    redFlags: 'No differential for nights or weekends, or rates lower than market standard.',
+  },
+  {
+    key: 'callRequirements',
+    title: 'On-Call Requirements',
+    description: 'Understand on-call frequency, compensation, and expected response time.',
+    redFlags: 'Unpaid on-call time, excessive frequency, or unclear compensation when called in.',
+  },
+  {
+    key: 'orientationPay',
+    title: 'Orientation & Training Pay',
+    description: 'Confirm you are paid your full rate during orientation and any required training.',
+    redFlags: 'Unpaid orientation period, or a reduced pay rate during training.',
+  },
+  {
+    key: 'travelReimbursement',
+    title: 'Travel & Relocation Costs',
+    description: 'Verify reimbursement for travel to the assignment and return home.',
+    redFlags: 'No travel pay, or you must complete the full contract or repay travel costs.',
+  },
+  {
+    key: 'malpracticeInsurance',
+    title: 'Malpractice Insurance',
+    description: 'Ensure the facility provides coverage and clarify the policy limits.',
+    redFlags: 'No coverage provided, you must purchase your own policy, or inadequate limits.',
+  },
+  {
+    key: 'floatingPolicy',
+    title: 'Floating Policy',
+    description: 'Understand when and where you can be floated to other units.',
+    redFlags: 'Can be floated to any unit regardless of your competency, or excessive floating frequency.',
+  },
+  {
+    key: 'holidayPay',
+    title: 'Holiday Pay & Time Off',
+    description: 'Review holiday pay rates, PTO policy, and sick leave provisions.',
+    redFlags: 'No holiday premium pay, no PTO for travel contracts, or unpaid sick leave.',
+  },
+];
+
 export default function AuditPage() {
-  const [checklist, setChecklist] = useState({
-    paymentTerms: false,
-    cancellationClause: false,
-    overtimePolicy: false,
-    nonCompete: false,
-    housingStipend: false,
-    healthInsurance: false,
-    licensureReimbursement: false,
-    completionBonus: false,
-    shiftDifferential: false,
-    callRequirements: false,
-    orientationPay: false,
-    travelReimbursement: false,
-    malpracticeInsurance: false,
-    floatingPolicy: false,
-    holidayPay: false,
-  });
+  const [statuses, setStatuses] = useState<Record<string, ItemStatus>>(
+    Object.fromEntries(checklistItems.map(i => [i.key, null]))
+  );
 
-  const checklistItems = [
-    {
-      key: 'paymentTerms',
-      title: 'Payment Terms & Schedule',
-      description: 'Verify exact pay rate, frequency (weekly/bi-weekly), and any deductions',
-      redFlags: 'Vague payment schedules, history of late payments, unclear deductions',
-    },
-    {
-      key: 'cancellationClause',
-      title: 'Contract Cancellation Terms',
-      description: 'Understand termination conditions for both parties',
-      redFlags: 'Hospital can cancel anytime, but you face penalties. Unclear notice periods',
-    },
-    {
-      key: 'overtimePolicy',
-      title: 'Overtime & Mandatory Hours',
-      description: 'Know if overtime is mandatory, how it&apos;s compensated, and call requirements',
-      redFlags: 'Forced overtime without premium pay, unclear maximum hours',
-    },
-    {
-      key: 'nonCompete',
-      title: 'Non-Compete Clause',
-      description: 'Check for restrictions on future employment in the area',
-      redFlags: 'Broad geographic restrictions, extended time periods (>6 months)',
-    },
-    {
-      key: 'housingStipend',
-      title: 'Housing & Lodging Benefits',
-      description: 'Confirm stipend amount, tax treatment, and if company housing is provided',
-      redFlags: 'Taxable stipend, inadequate amount for area, no alternative if housing unavailable',
-    },
-    {
-      key: 'healthInsurance',
-      title: 'Health Insurance Coverage',
-      description: 'Review plan details, coverage start date, and premium costs',
-      redFlags: 'No coverage, delayed start date, excessive employee contribution',
-    },
-    {
-      key: 'licensureReimbursement',
-      title: 'Licensure & Certification Costs',
-      description: 'Verify reimbursement for state licenses, certifications, and renewals',
-      redFlags: 'No reimbursement, must prepay and wait months for repayment',
-    },
-    {
-      key: 'completionBonus',
-      title: 'Completion Bonus',
-      description: 'Confirm bonus amount and conditions for payment',
-      redFlags: 'Excessive conditions, prorated unfairly, withheld for minor infractions',
-    },
-    {
-      key: 'shiftDifferential',
-      title: 'Shift Differential Pay',
-      description: 'Check night, weekend, and holiday pay premiums',
-      redFlags: 'No differential for nights/weekends, lower than industry standard',
-    },
-    {
-      key: 'callRequirements',
-      title: 'On-Call Requirements',
-      description: 'Understand frequency, compensation, and response time expectations',
-      redFlags: 'Unpaid on-call, excessive requirements, unclear compensation',
-    },
-    {
-      key: 'orientationPay',
-      title: 'Orientation & Training Pay',
-      description: 'Confirm you&apos;re paid for orientation and training time',
-      redFlags: 'Unpaid orientation, reduced pay rate for training period',
-    },
-    {
-      key: 'travelReimbursement',
-      title: 'Travel & Relocation Costs',
-      description: 'Verify reimbursement for travel to assignment and return home',
-      redFlags: 'No travel pay, must complete full contract or repay costs',
-    },
-    {
-      key: 'malpracticeInsurance',
-      title: 'Malpractice Insurance',
-      description: 'Ensure facility provides coverage and understand policy limits',
-      redFlags: 'No coverage provided, must purchase own policy, inadequate limits',
-    },
-    {
-      key: 'floatingPolicy',
-      title: 'Floating Policy',
-      description: 'Understand when and where you can be floated to other units',
-      redFlags: 'Can float to any unit regardless of competency, excessive floating',
-    },
-    {
-      key: 'holidayPay',
-      title: 'Holiday Pay & Time Off',
-      description: 'Review holiday pay rates, PTO policy, and sick leave',
-      redFlags: 'No holiday premium, no PTO for travel contracts, unpaid sick leave',
-    },
-  ];
+  const setStatus = (key: string, status: ItemStatus) => {
+    setStatuses(prev => ({ ...prev, [key]: status }));
+  };
 
-  const checkedCount = Object.values(checklist).filter(Boolean).length;
-  const totalCount = Object.keys(checklist).length;
-  const percentComplete = Math.round((checkedCount / totalCount) * 100);
+  const reviewedCount = Object.values(statuses).filter(s => s !== null).length;
+  const redFlagCount = Object.values(statuses).filter(s => s === 'redflag').length;
+  const checkCount = Object.values(statuses).filter(s => s === 'check').length;
+  const totalCount = checklistItems.length;
+  const percentComplete = Math.round((reviewedCount / totalCount) * 100);
+  const allReviewed = reviewedCount === totalCount;
+
+  const redFlagItems = checklistItems.filter(i => statuses[i.key] === 'redflag');
+  const checkItems = checklistItems.filter(i => statuses[i.key] === 'check');
+
+  const getRiskLevel = () => {
+    if (redFlagCount === 0) return { label: 'Low Risk', color: 'green', message: 'Your contract looks solid. A few items still worth confirming in writing.' };
+    if (redFlagCount <= 2) return { label: 'Moderate Risk', color: 'yellow', message: 'Negotiate these clauses before signing. Most are fixable with the right language.' };
+    if (redFlagCount <= 5) return { label: 'High Risk', color: 'orange', message: 'Do not sign yet. Multiple clauses need to be revised or removed.' };
+    return { label: 'Critical Risk', color: 'red', message: 'This contract has serious problems. Push back hard or walk away.' };
+  };
+
+  const risk = allReviewed ? getRiskLevel() : null;
+
+  const riskColors: Record<string, { bg: string; border: string; text: string; badge: string }> = {
+    green:  { bg: 'bg-green-50',  border: 'border-green-400',  text: 'text-green-900',  badge: 'bg-green-500' },
+    yellow: { bg: 'bg-yellow-50', border: 'border-yellow-400', text: 'text-yellow-900', badge: 'bg-yellow-500' },
+    orange: { bg: 'bg-orange-50', border: 'border-orange-400', text: 'text-orange-900', badge: 'bg-orange-500' },
+    red:    { bg: 'bg-red-50',    border: 'border-red-500',    text: 'text-red-900',    badge: 'bg-red-500' },
+  };
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
       <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <Link href="/" className="text-blue-100 hover:text-white font-semibold mb-4 inline-block">
             ← Back to Home
           </Link>
-          <h1 className="text-4xl font-bold mb-4">
-            Contract Red Flag Audit Tool
-          </h1>
+          <h1 className="text-4xl font-bold mb-4">Contract Red Flag Audit Tool</h1>
           <p className="text-xl text-blue-100">
-            Use this checklist before signing any nursing contract. Don&apos;t leave money or rights on the table.
+            Review each section of your contract and mark what you find. We&apos;ll score your risk and show you exactly what to negotiate.
           </p>
         </div>
       </header>
 
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
         {/* Progress Bar */}
         <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
           <div className="flex justify-between items-center mb-3">
@@ -149,220 +161,211 @@ export default function AuditPage() {
               style={{ width: `${percentComplete}%` }}
             />
           </div>
-          <div className="text-sm text-gray-600 mt-2">
-            {checkedCount} of {totalCount} items reviewed
+          <div className="flex items-center justify-between mt-3 text-sm text-gray-600">
+            <span>{reviewedCount} of {totalCount} items reviewed</span>
+            {redFlagCount > 0 && (
+              <span className="font-semibold text-red-600">{redFlagCount} red flag{redFlagCount !== 1 ? 's' : ''} found</span>
+            )}
           </div>
         </div>
 
         {/* Checklist */}
-        <div className="space-y-6 mb-12">
-          {checklistItems.map((item) => (
-            <div
-              key={item.key}
-              className={`bg-white rounded-lg shadow-lg p-6 border-2 transition-all ${
-                checklist[item.key as keyof typeof checklist]
-                  ? 'border-green-500'
-                  : 'border-gray-200'
-              }`}
-            >
-              <label className="flex items-start gap-4 cursor-pointer">
-                <input
-                  type="checkbox"
-                  checked={checklist[item.key as keyof typeof checklist]}
-                  onChange={(e) =>
-                    setChecklist({ ...checklist, [item.key]: e.target.checked })
-                  }
-                  className="mt-1 h-6 w-6 rounded border-gray-300 text-blue-600 focus:ring-blue-500 cursor-pointer"
-                />
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-gray-700 mb-3">{item.description}</p>
-                  <div className="bg-red-50 border-l-4 border-red-400 p-3">
-                    <p className="text-sm font-semibold text-red-900 mb-1">Red Flags to Watch:</p>
-                    <p className="text-sm text-red-800">{item.redFlags}</p>
+        <div className="space-y-4 mb-10">
+          {checklistItems.map((item) => {
+            const status = statuses[item.key];
+            const borderColor =
+              status === 'good'    ? 'border-green-400' :
+              status === 'check'   ? 'border-yellow-400' :
+              status === 'redflag' ? 'border-red-500' :
+              'border-gray-200';
+
+            return (
+              <div
+                key={item.key}
+                className={`bg-white rounded-lg shadow-sm p-5 border-2 transition-all ${borderColor}`}
+              >
+                <div className="flex items-start justify-between gap-4 mb-3">
+                  <div className="flex-1">
+                    <h3 className="text-base font-bold text-gray-900">{item.title}</h3>
+                    <p className="text-sm text-gray-600 mt-1">{item.description}</p>
                   </div>
+                  {status === 'good'    && <span className="text-green-600 font-bold text-sm shrink-0">✓ Looks Good</span>}
+                  {status === 'check'   && <span className="text-yellow-600 font-bold text-sm shrink-0">? Need to Check</span>}
+                  {status === 'redflag' && <span className="text-red-600 font-bold text-sm shrink-0">⚠ Red Flag</span>}
                 </div>
-              </label>
-            </div>
-          ))}
+
+                {/* Red flag warning */}
+                <div className="bg-red-50 border-l-4 border-red-300 px-3 py-2 mb-4 rounded-r">
+                  <p className="text-xs text-red-800"><span className="font-semibold">Watch for: </span>{item.redFlags}</p>
+                </div>
+
+                {/* Action buttons */}
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => setStatus(item.key, 'good')}
+                    className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold border-2 transition-all ${
+                      status === 'good'
+                        ? 'bg-green-500 border-green-500 text-white'
+                        : 'bg-white border-gray-200 text-gray-600 hover:border-green-400 hover:text-green-700'
+                    }`}
+                  >
+                    ✓ Looks Good
+                  </button>
+                  <button
+                    onClick={() => setStatus(item.key, 'check')}
+                    className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold border-2 transition-all ${
+                      status === 'check'
+                        ? 'bg-yellow-400 border-yellow-400 text-yellow-900'
+                        : 'bg-white border-gray-200 text-gray-600 hover:border-yellow-400 hover:text-yellow-700'
+                    }`}
+                  >
+                    ? Need to Check
+                  </button>
+                  <button
+                    onClick={() => setStatus(item.key, 'redflag')}
+                    className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold border-2 transition-all ${
+                      status === 'redflag'
+                        ? 'bg-red-500 border-red-500 text-white'
+                        : 'bg-white border-gray-200 text-gray-600 hover:border-red-400 hover:text-red-700'
+                    }`}
+                  >
+                    ⚠ Red Flag
+                  </button>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
-        {/* Premium Upgrade CTA */}
-        <div className="bg-gradient-to-br from-purple-600 to-indigo-700 text-white rounded-lg shadow-xl p-8 mb-8 border-4 border-yellow-400">
-          <div className="flex items-start justify-between mb-4">
-            <div>
-              <div className="inline-block bg-yellow-400 text-purple-900 text-xs font-bold px-3 py-1 rounded-full mb-3">
-                PREMIUM UPGRADE
+        {/* Risk Report — shown when all items are reviewed */}
+        {allReviewed && risk && (
+          <div className={`rounded-lg shadow-xl p-8 mb-8 border-2 ${riskColors[risk.color].bg} ${riskColors[risk.color].border}`}>
+            <div className="flex items-center gap-4 mb-6">
+              <div className={`${riskColors[risk.color].badge} text-white text-sm font-bold px-4 py-2 rounded-full`}>
+                {risk.label}
               </div>
-              <h2 className="text-3xl font-bold mb-2">Upgrade to Full Negotiation Kit</h2>
-              <p className="text-xl text-purple-100">
-                Get personalized contract review + negotiation scripts + legal templates
-              </p>
+              <h2 className={`text-2xl font-bold ${riskColors[risk.color].text}`}>Your Contract Risk Report</h2>
             </div>
-            <div className="text-right">
-              <div className="text-sm text-purple-200">Only</div>
-              <div className="text-5xl font-bold text-yellow-400">$27</div>
-            </div>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-              <h3 className="font-bold mb-3 flex items-center gap-2">
-                <span className="text-2xl">📋</span> Contract Review Template
-              </h3>
-              <ul className="space-y-2 text-sm text-purple-100">
-                <li>• Line-by-line analysis worksheet</li>
-                <li>• Red flag identification guide</li>
-                <li>• Clause-by-clause breakdown</li>
-              </ul>
+            {/* Score summary */}
+            <div className="grid grid-cols-3 gap-4 mb-6">
+              <div className="bg-white rounded-lg p-4 text-center shadow-sm">
+                <div className="text-3xl font-bold text-green-600">{reviewedCount - redFlagCount - checkCount}</div>
+                <div className="text-xs text-gray-600 mt-1">Looks Good</div>
+              </div>
+              <div className="bg-white rounded-lg p-4 text-center shadow-sm">
+                <div className="text-3xl font-bold text-yellow-500">{checkCount}</div>
+                <div className="text-xs text-gray-600 mt-1">Need to Verify</div>
+              </div>
+              <div className="bg-white rounded-lg p-4 text-center shadow-sm">
+                <div className="text-3xl font-bold text-red-600">{redFlagCount}</div>
+                <div className="text-xs text-gray-600 mt-1">Red Flags</div>
+              </div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-              <h3 className="font-bold mb-3 flex items-center gap-2">
-                <span className="text-2xl">💬</span> Negotiation Scripts
-              </h3>
-              <ul className="space-y-2 text-sm text-purple-100">
-                <li>• Salary negotiation templates</li>
-                <li>• Counter-offer language</li>
-                <li>• Email response examples</li>
-              </ul>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-              <h3 className="font-bold mb-3 flex items-center gap-2">
-                <span className="text-2xl">⚖️</span> Legal Templates
-              </h3>
-              <ul className="space-y-2 text-sm text-purple-100">
-                <li>• Contract addendum templates</li>
-                <li>• Termination clause revisions</li>
-                <li>• Non-compete modifications</li>
-              </ul>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-              <h3 className="font-bold mb-3 flex items-center gap-2">
-                <span className="text-2xl">📊</span> Market Data Access
-              </h3>
-              <ul className="space-y-2 text-sm text-purple-100">
-                <li>• Salary benchmarking by specialty</li>
-                <li>• Regional compensation data</li>
-                <li>• Benefits comparison charts</li>
-              </ul>
-            </div>
-          </div>
 
-          <a
-            href="https://maveryholdings.gumroad.com/l/djnau"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-full bg-yellow-400 hover:bg-yellow-300 text-purple-900 font-bold py-5 px-8 rounded-lg transition-colors text-center text-xl shadow-2xl"
-          >
-            Upgrade to Full Negotiation Kit - $27
-          </a>
-          <p className="text-sm text-purple-200 text-center mt-4 flex items-center justify-center gap-2">
-            <span>✓</span> Instant digital delivery
-            <span>✓</span> One-time payment
-            <span>✓</span> No subscription
-          </p>
-        </div>
+            <p className={`text-base font-semibold mb-6 ${riskColors[risk.color].text}`}>{risk.message}</p>
 
-        {/* Completion Summary - shown when all items reviewed */}
-        {checkedCount === totalCount && (
-          <div className="bg-green-50 border-2 border-green-500 rounded-lg shadow-lg p-8 mb-8">
-            <div className="text-center mb-6">
-              <div className="inline-block bg-green-500 text-white text-sm font-bold px-4 py-2 rounded-full mb-4">
-                AUDIT COMPLETE
+            {/* Red flag detail */}
+            {redFlagItems.length > 0 && (
+              <div className="bg-white rounded-lg p-5 mb-4 shadow-sm">
+                <h3 className="font-bold text-red-700 mb-3 flex items-center gap-2">
+                  <span>⚠</span> Clauses to Negotiate Before Signing
+                </h3>
+                <ul className="space-y-2">
+                  {redFlagItems.map(item => (
+                    <li key={item.key} className="flex items-start gap-2 text-sm">
+                      <span className="text-red-500 font-bold shrink-0 mt-0.5">→</span>
+                      <div>
+                        <span className="font-semibold text-gray-900">{item.title}: </span>
+                        <span className="text-gray-700">{item.redFlags}</span>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <h2 className="text-3xl font-bold text-green-900 mb-2">You reviewed all 15 contract items</h2>
-              <p className="text-green-800 text-lg">
-                You now know what to look for. Here&apos;s how to take action.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-              <div className="bg-white rounded-lg p-4 border border-green-200 text-center">
-                <div className="text-3xl font-bold text-green-600 mb-1">{checkedCount}</div>
-                <div className="text-sm text-gray-700">Items Reviewed</div>
+            )}
+
+            {checkItems.length > 0 && (
+              <div className="bg-white rounded-lg p-5 shadow-sm">
+                <h3 className="font-bold text-yellow-700 mb-3">? Items to Confirm in Writing</h3>
+                <ul className="space-y-1">
+                  {checkItems.map(item => (
+                    <li key={item.key} className="text-sm text-gray-700 flex items-center gap-2">
+                      <span className="text-yellow-500 font-bold">→</span> {item.title}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div className="bg-white rounded-lg p-4 border border-green-200 text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-1">15</div>
-                <div className="text-sm text-gray-700">Total Contract Areas</div>
+            )}
+
+            {/* $9 CTA — shown when red flags exist */}
+            {(redFlagCount > 0 || checkCount > 0) && (
+              <div className="mt-6 bg-gradient-to-r from-purple-600 to-indigo-700 text-white rounded-xl p-6 border-2 border-yellow-400">
+                <div className="flex items-start justify-between gap-4 mb-4">
+                  <div>
+                    <div className="inline-block bg-yellow-400 text-purple-900 text-xs font-bold px-3 py-1 rounded-full mb-2">
+                      ONLY $9
+                    </div>
+                    <h3 className="text-xl font-bold leading-tight">
+                      Get the exact email scripts and counter-offer language to negotiate {redFlagCount > 0 ? `your ${redFlagCount} red flag${redFlagCount !== 1 ? 's' : ''}` : 'these clauses'}
+                    </h3>
+                  </div>
+                  <div className="text-4xl font-black text-yellow-400 shrink-0">$9</div>
+                </div>
+                <ul className="space-y-1 text-sm text-purple-100 mb-5">
+                  <li>✓ Word-for-word counter-offer emails for each red flag clause</li>
+                  <li>✓ Scripts for negotiating with recruiters by phone</li>
+                  <li>✓ Legal addendum language to modify bad clauses</li>
+                  <li>✓ What to say if they push back or say "it&apos;s standard"</li>
+                </ul>
+                <a
+                  href="https://maveryholdings.gumroad.com/l/djnau"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-yellow-400 hover:bg-yellow-300 text-purple-900 font-bold py-4 px-6 rounded-lg transition-colors text-center text-lg"
+                >
+                  Get the Negotiation Scripts — $9
+                </a>
+                <p className="text-xs text-purple-200 text-center mt-3">Instant download · One-time payment · No subscription</p>
               </div>
-              <div className="bg-white rounded-lg p-4 border border-green-200 text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-1">$27</div>
-                <div className="text-sm text-gray-700">Full Negotiation Kit</div>
-              </div>
-            </div>
-            <p className="text-green-800 text-center font-semibold">
-              Found red flags? Download the free PDF guide below or upgrade to the Full Negotiation Kit for scripts and legal templates.
-            </p>
+            )}
           </div>
         )}
 
-        {/* Download Section */}
+        {/* Free PDF download */}
         <div className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white rounded-lg shadow-xl p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-4">Get the Complete Contract Audit Kit</h2>
-          <p className="text-xl text-blue-100 mb-6">
-            Download our comprehensive PDF guide with:
-          </p>
-          <ul className="space-y-3 mb-8 text-lg">
-            <li className="flex items-start gap-3">
-              <span className="text-2xl">✓</span>
-              <span>Printable contract review checklist</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-2xl">✓</span>
-              <span>Sample questions to ask recruiters</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-2xl">✓</span>
-              <span>Red flag examples with real contract language</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-2xl">✓</span>
-              <span>Salary negotiation tactics for nurses</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-2xl">✓</span>
-              <span>State-by-state employment law overview</span>
-            </li>
-          </ul>
+          <h2 className="text-2xl font-bold mb-2">Download the Free Checklist PDF</h2>
+          <p className="text-blue-100 mb-6">Print it out and use it while reading your actual contract.</p>
           <a
             href="/Nurse_Offer_Letter_Audit_Kit.pdf"
             download
             className="block w-full bg-white text-blue-600 font-bold py-4 px-8 rounded-lg hover:bg-blue-50 transition-colors text-lg text-center"
           >
-            Download Free PDF Kit
+            Download Free PDF
           </a>
-          <p className="text-sm text-blue-200 text-center mt-3">
-            No email required. Instant download.
-          </p>
+          <p className="text-sm text-blue-200 text-center mt-3">No email required. Instant download.</p>
         </div>
 
         {/* Additional Resources */}
         <div className="bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            Additional Resources
-          </h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Additional Resources</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Link
               href="/"
               className="border-2 border-blue-200 rounded-lg p-6 hover:border-blue-400 hover:shadow-md transition-all"
             >
-              <h3 className="text-lg font-bold text-blue-600 mb-2">
-                Browse Salary Data →
-              </h3>
-              <p className="text-gray-700">
-                Compare salaries across cities and hospitals nationwide
-              </p>
+              <h3 className="text-lg font-bold text-blue-600 mb-2">Browse Salary Data →</h3>
+              <p className="text-gray-700">Compare salaries across cities and hospitals nationwide</p>
             </Link>
-            <div className="border-2 border-gray-200 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">
-                Legal Review Service
-              </h3>
-              <p className="text-gray-700 mb-3">
-                Have an attorney review your contract (Coming Soon)
-              </p>
-              <span className="inline-block bg-gray-200 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full">
-                Placeholder
-              </span>
-            </div>
+            <a
+              href="https://www.vivianhealth.com/jobs/travel-nurse"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 border-green-200 rounded-lg p-6 hover:border-green-400 hover:shadow-md transition-all"
+            >
+              <h3 className="text-lg font-bold text-green-600 mb-2">Find Travel Nursing Jobs →</h3>
+              <p className="text-gray-700">Browse 10,000+ travel and staff RN positions on Vivian Health</p>
+            </a>
           </div>
         </div>
       </main>
