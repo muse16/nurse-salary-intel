@@ -356,6 +356,7 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
                 <li><a href="#calculator" className="text-gray-400 hover:text-white flex items-center gap-2"><Calculator className="w-4 h-4" />Salary Calculator</a></li>
                 <li><a href="#dashboard" className="text-gray-400 hover:text-white flex items-center gap-2"><TrendingUp className="w-4 h-4" />Market Dashboard</a></li>
                 <li><Link href="/audit" className="text-gray-400 hover:text-white flex items-center gap-2"><Shield className="w-4 h-4" />Contract Audit</Link></li>
+                <li><Link href="/blog" className="text-gray-400 hover:text-white flex items-center gap-2"><FileText className="w-4 h-4" />Blog</Link></li>
                 <li><a href="#browse" className="text-gray-400 hover:text-white flex items-center gap-2"><Database className="w-4 h-4" />Salary Database</a></li>
               </ul>
             </div>
