@@ -26,6 +26,41 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
   return (
     <div className="min-h-screen bg-gray-50">
 
+      {/* ── TOP NAV ──────────────────────────────────────────────── */}
+      <nav className="bg-blue-950 border-b border-blue-900 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-14">
+            {/* Logo */}
+            <Link href="/" className="flex items-center gap-2 text-white font-black text-lg tracking-tight">
+              <span className="text-yellow-400">🩺</span>
+              <span>Nurse<span className="text-yellow-400">Salary</span>Intel</span>
+            </Link>
+            {/* Links */}
+            <div className="hidden md:flex items-center gap-1">
+              <a href="#dashboard" className="text-blue-200 hover:text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors flex items-center gap-1.5">
+                <TrendingUp className="w-3.5 h-3.5" /> Salary Data
+              </a>
+              <a href="#browse" className="text-blue-200 hover:text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors flex items-center gap-1.5">
+                <Database className="w-3.5 h-3.5" /> Browse Cities
+              </a>
+              <a href="#calculator" className="text-blue-200 hover:text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors flex items-center gap-1.5">
+                <Calculator className="w-3.5 h-3.5" /> Calculator
+              </a>
+              <Link href="/blog" className="text-blue-200 hover:text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors flex items-center gap-1.5">
+                <FileText className="w-3.5 h-3.5" /> Blog
+              </Link>
+              <Link href="/audit" className="ml-2 bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold px-4 py-2 rounded-lg text-sm transition-colors flex items-center gap-1.5">
+                <Shield className="w-3.5 h-3.5" /> Free Contract Audit
+              </Link>
+            </div>
+            {/* Mobile CTA */}
+            <Link href="/audit" className="md:hidden bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold px-3 py-1.5 rounded-lg text-xs transition-colors">
+              Free Audit
+            </Link>
+          </div>
+        </div>
+      </nav>
+
       {/* ── HERO ─────────────────────────────────────────────────── */}
       <header className="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white relative overflow-hidden">
         {/* Background decoration */}
