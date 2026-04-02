@@ -42,7 +42,7 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
             <div>
               <div className="inline-flex items-center gap-2 bg-blue-700/60 border border-blue-500/50 rounded-full px-4 py-2 text-sm font-semibold text-blue-200 mb-6">
                 <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                Free · No email required · BLS 2024 data
+                Free · No email required · BLS 2026 data
               </div>
 
               <h1 className="text-5xl md:text-6xl font-black leading-tight mb-6 tracking-tight">
