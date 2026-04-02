@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,11 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  title: "Nurse Salary & Contract Intelligence | Transparent Healthcare Compensation Data",
+  description: "Compare nurse salaries and identify contract red flags across the US. Transparent salary data and contract analysis for travel nurses and staff RNs.",
   other: {
     'google-adsense-account': 'ca-pub-4487629215570224',
   },
-  title: "Nurse Salary & Contract Intelligence | Transparent Healthcare Compensation Data",
-  description: "Compare nurse salaries and identify contract red flags across the US. Transparent salary data and contract analysis for travel nurses and staff RNs.",
 };
 
 export default function RootLayout({
@@ -27,17 +28,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <script
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {children}
+        <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4487629215570224"
           crossOrigin="anonymous"
+          strategy="afterInteractive"
         />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
       </body>
     </html>
   );
