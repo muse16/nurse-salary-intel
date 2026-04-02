@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1200px; height: 630px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+
+  .cover {
+    width: 1200px;
+    height: 630px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 40%, #2563eb 70%, #3b82f6 100%);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Background decoration */
+  .bg-circle-1 {
+    position: absolute;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.04);
+    top: -150px; right: -100px;
+  }
+  .bg-circle-2 {
+    position: absolute;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.04);
+    bottom: -80px; left: 300px;
+  }
+  .bg-circle-3 {
+    position: absolute;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+    bottom: 60px; right: 180px;
+  }
+
+  /* Left content */
+  .left {
+    flex: 1;
+    padding: 60px 50px 60px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #facc15;
+    color: #1e1b4b;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 8px 18px;
+    border-radius: 100px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: fit-content;
+  }
+
+  .main-content { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+
+  h1 {
+    font-size: 58px;
+    font-weight: 900;
+    color: white;
+    line-height: 1.05;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+  }
+  h1 span { color: #facc15; }
+
+  .subtitle {
+    font-size: 20px;
+    color: #bfdbfe;
+    line-height: 1.5;
+    margin-bottom: 36px;
+    max-width: 520px;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .feature-dot {
+    width: 22px; height: 22px;
+    background: #facc15;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    font-size: 12px;
+    font-weight: 900;
+    color: #1e1b4b;
+  }
+
+  .footer-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .site-label {
+    color: #93c5fd;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .price-tag {
+    background: rgba(255,255,255,0.15);
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 12px;
+    padding: 8px 20px;
+    text-align: center;
+  }
+  .price-tag .label { color: #bfdbfe; font-size: 12px; font-weight: 600; }
+  .price-tag .price { color: #facc15; font-size: 28px; font-weight: 900; }
+
+  /* Right panel */
+  .right {
+    width: 340px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border-left: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+    gap: 20px;
+    z-index: 1;
+  }
+
+  .icon-box {
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.15);
+  }
+  .icon-box .icon { font-size: 36px; margin-bottom: 10px; }
+  .icon-box .title { color: white; font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+  .icon-box .desc { color: #bfdbfe; font-size: 12px; }
+
+  .checklist-preview {
+    width: 100%;
+    background: white;
+    border-radius: 16px;
+    padding: 18px 20px;
+  }
+  .checklist-preview .cl-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1e40af;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .cl-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #374151;
+  }
+  .cl-check {
+    width: 16px; height: 16px;
+    background: #16a34a;
+    border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    color: white;
+    font-size: 10px;
+    font-weight: 900;
+  }
+  .cl-item-last { color: #9ca3af; }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="bg-circle-1"></div>
+  <div class="bg-circle-2"></div>
+  <div class="bg-circle-3"></div>
+
+  <div class="left">
+    <div class="badge">
+      <span>★</span> Digital Kit
+    </div>
+
+    <div class="main-content">
+      <h1>Nurse Contract<br><span>Negotiation Kit</span></h1>
+      <p class="subtitle">Know exactly what to negotiate before signing any nursing contract. Protect your income and rights.</p>
+      <div class="features">
+        <div class="feature"><div class="feature-dot">✓</div> 15-Point Contract Red Flag Checklist</div>
+        <div class="feature"><div class="feature-dot">✓</div> Salary Negotiation Scripts & Templates</div>
+        <div class="feature"><div class="feature-dot">✓</div> Legal Clause Modifications</div>
+        <div class="feature"><div class="feature-dot">✓</div> Market Compensation Data by State</div>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <div class="site-label">nurse-salary-intel.vercel.app</div>
+      <div class="price-tag">
+        <div class="label">One-Time</div>
+        <div class="price">$27</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="icon-box">
+      <div class="icon">📋</div>
+      <div class="title">Contract Review Template</div>
+      <div class="desc">Line-by-line analysis worksheet</div>
+    </div>
+    <div class="icon-box">
+      <div class="icon">💬</div>
+      <div class="title">Negotiation Scripts</div>
+      <div class="desc">Counter-offer language & emails</div>
+    </div>
+    <div class="checklist-preview">
+      <div class="cl-title">15-Point Audit</div>
+      <div class="cl-item"><div class="cl-check">✓</div> Payment Terms & Schedule</div>
+      <div class="cl-item"><div class="cl-check">✓</div> Cancellation Clause</div>
+      <div class="cl-item"><div class="cl-check">✓</div> Non-Compete Clause</div>
+      <div class="cl-item"><div class="cl-check">✓</div> Housing Stipend</div>
+      <div class="cl-item cl-item-last"><div class="cl-check" style="background:#d1d5db">+</div> 11 more items...</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
