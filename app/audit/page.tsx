@@ -263,6 +263,38 @@ export default function AuditPage() {
           </p>
         </div>
 
+        {/* Completion Summary - shown when all items reviewed */}
+        {checkedCount === totalCount && (
+          <div className="bg-green-50 border-2 border-green-500 rounded-lg shadow-lg p-8 mb-8">
+            <div className="text-center mb-6">
+              <div className="inline-block bg-green-500 text-white text-sm font-bold px-4 py-2 rounded-full mb-4">
+                AUDIT COMPLETE
+              </div>
+              <h2 className="text-3xl font-bold text-green-900 mb-2">You reviewed all 15 contract items</h2>
+              <p className="text-green-800 text-lg">
+                You now know what to look for. Here&apos;s how to take action.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+              <div className="bg-white rounded-lg p-4 border border-green-200 text-center">
+                <div className="text-3xl font-bold text-green-600 mb-1">{checkedCount}</div>
+                <div className="text-sm text-gray-700">Items Reviewed</div>
+              </div>
+              <div className="bg-white rounded-lg p-4 border border-green-200 text-center">
+                <div className="text-3xl font-bold text-blue-600 mb-1">15</div>
+                <div className="text-sm text-gray-700">Total Contract Areas</div>
+              </div>
+              <div className="bg-white rounded-lg p-4 border border-green-200 text-center">
+                <div className="text-3xl font-bold text-purple-600 mb-1">$27</div>
+                <div className="text-sm text-gray-700">Full Negotiation Kit</div>
+              </div>
+            </div>
+            <p className="text-green-800 text-center font-semibold">
+              Found red flags? Download the free PDF guide below or upgrade to the Full Negotiation Kit for scripts and legal templates.
+            </p>
+          </div>
+        )}
+
         {/* Download Section */}
         <div className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white rounded-lg shadow-xl p-8 mb-8">
           <h2 className="text-3xl font-bold mb-4">Get the Complete Contract Audit Kit</h2>
@@ -291,9 +323,13 @@ export default function AuditPage() {
               <span>State-by-state employment law overview</span>
             </li>
           </ul>
-          <button className="w-full bg-white text-blue-600 font-bold py-4 px-8 rounded-lg hover:bg-blue-50 transition-colors text-lg">
-            Download Free PDF Kit (Placeholder)
-          </button>
+          <a
+            href="/Nurse_Offer_Letter_Audit_Kit.pdf"
+            download
+            className="block w-full bg-white text-blue-600 font-bold py-4 px-8 rounded-lg hover:bg-blue-50 transition-colors text-lg text-center"
+          >
+            Download Free PDF Kit
+          </a>
           <p className="text-sm text-blue-200 text-center mt-3">
             No email required. Instant download.
           </p>
