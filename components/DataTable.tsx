@@ -131,12 +131,12 @@ export default function DataTable({ data, title }: DataTableProps) {
                 <td className="px-4 py-3 text-sm text-gray-600">{position.contract_length} weeks</td>
                 <td className="px-4 py-3 text-sm">
                   {position.red_flags === 'None' ? (
-                    <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                      Clean
+                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold bg-green-100 text-green-800">
+                      ✓ Contract Clean
                     </span>
                   ) : (
-                    <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800">
-                      ⚠ Red Flag
+                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold bg-red-100 text-red-800">
+                      ⚠ Red Flag — Review Before Signing
                     </span>
                   )}
                 </td>
