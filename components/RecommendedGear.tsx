@@ -9,7 +9,7 @@ interface GearItem {
 export default function RecommendedGear() {
   // TODO: Replace YOURTAG with your Amazon Associates tracking ID (e.g. nursesalary-20)
   // Sign up at: https://affiliate-program.amazon.com
-  const AMAZON_TAG = 'YOURTAG-20';
+  const AMAZON_TAG = 'maveryholding-20';
 
   const gearItems: GearItem[] = [
     {
