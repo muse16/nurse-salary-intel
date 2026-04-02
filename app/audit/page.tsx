@@ -358,7 +358,7 @@ export default function AuditPage() {
               <p className="text-gray-700">Compare salaries across cities and hospitals nationwide</p>
             </Link>
             <a
-              href="https://www.vivianhealth.com/jobs/travel-nurse"
+              href="https://www.vivian.com/jobs/"
               target="_blank"
               rel="noopener noreferrer"
               className="border-2 border-green-200 rounded-lg p-6 hover:border-green-400 hover:shadow-md transition-all"
