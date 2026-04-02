@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 
 interface AdSenseSlotProps {
-  position: 'header' | 'sidebar' | 'mid-content';
+  position: 'header' | 'sidebar' | 'mid-content' | 'blog-top' | 'blog-mid';
 }
 
 declare global {
