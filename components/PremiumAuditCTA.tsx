@@ -3,7 +3,7 @@ interface PremiumAuditCTAProps {
 }
 
 export default function PremiumAuditCTA({ placement = 'sidebar' }: PremiumAuditCTAProps) {
-  const gumroadLink = 'https://gumroad.com/l/nurse-offer-letter-audit'; // Placeholder - replace with actual link
+  const gumroadLink = 'https://maveryholdings.gumroad.com/l/djnau';
 
   if (placement === 'footer') {
     return (

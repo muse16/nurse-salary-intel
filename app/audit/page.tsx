@@ -249,7 +249,7 @@ export default function AuditPage() {
           </div>
 
           <a
-            href="https://gumroad.com/l/nurse-negotiation-kit"
+            href="https://maveryholdings.gumroad.com/l/djnau"
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full bg-yellow-400 hover:bg-yellow-300 text-purple-900 font-bold py-5 px-8 rounded-lg transition-colors text-center text-xl shadow-2xl"
