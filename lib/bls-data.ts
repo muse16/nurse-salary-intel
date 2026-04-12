@@ -19,20 +19,28 @@ export interface StateData {
 
 export const nurseSpecialties: NurseSpecialty[] = [
   {
-    id: 'registered-nurse',
-    name: 'Registered Nurse (RN)',
-    avgSalary: 81220,
-    minSalary: 61250,
-    maxSalary: 120460,
-    description: 'General medical and surgical care'
+    id: 'er-nurse',
+    name: 'Emergency Room Nurse',
+    avgSalary: 86750,
+    minSalary: 65890,
+    maxSalary: 124350,
+    description: 'Emergency and trauma care'
   },
   {
-    id: 'nurse-practitioner',
-    name: 'Nurse Practitioner',
-    avgSalary: 124680,
-    minSalary: 91440,
-    maxSalary: 163350,
-    description: 'Advanced practice registered nurse'
+    id: 'icu-nurse',
+    name: 'ICU/Critical Care Nurse',
+    avgSalary: 89540,
+    minSalary: 68200,
+    maxSalary: 127800,
+    description: 'Intensive care and critical patient monitoring'
+  },
+  {
+    id: 'neonatal-nurse',
+    name: 'Neonatal Nurse (NICU)',
+    avgSalary: 88760,
+    minSalary: 67430,
+    maxSalary: 126540,
+    description: 'Care for premature and critically ill newborns'
   },
   {
     id: 'nurse-anesthetist',
@@ -51,28 +59,12 @@ export const nurseSpecialties: NurseSpecialty[] = [
     description: 'Provides prenatal, delivery, and postpartum care'
   },
   {
-    id: 'icu-nurse',
-    name: 'ICU/Critical Care Nurse',
-    avgSalary: 89540,
-    minSalary: 68200,
-    maxSalary: 127800,
-    description: 'Intensive care and critical patient monitoring'
-  },
-  {
-    id: 'er-nurse',
-    name: 'Emergency Room Nurse',
-    avgSalary: 86750,
-    minSalary: 65890,
-    maxSalary: 124350,
-    description: 'Emergency and trauma care'
-  },
-  {
-    id: 'pediatric-nurse',
-    name: 'Pediatric Nurse',
-    avgSalary: 79340,
-    minSalary: 59870,
-    maxSalary: 113200,
-    description: 'Care for infants, children, and adolescents'
+    id: 'nurse-practitioner',
+    name: 'Nurse Practitioner',
+    avgSalary: 124680,
+    minSalary: 91440,
+    maxSalary: 163350,
+    description: 'Advanced practice registered nurse'
   },
   {
     id: 'oncology-nurse',
@@ -83,6 +75,14 @@ export const nurseSpecialties: NurseSpecialty[] = [
     description: 'Cancer patient care and chemotherapy administration'
   },
   {
+    id: 'pediatric-nurse',
+    name: 'Pediatric Nurse',
+    avgSalary: 79340,
+    minSalary: 59870,
+    maxSalary: 113200,
+    description: 'Care for infants, children, and adolescents'
+  },
+  {
     id: 'psychiatric-nurse',
     name: 'Psychiatric Nurse',
     avgSalary: 78540,
@@ -91,20 +91,12 @@ export const nurseSpecialties: NurseSpecialty[] = [
     description: 'Mental health and psychiatric care'
   },
   {
-    id: 'travel-nurse',
-    name: 'Travel Nurse',
-    avgSalary: 102800,
-    minSalary: 75600,
-    maxSalary: 145000,
-    description: 'Temporary assignments nationwide'
-  },
-  {
-    id: 'neonatal-nurse',
-    name: 'Neonatal Nurse (NICU)',
-    avgSalary: 88760,
-    minSalary: 67430,
-    maxSalary: 126540,
-    description: 'Care for premature and critically ill newborns'
+    id: 'registered-nurse',
+    name: 'Registered Nurse (RN)',
+    avgSalary: 81220,
+    minSalary: 61250,
+    maxSalary: 120460,
+    description: 'General medical and surgical care'
   },
   {
     id: 'surgical-nurse',
@@ -113,6 +105,14 @@ export const nurseSpecialties: NurseSpecialty[] = [
     minSalary: 64720,
     maxSalary: 121890,
     description: 'Operating room and surgical care'
+  },
+  {
+    id: 'travel-nurse',
+    name: 'Travel Nurse',
+    avgSalary: 102800,
+    minSalary: 75600,
+    maxSalary: 145000,
+    description: 'Temporary assignments nationwide'
   }
 ];
 
