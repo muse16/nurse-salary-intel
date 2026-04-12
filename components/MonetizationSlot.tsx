@@ -24,7 +24,7 @@ export default function MonetizationSlot({ type, city, state }: MonetizationSlot
           {/* Realistic program cards with affiliate conversion elements */}
           <div className="space-y-3 mb-4">
             <a
-              href="https://www.wgu.edu/online-nursing-health-degrees.html"
+              href="https://www.wgu.edu/online-nursing-health-degrees.html?utm_source=nursesalaryintel&utm_medium=referral&utm_campaign=education-slot"
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-white rounded-lg p-4 shadow-sm border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all"
@@ -43,7 +43,7 @@ export default function MonetizationSlot({ type, city, state }: MonetizationSlot
             </a>
 
             <a
-              href="https://www.aacn.org/certification"
+              href="https://www.aacn.org/certification?utm_source=nursesalaryintel&utm_medium=referral&utm_campaign=education-slot"
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-white rounded-lg p-4 shadow-sm border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all"
@@ -61,7 +61,7 @@ export default function MonetizationSlot({ type, city, state }: MonetizationSlot
             </a>
 
             <a
-              href="https://www.nurse.com/ce-courses"
+              href="https://www.nurse.com/ce-courses?utm_source=nursesalaryintel&utm_medium=referral&utm_campaign=education-slot"
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-white rounded-lg p-4 shadow-sm border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all"
@@ -85,7 +85,7 @@ export default function MonetizationSlot({ type, city, state }: MonetizationSlot
               Browse Nursing Programs
             </p>
             <a
-              href="https://www.allnursingschools.com"
+              href="https://www.allnursingschools.com?utm_source=nursesalaryintel&utm_medium=referral&utm_campaign=education-cta"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors text-center text-sm"

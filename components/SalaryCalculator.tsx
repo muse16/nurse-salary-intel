@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Calculator, TrendingUp, MapPin, Briefcase, Download } from 'lucide-react';
+import { Download } from 'lucide-react';
 import {
   nurseSpecialties,
   stateData,
@@ -55,137 +55,131 @@ export default function SalaryCalculator({ onGeneratePDF }: SalaryCalculatorProp
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-lg p-8">
-      <div className="flex items-center gap-3 mb-6">
-        <div className="bg-blue-100 p-3 rounded-lg">
-          <Calculator className="w-6 h-6 text-blue-600" />
+    <div>
+      <h2 className="sr-only">Nurse Salary Calculator</h2>
+
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+        <div className="lg:col-span-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Specialty */}
+            <div className="space-y-2">
+              <label className="block text-sm font-semibold text-on-surface-variant ml-1">Nursing Specialty</label>
+              <div className="relative">
+                <select
+                  value={selectedSpecialty}
+                  onChange={(e) => setSelectedSpecialty(e.target.value)}
+                  className="w-full bg-surface-container-low border-none rounded-xl py-4 px-4 appearance-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all text-on-surface outline-none"
+                >
+                  <option value="">Select specialty...</option>
+                  {nurseSpecialties.map(specialty => (
+                    <option key={specialty.id} value={specialty.id}>
+                      {specialty.name}
+                    </option>
+                  ))}
+                </select>
+                <svg className="w-5 h-5 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-outline" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+              </div>
+            </div>
+
+            {/* State */}
+            <div className="space-y-2">
+              <label className="block text-sm font-semibold text-on-surface-variant ml-1">State / Location</label>
+              <div className="relative">
+                <select
+                  value={selectedState}
+                  onChange={(e) => setSelectedState(e.target.value)}
+                  className="w-full bg-surface-container-low border-none rounded-xl py-4 px-4 appearance-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all text-on-surface outline-none"
+                >
+                  <option value="">Select state...</option>
+                  {stateData.map(state => (
+                    <option key={state.state} value={state.state}>
+                      {state.state}
+                    </option>
+                  ))}
+                </select>
+                <svg className="w-5 h-5 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-outline" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+              </div>
+            </div>
+
+            {/* Experience */}
+            <div className="space-y-2">
+              <label className="block text-sm font-semibold text-on-surface-variant ml-1">Years of Experience</label>
+              <div className="relative">
+                <select
+                  value={selectedExperience}
+                  onChange={(e) => setSelectedExperience(e.target.value)}
+                  className="w-full bg-surface-container-low border-none rounded-xl py-4 px-4 appearance-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all text-on-surface outline-none"
+                >
+                  <option value="">Select experience...</option>
+                  {experienceMultipliers.map(exp => (
+                    <option key={exp.years} value={exp.years}>
+                      {exp.label}
+                    </option>
+                  ))}
+                </select>
+                <svg className="w-5 h-5 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-outline" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+              </div>
+            </div>
+          </div>
         </div>
-        <h2 className="text-3xl font-bold text-gray-900">Salary Calculator</h2>
+
+        <div className="lg:col-span-4">
+          <button
+            onClick={handleCalculate}
+            disabled={!selectedSpecialty || !selectedState || !selectedExperience}
+            className="w-full gradient-primary text-on-primary py-4 rounded-xl font-bold text-lg shadow-lg flex items-center justify-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed transition-all active:scale-[0.98]"
+          >
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+            See Local Rates
+          </button>
+        </div>
       </div>
 
-      <p className="text-gray-600 mb-8">
-        Calculate your potential nursing salary based on specialty, location, and experience.
-        Data sourced from BLS 2024 with 2026 projections.
-      </p>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-        {/* Specialty Selection */}
-        <div>
-          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
-            <Briefcase className="w-4 h-4" />
-            Specialty
-          </label>
-          <select
-            value={selectedSpecialty}
-            onChange={(e) => setSelectedSpecialty(e.target.value)}
-            className="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
-          >
-            <option value="">Select specialty...</option>
-            {nurseSpecialties.map(specialty => (
-              <option key={specialty.id} value={specialty.id}>
-                {specialty.name}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        {/* State Selection */}
-        <div>
-          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
-            <MapPin className="w-4 h-4" />
-            State
-          </label>
-          <select
-            value={selectedState}
-            onChange={(e) => setSelectedState(e.target.value)}
-            className="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
-          >
-            <option value="">Select state...</option>
-            {stateData.map(state => (
-              <option key={state.state} value={state.state}>
-                {state.state}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        {/* Experience Selection */}
-        <div>
-          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
-            <TrendingUp className="w-4 h-4" />
-            Years of Experience
-          </label>
-          <select
-            value={selectedExperience}
-            onChange={(e) => setSelectedExperience(e.target.value)}
-            className="w-full p-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
-          >
-            <option value="">Select experience...</option>
-            {experienceMultipliers.map(exp => (
-              <option key={exp.years} value={exp.years}>
-                {exp.label}
-              </option>
-            ))}
-          </select>
-        </div>
-      </div>
-
-      <button
-        onClick={handleCalculate}
-        disabled={!selectedSpecialty || !selectedState || !selectedExperience}
-        className="w-full bg-blue-600 text-white font-bold py-4 px-6 rounded-lg hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-2"
-      >
-        <Calculator className="w-5 h-5" />
-        Calculate My Salary
-      </button>
-
-      {/* Results Section */}
+      {/* Results */}
       {results && (
-        <div className="mt-8 border-t-2 border-gray-200 pt-8">
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 mb-6">
-            <div className="text-center mb-6">
-              <h3 className="text-lg font-semibold text-gray-700 mb-2">
+        <div className="mt-10 pt-10">
+          <div className="bg-surface-container rounded-2xl p-8 mb-8">
+            <div className="text-center mb-8">
+              <h3 className="text-lg font-semibold text-on-surface-variant mb-3">
                 Estimated Annual Salary
               </h3>
-              <div className="text-5xl font-bold text-blue-600 mb-2">
+              <div className="text-5xl font-headline font-extrabold text-primary text-editorial mb-2">
                 ${results.estimatedSalary.toLocaleString()}
               </div>
-              <div className="text-xl text-gray-600">
+              <div className="text-xl text-on-surface-variant">
                 ${results.hourlyRate.toFixed(2)}/hour
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
-              <div className="bg-white rounded-lg p-4">
-                <div className="text-sm font-medium text-gray-600 mb-1">Specialty</div>
-                <div className="text-lg font-bold text-gray-900">{results.specialty}</div>
+              <div className="bg-surface-container-lowest rounded-xl p-4">
+                <div className="text-sm font-medium text-on-surface-variant mb-1">Specialty</div>
+                <div className="text-lg font-bold text-on-surface">{results.specialty}</div>
               </div>
-              <div className="bg-white rounded-lg p-4">
-                <div className="text-sm font-medium text-gray-600 mb-1">Location</div>
-                <div className="text-lg font-bold text-gray-900">{results.state}</div>
+              <div className="bg-surface-container-lowest rounded-xl p-4">
+                <div className="text-sm font-medium text-on-surface-variant mb-1">Location</div>
+                <div className="text-lg font-bold text-on-surface">{results.state}</div>
               </div>
-              <div className="bg-white rounded-lg p-4">
-                <div className="text-sm font-medium text-gray-600 mb-1">Experience</div>
-                <div className="text-lg font-bold text-gray-900">{results.experience}</div>
+              <div className="bg-surface-container-lowest rounded-xl p-4">
+                <div className="text-sm font-medium text-on-surface-variant mb-1">Experience</div>
+                <div className="text-lg font-bold text-on-surface">{results.experience}</div>
               </div>
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-lg p-6 mb-6">
-            <h4 className="font-bold text-gray-900 mb-3">Salary Range for This Role</h4>
+          <div className="bg-surface-container-low rounded-2xl p-6 mb-8">
+            <h4 className="font-headline font-bold text-on-surface mb-4">Salary Range for This Role</h4>
             <div className="flex items-center justify-between mb-2">
-              <span className="text-gray-700">Minimum</span>
-              <span className="font-bold text-gray-900">
-                ${results.salaryRange.min.toLocaleString()}
-              </span>
+              <span className="text-on-surface-variant">Minimum</span>
+              <span className="font-bold text-on-surface">${results.salaryRange.min.toLocaleString()}</span>
             </div>
-            <div className="w-full bg-gray-200 rounded-full h-3 mb-2 relative overflow-hidden">
+            <div className="w-full bg-surface-container rounded-full h-3 mb-2 relative overflow-hidden">
               <div
-                className="bg-gradient-to-r from-green-500 via-yellow-500 to-red-500 h-full rounded-full"
+                className="gradient-primary h-full rounded-full opacity-60"
                 style={{ width: '100%' }}
               />
               <div
-                className="absolute top-0 h-full w-1 bg-blue-900"
+                className="absolute top-0 h-full w-1 bg-on-surface"
                 style={{
                   left: `${((results.estimatedSalary - results.salaryRange.min) /
                           (results.salaryRange.max - results.salaryRange.min)) * 100}%`
@@ -193,33 +187,31 @@ export default function SalaryCalculator({ onGeneratePDF }: SalaryCalculatorProp
               />
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-gray-700">Maximum</span>
-              <span className="font-bold text-gray-900">
-                ${results.salaryRange.max.toLocaleString()}
-              </span>
+              <span className="text-on-surface-variant">Maximum</span>
+              <span className="font-bold text-on-surface">${results.salaryRange.max.toLocaleString()}</span>
             </div>
           </div>
 
-          <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-6 mb-6">
-            <h4 className="font-bold text-blue-900 mb-3 flex items-center gap-2">
-              <TrendingUp className="w-5 h-5" />
+          <div className="bg-primary-fixed/30 rounded-2xl p-6 mb-8 ghost-border">
+            <h4 className="font-headline font-bold text-primary mb-4 flex items-center gap-2">
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
               Key Insights
             </h4>
-            <ul className="space-y-2 text-gray-700">
-              <li className="flex items-start gap-2">
-                <span className="text-blue-600 mt-1">•</span>
+            <ul className="space-y-3 text-on-surface-variant">
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1.5 shrink-0">&#8226;</span>
                 <span>This estimate is based on BLS data and market trends for {new Date().getFullYear()}</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-blue-600 mt-1">•</span>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1.5 shrink-0">&#8226;</span>
                 <span>Actual salaries may vary based on facility, shift differentials, and benefits</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-blue-600 mt-1">•</span>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1.5 shrink-0">&#8226;</span>
                 <span>Travel nurses typically earn 15-30% more than staff positions</span>
               </li>
-              <li className="flex items-start gap-2">
-                <span className="text-blue-600 mt-1">•</span>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1.5 shrink-0">&#8226;</span>
                 <span>Additional certifications can increase compensation by 5-15%</span>
               </li>
             </ul>
@@ -228,7 +220,7 @@ export default function SalaryCalculator({ onGeneratePDF }: SalaryCalculatorProp
           {onGeneratePDF && (
             <button
               onClick={() => onGeneratePDF(results)}
-              className="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white font-bold py-4 px-6 rounded-lg hover:from-green-700 hover:to-emerald-700 transition-all flex items-center justify-center gap-2"
+              className="w-full bg-surface-container-lowest text-primary font-bold py-4 px-6 rounded-xl ghost-border hover:bg-primary-fixed transition-all flex items-center justify-center gap-2"
             >
               <Download className="w-5 h-5" />
               Download Salary Report (PDF)

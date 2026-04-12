@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import AdSenseSlot from '@/components/AdSenseSlot';
+import SiteNav from '@/components/SiteNav';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -37,6 +38,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SiteNav />
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <Link href="/blog" className="text-blue-600 hover:text-blue-700 font-semibold mb-3 inline-block text-sm">

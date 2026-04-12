@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import SiteNav from '@/components/SiteNav';
 
 type ItemStatus = null | 'good' | 'check' | 'redflag';
 
@@ -11,90 +12,70 @@ const checklistItems = [
     title: 'Payment Terms & Schedule',
     description: 'Verify exact pay rate, frequency (weekly/bi-weekly), and any deductions.',
     redFlags: 'Vague payment schedules, history of late payments, or unclear deductions from your check.',
+    suggestion: 'Request a written pay breakdown showing base rate, stipends, and all deductions before signing.',
   },
   {
     key: 'cancellationClause',
     title: 'Contract Cancellation Terms',
     description: 'Understand termination conditions for both you and the facility.',
     redFlags: 'Hospital can cancel anytime with no penalty, but you face financial consequences for leaving.',
-  },
-  {
-    key: 'overtimePolicy',
-    title: 'Overtime & Mandatory Hours',
-    description: 'Know whether overtime is mandatory, how it\'s compensated, and call requirements.',
-    redFlags: 'Forced overtime without premium pay, or unclear cap on maximum hours per week.',
-  },
-  {
-    key: 'nonCompete',
-    title: 'Non-Compete Clause',
-    description: 'Check for restrictions on future employment in the same geographic area.',
-    redFlags: 'Broad geographic restrictions or extended time periods over 6 months.',
+    suggestion: 'Negotiate mutual cancellation terms — if the facility can cancel penalty-free, you should be able to as well.',
   },
   {
     key: 'housingStipend',
     title: 'Housing & Lodging Benefits',
     description: 'Confirm stipend amount, tax treatment, and what happens if housing falls through.',
     redFlags: 'Taxable stipend, amount inadequate for the area, or no alternative if housing is unavailable.',
+    suggestion: 'Compare the stipend to local rent prices and ask for a backup housing clause in case arrangements fall through.',
   },
   {
     key: 'healthInsurance',
     title: 'Health Insurance Coverage',
     description: 'Review plan details, coverage start date, and your out-of-pocket premium costs.',
     redFlags: 'No coverage offered, delayed start date (30+ days), or excessive employee contribution.',
+    suggestion: 'Ask for day-one coverage and get the plan summary document — not just a verbal promise — before you start.',
   },
   {
     key: 'licensureReimbursement',
     title: 'Licensure & Certification Costs',
     description: 'Verify reimbursement for state licenses, certifications, and renewals.',
     redFlags: 'No reimbursement offered, or you must prepay and wait months for repayment.',
+    suggestion: 'Ask for upfront reimbursement or a signing stipend that covers licensing costs before your start date.',
   },
   {
     key: 'completionBonus',
     title: 'Completion Bonus',
     description: 'Confirm bonus amount, payment timeline, and conditions required to receive it.',
     redFlags: 'Excessive conditions, prorated unfairly, or bonus withheld for minor infractions.',
+    suggestion: 'Get the exact bonus conditions in writing and confirm whether it prorates if the facility ends the contract early.',
   },
   {
     key: 'shiftDifferential',
     title: 'Shift Differential Pay',
     description: 'Check night, weekend, and holiday pay premium rates.',
     redFlags: 'No differential for nights or weekends, or rates lower than market standard.',
+    suggestion: 'Ask for the differential rate schedule in writing and compare it against BLS averages for your area.',
   },
   {
     key: 'callRequirements',
     title: 'On-Call Requirements',
     description: 'Understand on-call frequency, compensation, and expected response time.',
     redFlags: 'Unpaid on-call time, excessive frequency, or unclear compensation when called in.',
+    suggestion: 'Negotiate a flat on-call rate plus your full hourly rate when called in, with a cap on monthly on-call shifts.',
   },
-  {
-    key: 'orientationPay',
-    title: 'Orientation & Training Pay',
-    description: 'Confirm you are paid your full rate during orientation and any required training.',
-    redFlags: 'Unpaid orientation period, or a reduced pay rate during training.',
-  },
-  {
+{
     key: 'travelReimbursement',
     title: 'Travel & Relocation Costs',
     description: 'Verify reimbursement for travel to the assignment and return home.',
     redFlags: 'No travel pay, or you must complete the full contract or repay travel costs.',
-  },
-  {
-    key: 'malpracticeInsurance',
-    title: 'Malpractice Insurance',
-    description: 'Ensure the facility provides coverage and clarify the policy limits.',
-    redFlags: 'No coverage provided, you must purchase your own policy, or inadequate limits.',
+    suggestion: 'Ask for a separate travel stipend paid upfront, not contingent on contract completion.',
   },
   {
     key: 'floatingPolicy',
     title: 'Floating Policy',
     description: 'Understand when and where you can be floated to other units.',
     redFlags: 'Can be floated to any unit regardless of your competency, or excessive floating frequency.',
-  },
-  {
-    key: 'holidayPay',
-    title: 'Holiday Pay & Time Off',
-    description: 'Review holiday pay rates, PTO policy, and sick leave provisions.',
-    redFlags: 'No holiday premium pay, no PTO for travel contracts, or unpaid sick leave.',
+    suggestion: 'Request a float clause limiting you to units within your specialty or competency area.',
   },
 ];
 
@@ -135,11 +116,9 @@ export default function AuditPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <SiteNav />
+      <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <Link href="/" className="text-blue-100 hover:text-white font-semibold mb-4 inline-block">
-            ← Back to Home
-          </Link>
           <h1 className="text-4xl font-bold mb-4">Contract Red Flag Audit Tool</h1>
           <p className="text-xl text-blue-100">
             Review each section of your contract and mark what you find. We&apos;ll score your risk and show you exactly what to negotiate.
@@ -195,8 +174,13 @@ export default function AuditPage() {
                 </div>
 
                 {/* Red flag warning */}
-                <div className="bg-red-50 border-l-4 border-red-300 px-3 py-2 mb-4 rounded-r">
+                <div className="bg-red-50 border-l-4 border-red-300 px-3 py-2 mb-3 rounded-r">
                   <p className="text-xs text-red-800"><span className="font-semibold">Watch for: </span>{item.redFlags}</p>
+                </div>
+
+                {/* Suggestion to improve */}
+                <div className="bg-blue-50 border-l-4 border-blue-300 px-3 py-2 mb-4 rounded-r">
+                  <p className="text-xs text-blue-800"><span className="font-semibold">Suggestion: </span>{item.suggestion}</p>
                 </div>
 
                 {/* Action buttons */}
@@ -332,21 +316,7 @@ export default function AuditPage() {
           </div>
         )}
 
-        {/* Free PDF download */}
-        <div className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white rounded-lg shadow-xl p-8 mb-8">
-          <h2 className="text-2xl font-bold mb-2">Download the Free Checklist PDF</h2>
-          <p className="text-blue-100 mb-6">Print it out and use it while reading your actual contract.</p>
-          <a
-            href="/Nurse_Offer_Letter_Audit_Kit.pdf"
-            download
-            className="block w-full bg-white text-blue-600 font-bold py-4 px-8 rounded-lg hover:bg-blue-50 transition-colors text-lg text-center"
-          >
-            Download Free PDF
-          </a>
-          <p className="text-sm text-blue-200 text-center mt-3">No email required. Instant download.</p>
-        </div>
-
-        {/* Additional Resources */}
+{/* Additional Resources */}
         <div className="bg-white rounded-lg shadow-lg p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Additional Resources</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

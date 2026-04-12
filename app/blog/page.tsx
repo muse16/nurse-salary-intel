@@ -1,6 +1,7 @@
 import { blogPosts } from '@/lib/blog-posts';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import SiteNav from '@/components/SiteNav';
 
 export const metadata: Metadata = {
   title: 'Nursing Contract & Salary Blog | Nurse Salary Intelligence',
@@ -18,11 +19,9 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SiteNav />
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <Link href="/" className="text-blue-600 hover:text-blue-700 font-semibold mb-3 inline-block text-sm">
-            ← Back to Home
-          </Link>
           <h1 className="text-3xl font-bold text-gray-900">Nursing Contract & Salary Blog</h1>
           <p className="text-gray-500 mt-2 text-sm">
             Know what you're signing. Know what to negotiate.

@@ -11,10 +11,14 @@ interface DataTableProps {
 type SortField = 'salary' | 'hospital' | 'city' | 'position';
 type SortDirection = 'asc' | 'desc';
 
-// SortIcon component moved outside render
+function buildJobUrl(position: NursePosition) {
+  const query = encodeURIComponent(`${position.position} ${position.city} ${position.state}`);
+  return `https://www.vivian.com/search?query=${query}&utm_source=nursesalaryintel&utm_medium=referral`;
+}
+
 function SortIcon({ field, sortField, sortDirection }: { field: SortField; sortField: SortField; sortDirection: SortDirection }) {
-  if (sortField !== field) return <span className="text-gray-400">⇅</span>;
-  return <span className="text-blue-600">{sortDirection === 'asc' ? '↑' : '↓'}</span>;
+  if (sortField !== field) return <span className="text-outline">&#8645;</span>;
+  return <span className="text-primary">{sortDirection === 'asc' ? '\u2191' : '\u2193'}</span>;
 }
 
 export default function DataTable({ data, title }: DataTableProps) {
@@ -60,33 +64,39 @@ export default function DataTable({ data, title }: DataTableProps) {
   }, [data, searchTerm, sortField, sortDirection]);
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6">
-      {title && <h2 className="text-2xl font-bold text-gray-900 mb-6">{title}</h2>}
+    <div className="overflow-hidden rounded-2xl ghost-border bg-surface-container-lowest shadow-sm">
+      {title && (
+        <div className="px-6 pt-6">
+          <h2 className="font-headline font-bold text-2xl text-on-surface mb-4">{title}</h2>
+        </div>
+      )}
 
-      <div className="mb-6">
+      {/* Search */}
+      <div className="px-6 py-4">
         <input
           type="text"
           placeholder="Search by hospital, city, state, or position..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="w-full bg-surface-container-low border-none rounded-xl py-4 px-5 focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all text-on-surface placeholder:text-outline outline-none"
         />
       </div>
 
+      {/* Table */}
       <div className="overflow-x-auto">
-        <table className="w-full">
-          <thead className="bg-blue-50 border-b-2 border-blue-200">
-            <tr>
+        <table className="w-full text-left border-collapse">
+          <thead>
+            <tr className="bg-surface-container">
               <th
-                className="px-4 py-3 text-left text-sm font-semibold text-gray-700 cursor-pointer hover:bg-blue-100"
+                className="px-6 py-5 font-bold text-on-surface-variant text-sm uppercase tracking-wider cursor-pointer hover:bg-surface-container-high transition-colors"
                 onClick={() => handleSort('hospital')}
               >
                 <div className="flex items-center gap-2">
-                  Hospital <SortIcon field="hospital" sortField={sortField} sortDirection={sortDirection} />
+                  Position & Facility <SortIcon field="hospital" sortField={sortField} sortDirection={sortDirection} />
                 </div>
               </th>
               <th
-                className="px-4 py-3 text-left text-sm font-semibold text-gray-700 cursor-pointer hover:bg-blue-100"
+                className="px-6 py-5 font-bold text-on-surface-variant text-sm uppercase tracking-wider cursor-pointer hover:bg-surface-container-high transition-colors"
                 onClick={() => handleSort('city')}
               >
                 <div className="flex items-center gap-2">
@@ -94,51 +104,68 @@ export default function DataTable({ data, title }: DataTableProps) {
                 </div>
               </th>
               <th
-                className="px-4 py-3 text-left text-sm font-semibold text-gray-700 cursor-pointer hover:bg-blue-100"
-                onClick={() => handleSort('position')}
-              >
-                <div className="flex items-center gap-2">
-                  Position <SortIcon field="position" sortField={sortField} sortDirection={sortDirection} />
-                </div>
-              </th>
-              <th
-                className="px-4 py-3 text-left text-sm font-semibold text-gray-700 cursor-pointer hover:bg-blue-100"
+                className="px-6 py-5 font-bold text-on-surface-variant text-sm uppercase tracking-wider cursor-pointer hover:bg-surface-container-high transition-colors"
                 onClick={() => handleSort('salary')}
               >
                 <div className="flex items-center gap-2">
-                  Annual Salary <SortIcon field="salary" sortField={sortField} sortDirection={sortDirection} />
+                  Est. Salary <SortIcon field="salary" sortField={sortField} sortDirection={sortDirection} />
                 </div>
               </th>
-              <th className="px-4 py-3 text-left text-sm font-semibold text-gray-700">
+              <th className="px-6 py-5 font-bold text-on-surface-variant text-sm uppercase tracking-wider">
+                Contract Status
+              </th>
+              <th className="px-6 py-5 font-bold text-on-surface-variant text-sm uppercase tracking-wider">
                 Contract
               </th>
-              <th className="px-4 py-3 text-left text-sm font-semibold text-gray-700">
-                Status
+              <th className="px-6 py-5 font-bold text-on-surface-variant text-sm uppercase tracking-wider">
+                Action
               </th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-gray-200">
+          <tbody>
             {filteredAndSorted.map((position, idx) => (
-              <tr key={idx} className="hover:bg-gray-50">
-                <td className="px-4 py-3 text-sm text-gray-900">{position.hospital}</td>
-                <td className="px-4 py-3 text-sm text-gray-600">
+              <tr
+                key={idx}
+                className={`hover:bg-surface-container-low transition-colors ${
+                  idx % 2 === 0 ? 'bg-surface-container-lowest' : 'bg-surface-container-low/50'
+                }`}
+              >
+                <td className="px-6 py-5">
+                  <div className="font-bold text-on-surface">{position.position}</div>
+                  <div className="text-xs text-on-surface-variant mt-0.5">{position.hospital}</div>
+                </td>
+                <td className="px-6 py-5 text-on-surface-variant">
                   {position.city}, {position.state}
                 </td>
-                <td className="px-4 py-3 text-sm text-gray-700">{position.position}</td>
-                <td className="px-4 py-3 text-sm font-semibold text-green-600">
+                <td className="px-6 py-5 font-semibold text-on-surface">
                   ${position.salary.toLocaleString()}
                 </td>
-                <td className="px-4 py-3 text-sm text-gray-600">{position.contract_length} weeks</td>
-                <td className="px-4 py-3 text-sm">
+                <td className="px-6 py-5">
                   {position.red_flags === 'None' ? (
-                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold bg-green-100 text-green-800">
-                      ✓ Contract Clean
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-bold">
+                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                      Contract Clean
                     </span>
                   ) : (
-                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold bg-red-100 text-red-800">
-                      ⚠ Red Flag — Review Before Signing
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container text-xs font-bold">
+                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" /></svg>
+                      Red Flag
                     </span>
                   )}
+                </td>
+                <td className="px-6 py-5 text-on-surface-variant text-sm">
+                  {position.contract_length} weeks
+                </td>
+                <td className="px-6 py-5">
+                  <a
+                    href={buildJobUrl(position)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 gradient-primary text-on-primary px-4 py-2 rounded-lg text-xs font-bold shadow-sm hover:shadow-md transition-all active:scale-95"
+                  >
+                    Apply
+                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                  </a>
                 </td>
               </tr>
             ))}
@@ -147,12 +174,12 @@ export default function DataTable({ data, title }: DataTableProps) {
       </div>
 
       {filteredAndSorted.length === 0 && (
-        <div className="text-center py-12 text-gray-500">
+        <div className="text-center py-16 text-on-surface-variant">
           No positions found matching your search.
         </div>
       )}
 
-      <div className="mt-4 text-sm text-gray-600">
+      <div className="px-6 py-4 text-sm text-on-surface-variant bg-surface-container-low/50">
         Showing {filteredAndSorted.length} of {data.length} positions
       </div>
     </div>

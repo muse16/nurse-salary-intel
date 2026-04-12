@@ -4,6 +4,7 @@ import MonetizationSlot from '@/components/MonetizationSlot';
 import PremiumAuditCTA from '@/components/PremiumAuditCTA';
 import RecommendedGear from '@/components/RecommendedGear';
 import AdSenseSlot from '@/components/AdSenseSlot';
+import SiteNav from '@/components/SiteNav';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
@@ -49,12 +50,10 @@ export default async function HospitalPage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SiteNav />
       {/* Header */}
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <Link href="/" className="text-blue-600 hover:text-blue-700 font-semibold mb-2 inline-block">
-            ← Back to Home
-          </Link>
           <h1 className="text-4xl font-bold text-gray-900">
             {hospitalData.hospital}
           </h1>

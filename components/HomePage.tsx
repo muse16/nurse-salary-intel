@@ -1,11 +1,11 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import DataTable from '@/components/DataTable';
 import SalaryCalculator from '@/components/SalaryCalculator';
 import IntelDashboard from '@/components/IntelDashboard';
 import { generateSalaryReportPDF } from '@/lib/pdf-generator';
-import { Calculator, TrendingUp, Shield, Database, Award, CheckCircle, ArrowRight, FileText, AlertTriangle, DollarSign } from 'lucide-react';
 import { slugify } from '@/lib/utils';
 import { NursePosition } from '@/lib/types';
 
@@ -21,393 +21,255 @@ interface HomePageProps {
 }
 
 export default function HomePage({ stats, allData, stateData }: HomePageProps) {
-  const { avgSalary, totalPositions, cleanContracts, uniqueHospitals } = stats;
+  const { avgSalary, totalPositions, cleanContracts } = stats;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-surface font-body text-on-surface">
 
-      {/* ── TOP NAV ──────────────────────────────────────────────── */}
-      <nav className="bg-blue-950 border-b border-blue-900 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-14">
-            {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 text-white font-black text-lg tracking-tight">
-              <span className="text-yellow-400">🩺</span>
-              <span>Nurse<span className="text-yellow-400">Salary</span>Intel</span>
-            </Link>
-            {/* Links */}
-            <div className="hidden md:flex items-center gap-1">
-              <a href="#dashboard" className="text-blue-200 hover:text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors flex items-center gap-1.5">
-                <TrendingUp className="w-3.5 h-3.5" /> Salary Data
-              </a>
-              <a href="#browse" className="text-blue-200 hover:text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors flex items-center gap-1.5">
-                <Database className="w-3.5 h-3.5" /> Browse Cities
-              </a>
-              <a href="#calculator" className="text-blue-200 hover:text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors flex items-center gap-1.5">
-                <Calculator className="w-3.5 h-3.5" /> Calculator
-              </a>
-              <Link href="/blog" className="text-blue-200 hover:text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-blue-800 transition-colors flex items-center gap-1.5">
-                <FileText className="w-3.5 h-3.5" /> Blog
-              </Link>
-              <Link href="/audit" className="ml-2 bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold px-4 py-2 rounded-lg text-sm transition-colors flex items-center gap-1.5">
-                <Shield className="w-3.5 h-3.5" /> Free Contract Audit
-              </Link>
-            </div>
-            {/* Mobile CTA */}
-            <Link href="/audit" className="md:hidden bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold px-3 py-1.5 rounded-lg text-xs transition-colors">
-              Free Audit
-            </Link>
+      {/* ── GLASS NAV ─────────────────────────────────────────── */}
+      <nav className="fixed w-full top-0 z-50 glass-nav shadow-sm">
+        <div className="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+          <Link href="/" className="flex items-center gap-2 text-xl font-bold tracking-tight text-primary font-headline">
+            <Image src="/images/logo.svg" alt="Nurse Salary Intel logo" width={32} height={32} />
+            Nurse Salary Intel
+          </Link>
+          <div className="hidden md:flex items-center gap-x-8">
+            <a href="#dashboard" className="text-primary font-semibold border-b-2 border-primary pb-1">Dashboard</a>
+            <Link href="/audit" className="text-on-surface-variant hover:text-primary transition-colors">Contract Audit</Link>
+            <a href="#browse" className="text-on-surface-variant hover:text-primary transition-colors">Salaries</a>
+            <a href="#positions" className="text-on-surface-variant hover:text-primary transition-colors">Positions</a>
+          </div>
+          <div className="flex items-center gap-4">
+            <Link href="/blog" className="hidden lg:block text-on-surface-variant hover:text-primary transition-colors font-medium">Blog</Link>
+            <a href="#calculator" className="gradient-primary text-on-primary px-6 py-2.5 rounded-xl font-semibold text-sm shadow-md transition-all active:scale-95">
+              Calculate Salary
+            </a>
           </div>
         </div>
       </nav>
 
-      {/* ── HERO ─────────────────────────────────────────────────── */}
-      <header className="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white relative overflow-hidden">
-        {/* Background decoration */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-700 rounded-full opacity-20" />
-          <div className="absolute -bottom-20 -left-20 w-72 h-72 bg-indigo-700 rounded-full opacity-20" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-r from-transparent via-blue-800/10 to-transparent" />
+      {/* ── HERO SECTION ─────────────────────────────────────── */}
+      <header className="relative min-h-[870px] flex items-center overflow-hidden bg-surface">
+        {/* Background image with overlay */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent z-10" />
+          <img
+            className="w-full h-full object-cover object-center grayscale-[20%]"
+            src="/images/hero-nurse.jpg"
+            alt="Professional nurse in modern medical setting"
+          />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="relative z-20 max-w-7xl mx-auto px-6 w-full py-20">
+          <div className="max-w-2xl">
+            <span className="inline-flex items-center px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-wider mb-6">
+              Empowering Healthcare Careers
+            </span>
 
-            {/* Left — copy */}
-            <div>
-              <div className="inline-flex items-center gap-2 bg-blue-700/60 border border-blue-500/50 rounded-full px-4 py-2 text-sm font-semibold text-blue-200 mb-6">
-                <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                Free · No email required · BLS 2026 data
-              </div>
+            <h1 className="font-headline font-extrabold text-5xl md:text-7xl text-on-surface text-editorial leading-[1.1] mb-6">
+              Know your worth.<br />
+              <span className="text-primary">Know What to Negotiate.</span>
+            </h1>
 
-              <h1 className="text-5xl md:text-6xl font-black leading-tight mb-6 tracking-tight">
-                Know What You&apos;re Worth.<br />
-                <span className="text-yellow-400">Know What to Negotiate.</span>
-              </h1>
+            <p className="text-on-surface-variant text-xl md:text-2xl leading-relaxed mb-10 max-w-xl">
+              Unbiased salary transparency and contract intelligence designed by nurses, for nurses. Get the data you need to negotiate with authority.
+            </p>
 
-              <p className="text-xl text-blue-100 mb-8 leading-relaxed max-w-lg">
-                Free salary data and contract red flag audit for nurses — no recruiter, no upsell, no BS.
-              </p>
-
-              <div className="flex flex-wrap gap-4 mb-10">
-                <Link
-                  href="/audit"
-                  className="bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-4 px-8 rounded-xl transition-all shadow-lg hover:shadow-yellow-400/25 flex items-center gap-2 text-lg"
-                >
-                  <Shield className="w-5 h-5" />
-                  Run Free Contract Audit
-                </Link>
-                <a
-                  href="#calculator"
-                  className="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold py-4 px-8 rounded-xl transition-all flex items-center gap-2 text-lg"
-                >
-                  <Calculator className="w-5 h-5" />
-                  Calculate Salary
-                </a>
-              </div>
-
-              <div className="flex flex-wrap gap-6 text-sm text-blue-200">
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-400" />
-                  BLS-verified data
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-400" />
-                  {totalPositions} positions tracked
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-400" />
-                  Instant results
-                </div>
-              </div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/audit"
+                className="gradient-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-sunken flex items-center justify-center gap-2 transition-transform hover:-translate-y-0.5"
+              >
+                Run Free Contract Audit
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+              </Link>
+              <a
+                href="#calculator"
+                className="bg-surface-container-lowest border-2 border-primary/20 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-fixed transition-colors flex items-center justify-center"
+              >
+                Calculate Salary
+              </a>
             </div>
-
-            {/* Right — mock audit result card */}
-            <div className="hidden lg:block">
-              <div className="bg-white rounded-2xl shadow-2xl p-6 max-w-sm ml-auto border border-gray-100">
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-sm font-bold text-gray-500 uppercase tracking-wide">Contract Risk Report</span>
-                  <span className="bg-red-100 text-red-700 text-xs font-bold px-3 py-1 rounded-full">High Risk</span>
-                </div>
-
-                <div className="grid grid-cols-3 gap-3 mb-5">
-                  <div className="bg-green-50 rounded-lg p-3 text-center">
-                    <div className="text-2xl font-black text-green-600">9</div>
-                    <div className="text-xs text-gray-500">Looks Good</div>
-                  </div>
-                  <div className="bg-yellow-50 rounded-lg p-3 text-center">
-                    <div className="text-2xl font-black text-yellow-500">2</div>
-                    <div className="text-xs text-gray-500">Check</div>
-                  </div>
-                  <div className="bg-red-50 rounded-lg p-3 text-center">
-                    <div className="text-2xl font-black text-red-600">4</div>
-                    <div className="text-xs text-gray-500">Red Flags</div>
-                  </div>
-                </div>
-
-                <div className="space-y-2 mb-5">
-                  <div className="text-xs font-bold text-red-700 mb-2 flex items-center gap-1">
-                    <AlertTriangle className="w-3 h-3" /> Clauses to negotiate:
-                  </div>
-                  {['Non-Compete Clause', 'Cancellation Terms', 'Mandatory Overtime', 'Completion Bonus'].map(item => (
-                    <div key={item} className="flex items-center gap-2 bg-red-50 rounded-lg px-3 py-2">
-                      <span className="text-red-500 font-bold text-xs">→</span>
-                      <span className="text-xs text-gray-700 font-medium">{item}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-xl p-4 text-white">
-                  <div className="text-xs font-bold mb-1 text-purple-200">Recommended</div>
-                  <div className="text-sm font-bold mb-2">Get the exact counter-offer scripts</div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-yellow-300 font-black text-lg">$9</span>
-                    <span className="bg-yellow-400 text-purple-900 text-xs font-bold px-3 py-1 rounded-lg">Instant download</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
-        </div>
-
-        {/* Wave divider */}
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full">
-            <path d="M0 60L1440 60L1440 20C1200 60 960 0 720 20C480 40 240 0 0 20L0 60Z" fill="#f9fafb"/>
-          </svg>
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <main>
+        {/* ── NURSE SALARY CALCULATOR (overlapping hero) ───── */}
+        <section id="calculator" className="py-24 px-6 bg-surface-container-low scroll-mt-20">
+          <div className="max-w-7xl mx-auto">
+            <div className="relative -mt-32 z-30 rounded-2xl overflow-hidden shadow-xl border-2 border-primary/20">
+              <div className="bg-gradient-to-r from-primary to-blue-800 px-8 md:px-12 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                <div>
+                  <span className="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full mb-2 uppercase tracking-wide">Free Tool — No Sign-Up Required</span>
+                  <h1 className="font-headline font-bold text-2xl md:text-3xl text-white">Nurse Salary Calculator</h1>
+                  <p className="text-blue-100 text-sm mt-1">Estimate your RN pay by state, specialty, and experience using real BLS data.</p>
+                </div>
+                <div className="hidden md:flex items-center gap-2 bg-white/10 rounded-xl px-5 py-3 backdrop-blur-sm">
+                  <svg className="w-8 h-8 text-yellow-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <div>
+                    <div className="text-white font-bold text-sm">Trusted by 10,000+ Nurses</div>
+                    <div className="text-blue-200 text-xs">Updated with 2026 BLS data</div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-surface-container-lowest p-8 md:p-12">
+                <SalaryCalculator onGeneratePDF={generateSalaryReportPDF} />
+              </div>
+            </div>
+          </div>
+        </section>
 
-        {/* ── STAT CARDS ───────────────────────────────────────────── */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 -mt-4">
-          <div className="bg-white rounded-2xl shadow-md p-5 border border-gray-100 hover:shadow-lg transition-shadow">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="bg-blue-100 p-2 rounded-lg">
-                <DollarSign className="w-4 h-4 text-blue-600" />
+        {/* ── NURSING INTEL DASHBOARD ─────────────────────── */}
+        <section id="dashboard" className="py-24 px-6 scroll-mt-20">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+              <div>
+                <h2 className="font-headline font-extrabold text-4xl text-editorial mb-4">Nursing Intel Dashboard</h2>
+                <p className="text-on-surface-variant text-lg">Real-time market signals and projection data.</p>
               </div>
-              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Avg Salary</div>
+              <a href="#positions" className="text-primary font-bold flex items-center gap-2 hover:underline">
+                View Full Market Report
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              </a>
             </div>
-            <div className="text-2xl font-black text-blue-700">${avgSalary.toLocaleString()}</div>
-            <div className="text-xs text-gray-400 mt-1">Nationally</div>
-          </div>
-          <div className="bg-white rounded-2xl shadow-md p-5 border border-gray-100 hover:shadow-lg transition-shadow">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="bg-green-100 p-2 rounded-lg">
-                <Database className="w-4 h-4 text-green-600" />
-              </div>
-              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Positions</div>
-            </div>
-            <div className="text-2xl font-black text-green-700">{totalPositions}</div>
-            <div className="text-xs text-gray-400 mt-1">{uniqueHospitals} hospitals</div>
-          </div>
-          <div className="bg-white rounded-2xl shadow-md p-5 border border-gray-100 hover:shadow-lg transition-shadow">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="bg-emerald-100 p-2 rounded-lg">
-                <CheckCircle className="w-4 h-4 text-emerald-600" />
-              </div>
-              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Clean</div>
-            </div>
-            <div className="text-2xl font-black text-emerald-700">{cleanContracts}</div>
-            <div className="text-xs text-gray-400 mt-1">No red flags</div>
-          </div>
-          <div className="bg-white rounded-2xl shadow-md p-5 border border-gray-100 hover:shadow-lg transition-shadow">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="bg-red-100 p-2 rounded-lg">
-                <AlertTriangle className="w-4 h-4 text-red-600" />
-              </div>
-              <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Red Flags</div>
-            </div>
-            <div className="text-2xl font-black text-red-700">{totalPositions - cleanContracts}</div>
-            <div className="text-xs text-gray-400 mt-1">Flagged contracts</div>
-          </div>
-        </div>
 
-        {/* ── HOW IT WORKS ─────────────────────────────────────────── */}
-        <div className="mb-16">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-black text-gray-900 mb-3">How It Works</h2>
-            <p className="text-gray-500 text-lg">Three steps to walk into any negotiation prepared</p>
+            {/* 3 Stat Cards — matching mockup */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              {/* Card 1 — Market Growth */}
+              <div className="bg-surface-container-lowest p-8 rounded-2xl shadow-sm ghost-border">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center">
+                    <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                  </div>
+                  <span className="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Market Growth</span>
+                </div>
+                <div className="text-4xl font-headline font-extrabold mb-2">+14.2%</div>
+                <p className="text-on-surface-variant text-sm leading-relaxed">Projected job demand growth over the next 24 months in specialty settings.</p>
+              </div>
+
+              {/* Card 2 — Salary Average */}
+              <div className="bg-surface-container-lowest p-8 rounded-2xl shadow-sm ghost-border">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center">
+                    <svg className="w-6 h-6 text-on-tertiary-fixed-variant" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  </div>
+                  <span className="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Salary Average</span>
+                </div>
+                <div className="text-4xl font-headline font-extrabold mb-2">${avgSalary.toLocaleString()}</div>
+                <p className="text-on-surface-variant text-sm leading-relaxed">National median for BSN-prepared nurses with 5+ years of clinical experience.</p>
+              </div>
+
+              {/* Card 3 — Contract Health */}
+              <div className="bg-surface-container-lowest p-8 rounded-2xl shadow-sm ghost-border">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center">
+                    <svg className="w-6 h-6 text-on-secondary-container" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                  </div>
+                  <span className="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Contract Health</span>
+                </div>
+                <div className="text-4xl font-headline font-extrabold mb-2">{Math.round((cleanContracts / totalPositions) * 100)}%</div>
+                <p className="text-on-surface-variant text-sm leading-relaxed">Of audited contracts are clean &mdash; {totalPositions - cleanContracts} flagged with red flag clauses.</p>
+              </div>
+            </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl shadow-md p-8 border border-gray-100 relative">
-              <div className="absolute -top-4 left-8 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-black text-sm">1</div>
-              <div className="bg-blue-50 rounded-xl p-4 mb-5 w-fit">
-                <Calculator className="w-8 h-8 text-blue-600" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Check Your Market Rate</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Enter your specialty, state, and experience. Get an accurate salary estimate backed by BLS data — so you know your number before the conversation starts.</p>
+        </section>
+
+        {/* ── POSITIONS TABLE ────────────────────────────── */}
+        <section id="positions" className="py-24 px-6 bg-surface-container-low scroll-mt-20">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-12">
+              <h2 className="font-headline font-extrabold text-4xl text-editorial mb-4">Real Nursing Positions</h2>
+              <p className="text-on-surface-variant text-lg">Verified listings with transparent contract analysis.</p>
             </div>
-            <div className="bg-white rounded-2xl shadow-md p-8 border border-gray-100 relative">
-              <div className="absolute -top-4 left-8 w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center font-black text-sm">2</div>
-              <div className="bg-red-50 rounded-xl p-4 mb-5 w-fit">
-                <Shield className="w-8 h-8 text-red-500" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Audit Your Contract</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Go through 15 contract clauses and mark each one. The tool scores your risk level and shows you exactly which clauses to push back on.</p>
-            </div>
-            <div className="bg-white rounded-2xl shadow-md p-8 border border-gray-100 relative">
-              <div className="absolute -top-4 left-8 w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center font-black text-sm">3</div>
-              <div className="bg-yellow-50 rounded-xl p-4 mb-5 w-fit">
-                <FileText className="w-8 h-8 text-yellow-600" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Negotiate With Confidence</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Get the exact email scripts and counter-offer language for every red flag clause. Know what to say, how to say it, and when to walk away.</p>
-            </div>
+            <DataTable data={allData} title="" />
           </div>
-        </div>
+        </section>
 
-        {/* ── SALARY CALCULATOR ────────────────────────────────────── */}
-        <div id="calculator" className="mb-16 scroll-mt-8">
-          <SalaryCalculator onGeneratePDF={generateSalaryReportPDF} />
-        </div>
-
-        {/* ── INTEL DASHBOARD ──────────────────────────────────────── */}
-        <div id="dashboard" className="mb-16 scroll-mt-8">
-          <IntelDashboard />
-        </div>
-
-        {/* ── AUDIT CTA BANNER ─────────────────────────────────────── */}
-        <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white rounded-2xl shadow-xl p-10 mb-16 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
-          <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="inline-block bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">Free Tool</div>
-              <h2 className="text-3xl font-black mb-3">Don&apos;t Sign Before Running the Audit</h2>
-              <p className="text-blue-200 mb-6 leading-relaxed">
-                15 clauses. 3 buttons each. Takes 5 minutes. Gets you a risk score and a list of exactly what to negotiate — before you sign anything.
-              </p>
-              <Link
-                href="/audit"
-                className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-4 px-8 rounded-xl transition-all text-lg shadow-lg"
-              >
-                <Shield className="w-5 h-5" />
-                Start Free Contract Audit
-                <ArrowRight className="w-5 h-5" />
-              </Link>
+        {/* ── BROWSE SALARIES BY LOCATION — City Image Cards ── */}
+        <section id="browse" className="py-24 px-6 bg-surface scroll-mt-20">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="font-headline font-extrabold text-4xl text-editorial mb-4">Browse Salaries by Location</h2>
+              <p className="text-on-surface-variant text-lg">Compare rates across the nation&apos;s top nursing hubs.</p>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+
+            {/* City Image Grid — matching mockup */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
               {[
-                { icon: '📋', label: '15 contract clauses reviewed' },
-                { icon: '⚡', label: 'Risk score in under 5 min' },
-                { icon: '🎯', label: 'Tells you exactly what to push back on' },
-                { icon: '💰', label: 'Negotiation scripts available for $9' },
-              ].map(item => (
-                <div key={item.label} className="bg-white/10 rounded-xl p-4 border border-white/10">
-                  <div className="text-2xl mb-2">{item.icon}</div>
-                  <div className="text-sm text-blue-100 font-medium">{item.label}</div>
+                { city: 'San Francisco', state: 'California', avg: '$154,000', img: '/images/city-sf.jpg' },
+                { city: 'New York', state: 'New York', avg: '$128,500', img: '/images/city-ny.jpg' },
+                { city: 'Chicago', state: 'Illinois', avg: '$98,200', img: '/images/city-chicago.jpg' },
+                { city: 'Dallas', state: 'Texas', avg: '$94,200', img: '/images/city-dallas.jpg' },
+              ].map(({ city, state, avg, img }) => (
+                <Link
+                  key={city}
+                  href={`/salary/${slugify(state)}/${slugify(city)}`}
+                  className="group relative overflow-hidden rounded-2xl aspect-square flex flex-col justify-end p-6"
+                >
+                  <div className="absolute inset-0 z-0 scale-110 group-hover:scale-100 transition-transform duration-700">
+                    <img
+                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                      src={img}
+                      alt={city}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                  </div>
+                  <div className="relative z-10">
+                    <h3 className="text-white font-bold text-xl">{city}</h3>
+                    <p className="text-white/80 text-sm">Avg: {avg}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            {/* Full State/City Links below */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {stateData.map(({ state, cities }) => (
+                <div key={state} className="bg-surface-container-lowest rounded-2xl p-6 shadow-sm ghost-border hover:shadow-sunken transition-all">
+                  <h3 className="font-headline font-bold text-on-surface mb-4 flex items-center gap-2">
+                    <svg className="w-5 h-5 text-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    {state}
+                  </h3>
+                  <ul className="space-y-2">
+                    {cities.map(city => (
+                      <li key={city}>
+                        <Link
+                          href={`/salary/${slugify(state)}/${slugify(city)}`}
+                          className="text-sm text-primary hover:text-primary-container hover:underline flex items-center gap-1.5 py-0.5"
+                        >
+                          <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                          {city}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* ── POSITIONS TABLE ───────────────────────────────────────── */}
-        <div id="browse" className="mb-16 scroll-mt-8">
-          <DataTable data={allData} title="Real Nursing Positions Database" />
-        </div>
-
-        {/* ── BROWSE BY LOCATION ───────────────────────────────────── */}
-        <div className="bg-white rounded-2xl shadow-md p-8 mb-12 border border-gray-100">
-          <h2 className="text-2xl font-black text-gray-900 mb-2">Browse Salaries by Location</h2>
-          <p className="text-gray-500 mb-8">Real salary data from specific hospitals and cities nationwide.</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {stateData.map(({ state, cities }) => (
-              <div key={state} className="border border-gray-200 rounded-xl p-5 hover:border-blue-400 hover:shadow-md transition-all">
-                <h3 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
-                  <Award className="w-4 h-4 text-blue-600 shrink-0" />
-                  {state}
-                </h3>
-                <ul className="space-y-1.5">
-                  {cities.map(city => (
-                    <li key={city}>
-                      <Link
-                        href={`/salary/${slugify(state)}/${slugify(city)}`}
-                        className="text-sm text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1"
-                      >
-                        <ArrowRight className="w-3 h-3" />
-                        {city}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+        {/* ── INTEL DASHBOARD (detailed) ─────────────────── */}
+        <section className="py-24 px-6 bg-surface-container-low">
+          <div className="max-w-7xl mx-auto">
+            <IntelDashboard />
           </div>
-        </div>
-
-        {/* ── WHY USE THIS ─────────────────────────────────────────── */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-          <div className="bg-blue-600 text-white rounded-2xl p-8">
-            <Calculator className="w-8 h-8 mb-4 text-blue-200" />
-            <h3 className="text-xl font-bold mb-3">Know Your Worth</h3>
-            <p className="text-blue-100 leading-relaxed">
-              Compare salaries across cities and hospitals to negotiate confidently. BLS-based calculator with accurate estimates by specialty, location, and experience.
-            </p>
-          </div>
-          <div className="bg-red-600 text-white rounded-2xl p-8">
-            <Shield className="w-8 h-8 mb-4 text-red-200" />
-            <h3 className="text-xl font-bold mb-3">Avoid Contract Traps</h3>
-            <p className="text-red-100 leading-relaxed">
-              Identify red flags like late payments, mandatory overtime clauses, and unclear cancellation terms before signing. Spot problems before they cost you.
-            </p>
-          </div>
-          <div className="bg-emerald-600 text-white rounded-2xl p-8">
-            <Database className="w-8 h-8 mb-4 text-emerald-200" />
-            <h3 className="text-xl font-bold mb-3">Transparent Data</h3>
-            <p className="text-emerald-100 leading-relaxed">
-              No hidden fees, no recruiter pressure. Clear, actionable salary data from the Bureau of Labor Statistics to help you make the best career decision.
-            </p>
-          </div>
-          <div className="bg-indigo-600 text-white rounded-2xl p-8">
-            <TrendingUp className="w-8 h-8 mb-4 text-indigo-200" />
-            <h3 className="text-xl font-bold mb-3">2026 Market Trends</h3>
-            <p className="text-indigo-100 leading-relaxed">
-              Stay ahead with projected growth rates, emerging specialties, and compensation trends. Understand where nursing is heading and plan your career accordingly.
-            </p>
-          </div>
-        </div>
-
+        </section>
       </main>
 
-      {/* ── FOOTER ───────────────────────────────────────────────── */}
-      <footer className="bg-gray-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-            <div className="md:col-span-2">
-              <h3 className="text-xl font-bold mb-3">Nurse Salary Intelligence</h3>
-              <p className="text-gray-400 text-sm mb-4 leading-relaxed">
-                Transparent salary data and contract analysis for nursing professionals. Powered by BLS data with real market insights.
-              </p>
-              <p className="text-gray-600 text-xs">
-                Data sourced from Bureau of Labor Statistics (BLS) May 2024 with 2026 projections. For informational purposes only.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-sm font-bold mb-4 uppercase tracking-wide text-gray-400">Tools</h3>
-              <ul className="space-y-3 text-sm">
-                <li><a href="#calculator" className="text-gray-400 hover:text-white flex items-center gap-2"><Calculator className="w-4 h-4" />Salary Calculator</a></li>
-                <li><a href="#dashboard" className="text-gray-400 hover:text-white flex items-center gap-2"><TrendingUp className="w-4 h-4" />Market Dashboard</a></li>
-                <li><Link href="/audit" className="text-gray-400 hover:text-white flex items-center gap-2"><Shield className="w-4 h-4" />Contract Audit</Link></li>
-                <li><Link href="/blog" className="text-gray-400 hover:text-white flex items-center gap-2"><FileText className="w-4 h-4" />Blog</Link></li>
-                <li><a href="#browse" className="text-gray-400 hover:text-white flex items-center gap-2"><Database className="w-4 h-4" />Salary Database</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-sm font-bold mb-4 uppercase tracking-wide text-gray-400">Resources</h3>
-              <ul className="space-y-3 text-sm text-gray-400">
-                <li>BLS Data Integration</li>
-                <li>2026 Market Projections</li>
-                <li>Specialty Comparisons</li>
-                <li>State-by-State Analysis</li>
-              </ul>
-            </div>
+      {/* ── FOOTER — matching mockup ──────────────────────── */}
+      <footer className="bg-surface-container-low border-t border-outline-variant/20">
+        <div className="w-full py-12 px-6 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="flex flex-col gap-2 items-center md:items-start">
+            <div className="font-bold text-on-surface text-lg font-headline">Nurse Salary Intel</div>
+            <p className="text-on-surface-variant text-sm text-center md:text-left">&copy; 2026 Nurse Salary Intel. Empowering healthcare professionals through data.</p>
           </div>
-          <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-            <p>&copy; 2026 Nurse Salary Intelligence. For informational purposes only.</p>
-            <p className="text-xs">Salary estimates based on Bureau of Labor Statistics data. Individual results may vary.</p>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
+            <a href="#" className="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100 underline decoration-primary/30 text-sm">Privacy Policy</a>
+            <a href="#" className="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100 underline decoration-primary/30 text-sm">Terms of Service</a>
+            <a href="#" className="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100 underline decoration-primary/30 text-sm">Contact Support</a>
+            <a href="#" className="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100 underline decoration-primary/30 text-sm">Data Methodology</a>
           </div>
         </div>
       </footer>

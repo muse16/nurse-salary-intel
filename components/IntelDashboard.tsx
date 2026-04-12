@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { TrendingUp, DollarSign, Users, MapPin, Award, ArrowUpRight } from 'lucide-react';
 import { stateData, nurseSpecialties, nursingTrends2026 } from '@/lib/bls-data';
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell
@@ -13,23 +12,23 @@ export default function IntelDashboard() {
   const topStates = [...stateData]
     .sort((a, b) => b.avgSalary - a.avgSalary)
     .slice(0, 10)
-    .map(s => ({ name: s.state.length > 12 ? s.state.slice(0, 10) + '…' : s.state, fullName: s.state, salary: s.avgSalary, col: s.costOfLivingIndex, employed: s.employmentLevel }));
+    .map(s => ({ name: s.state.length > 12 ? s.state.slice(0, 10) + '\u2026' : s.state, fullName: s.state, salary: s.avgSalary, col: s.costOfLivingIndex, employed: s.employmentLevel }));
 
   const topSpecialties = [...nurseSpecialties]
     .sort((a, b) => b.avgSalary - a.avgSalary)
     .slice(0, 8)
-    .map(s => ({ name: s.name.length > 14 ? s.name.slice(0, 13) + '…' : s.name, fullName: s.name, salary: s.avgSalary, min: s.minSalary, max: s.maxSalary, desc: s.description }));
+    .map(s => ({ name: s.name.length > 14 ? s.name.slice(0, 13) + '\u2026' : s.name, fullName: s.name, salary: s.avgSalary, min: s.minSalary, max: s.maxSalary, desc: s.description }));
 
-  const stateColors = ['#1d4ed8', '#2563eb', '#3b82f6', '#60a5fa', '#7c3aed', '#8b5cf6', '#a78bfa', '#059669', '#10b981', '#34d399'];
+  const stateColors = ['#004ac6', '#0053db', '#2563eb', '#3b82f6', '#60a5fa', '#004ac6', '#0053db', '#2563eb', '#3b82f6', '#60a5fa'];
 
   const formatSalary = (v: number) => `$${(v / 1000).toFixed(0)}k`;
 
   const CustomTooltip = ({ active, payload, label }: { active?: boolean; payload?: Array<{ value: number; payload: { fullName?: string } }>; label?: string }) => {
     if (active && payload && payload.length) {
       return (
-        <div className="bg-white border border-gray-200 rounded-lg shadow-lg px-4 py-3 text-sm">
-          <div className="font-bold text-gray-900 mb-1">{payload[0]?.payload?.fullName || label}</div>
-          <div className="text-blue-600 font-semibold">${payload[0].value.toLocaleString()}/yr</div>
+        <div className="bg-surface-container-lowest ghost-border rounded-xl shadow-sunken px-4 py-3 text-sm">
+          <div className="font-bold text-on-surface mb-1">{payload[0]?.payload?.fullName || label}</div>
+          <div className="text-primary font-semibold">${payload[0].value.toLocaleString()}/yr</div>
         </div>
       );
     }
@@ -37,27 +36,17 @@ export default function IntelDashboard() {
   };
 
   return (
-    <div className="bg-white rounded-2xl shadow-md p-8 border border-gray-100">
-      <div className="flex items-center gap-3 mb-2">
-        <div className="bg-indigo-600 p-3 rounded-xl">
-          <TrendingUp className="w-6 h-6 text-white" />
-        </div>
-        <h2 className="text-3xl font-black text-gray-900">Nursing Intel Dashboard</h2>
-      </div>
-      <p className="text-gray-500 mb-8">
-        National compensation data and trends for nursing professionals. Based on BLS statistics with 2026 projections.
-      </p>
-
+    <div className="bg-surface-container-lowest rounded-2xl p-8 shadow-sm ghost-border">
       {/* Tab Navigation */}
-      <div className="flex gap-1 mb-8 bg-gray-100 rounded-xl p-1 w-fit">
+      <div className="flex gap-1 mb-8 bg-surface-container rounded-xl p-1 w-fit">
         {(['trends', 'states', 'specialties'] as const).map(view => (
           <button
             key={view}
             onClick={() => setSelectedView(view)}
             className={`px-5 py-2.5 rounded-lg font-semibold text-sm transition-all ${
               selectedView === view
-                ? 'bg-white text-blue-600 shadow-sm'
-                : 'text-gray-500 hover:text-gray-700'
+                ? 'bg-surface-container-lowest text-primary shadow-sm'
+                : 'text-on-surface-variant hover:text-on-surface'
             }`}
           >
             {view === 'trends' ? '2026 Trends' : view === 'states' ? 'Top States' : 'Specialties'}
@@ -67,59 +56,57 @@ export default function IntelDashboard() {
 
       {/* 2026 Trends View */}
       {selectedView === 'trends' && (
-        <div className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-2xl p-6">
-              <TrendingUp className="w-6 h-6 mb-3 text-blue-200" />
-              <div className="text-4xl font-black mb-1">{nursingTrends2026.nationalGrowth}%</div>
-              <div className="text-blue-200 text-sm font-medium">Projected job growth through 2026</div>
+        <div className="space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="gradient-primary text-on-primary rounded-2xl p-6">
+              <svg className="w-6 h-6 mb-3 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+              <div className="text-4xl font-headline font-extrabold mb-1">{nursingTrends2026.nationalGrowth}%</div>
+              <div className="text-white/70 text-sm font-medium">Projected job growth through 2026</div>
             </div>
-            <div className="bg-gradient-to-br from-emerald-500 to-emerald-700 text-white rounded-2xl p-6">
-              <DollarSign className="w-6 h-6 mb-3 text-emerald-200" />
-              <div className="text-4xl font-black mb-1">{nursingTrends2026.avgSalaryIncrease}%</div>
-              <div className="text-emerald-200 text-sm font-medium">Average annual salary growth</div>
+            <div className="bg-secondary-container text-on-secondary-container rounded-2xl p-6">
+              <svg className="w-6 h-6 mb-3 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <div className="text-4xl font-headline font-extrabold mb-1">{nursingTrends2026.avgSalaryIncrease}%</div>
+              <div className="opacity-70 text-sm font-medium">Average annual salary growth</div>
             </div>
-            <div className="bg-gradient-to-br from-purple-500 to-purple-700 text-white rounded-2xl p-6">
-              <Users className="w-6 h-6 mb-3 text-purple-200" />
-              <div className="text-4xl font-black mb-1">{nursingTrends2026.topGrowthSpecialties.length}</div>
-              <div className="text-purple-200 text-sm font-medium">High-demand nursing roles</div>
+            <div className="bg-tertiary-fixed text-on-tertiary-fixed rounded-2xl p-6">
+              <svg className="w-6 h-6 mb-3 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+              <div className="text-4xl font-headline font-extrabold mb-1">{nursingTrends2026.topGrowthSpecialties.length}</div>
+              <div className="opacity-70 text-sm font-medium">High-demand nursing roles</div>
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-2xl p-6">
-            <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-              <Award className="w-5 h-5 text-yellow-500" /> Fastest Growing Specialties
-            </h3>
+          <div className="bg-surface-container rounded-2xl p-6">
+            <h3 className="text-lg font-headline font-bold text-on-surface mb-6">Fastest Growing Specialties</h3>
             <div className="space-y-3">
               {nursingTrends2026.topGrowthSpecialties.map((specialty, index) => (
-                <div key={index} className="bg-white rounded-xl p-4 flex items-center justify-between border border-gray-100">
+                <div key={index} className="bg-surface-container-lowest rounded-xl p-4 flex items-center justify-between ghost-border">
                   <div className="flex items-center gap-4">
-                    <div className="bg-indigo-100 text-indigo-700 font-black w-8 h-8 rounded-full flex items-center justify-center text-sm">
+                    <div className="bg-primary-fixed text-primary font-extrabold w-8 h-8 rounded-full flex items-center justify-center text-sm">
                       {index + 1}
                     </div>
                     <div>
-                      <div className="font-bold text-gray-900">{specialty.specialty}</div>
-                      <div className="text-xs text-gray-500">Demand: {specialty.demand}</div>
+                      <div className="font-bold text-on-surface">{specialty.specialty}</div>
+                      <div className="text-xs text-on-surface-variant">Demand: {specialty.demand}</div>
                     </div>
                   </div>
-                  <div className="flex items-center gap-1 text-emerald-600">
-                    <ArrowUpRight className="w-4 h-4" />
-                    <span className="text-xl font-black">{specialty.growth}%</span>
+                  <div className="flex items-center gap-1 text-primary">
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 11l5-5m0 0l5 5m-5-5v12" /></svg>
+                    <span className="text-xl font-headline font-extrabold">{specialty.growth}%</span>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6">
-            <h3 className="text-lg font-bold text-blue-900 mb-4">2026 Market Insights</h3>
+          <div className="bg-primary-fixed/30 ghost-border rounded-2xl p-6">
+            <h3 className="text-lg font-headline font-bold text-primary mb-4">2026 Market Insights</h3>
             <ul className="space-y-3">
               {nursingTrends2026.keyInsights.map((insight, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <div className="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">
+                  <div className="gradient-primary text-on-primary rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">
                     {index + 1}
                   </div>
-                  <span className="text-gray-700 text-sm leading-relaxed">{insight}</span>
+                  <span className="text-on-surface-variant text-sm leading-relaxed">{insight}</span>
                 </li>
               ))}
             </ul>
@@ -129,20 +116,19 @@ export default function IntelDashboard() {
 
       {/* Top States View */}
       {selectedView === 'states' && (
-        <div className="space-y-6">
-          <div className="flex items-center gap-2 text-gray-600 text-sm bg-blue-50 border border-blue-200 rounded-xl px-4 py-3">
-            <MapPin className="w-4 h-4 text-blue-600 shrink-0" />
+        <div className="space-y-8">
+          <div className="flex items-center gap-2 text-on-surface-variant text-sm bg-primary-fixed/30 ghost-border rounded-xl px-4 py-3">
+            <svg className="w-4 h-4 text-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
             Average annual salary across all nursing specialties. Consider cost of living when comparing states.
           </div>
 
-          {/* Bar Chart */}
-          <div className="bg-gray-50 rounded-2xl p-6">
-            <h3 className="text-base font-bold text-gray-900 mb-4">Highest Paying States — Avg Annual Salary</h3>
+          <div className="bg-surface-container rounded-2xl p-6">
+            <h3 className="text-base font-headline font-bold text-on-surface mb-4">Highest Paying States &mdash; Avg Annual Salary</h3>
             <ResponsiveContainer width="100%" height={320}>
               <BarChart data={topStates} layout="vertical" margin={{ left: 10, right: 40, top: 0, bottom: 0 }}>
-                <XAxis type="number" tickFormatter={formatSalary} tick={{ fontSize: 11, fill: '#6b7280' }} axisLine={false} tickLine={false} />
-                <YAxis type="category" dataKey="name" tick={{ fontSize: 12, fill: '#374151', fontWeight: 600 }} axisLine={false} tickLine={false} width={90} />
-                <Tooltip content={<CustomTooltip />} cursor={{ fill: '#f3f4f6' }} />
+                <XAxis type="number" tickFormatter={formatSalary} tick={{ fontSize: 11, fill: '#737686' }} axisLine={false} tickLine={false} />
+                <YAxis type="category" dataKey="name" tick={{ fontSize: 12, fill: '#191c1d', fontWeight: 600 }} axisLine={false} tickLine={false} width={90} />
+                <Tooltip content={<CustomTooltip />} cursor={{ fill: '#f3f4f5' }} />
                 <Bar dataKey="salary" radius={[0, 6, 6, 0]} maxBarSize={28}>
                   {topStates.map((_, index) => (
                     <Cell key={index} fill={stateColors[index % stateColors.length]} />
@@ -152,32 +138,31 @@ export default function IntelDashboard() {
             </ResponsiveContainer>
           </div>
 
-          <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4">
-            <h4 className="font-bold text-yellow-900 mb-1 text-sm">Cost of Living Considerations</h4>
-            <p className="text-xs text-gray-700">COL Index: 100 = national average. A higher salary in a high COL area may have less purchasing power than a lower salary elsewhere.</p>
+          <div className="bg-tertiary-fixed/30 ghost-border rounded-xl p-4">
+            <h4 className="font-bold text-on-tertiary-container mb-1 text-sm">Cost of Living Considerations</h4>
+            <p className="text-xs text-on-surface-variant">COL Index: 100 = national average. A higher salary in a high COL area may have less purchasing power than a lower salary elsewhere.</p>
           </div>
         </div>
       )}
 
       {/* Specialties View */}
       {selectedView === 'specialties' && (
-        <div className="space-y-6">
-          <div className="flex items-center gap-2 text-gray-600 text-sm bg-emerald-50 border border-emerald-200 rounded-xl px-4 py-3">
-            <Award className="w-4 h-4 text-emerald-600 shrink-0" />
+        <div className="space-y-8">
+          <div className="flex items-center gap-2 text-on-surface-variant text-sm bg-secondary-container/30 ghost-border rounded-xl px-4 py-3">
+            <svg className="w-4 h-4 text-secondary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
             National average salaries for major nursing specialties. Actual compensation varies by location and experience.
           </div>
 
-          {/* Bar Chart */}
-          <div className="bg-gray-50 rounded-2xl p-6">
-            <h3 className="text-base font-bold text-gray-900 mb-4">Nursing Specialties — Avg Annual Salary</h3>
+          <div className="bg-surface-container rounded-2xl p-6">
+            <h3 className="text-base font-headline font-bold text-on-surface mb-4">Nursing Specialties &mdash; Avg Annual Salary</h3>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={topSpecialties} layout="vertical" margin={{ left: 10, right: 40, top: 0, bottom: 0 }}>
-                <XAxis type="number" tickFormatter={formatSalary} tick={{ fontSize: 11, fill: '#6b7280' }} axisLine={false} tickLine={false} />
-                <YAxis type="category" dataKey="name" tick={{ fontSize: 12, fill: '#374151', fontWeight: 600 }} axisLine={false} tickLine={false} width={90} />
-                <Tooltip content={<CustomTooltip />} cursor={{ fill: '#f3f4f6' }} />
+                <XAxis type="number" tickFormatter={formatSalary} tick={{ fontSize: 11, fill: '#737686' }} axisLine={false} tickLine={false} />
+                <YAxis type="category" dataKey="name" tick={{ fontSize: 12, fill: '#191c1d', fontWeight: 600 }} axisLine={false} tickLine={false} width={90} />
+                <Tooltip content={<CustomTooltip />} cursor={{ fill: '#f3f4f5' }} />
                 <Bar dataKey="salary" radius={[0, 6, 6, 0]} maxBarSize={28}>
                   {topSpecialties.map((_, index) => (
-                    <Cell key={index} fill={['#059669', '#10b981', '#34d399', '#6ee7b7', '#1d4ed8', '#3b82f6', '#7c3aed', '#a78bfa'][index % 8]} />
+                    <Cell key={index} fill={['#004ac6', '#0053db', '#2563eb', '#3b82f6', '#004ac6', '#0053db', '#2563eb', '#3b82f6'][index % 8]} />
                   ))}
                 </Bar>
               </BarChart>
@@ -186,23 +171,23 @@ export default function IntelDashboard() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {topSpecialties.map((specialty, index) => (
-              <div key={specialty.fullName} className="bg-white border border-gray-200 rounded-xl p-5 hover:border-emerald-400 hover:shadow-md transition-all">
+              <div key={specialty.fullName} className="bg-surface-container-lowest ghost-border rounded-xl p-5 hover:shadow-sunken transition-all">
                 <div className="flex items-start justify-between mb-2">
                   <div className="flex-1">
-                    <div className="font-bold text-gray-900 text-sm">{specialty.fullName}</div>
-                    <div className="text-xs text-gray-500 mt-0.5">{specialty.desc}</div>
+                    <div className="font-bold text-on-surface text-sm">{specialty.fullName}</div>
+                    <div className="text-xs text-on-surface-variant mt-0.5">{specialty.desc}</div>
                   </div>
-                  <div className={`ml-2 font-bold px-2 py-1 rounded-lg text-xs ${
-                    index === 0 ? 'bg-yellow-100 text-yellow-700' :
-                    index === 1 ? 'bg-gray-100 text-gray-600' :
-                    'bg-emerald-50 text-emerald-600'
+                  <div className={`ml-2 font-bold px-2.5 py-1 rounded-full text-xs ${
+                    index === 0 ? 'bg-tertiary-fixed text-on-tertiary-container' :
+                    index === 1 ? 'bg-secondary-container text-on-secondary-container' :
+                    'bg-primary-fixed text-primary'
                   }`}>#{index + 1}</div>
                 </div>
-                <div className="text-xl font-black text-emerald-600 mb-1">${specialty.salary.toLocaleString()}</div>
-                <div className="text-xs text-gray-400">${specialty.min.toLocaleString()} – ${specialty.max.toLocaleString()}</div>
-                <div className="w-full bg-gray-100 rounded-full h-1.5 mt-2">
+                <div className="text-xl font-headline font-extrabold text-primary mb-1">${specialty.salary.toLocaleString()}</div>
+                <div className="text-xs text-on-surface-variant">${specialty.min.toLocaleString()} &ndash; ${specialty.max.toLocaleString()}</div>
+                <div className="w-full bg-surface-container rounded-full h-1.5 mt-3">
                   <div
-                    className="bg-gradient-to-r from-emerald-400 to-emerald-600 h-1.5 rounded-full"
+                    className="gradient-primary h-1.5 rounded-full opacity-60"
                     style={{ width: `${((specialty.salary - specialty.min) / (specialty.max - specialty.min)) * 100}%` }}
                   />
                 </div>
