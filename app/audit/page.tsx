@@ -146,6 +146,11 @@ export default function AuditPage() {
               <span className="font-semibold text-red-600">{redFlagCount} red flag{redFlagCount !== 1 ? 's' : ''} found</span>
             )}
           </div>
+          <p className="mt-2 text-sm text-gray-700 drop-shadow-sm">
+            {reviewedCount < totalCount
+              ? `Complete all ${totalCount} items to see your results instantly`
+              : 'See your results below'}
+          </p>
         </div>
 
         {/* Checklist */}
