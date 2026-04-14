@@ -9,6 +9,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/audit',
+        destination: '/contract-audit',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
