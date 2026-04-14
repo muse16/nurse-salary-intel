@@ -10,7 +10,8 @@ const navLinks = [
   { label: 'By Specialty', href: '/nursing-salary/by-specialty-2026' },
   { label: 'By State', href: '/rn-salary-by-state' },
   { label: 'Negotiation', href: '/salary-negotiation/nurse-playbook' },
-  { label: 'Contract Audit', href: '/contract-audit' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Contract Audit', href: '/audit' },
 ];
 
 export default function SiteNav() {
