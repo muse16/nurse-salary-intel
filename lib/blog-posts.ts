@@ -1219,7 +1219,6 @@ Thanks,<br>
   },
   {
     slug: 'rn-salary-by-state-2026',
-    draft: true,
     title: 'RN Salary by State 2026: Complete 50-State Guide',
     date: '2026-04-15',
     excerpt: 'What registered nurses actually earn in every state in 2026 — base pay, cost-of-living adjusted rankings, and where new grads should consider relocating.',
@@ -1227,7 +1226,7 @@ Thanks,<br>
     readTime: '14 min read',
     focusKeyword: 'RN salary by state 2026',
     secondaryKeywords: ['nurse salary by state', 'highest paying states for nurses', 'registered nurse pay by state'],
-    coverImage: '/blog/rn-salary-by-state-2026.jpg',
+    coverImage: '/blog/rn-salary-by-state-2026.png',
     imageAlt: 'RN salary by state 2026 map showing registered nurse pay across all 50 states',
     metaDescription: 'Complete 2026 guide to RN salary in every state. See base pay, hourly rates, cost-of-living adjusted rankings, and where registered nurses earn the most real money.',
     content: `
