@@ -1431,7 +1431,6 @@ Thanks,<br>
   },
   {
     slug: 'np-salary-guide-2026',
-    draft: true,
     title: 'Nurse Practitioner Salary Guide 2026: Every Specialty Ranked',
     date: '2026-04-15',
     excerpt: 'NP pay varies by $70,000+ across specialties. Here\'s what every NP track earns in 2026 — plus which pay more than others for the same credential.',
@@ -1439,7 +1438,7 @@ Thanks,<br>
     readTime: '10 min read',
     focusKeyword: 'nurse practitioner salary by specialty 2026',
     secondaryKeywords: ['NP salary 2026', 'highest paying NP specialties', 'nurse practitioner pay 2026'],
-    coverImage: '/blog/np-salary-guide-2026.jpg',
+    coverImage: '/blog/np-salary-guide-2026.png',
     imageAlt: 'Nurse practitioner salary by specialty 2026 chart ranking NP tracks',
     metaDescription: 'The 2026 nurse practitioner salary guide: every NP specialty ranked, state-by-state pay, and which tracks offer the highest real return on a DNP or MSN-NP.',
     content: `
