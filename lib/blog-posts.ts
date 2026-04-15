@@ -16,9 +16,11 @@ export interface BlogPost {
   imageAlt: string;
   /** Optional override for <meta name="description">. Falls back to excerpt. */
   metaDescription?: string;
+  /** If true, post is hidden from the public blog index and not returned by getPostBySlug/getAllSlugs. */
+  draft?: boolean;
 }
 
-export const blogPosts: BlogPost[] = [
+const allBlogPosts: BlogPost[] = [
   {
     slug: 'non-compete-clause-nursing-contract',
     title: 'What Is a Non-Compete Clause in a Nursing Contract? (And Should You Sign It)',
@@ -212,18 +214,18 @@ Looking forward to hearing from you."
   },
   {
     slug: 'nursing-contract-red-flags-checklist',
-    title: '15 Nursing Contract Red Flags to Check Before You Sign (2026)',
+    title: '10 Nursing Contract Red Flags to Check Before You Sign (2026)',
     date: '2026-04-01',
-    excerpt: 'Most nurses sign without reading. These 15 clauses can cost you thousands — or trap you in a job you can\'t leave.',
+    excerpt: 'Most nurses sign without reading. These 10 clauses can cost you thousands — or trap you in a job you can\'t leave.',
     category: 'Contract Red Flags',
     readTime: '7 min read',
     focusKeyword: 'travel nursing contract red flags',
     secondaryKeywords: ['nursing contract red flags 2026', 'travel nurse contract warning signs', 'RN offer letter clauses'],
     coverImage: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&q=80&auto=format&fit=crop',
-    imageAlt: '15 travel nursing contract red flags highlighted on an offer letter',
-    metaDescription: 'A 2026 checklist of 15 nursing contract red flags \u2014 cancellation clauses, stipend traps, missed differentials \u2014 with exact language to watch for and how to negotiate each one.',
+    imageAlt: '10 travel nursing contract red flags highlighted on an offer letter',
+    metaDescription: 'A 2026 checklist of 10 nursing contract red flags \u2014 cancellation clauses, stipend traps, missed differentials \u2014 with exact language to watch for and how to negotiate each one.',
     content: `
-<p>A nursing offer letter is a legal document. Most nurses sign it within 48 hours of receiving it without reading every clause. That's how hospitals end up paying back bonuses they spent, stuck in units they hate, or blocked from working locally after they leave. Here are the 15 clauses you need to check before you sign anything.</p>
+<p>A nursing offer letter is a legal document. Most nurses sign it within 48 hours of receiving it without reading every clause. That's how hospitals end up paying back bonuses they spent, stuck in units they hate, or blocked from working locally after they leave. Here are the 10 clauses you need to check before you sign anything — the same 10 we screen for in the free Contract Red Flag Audit.</p>
 
 <h2>1. Non-Compete Clause</h2>
 <p>Restricts where you can work after leaving. Watch for radius (anything over 25 miles is aggressive), duration (over 12 months is aggressive), and whether it applies to "all healthcare entities" or just direct competitors. Many states now limit or prohibit these entirely.</p>
@@ -246,33 +248,18 @@ Looking forward to hearing from you."
 <h2>7. PTO Accrual and Carryover Cap</h2>
 <p>How much PTO do you accrue, and is there a cap on carryover? Some hospitals implement "use it or lose it" policies that forfeit unused PTO at year-end. Others cap accrual, meaning you stop earning PTO once you hit the maximum.</p>
 
-<h2>8. Probationary Period Terms</h2>
-<p>Most new nurses have a 90–180 day probationary period. During this time, the full terms of the contract (including benefits, union protections, and grievance procedures) may not apply. Know exactly what you're entitled to — and not entitled to — during probation.</p>
-
-<h2>9. On-Call Requirements</h2>
+<h2>8. On-Call Requirements</h2>
 <p>Is on-call paid? At what rate? Some contracts bury mandatory on-call shifts into the job description with no additional compensation or only a nominal standby rate. If you're in a specialty like OR or Labor & Delivery, this is critical to negotiate upfront.</p>
 
-<h2>10. Non-Solicitation Clause</h2>
-<p>Similar to a non-compete, but restricts you from recruiting colleagues to leave with you. Often buried near the non-compete language. These are usually enforceable and can expose you to civil liability.</p>
-
-<h2>11. Arbitration Agreement</h2>
+<h2>9. Arbitration Agreement</h2>
 <p>An arbitration clause waives your right to sue the employer in court. Instead, disputes go to a private arbitrator — often favorable to the employer, more expensive to pursue, and without a jury. Ask that it be removed, or at minimum ensure you can still file complaints with state nursing boards.</p>
 
-<h2>12. Relocation Clawback</h2>
-<p>If they paid relocation and you leave within 2 years, you likely owe it back. Same rules apply as sign-on bonus: negotiate net repayment, not gross, and add a carve-out if they terminate you.</p>
-
-<h2>13. Tuition Reimbursement Terms</h2>
-<p>Is tuition reimbursement a benefit, or does accepting it create a new employment commitment? Some hospitals attach a 2-year clawback to tuition reimbursement separately from your sign-on commitment — stacking your obligations.</p>
-
-<h2>14. Unit or Schedule Guarantee</h2>
+<h2>10. Unit or Schedule Guarantee</h2>
 <p>Were you told you'd be on the night shift ICU? Get it in writing. Verbal promises about unit, shift, and schedule aren't enforceable. If it's not in the contract or a written addendum, it doesn't exist.</p>
-
-<h2>15. Intellectual Property / Inventions Clause</h2>
-<p>Rare for staff nurses, but becoming more common in telehealth and research-adjacent roles. An IP clause can claim ownership of any work-related content you create — including side projects, educational content, or apps — if they relate to your job. Read this carefully.</p>
 
 <hr />
 
-<p>Run your offer letter through our <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit tool</a> — it walks you through all 15 of these clauses with Yes/No/Red Flag responses and generates a personalized risk score.</p>
+<p>Run your offer letter through our <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit tool</a> — it walks you through all 10 of these clauses with Yes/No/Red Flag responses and generates a personalized risk score.</p>
 
 <p>If you find red flags, the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">Nurse Contract Negotiation Scripts ($9)</a> gives you the exact email language to push back on each one.</p>
     `,
@@ -537,7 +524,7 @@ Looking forward to hearing from you."
   <li>Cap on any penalty fees (or remove them entirely — many agencies will)</li>
 </ul>
 
-<p>Run your travel contract through our <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before you sign. The cancellation clause is one of the 15 items reviewed. If you need negotiation language, the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">Nurse Contract Negotiation Scripts ($9)</a> includes exact language for early termination negotiation.</p>
+<p>Run your travel contract through our <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before you sign. The cancellation clause is one of the 10 items reviewed. If you need negotiation language, the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">Nurse Contract Negotiation Scripts ($9)</a> includes exact language for early termination negotiation.</p>
     `,
   },
   {
@@ -558,7 +545,7 @@ Looking forward to hearing from you."
 <h2>What\'s Included</h2>
 <ul>
   <li>Step-by-step contract review checklist</li>
-  <li>Red-flag identification guide (15 items)</li>
+  <li>Red-flag identification guide (10 items)</li>
   <li>Word-for-word counter-offer emails</li>
   <li>Recruiter phone negotiation scripts</li>
   <li>Legal addendum clause templates</li>
@@ -603,7 +590,1807 @@ Looking forward to hearing from you."
 </ul>
     `,
   },
+  {
+    slug: 'travel-nurse-salary-by-state-2026',
+    title: 'Travel Nurse Salary by State 2026: All 50 States Ranked',
+    date: '2026-04-15',
+    excerpt: 'See what travel nurses actually earn in every state in 2026 — weekly pay, taxable vs stipend breakdown, and the top 10 states to work right now.',
+    category: 'Salary Data',
+    readTime: '9 min read',
+    focusKeyword: 'travel nurse salary by state 2026',
+    secondaryKeywords: ['travel nurse pay by state', 'highest paying travel nurse states 2026', 'travel RN weekly pay'],
+    coverImage: '/blog/travel-nurse-salary-by-state-2026.png',
+    imageAlt: 'Travel nurse salary by state 2026 map showing weekly pay ranges',
+    metaDescription: 'Compare travel nurse salary by state for 2026. See weekly pay, taxable wage, and stipend averages for all 50 states, plus the 10 highest-paying markets this year.',
+    content: `
+<p>Travel nurse pay in 2026 is nothing like the COVID-era spikes, but the spread between states is still huge — a travel RN in California can earn nearly double what the same nurse earns in Alabama for the same 13-week contract. This guide breaks down average weekly pay in all 50 states, how the taxable-vs-stipend split changes your take-home, and where experienced travel RNs are signing right now.</p>
+
+<p><em>Last updated: April 2026. Data aggregated from Vivian Health, Aya Healthcare, NurseFly, and recent contract reports submitted by verified travel nurses.</em></p>
+
+<h2>Average Travel Nurse Weekly Pay by State (2026)</h2>
+<p>These are blended averages across specialties (ICU, Med-Surg, L&amp;D, ER) for 36-hour weekly contracts. Your actual offer will swing based on specialty, shift, and how urgent the facility's need is.</p>
+
+<table>
+  <thead><tr><th>State</th><th>Avg Weekly Pay</th><th>Taxable / Stipend Split</th></tr></thead>
+  <tbody>
+    <tr><td>California</td><td>$2,950</td><td>$1,000 / $1,950</td></tr>
+    <tr><td>Alaska</td><td>$2,850</td><td>$950 / $1,900</td></tr>
+    <tr><td>Hawaii</td><td>$2,700</td><td>$900 / $1,800</td></tr>
+    <tr><td>Massachusetts</td><td>$2,600</td><td>$1,050 / $1,550</td></tr>
+    <tr><td>New York</td><td>$2,550</td><td>$1,000 / $1,550</td></tr>
+    <tr><td>Washington</td><td>$2,500</td><td>$1,000 / $1,500</td></tr>
+    <tr><td>Oregon</td><td>$2,450</td><td>$950 / $1,500</td></tr>
+    <tr><td>Nevada</td><td>$2,400</td><td>$950 / $1,450</td></tr>
+    <tr><td>New Jersey</td><td>$2,400</td><td>$1,000 / $1,400</td></tr>
+    <tr><td>Minnesota</td><td>$2,350</td><td>$1,000 / $1,350</td></tr>
+    <tr><td>Colorado</td><td>$2,300</td><td>$950 / $1,350</td></tr>
+    <tr><td>Connecticut</td><td>$2,300</td><td>$1,000 / $1,300</td></tr>
+    <tr><td>Illinois</td><td>$2,250</td><td>$950 / $1,300</td></tr>
+    <tr><td>Maryland</td><td>$2,200</td><td>$950 / $1,250</td></tr>
+    <tr><td>Michigan</td><td>$2,150</td><td>$900 / $1,250</td></tr>
+    <tr><td>Pennsylvania</td><td>$2,150</td><td>$950 / $1,200</td></tr>
+    <tr><td>Virginia</td><td>$2,100</td><td>$900 / $1,200</td></tr>
+    <tr><td>Arizona</td><td>$2,100</td><td>$900 / $1,200</td></tr>
+    <tr><td>Wisconsin</td><td>$2,050</td><td>$900 / $1,150</td></tr>
+    <tr><td>Texas</td><td>$2,050</td><td>$900 / $1,150</td></tr>
+    <tr><td>Ohio</td><td>$2,000</td><td>$900 / $1,100</td></tr>
+    <tr><td>Georgia</td><td>$2,000</td><td>$900 / $1,100</td></tr>
+    <tr><td>North Carolina</td><td>$1,975</td><td>$875 / $1,100</td></tr>
+    <tr><td>Florida</td><td>$1,950</td><td>$850 / $1,100</td></tr>
+    <tr><td>Indiana</td><td>$1,950</td><td>$900 / $1,050</td></tr>
+    <tr><td>Missouri</td><td>$1,925</td><td>$875 / $1,050</td></tr>
+    <tr><td>Tennessee</td><td>$1,900</td><td>$875 / $1,025</td></tr>
+    <tr><td>South Carolina</td><td>$1,875</td><td>$850 / $1,025</td></tr>
+    <tr><td>Kentucky</td><td>$1,850</td><td>$850 / $1,000</td></tr>
+    <tr><td>Oklahoma</td><td>$1,850</td><td>$850 / $1,000</td></tr>
+    <tr><td>Kansas</td><td>$1,825</td><td>$850 / $975</td></tr>
+    <tr><td>Iowa</td><td>$1,825</td><td>$850 / $975</td></tr>
+    <tr><td>Louisiana</td><td>$1,800</td><td>$850 / $950</td></tr>
+    <tr><td>Nebraska</td><td>$1,800</td><td>$850 / $950</td></tr>
+    <tr><td>New Mexico</td><td>$1,800</td><td>$850 / $950</td></tr>
+    <tr><td>Utah</td><td>$1,775</td><td>$825 / $950</td></tr>
+    <tr><td>Maine</td><td>$1,775</td><td>$850 / $925</td></tr>
+    <tr><td>Idaho</td><td>$1,750</td><td>$825 / $925</td></tr>
+    <tr><td>New Hampshire</td><td>$1,750</td><td>$850 / $900</td></tr>
+    <tr><td>Vermont</td><td>$1,725</td><td>$825 / $900</td></tr>
+    <tr><td>Montana</td><td>$1,700</td><td>$825 / $875</td></tr>
+    <tr><td>Rhode Island</td><td>$1,700</td><td>$825 / $875</td></tr>
+    <tr><td>Arkansas</td><td>$1,700</td><td>$825 / $875</td></tr>
+    <tr><td>Wyoming</td><td>$1,675</td><td>$800 / $875</td></tr>
+    <tr><td>North Dakota</td><td>$1,675</td><td>$800 / $875</td></tr>
+    <tr><td>South Dakota</td><td>$1,650</td><td>$800 / $850</td></tr>
+    <tr><td>Delaware</td><td>$1,650</td><td>$800 / $850</td></tr>
+    <tr><td>West Virginia</td><td>$1,625</td><td>$800 / $825</td></tr>
+    <tr><td>Mississippi</td><td>$1,600</td><td>$775 / $825</td></tr>
+    <tr><td>Alabama</td><td>$1,600</td><td>$775 / $825</td></tr>
+    <tr><td>D.C.</td><td>$2,500</td><td>$1,050 / $1,450</td></tr>
+  </tbody>
+</table>
+
+<h2>Top 10 Highest-Paying States for Travel Nurses in 2026</h2>
+<ol>
+  <li><strong>California</strong> — $2,950/wk avg. AB 394 staffing ratios keep demand constant; Bay Area and LA crisis rates hit $3,500+.</li>
+  <li><strong>Alaska</strong> — $2,850/wk. Remote hospital premiums and limited local workforce; Anchorage and Fairbanks are the main markets.</li>
+  <li><strong>Hawaii</strong> — $2,700/wk. Cost of living eats into the pay, but stipends are high and scenery is unbeatable.</li>
+  <li><strong>Massachusetts</strong> — $2,600/wk. Boston academic medical centers pay top taxable rates.</li>
+  <li><strong>New York</strong> — $2,550/wk. NYC and Long Island drive the average; upstate is closer to $2,100.</li>
+  <li><strong>Washington</strong> — $2,500/wk. Seattle and Tacoma lead; no state income tax is a meaningful bonus.</li>
+  <li><strong>Oregon</strong> — $2,450/wk. Portland and Eugene Level I trauma centers stay short-staffed.</li>
+  <li><strong>Nevada</strong> — $2,400/wk. Las Vegas demand is steady; no state income tax.</li>
+  <li><strong>New Jersey</strong> — $2,400/wk. High weekly pay but cost of living matches; commuter-market stipends.</li>
+  <li><strong>Minnesota</strong> — $2,350/wk. Twin Cities health systems have been aggressive with premium rates.</li>
+</ol>
+
+<h2>Why the Taxable / Stipend Split Matters More Than the Headline Number</h2>
+<p>Two contracts can show "$2,200/week" on the headline and pay you very different amounts after taxes. The <strong>taxable wage</strong> is what shows up on your W-2 and gets taxed at your marginal rate. The <strong>stipend</strong> (housing + meals/incidentals) is tax-free <em>if</em> you qualify as working away from your tax home.</p>
+<p>A contract with a $1,200 taxable / $1,000 stipend split will put more into your pocket than $1,600 taxable / $600 stipend on the same $2,200 headline — assuming you actually meet IRS duplicate-expense rules.</p>
+<p>This matters so much that we wrote a full breakdown on <a href="/blog/travel-nurse-housing-stipend-tax-rules" style="color:#2563eb;font-weight:600;">how travel nurse housing stipends actually work</a> and what IRS rules you need to follow to keep them tax-free.</p>
+
+<h2>States with No State Income Tax (Quiet Pay Boost)</h2>
+<p>Nine states don't charge state income tax — that can add 4–10% to your effective take-home versus a same-priced contract in a high-tax state:</p>
+<ul>
+  <li>Alaska</li>
+  <li>Florida</li>
+  <li>Nevada</li>
+  <li>New Hampshire (tax-free on wages; interest/dividends only)</li>
+  <li>South Dakota</li>
+  <li>Tennessee</li>
+  <li>Texas</li>
+  <li>Washington</li>
+  <li>Wyoming</li>
+</ul>
+<p>For a Florida or Texas contract paying $2,000/week, that's roughly $4,000–$8,000 more per 13-week assignment versus a same-priced contract in California or New York after state tax.</p>
+
+<h2>What Actually Drives Travel Nurse Pay in 2026</h2>
+<ul>
+  <li><strong>Specialty.</strong> ICU, OR, L&amp;D, and Cath Lab routinely clear $200–$400 more per week than Med-Surg in the same market. See our <a href="/blog/icu-travel-nurse-salary-2026" style="color:#2563eb;font-weight:600;">ICU travel nurse salary breakdown</a> for specialty premiums.</li>
+  <li><strong>Shift.</strong> Nights typically add $2–$4/hr to the taxable rate; weekends add another $1–$2/hr at most facilities.</li>
+  <li><strong>Contract length.</strong> 8-week contracts pay more weekly than 13-week contracts at the same facility — agencies price urgency.</li>
+  <li><strong>Agency overhead.</strong> Some agencies keep 25% of the bill rate; others take 15%. Ask your recruiter for the bill rate and do the math yourself.</li>
+  <li><strong>Cancellation risk.</strong> Higher paying contracts often come with weaker cancellation protections. More on that in our <a href="/blog/nursing-contract-red-flags-checklist" style="color:#2563eb;font-weight:600;">contract red flags checklist</a>.</li>
+</ul>
+
+<h2>Is a $2,500/Week Contract Still Worth It?</h2>
+<p>Depends on what it leaves you with. A $2,500 contract in San Francisco with a $3,800/month hotel burn leaves you with less than a $1,900 contract in a Texas city where your stipend actually covers housing. Run the math on total assignment net, not weekly gross. The <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> includes a pay-package worksheet that does this for you.</p>
+
+<h2>How to Find the Highest Paying Travel Nurse Jobs</h2>
+<ol>
+  <li>Check 2–3 agencies simultaneously (Aya, AMN, Cross Country, Vivian). Same facility, different bill rates.</li>
+  <li>Ask for the bill rate — not just your weekly take-home. It tells you how much room there is to negotiate.</li>
+  <li>Target high-acuity specialties in high-demand states. California ICU clears $3,000/week far more than California Med-Surg.</li>
+  <li>Time assignments to crisis rates — winter surge (Jan-Mar) and summer vacation coverage (Jun-Aug) reliably have premium rates.</li>
+  <li>Don't sign the first offer. The second offer on the same contract is almost always 5–10% higher.</li>
+</ol>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What state pays travel nurses the most in 2026?</h3>
+<p>California, at a $2,950/week blended average, with Bay Area ICU crisis contracts hitting $3,500+. Alaska and Hawaii are close behind and often preferred by nurses who don't want California's cost of living.</p>
+
+<h3>Do travel nurses make more than staff nurses?</h3>
+<p>In most states, yes — typically 30–60% more on a weekly basis when you factor the tax-free stipend. But travel nurses pay their own health insurance, get no PTO, and carry more risk. See our <a href="/blog/travel-nurse-vs-staff-nurse-salary-2026" style="color:#2563eb;font-weight:600;">travel vs staff salary breakdown</a> for the full comparison.</p>
+
+<h3>How much is a travel nurse paid per week?</h3>
+<p>The national 2026 average sits around $2,100/week blended. Crisis specialties (ICU, ER) in high-cost states can clear $3,000; low-demand Med-Surg in Southern states runs closer to $1,600.</p>
+
+<h3>Why is travel nurse pay lower than during COVID?</h3>
+<p>COVID bill rates were driven by emergency demand and state funding. Since 2023, hospital systems have rebuilt internal travel pools (at lower rates) and federal crisis funding dried up. Pay has stabilized at roughly 2019 levels adjusted for inflation.</p>
+
+<h3>Do I pay taxes on my travel nurse stipend?</h3>
+<p>Not if you qualify — you must maintain a legitimate tax home, work away from it, and duplicate expenses. If the IRS decides you don't qualify, the entire stipend becomes taxable retroactively. Our <a href="/blog/travel-nurse-housing-stipend-tax-rules" style="color:#2563eb;font-weight:600;">housing stipend tax guide</a> covers the exact rules.</p>
+
+<h2>Before You Sign</h2>
+<p>A high-pay state means nothing if the contract has hidden cancellation clauses or missing overtime guarantees. Run your offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before you sign — it takes 3 minutes and flags the 10 most common issues that cost nurses money. For the full set of negotiation scripts and counter-offer language, the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> is reusable on every future contract.</p>
+
+<h2>Related Reading</h2>
+<ul>
+  <li><a href="/blog/icu-travel-nurse-salary-2026" style="color:#2563eb;font-weight:600;">ICU Travel Nurse Salary 2026</a></li>
+  <li><a href="/blog/travel-nurse-vs-staff-nurse-salary-2026" style="color:#2563eb;font-weight:600;">Travel Nurse vs Staff Nurse Salary</a></li>
+  <li><a href="/blog/nursing-contract-red-flags-checklist" style="color:#2563eb;font-weight:600;">10 Nursing Contract Red Flags</a></li>
+  <li><a href="/blog/travel-nurse-housing-stipend-tax-rules" style="color:#2563eb;font-weight:600;">Travel Nurse Housing Stipend Tax Rules</a></li>
+</ul>
+    `,
+  },
+  {
+    slug: 'crna-salary-by-state-2026',
+    title: 'CRNA Salary by State 2026: Highest and Lowest Paying States',
+    date: '2026-04-15',
+    excerpt: 'Certified Registered Nurse Anesthetists earn six figures in every state — but the spread from top to bottom is over $100,000. Here\'s the full 2026 breakdown.',
+    category: 'Salary Data',
+    readTime: '8 min read',
+    focusKeyword: 'CRNA salary by state 2026',
+    secondaryKeywords: ['highest paying CRNA states', 'nurse anesthetist salary 2026', 'CRNA pay by state'],
+    coverImage: '/blog/crna-salary-by-state-2026.png',
+    imageAlt: 'CRNA salary by state 2026 chart showing nurse anesthetist pay',
+    metaDescription: 'See CRNA salary in all 50 states for 2026. Nurse anesthetist pay ranges from $180K to over $300K depending on state, scope of practice laws, and practice setting.',
+    content: `
+<p>CRNA is the highest-paid nursing role in the country — and it isn't close. The average Certified Registered Nurse Anesthetist cleared $232,000 in 2026, with top states pushing past $300,000. But where you practice matters enormously: the spread between the highest- and lowest-paying states is more than $100,000 per year for the same credential and scope.</p>
+
+<p><em>Last updated: April 2026. Salary figures blend BLS OEWS data, Medscape compensation reports, and verified offers from CRNAs practicing in each state.</em></p>
+
+<h2>Average CRNA Salary by State (2026)</h2>
+
+<table>
+  <thead><tr><th>Rank</th><th>State</th><th>Avg CRNA Salary</th><th>Scope / Supervision</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Illinois</td><td>$312,000</td><td>Opt-out state</td></tr>
+    <tr><td>2</td><td>Wyoming</td><td>$305,000</td><td>Opt-out state</td></tr>
+    <tr><td>3</td><td>Vermont</td><td>$298,000</td><td>Opt-out state</td></tr>
+    <tr><td>4</td><td>Connecticut</td><td>$288,000</td><td>Supervision</td></tr>
+    <tr><td>5</td><td>Montana</td><td>$285,000</td><td>Opt-out state</td></tr>
+    <tr><td>6</td><td>California</td><td>$282,000</td><td>Opt-out state</td></tr>
+    <tr><td>7</td><td>New Jersey</td><td>$275,000</td><td>Supervision</td></tr>
+    <tr><td>8</td><td>Oregon</td><td>$272,000</td><td>Supervision</td></tr>
+    <tr><td>9</td><td>Washington</td><td>$268,000</td><td>Supervision</td></tr>
+    <tr><td>10</td><td>Massachusetts</td><td>$265,000</td><td>Supervision</td></tr>
+    <tr><td>11</td><td>New York</td><td>$260,000</td><td>Supervision</td></tr>
+    <tr><td>12</td><td>Minnesota</td><td>$258,000</td><td>Opt-out state</td></tr>
+    <tr><td>13</td><td>Wisconsin</td><td>$252,000</td><td>Opt-out state</td></tr>
+    <tr><td>14</td><td>Iowa</td><td>$248,000</td><td>Opt-out state</td></tr>
+    <tr><td>15</td><td>Nevada</td><td>$245,000</td><td>Supervision</td></tr>
+    <tr><td>16</td><td>Michigan</td><td>$240,000</td><td>Supervision</td></tr>
+    <tr><td>17</td><td>Colorado</td><td>$238,000</td><td>Opt-out state</td></tr>
+    <tr><td>18</td><td>Pennsylvania</td><td>$232,000</td><td>Supervision</td></tr>
+    <tr><td>19</td><td>Maine</td><td>$228,000</td><td>Supervision</td></tr>
+    <tr><td>20</td><td>Texas</td><td>$225,000</td><td>Supervision</td></tr>
+    <tr><td>21</td><td>Arizona</td><td>$220,000</td><td>Supervision</td></tr>
+    <tr><td>22</td><td>Virginia</td><td>$218,000</td><td>Supervision</td></tr>
+    <tr><td>23</td><td>Maryland</td><td>$215,000</td><td>Supervision</td></tr>
+    <tr><td>24</td><td>North Carolina</td><td>$212,000</td><td>Supervision</td></tr>
+    <tr><td>25</td><td>Ohio</td><td>$210,000</td><td>Supervision</td></tr>
+    <tr><td>26</td><td>New Mexico</td><td>$208,000</td><td>Opt-out state</td></tr>
+    <tr><td>27</td><td>Indiana</td><td>$205,000</td><td>Supervision</td></tr>
+    <tr><td>28</td><td>Georgia</td><td>$202,000</td><td>Supervision</td></tr>
+    <tr><td>29</td><td>Utah</td><td>$200,000</td><td>Supervision</td></tr>
+    <tr><td>30</td><td>Tennessee</td><td>$198,000</td><td>Supervision</td></tr>
+    <tr><td>31</td><td>Missouri</td><td>$195,000</td><td>Supervision</td></tr>
+    <tr><td>32</td><td>Hawaii</td><td>$193,000</td><td>Supervision</td></tr>
+    <tr><td>33</td><td>South Carolina</td><td>$192,000</td><td>Supervision</td></tr>
+    <tr><td>34</td><td>Kentucky</td><td>$190,000</td><td>Opt-out state</td></tr>
+    <tr><td>35</td><td>Nebraska</td><td>$188,000</td><td>Opt-out state</td></tr>
+    <tr><td>36</td><td>Alaska</td><td>$185,000</td><td>Opt-out state</td></tr>
+    <tr><td>37</td><td>New Hampshire</td><td>$185,000</td><td>Opt-out state</td></tr>
+    <tr><td>38</td><td>Delaware</td><td>$183,000</td><td>Supervision</td></tr>
+    <tr><td>39</td><td>Oklahoma</td><td>$182,000</td><td>Supervision</td></tr>
+    <tr><td>40</td><td>Florida</td><td>$180,000</td><td>Supervision</td></tr>
+    <tr><td>41</td><td>Louisiana</td><td>$178,000</td><td>Supervision</td></tr>
+    <tr><td>42</td><td>Alabama</td><td>$175,000</td><td>Supervision</td></tr>
+    <tr><td>43</td><td>Idaho</td><td>$175,000</td><td>Opt-out state</td></tr>
+    <tr><td>44</td><td>Kansas</td><td>$172,000</td><td>Opt-out state</td></tr>
+    <tr><td>45</td><td>North Dakota</td><td>$170,000</td><td>Opt-out state</td></tr>
+    <tr><td>46</td><td>South Dakota</td><td>$168,000</td><td>Opt-out state</td></tr>
+    <tr><td>47</td><td>Mississippi</td><td>$165,000</td><td>Supervision</td></tr>
+    <tr><td>48</td><td>West Virginia</td><td>$162,000</td><td>Supervision</td></tr>
+    <tr><td>49</td><td>Arkansas</td><td>$160,000</td><td>Supervision</td></tr>
+    <tr><td>50</td><td>Rhode Island</td><td>$158,000</td><td>Supervision</td></tr>
+  </tbody>
+</table>
+
+<h2>Top 5 Highest-Paying States for CRNAs in 2026</h2>
+<ol>
+  <li><strong>Illinois — $312,000 avg.</strong> Opt-out state, strong union rep in Chicago academic centers, and a shortage of CRNAs willing to work rural Illinois downstate pushes rates higher than New York or California.</li>
+  <li><strong>Wyoming — $305,000 avg.</strong> Rural premium. Low population means low CRNA supply, and critical-access hospitals pay whatever it takes to keep an OR running.</li>
+  <li><strong>Vermont — $298,000 avg.</strong> Similar rural dynamic plus opt-out independence — CRNAs run ORs without anesthesiologist supervision, commanding higher rates.</li>
+  <li><strong>Connecticut — $288,000 avg.</strong> Dense hospital system, high cost of living, heavy union presence at Yale and Hartford.</li>
+  <li><strong>Montana — $285,000 avg.</strong> Rural premium + opt-out. If you're open to smaller communities, Montana delivers.</li>
+</ol>
+
+<h2>Why Opt-Out States Pay More</h2>
+<p>"Opt-out" refers to states where the governor has formally opted out of the federal CMS requirement for CRNAs to be supervised by a physician. In opt-out states, CRNAs can practice independently — which means:</p>
+<ul>
+  <li>Hospitals don't need to staff an anesthesiologist alongside every CRNA, lowering total anesthesia cost</li>
+  <li>CRNAs can run rural and critical-access ORs without physician coverage</li>
+  <li>CRNAs capture a larger share of the anesthesia billing pool</li>
+</ul>
+<p>As of 2026, opt-out states include Alaska, California, Colorado, Idaho, Illinois, Iowa, Kansas, Kentucky, Minnesota, Montana, Nebraska, New Hampshire, New Mexico, North Dakota, Oregon, South Dakota, Vermont, Wisconsin, and Wyoming. Not all opt-out states pay at the top — it interacts with supply, demand, and cost of living.</p>
+
+<h2>CRNA Pay by Practice Setting</h2>
+<table>
+  <thead><tr><th>Setting</th><th>Avg Salary</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>Hospital (employed)</td><td>$220K – $260K</td><td>Benefits included; standard schedule</td></tr>
+    <tr><td>Academic medical center</td><td>$210K – $250K</td><td>Slightly lower base, richer benefits, teaching stipend</td></tr>
+    <tr><td>Ambulatory surgery center</td><td>$230K – $280K</td><td>No call, predictable hours</td></tr>
+    <tr><td>Independent / 1099 locums</td><td>$280K – $400K+</td><td>No benefits, own taxes, heavy call</td></tr>
+    <tr><td>Pain management</td><td>$225K – $275K</td><td>Procedure-based, outpatient</td></tr>
+    <tr><td>Rural / critical-access</td><td>$250K – $350K</td><td>Heavy call, high autonomy</td></tr>
+  </tbody>
+</table>
+
+<h2>How Experience Moves the Number</h2>
+<ul>
+  <li><strong>New grad CRNA (0–2 yrs):</strong> $170K–$210K depending on state</li>
+  <li><strong>Mid-career (3–9 yrs):</strong> $210K–$260K</li>
+  <li><strong>Senior (10+ yrs):</strong> $250K–$310K, with lead/charge positions pushing higher</li>
+  <li><strong>1099 locums with 5+ yrs experience:</strong> routinely $350K+ if willing to travel</li>
+</ul>
+
+<h2>CRNA vs Nurse Practitioner vs Anesthesiologist Pay</h2>
+<table>
+  <thead><tr><th>Role</th><th>Avg 2026 Salary</th><th>Years of Training</th></tr></thead>
+  <tbody>
+    <tr><td>CRNA</td><td>$232,000</td><td>7–8 yrs post-high school</td></tr>
+    <tr><td>Anesthesiologist (MD/DO)</td><td>$425,000</td><td>12+ yrs</td></tr>
+    <tr><td>NP (all specialties avg)</td><td>$128,000</td><td>6–7 yrs</td></tr>
+    <tr><td>RN (staff)</td><td>$89,000</td><td>4 yrs</td></tr>
+  </tbody>
+</table>
+<p>CRNA is by far the highest ROI nursing credential — double the RN salary with roughly 2–3 extra years of education. That's why CRNA schools are so competitive (5–15% acceptance rates at top programs).</p>
+
+<h2>What Drives CRNA Pay Beyond State</h2>
+<ul>
+  <li><strong>Call coverage.</strong> Heavy-call positions (home call, 1:3 rotations) add $30K–$60K over low-call jobs.</li>
+  <li><strong>Subspecialty.</strong> Cardiac, pediatric, and OB anesthesia add 10–20% to base. Pain procedures add 15%+.</li>
+  <li><strong>Group type.</strong> CRNA-only groups (where CRNAs share billings) pay more than anesthesia care team (ACT) models where MDs take the split.</li>
+  <li><strong>Union representation.</strong> Unionized positions — common in Illinois, Oregon, Washington, Minnesota — pay noticeably more than non-union.</li>
+  <li><strong>Stipends and bonuses.</strong> Sign-on bonuses of $20K–$50K are common; retention bonuses after 2–3 years are standard.</li>
+</ul>
+
+<h2>Is CRNA School Worth It in 2026?</h2>
+<p>Financially, yes — the $150,000–$200,000 total cost of a DNP anesthesia program is usually recouped in 18–24 months of practice. But the opportunity cost is real: 3 years out of the workforce, no income, and a demanding program. If you're already making $100K+ as a critical care RN and loan repayment is possible through your hospital, the math is close but favorable.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What state pays CRNAs the most in 2026?</h3>
+<p>Illinois leads at $312,000 average, driven by Chicago academic centers, strong union representation, and rural downstate shortages. Wyoming and Vermont are next, both benefiting from rural premiums and independent practice.</p>
+
+<h3>Do CRNAs make more than nurse practitioners?</h3>
+<p>Yes — typically $100,000+ more per year. A 2026 NP averages around $128,000 across specialties; a CRNA averages $232,000. The gap reflects higher acuity, procedural billing, and supply constraint (fewer CRNA programs graduate ~2,800 per year nationally).</p>
+
+<h3>What's the difference between a CRNA and an anesthesiologist?</h3>
+<p>Anesthesiologists are MDs/DOs (12+ years of training). CRNAs are APRNs with a DNP (7–8 years total). Both can independently administer anesthesia in most states, but their billing, liability, and supervision requirements differ. In opt-out states, CRNAs can practice fully independently; in supervision states they work under a physician's license for billing purposes.</p>
+
+<h3>How much do CRNAs make per hour?</h3>
+<p>Hourly rates range from $90/hr in the lowest-paying states to $180+/hr in the highest. Locum and 1099 CRNAs routinely bill $200–$300/hr but cover their own benefits and taxes.</p>
+
+<h3>Do CRNAs get overtime and call pay?</h3>
+<p>Most hospital-employed CRNAs are salaried exempt and do not earn OT, but call pay is standard — typically $5–$15/hr on-call plus full hourly rate when activated. Travel and locum CRNAs often negotiate OT after 40 hours.</p>
+
+<h2>Before You Accept a CRNA Offer</h2>
+<p>CRNA contracts include terms most RNs have never dealt with — non-competes, moonlighting restrictions, call obligations, productivity bonuses, and tail malpractice coverage. These clauses routinely cost CRNAs tens of thousands of dollars if signed without review.</p>
+<p>Run your CRNA offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> to spot the most common issues before you sign. The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes the full negotiation scripts and counter-offer language for CRNA-specific clauses.</p>
+
+<h2>Related Reading</h2>
+<ul>
+  <li><a href="/blog/np-salary-guide-2026" style="color:#2563eb;font-weight:600;">Nurse Practitioner Salary Guide 2026</a></li>
+  <li><a href="/blog/icu-travel-nurse-salary-2026" style="color:#2563eb;font-weight:600;">ICU Nurse Salary 2026</a></li>
+  <li><a href="/blog/nursing-contract-red-flags-checklist" style="color:#2563eb;font-weight:600;">Nursing Contract Red Flags</a></li>
+  <li><a href="/blog/how-to-negotiate-sign-on-bonus-nursing" style="color:#2563eb;font-weight:600;">How to Negotiate a Sign-On Bonus</a></li>
+</ul>
+    `,
+  },
+  {
+    slug: 'how-to-negotiate-travel-nursing-contract',
+    title: 'How to Negotiate a Travel Nursing Contract: Scripts That Actually Work',
+    date: '2026-04-15',
+    excerpt: 'Most travel nurses sign the first offer. Here\'s the exact process — with phone scripts and email templates — to negotiate every part of a travel contract.',
+    category: 'Negotiation',
+    readTime: '10 min read',
+    focusKeyword: 'how to negotiate travel nursing contract',
+    secondaryKeywords: ['travel nurse negotiation scripts', 'negotiate travel nurse pay', 'travel nursing contract negotiation'],
+    coverImage: '/blog/how-to-negotiate-travel-nursing-contract.png',
+    imageAlt: 'Travel nurse negotiating a contract on the phone with a recruiter',
+    metaDescription: 'Learn exactly how to negotiate a travel nursing contract in 2026 — bill rate, stipends, cancellation, overtime, and call — with word-for-word scripts and counter-offer templates.',
+    content: `
+<p>Most travel nurses accept the first offer their recruiter sends. Recruiters know this, which is why the first offer is almost never the best offer. In 2026, nurses who negotiate on just three items — weekly rate, cancellation terms, and guaranteed hours — average $3,000–$8,000 more per 13-week assignment than nurses who don't.</p>
+
+<p>This guide breaks down exactly what to negotiate, how to ask, and the scripts to use over the phone and in email. It's the same framework used in our <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a>.</p>
+
+<h2>Step 1: Find Out the Bill Rate Before You Counter</h2>
+<p>The bill rate is what the hospital pays the agency per hour. The agency takes 20–30% and passes the rest to you. If you don't know the bill rate, you don't know how much room there is to negotiate.</p>
+
+<p><strong>Script to get it:</strong></p>
+<blockquote>"Before I respond to the offer, can you share the bill rate on this contract? I like to understand the full package structure before committing. Most of my agencies have been transparent about this."</blockquote>
+
+<p>Roughly half of recruiters will share it. The other half will deflect — that's a signal they know there's margin they're protecting. If they refuse twice, it's usually because the agency is taking 30%+.</p>
+
+<h2>Step 2: Negotiate the Weekly Rate</h2>
+<p>Rule of thumb: ask for $200/week more than the first offer. Over 13 weeks that's $2,600 — a meaningful number worth 15 minutes of discomfort.</p>
+
+<p><strong>Email script:</strong></p>
+<blockquote>"Thanks for sending the offer for [facility]. I'm very interested in the role. Before I commit, I'd like to request a weekly rate of $[first offer + 200]. Based on bill rates for similar [specialty] contracts in [city], this is consistent with what I've seen other agencies offer. Happy to discuss."</blockquote>
+
+<p>If they counter at +$100, accept it — you've already captured $1,300 over the assignment with a two-minute email.</p>
+
+<h2>Step 3: Negotiate Stipends (Quietly)</h2>
+<p>Most recruiters act like stipends are fixed by GSA rates. They aren't — agencies frequently pay below GSA to pad margins. Look up the GSA lodging + meals rate for the contract's city and ask for that number.</p>
+
+<p><strong>Script:</strong></p>
+<blockquote>"I noticed the housing stipend on the offer is $[X]. The GSA lodging rate for [city] is $[Y]. Is there flexibility to bring the stipend up to match GSA? I'd rather keep the same weekly gross and shift a bit more into stipend for tax efficiency."</blockquote>
+
+<p>Because stipend is tax-free if you qualify (see the <a href="/blog/travel-nurse-housing-stipend-tax-rules" style="color:#2563eb;font-weight:600;">housing stipend tax rules</a>), shifting $100/week from taxable to stipend can net you $25–$30 more per week with no increase in the total package.</p>
+
+<h2>Step 4: Negotiate the Cancellation Clause</h2>
+<p>Facility cancellation is the single biggest financial risk in travel nursing. A cancelled contract means you moved across the country for nothing and got no paycheck.</p>
+
+<p>Target language: <strong>"Facility must provide 14 days' written notice to cancel this contract. If less notice is given, facility owes nurse the equivalent of guaranteed hours for the notice period."</strong></p>
+
+<p><strong>Script:</strong></p>
+<blockquote>"Section [X] of the contract allows the facility to cancel with 24 hours' notice and no penalty. I'd like to modify this to 14 days' notice with pay-through for the notice period. This is industry standard for [specialty] contracts and gives me basic financial protection if they overstaff."</blockquote>
+
+<p>If they won't budge, ask for at minimum a 4-hour guarantee on cancelled shifts so you don't lose an entire day's pay for being called off the morning of.</p>
+
+<h2>Step 5: Lock Down Guaranteed Hours</h2>
+<p>If the contract says "36 hours/week scheduled" without the word "guaranteed," the facility can cancel your shifts with no pay. Guaranteed hours means you get paid even if they cancel you.</p>
+
+<p><strong>Script:</strong></p>
+<blockquote>"The contract lists 36 scheduled hours. I'd like that language changed to 'guaranteed' — so if the facility cancels shifts due to low census, I'm paid through. This is a standard protection and I've had it on every recent assignment."</blockquote>
+
+<h2>Step 6: Overtime Rate and Call-Back Rate</h2>
+<p>OT should be at time-and-a-half of the blended rate, not just the taxable rate. Some agencies try to write OT at the taxable rate only (e.g., $30/hr OT on a $70/hr blended pay) — that saves them thousands across the contract.</p>
+
+<p><strong>Counter language:</strong></p>
+<blockquote>"I'd like OT to be calculated at 1.5x of the blended hourly rate ($[blended] × 1.5 = $[x] per OT hour) rather than 1.5x of taxable only. This is consistent with federal wage law for non-exempt roles."</blockquote>
+
+<h2>Step 7: Floating and Units</h2>
+<p>"Float as needed" is one of the most dangerous phrases in travel contracts. It means you can be reassigned to any unit at any time — which can put an ICU nurse in a med-surg role or vice versa.</p>
+
+<p>Insist on unit-specific language: <strong>"Nurse will float only to comparable acuity units within nurse's specialty. No floating to lower-acuity units that would result in reduced hourly rate."</strong></p>
+
+<h2>Step 8: Non-Completion Penalty</h2>
+<p>Most contracts have a non-completion penalty — you owe the agency money if you don't finish. Typical penalties are $500–$3,000. Ask for the number to be clearly capped and for carve-outs for:</p>
+<ul>
+  <li>Medical emergencies</li>
+  <li>Family bereavement</li>
+  <li>Facility breach of contract (unsafe assignments, wage violations)</li>
+  <li>Facility cancellation of contract</li>
+</ul>
+<p>See our full breakdown on <a href="/blog/breaking-travel-nursing-contract-consequences" style="color:#2563eb;font-weight:600;">what happens if you break a travel nursing contract</a>.</p>
+
+<h2>Step 9: Use the Right Communication Channel</h2>
+<p>Negotiate by <strong>phone first</strong>, then confirm in <strong>email</strong>. Phone calls get faster yeses; email gives you the paper trail. Never accept verbal-only promises — every agreed change must appear in the signed contract.</p>
+
+<h2>Step 10: Know When to Walk</h2>
+<p>If the agency refuses on cancellation protection AND OT calculation AND guaranteed hours, walk away. That combination signals they're prioritizing agency margin over nurse protection, and the assignment will have more problems during the contract too.</p>
+
+<h2>The Full Negotiation Email Template</h2>
+<blockquote>Subject: Contract review — [Facility name] assignment<br><br>
+Hi [Recruiter name],<br><br>
+Thanks for sending the offer. I'd like to move forward — I just have four items I'd like to adjust before signing:<br><br>
+1. <strong>Weekly rate:</strong> Requesting $[ask] instead of $[offer], based on bill rates I've seen for [specialty] in [city].<br>
+2. <strong>Stipend:</strong> Requesting housing stipend be raised to match the current GSA rate for [city].<br>
+3. <strong>Cancellation:</strong> Requesting 14 days' notice required for facility cancellation, with pay-through if less notice is given.<br>
+4. <strong>Guaranteed hours:</strong> Requesting the 36 scheduled hours be changed to 36 guaranteed hours per week.<br><br>
+Happy to discuss any of these on a quick call. If we can lock in these four items I'm ready to sign today.<br><br>
+Thanks,<br>
+[Your name]</blockquote>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Can you negotiate a travel nursing contract?</h3>
+<p>Yes — every part of it. Weekly rate, stipend split, cancellation terms, overtime calculation, guaranteed hours, floating language, and non-completion penalties are all negotiable. Most recruiters will adjust 2–3 items per contract without pushback.</p>
+
+<h3>How much can a travel nurse negotiate on pay?</h3>
+<p>$100–$300/week is typical when you ask with data. Over a 13-week assignment that's $1,300–$3,900 more. Specialty nurses (ICU, OR, L&amp;D) negotiate higher — sometimes $500+/week on crisis contracts.</p>
+
+<h3>What if my recruiter says the rate is "fixed"?</h3>
+<p>"Fixed" means "I don't want to ask the agency." Ask them to submit the counter to the account manager. If they still refuse, contact a second agency about the same facility — you'll almost always get a different rate.</p>
+
+<h3>Should I tell my recruiter I have other offers?</h3>
+<p>Only if you actually do. Bluffing backfires if they call it. Real competing offers — from Aya, AMN, Cross Country — are the single most effective leverage in travel nurse negotiation.</p>
+
+<h3>When is the best time to negotiate?</h3>
+<p>Before you sign — obviously. But also before they've submitted you to the facility for review. Once the facility interview is scheduled, agencies have invested time and are more willing to adjust terms to close.</p>
+
+<h2>Before You Sign Anything</h2>
+<p>A good negotiation can add thousands to a single assignment. But you can't negotiate what you don't see. Run your contract through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> to catch hidden clauses — it takes 3 minutes.</p>
+<p>The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes word-for-word counter-offer emails, recruiter phone scripts, and legal addendum language — reusable on every contract you'll ever sign.</p>
+
+<h2>Related Reading</h2>
+<ul>
+  <li><a href="/blog/travel-nurse-salary-by-state-2026" style="color:#2563eb;font-weight:600;">Travel Nurse Salary by State 2026</a></li>
+  <li><a href="/blog/nursing-contract-red-flags-checklist" style="color:#2563eb;font-weight:600;">10 Nursing Contract Red Flags</a></li>
+  <li><a href="/blog/travel-nurse-housing-stipend-tax-rules" style="color:#2563eb;font-weight:600;">Travel Nurse Housing Stipend Tax Rules</a></li>
+  <li><a href="/blog/breaking-travel-nursing-contract-consequences" style="color:#2563eb;font-weight:600;">Breaking a Travel Nursing Contract</a></li>
+</ul>
+    `,
+  },
+  {
+    slug: 'travel-nurse-pay-package-breakdown',
+    title: 'Travel Nurse Pay Package Breakdown: Taxable vs Tax-Free Stipends',
+    date: '2026-04-15',
+    excerpt: 'A $2,400/week travel contract can take home more than $2,800/week — or less than $1,800 — depending on the pay package. Here\'s how to decode it.',
+    category: 'Salary Data',
+    readTime: '9 min read',
+    focusKeyword: 'travel nurse pay package breakdown',
+    secondaryKeywords: ['travel nurse taxable wage', 'travel nurse stipend breakdown', 'travel nurse take home pay'],
+    coverImage: '/blog/travel-nurse-pay-package-breakdown.png',
+    imageAlt: 'Travel nurse pay package breakdown showing taxable wage and tax-free stipend',
+    metaDescription: 'Decode your travel nurse pay package in 2026 — taxable wage, tax-free stipends, GSA rates, bill rates, and actual take-home pay. Compare offers line by line.',
+    content: `
+<p>Every travel nurse pay package looks like a jumble of numbers: hourly rate, weekly stipend, housing, meals, bill rate, blended rate. Recruiters throw a "weekly gross" at you and hope you don't ask questions. Two contracts with the same $2,400 headline can deliver wildly different take-home pay depending on how the number is sliced.</p>
+
+<p>This guide breaks down every line item on a standard travel nurse pay package, how to calculate real take-home pay, and how to compare offers apples-to-apples.</p>
+
+<p><em>Last updated: April 2026.</em></p>
+
+<h2>The Five Components of Every Travel Nurse Pay Package</h2>
+<table>
+  <thead><tr><th>Component</th><th>Taxable?</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td>Taxable hourly wage</td><td>Yes</td><td>W-2 income; counts for OT calculation</td></tr>
+    <tr><td>Housing stipend</td><td>No (if qualified)</td><td>Cover housing at assignment location</td></tr>
+    <tr><td>Meals &amp; incidentals (M&amp;IE)</td><td>No (if qualified)</td><td>Food and incidental costs</td></tr>
+    <tr><td>Travel reimbursement</td><td>No (if qualified)</td><td>Mileage, flights to/from assignment</td></tr>
+    <tr><td>Completion / retention bonus</td><td>Yes</td><td>Paid at end of assignment</td></tr>
+  </tbody>
+</table>
+
+<h2>Sample Pay Package Decoded</h2>
+<p>Typical 13-week ICU contract in Seattle, WA:</p>
+<table>
+  <thead><tr><th>Line Item</th><th>Amount</th><th>Weekly (36 hrs)</th></tr></thead>
+  <tbody>
+    <tr><td>Taxable hourly wage</td><td>$27.50/hr</td><td>$990</td></tr>
+    <tr><td>Housing stipend</td><td>—</td><td>$1,100</td></tr>
+    <tr><td>Meals &amp; incidentals</td><td>—</td><td>$385</td></tr>
+    <tr><td>Travel reimbursement</td><td>$500 total</td><td>$38 (amortized)</td></tr>
+    <tr><td><strong>Gross weekly</strong></td><td></td><td><strong>$2,513</strong></td></tr>
+  </tbody>
+</table>
+
+<h3>Take-Home Math</h3>
+<ul>
+  <li>Taxable portion: $990/wk × 22% blended tax = ~$218/wk withheld</li>
+  <li>Net taxable: ~$772/wk</li>
+  <li>Tax-free portions: $1,523/wk (stipend + M&amp;IE + travel)</li>
+  <li><strong>Estimated take-home: ~$2,295/wk</strong></li>
+</ul>
+<p>For comparison, a same-location staff ICU RN earning $60/hr × 36 hrs = $2,160 gross would net ~$1,600 after tax. The travel nurse nets ~$695/week more — <em>if</em> they qualify for tax-free stipends.</p>
+
+<h2>How the Taxable Wage Gets Set</h2>
+<p>Agencies minimize the taxable wage to save on payroll taxes (FICA, SUTA, workers' comp). But they can't go too low — the IRS requires the taxable portion to represent "reasonable compensation" for the hours worked, typically around <strong>$20–$30/hr</strong> depending on specialty and location.</p>
+<p>If your taxable wage is $18/hr or lower, it's a red flag — the IRS may reclassify stipends as taxable wages if audited. You want at least $22/hr taxable for Med-Surg, $25/hr+ for ICU/OR/L&amp;D.</p>
+
+<h2>Why the Stipend Matters More Than the Taxable Rate</h2>
+<p>Let's compare two $2,400/week offers:</p>
+
+<table>
+  <thead><tr><th>Offer</th><th>Taxable</th><th>Stipend</th><th>Gross/wk</th><th>Take-Home/wk</th></tr></thead>
+  <tbody>
+    <tr><td>Offer A</td><td>$1,800</td><td>$600</td><td>$2,400</td><td>~$2,000</td></tr>
+    <tr><td>Offer B</td><td>$900</td><td>$1,500</td><td>$2,400</td><td>~$2,200</td></tr>
+  </tbody>
+</table>
+
+<p>Offer B nets you <strong>$200 more per week</strong> — over a 13-week contract, that's $2,600 more in your pocket. Both are quoted as the same "$2,400/week" — but one is materially better.</p>
+
+<p>The catch: you only get the stipend tax-free if you qualify under IRS rules. See our full guide on <a href="/blog/travel-nurse-housing-stipend-tax-rules" style="color:#2563eb;font-weight:600;">travel nurse housing stipend tax rules</a>.</p>
+
+<h2>GSA Rates: The Ceiling on Tax-Free Stipends</h2>
+<p>The IRS caps non-taxable stipends at the GSA per diem rate for the contract's city. Agencies often pay below GSA to pocket the difference. Always look up the GSA rate for your assignment city at <strong>gsa.gov/travel/plan-book/per-diem-rates</strong>.</p>
+
+<p>Example GSA rates for April 2026:</p>
+<ul>
+  <li><strong>San Francisco, CA:</strong> $347/night lodging + $79/day M&amp;IE = $2,982/week cap</li>
+  <li><strong>New York, NY (Manhattan):</strong> $316/night + $79/day = $2,765/week cap</li>
+  <li><strong>Seattle, WA:</strong> $223/night + $79/day = $2,114/week cap</li>
+  <li><strong>Dallas, TX:</strong> $152/night + $68/day = $1,540/week cap</li>
+  <li><strong>Rural Mississippi:</strong> $107/night + $59/day = $1,162/week cap</li>
+</ul>
+
+<p>If an agency offers you a $1,500 stipend for a Dallas assignment but GSA only allows $1,540, they may be pushing close to the limit. If they offer $1,800, they're either mis-classifying or you need to get it in writing that they'll cover IRS exposure.</p>
+
+<h2>Bill Rate: The Hidden Number That Tells You Everything</h2>
+<p>The bill rate is what the facility pays your agency per hour. Everything else — your taxable wage, stipend, agency profit — comes out of that number.</p>
+
+<p>Example: A $95/hr bill rate breaks down roughly as:</p>
+<ul>
+  <li>$30/hr taxable wage to you = $1,080/week</li>
+  <li>$32/hr stipend equivalent = $1,150/week</li>
+  <li>$6/hr benefits / insurance / workers' comp = $216/week</li>
+  <li>$27/hr agency margin = $972/week (~28%)</li>
+</ul>
+
+<p>If you know the bill rate, you know exactly how much room exists to negotiate. Agencies that refuse to share the bill rate are almost always taking 28%+ — industry average is closer to 22–25%.</p>
+
+<p>For exact scripts to ask for the bill rate without making it weird, see our <a href="/blog/how-to-negotiate-travel-nursing-contract" style="color:#2563eb;font-weight:600;">travel contract negotiation guide</a>.</p>
+
+<h2>Overtime on a Travel Pay Package</h2>
+<p>This is where agencies lose nurses thousands without them noticing. Federal law requires OT at 1.5x the <strong>regular rate</strong> — which should include all non-discretionary compensation, including stipends.</p>
+
+<p>Most agencies calculate OT on the taxable rate only. That's a legal gray area and often exploitable in your favor.</p>
+
+<table>
+  <thead><tr><th>Method</th><th>Calc</th><th>OT rate</th></tr></thead>
+  <tbody>
+    <tr><td>Taxable rate only (agency default)</td><td>$27.50 × 1.5</td><td>$41.25/hr</td></tr>
+    <tr><td>Blended rate (what nurses should push for)</td><td>$70/hr blended × 1.5</td><td>$105/hr</td></tr>
+  </tbody>
+</table>
+
+<p>Over a single 12-hour OT shift, that's a <strong>$765 difference</strong>. Ask your agency explicitly: "Is OT calculated on taxable or blended rate?" and negotiate for blended.</p>
+
+<h2>Cancellation Pay: The Forgotten Line Item</h2>
+<p>Most pay packages hide what happens when the facility cancels your shift. The three common scenarios:</p>
+<ul>
+  <li><strong>No pay for cancelled shifts (bad)</strong> — facility calls off your Tuesday, you lose $200+ that day</li>
+  <li><strong>4-hour minimum (okay)</strong> — you get paid for 4 hours at your taxable rate</li>
+  <li><strong>Full shift guarantee (best)</strong> — you get paid for the full 12 hours whether they need you or not</li>
+</ul>
+
+<p>If the contract doesn't specify, ask in writing. "Guaranteed hours" language should be explicit.</p>
+
+<h2>Completion Bonuses and Retention Bonuses</h2>
+<p>Many contracts have a completion bonus — typically $1,000–$3,000 — paid at assignment end. Two watch items:</p>
+<ul>
+  <li><strong>Fully taxable.</strong> Completion bonuses are always W-2 wages, taxed at your marginal rate plus payroll taxes.</li>
+  <li><strong>Forfeited on facility cancellation.</strong> Most contracts void the bonus if the facility cancels — even though it's not your fault. Negotiate a carve-out: "Completion bonus paid on pro-rata basis if facility terminates contract without cause."</li>
+</ul>
+
+<h2>Quick Package Comparison Framework</h2>
+<p>When comparing two offers, use this checklist:</p>
+<ol>
+  <li>What's the total gross weekly? (headline number)</li>
+  <li>What's the taxable-vs-stipend split?</li>
+  <li>Is the stipend within GSA limits for the city?</li>
+  <li>Is OT calculated on blended or taxable rate?</li>
+  <li>Are hours guaranteed (paid if cancelled)?</li>
+  <li>What's the completion bonus and what triggers forfeiture?</li>
+  <li>Is travel/mileage reimbursed in addition?</li>
+  <li>What's the bill rate — does it justify the take-home?</li>
+</ol>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What is a travel nurse pay package?</h3>
+<p>A travel nurse pay package is the full compensation structure combining a taxable hourly wage, tax-free stipends (housing + meals), travel reimbursement, and any completion bonuses. The "weekly gross" quoted by recruiters blends all of these together.</p>
+
+<h3>Are travel nurse stipends actually tax-free?</h3>
+<p>Only if you maintain a legitimate tax home, work away from it, and duplicate expenses. If the IRS audits and decides you don't qualify, stipends become taxable retroactively — plus penalties and interest. Our <a href="/blog/travel-nurse-housing-stipend-tax-rules" style="color:#2563eb;font-weight:600;">stipend tax guide</a> covers the exact rules.</p>
+
+<h3>How much do travel nurses take home per week?</h3>
+<p>On a typical $2,200/week gross package with qualified stipends, take-home is usually $1,900–$2,050 after taxes on the W-2 portion. Non-qualified stipends drop take-home to $1,500–$1,700.</p>
+
+<h3>Why is the taxable wage so low on travel contracts?</h3>
+<p>Agencies minimize taxable wage to reduce payroll tax burden (FICA, SUTA, workers' comp). This lets them offer higher gross packages at the same cost. But taxable wage that's too low (under $20/hr) is an IRS audit risk.</p>
+
+<h3>Should I take a higher-taxable or higher-stipend package?</h3>
+<p>Higher stipend generally nets more take-home <em>if</em> you qualify. But higher taxable wage means more Social Security credits, higher 401(k) contribution room, easier mortgage qualification, and better unemployment benefits if the contract ends. It's a trade-off.</p>
+
+<h2>Before You Sign</h2>
+<p>Decoding a pay package is just half the job. The contract itself needs to deliver what the package promises. Run yours through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> — it catches the 10 most common issues in travel contracts in 3 minutes. The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes a pay package comparison worksheet and the negotiation scripts to push for better splits.</p>
+
+<h2>Related Reading</h2>
+<ul>
+  <li><a href="/blog/travel-nurse-salary-by-state-2026" style="color:#2563eb;font-weight:600;">Travel Nurse Salary by State 2026</a></li>
+  <li><a href="/blog/travel-nurse-housing-stipend-tax-rules" style="color:#2563eb;font-weight:600;">Travel Nurse Housing Stipend Tax Rules</a></li>
+  <li><a href="/blog/how-to-negotiate-travel-nursing-contract" style="color:#2563eb;font-weight:600;">How to Negotiate a Travel Nursing Contract</a></li>
+  <li><a href="/blog/travel-nurse-vs-staff-nurse-salary-2026" style="color:#2563eb;font-weight:600;">Travel Nurse vs Staff Nurse Salary</a></li>
+</ul>
+    `,
+  },
+  {
+    slug: 'rn-salary-by-state-2026',
+    draft: true,
+    title: 'RN Salary by State 2026: Complete 50-State Guide',
+    date: '2026-04-15',
+    excerpt: 'What registered nurses actually earn in every state in 2026 — base pay, cost-of-living adjusted rankings, and where new grads should consider relocating.',
+    category: 'Salary Data',
+    readTime: '14 min read',
+    focusKeyword: 'RN salary by state 2026',
+    secondaryKeywords: ['nurse salary by state', 'highest paying states for nurses', 'registered nurse pay by state'],
+    coverImage: '/blog/rn-salary-by-state-2026.jpg',
+    imageAlt: 'RN salary by state 2026 map showing registered nurse pay across all 50 states',
+    metaDescription: 'Complete 2026 guide to RN salary in every state. See base pay, hourly rates, cost-of-living adjusted rankings, and where registered nurses earn the most real money.',
+    content: `
+<p>Registered nurse pay in the United States ranges from a $70,000 average in the lowest-paying states to over $140,000 in the highest — but the rankings flip entirely when you adjust for cost of living. This is the definitive 2026 guide to what RNs actually earn where, where the money goes furthest, and which states offer the best risk-adjusted careers.</p>
+
+<p><em>Last updated: April 2026. Data aggregated from BLS OEWS (May 2025 release), state nursing association surveys, and verified nurse compensation reports.</em></p>
+
+<h2>Average RN Salary by State (2026)</h2>
+
+<table>
+  <thead><tr><th>Rank</th><th>State</th><th>Avg Annual Salary</th><th>Avg Hourly</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>California</td><td>$142,500</td><td>$68.51</td></tr>
+    <tr><td>2</td><td>Hawaii</td><td>$122,700</td><td>$58.99</td></tr>
+    <tr><td>3</td><td>Oregon</td><td>$112,800</td><td>$54.23</td></tr>
+    <tr><td>4</td><td>Massachusetts</td><td>$110,500</td><td>$53.13</td></tr>
+    <tr><td>5</td><td>Alaska</td><td>$109,600</td><td>$52.69</td></tr>
+    <tr><td>6</td><td>Washington</td><td>$107,300</td><td>$51.59</td></tr>
+    <tr><td>7</td><td>New York</td><td>$104,500</td><td>$50.24</td></tr>
+    <tr><td>8</td><td>New Jersey</td><td>$101,200</td><td>$48.65</td></tr>
+    <tr><td>9</td><td>Minnesota</td><td>$97,800</td><td>$47.02</td></tr>
+    <tr><td>10</td><td>Connecticut</td><td>$97,400</td><td>$46.83</td></tr>
+    <tr><td>11</td><td>Nevada</td><td>$96,700</td><td>$46.49</td></tr>
+    <tr><td>12</td><td>Rhode Island</td><td>$94,800</td><td>$45.58</td></tr>
+    <tr><td>13</td><td>Colorado</td><td>$93,500</td><td>$44.95</td></tr>
+    <tr><td>14</td><td>Arizona</td><td>$92,100</td><td>$44.28</td></tr>
+    <tr><td>15</td><td>Maryland</td><td>$91,200</td><td>$43.85</td></tr>
+    <tr><td>16</td><td>Illinois</td><td>$90,800</td><td>$43.65</td></tr>
+    <tr><td>17</td><td>Delaware</td><td>$90,200</td><td>$43.37</td></tr>
+    <tr><td>18</td><td>New Hampshire</td><td>$89,700</td><td>$43.13</td></tr>
+    <tr><td>19</td><td>Vermont</td><td>$88,400</td><td>$42.50</td></tr>
+    <tr><td>20</td><td>Michigan</td><td>$87,800</td><td>$42.21</td></tr>
+    <tr><td>21</td><td>Pennsylvania</td><td>$87,500</td><td>$42.07</td></tr>
+    <tr><td>22</td><td>Texas</td><td>$87,100</td><td>$41.88</td></tr>
+    <tr><td>23</td><td>Virginia</td><td>$86,300</td><td>$41.49</td></tr>
+    <tr><td>24</td><td>Wisconsin</td><td>$85,900</td><td>$41.30</td></tr>
+    <tr><td>25</td><td>Florida</td><td>$84,200</td><td>$40.48</td></tr>
+    <tr><td>26</td><td>Georgia</td><td>$83,600</td><td>$40.19</td></tr>
+    <tr><td>27</td><td>Maine</td><td>$83,100</td><td>$39.95</td></tr>
+    <tr><td>28</td><td>Ohio</td><td>$82,400</td><td>$39.62</td></tr>
+    <tr><td>29</td><td>North Carolina</td><td>$81,800</td><td>$39.33</td></tr>
+    <tr><td>30</td><td>Indiana</td><td>$81,200</td><td>$39.04</td></tr>
+    <tr><td>31</td><td>Missouri</td><td>$80,700</td><td>$38.80</td></tr>
+    <tr><td>32</td><td>Montana</td><td>$80,200</td><td>$38.56</td></tr>
+    <tr><td>33</td><td>Utah</td><td>$79,900</td><td>$38.41</td></tr>
+    <tr><td>34</td><td>New Mexico</td><td>$79,500</td><td>$38.22</td></tr>
+    <tr><td>35</td><td>Idaho</td><td>$78,900</td><td>$37.93</td></tr>
+    <tr><td>36</td><td>South Carolina</td><td>$78,300</td><td>$37.64</td></tr>
+    <tr><td>37</td><td>Nebraska</td><td>$77,800</td><td>$37.40</td></tr>
+    <tr><td>38</td><td>Kansas</td><td>$77,200</td><td>$37.12</td></tr>
+    <tr><td>39</td><td>Wyoming</td><td>$76,800</td><td>$36.92</td></tr>
+    <tr><td>40</td><td>Oklahoma</td><td>$76,200</td><td>$36.63</td></tr>
+    <tr><td>41</td><td>Louisiana</td><td>$75,900</td><td>$36.49</td></tr>
+    <tr><td>42</td><td>Tennessee</td><td>$75,400</td><td>$36.25</td></tr>
+    <tr><td>43</td><td>Iowa</td><td>$74,900</td><td>$36.01</td></tr>
+    <tr><td>44</td><td>Kentucky</td><td>$74,200</td><td>$35.67</td></tr>
+    <tr><td>45</td><td>North Dakota</td><td>$73,800</td><td>$35.48</td></tr>
+    <tr><td>46</td><td>Arkansas</td><td>$72,900</td><td>$35.05</td></tr>
+    <tr><td>47</td><td>West Virginia</td><td>$72,400</td><td>$34.81</td></tr>
+    <tr><td>48</td><td>Mississippi</td><td>$71,800</td><td>$34.52</td></tr>
+    <tr><td>49</td><td>South Dakota</td><td>$71,200</td><td>$34.23</td></tr>
+    <tr><td>50</td><td>Alabama</td><td>$70,900</td><td>$34.09</td></tr>
+  </tbody>
+</table>
+
+<h2>Top 10 Highest-Paying States for RNs in 2026</h2>
+<ol>
+  <li><strong>California — $142,500.</strong> Driven by AB 394 mandatory staffing ratios, union hospitals (CNA), and high cost of living. Bay Area and LA average over $160K.</li>
+  <li><strong>Hawaii — $122,700.</strong> Limited workforce, cost of living premium, isolated market. Oahu hospitals pay top; outer islands slightly lower.</li>
+  <li><strong>Oregon — $112,800.</strong> Strong unionization in Portland metro, plus ONA-negotiated contracts at OHSU and Legacy.</li>
+  <li><strong>Massachusetts — $110,500.</strong> Boston academic medical centers (MGH, BI, Brigham) set the floor. Unionization (MNA) is strong.</li>
+  <li><strong>Alaska — $109,600.</strong> Rural premium plus isolation pay. Anchorage and Fairbanks dominate the sample.</li>
+  <li><strong>Washington — $107,300.</strong> No state income tax is a hidden bump. Seattle/Tacoma hospitals pay $55+/hr base.</li>
+  <li><strong>New York — $104,500.</strong> NYC average is $120K+; upstate pulls the state average down.</li>
+  <li><strong>New Jersey — $101,200.</strong> Essentially an NYC commuter market with high cost of living to match.</li>
+  <li><strong>Minnesota — $97,800.</strong> Twin Cities health systems (Fairview, HealthPartners, Allina) have been aggressive with recent pay raises.</li>
+  <li><strong>Connecticut — $97,400.</strong> Hartford and Yale-New Haven academic systems drive the number.</li>
+</ol>
+
+<h2>Highest-Paying States Adjusted for Cost of Living</h2>
+<p>A $142,500 California salary sounds great until you face $3,400/month for a 1-bedroom apartment. This is the real ranking nurses care about — RN salary divided by the state's regional price parity (BEA 2025 RPP):</p>
+
+<table>
+  <thead><tr><th>Rank</th><th>State</th><th>Avg Salary</th><th>RPP</th><th>Real Value</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Nevada</td><td>$96,700</td><td>97.1</td><td>$99,588</td></tr>
+    <tr><td>2</td><td>Michigan</td><td>$87,800</td><td>91.4</td><td>$96,061</td></tr>
+    <tr><td>3</td><td>Texas</td><td>$87,100</td><td>95.2</td><td>$91,491</td></tr>
+    <tr><td>4</td><td>Arizona</td><td>$92,100</td><td>100.8</td><td>$91,369</td></tr>
+    <tr><td>5</td><td>Ohio</td><td>$82,400</td><td>90.5</td><td>$91,050</td></tr>
+    <tr><td>6</td><td>Missouri</td><td>$80,700</td><td>89.2</td><td>$90,471</td></tr>
+    <tr><td>7</td><td>Minnesota</td><td>$97,800</td><td>108.2</td><td>$90,388</td></tr>
+    <tr><td>8</td><td>Oregon</td><td>$112,800</td><td>125.3</td><td>$90,024</td></tr>
+    <tr><td>9</td><td>Wisconsin</td><td>$85,900</td><td>95.8</td><td>$89,666</td></tr>
+    <tr><td>10</td><td>California</td><td>$142,500</td><td>159.1</td><td>$89,566</td></tr>
+  </tbody>
+</table>
+
+<p>California falls from #1 to #10 when real purchasing power is factored in. Nevada, Michigan, and Texas emerge as the best value states for an RN's dollar. See our full cost-of-living breakdown in <a href="/blog/highest-paying-states-cost-of-living-adjusted" style="color:#2563eb;font-weight:600;">Highest Paying States Adjusted for Cost of Living</a>.</p>
+
+<h2>RN Salary by Experience Level (National Average)</h2>
+<table>
+  <thead><tr><th>Experience</th><th>Avg Annual Salary</th><th>Avg Hourly</th></tr></thead>
+  <tbody>
+    <tr><td>New grad (0–1 yr)</td><td>$72,400</td><td>$34.81</td></tr>
+    <tr><td>2–4 years</td><td>$81,800</td><td>$39.33</td></tr>
+    <tr><td>5–9 years</td><td>$88,200</td><td>$42.40</td></tr>
+    <tr><td>10–19 years</td><td>$94,500</td><td>$45.43</td></tr>
+    <tr><td>20+ years</td><td>$99,100</td><td>$47.64</td></tr>
+  </tbody>
+</table>
+<p>For a deeper new-grad breakdown see <a href="/blog/new-grad-rn-salary-by-state-2026" style="color:#2563eb;font-weight:600;">New Grad RN Salary by State 2026</a>.</p>
+
+<h2>RN Salary by Setting</h2>
+<table>
+  <thead><tr><th>Setting</th><th>Avg Salary</th></tr></thead>
+  <tbody>
+    <tr><td>Government (federal/state/VA)</td><td>$98,400</td></tr>
+    <tr><td>Hospital (acute care)</td><td>$92,300</td></tr>
+    <tr><td>Outpatient care centers</td><td>$102,700</td></tr>
+    <tr><td>Home healthcare</td><td>$84,100</td></tr>
+    <tr><td>Nursing/residential care</td><td>$78,500</td></tr>
+    <tr><td>Physician offices</td><td>$81,600</td></tr>
+    <tr><td>Educational services</td><td>$82,300</td></tr>
+  </tbody>
+</table>
+
+<h2>Specialty Matters Almost As Much As State</h2>
+<p>Specialty differential can swing an RN's salary by $25,000+ in the same hospital:</p>
+<ul>
+  <li><strong>ICU / Critical Care:</strong> +$8K–$15K over Med-Surg baseline. See <a href="/blog/icu-travel-nurse-salary-2026" style="color:#2563eb;font-weight:600;">ICU Nurse Salary 2026</a>.</li>
+  <li><strong>OR / Perioperative:</strong> +$6K–$12K, plus call pay</li>
+  <li><strong>L&amp;D / Labor and Delivery:</strong> +$4K–$10K, call premiums</li>
+  <li><strong>ER / Emergency:</strong> +$5K–$10K, high OT availability</li>
+  <li><strong>Cath Lab / Interventional:</strong> +$10K–$18K</li>
+  <li><strong>Psych:</strong> +$3K–$8K in urban markets, flat in rural</li>
+  <li><strong>Home Health / Hospice:</strong> −$5K to base plus mileage</li>
+</ul>
+
+<h2>Union vs Non-Union Pay Gap</h2>
+<p>Union RN positions pay 15–25% more than non-union equivalents in the same state. The biggest union markets:</p>
+<ul>
+  <li>California — CNA/NNU covers most major systems</li>
+  <li>Oregon — ONA at OHSU, Legacy, Providence</li>
+  <li>Minnesota — MNA at Fairview, Allina, HealthPartners</li>
+  <li>Massachusetts — MNA at MGH, Beth Israel, UMass</li>
+  <li>Michigan — MNA represents key Detroit metro systems</li>
+  <li>New York — NYSNA at NYC public hospitals and several private systems</li>
+</ul>
+<p>If you're choosing between two job offers in a non-union state, the union-adjacent one (an affiliate hospital in a nearby unionized system) often has pulled-up pay rates too.</p>
+
+<h2>What About Shift Differentials?</h2>
+<p>Most states' averages include differentials, but the structure varies:</p>
+<ul>
+  <li>Evening shift: typically $2–$4/hr extra</li>
+  <li>Night shift: typically $4–$7/hr extra</li>
+  <li>Weekend: $2–$5/hr</li>
+  <li>Charge nurse: $2–$5/hr</li>
+  <li>Preceptor: $1–$3/hr when actively precepting</li>
+</ul>
+<p>Night + weekend stacking can add $10K+/year for a full-time noc/weekend rotation.</p>
+
+<h2>How State-by-State Pay Has Moved Since 2023</h2>
+<ul>
+  <li>California: up ~18% since 2023 (large CNA contract wins)</li>
+  <li>Oregon, Washington, Minnesota: up 12–15%</li>
+  <li>Most other states: up 6–10%</li>
+  <li>Texas, Florida: up 8–10% but cost of living rose faster in urban markets</li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What state pays RNs the most in 2026?</h3>
+<p>California, averaging $142,500 — driven by AB 394 staffing ratios, strong union representation, and high cost of living. Bay Area and LA hospitals often exceed $160K base.</p>
+
+<h3>What state pays RNs the least?</h3>
+<p>Alabama, at $70,900 average. Most southern states cluster at $71–78K. Adjusted for cost of living, these states aren't as bad as the raw number suggests, but starting pay is still the lowest nationally.</p>
+
+<h3>Is it worth moving to California for higher RN pay?</h3>
+<p>Only if you can handle the cost of living. A $142K salary in San Francisco nets similar real purchasing power to $85K in Dallas. If rent and living costs are covered, California wins on total career earnings. If not, Nevada, Texas, and Minnesota offer better real-dollar outcomes.</p>
+
+<h3>What state has the best new grad RN salaries?</h3>
+<p>California for headline pay ($85K+ new grad), but Nevada, Texas, and Minnesota offer better real-dollar starts when adjusted for cost of living. See <a href="/blog/new-grad-rn-salary-by-state-2026" style="color:#2563eb;font-weight:600;">New Grad RN Salary by State 2026</a>.</p>
+
+<h3>How does travel nursing compare to staff RN pay?</h3>
+<p>Travel RNs average $2,100/week blended in 2026 vs staff RNs averaging $1,700/week — roughly 25% more gross. But travel nurses lose PTO, health insurance cost-share, retirement match, and carry contract cancellation risk. See <a href="/blog/travel-nurse-vs-staff-nurse-salary-2026" style="color:#2563eb;font-weight:600;">Travel vs Staff Salary</a>.</p>
+
+<h3>Do RNs with a BSN earn more than those with an ADN?</h3>
+<p>Usually $2,000–$5,000/year more in base pay, plus access to Magnet hospitals and leadership/specialty roles that require BSN. See <a href="/blog/bsn-vs-adn-salary-difference" style="color:#2563eb;font-weight:600;">BSN vs ADN Salary Difference</a>.</p>
+
+<h2>Before You Accept or Relocate</h2>
+<p>State averages are a starting point — the contract you sign determines what you actually earn. Run your offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before signing. The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes counter-offer templates for base pay, sign-on bonus, and differential negotiation.</p>
+
+<h2>Related Reading</h2>
+<ul>
+  <li><a href="/blog/highest-paying-states-cost-of-living-adjusted" style="color:#2563eb;font-weight:600;">Highest Paying States Cost-of-Living Adjusted</a></li>
+  <li><a href="/blog/new-grad-rn-salary-by-state-2026" style="color:#2563eb;font-weight:600;">New Grad RN Salary by State 2026</a></li>
+  <li><a href="/blog/california-nurse-salary-2026" style="color:#2563eb;font-weight:600;">California Nurse Salary 2026</a></li>
+  <li><a href="/blog/travel-nurse-salary-by-state-2026" style="color:#2563eb;font-weight:600;">Travel Nurse Salary by State 2026</a></li>
+  <li><a href="/blog/bsn-vs-adn-salary-difference" style="color:#2563eb;font-weight:600;">BSN vs ADN Salary Difference</a></li>
+</ul>
+    `,
+  },
+  {
+    slug: 'np-salary-guide-2026',
+    draft: true,
+    title: 'Nurse Practitioner Salary Guide 2026: Every Specialty Ranked',
+    date: '2026-04-15',
+    excerpt: 'NP pay varies by $70,000+ across specialties. Here\'s what every NP track earns in 2026 — plus which pay more than others for the same credential.',
+    category: 'Salary Data',
+    readTime: '10 min read',
+    focusKeyword: 'nurse practitioner salary by specialty 2026',
+    secondaryKeywords: ['NP salary 2026', 'highest paying NP specialties', 'nurse practitioner pay 2026'],
+    coverImage: '/blog/np-salary-guide-2026.jpg',
+    imageAlt: 'Nurse practitioner salary by specialty 2026 chart ranking NP tracks',
+    metaDescription: 'The 2026 nurse practitioner salary guide: every NP specialty ranked, state-by-state pay, and which tracks offer the highest real return on a DNP or MSN-NP.',
+    content: `
+<p>Nurse practitioners averaged $128,400 in 2026 — but that headline number hides a $70,000+ spread across specialties. A psychiatric NP in California earns nearly twice what a family NP earns in rural Alabama. Here's the full 2026 breakdown of every NP track, where it pays best, and which specialties are hiring hardest.</p>
+
+<p><em>Last updated: April 2026. Data from BLS OEWS, AANP 2025 compensation survey, and Medscape NP compensation report.</em></p>
+
+<h2>Average NP Salary by Specialty (2026)</h2>
+
+<table>
+  <thead><tr><th>Rank</th><th>Specialty</th><th>Avg Salary</th><th>Hourly</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Certified Registered Nurse Anesthetist (CRNA)</td><td>$232,000</td><td>$111.54</td></tr>
+    <tr><td>2</td><td>Psychiatric-Mental Health NP (PMHNP)</td><td>$148,500</td><td>$71.40</td></tr>
+    <tr><td>3</td><td>Acute Care NP (ACNP)</td><td>$138,700</td><td>$66.68</td></tr>
+    <tr><td>4</td><td>Neonatal NP (NNP)</td><td>$137,200</td><td>$65.96</td></tr>
+    <tr><td>5</td><td>Adult-Gerontology Acute Care NP (AGACNP)</td><td>$134,800</td><td>$64.81</td></tr>
+    <tr><td>6</td><td>Emergency NP</td><td>$132,400</td><td>$63.65</td></tr>
+    <tr><td>7</td><td>Cardiology NP</td><td>$129,500</td><td>$62.26</td></tr>
+    <tr><td>8</td><td>Women's Health NP (WHNP)</td><td>$121,300</td><td>$58.32</td></tr>
+    <tr><td>9</td><td>Oncology NP</td><td>$120,800</td><td>$58.08</td></tr>
+    <tr><td>10</td><td>Pediatric NP (PNP)</td><td>$118,400</td><td>$56.92</td></tr>
+    <tr><td>11</td><td>Family NP (FNP)</td><td>$116,700</td><td>$56.11</td></tr>
+    <tr><td>12</td><td>Adult-Gerontology Primary Care NP</td><td>$115,200</td><td>$55.38</td></tr>
+    <tr><td>13</td><td>Occupational Health NP</td><td>$112,900</td><td>$54.28</td></tr>
+    <tr><td>14</td><td>School Health NP</td><td>$94,600</td><td>$45.48</td></tr>
+  </tbody>
+</table>
+
+<h2>Top 5 Highest-Paying NP Specialties in 2026</h2>
+<ol>
+  <li><strong>CRNA — $232,000.</strong> In a class of its own. Anesthesia billing, procedural complexity, and tight supply keep pay at roughly 2x the next-highest NP track. See <a href="/blog/crna-salary-by-state-2026" style="color:#2563eb;font-weight:600;">CRNA Salary by State 2026</a>.</li>
+  <li><strong>Psychiatric-Mental Health NP (PMHNP) — $148,500.</strong> Demand is massive — the US mental health shortage is projected to hit 31,000 unfilled provider slots by 2030. Telehealth PMHNPs working for platforms like Talkiatry and Rula routinely clear $180K+.</li>
+  <li><strong>Acute Care NP (ACNP) — $138,700.</strong> ICU, hospitalist, and trauma service lines pay well and reward experience. Adult-gerontology acute care (AGACNP) is the fastest-growing acute NP track.</li>
+  <li><strong>Neonatal NP (NNP) — $137,200.</strong> Level III/IV NICU call-heavy positions can push past $160K with call pay. Limited programs nationally keep supply tight.</li>
+  <li><strong>Emergency NP — $132,400.</strong> Post-MSN fellowships plus ENP board certification drive this number. ER procedure volume and high-acuity decision-making justify the premium.</li>
+</ol>
+
+<h2>NP Salary by State (Family NP Baseline)</h2>
+<p>These are Family NP averages — the largest NP specialty — to keep the state comparison consistent:</p>
+
+<table>
+  <thead><tr><th>State</th><th>Avg FNP Salary</th></tr></thead>
+  <tbody>
+    <tr><td>California</td><td>$152,500</td></tr>
+    <tr><td>New Jersey</td><td>$143,200</td></tr>
+    <tr><td>Massachusetts</td><td>$141,800</td></tr>
+    <tr><td>Washington</td><td>$138,900</td></tr>
+    <tr><td>New York</td><td>$136,500</td></tr>
+    <tr><td>Oregon</td><td>$133,800</td></tr>
+    <tr><td>Hawaii</td><td>$131,400</td></tr>
+    <tr><td>Nevada</td><td>$128,200</td></tr>
+    <tr><td>Minnesota</td><td>$127,500</td></tr>
+    <tr><td>Connecticut</td><td>$125,900</td></tr>
+    <tr><td>Arizona</td><td>$118,300</td></tr>
+    <tr><td>Colorado</td><td>$117,400</td></tr>
+    <tr><td>Texas</td><td>$115,600</td></tr>
+    <tr><td>Illinois</td><td>$114,200</td></tr>
+    <tr><td>Maryland</td><td>$112,800</td></tr>
+    <tr><td>Florida</td><td>$111,200</td></tr>
+    <tr><td>Virginia</td><td>$109,700</td></tr>
+    <tr><td>Georgia</td><td>$106,400</td></tr>
+    <tr><td>Ohio</td><td>$104,800</td></tr>
+    <tr><td>Michigan</td><td>$103,500</td></tr>
+    <tr><td>North Carolina</td><td>$102,700</td></tr>
+    <tr><td>Pennsylvania</td><td>$102,200</td></tr>
+    <tr><td>Indiana</td><td>$99,800</td></tr>
+    <tr><td>Tennessee</td><td>$97,400</td></tr>
+    <tr><td>South Carolina</td><td>$95,600</td></tr>
+    <tr><td>Missouri</td><td>$94,800</td></tr>
+    <tr><td>Oklahoma</td><td>$92,300</td></tr>
+    <tr><td>Louisiana</td><td>$91,500</td></tr>
+    <tr><td>Kentucky</td><td>$90,900</td></tr>
+    <tr><td>Alabama</td><td>$89,400</td></tr>
+    <tr><td>Mississippi</td><td>$87,800</td></tr>
+    <tr><td>Arkansas</td><td>$87,200</td></tr>
+    <tr><td>West Virginia</td><td>$86,600</td></tr>
+  </tbody>
+</table>
+
+<h2>Full Practice Authority States (Where NPs Earn More)</h2>
+<p>NPs can practice independently without physician supervision in 27 states + DC. Full practice authority (FPA) states consistently pay 10–20% more because NPs can bill directly and aren't gated on a physician's signature.</p>
+<p>FPA states as of 2026: Alaska, Arizona, Colorado, Connecticut, Delaware, Florida (2020 expansion), Hawaii, Idaho, Iowa, Kansas, Maine, Maryland, Massachusetts, Minnesota, Montana, Nebraska, Nevada, New Hampshire, New Mexico, New York (2022 expansion), North Dakota, Oregon, Rhode Island, South Dakota, Utah, Vermont, Washington, Wyoming, DC.</p>
+
+<h2>Practice Setting Comparison</h2>
+<table>
+  <thead><tr><th>Setting</th><th>Avg NP Salary</th></tr></thead>
+  <tbody>
+    <tr><td>Hospital (inpatient)</td><td>$128,000</td></tr>
+    <tr><td>Telehealth platform</td><td>$135,000 (FT) / varies (1099)</td></tr>
+    <tr><td>Specialty physician practice</td><td>$125,000</td></tr>
+    <tr><td>Primary care clinic</td><td>$112,000</td></tr>
+    <tr><td>Urgent care</td><td>$119,000</td></tr>
+    <tr><td>Community health / FQHC</td><td>$108,000</td></tr>
+    <tr><td>VA / government</td><td>$124,000</td></tr>
+    <tr><td>Retail clinic (CVS MinuteClinic, etc.)</td><td>$103,000</td></tr>
+  </tbody>
+</table>
+
+<h2>NP vs RN vs PA Pay</h2>
+<table>
+  <thead><tr><th>Role</th><th>Avg Salary</th><th>Education</th></tr></thead>
+  <tbody>
+    <tr><td>NP (all specialties avg)</td><td>$128,400</td><td>MSN or DNP (6–8 yrs)</td></tr>
+    <tr><td>Physician Assistant</td><td>$129,800</td><td>Master's PA (6 yrs)</td></tr>
+    <tr><td>Registered Nurse</td><td>$89,000</td><td>BSN or ADN (2–4 yrs)</td></tr>
+    <tr><td>CRNA</td><td>$232,000</td><td>DNP-Anesthesia (7–8 yrs)</td></tr>
+  </tbody>
+</table>
+
+<h2>Sign-On Bonuses and Loan Repayment</h2>
+<p>NP sign-on bonuses in high-demand specialties (PMHNP, ACNP, NNP) routinely hit $20,000–$40,000. Rural and underserved area positions can add federal loan repayment through NHSC (up to $50,000 for 2-year commitments). Always check:</p>
+<ul>
+  <li>Net vs gross sign-on repayment terms (negotiate net)</li>
+  <li>Repayment timeline (2 years standard; longer is an extra commitment you should get paid for)</li>
+  <li>Force majeure / facility-initiated termination carve-outs</li>
+</ul>
+<p>See our full guide on <a href="/blog/how-to-negotiate-sign-on-bonus-nursing" style="color:#2563eb;font-weight:600;">how to negotiate a nursing sign-on bonus</a>.</p>
+
+<h2>Telehealth NP Pay in 2026</h2>
+<p>Telehealth has reshaped the NP pay market — especially for PMHNP, FNP, and women's health. Typical 2026 rates:</p>
+<ul>
+  <li><strong>Employed FT telehealth NP:</strong> $130K–$175K base with benefits</li>
+  <li><strong>1099 telehealth NP (Rula, SonderMind, Talkiatry):</strong> $55–$120/hr, no benefits</li>
+  <li><strong>1099 per-visit (20-min med management):</strong> $30–$55/encounter</li>
+</ul>
+<p>1099 telehealth NPs need to account for self-employment tax (15.3%), health insurance ($600–$1,200/mo), and retirement contributions — usually reducing the effective rate by ~25%.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What NP specialty pays the most in 2026?</h3>
+<p>CRNA at $232,000 is far and away the top-paying NP role. Excluding CRNA, the highest-paying NP specialties are PMHNP ($148,500), ACNP ($138,700), and NNP ($137,200).</p>
+
+<h3>Do nurse practitioners make more than RNs?</h3>
+<p>Yes — typically $40K+ more. Average NP is $128,400 vs average RN at $89,000. The gap widens at higher experience levels and in full practice authority states.</p>
+
+<h3>Is becoming an NP worth it financially in 2026?</h3>
+<p>For most RNs, yes — the $60K–$90K cost of an MSN-NP or DNP program is usually recouped within 2–4 years of post-graduation practice. ROI is strongest for PMHNP, ACNP, and NNP tracks; least strong for retail clinic NP roles.</p>
+
+<h3>How long does it take to become an NP?</h3>
+<p>Most NP paths require BSN + 1–2 years RN experience + 2–3 years MSN-NP (or 3–4 years DNP). Total timeline: 6–8 years post-high-school for most tracks.</p>
+
+<h3>What's the difference between an MSN-NP and DNP-NP salary?</h3>
+<p>Usually minimal — $2,000–$5,000/year on average. The DNP adds clinical scholarship and leadership training, but payers reimburse NPs the same regardless of terminal degree. DNP becomes more valuable in academic and leadership roles.</p>
+
+<h3>Are NPs in demand in 2026?</h3>
+<p>Extremely. The US is projected to face a shortage of ~120,000 primary care providers by 2030, and NPs are filling most of the gap. PMHNP demand is especially acute — every major health system is actively recruiting.</p>
+
+<h2>Before You Sign an NP Contract</h2>
+<p>NP contracts often include non-competes, productivity bonuses, and tail coverage clauses that nurses have never dealt with as RNs. Run your offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before signing. The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes counter-offer scripts tailored to NP-specific contract issues.</p>
+
+<h2>Related Reading</h2>
+<ul>
+  <li><a href="/blog/crna-salary-by-state-2026" style="color:#2563eb;font-weight:600;">CRNA Salary by State 2026</a></li>
+  <li><a href="/blog/rn-salary-by-state-2026" style="color:#2563eb;font-weight:600;">RN Salary by State 2026</a></li>
+  <li><a href="/blog/how-to-negotiate-sign-on-bonus-nursing" style="color:#2563eb;font-weight:600;">How to Negotiate a Sign-On Bonus</a></li>
+  <li><a href="/blog/non-compete-clause-nursing-contract" style="color:#2563eb;font-weight:600;">Non-Compete Clauses in Nursing Contracts</a></li>
+</ul>
+    `,
+  },
+  {
+    slug: '5-contract-clauses-cost-nurses-thousands',
+    draft: true,
+    title: '5 Contract Clauses That Cost Nurses Thousands (And How to Fix Them)',
+    date: '2026-04-15',
+    excerpt: 'Five specific clauses in nursing contracts are responsible for most of the financial damage nurses take. Here\'s how to identify them and what to negotiate instead.',
+    category: 'Negotiation',
+    readTime: '9 min read',
+    focusKeyword: 'travel nursing contract clauses',
+    secondaryKeywords: ['nursing contract clauses to watch', 'contract clauses cost nurses', 'nurse contract negotiation'],
+    coverImage: '/blog/5-contract-clauses-cost-nurses-thousands.jpg',
+    imageAlt: 'Contract clauses highlighted in red that cost nurses thousands of dollars',
+    metaDescription: 'The 5 contract clauses that quietly cost nurses thousands each year — from cancellation loopholes to sign-on clawbacks. How to spot them and the exact counter-offer language to fix them.',
+    content: `
+<p>Every year, tens of thousands of nurses sign contracts that carry clauses they never negotiate. Five specific provisions — scattered across staff and travel contracts — are responsible for most of the financial damage. None of them are new, none of them are secret, and all of them are negotiable. Here's exactly what to look for and how to push back.</p>
+
+<p><em>Last updated: April 2026.</em></p>
+
+<h2>Clause 1: Sign-On Bonus Clawback on the Gross Amount</h2>
+
+<p><strong>What it says:</strong></p>
+<blockquote>"If Employee separates from employment within twenty-four (24) months of hire date for any reason, Employee agrees to repay the full $[bonus amount] sign-on bonus within thirty (30) days of separation."</blockquote>
+
+<p><strong>Why it costs you thousands:</strong> The bonus was taxed when you received it — a $15,000 sign-on means ~$4,500 went to federal/state/FICA before you saw a dollar. If you leave at month 18 and owe it all back, you repay the <em>gross</em> $15,000 while having only received ~$10,500 net.</p>
+
+<p><strong>Counter language:</strong></p>
+<blockquote>"Employee agrees to repay the net amount of the sign-on bonus actually received, pro-rated by months of service remaining in the 24-month commitment period."</blockquote>
+
+<p>If they refuse the "net" language, at minimum get the pro-rata structure. That alone can save you $5,000+ if you leave mid-commitment.</p>
+
+<h2>Clause 2: Vague Facility Cancellation Rights</h2>
+
+<p><strong>What it says:</strong></p>
+<blockquote>"Facility reserves the right to cancel this assignment at its discretion with notice as circumstances may require."</blockquote>
+
+<p><strong>Why it costs you thousands:</strong> "As circumstances may require" is a legal free pass. The facility can cancel you with 24 hours' notice — after you've moved across the country, paid first-and-last month's rent, and told your old job you were leaving.</p>
+
+<p><strong>Counter language:</strong></p>
+<blockquote>"Facility must provide fourteen (14) days' written notice to cancel this contract. If less notice is given, Facility will compensate Nurse for the equivalent of forty (40) hours per week at the full blended hourly rate for each week of the notice period deficiency."</blockquote>
+
+<p>See our full <a href="/blog/breaking-travel-nursing-contract-consequences" style="color:#2563eb;font-weight:600;">travel contract cancellation guide</a> for more detail.</p>
+
+<h2>Clause 3: Overtime Calculated on Taxable Wage Only</h2>
+
+<p><strong>What it says:</strong></p>
+<blockquote>"Overtime hours will be compensated at one and one-half times the taxable hourly rate."</blockquote>
+
+<p><strong>Why it costs you thousands:</strong> On a travel contract with a $70/hr blended rate but a $27.50/hr taxable rate, OT calculated on taxable pays $41.25/hr instead of $105/hr — a $64/hour shortfall. Over one 12-hour OT shift, that's $768 in your pocket vs theirs.</p>
+
+<p><strong>Counter language:</strong></p>
+<blockquote>"Overtime hours will be compensated at one and one-half times the blended hourly rate, inclusive of all non-discretionary compensation including weekly stipend amounts amortized over scheduled hours."</blockquote>
+
+<p>Federal wage law supports the blended-rate interpretation. Most agencies will concede if you push. For the full negotiation framework see <a href="/blog/how-to-negotiate-travel-nursing-contract" style="color:#2563eb;font-weight:600;">how to negotiate a travel nursing contract</a>.</p>
+
+<h2>Clause 4: "Float to Any Unit" Language</h2>
+
+<p><strong>What it says:</strong></p>
+<blockquote>"Nurse may be floated to any unit as determined by Facility staffing needs."</blockquote>
+
+<p><strong>Why it costs you thousands:</strong> This clause lets the facility send an ICU nurse to med-surg at will — which isn't just a professional insult, it's a license-risk issue. You can't safely practice outside your specialty, but if you refuse the float, you've arguably breached contract and are subject to termination.</p>
+
+<p>Some facilities also use float as a workaround to avoid paying specialty differential. An ICU RN paid $5/hr specialty differential loses that $5 when floated — 20 hours of floating per pay period = $200 lost.</p>
+
+<p><strong>Counter language:</strong></p>
+<blockquote>"Nurse will float only to units of comparable acuity within Nurse's primary specialty. If floated to a lower-acuity or dissimilar unit, Nurse will continue to receive the full contracted hourly rate including specialty differential. Nurse retains the right to refuse any float that exceeds Nurse's scope of competency."</blockquote>
+
+<h2>Clause 5: Non-Completion Penalty Without Carve-Outs</h2>
+
+<p><strong>What it says:</strong></p>
+<blockquote>"If Nurse fails to complete the assignment for any reason, Nurse shall pay Liquidated Damages in the amount of $2,500."</blockquote>
+
+<p><strong>Why it costs you thousands:</strong> "Any reason" is doing a lot of work here. Medical emergency? Family death? Facility breaches safety regs? Under the plain language, you pay $2,500. That's two weeks of gross pay on some contracts — for leaving an unsafe or untenable assignment.</p>
+
+<p><strong>Counter language:</strong></p>
+<blockquote>"Non-completion penalty does not apply in cases of: (a) medical necessity affecting Nurse or immediate family; (b) bereavement in Nurse's immediate family; (c) Facility breach of contract terms including but not limited to wage violations, unsafe assignments, or failure to provide contracted hours; (d) any Facility-initiated termination or contract cancellation; (e) material misrepresentation by Facility or Agency regarding assignment terms."</blockquote>
+
+<p>At minimum, push for (c) and (d). Agencies almost always accept those — it's the "any reason" catch-all that's the problem.</p>
+
+<h2>Bonus Clause: Arbitration With Class-Action Waiver</h2>
+
+<p>Not one of the top five for direct-dollar damage, but worth noting. Arbitration + class-action waiver clauses mean you can't sue the employer in court and can't join a collective action with other nurses if the employer systematically underpaid. Ask for the arbitration clause to be removed, or at minimum carve out wage-and-hour disputes and state board complaints.</p>
+
+<h2>How to Bring Up These Changes Without Losing the Offer</h2>
+
+<p>Recruiters and HR respond better to specific line edits than to generic objections. Don't say "the contract has too many red flags." Say:</p>
+<blockquote>"I'd like to move forward with this role. I have five specific clause edits that would let me sign today — I'll send them over in a tracked-changes version of the contract. None of them affect compensation totals; they just clarify cancellation, OT calculation, and floating."</blockquote>
+<p>Nine times out of ten, the clarifying framing gets most changes through.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Can I really negotiate contract clauses as a nurse?</h3>
+<p>Yes. Staff, travel, and NP contracts are all negotiable at every level. Recruiters, HR, and agencies expect some back-and-forth. The worst that happens is they say no — which leaves you exactly where you started.</p>
+
+<h3>What's the most important clause to negotiate?</h3>
+<p>Cancellation terms for travel contracts; sign-on bonus clawback for staff contracts. Both carry the biggest financial risk if not modified.</p>
+
+<h3>Will asking for changes cost me the offer?</h3>
+<p>Almost never. Hospitals and agencies invest time in recruiting and won't pull an offer over reasonable redlines. The exception: aggressive or combative tone — always ask in clarifying, professional language.</p>
+
+<h3>Do I need a lawyer to negotiate a nursing contract?</h3>
+<p>Not for typical staff or travel contracts. For 6-figure NP contracts, partnership agreements, or complex non-compete disputes, a healthcare employment attorney (1-hour review ~$300–$500) is worth it.</p>
+
+<h3>Where do I find exact counter-offer language?</h3>
+<p>The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes word-for-word email templates and addendum language for every clause covered here, plus 5 more.</p>
+
+<h2>Before You Sign</h2>
+<p>These five clauses are responsible for most of the avoidable financial damage nurses take each year. Run your offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> to screen for the 10 most common issues, then use the negotiation scripts in the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> to push back.</p>
+
+<h2>Related Reading</h2>
+<ul>
+  <li><a href="/blog/nursing-contract-red-flags-checklist" style="color:#2563eb;font-weight:600;">10 Nursing Contract Red Flags</a></li>
+  <li><a href="/blog/how-to-negotiate-travel-nursing-contract" style="color:#2563eb;font-weight:600;">How to Negotiate a Travel Nursing Contract</a></li>
+  <li><a href="/blog/how-to-negotiate-sign-on-bonus-nursing" style="color:#2563eb;font-weight:600;">How to Negotiate a Sign-On Bonus</a></li>
+  <li><a href="/blog/breaking-travel-nursing-contract-consequences" style="color:#2563eb;font-weight:600;">Breaking a Travel Nursing Contract</a></li>
+</ul>
+    `,
+  },
+  {
+    slug: 'highest-paying-states-cost-of-living-adjusted',
+    draft: true,
+    title: 'Highest Paying States for Nurses 2026 (Adjusted for Cost of Living)',
+    date: '2026-04-15',
+    excerpt: 'California pays the most on paper — but the real ranking flips completely once you account for cost of living. Here are the states where an RN salary actually goes furthest.',
+    category: 'Salary Data',
+    readTime: '10 min read',
+    focusKeyword: 'highest paying states for nurses cost of living',
+    secondaryKeywords: ['best states for nurses 2026', 'nurse salary adjusted cost of living', 'real nurse pay by state'],
+    coverImage: '/blog/highest-paying-states-cost-of-living-adjusted.jpg',
+    imageAlt: 'Highest paying states for nurses 2026 adjusted for cost of living',
+    metaDescription: 'Which states give nurses the most real purchasing power in 2026? Complete cost-of-living adjusted ranking using BEA regional price parity data.',
+    content: `
+<p>The "highest paying state" list every nursing site publishes is misleading. California clears $142K on average — but after rent, groceries, and gas, a $142K California salary buys less than a $90K Texas salary in real terms. This is the 2026 cost-of-living adjusted ranking using BEA regional price parity (RPP) data, so you can see where your nursing dollar actually stretches.</p>
+
+<p><em>Last updated: April 2026. Salary data from BLS OEWS; cost of living from BEA Regional Price Parities (2025 release).</em></p>
+
+<h2>Top 10 States by Real (COL-Adjusted) RN Pay</h2>
+<table>
+  <thead><tr><th>Rank</th><th>State</th><th>Avg Salary</th><th>RPP</th><th>Real Value</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Nevada</td><td>$96,700</td><td>97.1</td><td>$99,588</td></tr>
+    <tr><td>2</td><td>Michigan</td><td>$87,800</td><td>91.4</td><td>$96,061</td></tr>
+    <tr><td>3</td><td>Texas</td><td>$87,100</td><td>95.2</td><td>$91,491</td></tr>
+    <tr><td>4</td><td>Arizona</td><td>$92,100</td><td>100.8</td><td>$91,369</td></tr>
+    <tr><td>5</td><td>Ohio</td><td>$82,400</td><td>90.5</td><td>$91,050</td></tr>
+    <tr><td>6</td><td>Missouri</td><td>$80,700</td><td>89.2</td><td>$90,471</td></tr>
+    <tr><td>7</td><td>Minnesota</td><td>$97,800</td><td>108.2</td><td>$90,388</td></tr>
+    <tr><td>8</td><td>Oregon</td><td>$112,800</td><td>125.3</td><td>$90,024</td></tr>
+    <tr><td>9</td><td>Wisconsin</td><td>$85,900</td><td>95.8</td><td>$89,666</td></tr>
+    <tr><td>10</td><td>California</td><td>$142,500</td><td>159.1</td><td>$89,566</td></tr>
+    <tr><td>11</td><td>Indiana</td><td>$81,200</td><td>91.0</td><td>$89,231</td></tr>
+    <tr><td>12</td><td>Georgia</td><td>$83,600</td><td>94.2</td><td>$88,747</td></tr>
+    <tr><td>13</td><td>Washington</td><td>$107,300</td><td>121.4</td><td>$88,385</td></tr>
+    <tr><td>14</td><td>Colorado</td><td>$93,500</td><td>106.3</td><td>$87,959</td></tr>
+    <tr><td>15</td><td>Pennsylvania</td><td>$87,500</td><td>99.6</td><td>$87,851</td></tr>
+  </tbody>
+</table>
+
+<h2>The Winners: Why These States Top the List</h2>
+<ol>
+  <li><strong>Nevada.</strong> Decent nursing pay ($96.7K), no state income tax, and RPP slightly below the national average. Las Vegas hospitals pay better than the state average.</li>
+  <li><strong>Michigan.</strong> Detroit metro hospitals pay nearly $90K, and RPP is 8.6% below national. One of the best true values for nurses.</li>
+  <li><strong>Texas.</strong> No state income tax, strong nursing pay in Houston/Dallas/Austin, and cost of living remains 4.8% below national despite recent inflation.</li>
+  <li><strong>Arizona.</strong> Phoenix metro pays $95K+ to experienced RNs; cost of living is right at national average. Strong demand across acute care.</li>
+  <li><strong>Ohio.</strong> Cleveland Clinic and other major systems pay above $82K base, and RPP is 9.5% below national.</li>
+</ol>
+
+<h2>Why California Drops From #1 to #10</h2>
+<p>California's RPP is 159.1 — the highest in the country. To match a $100K real-value salary in California, you need $159,100 gross. The Bay Area's local RPP is closer to 180. San Francisco alone ranks worst in the nation for purchasing power per nursing dollar.</p>
+<p>That doesn't mean California is a bad choice — it's a great choice if you can keep housing costs in check (rural/Sacramento/Central Valley RNs stretch their salaries better than Bay Area peers). But the "$142K!" headline is mostly consumed by rent.</p>
+
+<h2>States Where Pay Doesn't Keep Up With Cost of Living</h2>
+<table>
+  <thead><tr><th>State</th><th>Avg Salary</th><th>RPP</th><th>Real Value</th></tr></thead>
+  <tbody>
+    <tr><td>Hawaii</td><td>$122,700</td><td>152.8</td><td>$80,301</td></tr>
+    <tr><td>New York</td><td>$104,500</td><td>120.6</td><td>$86,650</td></tr>
+    <tr><td>New Jersey</td><td>$101,200</td><td>118.9</td><td>$85,114</td></tr>
+    <tr><td>Massachusetts</td><td>$110,500</td><td>123.7</td><td>$89,329</td></tr>
+    <tr><td>Connecticut</td><td>$97,400</td><td>113.4</td><td>$85,890</td></tr>
+  </tbody>
+</table>
+<p>Hawaii is the most striking — despite the $122K headline, real purchasing power is under $81K. Unless you have reasons beyond money (family, lifestyle, specific practice interests), Hawaii is financially one of the worst nursing markets.</p>
+
+<h2>The No-State-Income-Tax Bonus</h2>
+<p>Nine states have no state income tax. For an RN earning $90K, that's typically an extra $4,000–$6,000 per year compared to equivalent-salary states:</p>
+<ul>
+  <li>Alaska, Florida, Nevada, South Dakota, Tennessee, Texas, Washington, Wyoming (fully)</li>
+  <li>New Hampshire (wages exempt; only interest/dividends taxed)</li>
+</ul>
+<p>This isn't in the RPP calculation but meaningfully increases real take-home. Nevada and Texas are already top of this list; adding the tax benefit widens the gap.</p>
+
+<h2>How to Use This Ranking</h2>
+<p>Raw salary matters if you're paying off student loans or building career earnings fast. Real purchasing power matters if you're trying to buy a house, raise a family, or save aggressively.</p>
+<ul>
+  <li><strong>Loan payoff / max income:</strong> California, Oregon, Washington</li>
+  <li><strong>Real purchasing power / quality of life:</strong> Nevada, Michigan, Texas</li>
+  <li><strong>Tax efficiency:</strong> Texas, Nevada, Tennessee, Washington</li>
+  <li><strong>New grad start:</strong> See <a href="/blog/new-grad-rn-salary-by-state-2026" style="color:#2563eb;font-weight:600;">New Grad RN Salary by State 2026</a></li>
+</ul>
+
+<h2>City-Level Variation Within States</h2>
+<p>RPP is a state average. Within any state, urban markets run 10–30% above state RPP and rural markets run 10–20% below. A $90K salary in rural Texas has significantly more purchasing power than the same $90K in Austin.</p>
+<p>For Texas specifically, Houston and San Antonio offer the best urban pay-to-cost ratio. Austin is improving on pay but cost of living has surged. Dallas is mid-pack.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What state has the best real pay for nurses in 2026?</h3>
+<p>Nevada, with $99,588 in real purchasing power after RPP adjustment. It combines above-average nursing pay, no state income tax, and slightly-below-average cost of living.</p>
+
+<h3>Is California still worth it for nurses?</h3>
+<p>For many, yes — especially if you can live in lower-cost parts of the state (Sacramento, Central Valley, Inland Empire) while commuting to metro hospitals. San Francisco and LA are tough on a single RN salary but can work for dual-income households.</p>
+
+<h3>What's the worst state financially for nurses?</h3>
+<p>Hawaii, when measured by real purchasing power. The $122K average salary delivers under $81K in real value after cost-of-living adjustment. Only choose Hawaii if lifestyle or family reasons outweigh the financial hit.</p>
+
+<h3>Does the no-income-tax bonus really matter?</h3>
+<p>Yes — it's typically worth an additional 4–7% of gross pay vs high-tax states. On a $90K salary in Texas vs $90K in New York, the Texas nurse nets roughly $5,500 more per year.</p>
+
+<h3>Should I choose a state based on cost of living alone?</h3>
+<p>No — pair it with licensure (NLC compact states simplify moves), hospital quality (Magnet status), shift availability, and specialty needs. Pure cost-of-living optimization can land you in a less-than-ideal job market.</p>
+
+<h2>Before You Relocate</h2>
+<p>Relocating for a nursing job is a major commitment. Run your offer letter through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before you sign and before you pay to move. Relocation clawbacks, sign-on bonus terms, and probationary termination rights all show up here.</p>
+
+<h2>Related Reading</h2>
+<ul>
+  <li><a href="/blog/rn-salary-by-state-2026" style="color:#2563eb;font-weight:600;">RN Salary by State 2026</a></li>
+  <li><a href="/blog/california-nurse-salary-2026" style="color:#2563eb;font-weight:600;">California Nurse Salary 2026</a></li>
+  <li><a href="/blog/new-grad-rn-salary-by-state-2026" style="color:#2563eb;font-weight:600;">New Grad RN Salary by State 2026</a></li>
+  <li><a href="/blog/travel-nurse-salary-by-state-2026" style="color:#2563eb;font-weight:600;">Travel Nurse Salary by State 2026</a></li>
+</ul>
+    `,
+  },
+  {
+    slug: 'nicu-nurse-salary-by-state-2026',
+    draft: true,
+    title: 'NICU Nurse Salary by State 2026: Complete Pay Breakdown',
+    date: '2026-04-15',
+    excerpt: 'NICU nurses earn 8–15% more than standard Med-Surg RNs, with level III/IV units paying the highest. Here\'s 2026 NICU salary data in all 50 states.',
+    category: 'Salary Data',
+    readTime: '8 min read',
+    focusKeyword: 'NICU nurse salary by state 2026',
+    secondaryKeywords: ['NICU RN pay', 'neonatal nurse salary', 'NICU travel nurse pay'],
+    coverImage: '/blog/nicu-nurse-salary-by-state-2026.jpg',
+    imageAlt: 'NICU nurse salary by state 2026 showing neonatal intensive care unit pay',
+    metaDescription: 'NICU nurse salary in all 50 states for 2026. See base pay, differentials, Level III/IV premiums, and travel NICU weekly rates.',
+    content: `
+<p>NICU (neonatal intensive care unit) nursing is one of the highest-paying RN specialties — averaging $95,400 nationally in 2026, or about 7% above Med-Surg. Level III and IV units pay noticeably more than Level II special care nurseries, and travel NICU contracts routinely top $2,400/week in high-demand markets.</p>
+
+<p><em>Last updated: April 2026. Data from BLS OEWS, AACN compensation survey, and travel contract aggregators.</em></p>
+
+<h2>Average NICU RN Salary by State (2026)</h2>
+<table>
+  <thead><tr><th>State</th><th>Avg NICU RN Salary</th><th>Level III/IV Premium</th></tr></thead>
+  <tbody>
+    <tr><td>California</td><td>$155,200</td><td>+$8,500</td></tr>
+    <tr><td>Hawaii</td><td>$131,400</td><td>+$7,200</td></tr>
+    <tr><td>Oregon</td><td>$120,600</td><td>+$7,800</td></tr>
+    <tr><td>Massachusetts</td><td>$118,400</td><td>+$8,100</td></tr>
+    <tr><td>Alaska</td><td>$117,200</td><td>+$6,400</td></tr>
+    <tr><td>Washington</td><td>$115,800</td><td>+$7,500</td></tr>
+    <tr><td>New York</td><td>$112,500</td><td>+$7,600</td></tr>
+    <tr><td>New Jersey</td><td>$108,900</td><td>+$7,200</td></tr>
+    <tr><td>Minnesota</td><td>$105,800</td><td>+$6,900</td></tr>
+    <tr><td>Connecticut</td><td>$104,700</td><td>+$6,800</td></tr>
+    <tr><td>Nevada</td><td>$103,800</td><td>+$6,500</td></tr>
+    <tr><td>Colorado</td><td>$100,800</td><td>+$6,400</td></tr>
+    <tr><td>Arizona</td><td>$99,400</td><td>+$6,200</td></tr>
+    <tr><td>Maryland</td><td>$98,200</td><td>+$6,300</td></tr>
+    <tr><td>Illinois</td><td>$97,800</td><td>+$6,400</td></tr>
+    <tr><td>Michigan</td><td>$94,900</td><td>+$6,100</td></tr>
+    <tr><td>Pennsylvania</td><td>$94,500</td><td>+$6,200</td></tr>
+    <tr><td>Texas</td><td>$94,100</td><td>+$6,100</td></tr>
+    <tr><td>Virginia</td><td>$93,200</td><td>+$5,900</td></tr>
+    <tr><td>Wisconsin</td><td>$92,800</td><td>+$6,100</td></tr>
+    <tr><td>Florida</td><td>$91,000</td><td>+$5,800</td></tr>
+    <tr><td>Georgia</td><td>$90,300</td><td>+$5,700</td></tr>
+    <tr><td>Ohio</td><td>$89,100</td><td>+$5,700</td></tr>
+    <tr><td>North Carolina</td><td>$88,400</td><td>+$5,500</td></tr>
+    <tr><td>Indiana</td><td>$87,700</td><td>+$5,500</td></tr>
+    <tr><td>Missouri</td><td>$87,200</td><td>+$5,400</td></tr>
+    <tr><td>Utah</td><td>$86,400</td><td>+$5,400</td></tr>
+    <tr><td>Tennessee</td><td>$81,500</td><td>+$5,000</td></tr>
+    <tr><td>South Carolina</td><td>$84,500</td><td>+$5,200</td></tr>
+    <tr><td>Louisiana</td><td>$82,100</td><td>+$5,000</td></tr>
+    <tr><td>Oklahoma</td><td>$82,400</td><td>+$5,000</td></tr>
+    <tr><td>Kentucky</td><td>$80,200</td><td>+$4,900</td></tr>
+    <tr><td>Alabama</td><td>$76,700</td><td>+$4,600</td></tr>
+    <tr><td>Mississippi</td><td>$77,500</td><td>+$4,600</td></tr>
+    <tr><td>Arkansas</td><td>$78,700</td><td>+$4,700</td></tr>
+  </tbody>
+</table>
+<p>States not listed cluster between $78K–$95K. The 50-state spread for NICU is tighter than overall RN pay because NICU is a high-acuity specialty with more standardized training nationally.</p>
+
+<h2>NICU Pay by Unit Level</h2>
+<table>
+  <thead><tr><th>Level</th><th>Description</th><th>Avg Salary</th></tr></thead>
+  <tbody>
+    <tr><td>Level I (well-newborn nursery)</td><td>Healthy newborns, short stay</td><td>$82,400</td></tr>
+    <tr><td>Level II (special care nursery)</td><td>&ge;32 wk gestation, moderate issues</td><td>$89,100</td></tr>
+    <tr><td>Level III (NICU)</td><td>&lt;32 wk, ventilator support</td><td>$96,800</td></tr>
+    <tr><td>Level IV (regional NICU)</td><td>Surgical, ECMO, full subspecialty</td><td>$103,200</td></tr>
+  </tbody>
+</table>
+<p>Level IV units (major children's hospitals, academic medical centers) pay the most but demand the highest acuity skill set. Common Level IV centers: CHOP, Boston Children's, CHOC, Seattle Children's, Texas Children's.</p>
+
+<h2>Travel NICU Nurse Pay in 2026</h2>
+<ul>
+  <li><strong>National average:</strong> $2,380/week blended (gross)</li>
+  <li><strong>California (Bay Area, LA):</strong> $3,000–$3,400/week</li>
+  <li><strong>Pacific Northwest (Seattle, Portland):</strong> $2,600–$2,900/week</li>
+  <li><strong>Northeast (NYC, Boston):</strong> $2,700–$3,100/week</li>
+  <li><strong>Midwest urban:</strong> $2,100–$2,500/week</li>
+  <li><strong>South, rural:</strong> $1,800–$2,100/week</li>
+</ul>
+<p>Level III/IV NICU contracts pay roughly $200–$400/week more than Level II. NICU travel experience is also credentialed — most agencies require 2+ years Level III before travel. See our <a href="/blog/travel-nurse-salary-by-state-2026" style="color:#2563eb;font-weight:600;">travel nurse salary by state</a> for broader comparison.</p>
+
+<h2>Differentials and Bonuses</h2>
+<ul>
+  <li><strong>NICU specialty differential:</strong> $2–$6/hr on top of base (8–15% typical)</li>
+  <li><strong>Night shift:</strong> $4–$7/hr extra</li>
+  <li><strong>Charge nurse (NICU):</strong> $3–$6/hr extra</li>
+  <li><strong>ECMO-trained premium:</strong> $2–$4/hr</li>
+  <li><strong>Transport team premium:</strong> $3–$5/hr when activated</li>
+</ul>
+<p>A senior Level IV NICU nurse with ECMO credentials working nights can stack $12–$20/hr in differentials over base. That's $25K–$40K per year.</p>
+
+<h2>What Drives NICU Pay Above Med-Surg</h2>
+<ul>
+  <li>Required 1:1 or 1:2 ratios in Level III/IV (regulatory in many states)</li>
+  <li>High acuity, low error tolerance — skilled nurses retain pricing power</li>
+  <li>Specialty training and competency validation (minimum 1-year orientation in most units)</li>
+  <li>Fewer nurses willing/able to work the shift type and emotional intensity</li>
+</ul>
+
+<h2>How to Move From General RN to NICU</h2>
+<ol>
+  <li>Most Level III/IV NICUs require 1+ year Med-Surg or pediatric experience. Some (UCSF, Seattle Children's) hire direct-to-NICU new grads with strong clinical records.</li>
+  <li>Post-orientation training runs 3–6 months. Expect precepted hours before taking a primary assignment.</li>
+  <li>Certifications that increase pay: RNC-NIC (National Certification Corp), NRP, STABLE, ECMO-Specialist.</li>
+  <li>Level IV experience + 2–3 years sets you up for travel NICU, NNP school, or transport team roles.</li>
+</ol>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What does a NICU nurse make in 2026?</h3>
+<p>$95,400 national average. Level IV NICU in top-paying states (California, Oregon, Washington) can exceed $140K; entry-level Level II in lower-pay states starts closer to $72K.</p>
+
+<h3>Do NICU nurses get paid more than Med-Surg nurses?</h3>
+<p>Yes — typically 7–15% more once specialty differential, higher acuity pay, and stacked differentials are counted. Gap is wider in union hospitals.</p>
+
+<h3>Is NICU a good specialty for travel nursing?</h3>
+<p>Yes, but entry is restricted — most agencies require 2+ years Level III experience before placing travelers. NICU travel RNs command $200–$400/week premiums over Med-Surg travel.</p>
+
+<h3>How much does a Level IV NICU nurse make?</h3>
+<p>$103,200 national average; $140K+ in California's Bay Area and LA; $95K–$110K in major Midwest cities. Level IV roles typically include ECMO, transport, and surgical support — premium skill set, premium pay.</p>
+
+<h3>Do NICU travel nurses make more than staff NICU?</h3>
+<p>On paper, yes — about 25–40% more gross. After losing PTO, benefits, and 401(k) match, the net premium is closer to 10–15%. See <a href="/blog/travel-nurse-vs-staff-nurse-salary-2026" style="color:#2563eb;font-weight:600;">Travel vs Staff Salary</a>.</p>
+
+<h2>Before You Accept</h2>
+<p>NICU contracts — staff or travel — often include floating language that can pull you to non-NICU units, stripping your specialty differential. Run your offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> and use the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> for negotiation scripts tailored to specialty protection clauses.</p>
+
+<h2>Related Reading</h2>
+<ul>
+  <li><a href="/blog/icu-travel-nurse-salary-2026" style="color:#2563eb;font-weight:600;">ICU Travel Nurse Salary 2026</a></li>
+  <li><a href="/blog/ld-vs-icu-nurse-salary" style="color:#2563eb;font-weight:600;">L&amp;D vs ICU Nurse Salary</a></li>
+  <li><a href="/blog/rn-salary-by-state-2026" style="color:#2563eb;font-weight:600;">RN Salary by State 2026</a></li>
+  <li><a href="/blog/travel-nurse-salary-by-state-2026" style="color:#2563eb;font-weight:600;">Travel Nurse Salary by State 2026</a></li>
+</ul>
+    `,
+  },
+  {
+    slug: 'travel-nursing-salary-guide-2026',
+    draft: true,
+    title: 'The Complete Travel Nurse Salary Guide 2026',
+    date: '2026-04-15',
+    excerpt: 'Everything you need to know about travel nursing pay in 2026 — by state, specialty, shift, agency, and setting. The definitive guide for travel RNs.',
+    category: 'Salary Data',
+    readTime: '15 min read',
+    focusKeyword: 'travel nurse salary guide 2026',
+    secondaryKeywords: ['travel nurse pay 2026', 'complete travel nursing salary guide', 'travel RN compensation 2026'],
+    coverImage: '/blog/travel-nursing-salary-guide-2026.jpg',
+    imageAlt: 'Complete travel nurse salary guide 2026 cover with stethoscope and travel bag',
+    metaDescription: 'The complete 2026 guide to travel nurse pay — average weekly rates, state-by-state tables, specialty premiums, agency comparisons, tax-free stipend rules, and contract negotiation.',
+    content: `
+<p>Travel nursing in 2026 looks different from the COVID era — bill rates are lower, agencies have consolidated, and the taxable-vs-stipend math has gotten more scrutinized by the IRS. But the fundamentals still reward nurses who know how the pay stack works. This is the complete guide to travel nurse compensation in 2026: what you can actually earn, where, and how to keep more of it.</p>
+
+<p><em>Last updated: April 2026.</em></p>
+
+<h2>Travel Nurse Pay: The Headline Number</h2>
+<p>The 2026 national average for travel RN pay is <strong>$2,100/week blended gross</strong> across all specialties and states. That's down from $2,800/week at 2022 peak but 30% above 2019 pre-COVID averages.</p>
+<ul>
+  <li><strong>Low end:</strong> $1,600/week (Med-Surg in low-demand Southern states)</li>
+  <li><strong>Mid:</strong> $2,000–$2,400/week (most specialties in most states)</li>
+  <li><strong>High end:</strong> $3,000+/week (ICU/OR in California, Alaska, crisis rates)</li>
+</ul>
+
+<h2>Average Weekly Pay by Specialty</h2>
+<table>
+  <thead><tr><th>Specialty</th><th>Avg Weekly Gross</th><th>Range</th></tr></thead>
+  <tbody>
+    <tr><td>ICU / Critical Care</td><td>$2,350</td><td>$1,900–$3,200</td></tr>
+    <tr><td>Cath Lab</td><td>$2,400</td><td>$2,000–$3,300</td></tr>
+    <tr><td>OR / Perioperative</td><td>$2,280</td><td>$1,850–$3,100</td></tr>
+    <tr><td>L&amp;D</td><td>$2,260</td><td>$1,850–$3,000</td></tr>
+    <tr><td>ER</td><td>$2,220</td><td>$1,800–$2,900</td></tr>
+    <tr><td>NICU</td><td>$2,380</td><td>$1,950–$3,400</td></tr>
+    <tr><td>PICU</td><td>$2,300</td><td>$1,900–$3,100</td></tr>
+    <tr><td>Telemetry / Stepdown</td><td>$2,100</td><td>$1,750–$2,700</td></tr>
+    <tr><td>Med-Surg</td><td>$1,950</td><td>$1,600–$2,500</td></tr>
+    <tr><td>Postpartum / Mother-Baby</td><td>$2,020</td><td>$1,650–$2,600</td></tr>
+    <tr><td>Oncology</td><td>$2,100</td><td>$1,750–$2,700</td></tr>
+    <tr><td>Psych</td><td>$1,970</td><td>$1,600–$2,500</td></tr>
+    <tr><td>Home Health</td><td>$1,800</td><td>$1,500–$2,200</td></tr>
+  </tbody>
+</table>
+
+<h2>Top 15 Highest-Paying States for Travel Nurses</h2>
+<ol>
+  <li>California — $2,950/wk avg</li>
+  <li>Alaska — $2,850/wk</li>
+  <li>Hawaii — $2,700/wk</li>
+  <li>Massachusetts — $2,600/wk</li>
+  <li>New York — $2,550/wk</li>
+  <li>Washington — $2,500/wk</li>
+  <li>D.C. — $2,500/wk</li>
+  <li>Oregon — $2,450/wk</li>
+  <li>Nevada — $2,400/wk</li>
+  <li>New Jersey — $2,400/wk</li>
+  <li>Minnesota — $2,350/wk</li>
+  <li>Colorado — $2,300/wk</li>
+  <li>Connecticut — $2,300/wk</li>
+  <li>Illinois — $2,250/wk</li>
+  <li>Maryland — $2,200/wk</li>
+</ol>
+<p>See full 50-state breakdown in <a href="/blog/travel-nurse-salary-by-state-2026" style="color:#2563eb;font-weight:600;">Travel Nurse Salary by State 2026</a>.</p>
+
+<h2>Taxable Wage vs Tax-Free Stipend (The Most Important Math)</h2>
+<p>Every travel pay package splits into taxable wages (W-2 income) and tax-free stipends (housing + meals + incidentals). Two contracts with the same $2,400 headline can deliver very different take-home:</p>
+
+<table>
+  <thead><tr><th>Offer</th><th>Taxable</th><th>Stipend</th><th>Take-Home</th></tr></thead>
+  <tbody>
+    <tr><td>A: Higher taxable</td><td>$1,800</td><td>$600</td><td>~$2,000/wk</td></tr>
+    <tr><td>B: Higher stipend</td><td>$900</td><td>$1,500</td><td>~$2,200/wk</td></tr>
+  </tbody>
+</table>
+
+<p>Offer B nets ~$200/week more — $2,600 over a 13-week contract. See full pay package decoding in <a href="/blog/travel-nurse-pay-package-breakdown" style="color:#2563eb;font-weight:600;">Travel Nurse Pay Package Breakdown</a> and IRS qualification rules in <a href="/blog/travel-nurse-housing-stipend-tax-rules" style="color:#2563eb;font-weight:600;">Housing Stipend Tax Rules</a>.</p>
+
+<h2>Shift and Setting Differentials</h2>
+<ul>
+  <li><strong>Night shift:</strong> +$2–$4/hr to taxable rate, or +$150–$250/week blended</li>
+  <li><strong>Weekend:</strong> +$1–$3/hr (stackable with nights)</li>
+  <li><strong>Charge:</strong> +$2–$5/hr when assigned</li>
+  <li><strong>Crisis rate contracts:</strong> +$500–$1,500/week premium, usually 4–8 week assignments</li>
+  <li><strong>Strike contracts:</strong> $4,000–$7,000/week (high risk, cross-picketing controversy — know what you're walking into)</li>
+</ul>
+
+<h2>Best Agencies for Travel Nurse Pay Transparency</h2>
+<p>Transparency varies wildly. Our ranking based on published bill rate disclosure, contract clarity, and verified nurse reports:</p>
+<ul>
+  <li><strong>Transparent:</strong> Vivian Health (marketplace — sees multiple agencies), Nomad Health, Trusted Health</li>
+  <li><strong>Semi-transparent:</strong> Aya Healthcare, Cross Country, AMN (depends on recruiter)</li>
+  <li><strong>Opaque:</strong> Smaller MSP-restricted agencies that won't share bill rates</li>
+</ul>
+<p>The marketplace-style platforms (Vivian, Nomad) let you compare offers across multiple agencies for the same facility — worth using even if you eventually sign with a traditional agency.</p>
+
+<h2>The Agency Cut Explained</h2>
+<p>Agency margin typically runs 22–30% of the bill rate. A $95/hr bill rate breaks down roughly as:</p>
+<ul>
+  <li>~$30/hr taxable to you</li>
+  <li>~$32/hr stipend equivalent to you</li>
+  <li>~$6/hr benefits/insurance/taxes</li>
+  <li>~$27/hr agency margin (28%)</li>
+</ul>
+<p>Agencies keeping 30%+ usually refuse to share bill rate. That alone is your signal to check a second agency on the same contract.</p>
+
+<h2>Contract Lengths and Crisis Rates</h2>
+<table>
+  <thead><tr><th>Length</th><th>Typical Market</th><th>Pay Premium</th></tr></thead>
+  <tbody>
+    <tr><td>4-week crisis</td><td>Emergency staffing</td><td>+30–50% over 13-week rate</td></tr>
+    <tr><td>8-week</td><td>Short-term coverage</td><td>+10–15%</td></tr>
+    <tr><td>13-week (standard)</td><td>Most contracts</td><td>Baseline</td></tr>
+    <tr><td>26-week extension</td><td>Negotiated renewal</td><td>Usually baseline, sometimes a retention bonus</td></tr>
+  </tbody>
+</table>
+
+<h2>Benefits, Insurance, and 401(k)</h2>
+<p>Agency benefits are usually worse than staff benefits. Typical 2026 agency coverage:</p>
+<ul>
+  <li>Health insurance: offered day-1 but often high-deductible; consider private market or spouse's plan if available</li>
+  <li>Dental/vision: often separate premiums</li>
+  <li>401(k): 1–3% match typical after 3–6 months; compare to staff 5–6% match</li>
+  <li>PTO: essentially none; every day off is unpaid</li>
+  <li>License reimbursement: sometimes, varies</li>
+</ul>
+
+<h2>How to Maximize Your 2026 Earnings</h2>
+<ol>
+  <li><strong>Stack specialties.</strong> ICU + CCRN + CMC opens crisis contracts at $3,000+/week.</li>
+  <li><strong>Hit tax-free thresholds.</strong> Maintain a true tax home, duplicate expenses, keep travel receipts.</li>
+  <li><strong>Choose no-state-tax states when rates are close.</strong> A $2,000 Texas contract nets ~$5,500 more over 13 weeks than $2,000 in California.</li>
+  <li><strong>Negotiate every contract.</strong> See our <a href="/blog/how-to-negotiate-travel-nursing-contract" style="color:#2563eb;font-weight:600;">full negotiation guide</a>.</li>
+  <li><strong>Work 2 agencies.</strong> Same facility, different bill rates.</li>
+  <li><strong>Time to crisis windows.</strong> Winter surge (Jan–Mar), summer vacation coverage (Jun–Aug).</li>
+  <li><strong>Extend only if the new rate is higher.</strong> Agencies use "same rate extension" as a discount — you did the hard part, new travelers pay more than you.</li>
+</ol>
+
+<h2>Common Travel Nursing Pay Traps</h2>
+<ul>
+  <li>Taxable wage below $20/hr (IRS audit risk)</li>
+  <li>Stipend above GSA rate (same)</li>
+  <li>OT calculated on taxable only (check every contract)</li>
+  <li>No guaranteed hours language</li>
+  <li>Cancellation with no notice requirement</li>
+  <li>Completion bonus forfeited if facility cancels</li>
+  <li>Non-completion penalties without carve-outs</li>
+</ul>
+<p>See our full breakdown on <a href="/blog/5-contract-clauses-cost-nurses-thousands" style="color:#2563eb;font-weight:600;">5 contract clauses that cost nurses thousands</a>.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>How much do travel nurses make in 2026?</h3>
+<p>National average is $2,100/week blended gross ($109,000/year if working 52 weeks). Top markets pay $3,000+/week for high-acuity specialties.</p>
+
+<h3>Is travel nursing worth it in 2026?</h3>
+<p>Financially, yes — travel RNs net 10–25% more than equivalent staff RNs in most markets. Quality-of-life varies: more control, more money, but no PTO, more risk, and no career continuity at a single hospital.</p>
+
+<h3>Are travel nurses still in demand?</h3>
+<p>Yes — hospital nurse vacancy rates remain above pre-COVID baseline. Demand concentration has shifted from COVID hotspots to aging-population states (Florida, Arizona, Southeast) and chronically understaffed regions.</p>
+
+<h3>Can you make $10,000 a week travel nursing?</h3>
+<p>Only with strike contracts (controversial) or rare crisis-level contracts during acute surges. Sustainable 2026 earnings top out around $4,000/week for ICU/CCRN in California metros.</p>
+
+<h3>Do travel nurses pay state income tax?</h3>
+<p>You pay state income tax in the state where you work if that state has one. If you work in multiple states during a year, you may owe taxes in each and credit against your home state.</p>
+
+<h3>Which travel nursing agency pays the most?</h3>
+<p>No single answer — pay varies by facility, specialty, and date. Best practice: list on Vivian or Nomad, compare offers across 3–5 agencies for each contract, pick the highest combination of weekly rate + contract protection.</p>
+
+<h2>Before You Sign Any Contract</h2>
+<p>The difference between a good and bad travel contract is often buried in five or six specific clauses. Run yours through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> — it takes 3 minutes and catches the 10 most common issues. For full counter-offer scripts, get the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> — reusable on every contract you'll ever sign.</p>
+
+<h2>Related Reading</h2>
+<ul>
+  <li><a href="/blog/travel-nurse-salary-by-state-2026" style="color:#2563eb;font-weight:600;">Travel Nurse Salary by State 2026</a></li>
+  <li><a href="/blog/travel-nurse-pay-package-breakdown" style="color:#2563eb;font-weight:600;">Travel Nurse Pay Package Breakdown</a></li>
+  <li><a href="/blog/how-to-negotiate-travel-nursing-contract" style="color:#2563eb;font-weight:600;">How to Negotiate a Travel Nursing Contract</a></li>
+  <li><a href="/blog/icu-travel-nurse-salary-2026" style="color:#2563eb;font-weight:600;">ICU Travel Nurse Salary 2026</a></li>
+  <li><a href="/blog/travel-nurse-vs-staff-nurse-salary-2026" style="color:#2563eb;font-weight:600;">Travel vs Staff Nurse Salary</a></li>
+</ul>
+    `,
+  },
+  {
+    slug: 'night-shift-differential-pay',
+    draft: true,
+    title: 'Night Shift Differentials: What Nurses Are Actually Owed (2026)',
+    date: '2026-04-15',
+    excerpt: 'Night shift nurses leave thousands on the table when differentials are poorly written into their contracts. Here\'s what 2026 night differentials look like and how to negotiate them.',
+    category: 'Negotiation',
+    readTime: '7 min read',
+    focusKeyword: 'nurse night shift differential pay',
+    secondaryKeywords: ['night shift differential 2026', 'night nurse pay', 'shift differential negotiation'],
+    coverImage: '/blog/night-shift-differential-pay.jpg',
+    imageAlt: 'Nurse working night shift in a dimly lit hospital corridor',
+    metaDescription: 'How much is a nurse night shift differential in 2026? Average rates by state, what to negotiate, and the 4 common traps that cost nurses differential pay.',
+    content: `
+<p>Night shift differentials are one of the most commonly underpaid parts of a nursing contract — not because they aren't offered, but because they're written in ways that make them easy to revoke or avoid paying. In 2026, night shift nurses averaged $5.10/hour in differential pay nationally, but the range runs from $2 to $12/hour depending on market, specialty, and how well the nurse negotiated.</p>
+
+<p><em>Last updated: April 2026.</em></p>
+
+<h2>Average Night Shift Differential (2026)</h2>
+<table>
+  <thead><tr><th>Region / Setting</th><th>Avg Night Differential</th></tr></thead>
+  <tbody>
+    <tr><td>California urban</td><td>$7.50–$12.00/hr</td></tr>
+    <tr><td>Pacific Northwest</td><td>$6.50–$9.50/hr</td></tr>
+    <tr><td>Northeast urban (NYC, Boston)</td><td>$6.00–$10.00/hr</td></tr>
+    <tr><td>Midwest urban</td><td>$4.00–$7.00/hr</td></tr>
+    <tr><td>Southern urban</td><td>$3.50–$6.00/hr</td></tr>
+    <tr><td>Rural / critical access</td><td>$2.00–$4.50/hr</td></tr>
+    <tr><td>VA / federal facilities</td><td>10% of base (standardized)</td></tr>
+    <tr><td>Union hospitals (avg)</td><td>$1.50–$3.00/hr above non-union in same market</td></tr>
+  </tbody>
+</table>
+
+<h2>Flat Rate vs Percentage: Which Is Better?</h2>
+<p>Some hospitals pay night differential as a flat $/hr; others as a percentage of base. Here's the math on a nurse earning $45/hr base:</p>
+<ul>
+  <li><strong>$6/hr flat:</strong> $51/hr on nights ($6 night differential)</li>
+  <li><strong>15% of base:</strong> $51.75/hr on nights ($6.75 differential)</li>
+  <li><strong>10% of base:</strong> $49.50/hr on nights ($4.50 differential)</li>
+</ul>
+<p>Percentage structures protect you as base pay rises over time — but only if the contract ties the percentage to "current base rate." If it says "percentage of initial hire rate," you lose the inflation hedge.</p>
+
+<h2>When Differentials Apply (This Matters)</h2>
+<p>Most contracts pay night differential for hours worked between <strong>7 PM and 7 AM</strong> — but the boundaries vary:</p>
+<ul>
+  <li>Shift-based (you get differential for all hours on a "night shift" even if some are before 7 PM)</li>
+  <li>Clock-based (only hours physically worked between specific times qualify)</li>
+  <li>Majority-rule (night rate applies only if 51%+ of shift is in the night window)</li>
+</ul>
+<p>Shift-based is the most nurse-friendly. Clock-based costs you money on 7P–7A shifts because the first hour (7P–8P) often doesn't count depending on clock-in time rules. Majority-rule is a trap for 11A–11P or 3P–3A swing shifts that may not qualify at all.</p>
+
+<h2>Common Differential Traps in Nursing Contracts</h2>
+<ul>
+  <li><strong>"Differential does not apply to overtime hours."</strong> Technically legal but costly — if you pick up an extra night shift, the whole shift is straight time without the differential.</li>
+  <li><strong>"Differential paid per current policy."</strong> Means they can change it anytime without your consent. Always get differential written into the contract as a dollar amount or tied-to-base percentage.</li>
+  <li><strong>"Differential does not stack with charge nurse pay."</strong> Sometimes you're stuck choosing one premium or the other. Push for stackable.</li>
+  <li><strong>"Differential does not apply to mandatory meal periods."</strong> If you're legally required to clock out for a 30-minute meal, you may lose differential on that time.</li>
+</ul>
+
+<h2>Weekend and Holiday Stacking</h2>
+<ul>
+  <li>Weekend differential: $1–$4/hr typical, often stackable with night</li>
+  <li>Holiday differential: 1.5x base or flat $/hr, usually requires working 6 of 10 designated holidays</li>
+  <li>Summer or recruitment premium: Some hospitals pay a $2–$4/hr retention bonus during summer months on hard-to-staff shifts</li>
+</ul>
+<p>A senior ICU RN working nights + weekends can stack $10–$15/hr in differentials, adding $20K–$32K to annual base.</p>
+
+<h2>What to Negotiate</h2>
+<ol>
+  <li>Differential as a <strong>percentage of current base</strong>, not a flat amount or initial-hire percentage</li>
+  <li><strong>Shift-based application</strong> (all hours on a night shift qualify)</li>
+  <li><strong>Differential applies to OT</strong> (1.5x of base + differential)</li>
+  <li><strong>Stackable with other differentials</strong> (weekend, charge, specialty)</li>
+  <li>Written dollar amount or percentage in contract, not "per policy"</li>
+</ol>
+
+<h2>Script for Negotiating</h2>
+<blockquote>"I see the shift differential listed as $5/hr. I'd like to request a few specific clarifications: first, that the differential be codified at 15% of current base rather than a flat amount, so it scales with future raises; second, that the differential apply to all hours on a night shift (shift-based rather than clock-based); and third, that it apply to overtime and stack with weekend and charge differentials. These are standard protections at peer facilities."</blockquote>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What's the average nurse night shift differential in 2026?</h3>
+<p>$5.10/hour nationally. Urban California nurses average $8–$12; rural Southern nurses average $2–$4.</p>
+
+<h3>Do night shift nurses make significantly more than days?</h3>
+<p>Over a year of full-time nights, differential adds $10K–$25K to base pay. More in high-differential markets, less in rural.</p>
+
+<h3>Can an employer change my night differential without notice?</h3>
+<p>Only if the contract says "per current policy" or references an external handbook. If the differential is written into your employment agreement as a specific amount or percentage, it can only change by mutual agreement.</p>
+
+<h3>Are night differentials taxed differently?</h3>
+<p>No — they're ordinary W-2 wages. They increase your taxable income dollar-for-dollar.</p>
+
+<h3>Do travel nurses get night differential?</h3>
+<p>Yes, but it's often baked into the blended hourly rate rather than shown as a separate line. Ask the recruiter to show the taxable rate for day vs night shifts if you're unsure.</p>
+
+<h2>Before You Sign</h2>
+<p>Differential language is one of the 10 items screened in our <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a>. The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes full negotiation scripts for shift differential, weekend premium, and stacking language.</p>
+
+<h2>Related Reading</h2>
+<ul>
+  <li><a href="/blog/5-contract-clauses-cost-nurses-thousands" style="color:#2563eb;font-weight:600;">5 Contract Clauses That Cost Nurses Thousands</a></li>
+  <li><a href="/blog/how-to-negotiate-travel-nursing-contract" style="color:#2563eb;font-weight:600;">How to Negotiate a Travel Nursing Contract</a></li>
+  <li><a href="/blog/nursing-contract-red-flags-checklist" style="color:#2563eb;font-weight:600;">10 Nursing Contract Red Flags</a></li>
+  <li><a href="/blog/rn-salary-by-state-2026" style="color:#2563eb;font-weight:600;">RN Salary by State 2026</a></li>
+</ul>
+    `,
+  },
+  {
+    slug: 'ld-vs-icu-nurse-salary',
+    draft: true,
+    title: 'L&D Nurse Salary vs ICU Nurse Salary: Which Pays More in 2026?',
+    date: '2026-04-15',
+    excerpt: 'ICU and L&D are both high-acuity specialties with strong pay — but they don\'t pay the same, and the difference depends heavily on state, setting, and shift.',
+    category: 'Salary Data',
+    readTime: '8 min read',
+    focusKeyword: 'L&D nurse salary vs ICU',
+    secondaryKeywords: ['L&D vs ICU pay', 'labor and delivery nurse salary', 'ICU nurse pay comparison'],
+    coverImage: '/blog/ld-vs-icu-nurse-salary.jpg',
+    imageAlt: 'L&D vs ICU nurse salary comparison showing monitors from each unit',
+    metaDescription: 'L&D vs ICU nurse salary comparison for 2026. See base pay, differentials, travel contract rates, and which specialty offers higher total compensation.',
+    content: `
+<p>ICU and L&amp;D are two of the highest-paying staff RN specialties in the US, and they're often considered together by new grads deciding which high-acuity path to pursue. The pay gap between them is smaller than most nurses expect — but consistently favors ICU, with the gap widening in travel contracts.</p>
+
+<p><em>Last updated: April 2026.</em></p>
+
+<h2>The Bottom Line: ICU Pays Slightly More</h2>
+<table>
+  <thead><tr><th>Specialty</th><th>Avg Staff Salary 2026</th><th>Avg Travel Weekly Gross</th></tr></thead>
+  <tbody>
+    <tr><td>ICU / Critical Care</td><td>$97,800</td><td>$2,350</td></tr>
+    <tr><td>L&amp;D / Labor &amp; Delivery</td><td>$94,200</td><td>$2,260</td></tr>
+    <tr><td><strong>Difference</strong></td><td><strong>$3,600/year</strong></td><td><strong>$90/week</strong></td></tr>
+  </tbody>
+</table>
+<p>That's roughly 4% more for ICU at the staff level and ~4% more at the travel level. Within a specific hospital, the difference is usually smaller — $1–$2/hr specialty differential — because both specialties sit at the top of the acuity ladder.</p>
+
+<h2>Why ICU Edges Out L&amp;D</h2>
+<ul>
+  <li><strong>Patient ratios are tighter.</strong> ICU is often 1:1 or 1:2, vs L&amp;D active labor at 1:1 but antepartum/recovery closer to 1:2 or 1:3.</li>
+  <li><strong>More complex billing.</strong> ICU care generates more revenue per patient-day, supporting higher nurse pay.</li>
+  <li><strong>Higher call coverage demand.</strong> L&amp;D has call, but ICU units run 24/7 at full staffing; L&amp;D scales down overnight in smaller hospitals.</li>
+  <li><strong>Certifications stack higher.</strong> CCRN, CMC, CSC are widely offered in ICU; L&amp;D has RNC-OB and C-EFM but fewer stackable premiums.</li>
+</ul>
+
+<h2>Where L&amp;D Wins</h2>
+<ul>
+  <li><strong>Call pay.</strong> Many L&amp;D units offer 1:3 or 1:4 call with $5–$15/hr standby pay. A weekend on call can add $200–$400 beyond base. Full ICU coverage is usually onsite, without call pay.</li>
+  <li><strong>Predictable shift structure.</strong> L&amp;D is busier but often less emotionally draining than ICU mortality caseloads.</li>
+  <li><strong>Faster to travel.</strong> Most agencies accept L&amp;D travelers with 18 months Level I/II experience; ICU travel often requires 2+ years in the same unit type.</li>
+  <li><strong>Magnet hospital pipeline.</strong> L&amp;D nurses transition to NP paths (midwifery, WHNP) that can double salary long-term.</li>
+</ul>
+
+<h2>State-by-State Comparison</h2>
+<table>
+  <thead><tr><th>State</th><th>ICU Avg</th><th>L&amp;D Avg</th></tr></thead>
+  <tbody>
+    <tr><td>California</td><td>$158,200</td><td>$152,600</td></tr>
+    <tr><td>Hawaii</td><td>$132,800</td><td>$127,900</td></tr>
+    <tr><td>Oregon</td><td>$121,700</td><td>$117,200</td></tr>
+    <tr><td>Massachusetts</td><td>$119,500</td><td>$115,300</td></tr>
+    <tr><td>Washington</td><td>$116,800</td><td>$112,700</td></tr>
+    <tr><td>New York</td><td>$113,300</td><td>$109,400</td></tr>
+    <tr><td>Minnesota</td><td>$106,600</td><td>$102,700</td></tr>
+    <tr><td>Texas</td><td>$94,700</td><td>$91,300</td></tr>
+    <tr><td>Florida</td><td>$91,700</td><td>$88,300</td></tr>
+    <tr><td>Ohio</td><td>$89,800</td><td>$86,400</td></tr>
+    <tr><td>Alabama</td><td>$77,200</td><td>$74,100</td></tr>
+  </tbody>
+</table>
+
+<h2>Travel Contract Comparison</h2>
+<ul>
+  <li><strong>ICU travel (2026 avg):</strong> $2,350/week blended, crisis rates to $3,200+</li>
+  <li><strong>L&amp;D travel (2026 avg):</strong> $2,260/week blended, crisis rates to $3,000</li>
+  <li><strong>Cath Lab (comparison):</strong> $2,400/week — highest-paying specialty travel</li>
+  <li><strong>NICU (comparison):</strong> $2,380/week</li>
+</ul>
+<p>See full specialty comparison in <a href="/blog/travel-nursing-salary-guide-2026" style="color:#2563eb;font-weight:600;">The Complete Travel Nurse Salary Guide 2026</a>.</p>
+
+<h2>Certifications That Move the Number</h2>
+<p><strong>ICU:</strong></p>
+<ul>
+  <li>CCRN (Adult, Pediatric, or Neonatal) — $1–$3/hr premium at most facilities</li>
+  <li>CMC (Cardiac Medicine) — additional $1–$2/hr in cardiac ICU</li>
+  <li>CSC (Cardiac Surgery) — premium in CVICU</li>
+  <li>ECMO Specialist — $2–$4/hr when activated</li>
+</ul>
+<p><strong>L&amp;D:</strong></p>
+<ul>
+  <li>RNC-OB (Inpatient OB) — $1–$2/hr premium</li>
+  <li>C-EFM (Electronic Fetal Monitoring) — sometimes requisite, small premium</li>
+  <li>NRP (Neonatal Resuscitation) — typically required, not extra</li>
+  <li>RNC-MNN (Maternal Newborn) — useful for postpartum roles</li>
+</ul>
+
+<h2>Quality of Life Considerations</h2>
+<ul>
+  <li><strong>ICU:</strong> Higher mortality exposure, emotionally heavy, but clear clinical wins. Long orientations and tight teams.</li>
+  <li><strong>L&amp;D:</strong> Emotionally rewarding (most outcomes are births), but high-stakes emergencies (shoulder dystocia, cord prolapse, hemorrhage). Fast-paced decision-making.</li>
+</ul>
+
+<h2>Which Specialty Should You Pick?</h2>
+<ul>
+  <li><strong>Pick ICU if:</strong> You want maximum pay growth, plan to pursue CRNA school, or prefer technical/procedural nursing.</li>
+  <li><strong>Pick L&amp;D if:</strong> You prefer positive-outcome nursing, want call pay structure, or plan to pursue midwifery/WHNP school.</li>
+  <li><strong>Money-only answer:</strong> ICU wins by ~4% over career, more if CRNA school is on the table ($232K avg CRNA pay).</li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+<h3>Does L&amp;D pay more than ICU?</h3>
+<p>No — ICU pays about 4% more on average, both as staff and as travel. L&amp;D pay is comparable in most markets but rarely exceeds ICU in the same hospital.</p>
+
+<h3>Which is harder, ICU or L&amp;D?</h3>
+<p>Different kinds of difficulty. ICU is sustained-intensity with chronic/complex patients. L&amp;D has lower baseline intensity but faster-moving emergencies. Both require strong clinical judgment and fast reaction times.</p>
+
+<h3>Can I switch from L&amp;D to ICU or vice versa?</h3>
+<p>Yes, with orientation. Most hospitals offer 8–12 week cross-training programs. Pay stays the same during orientation; you retain any specialty differential earned in either unit.</p>
+
+<h3>Is ICU travel nursing worth it over L&amp;D travel?</h3>
+<p>If you're chasing maximum per-contract pay, yes — crisis ICU contracts reliably clear $3,000/week in top markets. L&amp;D travel is solid at $2,200–$2,800/week but ceiling is lower.</p>
+
+<h3>Do ICU and L&amp;D nurses get the same differentials?</h3>
+<p>Yes — night, weekend, charge, and on-call differentials are unit-agnostic in most hospitals. The base specialty differential is where ICU typically edges ahead.</p>
+
+<h2>Before You Accept</h2>
+<p>Whether you're accepting an ICU or L&amp;D offer, the contract clauses matter as much as the specialty. Floating language alone can strip your specialty differential. Run your offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before signing.</p>
+
+<h2>Related Reading</h2>
+<ul>
+  <li><a href="/blog/icu-travel-nurse-salary-2026" style="color:#2563eb;font-weight:600;">ICU Travel Nurse Salary 2026</a></li>
+  <li><a href="/blog/er-vs-icu-nurse-salary" style="color:#2563eb;font-weight:600;">ER vs ICU Nurse Salary</a></li>
+  <li><a href="/blog/nicu-nurse-salary-by-state-2026" style="color:#2563eb;font-weight:600;">NICU Nurse Salary by State 2026</a></li>
+  <li><a href="/blog/nursing-salary-by-specialty-2026" style="color:#2563eb;font-weight:600;">Nursing Salary by Specialty 2026</a></li>
+</ul>
+    `,
+  },
 ];
+
+export const blogPosts: BlogPost[] = allBlogPosts.filter((p) => !p.draft);
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);
