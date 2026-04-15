@@ -536,7 +536,7 @@ Looking forward to hearing from you."
     readTime: '4 min read',
     focusKeyword: 'nursing contract audit kit',
     secondaryKeywords: ['nurse contract review $9', 'travel nurse negotiation scripts', 'nursing contract checklist'],
-    coverImage: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80&auto=format&fit=crop',
+    coverImage: '/blog/nursing-contract-audit-kit-what-it-includes.png',
     imageAlt: 'Nursing contract audit kit with checklist, red flag guide, and negotiation scripts',
     metaDescription: 'What\u2019s inside the $9 Nursing Contract Audit Kit: the full clause checklist, red-flag guide, and word-for-word negotiation scripts used to fix travel and staff nurse contracts.',
     content: `
