@@ -273,7 +273,7 @@ Looking forward to hearing from you."
     readTime: '5 min read',
     focusKeyword: 'ICU nurse salary 2026',
     secondaryKeywords: ['ICU travel nurse salary', 'critical care nurse pay 2026', 'ICU RN hourly rate'],
-    coverImage: 'https://images.unsplash.com/photo-1584515933487-779824d29309?w=1200&q=80&auto=format&fit=crop',
+    coverImage: '/blog/icu-travel-nurse-salary-2026.png',
     imageAlt: 'ICU nurse monitoring critical care patient with ventilator and monitors',
     metaDescription: '2026 ICU travel nurse salary data: gross weekly pay, top-paying states, and how to spot inflated stipends hiding a low base rate.',
     content: `
