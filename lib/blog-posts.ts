@@ -405,7 +405,7 @@ Looking forward to hearing from you."
     readTime: '5 min read',
     focusKeyword: 'best states new grad nurses salary 2026',
     secondaryKeywords: ['new grad RN salary by state', 'first year nurse salary 2026', 'starting RN salary'],
-    coverImage: 'https://images.unsplash.com/photo-1581093458791-9d09c5a0aaf0?w=1200&q=80&auto=format&fit=crop',
+    coverImage: '/blog/new-grad-rn-salary-by-state-2026.png',
     imageAlt: 'New grad RN starting her first shift with state-by-state salary data overlay',
     metaDescription: '2026 new grad RN starting salary by state \u2014 California ($110K) to Alabama ($58K). See which states pay the most and where first-year nurses keep the most after cost of living.',
     content: `
