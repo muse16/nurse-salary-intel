@@ -154,7 +154,7 @@ const allBlogPosts: BlogPost[] = [
     readTime: '5 min read',
     focusKeyword: 'how to negotiate sign on bonus nurse',
     secondaryKeywords: ['new grad RN sign on bonus', 'nursing salary negotiation scripts', 'sign on bonus negotiation email'],
-    coverImage: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&q=80&auto=format&fit=crop',
+    coverImage: '/blog/how-to-negotiate-sign-on-bonus-nursing.png',
     imageAlt: 'New grad nurse negotiating a sign-on bonus at a hospital offer meeting',
     metaDescription: 'New grad RNs can absolutely negotiate a sign-on bonus \u2014 most just don\u2019t ask. Use these word-for-word email and phone scripts to get $5K\u2013$15K more.',
     content: `
