@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import AdSenseSlot from '@/components/AdSenseSlot';
 import SiteNav from '@/components/SiteNav';
+import ContractAuditCTA from '@/components/ContractAuditCTA';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -17,9 +18,28 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return { title: 'Post Not Found' };
+  const description = post.metaDescription ?? post.excerpt;
+  const keywords = [post.focusKeyword, ...(post.secondaryKeywords ?? [])];
+  const url = `https://nursesalaryintel.com/blog/${post.slug}`;
   return {
     title: `${post.title} | Nurse Salary Intelligence`,
-    description: post.excerpt,
+    description,
+    keywords,
+    alternates: { canonical: url },
+    openGraph: {
+      title: post.title,
+      description,
+      url,
+      type: 'article',
+      publishedTime: post.date,
+      images: post.coverImage ? [{ url: post.coverImage, alt: post.imageAlt }] : undefined,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description,
+      images: post.coverImage ? [post.coverImage] : undefined,
+    },
   };
 }
 
@@ -39,7 +59,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   return (
     <div className="min-h-screen bg-gray-50">
       <SiteNav />
-      <header className="bg-white border-b border-gray-200 shadow-sm">
+      <header className="bg-white border-b border-gray-200 shadow-sm pt-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <Link href="/blog" className="text-blue-600 hover:text-blue-700 font-semibold mb-3 inline-block text-sm">
             ← Back to Blog
@@ -50,67 +70,61 @@ export default async function BlogPostPage({ params }: PageProps) {
       <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
         {/* Article header */}
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
+        <div className="mb-10">
+          <div className="flex flex-wrap items-center gap-3 mb-5">
             <span className={`text-xs font-semibold px-3 py-1 rounded-full ${categoryColors[post.category] ?? 'bg-gray-100 text-gray-600'}`}>
               {post.category}
             </span>
-            <span className="text-xs text-gray-400">{post.readTime}</span>
-            <span className="text-xs text-gray-400">
+            <span className="text-xs text-gray-500 font-medium">{post.readTime}</span>
+            <span className="text-gray-300">·</span>
+            <span className="text-xs text-gray-500 font-medium">
               {new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
             </span>
           </div>
-          <h1 className="text-3xl font-bold text-gray-900 leading-tight mb-4">
+          <h1 className="font-headline text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.15] tracking-tight mb-5">
             {post.title}
           </h1>
-          <p className="text-lg text-gray-500 leading-relaxed">
+          <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
             {post.excerpt}
           </p>
         </div>
+
+        {/* Cover image (SEO + social) */}
+        {post.coverImage && (
+          <figure className="mb-8 rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-gray-100">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={post.coverImage}
+              alt={post.imageAlt}
+              className="w-full h-auto object-cover aspect-[16/9]"
+            />
+            <figcaption className="sr-only">{post.imageAlt}</figcaption>
+          </figure>
+        )}
 
         {/* Ad before content */}
         <AdSenseSlot position="blog-top" />
 
         {/* Article body */}
         <article
-          className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 prose prose-gray max-w-none
-            prose-headings:font-bold prose-headings:text-gray-900
-            prose-h2:text-xl prose-h2:mt-8 prose-h2:mb-3
-            prose-h3:text-lg prose-h3:mt-6 prose-h3:mb-2
-            prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-4
-            prose-ul:text-gray-700 prose-ul:space-y-1
-            prose-ol:text-gray-700 prose-ol:space-y-1
-            prose-li:leading-relaxed
-            prose-blockquote:border-l-4 prose-blockquote:border-blue-400 prose-blockquote:bg-blue-50
-            prose-blockquote:px-5 prose-blockquote:py-3 prose-blockquote:rounded-r-lg prose-blockquote:text-gray-700
-            prose-strong:text-gray-900
-            prose-hr:border-gray-200"
+          className="blog-article bg-white rounded-2xl shadow-sm border border-gray-100 px-6 sm:px-10 py-10"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
-        {/* CTA box */}
+        {/* Free audit teaser + unified $9 CTA */}
         <div className="mt-8 bg-gradient-to-br from-blue-900 to-indigo-900 rounded-2xl p-7 text-white">
           <h2 className="text-xl font-bold mb-2">Free Contract Red Flag Audit</h2>
           <p className="text-blue-200 text-sm mb-5">
             Review your offer letter clause by clause. Get a risk score in 3 minutes — no email required.
           </p>
-          <div className="flex flex-wrap gap-3">
-            <Link
-              href="/audit"
-              className="inline-block bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold py-2.5 px-6 rounded-xl transition-colors text-sm"
-            >
-              Start Free Audit
-            </Link>
-            <a
-              href="https://maveryholdings.gumroad.com/l/djnau"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-white/10 hover:bg-white/20 text-white font-semibold py-2.5 px-6 rounded-xl transition-colors text-sm border border-white/20"
-            >
-              Get Negotiation Scripts — $9
-            </a>
-          </div>
+          <Link
+            href="/audit"
+            className="inline-block bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold py-2.5 px-6 rounded-xl transition-colors text-sm"
+          >
+            Start Free Audit
+          </Link>
         </div>
+        <ContractAuditCTA variant="banner" />
 
         {/* Ad mid */}
         <div className="mt-8">

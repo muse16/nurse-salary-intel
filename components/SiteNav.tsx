@@ -3,31 +3,17 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-import { usePathname } from 'next/navigation';
 
-const homeLinks = [
-  { label: 'Dashboard', href: '/#dashboard', anchor: true },
-  { label: 'Salaries', href: '/#browse', anchor: true },
-  { label: 'Positions', href: '/#positions', anchor: true },
-  { label: 'Blog', href: '/blog', anchor: false },
-  { label: 'Contract Audit', href: '/audit', anchor: false },
-];
-
-const siteLinks = [
-  { label: 'Salary Data', href: '/salary-data' },
-  { label: 'Travel Nursing', href: '/travel-nursing/salary-guide-2026' },
-  { label: 'By Specialty', href: '/nursing-salary/by-specialty-2026' },
-  { label: 'By State', href: '/rn-salary-by-state' },
-  { label: 'Negotiation', href: '/salary-negotiation/nurse-playbook' },
+const navLinks = [
+  { label: 'Dashboard', href: '/#dashboard' },
+  { label: 'Salaries', href: '/#browse' },
+  { label: 'Positions', href: '/#positions' },
   { label: 'Blog', href: '/blog' },
   { label: 'Contract Audit', href: '/audit' },
 ];
 
 export default function SiteNav() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const pathname = usePathname();
-  const isHome = pathname === '/';
-  const navLinks = isHome ? homeLinks : siteLinks;
 
   return (
     <nav className="fixed w-full top-0 z-50 glass-nav shadow-sm">
@@ -52,11 +38,9 @@ export default function SiteNav() {
               {link.label}
             </Link>
           ))}
-          {isHome && (
-            <a href="#calculator" className="gradient-primary text-on-primary px-5 py-2 rounded-xl font-semibold text-sm shadow-md transition-all active:scale-95">
-              Calculate Salary
-            </a>
-          )}
+          <Link href="/#calculator" className="gradient-primary text-on-primary px-5 py-2 rounded-xl font-semibold text-sm shadow-md transition-all active:scale-95">
+            Calculate Salary
+          </Link>
         </div>
 
         {/* Mobile hamburger */}
@@ -88,11 +72,9 @@ export default function SiteNav() {
               {link.label}
             </Link>
           ))}
-          {isHome && (
-            <a href="#calculator" className="block gradient-primary text-on-primary px-4 py-2 rounded-lg font-semibold text-sm text-center mt-2" onClick={() => setMobileOpen(false)}>
-              Calculate Salary
-            </a>
-          )}
+          <Link href="/#calculator" className="block gradient-primary text-on-primary px-4 py-2 rounded-lg font-semibold text-sm text-center mt-2" onClick={() => setMobileOpen(false)}>
+            Calculate Salary
+          </Link>
         </div>
       )}
     </nav>

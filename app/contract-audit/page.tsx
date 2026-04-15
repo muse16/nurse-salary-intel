@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SiteNav from '@/components/SiteNav';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQSection from '@/components/FAQSection';
+import ContractAuditCTA from '@/components/ContractAuditCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -213,19 +214,8 @@ export default function ContractAuditPage() {
           </div>
         </section>
 
-        {/* Mid-page CTA */}
-        <div className="my-12 bg-gradient-to-r from-[#0a1628] to-[#004ac6] text-white rounded-xl p-8 text-center">
-          <h3 className="text-2xl font-bold font-headline mb-3">Don&apos;t Sign Until You&apos;ve Checked</h3>
-          <p className="text-blue-100 mb-6">One bad clause can cost you thousands. The audit kit pays for itself.</p>
-          <a
-            href={gumroadLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-yellow-400 hover:bg-yellow-300 text-[#0a1628] font-bold py-3 px-8 rounded-lg transition-colors text-lg"
-          >
-            Get Contract Audit Kit — $9
-          </a>
-        </div>
+        {/* Mid-page CTA (unified $9 product CTA) */}
+        <ContractAuditCTA variant="banner" />
 
         {/* Related Links */}
         <section className="mb-12">

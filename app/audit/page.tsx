@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import SiteNav from '@/components/SiteNav';
+import ContractAuditCTA from '@/components/ContractAuditCTA';
 
 type ItemStatus = null | 'good' | 'check' | 'redflag';
 
@@ -289,33 +290,8 @@ export default function AuditPage() {
 
             {/* $9 CTA — shown when red flags exist */}
             {(redFlagCount > 0 || checkCount > 0) && (
-              <div className="mt-6 bg-gradient-to-r from-purple-600 to-indigo-700 text-white rounded-xl p-6 border-2 border-yellow-400">
-                <div className="flex items-start justify-between gap-4 mb-4">
-                  <div>
-                    <div className="inline-block bg-yellow-400 text-purple-900 text-xs font-bold px-3 py-1 rounded-full mb-2">
-                      ONLY $9
-                    </div>
-                    <h3 className="text-xl font-bold leading-tight">
-                      Get the exact email scripts and counter-offer language to negotiate {redFlagCount > 0 ? `your ${redFlagCount} red flag${redFlagCount !== 1 ? 's' : ''}` : 'these clauses'}
-                    </h3>
-                  </div>
-                  <div className="text-4xl font-black text-yellow-400 shrink-0">$9</div>
-                </div>
-                <ul className="space-y-1 text-sm text-purple-100 mb-5">
-                  <li>✓ Word-for-word counter-offer emails for each red flag clause</li>
-                  <li>✓ Scripts for negotiating with recruiters by phone</li>
-                  <li>✓ Legal addendum language to modify bad clauses</li>
-                  <li>✓ What to say if they push back or say "it&apos;s standard"</li>
-                </ul>
-                <a
-                  href="https://maveryholdings.gumroad.com/l/djnau"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full bg-yellow-400 hover:bg-yellow-300 text-purple-900 font-bold py-4 px-6 rounded-lg transition-colors text-center text-lg"
-                >
-                  Get the Negotiation Scripts — $9
-                </a>
-                <p className="text-xs text-purple-200 text-center mt-3">Instant download · One-time payment · No subscription</p>
+              <div className="mt-6">
+                <ContractAuditCTA variant="banner" redFlagCount={redFlagCount > 0 ? redFlagCount : undefined} />
               </div>
             )}
           </div>

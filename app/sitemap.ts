@@ -4,8 +4,9 @@ const BASE = 'https://nursesalaryintel.com';
 
 const routes: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] }[] = [
   { path: '/', priority: 1.0, changeFrequency: 'weekly' },
-  { path: '/contract-audit', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/audit', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/salary-data', priority: 0.9, changeFrequency: 'weekly' },
+  { path: '/blog/nursing-contract-audit-kit-what-it-includes', priority: 0.7, changeFrequency: 'monthly' },
 
   // Travel Nursing cluster
   { path: '/travel-nursing/salary-guide-2026', priority: 0.9, changeFrequency: 'monthly' },
