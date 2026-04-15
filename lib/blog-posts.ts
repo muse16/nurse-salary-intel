@@ -221,7 +221,7 @@ Looking forward to hearing from you."
     readTime: '7 min read',
     focusKeyword: 'travel nursing contract red flags',
     secondaryKeywords: ['nursing contract red flags 2026', 'travel nurse contract warning signs', 'RN offer letter clauses'],
-    coverImage: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&q=80&auto=format&fit=crop',
+    coverImage: '/blog/nursing-contract-red-flags-checklist.png',
     imageAlt: '10 travel nursing contract red flags highlighted on an offer letter',
     metaDescription: 'A 2026 checklist of 10 nursing contract red flags \u2014 cancellation clauses, stipend traps, missed differentials \u2014 with exact language to watch for and how to negotiate each one.',
     content: `
