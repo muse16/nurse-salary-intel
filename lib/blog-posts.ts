@@ -338,7 +338,7 @@ Looking forward to hearing from you."
     readTime: '6 min read',
     focusKeyword: 'travel nurse housing stipend tax rules',
     secondaryKeywords: ['IRS travel nurse stipend', 'tax-free housing nurse', 'tax home travel nursing'],
-    coverImage: 'https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1200&q=80&auto=format&fit=crop',
+    coverImage: '/blog/travel-nurse-housing-stipend-tax-rules.png',
     imageAlt: 'Travel nurse reviewing housing stipend tax rules with IRS form 1040 and calculator',
     metaDescription: 'IRS rules decide whether your travel nurse housing stipend is tax-free or adds $8K\u2013$15K to your tax bill. Learn the tax home test and what disqualifies a stipend.',
     content: `
