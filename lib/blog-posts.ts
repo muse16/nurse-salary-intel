@@ -2551,7 +2551,6 @@ Thanks,<br>
   },
   {
     slug: 'er-vs-icu-nurse-salary',
-    draft: true,
     title: 'ER vs ICU Nurse Salary 2026: Which Specialty Pays More?',
     date: '2026-04-15',
     excerpt: 'ICU nurses average $103K while ER nurses average $97K nationally, but differentials, travel rates, and career paths tell a more complex story.',
