@@ -2770,7 +2770,6 @@ Thanks,<br>
   },
   {
     slug: 'nursing-salary-by-specialty-2026',
-    draft: true,
     title: 'Nursing Salary by Specialty 2026: Complete Pay Guide for Every Role',
     date: '2026-04-15',
     excerpt: 'From CRNA at $214K–$260K to home health at $72K–$95K — the definitive 2026 guide to nursing salary by specialty covers every major role, travel rates, and the fastest paths to higher pay.',
