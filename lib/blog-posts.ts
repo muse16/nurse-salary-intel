@@ -2673,7 +2673,6 @@ Thanks,<br>
   },
   {
     slug: 'bsn-vs-adn-salary-difference',
-    draft: true,
     title: 'BSN vs ADN Salary Difference 2026: Is the Extra Degree Worth the Cost?',
     date: '2026-04-15',
     excerpt: 'BSN-prepared nurses earn roughly $6,000 more per year than ADN nurses — but tuition reimbursement, Magnet requirements, and career mobility make the case far stronger than the paycheck alone.',
