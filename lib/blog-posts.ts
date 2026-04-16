@@ -1607,7 +1607,7 @@ Thanks,<br>
     readTime: '8 min read',
     focusKeyword: 'california nurse salary 2026',
     secondaryKeywords: ['california RN salary', 'nurse salary california by city', 'travel nurse california 2026'],
-    coverImage: '/blog/california-nurse-salary-2026.jpg',
+    coverImage: '/blog/california-nurse-salary-2026.png',
     imageAlt: 'California nurse smiling outside a hospital with Golden Gate Bridge in background',
     metaDescription: 'California RN salary 2026: $124K average statewide, up to $145K in San Francisco. See pay by city, specialty, and what a California nurse actually takes home after taxes.',
     content: `
