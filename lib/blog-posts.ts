@@ -88,7 +88,7 @@ const allBlogPosts: BlogPost[] = [
     readTime: '6 min read',
     focusKeyword: 'travel nurse vs staff nurse salary',
     secondaryKeywords: ['travel nurse salary 2026', 'staff RN salary 2026', 'travel nurse take home pay'],
-    coverImage: 'https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=1200&q=80&auto=format&fit=crop',
+    coverImage: '/blog/travel-nurse-vs-staff-nurse-salary-2026.png',
     imageAlt: 'Travel nurse vs staff nurse salary comparison with stethoscope and paycheck',
     metaDescription: 'Travel nurses can gross $2,800+ per week \u2014 but after taxes, housing, and contract gaps, staff nurses often keep more. Full 2026 take-home comparison.',
     content: `
@@ -472,7 +472,7 @@ Looking forward to hearing from you."
     readTime: '5 min read',
     focusKeyword: 'breaking travel nursing contract penalties',
     secondaryKeywords: ['quit travel nursing contract early', 'travel nurse cancellation clause', 'break travel contract consequences'],
-    coverImage: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80&auto=format&fit=crop',
+    coverImage: '/blog/breaking-travel-nursing-contract-consequences.png',
     imageAlt: 'Nurse reviewing travel nursing contract cancellation clause with a pen',
     metaDescription: 'Breaking a travel nursing contract can cost $0 or $10K+ \u2014 it depends on the cancellation, housing, and recruiter clauses. Learn the real penalties and how to exit cleanly.',
     content: `
