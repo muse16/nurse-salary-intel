@@ -30,7 +30,7 @@ const allBlogPosts: BlogPost[] = [
     readTime: '5 min read',
     focusKeyword: 'non-compete clause nursing contract',
     secondaryKeywords: ['nursing contract red flags 2026', 'non compete nurse enforceability', 'nurse non-compete push back'],
-    coverImage: 'https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=1200&q=80&auto=format&fit=crop',
+    coverImage: '/blog/non-compete-clause-nursing-contract.png',
     imageAlt: 'Nurse reviewing a non-compete clause in a nursing contract with a pen',
     metaDescription: 'Non-compete clauses in nursing contracts can block you from working locally for 1–2 years. Learn what the language means, whether it\u2019s enforceable in your state, and the exact counter-offer to push back.',
     content: `
