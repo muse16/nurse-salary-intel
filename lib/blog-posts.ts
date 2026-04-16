@@ -1600,7 +1600,6 @@ Thanks,<br>
   },
   {
     slug: 'california-nurse-salary-2026',
-    draft: true,
     title: 'California Nurse Salary 2026: Highest Pay in the Nation (And What It Takes Home)',
     date: '2026-04-15',
     excerpt: 'California RNs earn more than any other state — but taxes, cost of living, and contract traps can cut that advantage fast. Here\'s the full picture.',
