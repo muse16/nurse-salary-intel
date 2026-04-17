@@ -60,6 +60,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${manrope.variable} ${inter.variable} antialiased`}>
         {children}
+        <Analytics />
 
         {/* Google Analytics GA4 */}
         <Script
