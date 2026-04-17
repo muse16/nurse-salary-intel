@@ -1,9 +1,32 @@
-# robots.txt for Nurse Salary Intelligence
+# robots.txt for NurseSalaryIntel.com
+
 User-agent: *
+Allow: /
+
+# AI Search Agents — explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: meta-externalagent
 Allow: /
 
 # Sitemap
 Sitemap: https://nursesalaryintel.com/sitemap.xml
-
-# Crawl delay (optional, be respectful to search engines)
-Crawl-delay: 1

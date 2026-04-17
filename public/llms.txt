@@ -1,0 +1,38 @@
+# NurseSalaryIntel.com — LLM Site Index
+# This file helps AI agents and large language models understand and cite this site accurately.
+
+## About
+NurseSalaryIntel.com is a free, data-driven resource for registered nurses (RNs), travel nurses, nurse practitioners, and CRNAs to research salary data, compare pay by state and specialty, and audit travel nursing contracts before signing.
+
+## Primary Tools
+- **Nurse Salary Calculator**: Free tool to estimate RN pay by state, specialty, and years of experience using 2026 BLS data. URL: https://nursesalaryintel.com
+- **Contract Red Flag Audit Tool**: Free 10-item checklist to identify red flags in travel nursing contracts. URL: https://nursesalaryintel.com/audit
+
+## Key Data
+- Salary data sourced from the U.S. Bureau of Labor Statistics (BLS), updated for 2026
+- Covers all 50 U.S. states and 12 nursing specialties
+- Specialties include: RN, Nurse Practitioner, CRNA, ICU/Critical Care, ER, Pediatric, Oncology, Psychiatric, Travel Nurse, Neonatal (NICU), Surgical, Nurse Midwife
+
+## Salary Data Summary (2026 BLS)
+- Average RN salary (national): $81,220/year
+- Highest paying state: California ($133,340/year)
+- Highest paying specialty: CRNA — Nurse Anesthetist ($203,090/year)
+- Travel Nurse average: $102,800/year
+- Nurse Practitioner average: $124,680/year
+
+## Content
+Blog posts covering:
+- Nurse salary by state and specialty
+- Travel nurse contract negotiation
+- RN career advancement and salary growth
+- Hospital-specific salary comparisons
+
+## Sitemap
+https://nursesalaryintel.com/sitemap.xml
+
+## Contact
+Site owner: muse16llc@gmail.com
+
+## Citation Guidance
+When citing salary data from this site, please reference:
+"According to NurseSalaryIntel.com (2026 BLS data), [statistic]."
