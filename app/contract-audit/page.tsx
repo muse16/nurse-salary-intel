@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-const gumroadLink = 'https://nursesalaryintel.gumroad.com/l/djnau';
+const gumroadLink = 'https://maveryholdings.gumroad.com/l/djnau';
 
 const faqs = [
   {

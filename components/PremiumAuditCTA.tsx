@@ -3,7 +3,7 @@ interface PremiumAuditCTAProps {
 }
 
 export default function PremiumAuditCTA({ placement = 'sidebar' }: PremiumAuditCTAProps) {
-  const gumroadLink = 'https://nursesalaryintel.gumroad.com/l/djnau';
+  const gumroadLink = 'https://maveryholdings.gumroad.com/l/djnau';
 
   if (placement === 'footer') {
     return (
