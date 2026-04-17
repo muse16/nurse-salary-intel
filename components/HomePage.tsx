@@ -87,13 +87,6 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
                   <h1 className="font-headline font-bold text-2xl md:text-3xl text-white">Nurse Salary Calculator</h1>
                   <p className="text-blue-100 text-sm mt-1">Estimate your RN pay by state, specialty, and experience using real BLS data.</p>
                 </div>
-                <div className="hidden md:flex items-center gap-2 bg-white/10 rounded-xl px-5 py-3 backdrop-blur-sm">
-                  <svg className="w-8 h-8 text-yellow-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <div>
-                    <div className="text-white font-bold text-sm">Trusted by 10,000+ Nurses</div>
-                    <div className="text-blue-200 text-xs">Updated with 2026 BLS data</div>
-                  </div>
-                </div>
               </div>
               <div className="bg-surface-container-lowest p-8 md:p-12">
                 <SalaryCalculator onGeneratePDF={generateSalaryReportPDF} />
