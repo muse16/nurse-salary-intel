@@ -159,13 +159,12 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
 
         {/* ── POSITIONS TABLE ────────────────────────────── */}
         <section id="positions" className="py-24 px-6 bg-surface-container-low scroll-mt-20">
-          <div className="max-w-7xl mx-auto space-y-12">
+          <div className="max-w-7xl mx-auto">
             <div className="mb-12">
               <h2 className="font-headline font-extrabold text-4xl text-editorial mb-4">Real Nursing Positions</h2>
-              <p className="text-on-surface-variant text-lg">Live openings with direct apply links, plus salary benchmarks.</p>
+              <p className="text-on-surface-variant text-lg">Live openings posted in the last 2 weeks with direct apply links.</p>
             </div>
             <LiveJobsTable />
-            <DataTable data={allData} title="Salary Benchmarks" />
           </div>
         </section>
 

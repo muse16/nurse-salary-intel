@@ -24,12 +24,18 @@ export async function GET(request: NextRequest) {
   const where = searchParams.get('where') || '';
   const page = searchParams.get('page') || '1';
 
+  // Only fetch jobs posted in the last 2 weeks
+  const twoWeeksAgo = new Date();
+  twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14);
+  const maxDaysOld = 14;
+
   const params = new URLSearchParams({
     app_id: appId,
     app_key: appKey,
     results_per_page: '20',
     what,
     ...(where && { where }),
+    max_days_old: String(maxDaysOld),
     'content-type': 'application/json',
   });
 
