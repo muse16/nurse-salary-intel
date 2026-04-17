@@ -9,6 +9,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/salary/new-york/new-york-city',
+        destination: '/salary/new-york/new-york',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
