@@ -237,6 +237,10 @@ export default function ContractAuditPage() {
               <h3 className="font-bold text-primary mb-1">How to Negotiate Your Contract →</h3>
               <p className="text-sm text-on-surface-variant">Step-by-step negotiation guide.</p>
             </Link>
+            <Link href="/audit" className="block p-5 rounded-lg border border-outline-variant hover:border-primary transition-colors">
+              <h3 className="font-bold text-primary mb-1">Free Nurse Salary Calculator &amp; Contract Audit →</h3>
+              <p className="text-sm text-on-surface-variant">Use our free nurse salary calculator to verify your offer and flag red flags instantly.</p>
+            </Link>
           </div>
         </section>
 

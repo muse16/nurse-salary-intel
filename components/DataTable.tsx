@@ -12,8 +12,8 @@ type SortField = 'salary' | 'hospital' | 'city' | 'position';
 type SortDirection = 'asc' | 'desc';
 
 function buildJobUrl(position: NursePosition) {
-  const query = encodeURIComponent(`${position.position} ${position.city} ${position.state}`);
-  return `https://www.vivian.com/search?query=${query}&utm_source=nursesalaryintel&utm_medium=referral`;
+  const search = encodeURIComponent(`${position.city}, ${position.state}`);
+  return `https://www.vivian.com/jobs/?search=${search}&utm_source=nursesalaryintel&utm_medium=referral`;
 }
 
 function SortIcon({ field, sortField, sortDirection }: { field: SortField; sortField: SortField; sortDirection: SortDirection }) {

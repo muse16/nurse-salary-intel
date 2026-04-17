@@ -97,6 +97,15 @@ export default function NursingSalaryBySpecialty() {
         Most transitions require 1–2 years in the target unit plus the relevant certification.
       </p>
 
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Verify Your Offer Before You Sign</h2>
+      <p>
+        Once you know what your specialty pays, run your contract through our free nurse salary calculator and audit tool
+        to make sure your offer matches market rates and flag any red flags before signing.
+      </p>
+      <Link href="/audit" className="text-primary font-semibold hover:underline text-sm">
+        Use the free nurse salary calculator &amp; contract audit →
+      </Link>
+
       {/* Hub Links */}
       <h2 className="text-2xl font-bold font-headline text-on-surface">Explore Specialty Salary Guides</h2>
       <div className="grid sm:grid-cols-2 gap-4">

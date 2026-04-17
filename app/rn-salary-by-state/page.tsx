@@ -120,6 +120,15 @@ export default function RNSalaryByStatePillar() {
         Get the negotiation playbook →
       </Link>
 
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Check Your Contract After You Know Your Worth</h2>
+      <p>
+        Once you know what RNs earn in your target state, use our free nurse salary calculator and contract audit
+        tool to verify your offer reflects market rates — and flag any red flags before you sign.
+      </p>
+      <Link href="/audit" className="text-primary font-semibold hover:underline text-sm">
+        Use the free nurse salary calculator &amp; contract audit →
+      </Link>
+
       <h2 className="text-2xl font-bold font-headline text-on-surface">State-Specific Salary Guides</h2>
       <div className="grid sm:grid-cols-2 gap-4">
         {[
