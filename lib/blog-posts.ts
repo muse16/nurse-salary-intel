@@ -73,7 +73,7 @@ const allBlogPosts: BlogPost[] = [
 <p>When emailing HR or your recruiter:</p>
 <blockquote>"I'm excited about the role and ready to move forward. I did want to flag Section [X] — the non-compete clause. Given that nursing is a licensed profession and patient care continuity depends on workforce mobility, I'd like to discuss removing or narrowing this provision before I sign. Happy to jump on a call."</blockquote>
 
-<p>You can get the exact scripts for this and 14 other contract red flags in the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">Nurse Contract Negotiation Scripts ($9)</a> — including email templates that have gotten nurses real changes to their offers.</p>
+<p>You can get the exact scripts for this and 14 other contract red flags in the <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">Nurse Contract Negotiation Scripts ($9)</a> — including email templates that have gotten nurses real changes to their offers.</p>
 
 <h2>Bottom Line</h2>
 <p>Non-compete clauses in nursing contracts are negotiable more often than nurses think. The worst they can say is no. Run your full offer letter through our <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> to catch this and 14 other common problem clauses before you sign.</p>
@@ -207,7 +207,7 @@ Looking forward to hearing from you."
   <li><strong>Preceptorship unit preference</strong> — get your desired unit in writing</li>
 </ul>
 
-<p>For the exact word-for-word email scripts covering 15 contract negotiation scenarios — including sign-on bonus counters, non-compete pushback, and PTO clawback negotiation — see the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">Nurse Contract Negotiation Scripts ($9)</a>.</p>
+<p>For the exact word-for-word email scripts covering 15 contract negotiation scenarios — including sign-on bonus counters, non-compete pushback, and PTO clawback negotiation — see the <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">Nurse Contract Negotiation Scripts ($9)</a>.</p>
 
 <p>Before negotiating anything, run your offer letter through our <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> to know exactly which clauses you're dealing with.</p>
     `,
@@ -261,7 +261,7 @@ Looking forward to hearing from you."
 
 <p>Run your offer letter through our <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit tool</a> — it walks you through all 10 of these clauses with Yes/No/Red Flag responses and generates a personalized risk score.</p>
 
-<p>If you find red flags, the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">Nurse Contract Negotiation Scripts ($9)</a> gives you the exact email language to push back on each one.</p>
+<p>If you find red flags, the <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">Nurse Contract Negotiation Scripts ($9)</a> gives you the exact email language to push back on each one.</p>
     `,
   },
   {
@@ -326,7 +326,7 @@ Looking forward to hearing from you."
   <li>Housing stipend listed as "up to" — meaning it varies based on unit census</li>
 </ul>
 
-<p>Before signing any ICU travel contract, run it through our <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a>. If you find issues, the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">Nurse Contract Negotiation Scripts ($9)</a> gives you the exact language to push back.</p>
+<p>Before signing any ICU travel contract, run it through our <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a>. If you find issues, the <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">Nurse Contract Negotiation Scripts ($9)</a> gives you the exact language to push back.</p>
     `,
   },
   {
@@ -393,7 +393,7 @@ Looking forward to hearing from you."
   <li><strong>Agency offers "guaranteed tax-free" without asking about your residence</strong> — that's a red flag, not a benefit</li>
 </ul>
 
-<p>Before accepting a travel contract, use our <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> to review the key clauses. The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">Nurse Contract Negotiation Scripts ($9)</a> includes language for asking agencies about their tax compliance practices.</p>
+<p>Before accepting a travel contract, use our <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> to review the key clauses. The <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">Nurse Contract Negotiation Scripts ($9)</a> includes language for asking agencies about their tax compliance practices.</p>
     `,
   },
   {
@@ -524,7 +524,7 @@ Looking forward to hearing from you."
   <li>Cap on any penalty fees (or remove them entirely — many agencies will)</li>
 </ul>
 
-<p>Run your travel contract through our <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before you sign. The cancellation clause is one of the 10 items reviewed. If you need negotiation language, the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">Nurse Contract Negotiation Scripts ($9)</a> includes exact language for early termination negotiation.</p>
+<p>Run your travel contract through our <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before you sign. The cancellation clause is one of the 10 items reviewed. If you need negotiation language, the <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">Nurse Contract Negotiation Scripts ($9)</a> includes exact language for early termination negotiation.</p>
     `,
   },
   {
@@ -540,7 +540,7 @@ Looking forward to hearing from you."
     imageAlt: 'Nursing contract audit kit with checklist, red flag guide, and negotiation scripts',
     metaDescription: 'What\u2019s inside the $9 Nursing Contract Audit Kit: the full clause checklist, red-flag guide, and word-for-word negotiation scripts used to fix travel and staff nurse contracts.',
     content: `
-<p>Most nurses sign their contracts without a careful read. That\'s how bad clauses sneak through — unpaid orientation, floating requirements, vague cancellation terms, non-competes. The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> is a self-service review tool built to catch them before you sign.</p>
+<p>Most nurses sign their contracts without a careful read. That\'s how bad clauses sneak through — unpaid orientation, floating requirements, vague cancellation terms, non-competes. The <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> is a self-service review tool built to catch them before you sign.</p>
 
 <h2>What\'s Included</h2>
 <ul>
@@ -580,7 +580,7 @@ Looking forward to hearing from you."
 </ul>
 
 <h2>Before You Buy Anything</h2>
-<p>Start with the <a href="/audit" style="color:#2563eb;font-weight:600;">free 10-item Contract Red Flag Audit</a> — it runs in your browser, flags the most common contract problems, and costs nothing. If you want the full reusable kit with scripts and templates, the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> is a one-time purchase you can use on every future contract.</p>
+<p>Start with the <a href="/audit" style="color:#2563eb;font-weight:600;">free 10-item Contract Red Flag Audit</a> — it runs in your browser, flags the most common contract problems, and costs nothing. If you want the full reusable kit with scripts and templates, the <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> is a one-time purchase you can use on every future contract.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -739,7 +739,7 @@ Looking forward to hearing from you."
 <p>Not if you qualify — you must maintain a legitimate tax home, work away from it, and duplicate expenses. If the IRS decides you don't qualify, the entire stipend becomes taxable retroactively. Our <a href="/blog/travel-nurse-housing-stipend-tax-rules" style="color:#2563eb;font-weight:600;">housing stipend tax guide</a> covers the exact rules.</p>
 
 <h2>Before You Sign</h2>
-<p>A high-pay state means nothing if the contract has hidden cancellation clauses or missing overtime guarantees. Run your offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before you sign — it takes 3 minutes and flags the 10 most common issues that cost nurses money. For the full set of negotiation scripts and counter-offer language, the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> is reusable on every future contract.</p>
+<p>A high-pay state means nothing if the contract has hidden cancellation clauses or missing overtime guarantees. Run your offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before you sign — it takes 3 minutes and flags the 10 most common issues that cost nurses money. For the full set of negotiation scripts and counter-offer language, the <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> is reusable on every future contract.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -906,7 +906,7 @@ Looking forward to hearing from you."
 
 <h2>Before You Accept a CRNA Offer</h2>
 <p>CRNA contracts include terms most RNs have never dealt with — non-competes, moonlighting restrictions, call obligations, productivity bonuses, and tail malpractice coverage. These clauses routinely cost CRNAs tens of thousands of dollars if signed without review.</p>
-<p>Run your CRNA offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> to spot the most common issues before you sign. The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes the full negotiation scripts and counter-offer language for CRNA-specific clauses.</p>
+<p>Run your CRNA offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> to spot the most common issues before you sign. The <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes the full negotiation scripts and counter-offer language for CRNA-specific clauses.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -932,7 +932,7 @@ Looking forward to hearing from you."
     content: `
 <p>Most travel nurses accept the first offer their recruiter sends. Recruiters know this, which is why the first offer is almost never the best offer. In 2026, nurses who negotiate on just three items — weekly rate, cancellation terms, and guaranteed hours — average $3,000–$8,000 more per 13-week assignment than nurses who don't.</p>
 
-<p>This guide breaks down exactly what to negotiate, how to ask, and the scripts to use over the phone and in email. It's the same framework used in our <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a>.</p>
+<p>This guide breaks down exactly what to negotiate, how to ask, and the scripts to use over the phone and in email. It's the same framework used in our <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a>.</p>
 
 <h2>Step 1: Find Out the Bill Rate Before You Counter</h2>
 <p>The bill rate is what the hospital pays the agency per hour. The agency takes 20–30% and passes the rest to you. If you don't know the bill rate, you don't know how much room there is to negotiate.</p>
@@ -1032,7 +1032,7 @@ Thanks,<br>
 
 <h2>Before You Sign Anything</h2>
 <p>A good negotiation can add thousands to a single assignment. But you can't negotiate what you don't see. Run your contract through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> to catch hidden clauses — it takes 3 minutes.</p>
-<p>The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes word-for-word counter-offer emails, recruiter phone scripts, and legal addendum language — reusable on every contract you'll ever sign.</p>
+<p>The <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes word-for-word counter-offer emails, recruiter phone scripts, and legal addendum language — reusable on every contract you'll ever sign.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -1206,7 +1206,7 @@ Thanks,<br>
 <p>Higher stipend generally nets more take-home <em>if</em> you qualify. But higher taxable wage means more Social Security credits, higher 401(k) contribution room, easier mortgage qualification, and better unemployment benefits if the contract ends. It's a trade-off.</p>
 
 <h2>Before You Sign</h2>
-<p>Decoding a pay package is just half the job. The contract itself needs to deliver what the package promises. Run yours through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> — it catches the 10 most common issues in travel contracts in 3 minutes. The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes a pay package comparison worksheet and the negotiation scripts to push for better splits.</p>
+<p>Decoding a pay package is just half the job. The contract itself needs to deliver what the package promises. Run yours through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> — it catches the 10 most common issues in travel contracts in 3 minutes. The <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes a pay package comparison worksheet and the negotiation scripts to push for better splits.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -1417,7 +1417,7 @@ Thanks,<br>
 <p>Usually $2,000–$5,000/year more in base pay, plus access to Magnet hospitals and leadership/specialty roles that require BSN. See <a href="/blog/bsn-vs-adn-salary-difference" style="color:#2563eb;font-weight:600;">BSN vs ADN Salary Difference</a>.</p>
 
 <h2>Before You Accept or Relocate</h2>
-<p>State averages are a starting point — the contract you sign determines what you actually earn. Run your offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before signing. The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes counter-offer templates for base pay, sign-on bonus, and differential negotiation.</p>
+<p>State averages are a starting point — the contract you sign determines what you actually earn. Run your offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before signing. The <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes counter-offer templates for base pay, sign-on bonus, and differential negotiation.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -1587,7 +1587,7 @@ Thanks,<br>
 <p>Extremely. The US is projected to face a shortage of ~120,000 primary care providers by 2030, and NPs are filling most of the gap. PMHNP demand is especially acute — every major health system is actively recruiting.</p>
 
 <h2>Before You Sign an NP Contract</h2>
-<p>NP contracts often include non-competes, productivity bonuses, and tail coverage clauses that nurses have never dealt with as RNs. Run your offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before signing. The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes counter-offer scripts tailored to NP-specific contract issues.</p>
+<p>NP contracts often include non-competes, productivity bonuses, and tail coverage clauses that nurses have never dealt with as RNs. Run your offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before signing. The <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes counter-offer scripts tailored to NP-specific contract issues.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -1730,7 +1730,7 @@ Thanks,<br>
 </ul>
 
 <h2>Before You Accept a California Offer</h2>
-<p>California hospital contracts often include floating clauses, weekend requirements, and on-call obligations that strip your effective hourly rate. Union contracts have these terms locked in — non-union offers can vary widely. Run your offer letter through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before signing. The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes negotiation scripts for shift differential, call requirements, and sign-on bonus clawbacks — all common in California hospital offers.</p>
+<p>California hospital contracts often include floating clauses, weekend requirements, and on-call obligations that strip your effective hourly rate. Union contracts have these terms locked in — non-union offers can vary widely. Run your offer letter through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> before signing. The <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes negotiation scripts for shift differential, call requirements, and sign-on bonus clawbacks — all common in California hospital offers.</p>
 
 <h2>Frequently Asked Questions</h2>
 <h3>What is the average nurse salary in California in 2026?</h3>
@@ -1863,10 +1863,10 @@ Thanks,<br>
 <p>Not for typical staff or travel contracts. For 6-figure NP contracts, partnership agreements, or complex non-compete disputes, a healthcare employment attorney (1-hour review ~$300–$500) is worth it.</p>
 
 <h3>Where do I find exact counter-offer language?</h3>
-<p>The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes word-for-word email templates and addendum language for every clause covered here, plus 5 more.</p>
+<p>The <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes word-for-word email templates and addendum language for every clause covered here, plus 5 more.</p>
 
 <h2>Before You Sign</h2>
-<p>These five clauses are responsible for most of the avoidable financial damage nurses take each year. Run your offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> to screen for the 10 most common issues, then use the negotiation scripts in the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> to push back.</p>
+<p>These five clauses are responsible for most of the avoidable financial damage nurses take each year. Run your offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> to screen for the 10 most common issues, then use the negotiation scripts in the <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> to push back.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -2119,7 +2119,7 @@ Thanks,<br>
 <p>On paper, yes — about 25–40% more gross. After losing PTO, benefits, and 401(k) match, the net premium is closer to 10–15%. See <a href="/blog/travel-nurse-vs-staff-nurse-salary-2026" style="color:#2563eb;font-weight:600;">Travel vs Staff Salary</a>.</p>
 
 <h2>Before You Accept</h2>
-<p>NICU contracts — staff or travel — often include floating language that can pull you to non-NICU units, stripping your specialty differential. Run your offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> and use the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> for negotiation scripts tailored to specialty protection clauses.</p>
+<p>NICU contracts — staff or travel — often include floating language that can pull you to non-NICU units, stripping your specialty differential. Run your offer through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> and use the <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> for negotiation scripts tailored to specialty protection clauses.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -2301,7 +2301,7 @@ Thanks,<br>
 <p>No single answer — pay varies by facility, specialty, and date. Best practice: list on Vivian or Nomad, compare offers across 3–5 agencies for each contract, pick the highest combination of weekly rate + contract protection.</p>
 
 <h2>Before You Sign Any Contract</h2>
-<p>The difference between a good and bad travel contract is often buried in five or six specific clauses. Run yours through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> — it takes 3 minutes and catches the 10 most common issues. For full counter-offer scripts, get the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> — reusable on every contract you'll ever sign.</p>
+<p>The difference between a good and bad travel contract is often buried in five or six specific clauses. Run yours through the <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a> — it takes 3 minutes and catches the 10 most common issues. For full counter-offer scripts, get the <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> — reusable on every contract you'll ever sign.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -2409,7 +2409,7 @@ Thanks,<br>
 <p>Yes, but it's often baked into the blended hourly rate rather than shown as a separate line. Ask the recruiter to show the taxable rate for day vs night shifts if you're unsure.</p>
 
 <h2>Before You Sign</h2>
-<p>Differential language is one of the 10 items screened in our <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a>. The <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes full negotiation scripts for shift differential, weekend premium, and stacking language.</p>
+<p>Differential language is one of the 10 items screened in our <a href="/audit" style="color:#2563eb;font-weight:600;">free Contract Red Flag Audit</a>. The <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> includes full negotiation scripts for shift differential, weekend premium, and stacking language.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -2659,7 +2659,7 @@ Thanks,<br>
 <p>ICU contracts can take slightly longer to land because facilities scrutinize critical care experience carefully. ER contracts are abundant and placement tends to be faster. Both maintain strong year-round demand.</p>
 
 <h2>The Bottom Line</h2>
-<p>ICU wins on base salary and career ceiling (CRNA path), while ER wins on variety, differential opportunities, and contract availability. Before signing any contract, get a free <a href="/audit" style="color:#2563eb;font-weight:600;">Contract Red Flag Audit</a> — or grab the full <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> to protect your pay package before you sign.</p>
+<p>ICU wins on base salary and career ceiling (CRNA path), while ER wins on variety, differential opportunities, and contract availability. Before signing any contract, get a free <a href="/audit" style="color:#2563eb;font-weight:600;">Contract Red Flag Audit</a> — or grab the full <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> to protect your pay package before you sign.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -2756,7 +2756,7 @@ Thanks,<br>
 <p>Yes. All NP programs require a BSN as an entry requirement. If NP or CRNA is your goal, BSN completion is non-negotiable. See our <a href="/blog/np-salary-guide-2026" style="color:#2563eb;font-weight:600;">Nurse Practitioner Salary Guide 2026</a> for NP earning potential across specialties.</p>
 
 <h2>The Bottom Line</h2>
-<p>The BSN vs ADN salary difference starts at $6,000/year and compounds significantly over a career. With most RN-to-BSN programs available entirely online and many employers covering a substantial portion of the cost, the financial case for completion is strong at almost every career stage. Before finalizing any employment contract, get a free <a href="/audit" style="color:#2563eb;font-weight:600;">Contract Red Flag Audit</a> — or pick up the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> to make sure you're not leaving money on the table.</p>
+<p>The BSN vs ADN salary difference starts at $6,000/year and compounds significantly over a career. With most RN-to-BSN programs available entirely online and many employers covering a substantial portion of the cost, the financial case for completion is strong at almost every career stage. Before finalizing any employment contract, get a free <a href="/audit" style="color:#2563eb;font-weight:600;">Contract Red Flag Audit</a> — or pick up the <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> to make sure you're not leaving money on the table.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -2871,7 +2871,7 @@ Thanks,<br>
 <p>For nurses with 2+ years of specialty experience, travel nursing generates 40–80% more gross income than equivalent staff positions. See <a href="/blog/travel-nurse-salary-by-state-2026" style="color:#2563eb;font-weight:600;">Travel Nurse Salary by State 2026</a> for market-specific data.</p>
 
 <h2>Making the Most of Your Specialty Pay</h2>
-<p>Knowing the salary ranges is the first step — negotiating your contract is where you actually capture that value. Get a free <a href="/audit" style="color:#2563eb;font-weight:600;">Contract Red Flag Audit</a> before you sign anything — or arm yourself with the full <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a>, which walks you through every clause that can quietly reduce your specialty pay.</p>
+<p>Knowing the salary ranges is the first step — negotiating your contract is where you actually capture that value. Get a free <a href="/audit" style="color:#2563eb;font-weight:600;">Contract Red Flag Audit</a> before you sign anything — or arm yourself with the full <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a>, which walks you through every clause that can quietly reduce your specialty pay.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -2987,7 +2987,7 @@ Thanks,<br>
 <p>Signing without a guaranteed hours clause — or signing one so full of exceptions it provides no real protection. Always ask: "Under what exact circumstances would I not be paid my guaranteed hours?" and get the answer in writing.</p>
 
 <h2>Get Your Contract Reviewed Before You Sign</h2>
-<p>NurseSalaryIntel offers a free <a href="/audit" style="color:#2563eb;font-weight:600;">Contract Red Flag Audit</a> — submit your contract and we'll flag the clauses most likely to cost you money. For a comprehensive self-review toolkit including annotated contract templates and negotiation scripts for all 12 sections above, the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> gives you everything you need to walk into every contract review with confidence.</p>
+<p>NurseSalaryIntel offers a free <a href="/audit" style="color:#2563eb;font-weight:600;">Contract Red Flag Audit</a> — submit your contract and we'll flag the clauses most likely to cost you money. For a comprehensive self-review toolkit including annotated contract templates and negotiation scripts for all 12 sections above, the <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> gives you everything you need to walk into every contract review with confidence.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -3108,7 +3108,7 @@ Thanks,<br>
 <p>Both. The direct pay difference — $6,000–$12,000/year at entry level — is real but modest. The larger difference shows up in career trajectory: BSN nurses access more leadership roles, more specialty positions, and more Magnet hospital opportunities. See <a href="/blog/bsn-vs-adn-salary-difference" style="color:#2563eb;font-weight:600;">BSN vs ADN Salary Difference</a> for the full breakdown.</p>
 
 <h2>Know Your Worth — and Protect Your Contracts</h2>
-<p>Whether you're a CNA planning your first credential upgrade or an RN evaluating your next contract, take advantage of the free <a href="/audit" style="color:#2563eb;font-weight:600;">Contract Red Flag Audit</a> at NurseSalaryIntel. For a complete contract review toolkit, the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> walks you through every clause that could cost you thousands.</p>
+<p>Whether you're a CNA planning your first credential upgrade or an RN evaluating your next contract, take advantage of the free <a href="/audit" style="color:#2563eb;font-weight:600;">Contract Red Flag Audit</a> at NurseSalaryIntel. For a complete contract review toolkit, the <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> walks you through every clause that could cost you thousands.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -3244,7 +3244,7 @@ Thanks,<br>
 <p>Ask for bill rate transparency. Getting competing quotes from two or three agencies on the same posting is the cleanest way to test how much room there is — agencies will often match or beat each other when they know you're comparing.</p>
 
 <h2>Your Next Step</h2>
-<p>Negotiating salary is only half the battle — the contract you sign determines whether that higher pay actually materializes without surprise clawbacks or cancellation penalties buried in the fine print. Run it through a structured review first. Our free <a href="/audit" style="color:#2563eb;font-weight:600;">Contract Red Flag Audit</a> walks you through the highest-risk clauses in under 10 minutes. For a complete annotated review framework with counter-scripts organized by clause type, the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> pays for itself on the first offer you successfully push back on.</p>
+<p>Negotiating salary is only half the battle — the contract you sign determines whether that higher pay actually materializes without surprise clawbacks or cancellation penalties buried in the fine print. Run it through a structured review first. Our free <a href="/audit" style="color:#2563eb;font-weight:600;">Contract Red Flag Audit</a> walks you through the highest-risk clauses in under 10 minutes. For a complete annotated review framework with counter-scripts organized by clause type, the <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> pays for itself on the first offer you successfully push back on.</p>
 
 <h2>Related Reading</h2>
 <ul>
@@ -3353,7 +3353,7 @@ Thanks,<br>
 <p>Most facilities won't ask you to — formal charge eligibility typically requires 1–2 years of unit experience. If you're being asked to perform charge functions as a newer nurse without charge pay, document the shifts and request the differential in writing.</p>
 
 <h2>Before You Sign or Accept Anything</h2>
-<p>Whether you're weighing a charge designation or evaluating a new offer that includes a charge component, get the specifics in writing — differential rate, frequency, whether the bonus counts toward your overtime rate, and the path to supervisor if you want it. The free <a href="/audit" style="color:#2563eb;font-weight:600;">Contract Red Flag Audit</a> at NurseSalaryIntel helps you spot the clauses that cost nurses money. For a complete framework with annotated red flags and negotiation counter-scripts for every compensation-related clause, the <a href="https://maveryholdings.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> makes that review fast and repeatable.</p>
+<p>Whether you're weighing a charge designation or evaluating a new offer that includes a charge component, get the specifics in writing — differential rate, frequency, whether the bonus counts toward your overtime rate, and the path to supervisor if you want it. The free <a href="/audit" style="color:#2563eb;font-weight:600;">Contract Red Flag Audit</a> at NurseSalaryIntel helps you spot the clauses that cost nurses money. For a complete framework with annotated red flags and negotiation counter-scripts for every compensation-related clause, the <a href="https://nursesalaryintel.gumroad.com/l/djnau" style="color:#2563eb;font-weight:600;">$9 Contract Audit Kit</a> makes that review fast and repeatable.</p>
 
 <h2>Related Reading</h2>
 <ul>

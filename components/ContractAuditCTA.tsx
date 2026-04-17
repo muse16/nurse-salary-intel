@@ -4,7 +4,7 @@ interface ContractAuditCTAProps {
   redFlagCount?: number;
 }
 
-const gumroadLink = 'https://maveryholdings.gumroad.com/l/djnau';
+const gumroadLink = 'https://nursesalaryintel.gumroad.com/l/djnau';
 
 const CANONICAL_HEADLINE = 'Get the exact email scripts and counter-offer language to negotiate your red flags';
 
