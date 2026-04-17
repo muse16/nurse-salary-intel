@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import DataTable from '@/components/DataTable';
+import LiveJobsTable from '@/components/LiveJobsTable';
 import SalaryCalculator from '@/components/SalaryCalculator';
 import IntelDashboard from '@/components/IntelDashboard';
 import SiteNav from '@/components/SiteNav';
@@ -158,12 +159,13 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
 
         {/* ── POSITIONS TABLE ────────────────────────────── */}
         <section id="positions" className="py-24 px-6 bg-surface-container-low scroll-mt-20">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7xl mx-auto space-y-12">
             <div className="mb-12">
               <h2 className="font-headline font-extrabold text-4xl text-editorial mb-4">Real Nursing Positions</h2>
-              <p className="text-on-surface-variant text-lg">Verified listings with transparent contract analysis.</p>
+              <p className="text-on-surface-variant text-lg">Live openings with direct apply links, plus salary benchmarks.</p>
             </div>
-            <DataTable data={allData} title="" />
+            <LiveJobsTable />
+            <DataTable data={allData} title="Salary Benchmarks" />
           </div>
         </section>
 
