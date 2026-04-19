@@ -1,8 +1,12 @@
 import type { MetadataRoute } from 'next';
+import { specialtyConfig, stateData, stateToSlug } from '@/lib/bls-data';
+import { getAllStates, getCitiesByState, getAllHospitals, slugify } from '@/lib/data';
 
 const BASE = 'https://nursesalaryintel.com';
 
-const routes: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] }[] = [
+type SitemapEntry = MetadataRoute.Sitemap[number];
+
+const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEntry['changeFrequency'] }[] = [
   { path: '/', priority: 1.0, changeFrequency: 'weekly' },
   { path: '/audit', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/salary-data', priority: 0.9, changeFrequency: 'weekly' },
@@ -45,10 +49,54 @@ const routes: { path: string; priority: number; changeFrequency: MetadataRoute.S
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
-  return routes.map((r) => ({
+
+  const staticEntries: SitemapEntry[] = staticRoutes.map((r) => ({
     url: `${BASE}${r.path}`,
     lastModified,
     changeFrequency: r.changeFrequency,
     priority: r.priority,
   }));
+
+  // Specialty × state pages (12 specialties × 50 states = 600 URLs)
+  const specialtyStateEntries: SitemapEntry[] = [];
+  for (const spec of specialtyConfig) {
+    for (const sd of stateData) {
+      specialtyStateEntries.push({
+        url: `${BASE}/nursing-salary/${spec.slug}/${stateToSlug(sd.state)}`,
+        lastModified,
+        changeFrequency: 'monthly',
+        priority: 0.7,
+      });
+    }
+  }
+
+  // City × state salary pages
+  const cityStateEntries: SitemapEntry[] = [];
+  const states = getAllStates();
+  for (const state of states) {
+    const cities = getCitiesByState(state);
+    for (const city of cities) {
+      cityStateEntries.push({
+        url: `${BASE}/salary/${slugify(state)}/${slugify(city)}`,
+        lastModified,
+        changeFrequency: 'monthly',
+        priority: 0.6,
+      });
+    }
+  }
+
+  // Hospital pages
+  const hospitalEntries: SitemapEntry[] = getAllHospitals().map((hospital) => ({
+    url: `${BASE}/hospital/${slugify(hospital)}`,
+    lastModified,
+    changeFrequency: 'monthly',
+    priority: 0.5,
+  }));
+
+  return [
+    ...staticEntries,
+    ...specialtyStateEntries,
+    ...cityStateEntries,
+    ...hospitalEntries,
+  ];
 }

@@ -17,6 +17,152 @@ export interface StateData {
   costOfLivingIndex: number;
 }
 
+export interface SpecialtyConfig {
+  slug: string;
+  name: string;
+  shortName: string;
+  blsId: string;
+  nationalAvgSalary: number;
+  nationalHourlyRate: number;
+  certification: string | null;
+  parentPageSlug: string | null;
+}
+
+export const specialtyConfig: SpecialtyConfig[] = [
+  {
+    slug: 'er-nurse-salary',
+    name: 'Emergency Room (ER) Nurse',
+    shortName: 'ER Nurse',
+    blsId: 'er-nurse',
+    nationalAvgSalary: 89010,
+    nationalHourlyRate: 42.79,
+    certification: 'CEN',
+    parentPageSlug: 'er-nurse-salary',
+  },
+  {
+    slug: 'icu-nurse-salary',
+    name: 'ICU / Critical Care Nurse',
+    shortName: 'ICU Nurse',
+    blsId: 'icu-nurse',
+    nationalAvgSalary: 95270,
+    nationalHourlyRate: 45.80,
+    certification: 'CCRN',
+    parentPageSlug: 'icu-nurse-salary',
+  },
+  {
+    slug: 'nicu-nurse-salary',
+    name: 'NICU Nurse',
+    shortName: 'NICU Nurse',
+    blsId: 'neonatal-nurse',
+    nationalAvgSalary: 84490,
+    nationalHourlyRate: 40.62,
+    certification: 'RNC-NIC',
+    parentPageSlug: 'nicu-nurse-salary',
+  },
+  {
+    slug: 'crna-salary',
+    name: 'Nurse Anesthetist (CRNA)',
+    shortName: 'CRNA',
+    blsId: 'nurse-anesthetist',
+    nationalAvgSalary: 214200,
+    nationalHourlyRate: 103.0,
+    certification: 'CRNA',
+    parentPageSlug: 'crna-salary-by-state',
+  },
+  {
+    slug: 'nurse-practitioner-salary',
+    name: 'Nurse Practitioner',
+    shortName: 'NP',
+    blsId: 'nurse-practitioner',
+    nationalAvgSalary: 124680,
+    nationalHourlyRate: 59.94,
+    certification: 'FNP-BC',
+    parentPageSlug: 'nurse-practitioner-salary',
+  },
+  {
+    slug: 'labor-delivery-nurse-salary',
+    name: 'Labor & Delivery (L&D) Nurse',
+    shortName: 'L&D Nurse',
+    blsId: 'labor-delivery-nurse',
+    nationalAvgSalary: 86340,
+    nationalHourlyRate: 41.51,
+    certification: 'RNC-OB',
+    parentPageSlug: 'labor-delivery-nurse-salary',
+  },
+  {
+    slug: 'charge-nurse-salary',
+    name: 'Charge Nurse',
+    shortName: 'Charge Nurse',
+    blsId: 'charge-nurse',
+    nationalAvgSalary: 82750,
+    nationalHourlyRate: 39.78,
+    certification: null,
+    parentPageSlug: 'charge-nurse-salary',
+  },
+  {
+    slug: 'oncology-nurse-salary',
+    name: 'Oncology Nurse',
+    shortName: 'Oncology Nurse',
+    blsId: 'oncology-nurse',
+    nationalAvgSalary: 83100,
+    nationalHourlyRate: 39.95,
+    certification: 'OCN',
+    parentPageSlug: null,
+  },
+  {
+    slug: 'pediatric-nurse-salary',
+    name: 'Pediatric Nurse',
+    shortName: 'Pediatric Nurse',
+    blsId: 'pediatric-nurse',
+    nationalAvgSalary: 78900,
+    nationalHourlyRate: 37.93,
+    certification: 'CPN',
+    parentPageSlug: null,
+  },
+  {
+    slug: 'psychiatric-nurse-salary',
+    name: 'Psychiatric / Mental Health Nurse',
+    shortName: 'Psych Nurse',
+    blsId: 'psychiatric-nurse',
+    nationalAvgSalary: 80200,
+    nationalHourlyRate: 38.56,
+    certification: 'PMHN-BC',
+    parentPageSlug: null,
+  },
+  {
+    slug: 'surgical-nurse-salary',
+    name: 'Surgical / Operating Room Nurse',
+    shortName: 'OR Nurse',
+    blsId: 'surgical-nurse',
+    nationalAvgSalary: 93580,
+    nationalHourlyRate: 44.99,
+    certification: 'CNOR',
+    parentPageSlug: null,
+  },
+  {
+    slug: 'travel-nurse-salary',
+    name: 'Travel Nurse',
+    shortName: 'Travel Nurse',
+    blsId: 'travel-nurse',
+    nationalAvgSalary: 102800,
+    nationalHourlyRate: 49.42,
+    certification: null,
+    parentPageSlug: null,
+  },
+];
+
+export function getSpecialtyBySlug(slug: string): SpecialtyConfig | undefined {
+  return specialtyConfig.find(s => s.slug === slug);
+}
+
+export function stateToSlug(state: string): string {
+  return state.toLowerCase().replace(/\s+/g, '-');
+}
+
+export function getStateDataBySlug(slug: string): StateData | undefined {
+  return stateData.find(s => stateToSlug(s.state) === slug);
+}
+
 export const nurseSpecialties: NurseSpecialty[] = [
   {
     id: 'er-nurse',
@@ -113,7 +259,23 @@ export const nurseSpecialties: NurseSpecialty[] = [
     minSalary: 75600,
     maxSalary: 145000,
     description: 'Temporary assignments nationwide'
-  }
+  },
+  {
+    id: 'labor-delivery-nurse',
+    name: 'Labor & Delivery Nurse',
+    avgSalary: 86340,
+    minSalary: 65200,
+    maxSalary: 121400,
+    description: 'Obstetric and childbirth care'
+  },
+  {
+    id: 'charge-nurse',
+    name: 'Charge Nurse',
+    avgSalary: 82750,
+    minSalary: 62100,
+    maxSalary: 116800,
+    description: 'Unit leadership and staff coordination'
+  },
 ];
 
 export const stateData: StateData[] = [
