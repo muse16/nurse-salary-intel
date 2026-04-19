@@ -24,6 +24,7 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
 
   // Nursing Salary by Specialty cluster
   { path: '/nursing-salary/by-specialty-2026', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/nursing-salary/registered-nurse-salary-guide', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/nursing-salary/crna-salary-by-state', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/nursing-salary/icu-nurse-salary', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/nursing-salary/nicu-nurse-salary', priority: 0.8, changeFrequency: 'monthly' },
@@ -31,6 +32,8 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/nursing-salary/er-nurse-salary', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/nursing-salary/labor-delivery-nurse-salary', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/nursing-salary/charge-nurse-salary', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/nursing-salary/how-to-become-nurse-practitioner', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/nursing-salary/best-rn-to-bsn-programs', priority: 0.9, changeFrequency: 'monthly' },
 
   // RN Salary by State cluster
   { path: '/rn-salary-by-state', priority: 0.9, changeFrequency: 'monthly' },
@@ -38,6 +41,7 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/rn-salary-by-state/texas', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/rn-salary-by-state/new-york', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/rn-salary-by-state/florida', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/rn-salary-by-state/arizona', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/rn-salary-by-state/highest-paying-states', priority: 0.8, changeFrequency: 'monthly' },
 
   // Salary Negotiation cluster
