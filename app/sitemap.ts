@@ -34,6 +34,7 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/nursing-salary/charge-nurse-salary', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/nursing-salary/how-to-become-nurse-practitioner', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/nursing-salary/best-rn-to-bsn-programs', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/nursing-salary/salary-data-2026', priority: 0.9, changeFrequency: 'monthly' },
 
   // RN Salary by State cluster
   { path: '/rn-salary-by-state', priority: 0.9, changeFrequency: 'monthly' },

@@ -1763,7 +1763,6 @@ Thanks,<br>
   },
   {
     slug: '5-contract-clauses-cost-nurses-thousands',
-    draft: true,
     title: '5 Contract Clauses That Cost Nurses Thousands (And How to Fix Them)',
     date: '2026-04-15',
     excerpt: 'Five specific clauses in nursing contracts are responsible for most of the financial damage nurses take. Here\'s how to identify them and what to negotiate instead.',
@@ -1879,7 +1878,6 @@ Thanks,<br>
   },
   {
     slug: 'highest-paying-states-cost-of-living-adjusted',
-    draft: true,
     title: 'Highest Paying States for Nurses 2026 (Adjusted for Cost of Living)',
     date: '2026-04-15',
     excerpt: 'California pays the most on paper — but the real ranking flips completely once you account for cost of living. Here are the states where an RN salary actually goes furthest.',
@@ -1994,7 +1992,6 @@ Thanks,<br>
   },
   {
     slug: 'nicu-nurse-salary-by-state-2026',
-    draft: true,
     title: 'NICU Nurse Salary by State 2026: Complete Pay Breakdown',
     date: '2026-04-15',
     excerpt: 'NICU nurses earn 8–15% more than standard Med-Surg RNs, with level III/IV units paying the highest. Here\'s 2026 NICU salary data in all 50 states.',
@@ -2132,7 +2129,6 @@ Thanks,<br>
   },
   {
     slug: 'travel-nursing-salary-guide-2026',
-    draft: true,
     title: 'The Complete Travel Nurse Salary Guide 2026',
     date: '2026-04-15',
     excerpt: 'Everything you need to know about travel nursing pay in 2026 — by state, specialty, shift, agency, and setting. The definitive guide for travel RNs.',
@@ -2315,7 +2311,6 @@ Thanks,<br>
   },
   {
     slug: 'night-shift-differential-pay',
-    draft: true,
     title: 'Night Shift Differentials: What Nurses Are Actually Owed (2026)',
     date: '2026-04-15',
     excerpt: 'Night shift nurses leave thousands on the table when differentials are poorly written into their contracts. Here\'s what 2026 night differentials look like and how to negotiate them.',
@@ -2422,7 +2417,6 @@ Thanks,<br>
   },
   {
     slug: 'ld-vs-icu-nurse-salary',
-    draft: true,
     title: 'L&D Nurse Salary vs ICU Nurse Salary: Which Pays More in 2026?',
     date: '2026-04-15',
     excerpt: 'ICU and L&D are both high-acuity specialties with strong pay — but they don\'t pay the same, and the difference depends heavily on state, setting, and shift.',
