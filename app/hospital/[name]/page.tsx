@@ -9,6 +9,22 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 
+const APPROVED_HOSPITALS = [
+  'banner health',
+  'kaiser permanente',
+  'hca healthcare',
+  'mayo clinic',
+  'commonspirit health',
+  'tenet healthcare',
+  'ascension health',
+  'cleveland clinic',
+];
+
+function isApproved(hospitalName: string): boolean {
+  const n = hospitalName.toLowerCase();
+  return APPROVED_HOSPITALS.some(a => n.includes(a));
+}
+
 interface PageProps {
   params: Promise<{
     name: string;
@@ -36,6 +52,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${hospitalData.hospital} - Nurse Salaries & Contract Intelligence`,
     description: `Review nurse salaries and contract red flags at ${hospitalData.hospital} in ${hospitalData.city}, ${hospitalData.state}. Average salary: $${hospitalData.avgSalary.toLocaleString()}.`,
+    robots: isApproved(hospitalData.hospital)
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
   };
 }
 
