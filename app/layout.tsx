@@ -48,7 +48,6 @@ export const metadata: Metadata = {
   },
   other: {
     "google-adsense-account": "ca-pub-4487629215570224",
-    "fo-verify": "39dcd307-ed45-4e62-b236-2bf2cfc7ab62",
   },
 };
 
@@ -59,6 +58,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="fo-verify" content="39dcd307-ed45-4e62-b236-2bf2cfc7ab62" />
+      </head>
       <body className={`${manrope.variable} ${inter.variable} antialiased`}>
         {children}
 
