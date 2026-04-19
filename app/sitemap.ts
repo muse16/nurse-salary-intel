@@ -9,6 +9,7 @@ type SitemapEntry = MetadataRoute.Sitemap[number];
 const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEntry['changeFrequency'] }[] = [
   { path: '/', priority: 1.0, changeFrequency: 'weekly' },
   { path: '/audit', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/salary/bsn-vs-rn', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/salary-data', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/blog/nursing-contract-audit-kit-what-it-includes', priority: 0.7, changeFrequency: 'monthly' },
 

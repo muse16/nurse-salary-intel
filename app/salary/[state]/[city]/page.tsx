@@ -170,6 +170,25 @@ export default async function CityPage({ params }: PageProps) {
           <MonetizationSlot type="education" city={cityData.city} state={cityData.state} />
         </div>
 
+        {/* BSN career advancement CTA */}
+        <div className="mt-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <div className="text-xs font-semibold text-blue-200 uppercase tracking-wide mb-1">Advance Your Career</div>
+            <h2 className="text-xl font-bold text-white">
+              BSN nurses in {cityData.state} earn an average of $10,000 more per year
+            </h2>
+            <p className="text-blue-100 text-sm mt-1">
+              Online RN-to-BSN programs from WGU, Chamberlain, and GCU can be completed in 12–18 months while you work.
+            </p>
+          </div>
+          <Link
+            href="/salary/bsn-vs-rn"
+            className="shrink-0 bg-white text-blue-700 font-bold py-3 px-6 rounded-xl text-sm shadow-md hover:shadow-lg transition-all active:scale-95 whitespace-nowrap"
+          >
+            Compare BSN Programs →
+          </Link>
+        </div>
+
       </main>
     </div>
   );

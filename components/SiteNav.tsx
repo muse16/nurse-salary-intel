@@ -7,7 +7,7 @@ import { useState } from 'react';
 const navLinks = [
   { label: 'Dashboard', href: '/#dashboard' },
   { label: 'Salaries', href: '/#browse' },
-  { label: 'Positions', href: '/#positions' },
+  { label: 'BSN vs RN', href: '/salary/bsn-vs-rn' },
   { label: 'Blog', href: '/blog' },
   { label: 'Contract Audit', href: '/audit' },
 ];
