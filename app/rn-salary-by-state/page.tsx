@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary by State 2026 | All 50 States Compared',
+  title: 'RN Salary by State (2026): Hourly Pay + Highest Paying Cities',
   description:
-    'Compare registered nurse salaries across all 50 states. See average RN pay, cost-of-living adjusted salary, and the best states to work as a nurse in 2026.',
+    'See the average RN salary in every state for 2026. Compare hourly pay, top cities, and earning potential for registered nurses.',
 };
 
 const faqs = [

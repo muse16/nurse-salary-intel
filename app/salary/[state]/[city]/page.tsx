@@ -42,8 +42,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!cityData) return { title: 'City Not Found' };
 
   return {
-    title: `Nurse Salaries in ${cityData.city}, ${cityData.state} | Salary Intelligence`,
-    description: `Explore nurse salaries in ${cityData.city}, ${cityData.state}. Average salary: $${cityData.avgSalary.toLocaleString()}. Compare ${cityData.totalPositions} positions from top hospitals.`,
+    title: `RN Salary in ${cityData.city}, ${cityData.state} (2026): Hourly Pay + Top Hospitals`,
+    description: `Discover RN salary in ${cityData.city}, ${cityData.state}. View hourly pay, top hospitals, and salary trends for nurses in 2026.`,
   };
 }
 

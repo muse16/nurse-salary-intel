@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary in Arizona 2026 | Nurse Pay Data',
+  title: 'RN Salary Arizona (2026): Hourly Pay + Highest Paying Cities',
   description:
-    'Arizona RN salary data for 2026. Average pay, salary by city (Phoenix, Tucson, Scottsdale), cost of living, and how AZ compares to other states.',
+    'See the average RN salary in Arizona for 2026. Compare hourly pay, top cities, and earning potential for registered nurses.',
 };
 
 const faqs = [

@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary in Florida 2026 | Nurse Pay by City',
+  title: 'RN Salary Florida (2026): Hourly Pay + Highest Paying Cities',
   description:
-    'Florida RN salary data for 2026. See nurse pay in Miami, Tampa, Orlando, and Jacksonville. No state income tax plus low cost of living breakdown.',
+    'See the average RN salary in Florida for 2026. Compare hourly pay, top cities, and earning potential for registered nurses.',
 };
 
 const faqs = [

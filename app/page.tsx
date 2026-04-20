@@ -1,7 +1,13 @@
+import type { Metadata } from 'next';
 import { getAllNurseData, getAllStates, slugify } from '@/lib/data';
 import Link from 'next/link';
 import DataTable from '@/components/DataTable';
 import HomePage from '@/components/HomePage';
+
+export const metadata: Metadata = {
+  title: 'Nurse Salary Calculator (2026) – Estimate Your RN Pay by State & City',
+  description: 'Use our nurse salary calculator to estimate RN pay by state, city, and experience. Updated for 2026 with real data.',
+};
 
 export default function Home() {
   const allData = getAllNurseData();

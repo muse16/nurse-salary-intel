@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary in California 2026 | Nurse Pay Data',
+  title: 'RN Salary California (2026): Hourly Pay + Highest Paying Cities',
   description:
-    'California RN salary data for 2026. Average pay, salary by city (LA, SF, San Diego), cost of living, and how CA compares to other states.',
+    'See the average RN salary in California for 2026. Compare hourly pay, top cities, and earning potential for registered nurses.',
 };
 
 const faqs = [

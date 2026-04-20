@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary in Texas 2026 | Nurse Pay by City',
+  title: 'RN Salary Texas (2026): Hourly Pay + Highest Paying Cities',
   description:
-    'Texas RN salary in 2026. See nurse pay by city (Houston, Dallas, Austin, San Antonio), cost of living advantage, and how TX compares nationally.',
+    'See the average RN salary in Texas for 2026. Compare hourly pay, top cities, and earning potential for registered nurses.',
 };
 
 const faqs = [

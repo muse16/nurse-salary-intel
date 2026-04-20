@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary in New York 2026 | Nurse Pay by City',
+  title: 'RN Salary New York (2026): Hourly Pay + Highest Paying Cities',
   description:
-    'New York RN salary data for 2026. Compare nurse pay in NYC, Long Island, Buffalo, and Albany. See how NY nurse salaries stack up after cost of living.',
+    'See the average RN salary in New York for 2026. Compare hourly pay, top cities, and earning potential for registered nurses.',
 };
 
 const faqs = [

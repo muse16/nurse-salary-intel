@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Highest-Paying States for Nurses 2026 | Top 10',
+  title: 'RN Salary Highest Paying States (2026): Hourly Pay + Highest Paying Cities',
   description:
-    'Which states pay nurses the most in 2026? See the top 10 highest-paying states for RNs — raw salary and adjusted for cost of living.',
+    'See the average RN salary in the highest paying states for 2026. Compare hourly pay, top cities, and earning potential for registered nurses.',
 };
 
 const faqs = [
