@@ -115,7 +115,7 @@ export default function FloridaRNSalary() {
       <div className="space-y-4">
         <div>
           <p className="font-semibold text-on-surface">What is the average RN salary in Florida?</p>
-          <p className="text-on-surface-variant">The average RN salary in Florida is $76,450/year ($36.75/hr) in 2026 — below the national average of $89,010. Florida&apos;s no-income-tax status partially offsets the lower base pay.</p>
+          <p className="text-on-surface-variant">The average RN salary in Florida is $76,450/year ($36.75/hr) in 2026 — below the national average of $89,010. For higher-paying no-tax alternatives, see <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">RN salary in Texas</Link>. For the nation&apos;s highest pay, compare <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link>. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to estimate Florida pay.</p>
         </div>
         <div>
           <p className="font-semibold text-on-surface">How much do nurses make per hour in Florida?</p>
@@ -123,7 +123,7 @@ export default function FloridaRNSalary() {
         </div>
         <div>
           <p className="font-semibold text-on-surface">What is the highest paying city for nurses in Florida?</p>
-          <p className="text-on-surface-variant">Miami is the highest-paying city for nurses in Florida, averaging $76,000–$86,000/year. Jackson Health System and Baptist Health South Florida are among the top-paying facilities in the state.</p>
+          <p className="text-on-surface-variant">Explore <Link href="/salary/florida/miami" className="text-primary hover:underline">nurse salary in Miami</Link>, averaging $76,000–$86,000/year, or compare with <Link href="/salary/florida/tampa" className="text-primary hover:underline">nurse salary in Tampa</Link> at $74,000–$84,000/year. Jackson Health System and Baptist Health are the top-paying facilities.</p>
         </div>
       </div>
     </SEOPageLayout>

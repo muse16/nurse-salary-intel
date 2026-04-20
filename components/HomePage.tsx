@@ -135,17 +135,22 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
                   </thead>
                   <tbody className="divide-y divide-outline-variant">
                     {[
-                      { state: 'California', salary: '$124,000', hourly: '$59.62/hr' },
-                      { state: 'New York', salary: '$98,560', hourly: '$47.38/hr' },
-                      { state: 'Washington', salary: '$100,890', hourly: '$48.51/hr' },
-                      { state: 'Oregon', salary: '$102,700', hourly: '$49.38/hr' },
-                      { state: 'Texas', salary: '$81,510', hourly: '$39.19/hr' },
-                      { state: 'Florida', salary: '$76,450', hourly: '$36.75/hr' },
-                      { state: 'Arizona', salary: '$82,000', hourly: '$39.42/hr' },
-                      { state: 'National Average', salary: '$89,010', hourly: '$42.79/hr' },
-                    ].map(({ state, salary, hourly }) => (
+                      { state: 'California', salary: '$124,000', hourly: '$59.62/hr', href: '/rn-salary-by-state/california' },
+                      { state: 'Hawaii', salary: '$106,530', hourly: '$51.22/hr', href: '/rn-salary-by-state/highest-paying-states' },
+                      { state: 'Oregon', salary: '$102,700', hourly: '$49.38/hr', href: '/rn-salary-by-state/highest-paying-states' },
+                      { state: 'Washington', salary: '$100,890', hourly: '$48.51/hr', href: '/rn-salary-by-state/highest-paying-states' },
+                      { state: 'New York', salary: '$98,560', hourly: '$47.38/hr', href: '/rn-salary-by-state/new-york' },
+                      { state: 'Nevada', salary: '$90,210', hourly: '$43.37/hr', href: '/rn-salary-by-state/highest-paying-states' },
+                      { state: 'Arizona', salary: '$82,000', hourly: '$39.42/hr', href: '/rn-salary-by-state/arizona' },
+                      { state: 'Texas', salary: '$81,510', hourly: '$39.19/hr', href: '/rn-salary-by-state/texas' },
+                      { state: 'Florida', salary: '$76,450', hourly: '$36.75/hr', href: '/rn-salary-by-state/florida' },
+                      { state: 'Minnesota', salary: '$88,200', hourly: '$42.40/hr', href: '/rn-salary-by-state' },
+                      { state: 'National Average', salary: '$89,010', hourly: '$42.79/hr', href: null },
+                    ].map(({ state, salary, hourly, href }) => (
                       <tr key={state} className="hover:bg-surface-container-low transition-colors">
-                        <td className="px-5 py-3 font-medium text-on-surface">{state}</td>
+                        <td className="px-5 py-3 font-medium text-on-surface">
+                          {href ? <Link href={href} className="text-primary hover:underline">RN salary in {state}</Link> : state}
+                        </td>
                         <td className="px-5 py-3 text-on-surface-variant">{salary}</td>
                         <td className="px-5 py-3 text-on-surface-variant">{hourly}</td>
                       </tr>

@@ -120,7 +120,7 @@ export default function CaliforniaRNSalary() {
       <div className="space-y-4">
         <div>
           <p className="font-semibold text-on-surface">What is the average RN salary in California?</p>
-          <p className="text-on-surface-variant">The average RN salary in California is $124,000/year ($59.62/hr) in 2026 — the highest of any state. Experienced nurses at major Bay Area systems earn $140,000–$170,000.</p>
+          <p className="text-on-surface-variant">The average RN salary in California is $124,000/year ($59.62/hr) in 2026 — the highest of any state. Experienced nurses at major Bay Area systems earn $140,000–$170,000. Compare with <Link href="/rn-salary-by-state/new-york" className="text-primary hover:underline">RN salary in New York</Link> or <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">RN salary in Texas</Link> for a no-tax alternative. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to compare by specialty.</p>
         </div>
         <div>
           <p className="font-semibold text-on-surface">How much do nurses make per hour in California?</p>
@@ -128,7 +128,7 @@ export default function CaliforniaRNSalary() {
         </div>
         <div>
           <p className="font-semibold text-on-surface">What is the highest paying city for nurses in California?</p>
-          <p className="text-on-surface-variant">San Francisco is the highest-paying city for nurses in California, averaging $145,000–$165,000/year. UCSF Medical Center and Kaiser San Francisco are among the top-paying facilities.</p>
+          <p className="text-on-surface-variant">See <Link href="/salary/california/san-francisco" className="text-primary hover:underline">nurse salary in San Francisco</Link>, averaging $145,000–$165,000/year, and <Link href="/salary/california/los-angeles" className="text-primary hover:underline">nurse salary in Los Angeles</Link> at $122,000–$142,000/year. UCSF Medical Center and Kaiser San Francisco are among the top-paying facilities.</p>
         </div>
       </div>
     </SEOPageLayout>

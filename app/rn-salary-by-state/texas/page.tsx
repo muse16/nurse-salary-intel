@@ -117,7 +117,7 @@ export default function TexasRNSalary() {
       <div className="space-y-4">
         <div>
           <p className="font-semibold text-on-surface">What is the average RN salary in Texas?</p>
-          <p className="text-on-surface-variant">The average RN salary in Texas is $81,510/year ($39.19/hr) in 2026. Houston metro nurses average $84,000–$94,000, and experienced specialty nurses often exceed $95,000.</p>
+          <p className="text-on-surface-variant">The average RN salary in Texas is $81,510/year ($39.19/hr) in 2026. Houston metro nurses average $84,000–$94,000, and experienced specialty nurses often exceed $95,000. Compare with <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link> or <Link href="/rn-salary-by-state/florida" className="text-primary hover:underline">RN salary in Florida</Link>. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to model Texas pay.</p>
         </div>
         <div>
           <p className="font-semibold text-on-surface">How much do nurses make per hour in Texas?</p>
@@ -125,7 +125,7 @@ export default function TexasRNSalary() {
         </div>
         <div>
           <p className="font-semibold text-on-surface">What is the highest paying city for nurses in Texas?</p>
-          <p className="text-on-surface-variant">Houston is the highest-paying city for nurses in Texas, averaging $84,000–$94,000/year. The Texas Medical Center — the world&apos;s largest medical complex — drives nurse pay higher than any other Texas market.</p>
+          <p className="text-on-surface-variant">See <Link href="/salary/texas/houston" className="text-primary hover:underline">nurse salary in Houston</Link>, averaging $84,000–$94,000/year, and compare with <Link href="/salary/texas/dallas" className="text-primary hover:underline">nurse salary in Dallas</Link> at $82,000–$92,000/year. The Texas Medical Center drives Houston to the top.</p>
         </div>
       </div>
     </SEOPageLayout>

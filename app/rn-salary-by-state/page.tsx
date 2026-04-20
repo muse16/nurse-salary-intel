@@ -178,7 +178,7 @@ export default function RNSalaryByStatePillar() {
       <div className="space-y-4">
         <div>
           <p className="font-semibold text-on-surface">What is the average RN salary in the United States?</p>
-          <p className="text-on-surface-variant">The national average RN salary is $89,010/year ($42.79/hr) in 2026, per BLS OEWS data. California, Hawaii, and Oregon are the three highest-paying states, all above $100,000/year.</p>
+          <p className="text-on-surface-variant">The national average RN salary is $89,010/year ($42.79/hr) in 2026, per BLS OEWS data. <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link> leads at $124,000, followed by Hawaii and Oregon above $100,000/year. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to estimate your own pay.</p>
         </div>
         <div>
           <p className="font-semibold text-on-surface">How much do nurses make per hour in the United States?</p>
@@ -186,7 +186,7 @@ export default function RNSalaryByStatePillar() {
         </div>
         <div>
           <p className="font-semibold text-on-surface">What is the highest paying city for nurses in the United States?</p>
-          <p className="text-on-surface-variant">San Francisco is the highest-paying metro area for nurses, averaging $145,000–$165,000/year. San Jose and New York City rank second and third nationally.</p>
+          <p className="text-on-surface-variant"><Link href="/salary/california/san-francisco" className="text-primary hover:underline">Nurse salary in San Francisco</Link> leads nationally at $145,000–$165,000/year. <Link href="/salary/new-york/new-york" className="text-primary hover:underline">Nurse salary in New York City</Link> ranks third. For a no-tax alternative, see <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">RN salary in Texas</Link>.</p>
         </div>
       </div>
     </SEOPageLayout>

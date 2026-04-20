@@ -117,7 +117,7 @@ export default function NewYorkRNSalary() {
       <div className="space-y-4">
         <div>
           <p className="font-semibold text-on-surface">What is the average RN salary in New York?</p>
-          <p className="text-on-surface-variant">The average RN salary in New York is $98,560/year ($47.38/hr) in 2026. NYC nurses average $110,000–$125,000, while upstate markets average $80,000–$92,000.</p>
+          <p className="text-on-surface-variant">The average RN salary in New York is $98,560/year ($47.38/hr) in 2026. NYC nurses average $110,000–$125,000, while upstate markets average $80,000–$92,000. Compare with <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link> or the cost-adjusted value of <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">RN salary in Texas</Link>. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to model NY pay by specialty.</p>
         </div>
         <div>
           <p className="font-semibold text-on-surface">How much do nurses make per hour in New York?</p>
@@ -125,7 +125,7 @@ export default function NewYorkRNSalary() {
         </div>
         <div>
           <p className="font-semibold text-on-surface">What is the highest paying city for nurses in New York?</p>
-          <p className="text-on-surface-variant">New York City is the highest-paying market for nurses in New York State, averaging $112,000–$128,000/year. NYU Langone, Mount Sinai, and NewYork-Presbyterian are the top-paying hospital systems.</p>
+          <p className="text-on-surface-variant">See <Link href="/salary/new-york/new-york" className="text-primary hover:underline">nurse salary in New York City</Link>, averaging $112,000–$128,000/year, and compare with <Link href="/salary/new-york/buffalo" className="text-primary hover:underline">nurse salary in Buffalo</Link> for upstate purchasing power. NYU Langone and Mount Sinai are the top-paying systems.</p>
         </div>
       </div>
     </SEOPageLayout>

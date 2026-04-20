@@ -142,7 +142,7 @@ export default function HighestPayingStates() {
       <div className="space-y-4">
         <div>
           <p className="font-semibold text-on-surface">What is the average RN salary in the highest paying states?</p>
-          <p className="text-on-surface-variant">The top-paying states average $97,000–$124,000/year for RNs. California leads at $124,000, followed by Hawaii ($106,530), Oregon ($102,700), and Washington ($100,890).</p>
+          <p className="text-on-surface-variant"><Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link> leads at $124,000, followed by Hawaii ($106,530), Oregon ($102,700), and Washington ($100,890). <Link href="/rn-salary-by-state/new-york" className="text-primary hover:underline">RN salary in New York</Link> rounds out the top 5 at $98,560. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to estimate your pay in any state.</p>
         </div>
         <div>
           <p className="font-semibold text-on-surface">How much do nurses make per hour in the highest paying states?</p>
@@ -150,7 +150,7 @@ export default function HighestPayingStates() {
         </div>
         <div>
           <p className="font-semibold text-on-surface">What is the highest paying city for nurses in the United States?</p>
-          <p className="text-on-surface-variant">San Francisco, CA is the highest-paying city for nurses nationally, averaging $145,000–$165,000/year. The Bay Area&apos;s combination of high cost of living, nurse shortages, and strong union contracts drives the highest nurse pay in the country.</p>
+          <p className="text-on-surface-variant"><Link href="/salary/california/san-francisco" className="text-primary hover:underline">Nurse salary in San Francisco</Link> leads nationally at $145,000–$165,000/year, followed by <Link href="/salary/new-york/new-york" className="text-primary hover:underline">nurse salary in New York City</Link> at $112,000–$128,000/year. The Bay Area&apos;s combination of high cost of living, shortages, and union contracts drives the highest nurse pay in the country.</p>
         </div>
       </div>
     </SEOPageLayout>
