@@ -8,25 +8,8 @@ interface FAQSectionProps {
 }
 
 export default function FAQSection({ faqs }: FAQSectionProps) {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map((faq) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer,
-      },
-    })),
-  };
-
   return (
     <section className="mt-12">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
       <h2 className="text-2xl font-bold font-headline text-on-surface mb-6">
         Frequently Asked Questions
       </h2>

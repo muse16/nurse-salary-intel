@@ -46,6 +46,7 @@ export default function SEOPageLayout({
         description={schemaDescription}
         url={schemaUrl}
         type={schemaType}
+        faqs={faqs}
       />
 
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
