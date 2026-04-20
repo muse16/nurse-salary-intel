@@ -60,6 +60,12 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="fo-verify" content="39dcd307-ed45-4e62-b236-2bf2cfc7ab62" />
+        {/* AdSense: plain <script> avoids Next.js adding data-nscript attribute */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4487629215570224"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className={`${manrope.variable} ${inter.variable} antialiased`}>
         {children}
@@ -77,14 +83,6 @@ export default function RootLayout({
             gtag('config', '${GA4_ID}');
           `}
         </Script>
-
-        {/* Google AdSense */}
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4487629215570224"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
 
         <Analytics />
 
