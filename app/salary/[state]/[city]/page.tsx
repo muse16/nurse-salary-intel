@@ -6,7 +6,7 @@ import RecommendedGear from '@/components/RecommendedGear';
 import AdSenseSlot from '@/components/AdSenseSlot';
 import SiteNav from '@/components/SiteNav';
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import type { Metadata } from 'next';
 
 interface PageProps {
@@ -53,7 +53,13 @@ export default async function CityPage({ params }: PageProps) {
   const cityFormatted = unslugify(city);
   const cityData = getCityData(stateFormatted, cityFormatted);
 
-  if (!cityData) notFound();
+  if (!cityData) {
+    const validStates = getAllStates().map(s => slugify(s));
+    if (validStates.includes(state)) {
+      redirect(`/rn-salary-by-state/${state}`);
+    }
+    notFound();
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
