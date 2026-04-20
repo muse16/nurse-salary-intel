@@ -51,6 +51,18 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/salary-negotiation/travel-nursing-contract-review', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/salary-negotiation/contract-clauses-to-watch', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/salary-negotiation/night-shift-differential-pay', priority: 0.8, changeFrequency: 'monthly' },
+
+  // New SEO pages — April 2026
+  { path: '/night-shift-differential-nurses', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/nurse-overtime-pay-guide', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/highest-paying-nursing-specialties', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/travel-nurse-salary-guide', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/nurse-salary-california-vs-texas', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/nurse-salary-florida-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/how-much-do-nurses-make-per-hour', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/entry-level-nurse-salary', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/nurse-salary-by-hospital', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/registered-nurse-salary-breakdown', priority: 0.8, changeFrequency: 'monthly' },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
