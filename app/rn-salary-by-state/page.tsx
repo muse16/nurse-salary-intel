@@ -143,6 +143,52 @@ export default function RNSalaryByStatePillar() {
           </Link>
         ))}
       </div>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Highest Paying Cities for Nurses in the United States</h2>
+      <p>
+        The highest-paying metro areas for registered nurses are concentrated in California, New York, and the Pacific Northwest. These markets combine strong union contracts, mandatory staffing ratios, and high cost of living that drives base pay up.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>San Francisco, CA:</strong> $145,000–$165,000/year ($69–$79/hr)</li>
+        <li><strong>San Jose, CA:</strong> $140,000–$155,000/year ($67–$75/hr)</li>
+        <li><strong>Los Angeles, CA:</strong> $122,000–$142,000/year ($59–$68/hr)</li>
+        <li><strong>New York City, NY:</strong> $110,000–$128,000/year ($53–$62/hr)</li>
+        <li><strong>Seattle, WA:</strong> $105,000–$118,000/year ($50–$57/hr)</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Nurse Salary by Experience Level</h2>
+      <p>
+        Experience is one of the strongest predictors of RN pay. Nationally, the gap between entry-level and senior nurses ranges from $25,000 to $50,000+, and the premium is even larger in high-pay states with union step increases.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>Entry level (0–2 years):</strong> $55,000–$75,000 nationally. New grads in California start at $85,000–$100,000; lower-paying states start near $52,000–$62,000.</li>
+        <li><strong>3–5 years experience:</strong> $72,000–$95,000. Specialty certifications (CCRN, CEN) add $5,000–$12,000 to base pay at this stage.</li>
+        <li><strong>10+ years experience:</strong> $90,000–$130,000+. Senior bedside nurses in high-pay states often exceed $130,000. Advancing to management or APRN licensure can push earnings to $150,000+.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Night Shift &amp; Overtime Pay for Nurses</h2>
+      <p>
+        Most hospital systems pay a shift differential of 10–25% above base pay for evening and overnight shifts. In California and New York, this premium can add $8,000–$18,000 per year. Weekend differentials typically add another 5–15% on top of base.
+      </p>
+      <p>
+        Federal law requires overtime at 1.5x the base hourly rate for hours beyond 40 per week. California goes further, requiring daily overtime after 8 hours in a single shift. RNs who regularly work overtime — especially in ICU, ER, and OR — can add $15,000–$35,000 annually to their income.
+      </p>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">RN Salary FAQs</h2>
+      <div className="space-y-4">
+        <div>
+          <p className="font-semibold text-on-surface">What is the average RN salary in the United States?</p>
+          <p className="text-on-surface-variant">The national average RN salary is $89,010/year ($42.79/hr) in 2026, per BLS OEWS data. California, Hawaii, and Oregon are the three highest-paying states, all above $100,000/year.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">How much do nurses make per hour in the United States?</p>
+          <p className="text-on-surface-variant">The average hourly rate for registered nurses is $42.79/hr nationally. Rates range from approximately $32/hr in Mississippi to $60+/hr in California metro areas.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">What is the highest paying city for nurses in the United States?</p>
+          <p className="text-on-surface-variant">San Francisco is the highest-paying metro area for nurses, averaging $145,000–$165,000/year. San Jose and New York City rank second and third nationally.</p>
+        </div>
+      </div>
     </SEOPageLayout>
   );
 }

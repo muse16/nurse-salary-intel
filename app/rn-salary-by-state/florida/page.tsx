@@ -80,6 +80,52 @@ export default function FloridaRNSalary() {
           <span className="font-bold text-primary text-sm">Top 10 Highest-Paying States →</span>
         </Link>
       </div>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Highest Paying Cities in Florida</h2>
+      <p>
+        Florida nurse pay is highest in South Florida, where the Miami-Fort Lauderdale market supports the strongest base salaries. Orlando and Tampa lag behind Miami but benefit from lower housing costs and strong demand from a large retiree population.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>Miami-Fort Lauderdale:</strong> $76,000–$86,000/year ($37–$41/hr)</li>
+        <li><strong>Tampa-St. Petersburg:</strong> $74,000–$84,000/year ($36–$40/hr)</li>
+        <li><strong>Fort Lauderdale:</strong> $75,000–$83,000/year ($36–$40/hr)</li>
+        <li><strong>Orlando:</strong> $72,000–$80,000/year ($35–$38/hr)</li>
+        <li><strong>Jacksonville:</strong> $71,000–$79,000/year ($34–$38/hr)</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Nurse Salary by Experience in Florida</h2>
+      <p>
+        Florida has one of the largest nursing workforces in the country, which moderates pay growth. However, persistent shortages in specialty units and high retiree demand continue to push pay upward, especially for experienced nurses in critical care.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>Entry level (0–2 years):</strong> $58,000–$66,000/year. Miami and Tampa offer the highest new grad starting rates in the state.</li>
+        <li><strong>3–5 years experience:</strong> $70,000–$80,000/year. Specialty certifications add $4,000–$9,000 above base pay at this stage.</li>
+        <li><strong>10+ years experience:</strong> $84,000–$97,000/year. Senior nurses at large academic medical centers like Jackson Health and Mayo Clinic Jacksonville reach the upper range.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Night Shift &amp; Overtime Pay in Florida</h2>
+      <p>
+        Florida hospitals typically offer shift differentials of 10–18% above base for nights. On a $76,450 base salary, a consistent night nurse earns an additional $7,600–$13,800/year. Weekend differentials generally add 8–12% for shifts worked Saturday and Sunday.
+      </p>
+      <p>
+        Overtime in Florida is paid at 1.5x the base hourly rate for hours beyond 40 per week. Nurses who regularly pick up extra shifts — especially during high-demand winter months when Florida&apos;s population swells — can add $8,000–$16,000/year in overtime income. Florida&apos;s no-income-tax status means every overtime dollar is only subject to federal tax.
+      </p>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">RN Salary FAQs — Florida</h2>
+      <div className="space-y-4">
+        <div>
+          <p className="font-semibold text-on-surface">What is the average RN salary in Florida?</p>
+          <p className="text-on-surface-variant">The average RN salary in Florida is $76,450/year ($36.75/hr) in 2026 — below the national average of $89,010. Florida&apos;s no-income-tax status partially offsets the lower base pay.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">How much do nurses make per hour in Florida?</p>
+          <p className="text-on-surface-variant">Florida RNs average $36.75/hr statewide. Miami-area nurses earn $37–$41/hr, while rural Florida markets average $33–$36/hr.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">What is the highest paying city for nurses in Florida?</p>
+          <p className="text-on-surface-variant">Miami is the highest-paying city for nurses in Florida, averaging $76,000–$86,000/year. Jackson Health System and Baptist Health South Florida are among the top-paying facilities in the state.</p>
+        </div>
+      </div>
     </SEOPageLayout>
   );
 }

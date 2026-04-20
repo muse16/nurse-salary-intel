@@ -107,6 +107,52 @@ export default function HighestPayingStates() {
           <span className="font-bold text-primary text-sm">Travel Nurse Salary by State →</span>
         </Link>
       </div>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Highest Paying Cities in the Top-Paying States</h2>
+      <p>
+        Within the highest-paying states, pay varies significantly by metro area. Urban centers with major academic medical systems and strong union representation offer the most competitive nurse salaries in the country.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>San Francisco, CA:</strong> $145,000–$165,000/year ($70–$79/hr)</li>
+        <li><strong>San Jose, CA:</strong> $140,000–$155,000/year ($67–$75/hr)</li>
+        <li><strong>New York City, NY:</strong> $112,000–$128,000/year ($54–$62/hr)</li>
+        <li><strong>Seattle, WA:</strong> $105,000–$118,000/year ($50–$57/hr)</li>
+        <li><strong>Honolulu, HI:</strong> $104,000–$118,000/year ($50–$57/hr)</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Nurse Salary by Experience in the Highest-Paying States</h2>
+      <p>
+        The highest-paying states also offer the steepest experience premiums. Union step increases, specialty certifications, and competitive retention bonuses compound over a career, creating the largest salary gaps at the 10+ year mark.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>Entry level (0–2 years):</strong> $75,000–$100,000 in the top-paying states. California new grads start at $85,000–$100,000; Hawaii at $78,000–$88,000.</li>
+        <li><strong>3–5 years experience:</strong> $105,000–$130,000 in top-paying states. Union step increases in California and New York accelerate pay growth significantly at this stage.</li>
+        <li><strong>10+ years experience:</strong> $130,000–$175,000+ in top-paying states. Senior nurses at UCSF, NYU Langone, and Swedish Medical Center in Seattle reach the upper end of this range.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Night Shift &amp; Overtime Pay in High-Pay States</h2>
+      <p>
+        The highest-paying states also offer the strongest shift differentials. California union hospitals pay 15–25% for nights; New York NYSNA contracts pay 15–22%; Washington State pays 12–20%. On a $100,000+ base salary, these differentials add $15,000–$25,000/year for consistent night nurses.
+      </p>
+      <p>
+        California has the most favorable overtime law in the nation: daily overtime applies after 8 hours per shift. Washington and Oregon use the federal 40-hour weekly threshold at 1.5x base. Double-time rates for voluntary extra shifts are common at major systems during staffing shortages.
+      </p>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">RN Salary FAQs — Highest Paying States</h2>
+      <div className="space-y-4">
+        <div>
+          <p className="font-semibold text-on-surface">What is the average RN salary in the highest paying states?</p>
+          <p className="text-on-surface-variant">The top-paying states average $97,000–$124,000/year for RNs. California leads at $124,000, followed by Hawaii ($106,530), Oregon ($102,700), and Washington ($100,890).</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">How much do nurses make per hour in the highest paying states?</p>
+          <p className="text-on-surface-variant">Nurses in the top-paying states earn $46–$60+/hr on average. California averages $59.62/hr, Hawaii $51.22/hr, Oregon $49.38/hr, and Washington $48.51/hr.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">What is the highest paying city for nurses in the United States?</p>
+          <p className="text-on-surface-variant">San Francisco, CA is the highest-paying city for nurses nationally, averaging $145,000–$165,000/year. The Bay Area&apos;s combination of high cost of living, nurse shortages, and strong union contracts drives the highest nurse pay in the country.</p>
+        </div>
+      </div>
     </SEOPageLayout>
   );
 }

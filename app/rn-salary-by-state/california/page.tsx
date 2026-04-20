@@ -85,6 +85,52 @@ export default function CaliforniaRNSalary() {
           <span className="font-bold text-primary text-sm">CRNA Salary by State →</span>
         </Link>
       </div>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Highest Paying Cities in California</h2>
+      <p>
+        California nurse pay varies dramatically by metro area. The Bay Area consistently leads the nation, while inland markets like Sacramento and Fresno offer better cost-of-living-adjusted pay despite lower base salaries.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>San Francisco-Oakland:</strong> $145,000–$165,000/year ($70–$79/hr)</li>
+        <li><strong>San Jose (Silicon Valley):</strong> $140,000–$155,000/year ($67–$75/hr)</li>
+        <li><strong>Los Angeles-Long Beach:</strong> $122,000–$142,000/year ($59–$68/hr)</li>
+        <li><strong>San Diego:</strong> $115,000–$130,000/year ($55–$63/hr)</li>
+        <li><strong>Sacramento:</strong> $112,000–$122,000/year ($54–$59/hr)</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Nurse Salary by Experience in California</h2>
+      <p>
+        California has the highest new graduate starting salaries in the nation. Union contracts at systems like Kaiser Permanente, UCSF, and Cedars-Sinai provide structured step increases that accelerate pay growth with experience.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>Entry level (0–2 years):</strong> $85,000–$100,000/year. Bay Area new grads frequently start above $95,000 at top systems.</li>
+        <li><strong>3–5 years experience:</strong> $115,000–$135,000/year. CCRN and CEN-certified nurses typically earn toward the top of this range.</li>
+        <li><strong>10+ years experience:</strong> $140,000–$175,000/year. Senior nurses at UCSF, Cedars-Sinai, and Kaiser Oakland reach the upper end of this range.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Night Shift &amp; Overtime Pay in California</h2>
+      <p>
+        California union hospitals pay night shift differentials of 15–25% above base. On a $124,000 base salary, that premium adds $18,600–$31,000 annually for consistent night nurses. Weekend differentials add another 10–20%.
+      </p>
+      <p>
+        California has the strongest overtime law in the country: daily overtime applies after 8 hours in a single shift, not just after 40 hours per week. Double-time kicks in after 12 hours. ICU and ER nurses working standard 12-hour shifts regularly earn daily overtime, which can add $20,000–$40,000 annually on top of base pay.
+      </p>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">RN Salary FAQs — California</h2>
+      <div className="space-y-4">
+        <div>
+          <p className="font-semibold text-on-surface">What is the average RN salary in California?</p>
+          <p className="text-on-surface-variant">The average RN salary in California is $124,000/year ($59.62/hr) in 2026 — the highest of any state. Experienced nurses at major Bay Area systems earn $140,000–$170,000.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">How much do nurses make per hour in California?</p>
+          <p className="text-on-surface-variant">California RNs average $59.62/hr statewide. San Francisco and San Jose nurses earn $70–$79/hr, while Central Valley markets average $52–$59/hr.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">What is the highest paying city for nurses in California?</p>
+          <p className="text-on-surface-variant">San Francisco is the highest-paying city for nurses in California, averaging $145,000–$165,000/year. UCSF Medical Center and Kaiser San Francisco are among the top-paying facilities.</p>
+        </div>
+      </div>
     </SEOPageLayout>
   );
 }

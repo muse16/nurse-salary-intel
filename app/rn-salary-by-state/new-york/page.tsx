@@ -82,6 +82,52 @@ export default function NewYorkRNSalary() {
           <span className="font-bold text-primary text-sm">Top 10 Highest-Paying States →</span>
         </Link>
       </div>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Highest Paying Cities in New York</h2>
+      <p>
+        New York has one of the widest intrastate pay gaps in the country. NYC and its suburbs pay dramatically more than upstate markets, driven by union contracts, higher living costs, and the concentration of major academic medical centers.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>Manhattan (NYC):</strong> $112,000–$128,000/year ($54–$62/hr)</li>
+        <li><strong>NYC Boroughs:</strong> $104,000–$115,000/year ($50–$55/hr)</li>
+        <li><strong>Long Island:</strong> $98,000–$110,000/year ($47–$53/hr)</li>
+        <li><strong>Westchester:</strong> $95,000–$105,000/year ($46–$50/hr)</li>
+        <li><strong>Albany / Capital Region:</strong> $84,000–$94,000/year ($40–$45/hr)</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Nurse Salary by Experience in New York</h2>
+      <p>
+        NYSNA union contracts at major NYC hospitals provide structured step increases that make New York one of the fastest states for salary growth over a nursing career. Upstate hospitals are less likely to be unionized, resulting in slower wage progression outside the metro area.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>Entry level (0–2 years):</strong> $72,000–$88,000/year. NYC new grads at NYU Langone and Mount Sinai typically start at $85,000+.</li>
+        <li><strong>3–5 years experience:</strong> $92,000–$110,000/year. NYSNA union step increases accelerate pay growth significantly at covered facilities.</li>
+        <li><strong>10+ years experience:</strong> $115,000–$138,000/year. Senior nurses at major NYC academic centers frequently earn above $120,000 with shift differentials included.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Night Shift &amp; Overtime Pay in New York</h2>
+      <p>
+        New York union hospitals pay night shift differentials of 15–22% above base pay. On a $98,560 statewide average, night nurses earn an additional $14,800–$21,700/year. NYC hospitals consistently offer the highest differentials. Weekend premiums add 10–18% above base pay.
+      </p>
+      <p>
+        Overtime in New York is paid at 1.5x the hourly base rate for hours beyond 40 per week. NYC RNs working frequent overtime can add $18,000–$30,000 annually. Note that NY state income tax (up to 10.9%) and NYC local income tax reduce take-home on overtime compared to no-tax states.
+      </p>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">RN Salary FAQs — New York</h2>
+      <div className="space-y-4">
+        <div>
+          <p className="font-semibold text-on-surface">What is the average RN salary in New York?</p>
+          <p className="text-on-surface-variant">The average RN salary in New York is $98,560/year ($47.38/hr) in 2026. NYC nurses average $110,000–$125,000, while upstate markets average $80,000–$92,000.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">How much do nurses make per hour in New York?</p>
+          <p className="text-on-surface-variant">New York RNs average $47.38/hr statewide. Manhattan nurses earn $54–$62/hr at major hospital systems, while upstate markets (Buffalo, Rochester) average $39–$43/hr.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">What is the highest paying city for nurses in New York?</p>
+          <p className="text-on-surface-variant">New York City is the highest-paying market for nurses in New York State, averaging $112,000–$128,000/year. NYU Langone, Mount Sinai, and NewYork-Presbyterian are the top-paying hospital systems.</p>
+        </div>
+      </div>
     </SEOPageLayout>
   );
 }

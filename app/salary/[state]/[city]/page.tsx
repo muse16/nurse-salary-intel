@@ -189,6 +189,62 @@ export default async function CityPage({ params }: PageProps) {
           </Link>
         </div>
 
+        {/* Supplemental SEO content */}
+        <div className="mt-8 space-y-6">
+          <div className="bg-white rounded-xl shadow-sm p-7 border border-gray-100">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Highest Paying Cities in {cityData.state}</h2>
+            <p className="text-gray-700 text-sm leading-relaxed mb-3">
+              {cityData.city} is one of several key nursing markets in {cityData.state}. Pay varies across metro areas based on hospital concentration, cost of living, and demand. Larger urban markets typically pay 10–20% more than the statewide average, while rural areas may pay 10–15% below.
+            </p>
+            <ul className="list-disc pl-6 space-y-1 text-gray-600 text-sm">
+              <li><strong>{cityData.city}:</strong> ${cityData.minSalary.toLocaleString()}–${cityData.maxSalary.toLocaleString()}/year based on {cityData.totalPositions} tracked positions</li>
+              <li>Major metro areas in {cityData.state} average 10–20% above the statewide baseline</li>
+              <li>Suburban hospital markets typically align near the statewide average</li>
+              <li>Rural and critical access facilities generally pay 8–15% below the nearest metro average</li>
+            </ul>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-sm p-7 border border-gray-100">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Nurse Salary by Experience in {cityData.state}</h2>
+            <p className="text-gray-700 text-sm leading-relaxed mb-3">
+              Experience is one of the strongest drivers of RN pay in {cityData.city} and across {cityData.state}. The gap between entry-level and senior nurses typically ranges from $20,000 to $40,000+ depending on facility type and specialty.
+            </p>
+            <ul className="list-disc pl-6 space-y-1 text-gray-600 text-sm">
+              <li><strong>Entry level (0–2 years):</strong> Typically 15–25% below the {cityData.city} average of ${cityData.avgSalary.toLocaleString()}</li>
+              <li><strong>3–5 years experience:</strong> Near or slightly above the local average; specialty certifications (CCRN, CEN) add $5,000–$12,000</li>
+              <li><strong>10+ years experience:</strong> Generally 20–35% above the average; charge nurse and specialty roles push further</li>
+            </ul>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-sm p-7 border border-gray-100">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Night Shift &amp; Overtime Pay in {cityData.city}</h2>
+            <p className="text-gray-700 text-sm leading-relaxed mb-3">
+              Most hospitals in {cityData.city} offer a night shift differential of 10–20% above base pay for evening and overnight shifts. On the average {cityData.city} salary of ${cityData.avgSalary.toLocaleString()}, that adds roughly ${Math.round(cityData.avgSalary * 0.10).toLocaleString()}–${Math.round(cityData.avgSalary * 0.20).toLocaleString()}/year for consistent night nurses. Weekend differentials typically add another 8–15%.
+            </p>
+            <p className="text-gray-700 text-sm leading-relaxed">
+              Overtime is required at 1.5x base hourly rate for hours beyond 40 per week. Nurses working one extra 12-hour shift per week can add $10,000–$20,000 annually to their income. During staffing shortages, some facilities offer double-time rates for voluntary extra shifts.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-sm p-7 border border-gray-100">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">RN Salary FAQs — {cityData.city}, {cityData.state}</h2>
+            <div className="space-y-4 text-sm">
+              <div>
+                <p className="font-semibold text-gray-900">What is the average RN salary in {cityData.state}?</p>
+                <p className="text-gray-600 mt-1">Based on NurseSalaryIntel data, {cityData.city} nurses average ${cityData.avgSalary.toLocaleString()}/year across {cityData.totalPositions} tracked positions. Salaries vary by metro area, facility type, and specialty across {cityData.state}.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-gray-900">How much do nurses make per hour in {cityData.state}?</p>
+                <p className="text-gray-600 mt-1">In {cityData.city}, the average hourly rate is approximately ${(cityData.avgSalary / 2080).toFixed(2)}/hr based on an annual salary of ${cityData.avgSalary.toLocaleString()}. Hourly rates vary by shift differential, specialty, and years of experience.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-gray-900">What is the highest paying city for nurses in {cityData.state}?</p>
+                <p className="text-gray-600 mt-1">Pay varies across {cityData.state}&apos;s metro areas. Larger urban markets with major hospital systems and academic medical centers typically offer the highest base salaries. Use the positions table above to compare pay across facilities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </main>
     </div>
   );

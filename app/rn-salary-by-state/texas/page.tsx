@@ -82,6 +82,52 @@ export default function TexasRNSalary() {
           <span className="font-bold text-primary text-sm">How to Negotiate Nursing Salary →</span>
         </Link>
       </div>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Highest Paying Cities in Texas</h2>
+      <p>
+        Texas nurse pay is highest in its major metro areas. Houston leads due to the concentration of large hospital systems in the Texas Medical Center — the largest medical complex in the world. Dallas-Fort Worth and Austin are close behind.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>Houston:</strong> $84,000–$94,000/year ($40–$45/hr)</li>
+        <li><strong>Dallas-Fort Worth:</strong> $82,000–$92,000/year ($39–$44/hr)</li>
+        <li><strong>Austin:</strong> $82,000–$90,000/year ($39–$43/hr)</li>
+        <li><strong>Fort Worth:</strong> $80,000–$90,000/year ($38–$43/hr)</li>
+        <li><strong>San Antonio:</strong> $75,000–$85,000/year ($36–$41/hr)</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Nurse Salary by Experience in Texas</h2>
+      <p>
+        Texas has one of the largest nursing labor markets in the country. Competition for experienced nurses — particularly in ICU, OR, and ER — is intense, with major hospital systems offering significant pay bumps and sign-on bonuses to attract 3+ year nurses.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>Entry level (0–2 years):</strong> $60,000–$70,000/year. Houston and Austin offer the highest new grad starting rates, with major systems starting above $66,000.</li>
+        <li><strong>3–5 years experience:</strong> $76,000–$88,000/year. Specialty certifications add $5,000–$10,000; sign-on bonuses for experienced hires often range from $10,000–$20,000.</li>
+        <li><strong>10+ years experience:</strong> $92,000–$105,000/year. Senior specialty nurses at Houston&apos;s Texas Medical Center hospitals frequently reach the upper end of this range.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Night Shift &amp; Overtime Pay in Texas</h2>
+      <p>
+        Texas hospitals offer night shift differentials of 12–20% above base pay. On an $81,510 average salary, consistent night nurses earn $9,800–$16,300 more per year. Weekend differentials typically add 8–15% for Saturday and Sunday shifts.
+      </p>
+      <p>
+        Overtime in Texas is paid at 1.5x the base hourly rate for hours beyond 40 per week. Because Texas has no state income tax, overtime take-home pay is better here than in comparable-salary states like California or New York. Nurses working one extra shift per week can add $12,000–$20,000 annually on top of base pay.
+      </p>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">RN Salary FAQs — Texas</h2>
+      <div className="space-y-4">
+        <div>
+          <p className="font-semibold text-on-surface">What is the average RN salary in Texas?</p>
+          <p className="text-on-surface-variant">The average RN salary in Texas is $81,510/year ($39.19/hr) in 2026. Houston metro nurses average $84,000–$94,000, and experienced specialty nurses often exceed $95,000.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">How much do nurses make per hour in Texas?</p>
+          <p className="text-on-surface-variant">Texas RNs average $39.19/hr statewide. Houston, Dallas, and Austin nurses earn $40–$45/hr, while rural Texas markets average $34–$38/hr.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">What is the highest paying city for nurses in Texas?</p>
+          <p className="text-on-surface-variant">Houston is the highest-paying city for nurses in Texas, averaging $84,000–$94,000/year. The Texas Medical Center — the world&apos;s largest medical complex — drives nurse pay higher than any other Texas market.</p>
+        </div>
+      </div>
     </SEOPageLayout>
   );
 }

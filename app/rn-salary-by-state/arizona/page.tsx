@@ -184,6 +184,52 @@ export default function ArizonaRNSalary() {
           <span className="font-bold text-primary text-sm">CRNA Salary by State →</span>
         </Link>
       </div>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Highest Paying Cities in Arizona</h2>
+      <p>
+        Pay varies significantly across Arizona&apos;s metro areas. The Phoenix metro and its suburbs consistently offer the highest salaries in the state, driven by large hospital systems and strong competition for experienced nurses.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>Scottsdale:</strong> $88,000–$98,000/year ($42–$47/hr)</li>
+        <li><strong>Phoenix Metro:</strong> $84,000–$96,000/year ($40–$46/hr)</li>
+        <li><strong>Mesa / Chandler:</strong> $82,000–$92,000/year ($39–$44/hr)</li>
+        <li><strong>Tucson:</strong> $74,000–$84,000/year ($36–$40/hr)</li>
+        <li><strong>Flagstaff:</strong> $72,000–$80,000/year ($35–$38/hr)</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Nurse Salary by Experience in Arizona</h2>
+      <p>
+        Experience significantly impacts RN pay in Arizona. The gap between new grad and senior nurse salaries has widened in recent years as hospitals compete harder to retain experienced staff.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>Entry level (0–2 years):</strong> $62,000–$70,000/year. Phoenix metro new grads typically start $4,000–$6,000 above rural counterparts.</li>
+        <li><strong>3–5 years experience:</strong> $78,000–$90,000/year. Specialty certifications like CCRN or CEN add $5,000–$10,000 at this stage.</li>
+        <li><strong>10+ years experience:</strong> $92,000–$108,000/year. Senior nurses at Magnet-designated facilities in Phoenix often reach the top of this range.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Night Shift &amp; Overtime Pay in Arizona</h2>
+      <p>
+        Arizona hospitals typically offer a night shift differential of 12–20% above base pay. On an $82,000 base salary, that adds roughly $9,800–$16,400/year for nurses who primarily work nights. Weekend differentials generally add an additional 8–15%.
+      </p>
+      <p>
+        Overtime in Arizona is paid at 1.5x base hourly rate for hours beyond 40 per week. Nurses working two extra shifts per month can add $8,000–$14,000 annually. During the winter snowbird season, overtime and bonus opportunities increase significantly at Phoenix-area facilities.
+      </p>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">RN Salary FAQs — Arizona</h2>
+      <div className="space-y-4">
+        <div>
+          <p className="font-semibold text-on-surface">What is the average RN salary in Arizona?</p>
+          <p className="text-on-surface-variant">The average RN salary in Arizona is $82,000/year ($39.42/hr) in 2026. Phoenix metro nurses earn $84,000–$96,000 depending on facility and specialty.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">How much do nurses make per hour in Arizona?</p>
+          <p className="text-on-surface-variant">Arizona RNs average $39.42/hr statewide. Scottsdale and north Phoenix hospitals pay $42–$47/hr, while rural Arizona markets average $33–$37/hr.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">What is the highest paying city for nurses in Arizona?</p>
+          <p className="text-on-surface-variant">Scottsdale is the highest-paying city for nurses in Arizona, averaging $88,000–$98,000/year. Mayo Clinic Hospital and HonorHealth Scottsdale are the top-paying facilities in that market.</p>
+        </div>
+      </div>
     </SEOPageLayout>
   );
 }
