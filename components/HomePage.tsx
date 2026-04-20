@@ -100,6 +100,159 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
           </div>
         </section>
 
+        {/* ── SEO CONTENT — BELOW CALCULATOR ──────────────── */}
+        <section className="py-24 px-6 bg-surface">
+          <div className="max-w-4xl mx-auto space-y-16">
+
+            {/* How to Use */}
+            <div>
+              <h2 className="font-headline font-extrabold text-3xl text-editorial mb-6">How to Use the Nurse Salary Calculator</h2>
+              <p className="text-on-surface-variant text-lg leading-relaxed mb-4">
+                Our nurse salary calculator estimates your RN pay based on four inputs: state, specialty, years of experience, and employment type. Each factor is weighted using 2026 BLS OEWS data combined with real contract data from NurseSalaryIntel&apos;s database of nursing positions.
+              </p>
+              <p className="text-on-surface-variant text-lg leading-relaxed mb-4">
+                To get your estimate, select your state from the dropdown — this sets the baseline pay for your region. Then choose your specialty (ICU, ER, Med-Surg, etc.) and your years of experience. Finally, select whether you are a staff nurse or travel nurse. The calculator applies a specialty multiplier and experience adjustment to generate a personalized salary range.
+              </p>
+              <p className="text-on-surface-variant text-lg leading-relaxed">
+                The result shows your estimated annual salary, hourly rate, and how your pay compares to the state average. Use the &quot;Generate Report&quot; option to download a full salary breakdown as a PDF — useful for job offer comparisons and salary negotiations.
+              </p>
+            </div>
+
+            {/* Average RN Salary by State */}
+            <div>
+              <h2 className="font-headline font-extrabold text-3xl text-editorial mb-6">Average RN Salary by State</h2>
+              <p className="text-on-surface-variant text-lg leading-relaxed mb-6">
+                RN pay varies by more than $57,000 between the highest and lowest-paying states. Geography is the single biggest factor in nurse compensation — even more than experience or specialty in many cases. Here is a snapshot of average RN salaries across key states in 2026:
+              </p>
+              <div className="overflow-x-auto rounded-xl border border-outline-variant">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="bg-surface-container-low border-b border-outline-variant">
+                      <th className="text-left px-5 py-3 font-bold text-on-surface">State</th>
+                      <th className="text-left px-5 py-3 font-bold text-on-surface">Avg. Annual Salary</th>
+                      <th className="text-left px-5 py-3 font-bold text-on-surface">Avg. Hourly Rate</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-outline-variant">
+                    {[
+                      { state: 'California', salary: '$124,000', hourly: '$59.62/hr' },
+                      { state: 'New York', salary: '$98,560', hourly: '$47.38/hr' },
+                      { state: 'Washington', salary: '$100,890', hourly: '$48.51/hr' },
+                      { state: 'Oregon', salary: '$102,700', hourly: '$49.38/hr' },
+                      { state: 'Texas', salary: '$81,510', hourly: '$39.19/hr' },
+                      { state: 'Florida', salary: '$76,450', hourly: '$36.75/hr' },
+                      { state: 'Arizona', salary: '$82,000', hourly: '$39.42/hr' },
+                      { state: 'National Average', salary: '$89,010', hourly: '$42.79/hr' },
+                    ].map(({ state, salary, hourly }) => (
+                      <tr key={state} className="hover:bg-surface-container-low transition-colors">
+                        <td className="px-5 py-3 font-medium text-on-surface">{state}</td>
+                        <td className="px-5 py-3 text-on-surface-variant">{salary}</td>
+                        <td className="px-5 py-3 text-on-surface-variant">{hourly}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-on-surface-variant text-sm mt-3">Source: BLS OEWS 2025 + NurseSalaryIntel data</p>
+              <div className="mt-4">
+                <Link href="/rn-salary-by-state" className="text-primary font-semibold hover:underline text-sm">
+                  See the full RN salary by state breakdown →
+                </Link>
+              </div>
+            </div>
+
+            {/* Factors That Affect Nurse Salary */}
+            <div>
+              <h2 className="font-headline font-extrabold text-3xl text-editorial mb-6">Factors That Affect Nurse Salary</h2>
+
+              <div className="space-y-8">
+                <div>
+                  <h3 className="font-headline font-bold text-xl text-on-surface mb-2">Location</h3>
+                  <p className="text-on-surface-variant text-lg leading-relaxed">
+                    State and metro area are the most powerful salary drivers. California pays RNs $124,000/year on average — over $47,000 more than Mississippi ($66,590). Within states, the gap between major metros and rural areas can be $10,000–$25,000. Urban markets with strong union presence (California Nurses Association, NYSNA) tend to pay the most. No-income-tax states like Texas, Florida, and Washington often deliver better take-home pay than their raw salaries suggest.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-headline font-bold text-xl text-on-surface mb-2">Experience</h3>
+                  <p className="text-on-surface-variant text-lg leading-relaxed">
+                    Years of experience correlates strongly with RN pay. Entry-level nurses (0–2 years) typically earn 15–25% below the state average. At 3–5 years, nurses approach or exceed the average, especially if they hold specialty certifications. At 10+ years, senior nurses often earn 20–35% above average at the bedside — and significantly more in management, education, or advanced practice roles.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-headline font-bold text-xl text-on-surface mb-2">Specialty</h3>
+                  <p className="text-on-surface-variant text-lg leading-relaxed">
+                    Specialty adds a meaningful premium above staff RN base pay. ICU nurses typically earn 10–18% more than Med-Surg nurses. ER nurses earn 8–14% more. CRNAs earn the most of any nursing role — averaging $198,000–$258,000 depending on state. Nurse Practitioners average $118,000–$155,000. Certifications like CCRN, CEN, and CNOR add $5,000–$12,000 on top of base.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-headline font-bold text-xl text-on-surface mb-2">Shift Type</h3>
+                  <p className="text-on-surface-variant text-lg leading-relaxed">
+                    Night shift, weekend, and overtime pay can significantly boost annual income. Most hospitals offer a night differential of 10–25% above base. Weekend premiums add another 5–15%. Nurses who consistently work nights and pick up overtime can add $10,000–$30,000 per year over their base salary. Travel nurses earn the most — typically 20–50% more than staff RNs in the same location, with the largest premiums in hard-to-fill markets like Alaska, Hawaii, and rural states.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Nurse Salary by City */}
+            <div>
+              <h2 className="font-headline font-extrabold text-3xl text-editorial mb-6">Nurse Salary by City</h2>
+              <p className="text-on-surface-variant text-lg leading-relaxed mb-6">
+                City-level data gives you the most precise salary benchmarks. Explore detailed salary breakdowns, top-paying hospitals, and contract data for major nursing markets:
+              </p>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {[
+                  { href: '/salary/california/san-francisco', label: 'RN Salary in San Francisco, CA' },
+                  { href: '/salary/new-york/new-york', label: 'RN Salary in New York City, NY' },
+                  { href: '/salary/texas/houston', label: 'RN Salary in Houston, TX' },
+                  { href: '/salary/texas/dallas', label: 'RN Salary in Dallas, TX' },
+                  { href: '/salary/florida/miami', label: 'RN Salary in Miami, FL' },
+                  { href: '/salary/florida/tampa', label: 'RN Salary in Tampa, FL' },
+                  { href: '/salary/arizona/phoenix', label: 'RN Salary in Phoenix, AZ' },
+                  { href: '/salary/california/los-angeles', label: 'RN Salary in Los Angeles, CA' },
+                ].map(({ href, label }) => (
+                  <Link
+                    key={href}
+                    href={href}
+                    className="flex items-center gap-2 p-4 rounded-lg border border-outline-variant hover:border-primary transition-colors text-sm font-semibold text-primary"
+                  >
+                    <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* FAQs */}
+            <div>
+              <h2 className="font-headline font-extrabold text-3xl text-editorial mb-6">Frequently Asked Questions</h2>
+              <div className="space-y-6">
+                <div className="border-b border-outline-variant pb-6">
+                  <h3 className="font-headline font-bold text-xl text-on-surface mb-3">How accurate is this nurse salary calculator?</h3>
+                  <p className="text-on-surface-variant text-lg leading-relaxed">
+                    The calculator uses 2026 BLS OEWS data as the baseline and adjusts it with real contract and position data from NurseSalaryIntel&apos;s database. Results are estimates — actual pay depends on your employer, union status, shift schedule, and negotiated rate. The calculator is most accurate for staff RN roles in major metro areas where we have the most data points. For travel nurse estimates, actual weekly packages vary significantly by agency and contract.
+                  </p>
+                </div>
+                <div className="border-b border-outline-variant pb-6">
+                  <h3 className="font-headline font-bold text-xl text-on-surface mb-3">Does RN pay vary by state?</h3>
+                  <p className="text-on-surface-variant text-lg leading-relaxed">
+                    Yes — significantly. The gap between the highest-paying state (California, $124,000/year) and the lowest-paying state (Mississippi, $66,590/year) is over $57,000 annually. State factors that drive pay include nurse-to-patient ratio laws, union density, cost of living, and the severity of local nursing shortages. No-income-tax states like Texas, Florida, and Washington often deliver better real take-home pay than their nominal salaries suggest when compared to high-tax states like California and New York.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-headline font-bold text-xl text-on-surface mb-3">How much do travel nurses make?</h3>
+                  <p className="text-on-surface-variant text-lg leading-relaxed">
+                    Travel nurses typically earn 20–50% more than staff RNs in the same location. Weekly all-in packages (base pay + housing stipend + meals) range from $1,800–$2,200/week in lower-demand markets to $2,800–$3,600/week in high-demand states like California, New York, and Hawaii. ICU, OR, and ER travel nurses command the highest rates. The premium is largest during staffing crisis periods and in rural or hard-to-fill markets like Alaska. Annual travel nurse income commonly ranges from $90,000 to $150,000+ depending on state and specialty.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
         {/* ── NURSING INTEL DASHBOARD ─────────────────────── */}
         <section id="dashboard" className="py-24 px-6 scroll-mt-20">
           <div className="max-w-7xl mx-auto">
