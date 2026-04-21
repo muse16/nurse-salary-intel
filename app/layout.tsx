@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
 import Script from "next/script";
+import AssistLoopScript from "./components/AssistLoopScript";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
@@ -87,15 +88,7 @@ export default function RootLayout({
         <Analytics />
 
         {/* AssistLoop Widget */}
-        <Script
-          src="https://assistloop.ai/assistloop-widget.js"
-          strategy="afterInteractive"
-          onLoad={() => {
-            (window as Window & { AssistLoopWidget?: { init: (o: { agentId: string | undefined }) => void } }).AssistLoopWidget?.init({
-              agentId: process.env.NEXT_PUBLIC_ASSISTLOOP_AGENT_ID,
-            });
-          }}
-        />
+        <AssistLoopScript />
 
         {/* AEO: FAQ Schema — helps AI agents pull direct answers */}
         <Script id="faq-schema" type="application/ld+json" strategy="afterInteractive">
