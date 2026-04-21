@@ -90,7 +90,7 @@ export default function EmailGateModal({
                   placeholder="Jane"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '0.5rem', padding: '0.75rem 1rem', fontSize: '0.875rem', boxSizing: 'border-box', outline: 'none' }}
+                  style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '0.5rem', padding: '0.75rem 1rem', fontSize: '0.875rem', boxSizing: 'border-box', outline: 'none', color: '#111', background: '#fff' }}
                 />
               </div>
               <div style={{ marginBottom: '1rem' }}>
@@ -103,7 +103,7 @@ export default function EmailGateModal({
                   placeholder="jane@example.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '0.5rem', padding: '0.75rem 1rem', fontSize: '0.875rem', boxSizing: 'border-box', outline: 'none' }}
+                  style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '0.5rem', padding: '0.75rem 1rem', fontSize: '0.875rem', boxSizing: 'border-box', outline: 'none', color: '#111', background: '#fff' }}
                 />
               </div>
               {error && <p style={{ color: '#dc2626', fontSize: '0.875rem', marginBottom: '0.75rem' }}>{error}</p>}
