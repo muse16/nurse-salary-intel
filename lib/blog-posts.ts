@@ -529,16 +529,16 @@ Looking forward to hearing from you."
   },
   {
     slug: 'nursing-contract-audit-kit-what-it-includes',
-    title: 'The $9 Nursing Contract Audit Kit: What\'s Inside and Who Should Use It',
+    title: 'Free Nursing Contract Audit Kit: What\'s Inside and Who Should Use It',
     date: '2026-04-14',
-    excerpt: 'A clause-by-clause review kit for travel and staff nurse contracts — checklist, red-flag guide, and word-for-word negotiation scripts for $9.',
+    excerpt: 'A clause-by-clause review kit for travel and staff nurse contracts — checklist, red-flag guide, and word-for-word negotiation scripts. Free download.',
     category: 'Contract Red Flags',
     readTime: '4 min read',
     focusKeyword: 'nursing contract audit kit',
-    secondaryKeywords: ['nurse contract review $9', 'travel nurse negotiation scripts', 'nursing contract checklist'],
+    secondaryKeywords: ['free nurse contract review', 'travel nurse negotiation scripts', 'nursing contract checklist'],
     coverImage: '/blog/nursing-contract-audit-kit-what-it-includes.png',
     imageAlt: 'Nursing contract audit kit with checklist, red flag guide, and negotiation scripts',
-    metaDescription: 'What\u2019s inside the $9 Nursing Contract Audit Kit: the full clause checklist, red-flag guide, and word-for-word negotiation scripts used to fix travel and staff nurse contracts.',
+    metaDescription: 'What\u2019s inside the free Nursing Contract Audit Kit: the full clause checklist, red-flag guide, and word-for-word negotiation scripts used to fix travel and staff nurse contracts.',
     content: `
 <p>Most nurses sign their contracts without a careful read. That\'s how bad clauses sneak through — unpaid orientation, floating requirements, vague cancellation terms, non-competes. The <a href="/contract-audit" style="color:#2563eb;font-weight:600;">Free Contract Audit Kit</a> is a self-service review tool built to catch them before you sign.</p>
 
