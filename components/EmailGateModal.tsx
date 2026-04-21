@@ -45,14 +45,9 @@ export default function EmailGateModal({
       </button>
 
       {open && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60"
-          onClick={() => setOpen(false)}
-        >
-          <div
-            className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl relative"
-            onClick={(e) => e.stopPropagation()}
-          >
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          <div className="absolute inset-0 bg-black/60" onClick={() => setOpen(false)} />
+          <div className="relative bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl z-10">
             <button
               onClick={() => setOpen(false)}
               className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl leading-none"
@@ -86,22 +81,28 @@ export default function EmailGateModal({
                   Enter your name and email for instant PDF access.
                 </p>
                 <form onSubmit={handleSubmit} className="space-y-4">
-                  <input
-                    required
-                    type="text"
-                    placeholder="First name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-500"
-                  />
-                  <input
-                    required
-                    type="email"
-                    placeholder="Email address"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-500"
-                  />
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">First name</label>
+                    <input
+                      required
+                      type="text"
+                      placeholder="Jane"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-500"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Email address</label>
+                    <input
+                      required
+                      type="email"
+                      placeholder="jane@example.com"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-500"
+                    />
+                  </div>
                   {error && <p className="text-red-600 text-sm">{error}</p>}
                   <button
                     type="submit"
