@@ -3,32 +3,31 @@ import SiteNav from '@/components/SiteNav';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQSection from '@/components/FAQSection';
 import ContractAuditCTA from '@/components/ContractAuditCTA';
+import EmailGateModal from '@/components/EmailGateModal';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: '$9 Nursing Contract Audit | NurseSalaryIntel',
+  title: 'Free Nursing Contract Audit Kit | NurseSalaryIntel',
   description:
-    'Upload your nursing contract and get a detailed audit for just $9. We flag hidden clauses, low pay rates, and missing protections in travel nursing contracts.',
+    'Download the free nursing contract audit kit. Get a checklist, red-flag guide, and word-for-word negotiation scripts for travel and staff RN contracts.',
   openGraph: {
-    title: '$9 Nursing Contract Audit | NurseSalaryIntel',
+    title: 'Free Nursing Contract Audit Kit | NurseSalaryIntel',
     description:
-      'Upload your nursing contract and get a detailed audit for just $9. We flag hidden clauses, low pay rates, and missing protections in travel nursing contracts.',
+      'Download the free nursing contract audit kit. Get a checklist, red-flag guide, and word-for-word negotiation scripts for travel and staff RN contracts.',
     url: 'https://nursesalaryintel.com/contract-audit',
   },
 };
 
-const gumroadLink = 'https://maveryholdings.gumroad.com/l/djnau';
-
 const faqs = [
   {
-    question: 'What does the $9 contract audit include?',
+    question: 'What does the free contract audit kit include?',
     answer:
-      'You get a clause-by-clause review of your nursing contract covering pay rates, stipends, cancellation terms, floating policies, overtime guarantees, and more. We flag red flags and provide word-for-word negotiation scripts for every issue found.',
+      'You get a clause-by-clause review checklist for your nursing contract covering pay rates, stipends, cancellation terms, floating policies, overtime guarantees, and more. Includes word-for-word negotiation scripts for every issue found.',
   },
   {
-    question: 'How long does the contract review take?',
+    question: 'How do I get the audit kit?',
     answer:
-      'The audit kit is an instant digital download. You get the checklist, red-flag guide, and negotiation scripts immediately after purchase so you can review your contract right away.',
+      'Click "Download Your Free Contract Audit," enter your name and email, and the PDF opens instantly in your browser. No credit card or purchase required.',
   },
   {
     question: 'Can you review staff nurse contracts or only travel nursing?',
@@ -46,7 +45,7 @@ const faqs = [
       'Absolutely. The audit kit is a self-service tool — you review your own contract using our checklist and scripts. Your contract never leaves your hands.',
   },
   {
-    question: 'Can I get a second audit if my contract changes?',
+    question: 'Can I reuse the kit on future contracts?',
     answer:
       'Yes — the audit kit is yours to keep and reuse. Use it on every new contract, extension, or renegotiation.',
   },
@@ -56,7 +55,7 @@ const steps = [
   {
     num: '1',
     title: 'Download the Audit Kit',
-    description: 'Instant access to the contract review checklist, red-flag guide, and negotiation scripts.',
+    description: 'Enter your email for instant access to the contract review checklist, red-flag guide, and negotiation scripts.',
   },
   {
     num: '2',
@@ -90,10 +89,10 @@ export default function ContractAuditPage() {
       'Complete contract review checklist, red-flag guide, and negotiation scripts for travel nurses and staff RNs.',
     offers: {
       '@type': 'Offer',
-      price: '9.00',
+      price: '0',
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
-      url: gumroadLink,
+      url: 'https://nursesalaryintel.com/contract-audit',
     },
   };
 
@@ -109,23 +108,19 @@ export default function ContractAuditPage() {
       <header className="bg-gradient-to-br from-[#0a1628] via-[#004ac6] to-[#0a1628] text-white pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
           <span className="inline-block bg-yellow-400 text-[#0a1628] text-sm font-bold px-4 py-1.5 rounded-full mb-6">
-            ONLY $9
+            FREE DOWNLOAD
           </span>
           <h1 className="text-4xl sm:text-5xl font-bold font-headline mb-4">
-            Get Your Nursing Contract Reviewed
+            Download Your Free Nursing Contract Audit Kit
           </h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto mb-8">
             Red flags, missing protections, and word-for-word negotiation scripts — everything you need to sign with confidence.
           </p>
-          <a
-            href={gumroadLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-yellow-400 hover:bg-yellow-300 text-[#0a1628] font-bold py-4 px-10 rounded-xl transition-colors text-lg shadow-lg"
-          >
-            Get the Contract Audit Kit — $9
-          </a>
-          <p className="text-sm text-blue-200 mt-4">Instant download · One-time payment · Reusable on every contract</p>
+          <EmailGateModal
+            buttonText="Download Your Free Contract Audit"
+            buttonClassName="inline-block bg-yellow-400 hover:bg-yellow-300 text-[#0a1628] font-bold py-4 px-10 rounded-xl transition-colors text-lg shadow-lg"
+          />
+          <p className="text-sm text-blue-200 mt-4">Free &middot; Instant access &middot; Reusable on every contract</p>
         </div>
       </header>
 
@@ -140,7 +135,7 @@ export default function ContractAuditPage() {
         {/* What's Included */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold font-headline text-on-surface mb-6">
-            What&apos;s Included in the $9 Contract Audit Kit
+            What&apos;s Included in the Free Contract Audit Kit
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
@@ -152,7 +147,7 @@ export default function ContractAuditPage() {
               'Pay package comparison worksheet',
             ].map((item) => (
               <div key={item} className="flex items-start gap-3 bg-surface-container-lowest p-4 rounded-lg border border-outline-variant">
-                <span className="text-primary font-bold">✓</span>
+                <span className="text-primary font-bold">&#10003;</span>
                 <span className="text-on-surface text-sm">{item}</span>
               </div>
             ))}
@@ -168,7 +163,7 @@ export default function ContractAuditPage() {
             <ul className="space-y-3">
               {redFlags.map((flag) => (
                 <li key={flag} className="flex items-start gap-3 text-sm">
-                  <span className="text-red-500 font-bold shrink-0 mt-0.5">⚠</span>
+                  <span className="text-red-500 font-bold shrink-0 mt-0.5">&#9888;</span>
                   <span className="text-red-900">{flag}</span>
                 </li>
               ))}
@@ -214,7 +209,7 @@ export default function ContractAuditPage() {
           </div>
         </section>
 
-        {/* Mid-page CTA (unified $9 product CTA) */}
+        {/* Mid-page CTA */}
         <ContractAuditCTA variant="banner" />
 
         {/* Related Links */}
@@ -222,24 +217,24 @@ export default function ContractAuditPage() {
           <h2 className="text-2xl font-bold font-headline text-on-surface mb-6">Related Resources</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             <Link href="/travel-nursing/contract-red-flags" className="block p-5 rounded-lg border border-outline-variant hover:border-primary transition-colors">
-              <h3 className="font-bold text-primary mb-1">Travel Nursing Contract Red Flags →</h3>
+              <h3 className="font-bold text-primary mb-1">Travel Nursing Contract Red Flags &#8594;</h3>
               <p className="text-sm text-on-surface-variant">12 warning signs to watch for before signing.</p>
             </Link>
             <Link href="/salary-negotiation/contract-clauses-to-watch" className="block p-5 rounded-lg border border-outline-variant hover:border-primary transition-colors">
-              <h3 className="font-bold text-primary mb-1">Contract Clauses to Watch →</h3>
+              <h3 className="font-bold text-primary mb-1">Contract Clauses to Watch &#8594;</h3>
               <p className="text-sm text-on-surface-variant">Non-competes, cancellation penalties, and more.</p>
             </Link>
             <Link href="/salary-negotiation/travel-nursing-contract-review" className="block p-5 rounded-lg border border-outline-variant hover:border-primary transition-colors">
-              <h3 className="font-bold text-primary mb-1">Contract Review Checklist →</h3>
+              <h3 className="font-bold text-primary mb-1">Contract Review Checklist &#8594;</h3>
               <p className="text-sm text-on-surface-variant">Free pre-signing checklist for travel nurses.</p>
             </Link>
             <Link href="/travel-nursing/how-to-negotiate-contract" className="block p-5 rounded-lg border border-outline-variant hover:border-primary transition-colors">
-              <h3 className="font-bold text-primary mb-1">How to Negotiate Your Contract →</h3>
+              <h3 className="font-bold text-primary mb-1">How to Negotiate Your Contract &#8594;</h3>
               <p className="text-sm text-on-surface-variant">Step-by-step negotiation guide.</p>
             </Link>
             <Link href="/audit" className="block p-5 rounded-lg border border-outline-variant hover:border-primary transition-colors">
-              <h3 className="font-bold text-primary mb-1">Free Nurse Salary Calculator &amp; Contract Audit →</h3>
-              <p className="text-sm text-on-surface-variant">Use our free nurse salary calculator to verify your offer and flag red flags instantly.</p>
+              <h3 className="font-bold text-primary mb-1">Free Nurse Salary Calculator &amp; Contract Audit &#8594;</h3>
+              <p className="text-sm text-on-surface-variant">Use our free tool to verify your offer and flag red flags instantly.</p>
             </Link>
           </div>
         </section>
