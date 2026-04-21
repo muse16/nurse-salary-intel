@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 
 interface EmailGateModalProps {
   buttonText?: string;
@@ -12,11 +13,14 @@ export default function EmailGateModal({
   buttonClassName = '',
 }: EmailGateModalProps) {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [loading, setLoading] = useState(false);
   const [done, setDone] = useState(false);
   const [error, setError] = useState('');
+
+  useEffect(() => { setMounted(true); }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -38,88 +42,94 @@ export default function EmailGateModal({
     }
   };
 
+  const modal = (
+    <div
+      style={{ position: 'fixed', inset: 0, zIndex: 9999, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem', backgroundColor: 'rgba(0,0,0,0.6)' }}
+      onClick={() => setOpen(false)}
+    >
+      <div
+        style={{ position: 'relative', background: '#fff', borderRadius: '1rem', padding: '2rem', maxWidth: '28rem', width: '100%', boxShadow: '0 25px 50px rgba(0,0,0,0.3)' }}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          type="button"
+          onClick={() => setOpen(false)}
+          style={{ position: 'absolute', top: '1rem', right: '1rem', background: 'none', border: 'none', fontSize: '1.25rem', color: '#9ca3af', cursor: 'pointer', lineHeight: 1 }}
+          aria-label="Close"
+        >
+          ✕
+        </button>
+
+        {done ? (
+          <div style={{ textAlign: 'center', paddingTop: '1rem' }}>
+            <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>✓</div>
+            <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: '#111', marginBottom: '0.5rem' }}>Your PDF is opening!</h2>
+            <p style={{ color: '#4b5563', fontSize: '0.875rem' }}>
+              If it didn&apos;t open,{' '}
+              <a href="/nurse-contract-audit-kit.pdf" target="_blank" style={{ color: '#2563eb', textDecoration: 'underline' }}>
+                click here to download it
+              </a>.
+            </p>
+          </div>
+        ) : (
+          <>
+            <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: '#111', marginBottom: '0.25rem', paddingRight: '1.5rem' }}>
+              Get Your Free Contract Audit Kit
+            </h2>
+            <p style={{ fontSize: '0.875rem', color: '#6b7280', marginBottom: '1.5rem' }}>
+              Enter your name and email for instant PDF access.
+            </p>
+            <form onSubmit={handleSubmit}>
+              <div style={{ marginBottom: '1rem' }}>
+                <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: 500, color: '#374151', marginBottom: '0.25rem' }}>
+                  First name
+                </label>
+                <input
+                  required
+                  type="text"
+                  placeholder="Jane"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '0.5rem', padding: '0.75rem 1rem', fontSize: '0.875rem', boxSizing: 'border-box', outline: 'none' }}
+                />
+              </div>
+              <div style={{ marginBottom: '1rem' }}>
+                <label style={{ display: 'block', fontSize: '0.875rem', fontWeight: 500, color: '#374151', marginBottom: '0.25rem' }}>
+                  Email address
+                </label>
+                <input
+                  required
+                  type="email"
+                  placeholder="jane@example.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  style={{ width: '100%', border: '1px solid #d1d5db', borderRadius: '0.5rem', padding: '0.75rem 1rem', fontSize: '0.875rem', boxSizing: 'border-box', outline: 'none' }}
+                />
+              </div>
+              {error && <p style={{ color: '#dc2626', fontSize: '0.875rem', marginBottom: '0.75rem' }}>{error}</p>}
+              <button
+                type="submit"
+                disabled={loading}
+                style={{ width: '100%', background: '#facc15', color: '#4c1d95', fontWeight: 700, padding: '0.75rem 1.5rem', borderRadius: '0.5rem', border: 'none', fontSize: '0.875rem', cursor: loading ? 'not-allowed' : 'pointer', opacity: loading ? 0.6 : 1 }}
+              >
+                {loading ? 'Opening…' : 'Get Free PDF →'}
+              </button>
+              <p style={{ fontSize: '0.75rem', color: '#9ca3af', textAlign: 'center', marginTop: '0.75rem' }}>
+                No spam. Unsubscribe any time.
+              </p>
+            </form>
+          </>
+        )}
+      </div>
+    </div>
+  );
+
   return (
     <>
-      <button onClick={() => setOpen(true)} className={buttonClassName}>
+      <button type="button" onClick={() => setOpen(true)} className={buttonClassName}>
         {buttonText}
       </button>
-
-      {open && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-          <div className="absolute inset-0 bg-black/60" onClick={() => setOpen(false)} />
-          <div className="relative bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl z-10">
-            <button
-              onClick={() => setOpen(false)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl leading-none"
-              aria-label="Close"
-            >
-              ✕
-            </button>
-
-            {done ? (
-              <div className="text-center py-4">
-                <div className="text-5xl mb-4">✓</div>
-                <h2 className="text-xl font-bold text-gray-900 mb-2">Your PDF is opening!</h2>
-                <p className="text-gray-600 text-sm mb-4">
-                  If it didn&apos;t open automatically,{' '}
-                  <a
-                    href="/nurse-contract-audit-kit.pdf"
-                    target="_blank"
-                    className="text-blue-600 underline"
-                  >
-                    click here to download it
-                  </a>
-                  .
-                </p>
-              </div>
-            ) : (
-              <>
-                <h2 className="text-xl font-bold text-gray-900 mb-1 pr-6">
-                  Get Your Free Contract Audit Kit
-                </h2>
-                <p className="text-sm text-gray-500 mb-6">
-                  Enter your name and email for instant PDF access.
-                </p>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">First name</label>
-                    <input
-                      required
-                      type="text"
-                      placeholder="Jane"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-500"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Email address</label>
-                    <input
-                      required
-                      type="email"
-                      placeholder="jane@example.com"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-blue-500"
-                    />
-                  </div>
-                  {error && <p className="text-red-600 text-sm">{error}</p>}
-                  <button
-                    type="submit"
-                    disabled={loading}
-                    className="w-full bg-yellow-400 hover:bg-yellow-300 text-purple-900 font-bold py-3 px-6 rounded-lg transition-colors text-sm disabled:opacity-60"
-                  >
-                    {loading ? 'Opening…' : 'Get Free PDF →'}
-                  </button>
-                  <p className="text-xs text-gray-400 text-center">
-                    No spam. Unsubscribe any time.
-                  </p>
-                </form>
-              </>
-            )}
-          </div>
-        </div>
-      )}
+      {mounted && open && createPortal(modal, document.body)}
     </>
   );
 }
