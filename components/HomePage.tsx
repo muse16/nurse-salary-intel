@@ -375,6 +375,25 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
               ))}
             </div>
 
+            {/* Night Shift Differential callout */}
+            <div className="mb-12">
+              <Link
+                href="/salary-negotiation/night-shift-differential-pay"
+                className="block bg-primary/10 border border-primary/30 rounded-2xl p-6 hover:bg-primary/15 transition-colors"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shrink-0">
+                    <svg className="w-5 h-5 text-on-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+                  </div>
+                  <div>
+                    <h3 className="font-headline font-bold text-on-surface text-lg mb-1">Night Shift Differential Guide — How Much More Do Night Nurses Earn?</h3>
+                    <p className="text-on-surface-variant text-sm">Night shift nurses earn 10–25% above base pay. See rates by specialty, hospital system, and state.</p>
+                    <span className="text-primary text-sm font-semibold mt-2 inline-block">Read the guide →</span>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
             {/* Full State/City Links below */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {stateData.map(({ state, cities }) => (

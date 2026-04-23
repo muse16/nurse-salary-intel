@@ -105,7 +105,11 @@ export default function FloridaRNSalary() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Night Shift &amp; Overtime Pay in Florida</h2>
       <p>
-        Florida hospitals typically offer shift differentials of 10–18% above base for nights. On a $76,450 base salary, a consistent night nurse earns an additional $7,600–$13,800/year. Weekend differentials generally add 8–12% for shifts worked Saturday and Sunday.
+        Florida nurses working night shifts earn an additional 12–18% per hour. On a $76,450 base salary, a consistent night nurse earns an additional $7,600–$13,800/year. Weekend differentials generally add 8–12% for shifts worked Saturday and Sunday. See our complete{' '}
+        <Link href="/salary-negotiation/night-shift-differential-pay" className="text-primary hover:underline font-semibold">
+          night shift differential guide
+        </Link>
+        {' '}for detailed rates by specialty and hospital system.
       </p>
       <p>
         Overtime in Florida is paid at 1.5x the base hourly rate for hours beyond 40 per week. Nurses who regularly pick up extra shifts — especially during high-demand winter months when Florida&apos;s population swells — can add $8,000–$16,000/year in overtime income. Florida&apos;s no-income-tax status means every overtime dollar is only subject to federal tax.
