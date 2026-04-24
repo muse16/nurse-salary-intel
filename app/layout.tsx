@@ -3,6 +3,7 @@ import { Manrope, Inter } from "next/font/google";
 import Script from "next/script";
 import AssistLoopScript from "./components/AssistLoopScript";
 import { Analytics } from "@vercel/analytics/next";
+import SiteFooter from "@/components/SiteFooter";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -70,6 +71,7 @@ export default function RootLayout({
       </head>
       <body className={`${manrope.variable} ${inter.variable} antialiased`}>
         {children}
+        <SiteFooter />
 
         {/* Google Analytics GA4 */}
         <Script

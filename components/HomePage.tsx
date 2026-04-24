@@ -429,21 +429,6 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
         </section>
       </main>
 
-      {/* ── FOOTER — matching mockup ──────────────────────── */}
-      <footer className="bg-surface-container-low border-t border-outline-variant/20">
-        <div className="w-full py-12 px-6 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex flex-col gap-2 items-center md:items-start">
-            <div className="font-bold text-on-surface text-lg font-headline">Nurse Salary Intel</div>
-            <p className="text-on-surface-variant text-sm text-center md:text-left">&copy; 2026 Nurse Salary Intel. Empowering healthcare professionals through data.</p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
-            <a href="#" className="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100 underline decoration-primary/30 text-sm">Privacy Policy</a>
-            <a href="#" className="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100 underline decoration-primary/30 text-sm">Terms of Service</a>
-            <a href="#" className="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100 underline decoration-primary/30 text-sm">Contact Support</a>
-            <a href="#" className="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100 underline decoration-primary/30 text-sm">Data Methodology</a>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
