@@ -182,6 +182,14 @@ export default function FloridaRNSalary2026() {
           Florida is one of a handful of US states with <strong>no state income tax</strong>, which materially changes how a nominal Florida salary compares to offers in states like California or New York. A $90,000 Florida base can produce take-home pay similar to a $97,000–$100,000 base in a high-tax state once state-level withholding is considered. Model the full picture before assuming a higher headline number is better.
         </p>
 
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/florida-rn-salary-2026-notax.png"
+          alt="Florida no state income tax illustrated impact on RN take-home pay"
+          className="w-full rounded-lg border border-outline-variant my-6"
+          loading="lazy"
+        />
+
         <h2 className="text-2xl font-bold font-headline text-on-surface">Florida RN Pay by Specialty (2026 Estimates)</h2>
         <SalaryTable
           title="Florida RN Specialty Pay (2026)"

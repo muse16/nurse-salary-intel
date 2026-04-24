@@ -124,6 +124,14 @@ export default function NurseSalaryNegotiationScripts2026() {
           See our <Link href="/salary-negotiation/" className="text-primary hover:underline">full salary negotiation guide</Link> for the strategic framework behind these tactics.
         </p>
 
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/nurse-salary-negotiation-scripts-2026-checklist.png"
+          alt="Pre-negotiation prep checklist for nurse salary counteroffer"
+          className="w-full rounded-lg border border-outline-variant my-6"
+          loading="lazy"
+        />
+
         <h2 className="text-2xl font-bold font-headline text-on-surface">Script 1: Initial Counteroffer Email (Post-Offer)</h2>
         <ScriptBlock>
 {`Subject: Re: RN Offer – [Your Name]
@@ -252,6 +260,14 @@ Best,
           headers={['Offer Component', 'Typical 2026 Negotiation Range']}
           rows={negotiationRangeData}
           source="Public compensation survey summaries and hospital HR norms. Actual flexibility varies by system."
+        />
+
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/nurse-salary-negotiation-scripts-2026-flowchart.png"
+          alt="Nurse salary negotiation decision flowchart — counter, concede, walk"
+          className="w-full rounded-lg border border-outline-variant my-6"
+          loading="lazy"
         />
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">Common Pushback and What to Say</h2>

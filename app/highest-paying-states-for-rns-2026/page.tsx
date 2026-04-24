@@ -148,6 +148,14 @@ export default function HighestPayingStatesForRNs2026() {
         </div>
         <p className="text-xs text-on-surface-variant -mt-4">Source: BLS OEWS May 2024 (29-1141), projected 3–4% annually. Excludes differentials, OT, and bonuses.</p>
 
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/highest-paying-states-for-rns-2026-bar.png"
+          alt="Top 20 highest paying states for RNs, 2026 estimates, mean annual pay"
+          className="w-full rounded-lg border border-outline-variant my-6"
+          loading="lazy"
+        />
+
         <h2 className="text-2xl font-bold font-headline text-on-surface">Why These States Lead</h2>
         <p>Three structural factors explain most of the top-tier pay:</p>
         <ul className="list-disc pl-6 space-y-2">
@@ -198,6 +206,21 @@ export default function HighestPayingStatesForRNs2026() {
         <p>
           The takeaway: <strong>the nominal top-5 isn&apos;t the real top-5 for everyone.</strong> A nurse optimizing for savings rate may do better in Texas, Tennessee, or Michigan than in Hawaii. See our <Link href="/florida-rn-salary-2026/" className="text-primary hover:underline">Florida RN salary guide</Link> for a no-income-tax comparison.
         </p>
+
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/highest-paying-states-for-rns-2026-col-scatter.png"
+          alt="Scatter plot of RN nominal pay vs. cost of living index by state"
+          className="w-full rounded-lg border border-outline-variant my-6"
+          loading="lazy"
+        />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/highest-paying-states-for-rns-2026-nominal-vs-col.png"
+          alt="Top 5 RN pay states comparison: nominal vs. cost-of-living adjusted"
+          className="w-full rounded-lg border border-outline-variant mb-6"
+          loading="lazy"
+        />
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">State-by-State Highlights</h2>
         <p><strong>California</strong> — by far the highest-paying RN market in the US. AB 394 ratios, strong CNA union representation, and massive system concentration in the Bay Area, LA, and San Diego drive pay. Cost of living is the primary offset.</p>

@@ -146,6 +146,14 @@ export default function ICUNurseSalary2026() {
           For the full state ranking, see <Link href="/highest-paying-states-for-rns-2026/" className="text-primary hover:underline">Highest Paying States for RNs 2026</Link>. For a state-specific deep dive, see our <Link href="/florida-rn-salary-2026/" className="text-primary hover:underline">Florida RN salary guide</Link>.
         </p>
 
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/icu-nurse-salary-2026-by-state.png"
+          alt="ICU RN pay by state, 2026 estimates — top 10 and national average"
+          className="w-full rounded-lg border border-outline-variant my-6"
+          loading="lazy"
+        />
+
         <h2 className="text-2xl font-bold font-headline text-on-surface">ICU Nurse Requirements</h2>
         <p><strong>Minimum requirements:</strong></p>
         <ul className="list-disc pl-6 space-y-1">
@@ -197,6 +205,14 @@ export default function ICUNurseSalary2026() {
           <li><strong>Clinical Nurse Specialist (CNS)</strong> — MSN/DNP, focuses on unit-level practice improvement</li>
           <li><strong>Travel ICU</strong> — $2,300–$3,100/week blended gross for 13-week contracts</li>
         </ul>
+
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/icu-nurse-salary-2026-career-path.png"
+          alt="ICU nurse career path flowchart — bedside to advanced practice and leadership"
+          className="w-full rounded-lg border border-outline-variant my-6"
+          loading="lazy"
+        />
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">How to Negotiate an ICU Offer</h2>
         <p>ICU RNs have above-average leverage because critical care is chronically hard-to-fill. Key levers:</p>
