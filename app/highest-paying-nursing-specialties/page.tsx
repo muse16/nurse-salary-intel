@@ -76,7 +76,7 @@ export default function HighestPayingNursingSpecialties() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Staff RN Specialties: ICU, ER, OR, and L&amp;D</h2>
       <p>
-        Among staff RN roles requiring only a BSN, ICU and ER positions pay the most — and for good reason. Critical care and emergency nursing demand rapid clinical judgment, broad technical skills, and tolerance for high-acuity, high-volume environments. ICU nurses typically earn $8,000–$15,000 more than floor nurses at the same facility, and the specialty opens direct pathways to CRNA school.
+        Among staff RN roles requiring only a BSN, ICU and ER positions pay the most — and for good reason. Critical care and emergency nursing demand rapid clinical judgment, broad technical skills, and tolerance for high-acuity, high-volume environments. ICU nurses typically earn $8,000–$15,000 more than floor nurses at the same facility, and the specialty opens direct pathways to CRNA school. See the <Link href="/icu-nurse-salary-2026/" className="text-primary hover:underline">full ICU salary breakdown</Link> for 2026 pay by experience, state, and certification.
       </p>
       <p>
         OR nursing commands a premium for technical specialization and procedure-based workflows. L&amp;D and NICU nurses earn above-average salaries with somewhat more predictable patient populations than ICU or ER. Med-Surg nursing, while the foundation of RN practice, pays the least among hospital specialties — making it a common launching point rather than a long-term destination for nurses focused on earnings.

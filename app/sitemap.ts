@@ -108,6 +108,13 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/entry-level-nurse-salary', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/nurse-salary-by-hospital', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/registered-nurse-salary-breakdown', priority: 0.8, changeFrequency: 'monthly' },
+
+  // Week 1 editorial posts — April 2026
+  { path: '/florida-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/rn-salary-miami-fl-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/icu-nurse-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/nurse-salary-negotiation-scripts-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/highest-paying-states-for-rns-2026', priority: 0.8, changeFrequency: 'monthly' },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

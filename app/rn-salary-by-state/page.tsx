@@ -136,7 +136,9 @@ export default function RNSalaryByStatePillar() {
           { href: '/rn-salary-by-state/texas', title: 'Texas RN Salary' },
           { href: '/rn-salary-by-state/new-york', title: 'New York RN Salary' },
           { href: '/rn-salary-by-state/florida', title: 'Florida RN Salary' },
+          { href: '/florida-rn-salary-2026', title: 'Florida RN Salary 2026 Deep Dive' },
           { href: '/rn-salary-by-state/highest-paying-states', title: 'Top 10 Highest-Paying States' },
+          { href: '/highest-paying-states-for-rns-2026', title: 'Highest Paying States for RNs — 2026 Rankings' },
         ].map((link) => (
           <Link key={link.href} href={link.href} className="block p-4 rounded-lg border border-outline-variant hover:border-primary transition-colors">
             <span className="font-bold text-primary text-sm">{link.title} →</span>
