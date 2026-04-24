@@ -18,6 +18,8 @@ export interface BlogPost {
   metaDescription?: string;
   /** If true, post is hidden from the public blog index and not returned by getPostBySlug/getAllSlugs. */
   draft?: boolean;
+  /** If set, the blog listing card links here instead of /blog/[slug]. Post is excluded from static slug generation. */
+  href?: string;
 }
 
 const allBlogPosts: BlogPost[] = [
@@ -3358,6 +3360,81 @@ Thanks,<br>
 </ul>
     `,
   },
+  {
+    slug: 'florida-rn-salary-2026',
+    href: '/florida-rn-salary-2026/',
+    title: 'Florida RN Salary (2026): Hourly Pay, Annual Salary, and City Breakdown',
+    date: '2026-04-20',
+    excerpt: 'Florida RN pay in 2026 is estimated at $80,000–$96,000 per year base — with Miami, Naples, and Tampa leading the state. City-by-city breakdown, experience tiers, specialty pay, and no-state-tax take-home analysis.',
+    category: 'Salary Data',
+    readTime: '8 min read',
+    focusKeyword: 'Florida RN salary 2026',
+    secondaryKeywords: ['Florida registered nurse salary', 'RN hourly pay Florida', 'Miami RN salary', 'Tampa RN salary'],
+    coverImage: '/images/florida-rn-salary-2026-hero.png',
+    imageAlt: 'Florida RN salary heatmap by metro area, 2026 estimates',
+    metaDescription: 'Florida RN salary 2026: hourly pay, annual estimates, and a city-by-city breakdown for Miami, Tampa, Orlando, Jacksonville, and more.',
+    content: '',
+  },
+  {
+    slug: 'rn-salary-miami-fl-2026',
+    href: '/rn-salary-miami-fl-2026/',
+    title: 'RN Salary in Miami, FL (2026): Hourly Pay + Pay by Experience',
+    date: '2026-04-21',
+    excerpt: 'Miami RN pay in 2026 is estimated at $90,000–$97,000 mean — above the Florida average but offset by cost of living. Pay by experience tier, hospital-system notes (Jackson, Baptist, HCA), and shift differentials.',
+    category: 'Salary Data',
+    readTime: '7 min read',
+    focusKeyword: 'Miami RN salary 2026',
+    secondaryKeywords: ['RN salary Miami FL', 'registered nurse pay Miami', 'Miami nurse hourly wage'],
+    coverImage: '/images/rn-salary-miami-fl-2026-hero.png',
+    imageAlt: 'Miami skyline with 2026 RN hourly pay data card',
+    metaDescription: 'Miami RN salary 2026: hourly pay, pay by experience, hospital-system pay notes, differentials, and how Miami compares to the rest of Florida.',
+    content: '',
+  },
+  {
+    slug: 'icu-nurse-salary-2026',
+    href: '/icu-nurse-salary-2026/',
+    title: 'ICU Nurse Salary (2026): Pay, Requirements, and Career Path',
+    date: '2026-04-22',
+    excerpt: 'ICU nurses earn an estimated $87,000–$115,000 base in 2026. Covers CCRN certification ROI ($50K+ career value), state-by-state estimates, requirements, new-grad residency paths, and the full career trajectory to CRNA.',
+    category: 'Salary Data',
+    readTime: '9 min read',
+    focusKeyword: 'ICU nurse salary 2026',
+    secondaryKeywords: ['critical care nurse salary', 'ICU RN hourly pay', 'CCRN salary', 'ICU nurse requirements'],
+    coverImage: '/images/icu-nurse-salary-2026-hero.png',
+    imageAlt: 'ICU nurse salary 2026 estimates with critical care monitor illustration',
+    metaDescription: 'ICU nurse salary 2026: hourly pay, pay by state, CCRN certification impact, requirements, and the full critical-care RN career path.',
+    content: '',
+  },
+  {
+    slug: 'nurse-salary-negotiation-scripts-2026',
+    href: '/nurse-salary-negotiation-scripts-2026/',
+    title: 'Nurse Salary Negotiation Scripts (2026): Email + Counteroffer Templates',
+    date: '2026-04-23',
+    excerpt: '7 copy-paste nurse salary negotiation scripts for 2026 — initial counter, competing-offer counter, sign-on-only, "number is firm" pivot, new-grad, and phone scripts. Plus pushback responses and a 2026 negotiation range table.',
+    category: 'Negotiation',
+    readTime: '10 min read',
+    focusKeyword: 'nurse salary negotiation scripts',
+    secondaryKeywords: ['RN counteroffer email', 'nurse negotiation email template', 'nurse salary negotiation 2026'],
+    coverImage: '/images/nurse-salary-negotiation-scripts-2026-hero.png',
+    imageAlt: 'Nurse salary negotiation counteroffer email template illustration',
+    metaDescription: 'Copy-paste nurse salary negotiation scripts for 2026: email templates, counteroffer language, HR talking points, and exact responses to common pushback.',
+    content: '',
+  },
+  {
+    slug: 'highest-paying-states-for-rns-2026',
+    href: '/highest-paying-states-for-rns-2026/',
+    title: 'Highest Paying States for Registered Nurses (2026 Rankings)',
+    date: '2026-04-24',
+    excerpt: 'Full 2026 rankings of the top 20 highest-paying states for RNs — nominal and cost-of-living adjusted. California leads at $148K–$158K mean. Covers union density, ratio legislation, and a should-you-move decision framework.',
+    category: 'Salary Data',
+    readTime: '9 min read',
+    focusKeyword: 'highest paying states for registered nurses 2026',
+    secondaryKeywords: ['best paying states for RNs', 'top states RN salary', 'highest RN pay by state 2026'],
+    coverImage: '/images/highest-paying-states-for-rns-2026-hero.png',
+    imageAlt: 'US map of highest paying states for registered nurses 2026',
+    metaDescription: 'The highest paying states for registered nurses in 2026 — full rankings with hourly pay, annual mean, cost-of-living notes, and metro highlights.',
+    content: '',
+  },
 ];
 
 export const blogPosts: BlogPost[] = allBlogPosts.filter((p) => !p.draft);
@@ -3367,5 +3444,5 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
 }
 
 export function getAllSlugs(): string[] {
-  return blogPosts.map((p) => p.slug);
+  return blogPosts.filter((p) => !p.href).map((p) => p.slug);
 }
