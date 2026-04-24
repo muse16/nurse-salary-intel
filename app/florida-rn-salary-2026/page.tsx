@@ -153,6 +153,13 @@ export default function FloridaRNSalary2026() {
           rows={cityData}
           source="BLS OEWS May 2024 metro-level data, projected forward 3–4% annually."
         />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/florida-rn-salary-2026-cities.png"
+          alt="Bar chart comparing 2026 mean hourly RN pay across Florida metros"
+          className="w-full rounded-lg border border-outline-variant my-6"
+          loading="lazy"
+        />
         <p>
           For a deeper breakdown of the Miami market, see our <Link href="/rn-salary-miami-fl-2026/" className="text-primary hover:underline">Miami RN salary by experience</Link> post.
         </p>
