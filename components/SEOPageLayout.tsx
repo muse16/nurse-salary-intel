@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import SiteNav from './SiteNav';
 import Breadcrumbs from './Breadcrumbs';
 import LastUpdated from './LastUpdated';
@@ -15,10 +16,23 @@ interface FAQItem {
   answer: string;
 }
 
+interface SourceItem {
+  title: string;
+  url: string;
+}
+
+interface AuthorInfo {
+  name: string;
+  link: string;
+}
+
 interface SEOPageLayoutProps {
   breadcrumbs: BreadcrumbItem[];
   h1: string;
   lastUpdated?: string;
+  author?: AuthorInfo;
+  sources?: SourceItem[];
+  methodology?: string;
   schemaType?: 'Article' | 'HowTo';
   schemaTitle: string;
   schemaDescription: string;
@@ -31,6 +45,9 @@ export default function SEOPageLayout({
   breadcrumbs,
   h1,
   lastUpdated,
+  author,
+  sources,
+  methodology,
   schemaType = 'Article',
   schemaTitle,
   schemaDescription,
@@ -63,6 +80,42 @@ export default function SEOPageLayout({
         </div>
 
         <FAQSection faqs={faqs} />
+
+        {/* EEAT Signals: Author, Sources, Methodology */}
+        <div className="border-t border-outline-variant pt-8 mt-12 space-y-6">
+          {author && (
+            <div>
+              <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide">By</p>
+              <p className="text-on-surface">
+                <Link href={author.link} className="text-primary hover:underline font-semibold">
+                  {author.name}
+                </Link>
+              </p>
+            </div>
+          )}
+
+          {sources && sources.length > 0 && (
+            <div>
+              <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide">Sources</p>
+              <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+                {sources.map((source) => (
+                  <li key={source.url}>
+                    <a href={source.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      {source.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {methodology && (
+            <div>
+              <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide">Methodology</p>
+              <p className="text-on-surface-variant text-sm">{methodology}</p>
+            </div>
+          )}
+        </div>
 
         <ContractAuditCTA variant="banner" />
       </main>
