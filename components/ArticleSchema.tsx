@@ -50,13 +50,25 @@ export default function ArticleSchema({
   };
 
   const finalDateModified = getDateModified();
+
+  // Add timezone to ISO dates (Z for UTC)
+  const formatDateWithTimezone = (dateStr: string) => {
+    if (!dateStr.includes('T')) {
+      return `${dateStr}T00:00:00Z`;
+    }
+    if (!dateStr.endsWith('Z')) {
+      return `${dateStr}Z`;
+    }
+    return dateStr;
+  };
+
   const article = {
     '@type': type,
     headline: title,
     description,
     url: `${BASE}${url}`,
-    datePublished,
-    dateModified: finalDateModified,
+    datePublished: formatDateWithTimezone(datePublished),
+    dateModified: formatDateWithTimezone(finalDateModified),
     image: {
       '@type': 'ImageObject',
       url: `${BASE}/images/hero-nurse.jpg`,
@@ -83,6 +95,8 @@ export default function ArticleSchema({
   if (faqs && faqs.length > 0) {
     graph.push({
       '@type': 'FAQPage',
+      '@id': `${BASE}${url}#faqpage`,
+      url: `${BASE}${url}`,
       mainEntity: faqs.map((faq) => ({
         '@type': 'Question',
         name: faq.question,
