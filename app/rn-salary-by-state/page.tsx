@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
+import RelatedResources from '@/components/RelatedResources';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -192,20 +193,20 @@ export default function RNSalaryByStatePillar() {
         </div>
       </div>
 
-      <h2 className="text-2xl font-bold font-headline text-on-surface">Explore More Salary Topics</h2>
-      <div className="grid sm:grid-cols-2 gap-4">
-        {[
-          { href: '/nursing-salary', title: 'Nurse Salary Hub', desc: 'Comprehensive salary data, benchmarks, and resources.' },
-          { href: '/salary-negotiation', title: 'Salary Negotiation Guide', desc: 'Scripts, tactics, and how to negotiate your offer.' },
-          { href: '/highest-paying-nursing-specialties', title: 'Highest-Paying Specialties', desc: 'Compare ICU, ER, CRNA, NP, and specialty pay.' },
-          { href: '/travel-nursing', title: 'Travel Nursing Pay', desc: 'Weekly packages, bonuses, and assignment evaluation.' },
-        ].map(({ href, title, desc }) => (
-          <Link key={href} href={href} className="p-4 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors">
-            <p className="font-bold text-primary text-sm mb-1">{title}</p>
-            <p className="text-on-surface-variant text-xs">{desc}</p>
-          </Link>
-        ))}
-      </div>
+      <RelatedResources
+        heading="Explore More Salary Topics"
+        items={[
+          { href: '/nursing-salary', title: 'Nurse Salary Hub', desc: 'Comprehensive salary data, benchmarks, and guides for every major RN role.' },
+          { href: '/highest-paying-nursing-specialties', title: 'Highest-Paying Specialties', desc: 'Compare ICU, ER, CRNA, NP, and specialty pay with hourly rates.' },
+          { href: '/salary-negotiation', title: 'Salary Negotiation Guide', desc: 'Scripts, tactics, and playbooks to negotiate your best offer.' },
+          { href: '/travel-nursing', title: 'Travel Nursing Pay', desc: 'Weekly packages, stipends, and how to evaluate any travel assignment.' },
+          { href: '/entry-level-nurse-salary', title: 'New Grad RN Salary', desc: 'Starting pay by state, sign-on bonus ranges, and first negotiation tactics.' },
+          { href: '/salary-negotiation/night-shift-differential-pay', title: 'Night Shift Differential Pay', desc: 'How much more night nurses earn — rates by specialty and state.' },
+          { href: '/icu-nurse-salary-2026', title: 'ICU Nurse Salary 2026', desc: 'Critical care pay by state, experience level, and CCRN certification.' },
+          { href: '/highest-paying-states-for-rns-2026', title: 'Top 10 Highest-Paying States', desc: 'Annual rankings with cost-of-living context and union status.' },
+        ]}
+        columns={2}
+      />
     </SEOPageLayout>
   );
 }

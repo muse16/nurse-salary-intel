@@ -260,6 +260,31 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
               </div>
             </div>
 
+            {/* Recent Articles */}
+            <div>
+              <h2 className="font-headline font-extrabold text-3xl text-editorial mb-2">Recent Articles</h2>
+              <p className="text-on-surface-variant text-lg mb-8">In-depth guides updated with 2026 BLS data and real contract intelligence.</p>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {[
+                  { href: '/entry-level-nurse-salary', title: 'New Grad RN Salary 2026: $62K–$105K + Sign-On Bonus Range', desc: 'Starting pay by state, sign-on bonus breakdowns, first-year trajectory, and negotiation scripts for new grads.' },
+                  { href: '/icu-nurse-salary-2026', title: 'ICU Nurse Salary 2026', desc: 'Critical care pay by state, experience level, and CCRN certification premium — with overtime math.' },
+                  { href: '/nurse-salary-negotiation-scripts-2026', title: 'Nurse Salary Negotiation Scripts 2026', desc: 'Word-for-word scripts for base pay, sign-on bonuses, shift differentials, and scheduling conversations.' },
+                  { href: '/highest-paying-states-for-rns-2026', title: 'Highest-Paying States for RNs — 2026 Rankings', desc: 'Top 10 states ranked by RN pay, cost-of-living adjustment, and union density.' },
+                  { href: '/rn-salary-miami-fl-2026', title: 'Miami RN Salary 2026', desc: 'Pay rates, top hospitals, and market context for registered nurses in Miami-Dade County.' },
+                  { href: '/registered-nurse-salary-breakdown', title: 'Registered Nurse Salary Breakdown', desc: 'Full breakdown of RN compensation: base, differential, overtime, benefits, and total comp.' },
+                ].map(({ href, title, desc }) => (
+                  <Link
+                    key={href}
+                    href={href}
+                    className="p-4 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors"
+                  >
+                    <p className="font-bold text-primary text-sm mb-1">{title} →</p>
+                    <p className="text-on-surface-variant text-xs">{desc}</p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
             {/* Nurse Salary by City */}
             <div>
               <h2 className="font-headline font-extrabold text-3xl text-editorial mb-6">Nurse Salary by City</h2>
