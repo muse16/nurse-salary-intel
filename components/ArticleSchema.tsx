@@ -112,7 +112,6 @@ export default function ArticleSchema({
     // Article schema only if no FAQs
     jsonLd = {
       '@context': 'https://schema.org',
-      '@type': article['@type'],
       ...article,
     };
   }
