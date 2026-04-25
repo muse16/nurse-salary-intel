@@ -64,4 +64,91 @@ export default function ArticleSchema({
   // When no FAQs, output ONLY Article
   let jsonLd: any;
 
-  if
+  if (faqs && faqs.length > 0) {
+    // Dual-schema output: Article + FAQPage in @graph (Google's requirement for FAQ rich results)
+    jsonLd = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        // Article schema - required context for FAQPage
+        {
+          '@type': type,
+          headline: title,
+          description,
+          url: baseUrl,
+          datePublished: formatDateWithTimezone(datePublished),
+          dateModified: formatDateWithTimezone(finalDateModified),
+          image: {
+            '@type': 'ImageObject',
+            url: `${BASE}/images/hero-nurse.jpg`,
+            width: 1200,
+            height: 630,
+          },
+          author: {
+            '@type': 'Organization',
+            name: 'Nurse Salary Intel',
+            url: BASE,
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'Nurse Salary Intel',
+            logo: {
+              '@type': 'ImageObject',
+              url: `${BASE}/images/logo.svg`,
+            },
+          },
+        },
+        // FAQPage schema
+        {
+          '@type': 'FAQPage',
+          url: baseUrl,
+          mainEntity: faqs.map((faq, index) => ({
+            '@type': 'Question',
+            '@id': `${baseUrl}#faq-q${index + 1}`,
+            name: faq.question,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: faq.answer,
+            },
+          })),
+        },
+      ],
+    };
+  } else {
+    // Article schema only (no FAQs)
+    jsonLd = {
+      '@context': 'https://schema.org',
+      '@type': type,
+      headline: title,
+      description,
+      url: baseUrl,
+      datePublished: formatDateWithTimezone(datePublished),
+      dateModified: formatDateWithTimezone(finalDateModified),
+      image: {
+        '@type': 'ImageObject',
+        url: `${BASE}/images/hero-nurse.jpg`,
+        width: 1200,
+        height: 630,
+      },
+      author: {
+        '@type': 'Organization',
+        name: 'Nurse Salary Intel',
+        url: BASE,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Nurse Salary Intel',
+        logo: {
+          '@type': 'ImageObject',
+          url: `${BASE}/images/logo.svg`,
+        },
+      },
+    };
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
+}
