@@ -26,7 +26,6 @@ export default function ArticleSchema({
   faqs,
   lastUpdated,
 }: ArticleSchemaProps) {
-  // Convert lastUpdated (e.g., "April 2026") to ISO date if dateModified not provided
   const getDateModified = () => {
     if (dateModified) return dateModified;
     if (lastUpdated) {
@@ -59,66 +58,64 @@ export default function ArticleSchema({
     return dateStr;
   };
 
-  const article = {
-    '@type': type,
-    headline: title,
-    description,
-    url: `${BASE}${url}`,
-    datePublished: formatDateWithTimezone(datePublished),
-    dateModified: formatDateWithTimezone(finalDateModified),
-    image: {
-      '@type': 'ImageObject',
-      url: `${BASE}/images/hero-nurse.jpg`,
-      width: 1200,
-      height: 630,
-    },
-    author: {
-      '@type': 'Organization',
-      name: 'Nurse Salary Intel',
-      url: BASE,
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Nurse Salary Intel',
-      logo: {
+  const baseUrl = `${BASE}${url}`;
+
+  // When FAQs exist, output ONLY FAQPage (Google's recommended approach)
+  // When no FAQs, output ONLY Article
+  let jsonLd: any;
+
+  if (faqs && faqs.length > 0) {
+    // FAQPage schema - standalone, no Article nesting
+    jsonLd = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      url: baseUrl,
+      mainEntity: faqs.map((faq, index) => ({
+        '@type': 'Question',
+        '@id': `${baseUrl}#faq-q${index + 1}`,
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer,
+        },
+      })),
+    };
+  } else {
+    // Article schema only
+    jsonLd = {
+      '@context': 'https://schema.org',
+      '@type': type,
+      headline: title,
+      description,
+      url: baseUrl,
+      datePublished: formatDateWithTimezone(datePublished),
+      dateModified: formatDateWithTimezone(finalDateModified),
+      image: {
         '@type': 'ImageObject',
-        url: `${BASE}/images/logo.svg`,
+        url: `${BASE}/images/hero-nurse.jpg`,
+        width: 1200,
+        height: 630,
       },
-    },
-  };
-
-  const articleJsonLd = {
-    '@context': 'https://schema.org',
-    ...article,
-  };
-
-  const faqPageJsonLd = faqs && faqs.length > 0 ? {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    url: `${BASE}${url}`,
-    mainEntity: faqs.map((faq, index) => ({
-      '@type': 'Question',
-      '@id': `${BASE}${url}#faq-${index}`,
-      name: faq.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faq.answer,
+      author: {
+        '@type': 'Organization',
+        name: 'Nurse Salary Intel',
+        url: BASE,
       },
-    })),
-  } : null;
+      publisher: {
+        '@type': 'Organization',
+        name: 'Nurse Salary Intel',
+        logo: {
+          '@type': 'ImageObject',
+          url: `${BASE}/images/logo.svg`,
+        },
+      },
+    };
+  }
 
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
-      />
-      {faqPageJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageJsonLd) }}
-        />
-      )}
-    </>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
   );
 }
