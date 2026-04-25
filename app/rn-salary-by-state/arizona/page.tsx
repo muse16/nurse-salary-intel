@@ -236,4 +236,17 @@ export default function ArizonaRNSalary() {
       <div className="space-y-4">
         <div>
           <p className="font-semibold text-on-surface">What is the average RN salary in Arizona?</p>
-          <p className="text-on-surface-variant">The average RN salary in Arizona is $82,000/year ($39.42/hr) in 2026. Phoenix metro nurses earn $84,000–$96,000 depending on facility and specialty. Compare with <Link href="/rn
+          <p className="text-on-surface-variant">The average RN salary in Arizona is $82,000/year ($39.42/hr) in 2026. Phoenix metro nurses earn $84,000–$96,000 depending on facility and specialty. Compare with <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link> or <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">RN salary in Texas</Link> for context. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to estimate Arizona pay by specialty.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">How much do nurses make per hour in Arizona?</p>
+          <p className="text-on-surface-variant">Arizona RNs average $39.42/hr statewide. Scottsdale and north Phoenix hospitals pay $42–$47/hr, while rural Arizona markets average $33–$37/hr.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">What is the highest paying city for nurses in Arizona?</p>
+          <p className="text-on-surface-variant">Scottsdale leads Arizona nurse pay at $88,000–$98,000/year. See full data for <Link href="/salary/arizona/scottsdale" className="text-primary hover:underline">nurse salary in Scottsdale</Link> and <Link href="/salary/arizona/phoenix" className="text-primary hover:underline">nurse salary in Phoenix</Link>, including hospital-level breakdowns.</p>
+        </div>
+      </div>
+    </SEOPageLayout>
+  );
+}

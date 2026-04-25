@@ -227,4 +227,9 @@ export default function ICUNurseSalary2026() {
         </p>
 
         <p className="text-sm text-on-surface-variant mt-8">
-          <strong>Sou
+          <strong>Sources:</strong> US Bureau of Labor Statistics OEWS, May 2024 (29-1141); American Association of Critical-Care Nurses (AACN), CCRN eligibility criteria. Internal methodology: BLS RN percentiles adjusted for 5–12% ICU specialty premium and projected with 3–4% annual wage growth. Figures are estimates; actual pay varies by employer, experience, location, certification, and shift. Not career or financial advice.
+        </p>
+      </SEOPageLayout>
+    </>
+  );
+}

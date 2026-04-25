@@ -127,4 +127,144 @@ export default function FloridaRNSalary() {
         loading="lazy"
       />
 
-      <h2 className="text-2xl font-bold font-headline text-on-surface">Florida Nurse Pay
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Florida Nurse Pay vs. Cost of Living</h2>
+      <p>
+        Florida&apos;s cost of living is near the national average, but varies widely. Miami and Fort Lauderdale
+        are expensive (especially housing), while Tampa, Orlando, and Jacksonville offer more affordable living.
+      </p>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">No State Income Tax: Florida&apos;s Hidden Advantage</h2>
+      <p>
+        Florida is one of seven no-income-tax states. On a $76,000 salary, that saves $3,500–$5,000/year compared
+        to most other states. Combined with no estate tax, Florida is particularly attractive for retirement planning.
+      </p>
+
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/images/florida-rn-salary-2026-notax.png"
+        alt="Florida no state income tax illustrated impact on RN take-home pay"
+        className="w-full rounded-lg border border-outline-variant my-6"
+        loading="lazy"
+      />
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Highest-Paying Nursing Specialties in Florida</h2>
+      <p>
+        Specialty choice has significant impact on Florida RN pay. ICU, ER, OR, and NICU roles command the highest base pay (15–20% above med-surg). CRNAs earn $192,000+, and NPs average $112,000 statewide.
+      </p>
+      <SalaryTable title="Florida RN Specialty Pay (2026)" headers={['Specialty', 'Estimated Annual Base', 'Estimated Hourly']} rows={specialtyData} source="BLS OEWS 2025 + specialty premium data" />
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Travel Nursing in Florida</h2>
+      <p>
+        Florida is a strong travel nursing market, especially Miami, Tampa, and Orlando. While base rates have normalized
+        post-2022, demand remains solid due to seasonal population swings and tourism-driven healthcare demand.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>Med-surg, 13-week contract (Miami/Tampa):</strong> $1,900–$2,400/week gross blended rate</li>
+        <li><strong>ICU/ED, 13-week contract:</strong> $2,200–$2,900/week gross blended rate</li>
+        <li><strong>OR, 13-week contract:</strong> $2,400–$3,100/week gross blended rate</li>
+      </ul>
+      <p className="text-sm text-on-surface-variant mt-4">
+        Travel rates include housing stipend, per diem, and blended hourly. Actual rates vary by facility, specialty, and contract terms.
+      </p>
+
+      <div className="grid sm:grid-cols-2 gap-4 mt-8">
+        <Link href="/rn-salary-by-state/texas" className="block p-4 rounded-lg border border-outline-variant hover:border-primary transition-colors">
+          <span className="font-bold text-primary text-sm">Compare with Texas →</span>
+        </Link>
+        <Link href="/rn-salary-by-state/highest-paying-states" className="block p-4 rounded-lg border border-outline-variant hover:border-primary transition-colors">
+          <span className="font-bold text-primary text-sm">Top 10 Highest-Paying States →</span>
+        </Link>
+      </div>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Highest Paying Cities in Florida</h2>
+      <p>
+        Florida nurse pay is highest in South Florida, where the Miami-Fort Lauderdale market supports the strongest base salaries. Orlando and Tampa lag behind Miami but benefit from lower housing costs and strong demand from a large retiree population.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>Miami-Fort Lauderdale:</strong> $76,000–$86,000/year ($37–$41/hr)</li>
+        <li><strong>Tampa-St. Petersburg:</strong> $74,000–$84,000/year ($36–$40/hr)</li>
+        <li><strong>Fort Lauderdale:</strong> $75,000–$83,000/year ($36–$40/hr)</li>
+        <li><strong>Orlando:</strong> $72,000–$80,000/year ($35–$38/hr)</li>
+        <li><strong>Jacksonville:</strong> $71,000–$79,000/year ($34–$38/hr)</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Nurse Salary by Experience in Florida</h2>
+      <p>
+        Florida has one of the largest nursing workforces in the country, which moderates pay growth. However, persistent shortages in specialty units and high retiree demand continue to push pay upward, especially for experienced nurses in critical care.
+      </p>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>Entry level (0–2 years):</strong> $58,000–$66,000/year. Miami and Tampa offer the highest new grad starting rates in the state.</li>
+        <li><strong>3–5 years experience:</strong> $70,000–$80,000/year. Specialty certifications add $4,000–$9,000 above base pay at this stage.</li>
+        <li><strong>10+ years experience:</strong> $84,000–$97,000/year. Senior nurses at large academic medical centers like Jackson Health and Mayo Clinic Jacksonville reach the upper range.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Night Shift &amp; Overtime Pay in Florida</h2>
+      <p>
+        Florida nurses working night shifts earn an additional 12–18% per hour. On a $76,450 base salary, a consistent night nurse earns an additional $7,600–$13,800/year. Weekend differentials generally add 8–12% for shifts worked Saturday and Sunday. See our complete{' '}
+        <Link href="/salary-negotiation/night-shift-differential-pay" className="text-primary hover:underline font-semibold">
+          night shift differential guide
+        </Link>
+        {' '}for detailed rates by specialty and hospital system.
+      </p>
+      <p>
+        Overtime in Florida is paid at 1.5x the base hourly rate for hours beyond 40 per week. Nurses who regularly pick up extra shifts — especially during high-demand winter months when Florida&apos;s population swells — can add $8,000–$16,000/year in overtime income. Florida&apos;s no-income-tax status means every overtime dollar is only subject to federal tax.
+      </p>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">What&apos;s Changing in Florida Nursing in 2026</h2>
+      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
+        <li><strong>Continued travel rate normalization:</strong> Staff-to-travel differentials have compressed and are expected to stay tighter than 2021–2022 peaks.</li>
+        <li><strong>Sign-on bonus growth in non-coastal markets:</strong> Jacksonville, Tallahassee, and Gainesville systems are using larger sign-ons ($3,000–$8,000) to compete with coastal wages.</li>
+        <li><strong>Certification premiums rising:</strong> CCRN, CEN, and PCCN are increasingly paid as ongoing hourly differentials (not one-time awards), adding $1–$3/hr permanently.</li>
+        <li><strong>BSN preference enforcement:</strong> Magnet hospitals and large systems (HCA, AdventHealth, Baptist) are requiring BSN within 5 years of hire — plan accordingly.</li>
+      </ul>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Florida vs. Other No-Tax States</h2>
+      <p>
+        Among states with no income tax, Texas pays RNs roughly $81,510/year — about $5,000 above Florida&apos;s
+        BLS mean. Washington State leads no-tax states at $100,890/year, but housing costs are significantly higher.
+        Nevada ($90,210/year) and Arizona ($82,000/year) also sit above Florida on gross pay. Florida&apos;s unique
+        advantage is the combination of no-tax status, a large travel-nursing market driven by seasonal population
+        swings, and strong year-round demand from a large retiree base.
+      </p>
+      <p>
+        For full state-by-state context:{' '}
+        <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">
+          RN salary in Texas
+        </Link>{' '}
+        ·{' '}
+        <Link href="/rn-salary-by-state/arizona" className="text-primary hover:underline">
+          RN salary in Arizona
+        </Link>{' '}
+        ·{' '}
+        <Link href="/highest-paying-states-for-rns-2026" className="text-primary hover:underline">
+          Highest-paying states for RNs
+        </Link>
+        .
+      </p>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">RN Salary FAQs — Florida</h2>
+      <div className="space-y-4">
+        <div>
+          <p className="font-semibold text-on-surface">What is the average RN salary in Florida?</p>
+          <p className="text-on-surface-variant">The average RN salary in Florida is $76,450/year ($36.75/hr) in 2026 — below the national average of $89,010. For higher-paying no-tax alternatives, see <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">RN salary in Texas</Link>. For the nation&apos;s highest pay, compare <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link>. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to estimate Florida pay.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">How much do nurses make per hour in Florida?</p>
+          <p className="text-on-surface-variant">Florida RNs average $36.75/hr statewide. Miami-area nurses earn $38–$41/hr, while rural Florida markets average $33–$36/hr. Night shift and specialty pay add $3–$10/hr on top of base.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">What is the highest paying city for nurses in Florida?</p>
+          <p className="text-on-surface-variant">Naples–Marco Island and Miami–Fort Lauderdale are Florida&apos;s highest-paying markets at $79,500–$89,000/year. Explore <Link href="/salary/florida/miami" className="text-primary hover:underline">nurse salary in Miami</Link> or <Link href="/salary/florida/tampa" className="text-primary hover:underline">nurse salary in Tampa</Link> for city-specific detail. Jackson Health System and Baptist Health are the top-paying facilities.</p>
+        </div>
+        <div>
+          <p className="font-semibold text-on-surface">How does Florida&apos;s no-income-tax benefit affect take-home?</p>
+          <p className="text-on-surface-variant">A Florida nurse earning $76,450 keeps more net pay than a similar earner in New York or California due to no state income tax. However, the gap narrows when accounting for cost of living (South Florida housing is expensive). Use a full cost-of-living comparison before deciding.</p>
+        </div>
+      </div>
+
+      <p className="text-sm text-on-surface-variant border-t border-outline-variant pt-4 mt-8">
+        <strong>Sources:</strong> US Bureau of Labor Statistics OEWS May 2024 (occupation 29-1141, RN). BLS Occupational Outlook Handbook. Internal methodology: BLS state means projected with 3–4% annual wage-growth assumptions for 2026 estimates. City-level data from BLS metro area summaries and NurseSalaryIntel market research. Figures are estimates; actual pay varies by employer, experience, certifications, location, shift type, and contract terms.
+      </p>
+    </SEOPageLayout>
+  );
+}

@@ -162,4 +162,31 @@ export default function NightShiftDifferential() {
         </div>
         <div>
           <p className="font-semibold text-on-surface">Which states pay the highest night shift differentials?</p>
-          <p className="text-on-surface-variant">California, New York, Massachusetts, and Washington consistently offer the highest night shift differentials, both in dollar amount and percentage, largely due to union contracts and higher bas
+          <p className="text-on-surface-variant">California, New York, Massachusetts, and Washington consistently offer the highest night shift differentials, both in dollar amount and percentage, largely due to union contracts and higher base wages in those states.</p>
+        </div>
+      </div>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">See Also</h2>
+      <ul className="space-y-2">
+        <li>
+          <Link href="/rn-salary-by-state/florida" className="text-primary font-semibold hover:underline">
+            Florida RN salary data
+          </Link>
+          {' '}— night shift differential in Florida averages 10–18% above base pay.
+        </li>
+        <li>
+          <Link href="/rn-salary-by-state" className="text-primary font-semibold hover:underline">
+            RN salary by state comparison
+          </Link>
+          {' '}— compare average RN pay across all 50 states.
+        </li>
+        <li>
+          <Link href="/audit" className="text-primary font-semibold hover:underline">
+            Free contract audit tool
+          </Link>
+          {' '}— verify your differential is correctly documented in your contract.
+        </li>
+      </ul>
+    </SEOPageLayout>
+  );
+}

@@ -240,4 +240,12 @@ export default function NurseSalaryData2026() {
           <span className="font-bold text-primary text-sm">RN Salary by State →</span>
         </Link>
         <Link href="/travel-nursing/salary-guide-2026" className="block p-4 rounded-lg border border-outline-variant hover:border-primary transition-colors">
-          <span className
+          <span className="font-bold text-primary text-sm">Travel Nurse Salary Guide →</span>
+        </Link>
+        <Link href="/nursing-salary/by-specialty-2026" className="block p-4 rounded-lg border border-outline-variant hover:border-primary transition-colors">
+          <span className="font-bold text-primary text-sm">Salary by Specialty →</span>
+        </Link>
+      </div>
+    </SEOPageLayout>
+  );
+}

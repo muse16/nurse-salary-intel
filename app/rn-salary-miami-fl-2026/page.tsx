@@ -217,4 +217,9 @@ export default function RNSalaryMiami2026() {
         </p>
 
         <p className="text-sm text-on-surface-variant mt-8">
-          <strong>Sources:</stro
+          <strong>Sources:</strong> US Bureau of Labor Statistics OEWS, Metropolitan Miami–Fort Lauderdale–Pompano Beach FL, May 2024; Florida Agency for Health Care Administration, workforce publications. Internal methodology: Miami metro mean projected with 3–4% annual wage-growth assumption. Figures are estimates; actual pay varies by employer, experience, location, and contract terms. Not career or financial advice.
+        </p>
+      </SEOPageLayout>
+    </>
+  );
+}

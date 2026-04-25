@@ -245,4 +245,24 @@ export default function HighestPayingStatesForRNs2026() {
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">Pay Premium Drivers Beyond State</h2>
         <p>
-          State is the biggest factor, but your actual paycheck is the sum of state + metro + specialty + certification + shift + experience. Even within a top-5 state, rural pay can sit 15–20% below metro pay. An <Link href="/icu-nurse-salary-2026/" className="text-primary hover:underline">ICU nu
+          State is the biggest factor, but your actual paycheck is the sum of state + metro + specialty + certification + shift + experience. Even within a top-5 state, rural pay can sit 15–20% below metro pay. An <Link href="/icu-nurse-salary-2026/" className="text-primary hover:underline">ICU nurse</Link> with CCRN in a mid-ranked state may out-earn a med-surg nurse in a top-5 state. See <Link href="/highest-paying-nursing-specialties/" className="text-primary hover:underline">top-paying RN specialties</Link> for specialty premiums.
+        </p>
+
+        <h2 className="text-2xl font-bold font-headline text-on-surface">2026 Trends Worth Watching</h2>
+        <ul className="list-disc pl-6 space-y-2">
+          <li><strong>Staffing ratio legislation</strong> is being actively debated in Pennsylvania, Minnesota, and Illinois. Any law that passes could move those states several ranks higher over 3–5 years.</li>
+          <li><strong>Travel-to-staff compression</strong> has closed the gap between a staff RN in a top-5 state and a travel RN in a middle-tier state.</li>
+          <li><strong>Sign-on bonus growth</strong> in middle-tier states (Ohio, Indiana, Missouri, Tennessee) continues as those systems compete for coastal talent.</li>
+        </ul>
+
+        <p>
+          For negotiation help when switching states, see our <Link href="/nurse-salary-negotiation-scripts-2026/" className="text-primary hover:underline">negotiation scripts</Link>.
+        </p>
+
+        <p className="text-sm text-on-surface-variant mt-8">
+          <strong>Sources:</strong> US Bureau of Labor Statistics OEWS, May 2024 (29-1141), state-level; BLS Occupational Outlook Handbook, Registered Nurses; published state-level cost-of-living composite indexes. Internal methodology: BLS state means projected with 3–4% annual wage-growth assumption; COL adjustments are illustrative. Figures are estimates; actual pay varies by employer, experience, metro, specialty, certification, and shift. Not career or financial advice.
+        </p>
+      </SEOPageLayout>
+    </>
+  );
+}
