@@ -90,12 +90,14 @@ export default function ArticleSchema({
     },
   };
 
-  const graph: object[] = [article];
+  // If FAQs exist, prioritize FAQPage; otherwise use Article alone
+  let jsonLd: any;
 
   if (faqs && faqs.length > 0) {
-    graph.push({
+    // FAQPage schema (primary when FAQs are present)
+    jsonLd = {
+      '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': `${BASE}${url}#faqpage`,
       url: `${BASE}${url}`,
       mainEntity: faqs.map((faq) => ({
         '@type': 'Question',
@@ -105,13 +107,15 @@ export default function ArticleSchema({
           text: faq.answer,
         },
       })),
-    });
+    };
+  } else {
+    // Article schema only if no FAQs
+    jsonLd = {
+      '@context': 'https://schema.org',
+      '@type': article['@type'],
+      ...article,
+    };
   }
-
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@graph': graph,
-  };
 
   return (
     <script
