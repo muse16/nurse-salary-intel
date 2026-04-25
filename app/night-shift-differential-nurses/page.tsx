@@ -86,8 +86,4 @@ export default function NightShiftDifferential() {
         At facilities where differential rates are fixed by union contract, there&apos;s no negotiation room — but you can negotiate base pay higher, which increases your differential earnings automatically at the same percentage rate.
       </p>
       <p>
-        For state-level salary context, see <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link>, <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">RN salary in Texas</Link>, and <Link href="/rn-salary-by-state/florida" className="text-primary hover:underline">RN salary in Florida</Link>.
-      </p>
-    </SEOPageLayout>
-  );
-}
+        For state-level salary co

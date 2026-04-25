@@ -313,9 +313,4 @@ Best,
         </ul>
 
         <p className="text-sm text-on-surface-variant mt-8">
-          <strong>Sources:</strong> US Bureau of Labor Statistics OEWS, May 2024 (29-1141); Society for Human Resource Management, compensation practices publications. Scripts and ranges are educational guidance, not guarantees of outcome. Actual flexibility varies by employer, state, union status, and individual circumstances. Not career or financial advice.
-        </p>
-      </SEOPageLayout>
-    </>
-  );
-}
+          <strong>

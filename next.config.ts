@@ -17,17 +17,4 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/nurse-salary-florida-2026',
-        destination: '/rn-salary-by-state/florida',
-        permanent: true,
-      },
-      {
-        source: '/florida-rn-salary-2026',
-        destination: '/rn-salary-by-state/florida',
-        permanent: true,
-      },
-    ];
-  },
-};
-
-export default nextConfig;
+        source: '/nurse-salary-flor

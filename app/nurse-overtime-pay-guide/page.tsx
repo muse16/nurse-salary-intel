@@ -91,8 +91,4 @@ export default function NurseOvertimePayGuide() {
         Voluntary overtime — picking up additional shifts by choice — is universally legal and often incentivized by hospitals offering bonus premiums on top of the standard 1.5x rate. During staffing shortages, facilities frequently offer double-time or time-and-a-half-plus-bonus to attract extra coverage, creating significant earning windows for nurses who can work the additional hours.
       </p>
       <p>
-        Mandatory overtime — being required by your employer to work beyond your scheduled hours — is legal in most states but restricted in fourteen. Before accepting a position, review your employment contract for mandatory overtime clauses and confirm whether your state limits mandatory overtime for nurses. States with protective laws include California, New York, Connecticut, Illinois, and Maryland. Always have your contract reviewed before signing — use our free <Link href="/audit" className="text-primary hover:underline">contract audit tool</Link> to flag mandatory overtime clauses automatically.
-      </p>
-    </SEOPageLayout>
-  );
-}
+        Mandatory overtime — being required by your employer to work beyond your scheduled hours — is legal in most states but restricted in fourteen. Before accepting a position, review your employment contract for mandatory overtime clauses and confirm whether your state limits mandatory overtime for 

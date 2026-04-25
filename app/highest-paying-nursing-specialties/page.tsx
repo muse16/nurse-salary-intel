@@ -97,8 +97,4 @@ export default function HighestPayingNursingSpecialties() {
         For nurses who want to increase specialty pay without changing roles, board certifications are the most direct path. CCRN certification for ICU nurses adds $5,000–$12,000/year at most hospitals. CEN for ER nurses adds $4,000–$9,000. CNOR for OR nurses adds $5,000–$10,000. These certifications typically require 2 years of specialty experience and are renewed every 3–5 years.
       </p>
       <p>
-        Many hospitals offer a one-time certification bonus ($1,000–$3,000) plus an ongoing hourly differential for maintaining active specialty certification. Combined with base pay, the total return on a certification investment is typically realized within 3–6 months.
-      </p>
-    </SEOPageLayout>
-  );
-}
+        Many hospi

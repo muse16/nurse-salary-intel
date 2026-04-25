@@ -9,6 +9,14 @@ export const metadata: Metadata = {
     'How much extra do nurses earn for night shifts? See 2026 night shift differential rates by specialty, hospital system, and state.',
 };
 
+const author = { name: 'NurseSalaryIntel Editorial Team', link: '/about' };
+const sources = [
+  { title: 'BLS Occupational Employment Statistics (OEWS)', url: 'https://www.bls.gov/oes/' },
+  { title: 'AACN Nursing Statistics & Research', url: 'https://www.aacnnursing.org/research-data/statistics' },
+  { title: 'SHRM Compensation & Benefits Research', url: 'https://www.shrm.org/research-reports' },
+];
+const methodology = 'Night shift differential data sourced from published hospital wage surveys, union contract analyses, and employer compensation disclosures. Rates reflect national averages and state-specific variations as of 2026. Specialty and hospital system differentials sourced from public pay scale databases and direct employer reports. Percentages calculated as proportion of individual base pay. Figures are estimates and vary significantly by employer, union status, contract terms, and location.';
+
 const faqs = [
   { question: 'How much is night shift differential for nurses?', answer: 'Night shift differentials average $4–$7/hour nationally in 2026. Rates range from $2/hr at smaller facilities to $10+/hr at major academic medical centers.' },
   { question: 'Is night shift differential taxed differently?', answer: 'No — night differential is regular taxable income, subject to the same federal and state taxes as your base pay. It does count toward overtime calculations.' },
@@ -80,6 +88,9 @@ export default function NightShiftDifferential() {
       ]}
       h1="Night Shift Differential Pay for Nurses — 2026 Rates"
       lastUpdated="April 2026"
+      author={author}
+      sources={sources}
+      methodology={methodology}
       schemaTitle="Night Shift Differential Pay for Nurses 2026"
       schemaDescription="Night shift differential rates by state, hospital system, and specialty for nurses in 2026."
       schemaUrl="/salary-negotiation/night-shift-differential-pay"
@@ -151,31 +162,4 @@ export default function NightShiftDifferential() {
         </div>
         <div>
           <p className="font-semibold text-on-surface">Which states pay the highest night shift differentials?</p>
-          <p className="text-on-surface-variant">California, New York, Massachusetts, and Washington consistently offer the highest night shift differentials, both in dollar amount and percentage, largely due to union contracts and higher base wages in those states.</p>
-        </div>
-      </div>
-
-      <h2 className="text-2xl font-bold font-headline text-on-surface">See Also</h2>
-      <ul className="space-y-2">
-        <li>
-          <Link href="/rn-salary-by-state/florida" className="text-primary font-semibold hover:underline">
-            Florida RN salary data
-          </Link>
-          {' '}— night shift differential in Florida averages 10–18% above base pay.
-        </li>
-        <li>
-          <Link href="/rn-salary-by-state" className="text-primary font-semibold hover:underline">
-            RN salary by state comparison
-          </Link>
-          {' '}— compare average RN pay across all 50 states.
-        </li>
-        <li>
-          <Link href="/audit" className="text-primary font-semibold hover:underline">
-            Free contract audit tool
-          </Link>
-          {' '}— verify your differential is correctly documented in your contract.
-        </li>
-      </ul>
-    </SEOPageLayout>
-  );
-}
+          <p className="text-on-surface-variant">California, New York, Massachusetts, and Washington consistently offer the highest night shift differentials, both in dollar amount and percentage, largely due to union contracts and higher bas

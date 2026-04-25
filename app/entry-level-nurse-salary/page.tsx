@@ -40,6 +40,14 @@ const faqs = [
   },
 ];
 
+const author = { name: 'NurseSalaryIntel Editorial Team', link: '/about' };
+const sources = [
+  { title: 'BLS Occupational Employment Statistics (OEWS)', url: 'https://www.bls.gov/oes/' },
+  { title: 'AACN Nursing Statistics & Research', url: 'https://www.aacnnursing.org/research-data/statistics' },
+  { title: 'SHRM Compensation & Benefits Research', url: 'https://www.shrm.org/research-reports' },
+];
+const methodology = 'Data sourced from US Bureau of Labor Statistics OEWS May 2024 and entry-level nursing market surveys. Adjusted for 3–4% annual wage growth projections into 2026. State-level data reflects large health systems, union vs. non-union comparisons, and published new grad residency program data. Sign-on bonus and negotiation data from published offers and HR surveys. Figures are estimates and vary by employer, market, facility type, and contract terms.';
+
 export default function EntryLevelNurseSalary() {
   return (
     <SEOPageLayout
@@ -49,6 +57,9 @@ export default function EntryLevelNurseSalary() {
       ]}
       h1="Entry Level Nurse Salary — What New RNs Make in 2026"
       lastUpdated="April 2026"
+      author={author}
+      sources={sources}
+      methodology={methodology}
       schemaTitle="Entry Level Nurse Salary 2026"
       schemaDescription="New graduate RN salaries by state, negotiation tips, and salary growth trajectory for entry-level nurses."
       schemaUrl="/entry-level-nurse-salary"
@@ -87,21 +98,4 @@ export default function EntryLevelNurseSalary() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">How Entry-Level RN Pay Grows Over Time</h2>
       <p>
-        Nursing salary growth in the first decade follows a predictable pattern. Year-over-year raises at most non-union hospitals average 2–4%. Union step increases at places like Kaiser California can deliver 4–6% annually through automatic steps. The faster paths to income growth are specialty certification and unit transfer, not waiting for annual reviews.
-      </p>
-      <p>
-        Typical progression for a Med-Surg new grad who moves to ICU at year 2 and obtains CCRN certification at year 4:
-      </p>
-      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
-        <li>Year 1 (new grad Med-Surg): $68,000</li>
-        <li>Year 2 (transfer to ICU): $74,000–$78,000</li>
-        <li>Year 4 (CCRN certification): $84,000–$90,000</li>
-        <li>Year 6–7 (senior ICU RN): $90,000–$100,000</li>
-        <li>Year 10+ (charge, senior, or NP pathway): $100,000–$130,000+</li>
-      </ul>
-      <p>
-        Before accepting your first offer, have your contract reviewed. New grad contracts often contain cancellation penalties, mandatory overtime clauses, and float pool requirements that significantly affect your first-year experience. Use our free <Link href="/audit" className="text-primary hover:underline">contract audit tool</Link> to flag these terms before you sign.
-      </p>
-    </SEOPageLayout>
-  );
-}
+        Nursing sa

@@ -259,13 +259,4 @@ export default async function CityPage({ params }: PageProps) {
               </div>
               <div>
                 <p className="font-semibold text-gray-900">What is the highest paying city for nurses in {cityData.state}?</p>
-                <p className="text-gray-600 mt-1">Pay varies across {cityData.state}&apos;s metro areas. Larger urban markets typically offer the highest base salaries. See our full <Link href="/rn-salary-by-state" className="text-blue-600 hover:underline">RN salary by state guide</Link>, or compare <Link href="/salary/california/san-francisco" className="text-blue-600 hover:underline">nurse salary in San Francisco</Link> and <Link href="/salary/texas/dallas" className="text-blue-600 hover:underline">nurse salary in Dallas</Link> as national benchmarks. Use the <Link href="/" className="text-blue-600 hover:underline">nurse salary calculator</Link> to estimate pay in any state.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </main>
-    </div>
-  );
-}
+                <p className="text-gray-600 mt-1">Pay varies across {cityData.state}&apos;s metro areas. Larger urban markets typically offer the highest base salaries. See our full <Link href="/rn-salary-by-stat
