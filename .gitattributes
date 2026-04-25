@@ -1,0 +1,30 @@
+# Normalize line endings — prevents CRLF/LF churn between Windows + Linux/Vercel.
+# Source files: always check out as LF on every OS. Git stores LF internally.
+* text=auto eol=lf
+
+# Explicit declarations for the file types in this repo
+*.ts        text eol=lf
+*.tsx       text eol=lf
+*.js        text eol=lf
+*.jsx       text eol=lf
+*.json      text eol=lf
+*.md        text eol=lf
+*.css       text eol=lf
+*.html      text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+*.txt       text eol=lf
+*.svg       text eol=lf
+
+# Binary — never normalize
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.webp      binary
+*.ico       binary
+*.pdf       binary
+*.woff      binary
+*.woff2     binary
+*.ttf       binary
+*.eot       binary
