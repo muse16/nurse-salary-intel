@@ -134,6 +134,14 @@ export default function RNSalaryMiami2026() {
           source="BLS OEWS May 2024 Miami metro wage percentiles, projected 3–4% annually. Excludes differentials, OT, and bonuses."
         />
 
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/rn-salary-miami-fl-2026-experience.png"
+          alt="Estimated 2026 Miami RN pay progression by years of experience"
+          className="w-full rounded-lg border border-outline-variant my-6"
+          loading="lazy"
+        />
+
         <h2 className="text-2xl font-bold font-headline text-on-surface">Miami Hospital Systems: What to Know About Pay</h2>
         <p>Miami&apos;s RN labor market is dominated by three system families plus a handful of academic and specialty hospitals.</p>
         <p>
@@ -157,6 +165,14 @@ export default function RNSalaryMiami2026() {
         <p>
           Naples narrowly edges Miami in estimated mean pay, but Miami&apos;s labor market is an order of magnitude larger in job volume and specialty depth. For the full state view, see our <Link href="/florida-rn-salary-2026/" className="text-primary hover:underline">Florida RN salary guide</Link>.
         </p>
+
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/rn-salary-miami-fl-2026-vs-florida.png"
+          alt="Miami RN pay vs. other Florida metros 2026 estimates"
+          className="w-full rounded-lg border border-outline-variant my-6"
+          loading="lazy"
+        />
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">Shift Differentials and Premium Pay in Miami</h2>
         <p>Most Miami hospitals publish differentials on top of base. 2026 estimated ranges:</p>

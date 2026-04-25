@@ -62,11 +62,9 @@ export default function SEOPageLayout({
           {children}
         </div>
 
-        <ContractAuditCTA variant="banner" />
-
         <FAQSection faqs={faqs} />
 
-        <ContractAuditCTA variant="inline" heading="Know your worth — get your contract reviewed." />
+        <ContractAuditCTA variant="banner" />
       </main>
     </div>
   );
