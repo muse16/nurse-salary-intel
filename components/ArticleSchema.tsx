@@ -90,23 +90,30 @@ export default function ArticleSchema({
     },
   };
 
-  // If FAQs exist, prioritize FAQPage; otherwise use Article alone
+  // If FAQs exist, combine Article + FAQPage in @graph; otherwise Article alone
   let jsonLd: any;
 
   if (faqs && faqs.length > 0) {
-    // FAQPage schema (primary when FAQs are present)
+    // Article + FAQPage schema (FAQPage requires Article context for validity)
     jsonLd = {
       '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      url: `${BASE}${url}`,
-      mainEntity: faqs.map((faq) => ({
-        '@type': 'Question',
-        name: faq.question,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: faq.answer,
+      '@graph': [
+        // Article schema provides main content context
+        article,
+        // FAQPage schema provides rich result eligibility
+        {
+          '@type': 'FAQPage',
+          url: `${BASE}${url}`,
+          mainEntity: faqs.map((faq) => ({
+            '@type': 'Question',
+            name: faq.question,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: faq.answer,
+            },
+          })),
         },
-      })),
+      ],
     };
   } else {
     // Article schema only if no FAQs
