@@ -201,6 +201,65 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
               </div>
             </div>
 
+            {/* FEATURED: Top Salary Guides Grid */}
+            <div>
+              <h2 className="font-headline font-extrabold text-3xl text-editorial mb-2">Your Next Reading</h2>
+              <p className="text-on-surface-variant text-lg mb-8">Dive deeper into salary insights tailored to your career path.</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[
+                  {
+                    title: 'Night Shift Differential Pay',
+                    desc: 'How much more you earn working nights + shift trade-offs to consider.',
+                    href: '/salary-negotiation/night-shift-differential-pay',
+                    icon: '🌙'
+                  },
+                  {
+                    title: 'New Grad RN Salary & Negotiation',
+                    desc: 'Starting pay by state, sign-on bonuses, and how to negotiate your first offer.',
+                    href: '/entry-level-nurse-salary',
+                    icon: '🎓'
+                  },
+                  {
+                    title: 'Highest-Paying Nursing Specialties',
+                    desc: 'Compare pay across ICU, ER, CRNA, NP, and other specialty roles.',
+                    href: '/highest-paying-nursing-specialties',
+                    icon: '💰'
+                  },
+                  {
+                    title: 'RN Salary by State',
+                    desc: 'All 50 states ranked by average RN pay, union status, and cost of living.',
+                    href: '/rn-salary-by-state',
+                    icon: '📍'
+                  },
+                  {
+                    title: 'Travel Nursing Pay Breakdown',
+                    desc: 'Weekly packages, signing bonuses, and how to evaluate travel assignments.',
+                    href: '/travel-nursing',
+                    icon: '✈️'
+                  },
+                  {
+                    title: 'Salary Negotiation Scripts',
+                    desc: 'Word-for-word scripts for negotiating salary, shift, unit, and benefits.',
+                    href: '/salary-negotiation',
+                    icon: '📋'
+                  },
+                ].map(({ title, desc, href, icon }) => (
+                  <Link
+                    key={href}
+                    href={href}
+                    className="group bg-surface-container-lowest border border-outline-variant rounded-xl p-6 hover:border-primary hover:shadow-lg transition-all hover:-translate-y-1"
+                  >
+                    <div className="text-4xl mb-3">{icon}</div>
+                    <h3 className="font-headline font-bold text-lg text-on-surface mb-2 group-hover:text-primary transition-colors">{title}</h3>
+                    <p className="text-on-surface-variant text-sm leading-relaxed mb-4">{desc}</p>
+                    <span className="text-primary font-semibold text-sm flex items-center gap-1">
+                      Read more →
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
             {/* Nurse Salary by City */}
             <div>
               <h2 className="font-headline font-extrabold text-3xl text-editorial mb-6">Nurse Salary by City</h2>

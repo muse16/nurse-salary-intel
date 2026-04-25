@@ -166,27 +166,20 @@ export default function NightShiftDifferential() {
         </div>
       </div>
 
-      <h2 className="text-2xl font-bold font-headline text-on-surface">See Also</h2>
-      <ul className="space-y-2">
-        <li>
-          <Link href="/rn-salary-by-state/florida" className="text-primary font-semibold hover:underline">
-            Florida RN salary data
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Explore More Salary Topics</h2>
+      <div className="grid sm:grid-cols-2 gap-4">
+        {[
+          { href: '/entry-level-nurse-salary', title: 'New Grad RN Salary', desc: 'Starting pay, bonuses, and growth trajectory.' },
+          { href: '/nurse-overtime-pay-guide', title: 'Nurse Overtime Pay', desc: 'How overtime works and earnings potential.' },
+          { href: '/rn-salary-by-state', title: 'RN Salary by State', desc: 'Compare pay across all 50 states.' },
+          { href: '/highest-paying-nursing-specialties', title: 'Highest-Paying Specialties', desc: 'CRNA, NP, ICU, ER rankings.' },
+        ].map(({ href, title, desc }) => (
+          <Link key={href} href={href} className="p-4 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors">
+            <p className="font-bold text-primary text-sm mb-1">{title}</p>
+            <p className="text-on-surface-variant text-xs">{desc}</p>
           </Link>
-          {' '}— night shift differential in Florida averages 10–18% above base pay.
-        </li>
-        <li>
-          <Link href="/rn-salary-by-state" className="text-primary font-semibold hover:underline">
-            RN salary by state comparison
-          </Link>
-          {' '}— compare average RN pay across all 50 states.
-        </li>
-        <li>
-          <Link href="/audit" className="text-primary font-semibold hover:underline">
-            Free contract audit tool
-          </Link>
-          {' '}— verify your differential is correctly documented in your contract.
-        </li>
-      </ul>
+        ))}
+      </div>
     </SEOPageLayout>
   );
 }

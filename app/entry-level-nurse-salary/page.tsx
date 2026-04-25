@@ -252,6 +252,21 @@ export default function EntryLevelNurseSalary() {
       <p className="mt-6">
         Before accepting your first offer, have your contract reviewed. New grad contracts often contain cancellation penalties, mandatory overtime clauses, and float pool requirements that significantly affect your first-year experience. Use our free <Link href="/audit" className="text-primary hover:underline">contract audit tool</Link> to flag these terms before you sign.
       </p>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Explore More Salary Topics</h2>
+      <div className="grid sm:grid-cols-2 gap-4">
+        {[
+          { href: '/rn-salary-by-state', title: 'RN Salary by State', desc: 'Compare RN pay across all 50 states.' },
+          { href: '/highest-paying-nursing-specialties', title: 'Highest-Paying Specialties', desc: 'CRNA, NP, ICU, ER pay rankings.' },
+          { href: '/salary-negotiation/night-shift-differential-pay', title: 'Night Shift Differential Pay', desc: 'How much more you earn on nights + shift trade-offs.' },
+          { href: '/salary-negotiation/nurse-playbook', title: 'Salary Negotiation Playbook', desc: 'Scripts, tactics, and proven strategies.' },
+        ].map(({ href, title, desc }) => (
+          <Link key={href} href={href} className="p-4 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors">
+            <p className="font-bold text-primary text-sm mb-1">{title}</p>
+            <p className="text-on-surface-variant text-xs">{desc}</p>
+          </Link>
+        ))}
+      </div>
     </SEOPageLayout>
   );
 }

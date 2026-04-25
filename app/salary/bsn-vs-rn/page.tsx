@@ -314,6 +314,24 @@ export default function BsnVsRnPage() {
           </p>
         </section>
 
+        {/* Explore More Resources */}
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Explore More Salary Topics</h2>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {[
+              { href: '/entry-level-nurse-salary', title: 'New Grad RN Salary', desc: 'Starting pay, bonuses, and negotiation scripts.' },
+              { href: '/rn-salary-by-state', title: 'RN Salary by State', desc: 'Compare salaries across all 50 states.' },
+              { href: '/highest-paying-nursing-specialties', title: 'Highest-Paying Specialties', desc: 'CRNA, NP, ICU, ER and more.' },
+              { href: '/salary-negotiation/night-shift-differential-pay', title: 'Night Shift Differential', desc: 'How much you earn working nights.' },
+            ].map(({ href, title, desc }) => (
+              <Link key={href} href={href} className="p-4 rounded-lg border border-gray-200 hover:border-primary hover:bg-gray-50 transition-colors">
+                <p className="font-bold text-primary text-sm mb-1">{title}</p>
+                <p className="text-gray-600 text-xs">{desc}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* Breadcrumb / internal links */}
         <div className="text-sm text-gray-500">
           <Link href="/" className="hover:text-primary">Home</Link>

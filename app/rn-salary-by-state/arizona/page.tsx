@@ -247,6 +247,21 @@ export default function ArizonaRNSalary() {
           <p className="text-on-surface-variant">Scottsdale leads Arizona nurse pay at $88,000–$98,000/year. See full data for <Link href="/salary/arizona/scottsdale" className="text-primary hover:underline">nurse salary in Scottsdale</Link> and <Link href="/salary/arizona/phoenix" className="text-primary hover:underline">nurse salary in Phoenix</Link>, including hospital-level breakdowns.</p>
         </div>
       </div>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Related Salary Guides</h2>
+      <div className="grid sm:grid-cols-2 gap-4">
+        {[
+          { href: '/rn-salary-by-state', title: 'RN Salary by State', desc: 'Compare all 50 states side-by-side.' },
+          { href: '/entry-level-nurse-salary', title: 'New Grad RN Salary', desc: 'Starting pay, negotiation tactics, growth paths.' },
+          { href: '/highest-paying-nursing-specialties', title: 'Highest-Paying Specialties', desc: 'CRNA, NP, ICU, ER pay rankings.' },
+          { href: '/salary-negotiation/night-shift-differential-pay', title: 'Night Shift Differential', desc: 'How much more for nights + trade-offs.' },
+        ].map(({ href, title, desc }) => (
+          <Link key={href} href={href} className="p-4 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors">
+            <p className="font-bold text-primary text-sm mb-1">{title}</p>
+            <p className="text-on-surface-variant text-xs">{desc}</p>
+          </Link>
+        ))}
+      </div>
     </SEOPageLayout>
   );
 }

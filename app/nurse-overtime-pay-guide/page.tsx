@@ -93,6 +93,21 @@ export default function NurseOvertimePayGuide() {
       <p>
         Mandatory overtime — being required by your employer to work beyond your scheduled hours — is legal in most states but restricted in fourteen. Before accepting a position, review your employment contract for mandatory overtime clauses and confirm whether your state limits mandatory overtime for nurses. States with protective laws include California, New York, Connecticut, Illinois, and Maryland. Always have your contract reviewed before signing — use our free <Link href="/audit" className="text-primary hover:underline">contract audit tool</Link> to flag mandatory overtime clauses automatically.
       </p>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Related Salary Resources</h2>
+      <div className="grid sm:grid-cols-2 gap-4">
+        {[
+          { href: '/entry-level-nurse-salary', title: 'New Grad RN Salary', desc: 'Starting pay, negotiation tactics, and 5-year growth paths.' },
+          { href: '/salary-negotiation/night-shift-differential-pay', title: 'Night Shift Differential Pay', desc: 'How much more you earn on nights + specialty breakdown.' },
+          { href: '/rn-salary-by-state', title: 'RN Salary by State', desc: 'Compare RN pay across all 50 states.' },
+          { href: '/highest-paying-nursing-specialties', title: 'Highest-Paying Specialties', desc: 'CRNA, NP, ICU, ER pay rankings.' },
+        ].map(({ href, title, desc }) => (
+          <Link key={href} href={href} className="p-4 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors">
+            <p className="font-bold text-primary text-sm mb-1">{title}</p>
+            <p className="text-on-surface-variant text-xs">{desc}</p>
+          </Link>
+        ))}
+      </div>
     </SEOPageLayout>
   );
 }

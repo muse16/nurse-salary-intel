@@ -99,6 +99,21 @@ export default function HighestPayingNursingSpecialties() {
       <p>
         Many hospitals offer a one-time certification bonus ($1,000–$3,000) plus an ongoing hourly differential for maintaining active specialty certification. Combined with base pay, the total return on a certification investment is typically realized within 3–6 months.
       </p>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Explore More Salary Resources</h2>
+      <div className="grid sm:grid-cols-2 gap-4">
+        {[
+          { href: '/rn-salary-by-state', title: 'RN Salary by State', desc: 'Compare RN pay across all 50 states.' },
+          { href: '/entry-level-nurse-salary', title: 'New Grad RN Salary', desc: 'Entry-level pay, negotiation tactics, and growth paths.' },
+          { href: '/salary-negotiation/night-shift-differential-pay', title: 'Night Shift Differential Pay', desc: 'How much more you earn on nights + shift trade-offs.' },
+          { href: '/icu-nurse-salary-2026', title: 'ICU Nurse Salary', desc: 'ICU pay by state, experience, and certification.' },
+        ].map(({ href, title, desc }) => (
+          <Link key={href} href={href} className="p-4 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors">
+            <p className="font-bold text-primary text-sm mb-1">{title}</p>
+            <p className="text-on-surface-variant text-xs">{desc}</p>
+          </Link>
+        ))}
+      </div>
     </SEOPageLayout>
   );
 }

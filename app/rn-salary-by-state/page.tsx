@@ -191,6 +191,21 @@ export default function RNSalaryByStatePillar() {
           <p className="text-on-surface-variant"><Link href="/salary/california/san-francisco" className="text-primary hover:underline">Nurse salary in San Francisco</Link> leads nationally at $145,000–$165,000/year. <Link href="/salary/new-york/new-york" className="text-primary hover:underline">Nurse salary in New York City</Link> ranks third. For a no-tax alternative, see <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">RN salary in Texas</Link>.</p>
         </div>
       </div>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Explore More Salary Topics</h2>
+      <div className="grid sm:grid-cols-2 gap-4">
+        {[
+          { href: '/nursing-salary', title: 'Nurse Salary Hub', desc: 'Comprehensive salary data, benchmarks, and resources.' },
+          { href: '/salary-negotiation', title: 'Salary Negotiation Guide', desc: 'Scripts, tactics, and how to negotiate your offer.' },
+          { href: '/highest-paying-nursing-specialties', title: 'Highest-Paying Specialties', desc: 'Compare ICU, ER, CRNA, NP, and specialty pay.' },
+          { href: '/travel-nursing', title: 'Travel Nursing Pay', desc: 'Weekly packages, bonuses, and assignment evaluation.' },
+        ].map(({ href, title, desc }) => (
+          <Link key={href} href={href} className="p-4 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors">
+            <p className="font-bold text-primary text-sm mb-1">{title}</p>
+            <p className="text-on-surface-variant text-xs">{desc}</p>
+          </Link>
+        ))}
+      </div>
     </SEOPageLayout>
   );
 }
