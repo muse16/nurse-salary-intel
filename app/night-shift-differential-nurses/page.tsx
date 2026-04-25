@@ -3,8 +3,15 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Night Shift Differential for Nurses (2026): How Much More Do You Earn?',
-  description: 'Learn how night shift differentials work for nurses in 2026. See typical rates, total pay impact, and how to calculate your take-home difference.',
+  title: 'Is Night Shift Nursing Worth It? 2026 Pay vs. Trade-Offs',
+  description:
+    'Night shift differentials add 10–25% to nurse pay in 2026 — but is it worth it? See real take-home math, health impact, schedule trade-offs, and the decision framework nurses use.',
+  alternates: { canonical: 'https://nursesalaryintel.com/night-shift-differential-nurses' },
+  openGraph: {
+    title: 'Is Night Shift Nursing Worth It? 2026 Pay vs. Trade-Offs',
+    description: 'Differentials add 10–25% pay in 2026. Real take-home math + lifestyle trade-offs.',
+    url: 'https://nursesalaryintel.com/night-shift-differential-nurses',
+  },
 };
 
 const faqs = [

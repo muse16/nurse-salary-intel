@@ -4,9 +4,15 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Arizona (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Arizona RN Salary 2026: $39.42/hr + Phoenix vs Tucson Pay Gap',
   description:
-    'See the average RN salary in Arizona for 2026. Compare hourly pay, top cities, and earning potential for registered nurses.',
+    'Arizona RNs earn $82,000/yr ($39.42/hr) average in 2026. Compare Phoenix ($88K), Scottsdale ($92K), and Tucson ($78K) pay, see top hospitals, and what new grads earn.',
+  alternates: { canonical: 'https://nursesalaryintel.com/rn-salary-by-state/arizona' },
+  openGraph: {
+    title: 'Arizona RN Salary 2026: $39.42/hr + Phoenix vs Tucson',
+    description: 'AZ RN pay $82,000/yr in 2026. City pay gaps + top employers (Mayo, Banner, HonorHealth).',
+    url: 'https://nursesalaryintel.com/rn-salary-by-state/arizona',
+  },
 };
 
 const faqs = [

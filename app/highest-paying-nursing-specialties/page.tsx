@@ -4,8 +4,15 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Highest Paying Nursing Specialties (2026): Salary by Role',
-  description: 'See the highest paying nursing specialties in 2026. Compare CRNA, NP, ICU, ER, and other RN specialty salaries with hourly rates and earning potential.',
+  title: 'Highest-Paying Nursing Specialties 2026: Top 10 (CRNA $214K)',
+  description:
+    'CRNAs top the 2026 list at $214,000/yr ($102.88/hr), followed by NPs at $126K and CNMs at $122K. See all 10 highest-paying nursing specialties with hourly rates and entry paths.',
+  alternates: { canonical: 'https://nursesalaryintel.com/highest-paying-nursing-specialties' },
+  openGraph: {
+    title: 'Highest-Paying Nursing Specialties 2026: Top 10 (CRNA $214K)',
+    description: 'CRNAs lead at $214K. Full top-10 with hourly rates, ROI, and entry paths.',
+    url: 'https://nursesalaryintel.com/highest-paying-nursing-specialties',
+  },
 };
 
 const specialtyData = [

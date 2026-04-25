@@ -41,9 +41,23 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!cityData) return { title: 'City Not Found' };
 
+  // Format dollar figures from cityData for higher-CTR titles + metas
+  const annualK = cityData.avgSalary
+    ? `$${Math.round(cityData.avgSalary / 1000)}K/yr`
+    : '';
+  const annualFull = cityData.avgSalary
+    ? `$${cityData.avgSalary.toLocaleString()}/yr`
+    : 'competitive pay';
+  const titleSuffix = annualK
+    ? `${annualK} Avg + Top Hospitals`
+    : 'Hourly Pay + Top Hospitals';
+
   return {
-    title: `RN Salary in ${cityData.city}, ${cityData.state} (2026): Hourly Pay + Top Hospitals`,
-    description: `Discover RN salary in ${cityData.city}, ${cityData.state}. View hourly pay, top hospitals, and salary trends for nurses in 2026.`,
+    title: `${cityData.city} RN Salary 2026: ${titleSuffix}`,
+    description: `${cityData.city}, ${cityData.state} RNs earn ${annualFull} on average in 2026. Top hospitals, salary range ($${cityData.minSalary?.toLocaleString() || ''}–$${cityData.maxSalary?.toLocaleString() || ''}), and how this metro compares to the state average.`,
+    alternates: {
+      canonical: `https://nursesalaryintel.com/salary/${state}/${city}`,
+    },
   };
 }
 

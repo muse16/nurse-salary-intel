@@ -4,9 +4,15 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Florida (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Florida RN Salary 2026: $76,450/yr + Top 5 Highest-Pay Cities',
   description:
-    'See the average RN salary in Florida for 2026. Compare hourly pay, top cities, and earning potential for registered nurses.',
+    'Florida RNs earn $76,450/yr ($36.75/hr) on average in 2026. See city-by-city pay, top hospitals, no-state-income-tax math, and how Florida compares to other states — sourced from BLS.',
+  alternates: { canonical: 'https://nursesalaryintel.com/rn-salary-by-state/florida' },
+  openGraph: {
+    title: 'Florida RN Salary 2026: $76,450/yr + Top 5 Pay Cities',
+    description: 'Florida RNs earn $36.75/hr in 2026. City-by-city pay, top hospitals, no-tax math.',
+    url: 'https://nursesalaryintel.com/rn-salary-by-state/florida',
+  },
 };
 
 const faqs = [

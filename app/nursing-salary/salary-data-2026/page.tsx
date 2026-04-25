@@ -4,9 +4,15 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Nurse Salary Data 2026 | Key Stats, Benchmarks & Sourced Numbers',
+  title: 'Nurse Salary Statistics 2026: BLS Benchmarks ($89,010 Avg)',
   description:
-    'Sourced nurse salary statistics for 2026. Key benchmarks, state rankings, specialty pay, and wage gap data — free to cite with attribution.',
+    'Sourced nurse salary stats for 2026 from BLS, AACN, and SHRM. National avg $89,010/yr ($42.80/hr). State rankings, specialty pay, and wage growth — citation-ready with sources.',
+  alternates: { canonical: 'https://nursesalaryintel.com/nursing-salary/salary-data-2026' },
+  openGraph: {
+    title: 'Nurse Salary Statistics 2026: BLS Benchmarks ($89K Avg)',
+    description: 'State, specialty, hourly, and wage-growth nurse pay stats. Sourced + citation-ready.',
+    url: 'https://nursesalaryintel.com/nursing-salary/salary-data-2026',
+  },
 };
 
 const headlineStats = [

@@ -4,13 +4,13 @@ import SiteNav from '@/components/SiteNav';
 import RoiCalculator from '@/components/RoiCalculator';
 
 export const metadata: Metadata = {
-  title: 'BSN vs RN Salary 2026: Is a BSN Worth It? [Full Comparison]',
+  title: 'BSN vs RN Salary 2026: BSN Earns $10K+/yr More (Full Math)',
   description:
-    'BSN nurses earn $10,000+ more per year than ADN nurses. Compare ADN vs BSN vs MSN vs NP salaries by state, calculate your lifetime ROI, and find top online BSN programs. Data updated 2026.',
+    'BSN nurses earn $10,000+ more per year than ADN RNs in 2026. See state-by-state pay gap, lifetime ROI calculator, MSN/NP comparison, and top online BSN bridge programs.',
   alternates: { canonical: 'https://nursesalaryintel.com/salary/bsn-vs-rn' },
   openGraph: {
-    title: 'BSN vs RN Salary 2026: Is a BSN Worth It?',
-    description: 'Full ADN vs BSN vs MSN vs NP salary comparison by state plus an ROI calculator.',
+    title: 'BSN vs RN Salary 2026: BSN Earns $10K+/yr More',
+    description: 'State-by-state gap, lifetime ROI calculator, top online BSN bridge programs.',
     url: 'https://nursesalaryintel.com/salary/bsn-vs-rn',
   },
 };

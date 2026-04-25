@@ -4,8 +4,15 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Entry Level Nurse Salary (2026): What New RNs Actually Make',
-  description: 'What do new graduate nurses earn in 2026? See entry-level RN salaries by state, tips for negotiating your first offer, and how fast nursing pay grows with experience.',
+  title: 'New Grad RN Salary 2026: $62K–$105K + Sign-On Bonus Range',
+  description:
+    'New-grad RNs earn $62,000–$105,000 in 2026 depending on state, plus $5K–$15K sign-on bonuses at most hospitals. See pay by market, top employers, and how to negotiate your first offer.',
+  alternates: { canonical: 'https://nursesalaryintel.com/entry-level-nurse-salary' },
+  openGraph: {
+    title: 'New Grad RN Salary 2026: $62K–$105K + Sign-On Bonus',
+    description: 'New grads earn $62K–$105K in 2026 + $5–$15K sign-ons. Top markets + negotiation tips.',
+    url: 'https://nursesalaryintel.com/entry-level-nurse-salary',
+  },
 };
 
 const newGradData = [

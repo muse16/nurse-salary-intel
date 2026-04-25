@@ -3,8 +3,15 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Nurse Overtime Pay Guide (2026): How Much Nurses Earn in Overtime',
-  description: 'How overtime pay works for RNs in 2026. Learn federal and state overtime rules, how to calculate extra earnings, and how much nurses make working extra shifts.',
+  title: 'Nurse Overtime Pay 2026: $60+/hr Math + FLSA Rules Decoded',
+  description:
+    'Most RNs earn $60–$95/hr in overtime in 2026 (1.5x base). See FLSA exemption rules, mandatory-OT laws by state, double-time triggers, and how to calculate your take-home.',
+  alternates: { canonical: 'https://nursesalaryintel.com/nurse-overtime-pay-guide' },
+  openGraph: {
+    title: 'Nurse Overtime Pay 2026: $60+/hr Math + FLSA Decoded',
+    description: 'RNs earn $60–$95/hr in OT in 2026. FLSA rules + state law + take-home math.',
+    url: 'https://nursesalaryintel.com/nurse-overtime-pay-guide',
+  },
 };
 
 const faqs = [
