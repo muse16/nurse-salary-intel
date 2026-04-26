@@ -17,6 +17,8 @@ const categoryColors: Record<string, string> = {
 
 export default function BlogPage() {
   const sorted = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  // Only the first post with a cover image is above fold on mobile — give it priority
+  const firstCoverSlug = sorted.find(p => p.coverImage)?.slug;
 
   const categories = Array.from(new Set(sorted.map(p => p.category)));
   const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-');
@@ -70,6 +72,7 @@ export default function BlogPage() {
                       fill
                       src={post.coverImage}
                       alt={post.imageAlt}
+                      priority={post.slug === firstCoverSlug}
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
                       className="object-cover group-hover:scale-[1.02] transition-transform duration-500"
                     />

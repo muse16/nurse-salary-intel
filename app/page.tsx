@@ -36,5 +36,26 @@ export default function Home() {
     uniqueHospitals
   };
 
-  return <HomePage stats={stats} allData={allData} stateData={stateData} />;
+  return (
+    <>
+      {/*
+        Hero preload: next/image `priority` in a Client Component calls
+        ReactDOM.preload('/images/hero-nurse.jpg') — the original JPG URL.
+        But the <img srcset> uses /_next/image?url=...&w=640 (the optimized WebP).
+        Different URLs = browser misses the preload entirely on mobile.
+        This explicit <link> points to the actual optimized URLs so the browser
+        starts the fetch before any JS runs (React 19 hoists <link> from Server
+        Components to <head> during streaming SSR).
+      */}
+      <link
+        rel="preload"
+        as="image"
+        href="/_next/image?url=%2Fimages%2Fhero-nurse.jpg&w=828&q=75"
+        imageSrcSet="/_next/image?url=%2Fimages%2Fhero-nurse.jpg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fhero-nurse.jpg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fhero-nurse.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fhero-nurse.jpg&w=1200&q=75 1200w"
+        imageSizes="100vw"
+        fetchPriority="high"
+      />
+      <HomePage stats={stats} allData={allData} stateData={stateData} />
+    </>
+  );
 }

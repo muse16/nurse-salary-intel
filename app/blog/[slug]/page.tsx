@@ -98,6 +98,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               alt={post.imageAlt}
               width={1200}
               height={675}
+              priority
               className="w-full h-auto"
               sizes="(max-width: 768px) 100vw, 800px"
             />
