@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import DataTable from '@/components/DataTable';
 import LiveJobsTable from '@/components/LiveJobsTable';
 import AdSenseSlot from '@/components/AdSenseSlot';
@@ -36,8 +37,11 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
         {/* Background image with overlay */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent z-10" />
-          <img
-            className="w-full h-full object-cover object-center grayscale-[20%]"
+          <Image
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center grayscale-[20%]"
             src="/images/hero-nurse.jpg"
             alt="Professional nurse in modern medical setting"
           />
@@ -444,8 +448,10 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
                   className="group relative overflow-hidden rounded-2xl aspect-square flex flex-col justify-end p-6"
                 >
                   <div className="absolute inset-0 z-0 scale-110 group-hover:scale-100 transition-transform duration-700">
-                    <img
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                    <Image
+                      fill
+                      sizes="(max-width: 640px) 50vw, 25vw"
+                      className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                       src={img}
                       alt={city}
                     />

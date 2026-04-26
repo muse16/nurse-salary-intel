@@ -1,5 +1,6 @@
 import { blogPosts } from '@/lib/blog-posts';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import SiteNav from '@/components/SiteNav';
 
@@ -64,13 +65,13 @@ export default function BlogPage() {
             <Link key={post.slug} href={post.href ?? `/blog/${post.slug}`} className="block group">
               <article className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:border-blue-300 hover:shadow-md transition-all">
                 {post.coverImage && (
-                  <div className="aspect-[16/9] bg-gray-100 overflow-hidden">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                  <div className="relative aspect-[16/9] bg-gray-100 overflow-hidden">
+                    <Image
+                      fill
                       src={post.coverImage}
                       alt={post.imageAlt}
-                      loading="lazy"
-                      className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
+                      className="object-cover group-hover:scale-[1.02] transition-transform duration-500"
                     />
                   </div>
                 )}

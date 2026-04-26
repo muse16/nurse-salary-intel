@@ -1,5 +1,6 @@
 import { getPostBySlug, getAllSlugs, blogPosts } from '@/lib/blog-posts';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import AdSenseSlot from '@/components/AdSenseSlot';
@@ -92,11 +93,13 @@ export default async function BlogPostPage({ params }: PageProps) {
         {/* Cover image (SEO + social) */}
         {post.coverImage && (
           <figure className="mb-8 rounded-2xl overflow-hidden border border-gray-100 shadow-sm bg-gray-100">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={post.coverImage}
               alt={post.imageAlt}
-              className="w-full h-auto object-cover aspect-[16/9]"
+              width={1200}
+              height={675}
+              className="w-full h-auto"
+              sizes="(max-width: 768px) 100vw, 800px"
             />
             <figcaption className="sr-only">{post.imageAlt}</figcaption>
           </figure>
