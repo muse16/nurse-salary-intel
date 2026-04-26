@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
@@ -106,6 +107,15 @@ export default function ArizonaRNSalary2026() {
         schemaUrl="/arizona-rn-salary-2026/"
         faqs={faqs}
       >
+        <Image
+          src="/images/arizona-rn-salary-2026.png"
+          alt="Arizona RN salary 2026 map with Phoenix showing $85K–$98K average annual pay."
+          width={1200}
+          height={630}
+          className="w-full rounded-lg mb-6"
+          priority
+        />
+
         <p>
           Arizona registered nurses earn an estimated <strong>$38–$47/hr in 2026</strong>, or roughly <strong>$79,000–$98,000 annually</strong> depending on city and experience, based on BLS May 2024 OEWS data projected 3–4% annually. Phoenix has emerged as one of the <strong>fastest-growing RN job markets</strong> in the Southwest, and Arizona&apos;s newly reduced <strong>flat 2.5% state income tax</strong> makes it far more competitive on a take-home basis than the headline numbers suggest.
         </p>

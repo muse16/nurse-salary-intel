@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
@@ -107,6 +108,15 @@ export default function CaliforniaRNSalary2026() {
         schemaUrl="/california-rn-salary-2026/"
         faqs={faqs}
       >
+        <Image
+          src="/images/california-rn-salary-2026-hero.webp"
+          alt="California RN salary heat map showing highest-paying regions in Bay Area, Los Angeles, and San Diego."
+          width={1200}
+          height={630}
+          className="w-full rounded-lg mb-6"
+          priority
+        />
+
         <p>
           California consistently ranks as the <strong>highest-paying state for registered nurses</strong> in the nation. As of 2026, the statewide mean RN salary is approximately <strong>$132,000/year ($63/hr)</strong>, based on BLS May 2024 OEWS data projected with 3–4% annual wage growth. But that headline number masks major regional variation — San Francisco Bay Area nurses average $140,000–$155,000 while Central Valley RNs start at $100,000–$115,000.
         </p>

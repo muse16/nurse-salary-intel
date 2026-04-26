@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
@@ -108,6 +109,15 @@ export default function NewYorkRNSalary2026() {
         schemaUrl="/new-york-rn-salary-2026/"
         faqs={faqs}
       >
+        <Image
+          src="/images/new-york-rn-salary-2026.png"
+          alt="New York City RN salary 2026 skyline graphic showing $106K+ average annual pay."
+          width={1200}
+          height={630}
+          className="w-full rounded-lg mb-6"
+          priority
+        />
+
         <p>
           New York ranks <strong>second in the nation for RN pay</strong> — but the headline number masks two very different markets. New York City metro RNs earn an estimated <strong>$52–$62/hr base ($108,000–$128,000/year)</strong> at major academic health systems, while upstate markets (Buffalo, Rochester, Albany) are closer to national norms at $75,000–$90,000. Add New York&apos;s 6–10.9% state income tax and NYC&apos;s 3.88% city tax, and the take-home picture changes significantly. Here&apos;s what New York nurses actually earn — and keep — in 2026.
         </p>

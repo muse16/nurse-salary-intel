@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
@@ -106,6 +107,15 @@ export default function RNSalaryLosAngeles2026() {
         schemaUrl="/rn-salary-los-angeles-2026/"
         faqs={faqs}
       >
+        <Image
+          src="/images/rn-salary-los-angeles-2026-hero.webp"
+          alt="Los Angeles skyline with RN salary data overlaid showing average pay by hospital system."
+          width={1200}
+          height={630}
+          className="w-full rounded-lg mb-6"
+          priority
+        />
+
         <p>
           Los Angeles registered nurses earn an estimated <strong>$60–$67/hr base in 2026</strong>, or roughly <strong>$125,000–$140,000 annually</strong> (mean ~$132,000), based on BLS May 2024 metro data projected with 3–4% annual wage growth. LA is the second-largest RN market in California (behind the Bay Area) and home to some of the nation&apos;s most prestigious academic medical centers. New grads start at $104,000–$116,000; senior specialty nurses with a decade of experience and union step progression regularly earn $155,000+.
         </p>

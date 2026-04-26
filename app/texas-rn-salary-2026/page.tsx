@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
@@ -106,6 +107,15 @@ export default function TexasRNSalary2026() {
         schemaUrl="/texas-rn-salary-2026/"
         faqs={faqs}
       >
+        <Image
+          src="/images/texas-rn-salary-2026.png"
+          alt="Texas RN salary 2026 map showing Houston, Dallas, and Austin as top-paying metro areas."
+          width={1200}
+          height={630}
+          className="w-full rounded-lg mb-6"
+          priority
+        />
+
         <p>
           Texas registered nurses earn an estimated <strong>$38–$47/hr in 2026</strong>, or roughly <strong>$80,000–$98,000 annually</strong> depending on city and experience, based on BLS May 2024 OEWS data projected 3–4% annually. While Texas&apos; nominal salaries trail California and New York, the state&apos;s <strong>zero income tax</strong> creates a real-dollar take-home advantage of $8,000–$14,000/year over high-tax states. Add a lower cost of living, the world&apos;s largest medical complex in Houston, and one of the nation&apos;s fastest-growing RN job markets — and Texas becomes one of the most compelling total-compensation destinations for nurses.
         </p>
