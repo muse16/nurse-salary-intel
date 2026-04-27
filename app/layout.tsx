@@ -9,7 +9,8 @@ import "./globals.css";
 const manrope = Manrope({
   variable: "--font-headline",
   subsets: ["latin"],
-  weight: ["600", "700", "800"],
+  weight: ["700", "800"],
+  display: "swap",
 });
 
 // ─── REPLACE with your GA4 Measurement ID from analytics.google.com ───────────
