@@ -60,8 +60,7 @@ export default function RootLayout({
         {/* Preconnect to third-party origins so TCP/TLS is ready before scripts load */}
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* fonts.googleapis.com / fonts.gstatic.com removed — next/font self-hosts Manrope at build time */}
       </head>
       <body className={`${manrope.variable} antialiased`}>
         {children}
@@ -77,9 +76,9 @@ export default function RootLayout({
         {/* Google Analytics GA4 */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="ga4-init" strategy="afterInteractive">
+        <Script id="ga4-init" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
