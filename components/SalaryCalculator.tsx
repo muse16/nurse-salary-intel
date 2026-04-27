@@ -63,9 +63,10 @@ export default function SalaryCalculator({ onGeneratePDF }: SalaryCalculatorProp
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Specialty */}
             <div className="space-y-2">
-              <label className="block text-sm font-semibold text-on-surface-variant ml-1">Nursing Specialty</label>
+              <label htmlFor="specialty-select" className="block text-sm font-semibold text-on-surface-variant ml-1">Nursing Specialty</label>
               <div className="relative">
                 <select
+                  id="specialty-select"
                   value={selectedSpecialty}
                   onChange={(e) => setSelectedSpecialty(e.target.value)}
                   className="w-full bg-surface-container-low border-none rounded-xl py-4 px-4 appearance-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all text-on-surface outline-none"
@@ -83,9 +84,10 @@ export default function SalaryCalculator({ onGeneratePDF }: SalaryCalculatorProp
 
             {/* State */}
             <div className="space-y-2">
-              <label className="block text-sm font-semibold text-on-surface-variant ml-1">State / Location</label>
+              <label htmlFor="state-select" className="block text-sm font-semibold text-on-surface-variant ml-1">State / Location</label>
               <div className="relative">
                 <select
+                  id="state-select"
                   value={selectedState}
                   onChange={(e) => setSelectedState(e.target.value)}
                   className="w-full bg-surface-container-low border-none rounded-xl py-4 px-4 appearance-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all text-on-surface outline-none"
@@ -103,9 +105,10 @@ export default function SalaryCalculator({ onGeneratePDF }: SalaryCalculatorProp
 
             {/* Experience */}
             <div className="space-y-2">
-              <label className="block text-sm font-semibold text-on-surface-variant ml-1">Years of Experience</label>
+              <label htmlFor="experience-select" className="block text-sm font-semibold text-on-surface-variant ml-1">Years of Experience</label>
               <div className="relative">
                 <select
+                  id="experience-select"
                   value={selectedExperience}
                   onChange={(e) => setSelectedExperience(e.target.value)}
                   className="w-full bg-surface-container-low border-none rounded-xl py-4 px-4 appearance-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all text-on-surface outline-none"

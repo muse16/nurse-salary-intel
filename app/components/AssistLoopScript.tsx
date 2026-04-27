@@ -10,6 +10,11 @@ export default function AssistLoopScript() {
         (window as Window & { AssistLoopWidget?: { init: (o: { agentId: string | undefined }) => void } }).AssistLoopWidget?.init({
           agentId: process.env.NEXT_PUBLIC_ASSISTLOOP_AGENT_ID,
         });
+        setTimeout(() => {
+          document.querySelectorAll<HTMLIFrameElement>('iframe:not([title])').forEach((iframe) => {
+            iframe.title = 'Chat support widget';
+          });
+        }, 2000);
       }}
     />
   );
