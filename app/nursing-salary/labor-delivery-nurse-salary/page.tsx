@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Labor & Delivery Nurse Salary 2026 | L&D Pay Data',
+  title: 'Labor and Delivery Nurse Salary 2026: $86,340/yr + California Pays $108K+',
   description:
-    'L&D nurse salary data for 2026. See labor and delivery nurse pay by state, experience, and certification. Compare L&D to other specialties.',
+    'L&D nurses average $86,340/yr ($41.51/hr) in 2026. California pays $108K+. See pay by state, shift differentials, and the L&D vs NICU vs ER salary comparison.',
 };
 
 const faqs = [

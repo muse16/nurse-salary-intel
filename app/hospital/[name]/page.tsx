@@ -84,8 +84,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${hospitalData.hospital} - Nurse Salaries & Contract Intelligence`,
-    description: `Review nurse salaries and contract red flags at ${hospitalData.hospital} in ${hospitalData.city}, ${hospitalData.state}. Average salary: $${hospitalData.avgSalary.toLocaleString()}.`,
+    title: `${hospitalData.hospital} RN Salary 2026: Pay, Red Flags & Contracts`,
+    description: `${hospitalData.hospital} in ${hospitalData.city}, ${hospitalData.state}: RNs earn $${hospitalData.avgSalary.toLocaleString()}/yr (2026 avg). See pay by unit, contract red flags, and comparison to competing systems.`,
     robots: isApproved(hospitalData.hospital)
       ? { index: true, follow: true }
       : { index: false, follow: true },

@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Wyoming (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Wyoming RN Salary 2026: $71,730/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Wyoming is $71,730/year ($34.49/hr) in 2026. Compare pay by city and specialty.',
+    'Wyoming RNs average $71,730/yr ($34.49/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary North Dakota (2026): Hourly Pay + Highest Paying Cities',
+  title: 'North Dakota RN Salary 2026: $72,140/yr + Hourly Rates by City',
   description:
-    'Average RN salary in North Dakota is $72,140/year ($34.68/hr) in 2026. Compare pay by city and specialty.',
+    'North Dakota RNs average $72,140/yr ($34.68/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Minnesota (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Minnesota RN Salary 2026: $86,110/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Minnesota is $86,110/year ($41.40/hr) in 2026. Compare pay by city and specialty.',
+    'Minnesota RNs average $86,110/yr ($41.40/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

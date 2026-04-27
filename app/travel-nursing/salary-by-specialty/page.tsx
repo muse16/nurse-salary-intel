@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Travel Nurse Pay by Specialty 2026 | Top Earners',
+  title: 'Travel Nurse Pay by Specialty 2026: ICU $3,200/wk, OR $3,000, ER $2,900',
   description:
-    'See which nursing specialties earn the most in travel nursing. ICU, OR, ER, NICU, L&D, and more — salary data updated for 2026.',
+    '2026 travel nurse pay by specialty: ICU/CCRN earns $3,000–$3,500/wk, OR $2,800–$3,200, ER $2,800–$3,000, NICU $2,600–$3,000, L&D $2,500–$2,900. Full state-by-state data.',
 };
 
 const faqs = [

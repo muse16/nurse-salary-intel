@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Kansas (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Kansas RN Salary 2026: $68,130/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Kansas is $68,130/year ($32.76/hr) in 2026. Compare pay by city and specialty.',
+    'Kansas RNs average $68,130/yr ($32.76/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

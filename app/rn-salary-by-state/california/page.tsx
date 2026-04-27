@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary California (2026): Hourly Pay + Highest Paying Cities',
+  title: 'California RN Salary 2026: $124,000/yr + Hourly Rates by City',
   description:
-    'See the average RN salary in California for 2026. Compare hourly pay, top cities, and earning potential for registered nurses.',
+    'California RNs average $124,000/yr ($59.62/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

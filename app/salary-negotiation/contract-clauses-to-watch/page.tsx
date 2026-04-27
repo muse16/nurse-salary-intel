@@ -4,9 +4,9 @@ import ContractAuditCTA from '@/components/ContractAuditCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Nursing Contract Clauses to Watch | Protect Yourself',
+  title: 'Nursing Contract Clauses to Watch 2026: 10 Costly Terms',
   description:
-    'Know which nursing contract clauses can cost you money. Non-competes, cancellation penalties, floating, and overtime — what to look for before signing.',
+    'Know which nursing contract clauses can cost you money in 2026. Non-competes, cancellation penalties, floating, and overtime — what to look for before signing.',
 };
 
 const faqs = [

@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary New Hampshire (2026): Hourly Pay + Highest Paying Cities',
+  title: 'New Hampshire RN Salary 2026: $82,920/yr + Hourly Rates by City',
   description:
-    'Average RN salary in New Hampshire is $82,920/year ($39.87/hr) in 2026. Compare pay by city and specialty.',
+    'New Hampshire RNs average $82,920/yr ($39.87/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

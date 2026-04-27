@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Connecticut (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Connecticut RN Salary 2026: $91,620/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Connecticut is $91,620/year ($44.05/hr) in 2026. Compare pay by city and specialty.',
+    'Connecticut RNs average $91,620/yr ($44.05/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

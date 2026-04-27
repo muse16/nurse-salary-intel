@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Registered Nurse Salary Guide 2026 | RN Pay by State, Specialty & Experience',
+  title: 'Registered Nurse Salary Guide 2026: $89,010/yr National Average',
   description:
-    'Complete RN salary guide for 2026. Average registered nurse pay by state, specialty, experience level, and setting. Data-backed. Updated April 2026.',
+    '2026 RN salary guide: $89,010/yr national average ($42.79/hr). See pay by all 50 states, 15+ specialties, 5 experience levels, and care settings — sourced from BLS OEWS.',
 };
 
 const faqs = [

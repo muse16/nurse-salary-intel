@@ -4,9 +4,9 @@ import ContractAuditCTA from '@/components/ContractAuditCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'How to Negotiate a Travel Nursing Contract | 2026',
+  title: 'How to Negotiate a Travel Nursing Contract 2026: Pay, Stipends and Clauses',
   description:
-    'Step-by-step guide to negotiating your travel nursing contract. Increase pay, improve stipends, and remove bad clauses with these proven tactics.',
+    'Step-by-step guide to negotiating travel nursing contracts in 2026. Raise pay, increase stipends, remove bad clauses, and use competing offers as leverage.',
 };
 
 const faqs = [

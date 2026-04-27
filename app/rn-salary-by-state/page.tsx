@@ -5,9 +5,9 @@ import RelatedResources from '@/components/RelatedResources';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary by State (2026): Hourly Pay + Highest Paying Cities',
+  title: 'RN Salary by State 2026: $89,010/yr National Avg — All 50 States',
   description:
-    'See the average RN salary in every state for 2026. Compare hourly pay, top cities, and earning potential for registered nurses.',
+    'RN salaries range $64K–$124K depending on state. 2026 national avg: $89,010/yr ($42.79/hr). Compare all 50 states, top cities, and specialty premiums in one place.',
 };
 
 const faqs = [

@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Tennessee (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Tennessee RN Salary 2026: $69,560/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Tennessee is $69,560/year ($33.44/hr) in 2026. Compare pay by city and specialty.',
+    'Tennessee RNs average $69,560/yr ($33.44/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

@@ -3,8 +3,9 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Travel Nurse Salary Guide (2026): How Much Do Travel Nurses Make?',
-  description: 'How much do travel nurses make in 2026? See weekly pay ranges, top-paying states, high-demand specialties, and how travel pay compares to staff nursing.',
+  title: 'Travel Nurse Salary Guide 2026: $2,000–$3,500/Week Breakdown',
+  description:
+    'How much do travel nurses make in 2026? Weekly pay ranges, highest-paying states, in-demand specialties, how stipends work, and how travel pay compares to staff nursing.',
 };
 
 const faqs = [

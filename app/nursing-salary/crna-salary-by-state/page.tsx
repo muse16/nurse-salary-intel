@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'CRNA Salary by State 2026 | Nurse Anesthetist Pay',
+  title: 'CRNA Salary by State 2026: $214,200/yr National Avg — California Pays $258K',
   description:
-    'See CRNA salaries for all 50 states in 2026. Nurse anesthetists earn $200K+. Compare pay, job outlook, and how to maximize your CRNA income.',
+    'CRNAs earn $214,200/yr nationally in 2026. California tops out at $258K. See all 50 states ranked, how CRNA pay compares to anesthesiologists, and strategies to maximize earnings.',
 };
 
 const faqs = [

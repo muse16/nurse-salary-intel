@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Travel Nurse Salary by State 2026 | Full Breakdown',
+  title: 'Travel Nurse Salary by State 2026: $2,000–$3,500 Per Week Ranked',
   description:
-    'Compare travel nursing salaries across all 50 states. See weekly and hourly pay rates, stipends, and cost-of-living adjustments for 2026.',
+    'Compare travel nursing pay across all 50 states in 2026. Weekly rates range $2,000–$3,500 depending on specialty and location. Includes full stipend breakdowns.',
 };
 
 const faqs = [

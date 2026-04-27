@@ -4,9 +4,9 @@ import ContractAuditCTA from '@/components/ContractAuditCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Travel Nurse Pay Package Breakdown 2026 | Explained',
+  title: 'Travel Nurse Pay Package Breakdown 2026: Every Line Item Explained',
   description:
-    'Understand every line item in your travel nurse pay package. Hourly rate, stipends, per diems, bonuses, and tax-free income explained simply.',
+    'Understand every line in your travel nurse pay package — hourly rate, housing stipend, M&IE per diem, completion bonuses, and how to compare offers across agencies.',
 };
 
 const faqs = [

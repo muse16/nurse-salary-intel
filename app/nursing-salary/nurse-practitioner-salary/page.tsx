@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Nurse Practitioner Salary 2026 | NP Pay by State',
+  title: 'Nurse Practitioner Salary 2026: $126,260/yr + PMHNP Tops $165K',
   description:
-    'Nurse practitioner salary data for 2026. Compare NP pay by state, specialty (FNP, PMHNP, AGNP), and practice setting. See where NPs earn the most.',
+    'NPs earn $126,260/yr ($60.70/hr) in 2026. PMHNPs earn $140K–$165K. See NP salary by state and specialty (FNP, PMHNP, AGNP) — plus ROI vs. remaining staff RN.',
 };
 
 const faqs = [

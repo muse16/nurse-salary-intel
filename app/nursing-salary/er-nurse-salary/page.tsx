@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'ER Nurse Salary 2026 | Emergency Nurse Pay Data',
+  title: 'ER Nurse Salary 2026: $89,000/yr Avg ($42.79/hr) + CEN Adds $4,800',
   description:
-    'ER nurse salary in 2026 — average pay, salary by state, experience, and certifications. See how emergency department nurses compare to other specialties.',
+    'ER nurses average $89,000/yr ($42.79/hr) in 2026 — 15% above the RN average. See pay by state, how CEN certification adds $4,800/yr, and travel ER nurse weekly rates.',
 };
 
 const faqs = [

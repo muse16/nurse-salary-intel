@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Louisiana (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Louisiana RN Salary 2026: $69,980/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Louisiana is $69,980/year ($33.65/hr) in 2026. Compare pay by city and specialty.',
+    'Louisiana RNs average $69,980/yr ($33.65/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

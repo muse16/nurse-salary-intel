@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'NICU Nurse Salary 2026 | Pay Data & Job Outlook',
+  title: 'NICU Nurse Salary 2026: $84,490/yr Avg + Travel NICU Earns $2,300–$3,000/wk',
   description:
-    'NICU nurse salary in 2026 — average pay, salary by state, experience level, and how RNC-NIC certification affects earnings.',
+    'NICU nurses earn $84,490/yr ($40.62/hr) in 2026. Travel NICU RNs make $2,300–$3,000/week. See pay by state, RNC-NIC certification premium, and job outlook through 2030.',
 };
 
 const faqs = [

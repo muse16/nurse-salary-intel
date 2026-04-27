@@ -4,9 +4,9 @@ import ContractAuditCTA from '@/components/ContractAuditCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Travel Nursing Contract Red Flags | 12 Warning Signs',
+  title: 'Travel Nursing Contract Red Flags 2026: 12 Warning Signs',
   description:
-    "Don't sign a bad travel nursing contract. Learn 12 red flags to watch for — cancellation clauses, low stipends, floating policies, and more.",
+    "12 travel nursing contract red flags nurses miss — cancellation penalties, low stipends, unprotected floating, and clauses that quietly cut your take-home pay. Know before you sign.",
 };
 
 const faqs = [

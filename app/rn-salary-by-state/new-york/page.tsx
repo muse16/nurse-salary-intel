@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary New York (2026): Hourly Pay + Highest Paying Cities',
+  title: 'New York RN Salary 2026: $98,560/yr + Hourly Rates by City',
   description:
-    'See the average RN salary in New York for 2026. Compare hourly pay, top cities, and earning potential for registered nurses.',
+    'New York RNs average $98,560/yr ($47.38/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

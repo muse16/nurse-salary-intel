@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Texas (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Texas RN Salary 2026: $82,000/yr + Hourly Rates by City',
   description:
-    'See the average RN salary in Texas for 2026. Compare hourly pay, top cities, and earning potential for registered nurses.',
+    'Texas RNs average $82,000/yr ($39.42/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

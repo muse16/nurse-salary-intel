@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Georgia (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Georgia RN Salary 2026: $75,080/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Georgia is $75,080/year ($36.10/hr) in 2026. Compare pay by city and specialty.',
+    'Georgia RNs average $75,080/yr ($36.10/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Illinois (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Illinois RN Salary 2026: $82,020/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Illinois is $82,020/year ($39.43/hr) in 2026. Compare pay by city and specialty.',
+    'Illinois RNs average $82,020/yr ($39.43/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

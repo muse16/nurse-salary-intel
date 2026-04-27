@@ -3,9 +3,9 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'How to Negotiate Nursing Salary | Step-by-Step 2026',
+  title: 'How to Negotiate Nursing Salary 2026: Scripts and Real Numbers',
   description:
-    'Learn how to negotiate your nursing salary with confidence. Data-backed steps, email templates, and scripts for staff nurses and new grads.',
+    'Data-backed salary negotiation for nurses in 2026 — word-for-word scripts, email templates, and market comps to help you earn $5K–$15K more per year.',
 };
 
 const faqs = [

@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Travel Nurse vs Staff Nurse Salary 2026 | Compared',
+  title: 'Travel Nurse vs Staff Nurse Salary 2026: $40K–$60K Gap Explained',
   description:
-    'Is travel nursing worth it financially? Compare travel nurse vs. staff nurse salary, benefits, retirement, and total compensation for 2026.',
+    'Travel nurses earn $40,000–$60,000 more than staff nurses in 2026 — before accounting for housing and benefits. See total comp comparison, retirement trade-offs, and who wins.',
 };
 
 const faqs = [

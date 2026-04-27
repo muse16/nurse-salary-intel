@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Maine (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Maine RN Salary 2026: $78,920/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Maine is $78,920/year ($37.94/hr) in 2026. Compare pay by city and specialty.',
+    'Maine RNs average $78,920/yr ($37.94/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

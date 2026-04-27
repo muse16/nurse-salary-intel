@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary New Mexico (2026): Hourly Pay + Highest Paying Cities',
+  title: 'New Mexico RN Salary 2026: $78,210/yr + Hourly Rates by City',
   description:
-    'Average RN salary in New Mexico is $78,210/year ($37.60/hr) in 2026. Compare pay by city and specialty.',
+    'New Mexico RNs average $78,210/yr ($37.60/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

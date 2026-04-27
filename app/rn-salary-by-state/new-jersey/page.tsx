@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary New Jersey (2026): Hourly Pay + Highest Paying Cities',
+  title: 'New Jersey RN Salary 2026: $93,230/yr + Hourly Rates by City',
   description:
-    'Average RN salary in New Jersey is $93,230/year ($44.82/hr) in 2026. Compare pay by city and specialty.',
+    'New Jersey RNs average $93,230/yr ($44.82/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

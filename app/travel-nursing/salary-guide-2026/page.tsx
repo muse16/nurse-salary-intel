@@ -5,9 +5,9 @@ import ContractAuditCTA from '@/components/ContractAuditCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Travel Nurse Salary Guide 2026 | NurseSalaryIntel',
+  title: 'Travel Nurse Salary Guide 2026: Pay by State, Specialty and Agency',
   description:
-    'Complete 2026 travel nursing salary guide. Average pay by state, specialty, and agency. Learn how pay packages work and how to maximize your earnings.',
+    'Travel nurses earn $90,000–$150,000+ per year in 2026. See weekly pay by state, how pay packages work, top agencies ranked, and how to maximize every assignment.',
   openGraph: {
     title: 'Travel Nurse Salary Guide 2026 | NurseSalaryIntel',
     description: 'Complete 2026 travel nursing salary guide. Average pay by state, specialty, and agency.',

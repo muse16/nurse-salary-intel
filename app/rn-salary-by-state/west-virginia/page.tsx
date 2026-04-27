@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary West Virginia (2026): Hourly Pay + Highest Paying Cities',
+  title: 'West Virginia RN Salary 2026: $68,950/yr + Hourly Rates by City',
   description:
-    'Average RN salary in West Virginia is $68,950/year ($33.15/hr) in 2026. Compare pay by city and specialty.',
+    'West Virginia RNs average $68,950/yr ($33.15/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

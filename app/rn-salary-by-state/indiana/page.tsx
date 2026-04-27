@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Indiana (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Indiana RN Salary 2026: $72,080/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Indiana is $72,080/year ($34.65/hr) in 2026. Compare pay by city and specialty.',
+    'Indiana RNs average $72,080/yr ($34.65/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

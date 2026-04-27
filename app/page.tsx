@@ -7,7 +7,7 @@ import HeroSection from '@/components/HeroSection';
 
 export const metadata: Metadata = {
   title: 'Nurse Salary Calculator (2026) – Estimate Your RN Pay by State & City',
-  description: 'Use our nurse salary calculator to estimate RN pay by state, city, and experience. Updated for 2026 with real data.',
+  description: 'Estimate RN pay by state and city — free 2026 nurse salary calculator. National avg $89,010/yr. Filter by specialty, experience, and hospital system.',
 };
 
 export default function Home() {

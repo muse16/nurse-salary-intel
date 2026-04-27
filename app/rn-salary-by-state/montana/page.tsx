@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Montana (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Montana RN Salary 2026: $72,950/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Montana is $72,950/year ($35.07/hr) in 2026. Compare pay by city and specialty.',
+    'Montana RNs average $72,950/yr ($35.07/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

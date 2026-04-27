@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Best Online RN to BSN Programs 2026 | Accredited, Affordable, Fast',
+  title: 'Best Online RN to BSN Programs 2026: Accredited, Under $15K, Fast',
   description:
-    'Top accredited online RN to BSN programs for 2026. Compare cost, timeline, accreditation, and salary outcomes. Find the right program for working nurses.',
+    'Top accredited online RN-to-BSN programs for 2026 — cost, timeline, accreditation status, and salary outcomes compared. Find the best fit for working nurses.',
 };
 
 const faqs = [

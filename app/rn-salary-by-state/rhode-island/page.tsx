@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Rhode Island (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Rhode Island RN Salary 2026: $88,030/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Rhode Island is $88,030/year ($42.32/hr) in 2026. Compare pay by city and specialty.',
+    'Rhode Island RNs average $88,030/yr ($42.32/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

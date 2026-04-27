@@ -4,9 +4,9 @@ import ContractAuditCTA from '@/components/ContractAuditCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Travel Nursing Contract Review Guide 2026 | Checklist',
+  title: 'Travel Nursing Contract Review Checklist 2026: 15 Must-Check Items',
   description:
-    'Free checklist to review your travel nursing contract before signing. Check pay, stipends, cancellation clauses, and more — or get a $9 professional audit.',
+    'Free 15-point checklist to review your travel nursing contract before signing. Verify pay, stipends, cancellation clauses, and more — or get a $9 professional audit.',
 };
 
 const faqs = [

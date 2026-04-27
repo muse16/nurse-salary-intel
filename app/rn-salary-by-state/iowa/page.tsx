@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Iowa (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Iowa RN Salary 2026: $66,220/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Iowa is $66,220/year ($31.84/hr) in 2026. Compare pay by city and specialty.',
+    'Iowa RNs average $66,220/yr ($31.84/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

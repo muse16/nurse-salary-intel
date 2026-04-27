@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary North Carolina (2026): Hourly Pay + Highest Paying Cities',
+  title: 'North Carolina RN Salary 2026: $72,970/yr + Hourly Rates by City',
   description:
-    'Average RN salary in North Carolina is $72,970/year ($35.08/hr) in 2026. Compare pay by city and specialty.',
+    'North Carolina RNs average $72,970/yr ($35.08/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Maryland (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Maryland RN Salary 2026: $84,820/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Maryland is $84,820/year ($40.78/hr) in 2026. Compare pay by city and specialty.',
+    'Maryland RNs average $84,820/yr ($40.78/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

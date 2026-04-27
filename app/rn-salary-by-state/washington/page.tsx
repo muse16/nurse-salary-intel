@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Washington (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Washington RN Salary 2026: $97,960/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Washington is $97,960/year ($47.10/hr) in 2026. Compare pay by city and specialty.',
+    'Washington RNs average $97,960/yr ($47.10/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Kentucky (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Kentucky RN Salary 2026: $69,480/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Kentucky is $69,480/year ($33.40/hr) in 2026. Compare pay by city and specialty.',
+    'Kentucky RNs average $69,480/yr ($33.40/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

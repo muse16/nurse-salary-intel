@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Nevada (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Nevada RN Salary 2026: $88,290/yr + Hourly Rates by City',
   description:
-    'Average RN salary in Nevada is $88,290/year ($42.45/hr) in 2026. Compare pay by city and specialty.',
+    'Nevada RNs average $88,290/yr ($42.45/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [

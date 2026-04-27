@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Nursing Salary by Specialty 2026 | Full Comparison',
+  title: 'Nursing Salary by Specialty 2026: CRNA $214K to CNA $36K (20+ Roles)',
   description:
-    'Compare nursing salaries across 20+ specialties. See which nursing roles pay the most in 2026 — CRNA, NP, ICU, ER, NICU, L&D, and more.',
+    'Compare 20+ nursing specialties by 2026 salary. CRNA: $214K. NP: $126K. ICU RN: $95K. L&D: $86K. ER RN: $89K. Med-surg: $77K. CNA: $36K. Hourly rates and career paths included.',
 };
 
 const faqs = [

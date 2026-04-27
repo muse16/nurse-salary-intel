@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Charge Nurse Salary 2026 | Pay Differential & Data',
+  title: 'Charge Nurse Salary 2026: $79K–$94K + $3–$5/hr Differential',
   description:
-    'Charge nurse salary in 2026 — average pay, charge nurse differential, salary by state, and whether the extra responsibility is worth the money.',
+    'Charge nurses earn $79,000–$94,000/yr in 2026, plus a $3–$5/hr charge differential. See pay by state, overtime rules, and whether the added responsibility is worth the extra $4K–$10K/yr.',
 };
 
 const faqs = [
