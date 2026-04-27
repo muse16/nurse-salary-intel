@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Manrope, Inter } from "next/font/google";
+import { Manrope } from "next/font/google";
 import Script from "next/script";
 import AssistLoopScript from "./components/AssistLoopScript";
 import { Analytics } from "@vercel/analytics/next";
@@ -9,13 +9,7 @@ import "./globals.css";
 const manrope = Manrope({
   variable: "--font-headline",
   subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
-});
-
-const inter = Inter({
-  variable: "--font-body",
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["600", "700", "800"],
 });
 
 // ─── REPLACE with your GA4 Measurement ID from analytics.google.com ───────────
@@ -68,7 +62,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className={`${manrope.variable} ${inter.variable} antialiased`}>
+      <body className={`${manrope.variable} antialiased`}>
         {children}
         <SiteFooter />
 
