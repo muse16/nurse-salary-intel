@@ -19,7 +19,7 @@ export default function SiteNav() {
     <nav className="fixed w-full top-0 z-50 glass-nav shadow-sm">
       <div className="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold tracking-tight text-primary font-headline">
-          <Image src="/images/logo.svg" alt="Nurse Salary Intel logo" width={32} height={32} />
+          <Image src="/images/logo.svg" alt="Nurse Salary Intel logo" width={32} height={32} priority />
           Nurse Salary Intel
         </Link>
 
