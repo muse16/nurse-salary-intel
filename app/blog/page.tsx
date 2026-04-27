@@ -64,7 +64,7 @@ export default function BlogPage() {
             </h2>
             <div className="space-y-6">
               {sorted.filter(p => p.category === cat).map((post) => (
-            <Link key={post.slug} href={post.href ?? `/blog/${post.slug}`} className="block group">
+            <Link key={post.slug} href={post.href ?? `/blog/${post.slug}`} className="block group" prefetch={false}>
               <article className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:border-blue-300 hover:shadow-md transition-all">
                 {post.coverImage && (
                   <div className="relative aspect-[16/9] bg-gray-100 overflow-hidden">

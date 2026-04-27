@@ -62,16 +62,22 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="fo-verify" content="39dcd307-ed45-4e62-b236-2bf2cfc7ab62" />
-        {/* AdSense: plain <script> avoids Next.js adding data-nscript attribute */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4487629215570224"
-          crossOrigin="anonymous"
-        />
+        {/* Preconnect to third-party origins so TCP/TLS is ready before scripts load */}
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className={`${manrope.variable} ${inter.variable} antialiased`}>
         {children}
         <SiteFooter />
+
+        {/* AdSense — afterInteractive keeps it off the critical path */}
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4487629215570224"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
 
         {/* Google Analytics GA4 */}
         <Script
