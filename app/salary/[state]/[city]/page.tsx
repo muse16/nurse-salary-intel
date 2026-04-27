@@ -75,17 +75,74 @@ export default async function CityPage({ params }: PageProps) {
     notFound();
   }
 
+  const hourlyRate = (cityData.avgSalary / 2080).toFixed(2);
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": `What is the average RN salary in ${cityData.city}, ${cityData.state}?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `Nurses in ${cityData.city} average $${cityData.avgSalary.toLocaleString()}/year across ${cityData.totalPositions} tracked positions, with a range of $${cityData.minSalary.toLocaleString()}–$${cityData.maxSalary.toLocaleString()}.`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `How much do nurses make per hour in ${cityData.city}?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `The average hourly rate for nurses in ${cityData.city} is approximately $${hourlyRate}/hr based on an annual salary of $${cityData.avgSalary.toLocaleString()}. Rates vary by shift differential, specialty, and experience.`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `What is the highest paying nursing hospital in ${cityData.city}?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `Nursing salaries in ${cityData.city} vary by hospital system and specialty. Tracked positions show a range of $${cityData.minSalary.toLocaleString()}–$${cityData.maxSalary.toLocaleString()}/year. Use the NurseSalaryIntel salary calculator to compare by specialty and experience level.`
+        }
+      }
+    ]
+  };
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": `RN Salary in ${cityData.city}, ${cityData.state} — 2026 Nurse Pay Guide`,
+    "description": `Nurse salary data for ${cityData.city}, ${cityData.state}. Average RN pay $${cityData.avgSalary.toLocaleString()}/year across ${cityData.totalPositions} tracked positions.`,
+    "dateModified": "2026-04-27",
+    "author": { "@type": "Organization", "name": "NurseSalaryIntel", "url": "https://nursesalaryintel.com" },
+    "publisher": { "@type": "Organization", "name": "NurseSalaryIntel", "url": "https://nursesalaryintel.com" },
+    "url": `https://nursesalaryintel.com/salary/${state}/${city}`
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nursesalaryintel.com" },
+      { "@type": "ListItem", "position": 2, "name": "RN Salary by State", "item": "https://nursesalaryintel.com/rn-salary-by-state" },
+      { "@type": "ListItem", "position": 3, "name": `${cityData.state} RN Salary`, "item": `https://nursesalaryintel.com/rn-salary-by-state/${state}` },
+      { "@type": "ListItem", "position": 4, "name": `${cityData.city} Nurse Salary`, "item": `https://nursesalaryintel.com/salary/${state}/${city}` }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <SiteNav />
       {/* Header */}
       <header className="bg-white border-b border-gray-200 shadow-sm pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <h1 className="text-3xl font-bold text-gray-900">
-            Nurse Salaries in {cityData.city}, {cityData.state}
+            RN Salary in {cityData.city}, {cityData.state} (2026)
           </h1>
           <p className="text-gray-500 mt-1 text-sm">
-            Salary data and contract intelligence for nursing positions
+            Last updated: April 2026 &nbsp;·&nbsp; Source: BLS OEWS + NurseSalaryIntel data
           </p>
         </div>
       </header>
@@ -250,16 +307,16 @@ export default async function CityPage({ params }: PageProps) {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">RN Salary FAQs — {cityData.city}, {cityData.state}</h2>
             <div className="space-y-4 text-sm">
               <div>
-                <p className="font-semibold text-gray-900">What is the average RN salary in {cityData.state}?</p>
-                <p className="text-gray-600 mt-1">Based on NurseSalaryIntel data, {cityData.city} nurses average ${cityData.avgSalary.toLocaleString()}/year across {cityData.totalPositions} tracked positions. Salaries vary by metro area across {cityData.state}. For state-level context, compare <Link href="/rn-salary-by-state/california" className="text-blue-600 hover:underline">RN salary in California</Link> and <Link href="/rn-salary-by-state/texas" className="text-blue-600 hover:underline">RN salary in Texas</Link>.</p>
+                <p className="font-semibold text-gray-900">What is the average RN salary in {cityData.city}, {cityData.state}?</p>
+                <p className="text-gray-600 mt-1">Based on NurseSalaryIntel data, {cityData.city} nurses average ${cityData.avgSalary.toLocaleString()}/year across {cityData.totalPositions} tracked positions, ranging from ${cityData.minSalary.toLocaleString()} to ${cityData.maxSalary.toLocaleString()}. See the full <Link href={`/rn-salary-by-state/${state}`} className="text-blue-600 hover:underline">RN salary in {cityData.state}</Link> guide for statewide context.</p>
               </div>
               <div>
-                <p className="font-semibold text-gray-900">How much do nurses make per hour in {cityData.state}?</p>
-                <p className="text-gray-600 mt-1">In {cityData.city}, the average hourly rate is approximately ${(cityData.avgSalary / 2080).toFixed(2)}/hr based on an annual salary of ${cityData.avgSalary.toLocaleString()}. Hourly rates vary by shift differential, specialty, and years of experience.</p>
+                <p className="font-semibold text-gray-900">How much do nurses make per hour in {cityData.city}?</p>
+                <p className="text-gray-600 mt-1">In {cityData.city}, the average hourly rate is approximately ${hourlyRate}/hr based on an annual salary of ${cityData.avgSalary.toLocaleString()}. Hourly rates vary by shift differential, specialty, and years of experience.</p>
               </div>
               <div>
                 <p className="font-semibold text-gray-900">What is the highest paying city for nurses in {cityData.state}?</p>
-                <p className="text-gray-600 mt-1">Pay varies across {cityData.state}&apos;s metro areas. Larger urban markets typically offer the highest base salaries. See our full <Link href="/rn-salary-by-state" className="text-blue-600 hover:underline">RN salary by state guide</Link>, or compare <Link href="/salary/california/san-francisco" className="text-blue-600 hover:underline">nurse salary in San Francisco</Link> and <Link href="/salary/texas/dallas" className="text-blue-600 hover:underline">nurse salary in Dallas</Link> as national benchmarks. Use the <Link href="/" className="text-blue-600 hover:underline">nurse salary calculator</Link> to estimate pay in any state.</p>
+                <p className="text-gray-600 mt-1">Pay varies across {cityData.state}&apos;s metro areas. Larger urban markets typically pay 10–20% above the statewide average. See our full <Link href="/rn-salary-by-state" className="text-blue-600 hover:underline">RN salary by state guide</Link> or use the <Link href="/" className="text-blue-600 hover:underline">nurse salary calculator</Link> to compare any location.</p>
               </div>
             </div>
           </div>

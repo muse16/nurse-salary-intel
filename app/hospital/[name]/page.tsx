@@ -18,6 +18,40 @@ const APPROVED_HOSPITALS = [
   'tenet healthcare',
   'ascension health',
   'cleveland clinic',
+  // GSC-active — getting impressions but were noindex
+  'atrium health',
+  'providence',
+  'massachusetts general',
+  // Major national systems
+  'johns hopkins',
+  'ucla health',
+  'ucsf',
+  'stanford health',
+  'mount sinai',
+  'nyu langone',
+  'cedars-sinai',
+  'memorial hermann',
+  'adventhealth',
+  'trinity health',
+  'northwell health',
+  'baptist health',
+  'geisinger',
+  'intermountain',
+  'ssm health',
+  'advocate aurora',
+  'sutter health',
+  'medstar health',
+  'lifepoint health',
+  'prisma health',
+  'wellstar',
+  'sharp healthcare',
+  'scripps health',
+  'baylor scott',
+  'memorial sloan',
+  'rush university',
+  'northwestern medicine',
+  'ohiohealth',
+  'piedmont healthcare',
 ];
 
 function isApproved(hospitalName: string): boolean {
@@ -67,17 +101,76 @@ export default async function HospitalPage({ params }: PageProps) {
     notFound();
   }
 
+  const hourlyRate = (hospitalData.avgSalary / 2080).toFixed(2);
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": `Nurse Salary at ${hospitalData.hospital} — 2026 Pay & Contract Data`,
+    "description": `Nurse salary and contract data for ${hospitalData.hospital} in ${hospitalData.city}, ${hospitalData.state}. Average pay $${hospitalData.avgSalary.toLocaleString()}/year.`,
+    "dateModified": "2026-04-27",
+    "author": { "@type": "Organization", "name": "NurseSalaryIntel", "url": "https://nursesalaryintel.com" },
+    "publisher": { "@type": "Organization", "name": "NurseSalaryIntel", "url": "https://nursesalaryintel.com" },
+    "url": `https://nursesalaryintel.com/hospital/${name}`
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nursesalaryintel.com" },
+      { "@type": "ListItem", "position": 2, "name": "Hospital Salary Data", "item": "https://nursesalaryintel.com" },
+      { "@type": "ListItem", "position": 3, "name": hospitalData.hospital, "item": `https://nursesalaryintel.com/hospital/${name}` }
+    ]
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": `How much do nurses make at ${hospitalData.hospital}?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `Nurses at ${hospitalData.hospital} in ${hospitalData.city}, ${hospitalData.state} average $${hospitalData.avgSalary.toLocaleString()}/year ($${hourlyRate}/hr) based on ${hospitalData.totalPositions} tracked position${hospitalData.totalPositions !== 1 ? 's' : ''}.`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `Does ${hospitalData.hospital} have contract red flags?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": hospitalData.redFlags.length === 0
+            ? `Our analysis shows no contract red flags for ${hospitalData.hospital}. The facility demonstrates transparent contracting practices.`
+            : `Our analysis identified ${hospitalData.redFlags.length} red flag${hospitalData.redFlags.length > 1 ? 's' : ''} in contracts at ${hospitalData.hospital}: ${hospitalData.redFlags.join(', ')}. Review all terms carefully before signing.`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `Is ${hospitalData.hospital} a good place to work as a nurse?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `${hospitalData.hospital} offers an average nurse salary of $${hospitalData.avgSalary.toLocaleString()}/year in ${hospitalData.city}, ${hospitalData.state}. ${hospitalData.redFlags.length === 0 ? 'Contract terms appear clean based on our analysis.' : `There are ${hospitalData.redFlags.length} contract concern${hospitalData.redFlags.length > 1 ? 's' : ''} to review before accepting.`} Use the NurseSalaryIntel contract audit tool to review your specific offer.`
+        }
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <SiteNav />
       {/* Header */}
       <header className="bg-white border-b border-gray-200 shadow-sm pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <h1 className="text-4xl font-bold text-gray-900">
-            {hospitalData.hospital}
+            {hospitalData.hospital} — Nurse Salary 2026
           </h1>
-          <p className="text-gray-600 mt-2">
-            {hospitalData.city}, {hospitalData.state}
+          <p className="text-gray-500 mt-2 text-sm">
+            {hospitalData.city}, {hospitalData.state} &nbsp;·&nbsp; Last updated: April 2026 &nbsp;·&nbsp; Source: NurseSalaryIntel data
           </p>
         </div>
       </header>
@@ -251,6 +344,39 @@ export default async function HospitalPage({ params }: PageProps) {
         {/* Footer Premium Audit CTA */}
         <div className="mt-12">
           <PremiumAuditCTA placement="footer" />
+        </div>
+
+        {/* FAQ Section */}
+        <div className="mt-10 bg-white rounded-xl shadow-sm p-7 border border-gray-100">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions — {hospitalData.hospital}</h2>
+          <div className="space-y-5 text-sm">
+            <div>
+              <p className="font-semibold text-gray-900">How much do nurses make at {hospitalData.hospital}?</p>
+              <p className="text-gray-600 mt-1">
+                Nurses at {hospitalData.hospital} average <strong>${hospitalData.avgSalary.toLocaleString()}/year</strong> (${hourlyRate}/hr) across {hospitalData.totalPositions} tracked position{hospitalData.totalPositions !== 1 ? 's' : ''} in {hospitalData.city}, {hospitalData.state}.
+              </p>
+            </div>
+            <div>
+              <p className="font-semibold text-gray-900">Does {hospitalData.hospital} have contract red flags?</p>
+              <p className="text-gray-600 mt-1">
+                {hospitalData.redFlags.length === 0
+                  ? `Our analysis shows no contract red flags at ${hospitalData.hospital}. Contract terms appear transparent and fair.`
+                  : `We identified ${hospitalData.redFlags.length} red flag${hospitalData.redFlags.length > 1 ? 's' : ''}: ${hospitalData.redFlags.join(', ')}. Review carefully or `}
+                {hospitalData.redFlags.length > 0 && (
+                  <Link href="/audit" className="text-blue-600 hover:underline">run a free contract audit</Link>
+                )}
+                {hospitalData.redFlags.length > 0 && ' before signing.'}
+              </p>
+            </div>
+            <div>
+              <p className="font-semibold text-gray-900">How does {hospitalData.hospital} pay compare to the state average?</p>
+              <p className="text-gray-600 mt-1">
+                The ${hospitalData.avgSalary.toLocaleString()}/year average at {hospitalData.hospital} can be compared against the statewide RN average using our{' '}
+                <Link href="/" className="text-blue-600 hover:underline">nurse salary calculator</Link>. See our{' '}
+                <Link href="/rn-salary-by-state" className="text-blue-600 hover:underline">RN salary by state guide</Link> for full context.
+              </p>
+            </div>
+          </div>
         </div>
       </main>
     </div>
