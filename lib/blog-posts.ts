@@ -32,7 +32,7 @@ const allBlogPosts: BlogPost[] = [
     readTime: '5 min read',
     focusKeyword: 'non-compete clause nursing contract',
     secondaryKeywords: ['nursing contract red flags 2026', 'non compete nurse enforceability', 'nurse non-compete push back'],
-    coverImage: '/blog/non-compete-clause-nursing-contract.png',
+    coverImage: '/blog/non-compete-clause-nursing-contract_compressed.png',
     imageAlt: 'Nurse reviewing a non-compete clause in a nursing contract with a pen',
     metaDescription: 'Non-compete clauses in nursing contracts can block you from working locally for 1–2 years. Learn what the language means, whether it\u2019s enforceable in your state, and the exact counter-offer to push back.',
     content: `
@@ -90,7 +90,7 @@ const allBlogPosts: BlogPost[] = [
     readTime: '6 min read',
     focusKeyword: 'travel nurse vs staff nurse salary',
     secondaryKeywords: ['travel nurse salary 2026', 'staff RN salary 2026', 'travel nurse take home pay'],
-    coverImage: '/blog/travel-nurse-vs-staff-nurse-salary-2026.png',
+    coverImage: '/blog/travel-nurse-vs-staff-nurse-salary-2026_compressed.png',
     imageAlt: 'Travel nurse vs staff nurse salary comparison with stethoscope and paycheck',
     metaDescription: 'Travel nurses can gross $2,800+ per week \u2014 but after taxes, housing, and contract gaps, staff nurses often keep more. Full 2026 take-home comparison.',
     content: `
@@ -156,7 +156,7 @@ const allBlogPosts: BlogPost[] = [
     readTime: '5 min read',
     focusKeyword: 'how to negotiate sign on bonus nurse',
     secondaryKeywords: ['new grad RN sign on bonus', 'nursing salary negotiation scripts', 'sign on bonus negotiation email'],
-    coverImage: '/blog/how-to-negotiate-sign-on-bonus-nursing.png',
+    coverImage: '/blog/how-to-negotiate-sign-on-bonus-nursing_compressed.png',
     imageAlt: 'New grad nurse negotiating a sign-on bonus at a hospital offer meeting',
     metaDescription: 'New grad RNs can absolutely negotiate a sign-on bonus \u2014 most just don\u2019t ask. Use these word-for-word email and phone scripts to get $5K\u2013$15K more.',
     content: `
@@ -223,7 +223,7 @@ Looking forward to hearing from you."
     readTime: '7 min read',
     focusKeyword: 'travel nursing contract red flags',
     secondaryKeywords: ['nursing contract red flags 2026', 'travel nurse contract warning signs', 'RN offer letter clauses'],
-    coverImage: '/blog/nursing-contract-red-flags-checklist.png',
+    coverImage: '/blog/nursing-contract-red-flags-checklist_compressed.png',
     imageAlt: '10 travel nursing contract red flags highlighted on an offer letter',
     metaDescription: 'A 2026 checklist of 10 nursing contract red flags \u2014 cancellation clauses, stipend traps, missed differentials \u2014 with exact language to watch for and how to negotiate each one.',
     content: `
@@ -275,7 +275,7 @@ Looking forward to hearing from you."
     readTime: '5 min read',
     focusKeyword: 'ICU nurse salary 2026',
     secondaryKeywords: ['ICU travel nurse salary', 'critical care nurse pay 2026', 'ICU RN hourly rate'],
-    coverImage: '/blog/icu-travel-nurse-salary-2026.png',
+    coverImage: '/blog/icu-travel-nurse-salary-2026_compressed.png',
     imageAlt: 'ICU nurse monitoring critical care patient with ventilator and monitors',
     metaDescription: '2026 ICU travel nurse salary data: gross weekly pay, top-paying states, and how to spot inflated stipends hiding a low base rate.',
     content: `
@@ -340,7 +340,7 @@ Looking forward to hearing from you."
     readTime: '6 min read',
     focusKeyword: 'travel nurse housing stipend tax rules',
     secondaryKeywords: ['IRS travel nurse stipend', 'tax-free housing nurse', 'tax home travel nursing'],
-    coverImage: '/blog/travel-nurse-housing-stipend-tax-rules.png',
+    coverImage: '/blog/travel-nurse-housing-stipend-tax-rules_compressed.png',
     imageAlt: 'Travel nurse reviewing housing stipend tax rules with IRS form 1040 and calculator',
     metaDescription: 'IRS rules decide whether your travel nurse housing stipend is tax-free or adds $8K\u2013$15K to your tax bill. Learn the tax home test and what disqualifies a stipend.',
     content: `
@@ -407,7 +407,7 @@ Looking forward to hearing from you."
     readTime: '5 min read',
     focusKeyword: 'best states new grad nurses salary 2026',
     secondaryKeywords: ['new grad RN salary by state', 'first year nurse salary 2026', 'starting RN salary'],
-    coverImage: '/blog/new-grad-rn-salary-by-state-2026.png',
+    coverImage: '/blog/new-grad-rn-salary-by-state-2026_compressed.png',
     imageAlt: 'New grad RN starting her first shift with state-by-state salary data overlay',
     metaDescription: '2026 new grad RN starting salary by state \u2014 California ($110K) to Alabama ($58K). See which states pay the most and where first-year nurses keep the most after cost of living.',
     content: `
@@ -474,7 +474,7 @@ Looking forward to hearing from you."
     readTime: '5 min read',
     focusKeyword: 'breaking travel nursing contract penalties',
     secondaryKeywords: ['quit travel nursing contract early', 'travel nurse cancellation clause', 'break travel contract consequences'],
-    coverImage: '/blog/breaking-travel-nursing-contract-consequences.png',
+    coverImage: '/blog/breaking-travel-nursing-contract-consequences_compressed.png',
     imageAlt: 'Nurse reviewing travel nursing contract cancellation clause with a pen',
     metaDescription: 'Breaking a travel nursing contract can cost $0 or $10K+ \u2014 it depends on the cancellation, housing, and recruiter clauses. Learn the real penalties and how to exit cleanly.',
     content: `
@@ -538,7 +538,7 @@ Looking forward to hearing from you."
     readTime: '4 min read',
     focusKeyword: 'nursing contract audit kit',
     secondaryKeywords: ['free nurse contract review', 'travel nurse negotiation scripts', 'nursing contract checklist'],
-    coverImage: '/blog/nursing-contract-audit-kit-what-it-includes.png',
+    coverImage: '/blog/nursing-contract-audit-kit-what-it-includes_compressed.png',
     imageAlt: 'Nursing contract audit kit with checklist, red flag guide, and negotiation scripts',
     metaDescription: 'What\u2019s inside the free Nursing Contract Audit Kit: the full clause checklist, red-flag guide, and word-for-word negotiation scripts used to fix travel and staff nurse contracts.',
     content: `
@@ -601,7 +601,7 @@ Looking forward to hearing from you."
     readTime: '9 min read',
     focusKeyword: 'travel nurse salary by state 2026',
     secondaryKeywords: ['travel nurse pay by state', 'highest paying travel nurse states 2026', 'travel RN weekly pay'],
-    coverImage: '/blog/travel-nurse-salary-by-state-2026.png',
+    coverImage: '/blog/travel-nurse-salary-by-state-2026_compressed.png',
     imageAlt: 'Travel nurse salary by state 2026 map showing weekly pay ranges',
     metaDescription: 'Compare travel nurse salary by state for 2026. See weekly pay, taxable wage, and stipend averages for all 50 states, plus the 10 highest-paying markets this year.',
     content: `
@@ -761,7 +761,7 @@ Looking forward to hearing from you."
     readTime: '8 min read',
     focusKeyword: 'CRNA salary by state 2026',
     secondaryKeywords: ['highest paying CRNA states', 'nurse anesthetist salary 2026', 'CRNA pay by state'],
-    coverImage: '/blog/crna-salary-by-state-2026.png',
+    coverImage: '/blog/crna-salary-by-state-2026_compressed.png',
     imageAlt: 'CRNA salary by state 2026 chart showing nurse anesthetist pay',
     metaDescription: 'See CRNA salary in all 50 states for 2026. Nurse anesthetist pay ranges from $180K to over $300K depending on state, scope of practice laws, and practice setting.',
     content: `
@@ -928,7 +928,7 @@ Looking forward to hearing from you."
     readTime: '10 min read',
     focusKeyword: 'how to negotiate travel nursing contract',
     secondaryKeywords: ['travel nurse negotiation scripts', 'negotiate travel nurse pay', 'travel nursing contract negotiation'],
-    coverImage: '/blog/how-to-negotiate-travel-nursing-contract.png',
+    coverImage: '/blog/how-to-negotiate-travel-nursing-contract_compressed.png',
     imageAlt: 'Travel nurse negotiating a contract on the phone with a recruiter',
     metaDescription: 'Learn exactly how to negotiate a travel nursing contract in 2026 — bill rate, stipends, cancellation, overtime, and call — with word-for-word scripts and counter-offer templates.',
     content: `
@@ -1054,7 +1054,7 @@ Thanks,<br>
     readTime: '9 min read',
     focusKeyword: 'travel nurse pay package breakdown',
     secondaryKeywords: ['travel nurse taxable wage', 'travel nurse stipend breakdown', 'travel nurse take home pay'],
-    coverImage: '/blog/travel-nurse-pay-package-breakdown.png',
+    coverImage: '/blog/travel-nurse-pay-package-breakdown_compressed.png',
     imageAlt: 'Travel nurse pay package breakdown showing taxable wage and tax-free stipend',
     metaDescription: 'Decode your travel nurse pay package in 2026 — taxable wage, tax-free stipends, GSA rates, bill rates, and actual take-home pay. Compare offers line by line.',
     content: `
@@ -1228,7 +1228,7 @@ Thanks,<br>
     readTime: '14 min read',
     focusKeyword: 'RN salary by state 2026',
     secondaryKeywords: ['nurse salary by state', 'highest paying states for nurses', 'registered nurse pay by state'],
-    coverImage: '/blog/rn-salary-by-state-2026.png',
+    coverImage: '/blog/rn-salary-by-state-2026_compressed.png',
     imageAlt: 'RN salary by state 2026 map showing registered nurse pay across all 50 states',
     metaDescription: 'Complete 2026 guide to RN salary in every state. See base pay, hourly rates, cost-of-living adjusted rankings, and where registered nurses earn the most real money.',
     content: `
@@ -1440,7 +1440,7 @@ Thanks,<br>
     readTime: '10 min read',
     focusKeyword: 'nurse practitioner salary by specialty 2026',
     secondaryKeywords: ['NP salary 2026', 'highest paying NP specialties', 'nurse practitioner pay 2026'],
-    coverImage: '/blog/np-salary-guide-2026.png',
+    coverImage: '/blog/np-salary-guide-2026_compressed.png',
     imageAlt: 'Nurse practitioner salary by specialty 2026 chart ranking NP tracks',
     metaDescription: 'The 2026 nurse practitioner salary guide: every NP specialty ranked, state-by-state pay, and which tracks offer the highest real return on a DNP or MSN-NP.',
     content: `
@@ -1609,7 +1609,7 @@ Thanks,<br>
     readTime: '8 min read',
     focusKeyword: 'california nurse salary 2026',
     secondaryKeywords: ['california RN salary', 'nurse salary california by city', 'travel nurse california 2026'],
-    coverImage: '/blog/california-nurse-salary-2026.png',
+    coverImage: '/blog/california-nurse-salary-2026_compressed.png',
     imageAlt: 'California nurse smiling outside a hospital with Golden Gate Bridge in background',
     metaDescription: 'California RN salary 2026: $124K average statewide, up to $145K in San Francisco. See pay by city, specialty, and what a California nurse actually takes home after taxes.',
     content: `
@@ -1772,7 +1772,7 @@ Thanks,<br>
     readTime: '9 min read',
     focusKeyword: 'travel nursing contract clauses',
     secondaryKeywords: ['nursing contract clauses to watch', 'contract clauses cost nurses', 'nurse contract negotiation'],
-    coverImage: '/blog/5-contract-clauses-cost-nurses-thousands.png',
+    coverImage: '/blog/5-contract-clauses-cost-nurses-thousands_compressed.png',
     imageAlt: 'Contract clauses highlighted in red that cost nurses thousands of dollars',
     metaDescription: 'The 5 contract clauses that quietly cost nurses thousands each year — from cancellation loopholes to sign-on clawbacks. How to spot them and the exact counter-offer language to fix them.',
     content: `
@@ -1887,7 +1887,7 @@ Thanks,<br>
     readTime: '10 min read',
     focusKeyword: 'highest paying states for nurses cost of living',
     secondaryKeywords: ['best states for nurses 2026', 'nurse salary adjusted cost of living', 'real nurse pay by state'],
-    coverImage: '/blog/highest-paying-states-cost-of-living-adjusted.png',
+    coverImage: '/blog/highest-paying-states-cost-of-living-adjusted_compressed.png',
     imageAlt: 'Highest paying states for nurses 2026 adjusted for cost of living',
     metaDescription: 'Which states give nurses the most real purchasing power in 2026? Complete cost-of-living adjusted ranking using BEA regional price parity data.',
     content: `
@@ -2001,7 +2001,7 @@ Thanks,<br>
     readTime: '8 min read',
     focusKeyword: 'NICU nurse salary by state 2026',
     secondaryKeywords: ['NICU RN pay', 'neonatal nurse salary', 'NICU travel nurse pay'],
-    coverImage: '/blog/nicu-nurse-salary-by-state-2026.png',
+    coverImage: '/blog/nicu-nurse-salary-by-state-2026_compressed.png',
     imageAlt: 'NICU nurse salary by state 2026 showing neonatal intensive care unit pay',
     metaDescription: 'NICU nurse salary in all 50 states for 2026. See base pay, differentials, Level III/IV premiums, and travel NICU weekly rates.',
     content: `
@@ -2138,7 +2138,7 @@ Thanks,<br>
     readTime: '15 min read',
     focusKeyword: 'travel nurse salary guide 2026',
     secondaryKeywords: ['travel nurse pay 2026', 'complete travel nursing salary guide', 'travel RN compensation 2026'],
-    coverImage: '/blog/travel-nursing-salary-guide-2026.png',
+    coverImage: '/blog/travel-nursing-salary-guide-2026_compressed.png',
     imageAlt: 'Complete travel nurse salary guide 2026 cover with stethoscope and travel bag',
     metaDescription: 'The complete 2026 guide to travel nurse pay — average weekly rates, state-by-state tables, specialty premiums, agency comparisons, tax-free stipend rules, and contract negotiation.',
     content: `
@@ -2320,7 +2320,7 @@ Thanks,<br>
     readTime: '7 min read',
     focusKeyword: 'nurse night shift differential pay',
     secondaryKeywords: ['night shift differential 2026', 'night nurse pay', 'shift differential negotiation'],
-    coverImage: '/blog/night-shift-differential-pay.png',
+    coverImage: '/blog/night-shift-differential-pay_compressed.png',
     imageAlt: 'Nurse working night shift in a dimly lit hospital corridor',
     metaDescription: 'How much is a nurse night shift differential in 2026? Average rates by state, what to negotiate, and the 4 common traps that cost nurses differential pay.',
     content: `
@@ -2426,7 +2426,7 @@ Thanks,<br>
     readTime: '8 min read',
     focusKeyword: 'L&D nurse salary vs ICU',
     secondaryKeywords: ['L&D vs ICU pay', 'labor and delivery nurse salary', 'ICU nurse pay comparison'],
-    coverImage: '/blog/ld-vs-icu-nurse-salary.png',
+    coverImage: '/blog/ld-vs-icu-nurse-salary_compressed.png',
     imageAlt: 'L&D vs ICU nurse salary comparison showing monitors from each unit',
     metaDescription: 'L&D vs ICU nurse salary comparison for 2026. See base pay, differentials, travel contract rates, and which specialty offers higher total compensation.',
     content: `
@@ -2554,7 +2554,7 @@ Thanks,<br>
     readTime: '8 min read',
     focusKeyword: 'er vs icu nurse salary',
     secondaryKeywords: ['icu nurse salary', 'er nurse salary', 'emergency room nurse pay', 'critical care nurse salary', 'travel nurse icu vs er'],
-    coverImage: '/blog/er-vs-icu-nurse-salary.png',
+    coverImage: '/blog/er-vs-icu-nurse-salary_compressed.png',
     imageAlt: 'Side-by-side comparison of ER and ICU nurse workstations with salary data overlay',
     metaDescription: 'ER vs ICU nurse salary compared for 2026: base pay, travel rates, differentials, and which specialty offers the better career ceiling.',
     content: `
@@ -2676,7 +2676,7 @@ Thanks,<br>
     readTime: '7 min read',
     focusKeyword: 'bsn vs adn salary difference',
     secondaryKeywords: ['bsn salary premium', 'adn rn salary', 'rn to bsn worth it', 'bsn salary increase', 'nursing degree salary comparison'],
-    coverImage: '/blog/bsn-vs-adn-salary-difference.png',
+    coverImage: '/blog/bsn-vs-adn-salary-difference_compressed.png',
     imageAlt: 'Two nursing graduates comparing diplomas with salary chart in background showing BSN vs ADN earnings',
     metaDescription: 'BSN vs ADN salary difference explained for 2026: the $6K annual premium, break-even timeline, Magnet requirements, and whether the degree is worth the cost.',
     content: `
@@ -2773,7 +2773,7 @@ Thanks,<br>
     readTime: '11 min read',
     focusKeyword: 'nursing salary by specialty 2026',
     secondaryKeywords: ['nursing specialty pay', 'highest paying nursing specialty', 'rn specialty salary comparison', 'nursing salary guide', 'best paying nursing jobs 2026'],
-    coverImage: '/blog/nursing-salary-by-specialty-2026.png',
+    coverImage: '/blog/nursing-salary-by-specialty-2026_compressed.png',
     imageAlt: 'Chart comparing nursing specialty salaries from CRNA at top to LTC at bottom with 2026 data',
     metaDescription: 'Nursing salary by specialty 2026: complete pay guide for every role from CRNA ($214K–$260K) to LTC ($70K–$92K), with travel rates, state data, and tips to increase your pay.',
     content: `
@@ -2889,7 +2889,7 @@ Thanks,<br>
     readTime: '10 min read',
     focusKeyword: 'how to read a travel nursing contract',
     secondaryKeywords: ['travel nursing contract clauses', 'travel nurse contract review', 'travel nursing contract red flags', 'guaranteed hours clause travel nursing'],
-    coverImage: '/blog/how-to-read-travel-nursing-contract.png',
+    coverImage: '/blog/how-to-read-travel-nursing-contract_compressed.png',
     imageAlt: 'Travel nurse reviewing a contract with a highlighter at a desk',
     metaDescription: 'Learn how to read a travel nursing contract the right way. 12 must-check sections, red flag phrases, and what to do before you sign.',
     content: `
@@ -3005,7 +3005,7 @@ Thanks,<br>
     readTime: '9 min read',
     focusKeyword: 'cna lpn rn salary comparison',
     secondaryKeywords: ['nursing career ladder salary', 'lpn vs rn salary 2026', 'cna salary 2026', 'nursing salary by credential'],
-    coverImage: '/blog/cna-lpn-rn-salary-comparison-2026.png',
+    coverImage: '/blog/cna-lpn-rn-salary-comparison-2026_compressed.png',
     imageAlt: 'Chart showing CNA, LPN, and RN salary ladder from entry level to nurse practitioner',
     metaDescription: 'CNA vs LPN vs RN salary comparison for 2026. See national averages, state-by-state data, and the ROI of advancing your nursing credential.',
     content: `
@@ -3126,7 +3126,7 @@ Thanks,<br>
     readTime: '14 min read',
     focusKeyword: 'nurse salary negotiation',
     secondaryKeywords: ['how to negotiate nursing salary', 'travel nurse negotiation', 'nursing sign-on bonus negotiation', 'nurse pay raise script'],
-    coverImage: '/blog/nurse-salary-negotiation-playbook.png',
+    coverImage: '/blog/nurse-salary-negotiation-playbook_compressed.png',
     imageAlt: 'Nurse reviewing a salary offer letter at a desk with a notepad of negotiation talking points',
     metaDescription: 'The complete nurse salary negotiation playbook for 2026. Scripts, tactics, and tables for staff nurses and travel nurses to earn $15K–$40K more over their career.',
     content: `
@@ -3262,7 +3262,7 @@ Thanks,<br>
     readTime: '8 min read',
     focusKeyword: 'charge nurse salary',
     secondaryKeywords: ['charge nurse pay differential', 'charge vs staff nurse pay', 'nursing leadership salary', 'charge nurse vs supervisor salary'],
-    coverImage: '/blog/charge-nurse-salary-vs-staff.png',
+    coverImage: '/blog/charge-nurse-salary-vs-staff_compressed.png',
     imageAlt: 'Charge nurse reviewing a whiteboard assignment board on a busy medical-surgical unit',
     metaDescription: 'Charge nurse salary vs staff nurse: how much more do charge nurses actually earn, is the differential negotiable, and does the career path to manager pay off?',
     content: `
