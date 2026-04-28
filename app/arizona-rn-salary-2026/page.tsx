@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
@@ -7,7 +7,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Arizona RN Salary 2026: $39–$47/hr + Phoenix vs Tucson',
   description: 'Arizona RN salary 2026: Phoenix averages $85K–$98K, Tucson $79K–$89K. Banner Health, Mayo Clinic, and HonorHealth pay data plus 2.5% flat-tax advantage and sign-on bonuses.',
-  alternates: { canonical: 'https://nursesalaryintel.com/arizona-rn-salary-2026/' },
+  alternates: { canonical: 'https://nursesalaryintel.com/arizona-rn-salary-2026' },
 };
 
 const cityData = [

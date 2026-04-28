@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
@@ -6,7 +6,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Neonatal Nurse Salary 2026: What Newborn Care Nurses Actually Earn',
   description: 'Neonatal nurse salary 2026: $68,000–$115,000/year depending on unit level, state, and certification. NICU vs. mother-baby pay comparison, RNC-NIC impact, and top-paying hospitals.',
-  alternates: { canonical: 'https://nursesalaryintel.com/neonatal-nurse-salary-2026/' },
+  alternates: { canonical: 'https://nursesalaryintel.com/neonatal-nurse-salary-2026' },
 };
 
 const author = { name: 'NurseSalaryIntel Editorial Team', link: '/about' };

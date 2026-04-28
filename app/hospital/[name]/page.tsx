@@ -9,56 +9,6 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 
-const APPROVED_HOSPITALS = [
-  'banner health',
-  'kaiser permanente',
-  'hca healthcare',
-  'mayo clinic',
-  'commonspirit health',
-  'tenet healthcare',
-  'ascension health',
-  'cleveland clinic',
-  // GSC-active — getting impressions but were noindex
-  'atrium health',
-  'providence',
-  'massachusetts general',
-  // Major national systems
-  'johns hopkins',
-  'ucla health',
-  'ucsf',
-  'stanford health',
-  'mount sinai',
-  'nyu langone',
-  'cedars-sinai',
-  'memorial hermann',
-  'adventhealth',
-  'trinity health',
-  'northwell health',
-  'baptist health',
-  'geisinger',
-  'intermountain',
-  'ssm health',
-  'advocate aurora',
-  'sutter health',
-  'medstar health',
-  'lifepoint health',
-  'prisma health',
-  'wellstar',
-  'sharp healthcare',
-  'scripps health',
-  'baylor scott',
-  'memorial sloan',
-  'rush university',
-  'northwestern medicine',
-  'ohiohealth',
-  'piedmont healthcare',
-];
-
-function isApproved(hospitalName: string): boolean {
-  const n = hospitalName.toLowerCase();
-  return APPROVED_HOSPITALS.some(a => n.includes(a));
-}
-
 interface PageProps {
   params: Promise<{
     name: string;
@@ -86,9 +36,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${hospitalData.hospital} RN Salary 2026: Pay, Red Flags & Contracts`,
     description: `${hospitalData.hospital} in ${hospitalData.city}, ${hospitalData.state}: RNs earn $${hospitalData.avgSalary.toLocaleString()}/yr (2026 avg). See pay by unit, contract red flags, and comparison to competing systems.`,
-    robots: isApproved(hospitalData.hospital)
-      ? { index: true, follow: true }
-      : { index: false, follow: true },
   };
 }
 

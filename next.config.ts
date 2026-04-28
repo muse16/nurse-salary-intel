@@ -32,6 +32,16 @@ const nextConfig: NextConfig = {
         destination: '/rn-salary-by-state/florida',
         permanent: true,
       },
+      {
+        source: '/highest-paying-states-for-nurses',
+        destination: '/highest-paying-states-for-rns-2026',
+        permanent: true,
+      },
+      {
+        source: '/rn-salary-calculator',
+        destination: '/audit',
+        permanent: true,
+      },
     ];
   },
 };

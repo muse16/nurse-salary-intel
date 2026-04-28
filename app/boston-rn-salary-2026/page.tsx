@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
@@ -6,7 +6,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Boston RN Salary 2026: Hourly Pay, Hospital Breakdown & What You Keep',
   description: 'Boston RN salary 2026: $105,000–$122,000 average, $50–$59/hr base. Mass General, Brigham, BIDMC, and Boston Children\'s pay data with shift differentials and take-home analysis.',
-  alternates: { canonical: 'https://nursesalaryintel.com/boston-rn-salary-2026/' },
+  alternates: { canonical: 'https://nursesalaryintel.com/boston-rn-salary-2026' },
 };
 
 const author = { name: 'NurseSalaryIntel Editorial Team', link: '/about' };

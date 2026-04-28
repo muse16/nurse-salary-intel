@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
@@ -7,7 +7,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'New York RN Salary 2026: NYC Pay + Upstate Breakdown',
   description: 'New York RN salary 2026: NYC averages $108K–$123K+, upstate $75K–$90K. Union pay scales, tax impact, hospital-by-hospital data for NYU Langone, NewYork-Presbyterian, and Mount Sinai.',
-  alternates: { canonical: 'https://nursesalaryintel.com/new-york-rn-salary-2026/' },
+  alternates: { canonical: 'https://nursesalaryintel.com/new-york-rn-salary-2026' },
 };
 
 const nycEmployerData = [
