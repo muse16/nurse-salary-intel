@@ -153,6 +153,43 @@ export default function SEOPageLayout({
           </div>
         )}
 
+        {/* Top Nursing Specialties — rendered on state pages */}
+        {stateName && (
+          <div className="border-t border-outline-variant pt-8 mt-8">
+            <h2 className="text-xl font-bold font-headline text-on-surface mb-4">
+              Top Nursing Specialties in {stateName}
+            </h2>
+            <p className="text-on-surface-variant text-sm mb-4">
+              Specialty and certification significantly impact RN pay in {stateName}. See how each role compares nationally and within the state.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {[
+                { href: '/nursing-salary/icu-nurse-salary', label: 'ICU Nurse Salary', desc: 'Critical care pay + CCRN premium' },
+                { href: '/nursing-salary/er-nurse-salary', label: 'ER Nurse Salary', desc: 'Emergency nursing pay by state' },
+                { href: '/nursing-salary/nicu-nurse-salary', label: 'NICU Nurse Salary', desc: 'Neonatal ICU pay + certification' },
+                { href: '/nursing-salary/nurse-practitioner-salary', label: 'Nurse Practitioner Salary', desc: 'NP pay by specialty and state' },
+                { href: '/nursing-salary/crna-salary-by-state', label: 'CRNA Salary', desc: 'Highest-paid nursing role — $214K avg' },
+                { href: '/nursing-salary/charge-nurse-salary', label: 'Charge Nurse Salary', desc: 'Leadership premium over staff RN' },
+              ].map(({ href, label, desc }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="flex items-center justify-between p-3 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors"
+                >
+                  <div>
+                    <p className="text-sm font-semibold text-primary">{label}</p>
+                    <p className="text-xs text-on-surface-variant">{desc}</p>
+                  </div>
+                  <span className="text-on-surface-variant text-xs ml-3">→</span>
+                </Link>
+              ))}
+            </div>
+            <p className="text-xs text-on-surface-variant mt-4">
+              Full rankings: <Link href="/highest-paying-nursing-specialties" className="text-primary hover:underline">Highest-paying nursing specialties 2026 →</Link>
+            </p>
+          </div>
+        )}
+
         <ContractAuditCTA variant="banner" />
       </main>
     </div>
