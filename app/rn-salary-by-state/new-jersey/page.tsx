@@ -48,6 +48,8 @@ export default function NewJerseyRNSalary() {
       schemaTitle="RN Salary in New Jersey 2026"
       schemaDescription="New Jersey RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/new-jersey"
+      stateName="New Jersey"
+      stateSlug="new-jersey"
       faqs={faqs}
     >
       <p>

@@ -48,6 +48,8 @@ export default function IllinoisRNSalary() {
       schemaTitle="RN Salary in Illinois 2026"
       schemaDescription="Illinois RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/illinois"
+      stateName="Illinois"
+      stateSlug="illinois"
       faqs={faqs}
     >
       <p>

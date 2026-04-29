@@ -48,6 +48,8 @@ export default function GeorgiaRNSalary() {
       schemaTitle="RN Salary in Georgia 2026"
       schemaDescription="Georgia RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/georgia"
+      stateName="Georgia"
+      stateSlug="georgia"
       faqs={faqs}
     >
       <p>

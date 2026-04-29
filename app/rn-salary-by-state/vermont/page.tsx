@@ -48,6 +48,8 @@ export default function VermontRNSalary() {
       schemaTitle="RN Salary in Vermont 2026"
       schemaDescription="Vermont RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/vermont"
+      stateName="Vermont"
+      stateSlug="vermont"
       faqs={faqs}
     >
       <p>

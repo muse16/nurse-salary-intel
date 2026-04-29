@@ -48,6 +48,8 @@ export default function HawaiiRNSalary() {
       schemaTitle="RN Salary in Hawaii 2026"
       schemaDescription="Hawaii RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/hawaii"
+      stateName="Hawaii"
+      stateSlug="hawaii"
       faqs={faqs}
     >
       <p>

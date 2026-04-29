@@ -48,6 +48,8 @@ export default function NevadaRNSalary() {
       schemaTitle="RN Salary in Nevada 2026"
       schemaDescription="Nevada RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/nevada"
+      stateName="Nevada"
+      stateSlug="nevada"
       faqs={faqs}
     >
       <p>

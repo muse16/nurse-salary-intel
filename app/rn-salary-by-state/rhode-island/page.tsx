@@ -48,6 +48,8 @@ export default function RhodeIslandRNSalary() {
       schemaTitle="RN Salary in Rhode Island 2026"
       schemaDescription="Rhode Island RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/rhode-island"
+      stateName="Rhode Island"
+      stateSlug="rhode-island"
       faqs={faqs}
     >
       <p>

@@ -48,6 +48,8 @@ export default function NebraskaRNSalary() {
       schemaTitle="RN Salary in Nebraska 2026"
       schemaDescription="Nebraska RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/nebraska"
+      stateName="Nebraska"
+      stateSlug="nebraska"
       faqs={faqs}
     >
       <p>

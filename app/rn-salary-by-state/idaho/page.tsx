@@ -48,6 +48,8 @@ export default function IdahoRNSalary() {
       schemaTitle="RN Salary in Idaho 2026"
       schemaDescription="Idaho RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/idaho"
+      stateName="Idaho"
+      stateSlug="idaho"
       faqs={faqs}
     >
       <p>

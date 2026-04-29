@@ -48,6 +48,8 @@ export default function OregonRNSalary() {
       schemaTitle="RN Salary in Oregon 2026"
       schemaDescription="Oregon RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/oregon"
+      stateName="Oregon"
+      stateSlug="oregon"
       faqs={faqs}
     >
       <p>

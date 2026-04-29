@@ -48,6 +48,8 @@ export default function MississippiRNSalary() {
       schemaTitle="RN Salary in Mississippi 2026"
       schemaDescription="Mississippi RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/mississippi"
+      stateName="Mississippi"
+      stateSlug="mississippi"
       faqs={faqs}
     >
       <p>

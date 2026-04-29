@@ -48,6 +48,8 @@ export default function UtahRNSalary() {
       schemaTitle="RN Salary in Utah 2026"
       schemaDescription="Utah RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/utah"
+      stateName="Utah"
+      stateSlug="utah"
       faqs={faqs}
     >
       <p>

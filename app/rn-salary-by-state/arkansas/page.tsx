@@ -48,6 +48,8 @@ export default function ArkansasRNSalary() {
       schemaTitle="RN Salary in Arkansas 2026"
       schemaDescription="Arkansas RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/arkansas"
+      stateName="Arkansas"
+      stateSlug="arkansas"
       faqs={faqs}
     >
       <p>

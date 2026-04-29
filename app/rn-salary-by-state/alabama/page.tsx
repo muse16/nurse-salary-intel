@@ -48,6 +48,8 @@ export default function AlabamaRNSalary() {
       schemaTitle="RN Salary in Alabama 2026"
       schemaDescription="Alabama RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/alabama"
+      stateName="Alabama"
+      stateSlug="alabama"
       faqs={faqs}
     >
       <p>

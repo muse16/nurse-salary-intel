@@ -48,6 +48,8 @@ export default function ColoradoRNSalary() {
       schemaTitle="RN Salary in Colorado 2026"
       schemaDescription="Colorado RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/colorado"
+      stateName="Colorado"
+      stateSlug="colorado"
       faqs={faqs}
     >
       <p>

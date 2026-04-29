@@ -48,6 +48,8 @@ export default function NorthDakotaRNSalary() {
       schemaTitle="RN Salary in North Dakota 2026"
       schemaDescription="North Dakota RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/north-dakota"
+      stateName="North Dakota"
+      stateSlug="north-dakota"
       faqs={faqs}
     >
       <p>

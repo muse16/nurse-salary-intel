@@ -48,6 +48,8 @@ export default function WestVirginiaRNSalary() {
       schemaTitle="RN Salary in West Virginia 2026"
       schemaDescription="West Virginia RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/west-virginia"
+      stateName="West Virginia"
+      stateSlug="west-virginia"
       faqs={faqs}
     >
       <p>

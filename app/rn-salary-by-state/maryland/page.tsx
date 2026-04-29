@@ -48,6 +48,8 @@ export default function MarylandRNSalary() {
       schemaTitle="RN Salary in Maryland 2026"
       schemaDescription="Maryland RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/maryland"
+      stateName="Maryland"
+      stateSlug="maryland"
       faqs={faqs}
     >
       <p>

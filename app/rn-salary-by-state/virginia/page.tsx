@@ -48,6 +48,8 @@ export default function VirginiaRNSalary() {
       schemaTitle="RN Salary in Virginia 2026"
       schemaDescription="Virginia RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/virginia"
+      stateName="Virginia"
+      stateSlug="virginia"
       faqs={faqs}
     >
       <p>

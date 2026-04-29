@@ -48,6 +48,8 @@ export default function MontanaRNSalary() {
       schemaTitle="RN Salary in Montana 2026"
       schemaDescription="Montana RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/montana"
+      stateName="Montana"
+      stateSlug="montana"
       faqs={faqs}
     >
       <p>

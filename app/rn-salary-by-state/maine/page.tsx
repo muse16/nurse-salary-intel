@@ -48,6 +48,8 @@ export default function MaineRNSalary() {
       schemaTitle="RN Salary in Maine 2026"
       schemaDescription="Maine RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/maine"
+      stateName="Maine"
+      stateSlug="maine"
       faqs={faqs}
     >
       <p>

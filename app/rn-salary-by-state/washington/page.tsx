@@ -48,6 +48,8 @@ export default function WashingtonRNSalary() {
       schemaTitle="RN Salary in Washington 2026"
       schemaDescription="Washington RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/washington"
+      stateName="Washington"
+      stateSlug="washington"
       faqs={faqs}
     >
       <p>

@@ -48,6 +48,8 @@ export default function SouthCarolinaRNSalary() {
       schemaTitle="RN Salary in South Carolina 2026"
       schemaDescription="South Carolina RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/south-carolina"
+      stateName="South Carolina"
+      stateSlug="south-carolina"
       faqs={faqs}
     >
       <p>

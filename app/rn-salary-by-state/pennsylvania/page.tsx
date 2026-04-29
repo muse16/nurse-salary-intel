@@ -48,6 +48,8 @@ export default function PennsylvaniaRNSalary() {
       schemaTitle="RN Salary in Pennsylvania 2026"
       schemaDescription="Pennsylvania RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/pennsylvania"
+      stateName="Pennsylvania"
+      stateSlug="pennsylvania"
       faqs={faqs}
     >
       <p>

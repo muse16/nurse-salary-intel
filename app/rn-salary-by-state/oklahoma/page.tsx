@@ -48,6 +48,8 @@ export default function OklahomaRNSalary() {
       schemaTitle="RN Salary in Oklahoma 2026"
       schemaDescription="Oklahoma RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/oklahoma"
+      stateName="Oklahoma"
+      stateSlug="oklahoma"
       faqs={faqs}
     >
       <p>

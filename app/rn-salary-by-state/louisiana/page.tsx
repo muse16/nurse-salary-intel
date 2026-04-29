@@ -48,6 +48,8 @@ export default function LouisianaRNSalary() {
       schemaTitle="RN Salary in Louisiana 2026"
       schemaDescription="Louisiana RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/louisiana"
+      stateName="Louisiana"
+      stateSlug="louisiana"
       faqs={faqs}
     >
       <p>

@@ -48,6 +48,8 @@ export default function MinnesotaRNSalary() {
       schemaTitle="RN Salary in Minnesota 2026"
       schemaDescription="Minnesota RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/minnesota"
+      stateName="Minnesota"
+      stateSlug="minnesota"
       faqs={faqs}
     >
       <p>

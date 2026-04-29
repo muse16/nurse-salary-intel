@@ -48,6 +48,8 @@ export default function IndianaRNSalary() {
       schemaTitle="RN Salary in Indiana 2026"
       schemaDescription="Indiana RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/indiana"
+      stateName="Indiana"
+      stateSlug="indiana"
       faqs={faqs}
     >
       <p>

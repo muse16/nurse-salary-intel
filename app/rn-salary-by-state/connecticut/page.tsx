@@ -48,6 +48,8 @@ export default function ConnecticutRNSalary() {
       schemaTitle="RN Salary in Connecticut 2026"
       schemaDescription="Connecticut RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/connecticut"
+      stateName="Connecticut"
+      stateSlug="connecticut"
       faqs={faqs}
     >
       <p>

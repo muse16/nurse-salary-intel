@@ -48,6 +48,8 @@ export default function AlaskaRNSalary() {
       schemaTitle="RN Salary in Alaska 2026"
       schemaDescription="Alaska RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/alaska"
+      stateName="Alaska"
+      stateSlug="alaska"
       faqs={faqs}
     >
       <p>

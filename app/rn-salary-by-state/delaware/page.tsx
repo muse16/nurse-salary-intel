@@ -48,6 +48,8 @@ export default function DelawareRNSalary() {
       schemaTitle="RN Salary in Delaware 2026"
       schemaDescription="Delaware RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/delaware"
+      stateName="Delaware"
+      stateSlug="delaware"
       faqs={faqs}
     >
       <p>

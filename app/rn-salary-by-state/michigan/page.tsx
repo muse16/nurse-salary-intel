@@ -48,6 +48,8 @@ export default function MichiganRNSalary() {
       schemaTitle="RN Salary in Michigan 2026"
       schemaDescription="Michigan RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/michigan"
+      stateName="Michigan"
+      stateSlug="michigan"
       faqs={faqs}
     >
       <p>

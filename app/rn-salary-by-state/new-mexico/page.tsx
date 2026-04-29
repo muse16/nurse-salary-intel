@@ -48,6 +48,8 @@ export default function NewMexicoRNSalary() {
       schemaTitle="RN Salary in New Mexico 2026"
       schemaDescription="New Mexico RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/new-mexico"
+      stateName="New Mexico"
+      stateSlug="new-mexico"
       faqs={faqs}
     >
       <p>

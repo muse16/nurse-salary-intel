@@ -48,6 +48,8 @@ export default function TennesseeRNSalary() {
       schemaTitle="RN Salary in Tennessee 2026"
       schemaDescription="Tennessee RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/tennessee"
+      stateName="Tennessee"
+      stateSlug="tennessee"
       faqs={faqs}
     >
       <p>

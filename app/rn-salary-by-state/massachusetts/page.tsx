@@ -48,6 +48,8 @@ export default function MassachusettsRNSalary() {
       schemaTitle="RN Salary in Massachusetts 2026"
       schemaDescription="Massachusetts RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/massachusetts"
+      stateName="Massachusetts"
+      stateSlug="massachusetts"
       faqs={faqs}
     >
       <p>

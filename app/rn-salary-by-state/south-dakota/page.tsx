@@ -48,6 +48,8 @@ export default function SouthDakotaRNSalary() {
       schemaTitle="RN Salary in South Dakota 2026"
       schemaDescription="South Dakota RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/south-dakota"
+      stateName="South Dakota"
+      stateSlug="south-dakota"
       faqs={faqs}
     >
       <p>

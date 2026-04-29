@@ -48,6 +48,8 @@ export default function OhioRNSalary() {
       schemaTitle="RN Salary in Ohio 2026"
       schemaDescription="Ohio RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/ohio"
+      stateName="Ohio"
+      stateSlug="ohio"
       faqs={faqs}
     >
       <p>

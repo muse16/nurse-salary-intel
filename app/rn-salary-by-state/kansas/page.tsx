@@ -48,6 +48,8 @@ export default function KansasRNSalary() {
       schemaTitle="RN Salary in Kansas 2026"
       schemaDescription="Kansas RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/kansas"
+      stateName="Kansas"
+      stateSlug="kansas"
       faqs={faqs}
     >
       <p>

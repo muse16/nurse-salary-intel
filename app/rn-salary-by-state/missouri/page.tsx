@@ -48,6 +48,8 @@ export default function MissouriRNSalary() {
       schemaTitle="RN Salary in Missouri 2026"
       schemaDescription="Missouri RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/missouri"
+      stateName="Missouri"
+      stateSlug="missouri"
       faqs={faqs}
     >
       <p>

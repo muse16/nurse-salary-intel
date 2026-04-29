@@ -48,6 +48,8 @@ export default function WisconsinRNSalary() {
       schemaTitle="RN Salary in Wisconsin 2026"
       schemaDescription="Wisconsin RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/wisconsin"
+      stateName="Wisconsin"
+      stateSlug="wisconsin"
       faqs={faqs}
     >
       <p>

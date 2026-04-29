@@ -48,6 +48,8 @@ export default function WyomingRNSalary() {
       schemaTitle="RN Salary in Wyoming 2026"
       schemaDescription="Wyoming RN salary by city for 2026, based on BLS data."
       schemaUrl="/rn-salary-by-state/wyoming"
+      stateName="Wyoming"
+      stateSlug="wyoming"
       faqs={faqs}
     >
       <p>
