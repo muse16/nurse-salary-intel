@@ -1,4 +1,4 @@
-import { getHospitalData, slugify, unslugify, getAllHospitals } from '@/lib/data';
+import { getHospitalData, slugify, unslugify, getAllHospitals, getCitiesByState } from '@/lib/data';
 import DataTable from '@/components/DataTable';
 import MonetizationSlot from '@/components/MonetizationSlot';
 import PremiumAuditCTA from '@/components/PremiumAuditCTA';
@@ -66,7 +66,7 @@ export default async function HospitalPage({ params }: PageProps) {
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nursesalaryintel.com" },
-      { "@type": "ListItem", "position": 2, "name": "Hospital Salary Data", "item": "https://nursesalaryintel.com" },
+      { "@type": "ListItem", "position": 2, "name": "Hospital Salary Data", "item": "https://nursesalaryintel.com/nurse-salary-by-hospital" },
       { "@type": "ListItem", "position": 3, "name": hospitalData.hospital, "item": `https://nursesalaryintel.com/hospital/${name}` }
     ]
   };
@@ -319,8 +319,9 @@ export default async function HospitalPage({ params }: PageProps) {
               <p className="font-semibold text-gray-900">How does {hospitalData.hospital} pay compare to the state average?</p>
               <p className="text-gray-600 mt-1">
                 The ${hospitalData.avgSalary.toLocaleString()}/year average at {hospitalData.hospital} can be compared against the statewide RN average using our{' '}
-                <Link href="/" className="text-blue-600 hover:underline">nurse salary calculator</Link>. See our{' '}
-                <Link href="/rn-salary-by-state" className="text-blue-600 hover:underline">RN salary by state guide</Link> for full context.
+                <Link href="/" className="text-blue-600 hover:underline">nurse salary calculator</Link>. See the full{' '}
+                <Link href={`/rn-salary-by-state/${slugify(hospitalData.state)}`} className="text-blue-600 hover:underline">{hospitalData.state} RN salary guide</Link>{' '}
+                and <Link href={`/salary/${slugify(hospitalData.state)}/${slugify(hospitalData.city)}`} className="text-blue-600 hover:underline">{hospitalData.city} nurse salary data</Link> for local context.
               </p>
             </div>
           </div>

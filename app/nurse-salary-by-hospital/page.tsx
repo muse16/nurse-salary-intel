@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import Link from 'next/link';
+import { getAllHospitals, getHospitalData, slugify } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Nurse Salary by Hospital (2026): How Much Top Systems Pay RNs',
@@ -23,6 +24,25 @@ const faqs = [
 ];
 
 export default function NurseSalaryByHospital() {
+  // Build hospital directory grouped by state
+  const allHospitals = getAllHospitals();
+  const byState: Record<string, { name: string; slug: string; city: string; avgSalary: number }[]> = {};
+
+  allHospitals.forEach((hospitalName) => {
+    const data = getHospitalData(hospitalName);
+    if (!data) return;
+    const state = data.state;
+    if (!byState[state]) byState[state] = [];
+    byState[state].push({
+      name: hospitalName,
+      slug: slugify(hospitalName),
+      city: data.city,
+      avgSalary: data.avgSalary,
+    });
+  });
+
+  const sortedStates = Object.keys(byState).sort();
+
   return (
     <SEOPageLayout
       breadcrumbs={[
@@ -84,6 +104,57 @@ export default function NurseSalaryByHospital() {
       </ul>
       <p>
         Before accepting any hospital offer, use the <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to benchmark the offer against your market. Then use our <Link href="/audit" className="text-primary hover:underline">contract audit tool</Link> to check for mandatory overtime clauses, float pool requirements, and cancellation penalties before you sign.
+      </p>
+
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Browse All Hospitals by State</h2>
+      <p>
+        Select any hospital below to see position-level salary data, contract red flag analysis, and how pay compares to the local city and state average.
+      </p>
+
+      <div className="space-y-8 mt-4">
+        {sortedStates.map((state) => (
+          <div key={state}>
+            <h3 className="text-lg font-semibold text-on-surface mb-3">
+              <Link href={`/rn-salary-by-state/${slugify(state)}`} className="text-primary hover:underline">
+                {state}
+              </Link>
+            </h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="bg-surface-variant text-on-surface-variant text-left">
+                    <th className="px-4 py-2 font-semibold border border-outline-variant">Hospital</th>
+                    <th className="px-4 py-2 font-semibold border border-outline-variant">City</th>
+                    <th className="px-4 py-2 font-semibold border border-outline-variant">Avg RN Salary</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {byState[state].map((h, i) => (
+                    <tr key={h.slug} className={i % 2 === 0 ? 'bg-surface' : 'bg-surface-variant/30'}>
+                      <td className="px-4 py-2 border border-outline-variant">
+                        <Link href={`/hospital/${h.slug}`} className="text-primary hover:underline font-medium">
+                          {h.name}
+                        </Link>
+                      </td>
+                      <td className="px-4 py-2 border border-outline-variant text-on-surface-variant">
+                        <Link href={`/salary/${slugify(state)}/${slugify(h.city)}`} className="hover:underline text-on-surface-variant">
+                          {h.city}
+                        </Link>
+                      </td>
+                      <td className="px-4 py-2 border border-outline-variant font-semibold text-primary">
+                        ${h.avgSalary.toLocaleString()}/yr
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <p className="mt-6">
+        See all nurse salary data by location: <Link href="/rn-salary-by-state" className="text-primary hover:underline">RN salary by state</Link> · <Link href="/rn-salary-by-city" className="text-primary hover:underline">RN salary by city</Link> · <Link href="/highest-paying-nursing-specialties" className="text-primary hover:underline">Highest paying specialties</Link>
       </p>
     </SEOPageLayout>
   );

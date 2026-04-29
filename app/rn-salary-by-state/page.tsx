@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
-import SalaryTable from '@/components/SalaryTable';
 import RelatedResources from '@/components/RelatedResources';
 import Link from 'next/link';
 
@@ -19,31 +18,56 @@ const faqs = [
 ];
 
 const allStates = [
-  { label: 'California', avgSalary: '$124,000', hourlyRate: '$59.62/hr' },
-  { label: 'Hawaii', avgSalary: '$106,530', hourlyRate: '$51.22/hr' },
-  { label: 'Oregon', avgSalary: '$102,700', hourlyRate: '$49.38/hr' },
-  { label: 'Washington', avgSalary: '$100,890', hourlyRate: '$48.51/hr' },
-  { label: 'New York', avgSalary: '$98,560', hourlyRate: '$47.38/hr' },
-  { label: 'Massachusetts', avgSalary: '$96,630', hourlyRate: '$46.46/hr' },
-  { label: 'New Jersey', avgSalary: '$94,690', hourlyRate: '$45.52/hr' },
-  { label: 'Connecticut', avgSalary: '$93,370', hourlyRate: '$44.89/hr' },
-  { label: 'Alaska', avgSalary: '$97,230', hourlyRate: '$46.75/hr' },
-  { label: 'Minnesota', avgSalary: '$88,200', hourlyRate: '$42.40/hr' },
-  { label: 'Nevada', avgSalary: '$90,210', hourlyRate: '$43.37/hr' },
-  { label: 'Arizona', avgSalary: '$84,320', hourlyRate: '$40.54/hr' },
-  { label: 'Colorado', avgSalary: '$82,940', hourlyRate: '$39.87/hr' },
-  { label: 'Texas', avgSalary: '$81,510', hourlyRate: '$39.19/hr' },
-  { label: 'Illinois', avgSalary: '$81,230', hourlyRate: '$39.05/hr' },
-  { label: 'Florida', avgSalary: '$76,450', hourlyRate: '$36.75/hr' },
-  { label: 'Georgia', avgSalary: '$76,730', hourlyRate: '$36.89/hr' },
-  { label: 'North Carolina', avgSalary: '$75,560', hourlyRate: '$36.33/hr' },
-  { label: 'Ohio', avgSalary: '$75,840', hourlyRate: '$36.46/hr' },
-  { label: 'Pennsylvania', avgSalary: '$80,630', hourlyRate: '$38.77/hr' },
-  { label: 'Michigan', avgSalary: '$78,720', hourlyRate: '$37.85/hr' },
-  { label: 'Tennessee', avgSalary: '$71,340', hourlyRate: '$34.30/hr' },
-  { label: 'Missouri', avgSalary: '$72,260', hourlyRate: '$34.74/hr' },
-  { label: 'Alabama', avgSalary: '$68,290', hourlyRate: '$32.83/hr' },
-  { label: 'Mississippi', avgSalary: '$66,590', hourlyRate: '$32.01/hr' },
+  { label: 'California', slug: 'california', avgSalary: '$124,000', hourlyRate: '$59.62/hr' },
+  { label: 'Hawaii', slug: 'hawaii', avgSalary: '$106,530', hourlyRate: '$51.22/hr' },
+  { label: 'Oregon', slug: 'oregon', avgSalary: '$102,700', hourlyRate: '$49.38/hr' },
+  { label: 'Washington', slug: 'washington', avgSalary: '$100,890', hourlyRate: '$48.51/hr' },
+  { label: 'New York', slug: 'new-york', avgSalary: '$98,560', hourlyRate: '$47.38/hr' },
+  { label: 'Alaska', slug: 'alaska', avgSalary: '$97,230', hourlyRate: '$46.75/hr' },
+  { label: 'Massachusetts', slug: 'massachusetts', avgSalary: '$96,630', hourlyRate: '$46.46/hr' },
+  { label: 'New Jersey', slug: 'new-jersey', avgSalary: '$94,690', hourlyRate: '$45.52/hr' },
+  { label: 'Connecticut', slug: 'connecticut', avgSalary: '$93,370', hourlyRate: '$44.89/hr' },
+  { label: 'Rhode Island', slug: 'rhode-island', avgSalary: '$90,000', hourlyRate: '$43.27/hr' },
+  { label: 'Nevada', slug: 'nevada', avgSalary: '$90,210', hourlyRate: '$43.37/hr' },
+  { label: 'Maryland', slug: 'maryland', avgSalary: '$90,950', hourlyRate: '$43.73/hr' },
+  { label: 'Minnesota', slug: 'minnesota', avgSalary: '$88,200', hourlyRate: '$42.40/hr' },
+  { label: 'Arizona', slug: 'arizona', avgSalary: '$84,320', hourlyRate: '$40.54/hr' },
+  { label: 'Vermont', slug: 'vermont', avgSalary: '$83,560', hourlyRate: '$40.17/hr' },
+  { label: 'Virginia', slug: 'virginia', avgSalary: '$83,810', hourlyRate: '$40.29/hr' },
+  { label: 'New Hampshire', slug: 'new-hampshire', avgSalary: '$82,920', hourlyRate: '$39.87/hr' },
+  { label: 'Colorado', slug: 'colorado', avgSalary: '$82,940', hourlyRate: '$39.87/hr' },
+  { label: 'Delaware', slug: 'delaware', avgSalary: '$82,000', hourlyRate: '$39.42/hr' },
+  { label: 'Texas', slug: 'texas', avgSalary: '$81,510', hourlyRate: '$39.19/hr' },
+  { label: 'Illinois', slug: 'illinois', avgSalary: '$81,230', hourlyRate: '$39.05/hr' },
+  { label: 'Maine', slug: 'maine', avgSalary: '$79,380', hourlyRate: '$38.16/hr' },
+  { label: 'Michigan', slug: 'michigan', avgSalary: '$78,720', hourlyRate: '$37.85/hr' },
+  { label: 'New Mexico', slug: 'new-mexico', avgSalary: '$78,210', hourlyRate: '$37.60/hr' },
+  { label: 'Wisconsin', slug: 'wisconsin', avgSalary: '$78,220', hourlyRate: '$37.61/hr' },
+  { label: 'Wyoming', slug: 'wyoming', avgSalary: '$76,100', hourlyRate: '$36.59/hr' },
+  { label: 'Utah', slug: 'utah', avgSalary: '$76,060', hourlyRate: '$36.57/hr' },
+  { label: 'Georgia', slug: 'georgia', avgSalary: '$76,730', hourlyRate: '$36.89/hr' },
+  { label: 'Florida', slug: 'florida', avgSalary: '$76,450', hourlyRate: '$36.75/hr' },
+  { label: 'Pennsylvania', slug: 'pennsylvania', avgSalary: '$80,630', hourlyRate: '$38.77/hr' },
+  { label: 'Ohio', slug: 'ohio', avgSalary: '$75,840', hourlyRate: '$36.46/hr' },
+  { label: 'North Carolina', slug: 'north-carolina', avgSalary: '$75,560', hourlyRate: '$36.33/hr' },
+  { label: 'Idaho', slug: 'idaho', avgSalary: '$74,000', hourlyRate: '$35.58/hr' },
+  { label: 'Montana', slug: 'montana', avgSalary: '$73,820', hourlyRate: '$35.49/hr' },
+  { label: 'Indiana', slug: 'indiana', avgSalary: '$73,490', hourlyRate: '$35.33/hr' },
+  { label: 'Louisiana', slug: 'louisiana', avgSalary: '$72,480', hourlyRate: '$34.84/hr' },
+  { label: 'Oklahoma', slug: 'oklahoma', avgSalary: '$72,540', hourlyRate: '$34.88/hr' },
+  { label: 'Nebraska', slug: 'nebraska', avgSalary: '$72,100', hourlyRate: '$34.66/hr' },
+  { label: 'Missouri', slug: 'missouri', avgSalary: '$72,260', hourlyRate: '$34.74/hr' },
+  { label: 'Tennessee', slug: 'tennessee', avgSalary: '$71,340', hourlyRate: '$34.30/hr' },
+  { label: 'Kentucky', slug: 'kentucky', avgSalary: '$71,090', hourlyRate: '$34.18/hr' },
+  { label: 'Kansas', slug: 'kansas', avgSalary: '$70,450', hourlyRate: '$33.87/hr' },
+  { label: 'Iowa', slug: 'iowa', avgSalary: '$69,230', hourlyRate: '$33.28/hr' },
+  { label: 'West Virginia', slug: 'west-virginia', avgSalary: '$69,000', hourlyRate: '$33.17/hr' },
+  { label: 'Arkansas', slug: 'arkansas', avgSalary: '$69,810', hourlyRate: '$33.56/hr' },
+  { label: 'Alabama', slug: 'alabama', avgSalary: '$68,290', hourlyRate: '$32.83/hr' },
+  { label: 'North Dakota', slug: 'north-dakota', avgSalary: '$68,540', hourlyRate: '$32.95/hr' },
+  { label: 'South Carolina', slug: 'south-carolina', avgSalary: '$72,360', hourlyRate: '$34.79/hr' },
+  { label: 'Mississippi', slug: 'mississippi', avgSalary: '$66,590', hourlyRate: '$32.01/hr' },
+  { label: 'South Dakota', slug: 'south-dakota', avgSalary: '$63,830', hourlyRate: '$30.69/hr' },
 ];
 
 export default function RNSalaryByStatePillar() {
@@ -66,12 +90,35 @@ export default function RNSalaryByStatePillar() {
         50 states for 2026 — with cost-of-living context to help you make real comparisons.
       </p>
 
-      <SalaryTable
-        title="RN Salary by State — Full Table (2026)"
-        headers={['State', 'Avg. Annual Salary', 'Avg. Hourly Rate']}
-        rows={allStates}
-        source="BLS OEWS 2025 + NurseSalaryIntel data"
-      />
+      <h2 className="text-2xl font-bold font-headline text-on-surface">RN Salary — All 50 States (2026)</h2>
+      <p>Click any state for a full breakdown including hourly rates, city comparisons, experience levels, and top employers.</p>
+      <div className="overflow-x-auto rounded-xl border border-outline-variant">
+        <table className="w-full text-sm">
+          <thead className="bg-surface-container text-on-surface-variant font-semibold">
+            <tr>
+              <th className="text-left px-4 py-3">State</th>
+              <th className="text-left px-4 py-3">Avg. Annual Salary</th>
+              <th className="text-left px-4 py-3">Avg. Hourly Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            {allStates.map((s, i) => (
+              <tr key={s.slug} className={i % 2 === 0 ? 'bg-surface' : 'bg-surface-container-lowest'}>
+                <td className="px-4 py-3 font-medium">
+                  <Link href={`/rn-salary-by-state/${s.slug}`} className="text-primary hover:underline">
+                    {s.label} RN Salary
+                  </Link>
+                </td>
+                <td className="px-4 py-3 text-on-surface-variant">{s.avgSalary}</td>
+                <td className="px-4 py-3 text-on-surface-variant">{s.hourlyRate}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <p className="text-xs text-on-surface-variant px-4 py-2 border-t border-outline-variant">
+          Source: BLS OEWS 2025 + NurseSalaryIntel 2026 projections
+        </p>
+      </div>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Highest-Paying States for Registered Nurses</h2>
       <p>
@@ -85,7 +132,7 @@ export default function RNSalaryByStatePillar() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Lowest-Paying States for RNs</h2>
       <p>
-        Mississippi ($66,590), Alabama ($68,290), Iowa ($69,230), and Arkansas ($69,810) are the lowest-paying states.
+        Mississippi ($66,590), South Dakota ($63,830), Alabama ($68,290), and Iowa ($69,230) are among the lowest-paying states.
         However, low cost of living in these regions can make the raw numbers misleading.
       </p>
 
@@ -130,23 +177,6 @@ export default function RNSalaryByStatePillar() {
         Use the free nurse salary calculator &amp; contract audit →
       </Link>
 
-      <h2 className="text-2xl font-bold font-headline text-on-surface">State-Specific Salary Guides</h2>
-      <div className="grid sm:grid-cols-2 gap-4">
-        {[
-          { href: '/rn-salary-by-state/california', title: 'California RN Salary' },
-          { href: '/rn-salary-by-state/texas', title: 'Texas RN Salary' },
-          { href: '/rn-salary-by-state/new-york', title: 'New York RN Salary' },
-          { href: '/rn-salary-by-state/florida', title: 'Florida RN Salary' },
-          { href: '/florida-rn-salary-2026', title: 'Florida RN Salary 2026 Deep Dive' },
-          { href: '/rn-salary-by-state/highest-paying-states', title: 'Top 10 Highest-Paying States' },
-          { href: '/highest-paying-states-for-rns-2026', title: 'Highest Paying States for RNs — 2026 Rankings' },
-        ].map((link) => (
-          <Link key={link.href} href={link.href} className="block p-4 rounded-lg border border-outline-variant hover:border-primary transition-colors">
-            <span className="font-bold text-primary text-sm">{link.title} →</span>
-          </Link>
-        ))}
-      </div>
-
       <h2 className="text-2xl font-bold font-headline text-on-surface">Highest Paying Cities for Nurses in the United States</h2>
       <p>
         The highest-paying metro areas for registered nurses are concentrated in California, New York, and the Pacific Northwest. These markets combine strong union contracts, mandatory staffing ratios, and high cost of living that drives base pay up.
@@ -185,7 +215,7 @@ export default function RNSalaryByStatePillar() {
         </div>
         <div>
           <p className="font-semibold text-on-surface">How much do nurses make per hour in the United States?</p>
-          <p className="text-on-surface-variant">The average hourly rate for registered nurses is $42.79/hr nationally. Rates range from approximately $32/hr in Mississippi to $60+/hr in California metro areas.</p>
+          <p className="text-on-surface-variant">The average hourly rate for registered nurses is $42.79/hr nationally. Rates range from approximately $30/hr in South Dakota to $60+/hr in California metro areas.</p>
         </div>
         <div>
           <p className="font-semibold text-on-surface">What is the highest paying city for nurses in the United States?</p>

@@ -17,6 +17,7 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // ── Existing redirects ──────────────────────────────────────────────
       {
         source: '/salary/new-york/new-york-city',
         destination: '/salary/new-york/new-york',
@@ -40,6 +41,77 @@ const nextConfig: NextConfig = {
       {
         source: '/rn-salary-calculator',
         destination: '/audit',
+        permanent: true,
+      },
+
+      // ── Cannibalization fix: state blog posts → canonical state pages ────
+      {
+        source: '/arizona-rn-salary-2026',
+        destination: '/rn-salary-by-state/arizona',
+        permanent: true,
+      },
+      {
+        source: '/california-rn-salary-2026',
+        destination: '/rn-salary-by-state/california',
+        permanent: true,
+      },
+      {
+        source: '/texas-rn-salary-2026',
+        destination: '/rn-salary-by-state/texas',
+        permanent: true,
+      },
+      {
+        source: '/new-york-rn-salary-2026',
+        destination: '/rn-salary-by-state/new-york',
+        permanent: true,
+      },
+
+      // ── Cannibalization fix: city blog posts → canonical city pages ──────
+      {
+        source: '/rn-salary-los-angeles-2026',
+        destination: '/salary/california/los-angeles',
+        permanent: true,
+      },
+      {
+        source: '/rn-salary-miami-fl-2026',
+        destination: '/salary/florida/miami',
+        permanent: true,
+      },
+      {
+        source: '/boston-rn-salary-2026',
+        destination: '/salary/massachusetts/boston',
+        permanent: true,
+      },
+      {
+        source: '/dallas-rn-salary-2026',
+        destination: '/salary/texas/dallas',
+        permanent: true,
+      },
+      {
+        source: '/houston-rn-salary-2026',
+        destination: '/salary/texas/houston',
+        permanent: true,
+      },
+      {
+        source: '/orlando-rn-salary-2026',
+        destination: '/salary/florida/orlando',
+        permanent: true,
+      },
+      {
+        source: '/phoenix-rn-salary-2026',
+        destination: '/salary/arizona/phoenix',
+        permanent: true,
+      },
+
+      // ── Cannibalization fix: specialty blog posts → canonical specialty pages
+      {
+        source: '/nicu-nurse-salary-2026',
+        destination: '/nursing-salary/nicu-nurse-salary',
+        permanent: true,
+      },
+      {
+        source: '/icu-nurse-salary-2026',
+        destination: '/nursing-salary/icu-nurse-salary',
         permanent: true,
       },
     ];
