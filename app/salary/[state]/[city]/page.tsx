@@ -354,6 +354,38 @@ export default async function CityPage({ params }: PageProps) {
             ) : null;
           })()}
 
+          {/* Top Nursing Specialties */}
+          <div className="bg-white rounded-xl shadow-sm p-7 border border-gray-100">
+            <h2 className="text-xl font-bold text-gray-900 mb-3">
+              Top Nursing Specialties in {cityData.city}
+            </h2>
+            <p className="text-gray-500 text-sm mb-4">
+              Specialty and certification significantly impact RN pay in {cityData.city}. See how each role compares to the local average.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {[
+                { href: '/nursing-salary/icu-nurse-salary', label: 'ICU Nurse Salary', desc: 'Critical care pay + CCRN premium' },
+                { href: '/nursing-salary/er-nurse-salary', label: 'ER Nurse Salary', desc: 'Emergency nursing pay by state' },
+                { href: '/nursing-salary/nicu-nurse-salary', label: 'NICU Nurse Salary', desc: 'Neonatal ICU pay + certification' },
+                { href: '/nursing-salary/nurse-practitioner-salary', label: 'Nurse Practitioner Salary', desc: 'NP pay by specialty and state' },
+                { href: '/nursing-salary/crna-salary-by-state', label: 'CRNA Salary', desc: 'Highest-paid nursing role — $214K avg' },
+                { href: '/nursing-salary/charge-nurse-salary', label: 'Charge Nurse Salary', desc: 'Leadership premium over staff RN' },
+              ].map(({ href, label, desc }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="flex items-center justify-between p-3 rounded-lg border border-gray-200 hover:border-blue-500 hover:bg-blue-50 transition-colors"
+                >
+                  <div>
+                    <p className="text-sm font-semibold text-blue-600">{label}</p>
+                    <p className="text-xs text-gray-500">{desc}</p>
+                  </div>
+                  <span className="text-gray-400 text-xs ml-3">→</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+
           <div className="bg-white rounded-xl shadow-sm p-7 border border-gray-100">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">RN Salary FAQs — {cityData.city}, {cityData.state}</h2>
             <div className="space-y-4 text-sm">

@@ -40,6 +40,8 @@ export default function NICUNurseSalary() {
       schemaDescription="NICU nurse salary data by state, experience, and certification for 2026."
       schemaUrl="/nursing-salary/nicu-nurse-salary"
       faqs={faqs}
+      specialtySlug="nicu-nurse-salary"
+      specialtyName="NICU Nurse"
     >
       <p>
         NICU nurses provide critical care to the most vulnerable patients — premature and critically ill newborns.

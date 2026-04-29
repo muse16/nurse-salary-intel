@@ -11,6 +11,7 @@ import {
   stateData,
   calculateSalary,
 } from '@/lib/bls-data';
+import { getCitiesByState, slugify } from '@/lib/data';
 
 interface PageProps {
   params: Promise<{ specialty: string; state: string }>;
@@ -221,10 +222,74 @@ export default async function SpecialtyStatePage({ params }: PageProps) {
             href={`/nursing-salary/${spec.parentPageSlug}`}
             className="text-primary font-semibold hover:underline text-sm"
           >
-            {spec.shortName} national salary guide →
           </Link>
         </>
       )}
+
+      {/* Top Cities for this Specialty in this State */}
+      {(() => {
+        const cities = getCitiesByState(sd.state).slice(0, 6);
+        if (cities.length === 0) return null;
+        const stateSlugVal = stateToSlug(sd.state);
+        return (
+          <div className="not-prose mt-8 border-t border-outline-variant pt-6">
+            <h2 className="text-xl font-bold font-headline text-on-surface mb-3">
+              Top Cities for {spec.shortName}s in {sd.state}
+            </h2>
+            <p className="text-on-surface-variant text-sm mb-4">
+              {spec.shortName} pay in {sd.state} varies by metro area. See city-level RN salary data, top hospitals, and local market context.
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              {cities.map((city) => (
+                <Link
+                  key={city}
+                  href={`/salary/${stateSlugVal}/${slugify(city)}`}
+                  className="flex items-center gap-2 p-3 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors text-sm"
+                >
+                  <span className="text-primary font-medium">{city}</span>
+                  <span className="text-on-surface-variant text-xs ml-auto">{'->'}</span>
+                </Link>
+              ))}
+            </div>
+            <p className="text-xs text-on-surface-variant mt-3">
+              <Link href={`/rn-salary-by-state/${stateSlugVal}`} className="text-primary hover:underline">
+                All {sd.state} RN salary data
+              </Link>
+              {' · '}
+              <Link href="/rn-salary-by-city" className="text-primary hover:underline">
+                Browse all cities
+              </Link>
+            </p>
+          </div>
+        );
+      })()}
+
+      {/* Related Specialties */}
+      <div className="not-prose mt-8 border-t border-outline-variant pt-6">
+        <h2 className="text-xl font-bold font-headline text-on-surface mb-3">
+          Compare Other Nursing Specialties in {sd.state}
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {[
+            { href: `/nursing-salary/icu-nurse-salary/${stateToSlug(sd.state)}`, label: 'ICU Nurse Salary', desc: 'Critical care pay + CCRN premium' },
+            { href: `/nursing-salary/er-nurse-salary/${stateToSlug(sd.state)}`, label: 'ER Nurse Salary', desc: 'Emergency nursing pay' },
+            { href: `/nursing-salary/nicu-nurse-salary/${stateToSlug(sd.state)}`, label: 'NICU Nurse Salary', desc: 'Neonatal ICU pay' },
+            { href: `/nursing-salary/nurse-practitioner-salary/${stateToSlug(sd.state)}`, label: 'NP Salary', desc: 'Nurse Practitioner pay' },
+          ].filter(item => !item.href.includes(`/${specialty}/`)).slice(0, 4).map(({ href, label, desc }) => (
+            <Link
+              key={href}
+              href={href}
+              className="flex items-center justify-between p-3 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors"
+            >
+              <div>
+                <p className="text-sm font-semibold text-primary">{label}</p>
+                <p className="text-xs text-on-surface-variant">{desc}</p>
+              </div>
+              <span className="text-on-surface-variant text-xs ml-3">{'->'}</span>
+            </Link>
+          ))}
+        </div>
+      </div>
     </SEOPageLayout>
   );
 }

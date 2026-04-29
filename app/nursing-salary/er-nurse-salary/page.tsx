@@ -41,6 +41,8 @@ export default function ERNurseSalary() {
       schemaDescription="Emergency room nurse salary data by state, experience, and certification for 2026."
       schemaUrl="/nursing-salary/er-nurse-salary"
       faqs={faqs}
+      specialtySlug="er-nurse-salary"
+      specialtyName="ER Nurse"
     >
       <p>
         Emergency room nurses are the frontline of acute care — and their pay reflects it. In 2026, ER nurses

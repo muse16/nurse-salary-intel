@@ -44,6 +44,8 @@ export default function CRNASalaryByState() {
       schemaDescription="CRNA salaries for all 50 states in 2026 with pay data and job outlook."
       schemaUrl="/nursing-salary/crna-salary-by-state"
       faqs={faqs}
+      specialtySlug="crna-salary"
+      specialtyName="CRNA"
     >
       <p>
         Certified Registered Nurse Anesthetists are the highest-paid professionals in nursing, earning an average

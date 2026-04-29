@@ -49,6 +49,8 @@ export default function ICUNurseSalary() {
       schemaDescription="ICU nurse salary data by state, experience, and certification for 2026."
       schemaUrl="/nursing-salary/icu-nurse-salary"
       faqs={faqs}
+      specialtySlug="icu-nurse-salary"
+      specialtyName="ICU Nurse"
     >
       <p>
         ICU nurses are among the highest-paid bedside nurses in healthcare, earning an average of $95,270/year

@@ -6,6 +6,7 @@ import ContractAuditCTA from './ContractAuditCTA';
 import FAQSection from './FAQSection';
 import ArticleSchema from './ArticleSchema';
 import { getCitiesByState, slugify } from '@/lib/data';
+import { stateData, stateToSlug } from '@/lib/bls-data';
 
 interface BreadcrumbItem {
   label: string;
@@ -44,6 +45,10 @@ interface SEOPageLayoutProps {
   stateName?: string;
   /** Pass the state slug (e.g. "arizona") for city URL generation */
   stateSlug?: string;
+  /** Pass the specialty slug (e.g. "icu-nurse-salary") to auto-render a Browse by State grid */
+  specialtySlug?: string;
+  /** Pass the specialty display name (e.g. "ICU Nurse") for the Browse by State heading */
+  specialtyName?: string;
 }
 
 export default function SEOPageLayout({
@@ -61,8 +66,16 @@ export default function SEOPageLayout({
   children,
   stateName,
   stateSlug,
+  specialtySlug,
+  specialtyName,
 }: SEOPageLayoutProps) {
   const stateCities = stateName && stateSlug ? getCitiesByState(stateName) : [];
+  // Top 12 states for the Browse by State grid — highest-traffic states first
+  const browseStates = specialtySlug ? [
+    'California', 'Texas', 'New York', 'Florida', 'Pennsylvania',
+    'Illinois', 'Ohio', 'Georgia', 'North Carolina', 'Washington',
+    'Massachusetts', 'Arizona',
+  ] : [];
   return (
     <div className="min-h-screen bg-surface">
       <SiteNav />
@@ -186,6 +199,38 @@ export default function SEOPageLayout({
             </div>
             <p className="text-xs text-on-surface-variant mt-4">
               Full rankings: <Link href="/highest-paying-nursing-specialties" className="text-primary hover:underline">Highest-paying nursing specialties 2026 →</Link>
+            </p>
+          </div>
+        )}
+
+        {/* Browse by State — rendered on specialty hub pages */}
+        {specialtySlug && specialtyName && (
+          <div className="border-t border-outline-variant pt-8 mt-8">
+            <h2 className="text-xl font-bold font-headline text-on-surface mb-4">
+              Browse {specialtyName} Salary by State
+            </h2>
+            <p className="text-on-surface-variant text-sm mb-4">
+              {specialtyName} pay varies significantly by state. Select a state to see local salary data, top employers, and how it compares to the national average.
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              {browseStates.map((s) => {
+                const slug = stateToSlug(s);
+                return (
+                  <Link
+                    key={s}
+                    href={`/nursing-salary/${specialtySlug}/${slug}`}
+                    className="flex items-center gap-2 p-3 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors text-sm"
+                  >
+                    <span className="text-primary font-medium">{s}</span>
+                    <span className="text-on-surface-variant text-xs ml-auto">→</span>
+                  </Link>
+                );
+              })}
+            </div>
+            <p className="text-xs text-on-surface-variant mt-4">
+              See all states: <Link href="/rn-salary-by-state" className="text-primary hover:underline">RN salary by state →</Link>
+              {' · '}
+              <Link href="/highest-paying-nursing-specialties" className="text-primary hover:underline">All specialties →</Link>
             </p>
           </div>
         )}

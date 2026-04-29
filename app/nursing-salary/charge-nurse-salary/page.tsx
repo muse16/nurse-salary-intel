@@ -40,6 +40,8 @@ export default function ChargeNurseSalary() {
       schemaDescription="Charge nurse salary, differential pay, and salary by state for 2026."
       schemaUrl="/nursing-salary/charge-nurse-salary"
       faqs={faqs}
+      specialtySlug="charge-nurse-salary"
+      specialtyName="Charge Nurse"
     >
       <p>
         Charge nurses take on leadership duties — managing patient flow, coordinating staffing, and serving as

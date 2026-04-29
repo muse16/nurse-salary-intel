@@ -40,6 +40,8 @@ export default function LaborDeliveryNurseSalary() {
       schemaDescription="L&D nurse salary data by state, experience, and certification for 2026."
       schemaUrl="/nursing-salary/labor-delivery-nurse-salary"
       faqs={faqs}
+      specialtySlug="labor-delivery-nurse-salary"
+      specialtyName="L&D Nurse"
     >
       <p>
         Labor and delivery nurses combine high-acuity clinical skills with deeply rewarding patient care. In 2026,

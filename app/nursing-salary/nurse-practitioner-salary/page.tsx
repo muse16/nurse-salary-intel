@@ -52,6 +52,8 @@ export default function NursePractitionerSalary() {
       schemaDescription="NP salary data by state, specialty, and practice setting for 2026."
       schemaUrl="/nursing-salary/nurse-practitioner-salary"
       faqs={faqs}
+      specialtySlug="nurse-practitioner-salary"
+      specialtyName="Nurse Practitioner"
     >
       <p>
         Nurse practitioners are among the fastest-growing and highest-paid roles in healthcare. In 2026, NPs
