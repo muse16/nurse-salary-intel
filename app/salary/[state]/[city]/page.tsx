@@ -9,6 +9,22 @@ import Link from 'next/link';
 import { notFound, redirect } from 'next/navigation';
 import type { Metadata } from 'next';
 
+/**
+ * When a rich editorial blog post exists for a city, the programmatic city page
+ * defers its canonical to that post to avoid cannibalization.
+ * Key format: `${stateSlug}/${citySlug}` — add new entries here whenever a
+ * city-level blog post is published.
+ */
+const CITY_CANONICAL_OVERRIDES: Record<string, string> = {
+  'california/los-angeles':   'https://nursesalaryintel.com/rn-salary-los-angeles-2026',
+  'florida/miami':            'https://nursesalaryintel.com/rn-salary-miami-fl-2026',
+  'massachusetts/boston':     'https://nursesalaryintel.com/boston-rn-salary-2026',
+  'florida/orlando':          'https://nursesalaryintel.com/orlando-rn-salary-2026',
+  'arizona/phoenix':          'https://nursesalaryintel.com/phoenix-rn-salary-2026',
+  'texas/dallas':             'https://nursesalaryintel.com/dallas-rn-salary-2026',
+  'texas/houston':            'https://nursesalaryintel.com/houston-rn-salary-2026',
+};
+
 interface PageProps {
   params: Promise<{
     state: string;
@@ -56,7 +72,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `${cityData.city} RN Salary 2026: ${titleSuffix}`,
     description: `${cityData.city}, ${cityData.state} RNs earn ${annualFull} on average in 2026. Top hospitals, salary range ($${cityData.minSalary?.toLocaleString() || ''}–$${cityData.maxSalary?.toLocaleString() || ''}), and how this metro compares to the state average.`,
     alternates: {
-      canonical: `https://nursesalaryintel.com/salary/${state}/${city}`,
+      canonical: CITY_CANONICAL_OVERRIDES[`${state}/${city}`]
+        ?? `https://nursesalaryintel.com/salary/${state}/${city}`,
     },
   };
 }
