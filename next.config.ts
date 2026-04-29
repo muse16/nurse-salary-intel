@@ -82,16 +82,7 @@ const nextConfig: NextConfig = {
         destination: '/salary/massachusetts/boston',
         permanent: true,
       },
-      {
-        source: '/dallas-rn-salary-2026',
-        destination: '/salary/texas/dallas',
-        permanent: true,
-      },
-      {
-        source: '/houston-rn-salary-2026',
-        destination: '/salary/texas/houston',
-        permanent: true,
-      },
+      // /dallas-rn-salary-2026 and /houston-rn-salary-2026 are live rich blog posts — no redirect
       {
         source: '/orlando-rn-salary-2026',
         destination: '/salary/florida/orlando',

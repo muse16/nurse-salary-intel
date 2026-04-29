@@ -112,6 +112,13 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/nurse-salary-by-hospital', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/registered-nurse-salary-breakdown', priority: 0.8, changeFrequency: 'monthly' },
 
+  // Week 4 editorial posts — April 2026
+  { path: '/dallas-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/houston-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/pediatric-nurse-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/per-diem-nurse-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/rn-vs-lpn-salary-2026', priority: 0.9, changeFrequency: 'monthly' },
+
   // Week 1 editorial posts — April 2026
   { path: '/rn-salary-miami-fl-2026', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/icu-nurse-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
