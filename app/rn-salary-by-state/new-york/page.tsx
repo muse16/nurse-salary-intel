@@ -40,6 +40,8 @@ export default function NewYorkRNSalary() {
       schemaTitle="RN Salary in New York 2026"
       schemaDescription="New York RN salary data by city with cost-of-living context for 2026."
       schemaUrl="/rn-salary-by-state/new-york"
+      stateName="New York"
+      stateSlug="new-york"
       faqs={faqs}
     >
       <p>

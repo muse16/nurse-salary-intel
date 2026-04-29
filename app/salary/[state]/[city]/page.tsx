@@ -303,6 +303,40 @@ export default async function CityPage({ params }: PageProps) {
             </p>
           </div>
 
+          {/* Other Cities in State */}
+          {(() => {
+            const siblingCities = getCitiesByState(cityData.state)
+              .filter(c => slugify(c) !== city)
+              .slice(0, 6);
+            return siblingCities.length > 0 ? (
+              <div className="bg-white rounded-xl shadow-sm p-7 border border-gray-100">
+                <h2 className="text-xl font-bold text-gray-900 mb-3">
+                  Other Cities in {cityData.state}
+                </h2>
+                <p className="text-gray-500 text-sm mb-4">
+                  Compare {cityData.city} nurse pay to other {cityData.state} metro areas:
+                </p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                  {siblingCities.map((siblingCity) => (
+                    <Link
+                      key={siblingCity}
+                      href={`/salary/${state}/${slugify(siblingCity)}`}
+                      className="flex items-center justify-between px-3 py-2 rounded-lg border border-gray-200 hover:border-blue-500 hover:bg-blue-50 transition-colors text-sm"
+                    >
+                      <span className="text-gray-800 font-medium">{siblingCity}</span>
+                      <span className="text-blue-600 text-xs">→</span>
+                    </Link>
+                  ))}
+                </div>
+                <p className="text-xs text-gray-400 mt-3">
+                  <Link href={`/rn-salary-by-state/${state}`} className="hover:underline text-blue-500">{cityData.state} state average →</Link>
+                  {' · '}
+                  <Link href="/rn-salary-by-city" className="hover:underline text-blue-500">All cities →</Link>
+                </p>
+              </div>
+            ) : null;
+          })()}
+
           <div className="bg-white rounded-xl shadow-sm p-7 border border-gray-100">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">RN Salary FAQs — {cityData.city}, {cityData.state}</h2>
             <div className="space-y-4 text-sm">

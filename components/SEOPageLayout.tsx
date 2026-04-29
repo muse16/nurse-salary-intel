@@ -5,6 +5,7 @@ import LastUpdated from './LastUpdated';
 import ContractAuditCTA from './ContractAuditCTA';
 import FAQSection from './FAQSection';
 import ArticleSchema from './ArticleSchema';
+import { getCitiesByState, slugify } from '@/lib/data';
 
 interface BreadcrumbItem {
   label: string;
@@ -39,6 +40,10 @@ interface SEOPageLayoutProps {
   schemaUrl: string;
   faqs: FAQItem[];
   children: React.ReactNode;
+  /** Pass the full state name (e.g. "Arizona") to auto-render a Top Cities section */
+  stateName?: string;
+  /** Pass the state slug (e.g. "arizona") for city URL generation */
+  stateSlug?: string;
 }
 
 export default function SEOPageLayout({
@@ -54,7 +59,10 @@ export default function SEOPageLayout({
   schemaUrl,
   faqs,
   children,
+  stateName,
+  stateSlug,
 }: SEOPageLayoutProps) {
+  const stateCities = stateName && stateSlug ? getCitiesByState(stateName) : [];
   return (
     <div className="min-h-screen bg-surface">
       <SiteNav />
@@ -117,6 +125,33 @@ export default function SEOPageLayout({
             </div>
           )}
         </div>
+
+        {/* Top Cities Section — rendered when stateName + stateSlug provided */}
+        {stateName && stateSlug && stateCities.length > 0 && (
+          <div className="border-t border-outline-variant pt-8 mt-8">
+            <h2 className="text-xl font-bold font-headline text-on-surface mb-4">
+              Top Cities for Nurses in {stateName}
+            </h2>
+            <p className="text-on-surface-variant text-sm mb-4">
+              RN salaries vary significantly by metro area within {stateName}. See city-level pay, top hospitals, and how each market compares to the statewide average.
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              {stateCities.map((city) => (
+                <Link
+                  key={city}
+                  href={`/salary/${stateSlug}/${slugify(city)}`}
+                  className="flex items-center gap-2 p-3 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors text-sm"
+                >
+                  <span className="text-primary font-medium">{city}</span>
+                  <span className="text-on-surface-variant text-xs ml-auto">→</span>
+                </Link>
+              ))}
+            </div>
+            <p className="text-xs text-on-surface-variant mt-4">
+              See all cities: <Link href="/rn-salary-by-city" className="text-primary hover:underline">RN salary by city →</Link>
+            </p>
+          </div>
+        )}
 
         <ContractAuditCTA variant="banner" />
       </main>

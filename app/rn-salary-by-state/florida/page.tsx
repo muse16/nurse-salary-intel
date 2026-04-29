@@ -81,6 +81,8 @@ export default function FloridaRNSalary() {
       schemaTitle="RN Salary in Florida 2026"
       schemaDescription="Florida RN salary by city with no-tax advantage and cost-of-living context."
       schemaUrl="/rn-salary-by-state/florida"
+      stateName="Florida"
+      stateSlug="florida"
       faqs={faqs}
     >
       <p>

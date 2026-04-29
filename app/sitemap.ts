@@ -36,6 +36,9 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/nursing-salary/best-rn-to-bsn-programs', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/nursing-salary/salary-data-2026', priority: 0.9, changeFrequency: 'monthly' },
 
+  // RN Salary by City hub
+  { path: '/rn-salary-by-city', priority: 0.9, changeFrequency: 'monthly' },
+
   // RN Salary by State cluster
   { path: '/rn-salary-by-state', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/rn-salary-by-state/highest-paying-states', priority: 0.8, changeFrequency: 'monthly' },

@@ -39,6 +39,8 @@ export default function CaliforniaRNSalary() {
       schemaTitle="RN Salary in California 2026"
       schemaDescription="California RN salary by city, cost of living context, and comparisons for 2026."
       schemaUrl="/rn-salary-by-state/california"
+      stateName="California"
+      stateSlug="california"
       faqs={faqs}
     >
       <p>

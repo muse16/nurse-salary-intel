@@ -38,6 +38,8 @@ export default function TexasRNSalary() {
       schemaTitle="RN Salary in Texas 2026"
       schemaDescription="Texas RN salary by city, no-tax advantage, and comparisons for 2026."
       schemaUrl="/rn-salary-by-state/texas"
+      stateName="Texas"
+      stateSlug="texas"
       faqs={faqs}
     >
       <p>

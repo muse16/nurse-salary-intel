@@ -86,6 +86,8 @@ export default function ArizonaRNSalary() {
       schemaTitle="RN Salary in Arizona 2026"
       schemaDescription="Arizona RN salary by city, cost of living context, and hospital comparisons for 2026."
       schemaUrl="/rn-salary-by-state/arizona"
+      stateName="Arizona"
+      stateSlug="arizona"
       faqs={faqs}
     >
       <p>
