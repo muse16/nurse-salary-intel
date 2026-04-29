@@ -119,6 +119,18 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/per-diem-nurse-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/rn-vs-lpn-salary-2026', priority: 0.9, changeFrequency: 'monthly' },
 
+  // Week 5 salary guide pages -- April 2026
+  { path: '/chicago-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/seattle-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/atlanta-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/crna-salary-2026', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/new-grad-rn-salary-2026', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/houston-vs-dallas-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/icu-vs-er-nurse-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/nurse-sign-on-bonus-guide-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/travel-nurse-vs-staff-nurse-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/rn-salary-by-years-of-experience-2026', priority: 0.9, changeFrequency: 'monthly' },
+
   // Week 1 editorial posts — April 2026
   { path: '/rn-salary-miami-fl-2026', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/icu-nurse-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
