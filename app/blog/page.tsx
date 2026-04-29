@@ -5,8 +5,8 @@ import type { Metadata } from 'next';
 import SiteNav from '@/components/SiteNav';
 
 export const metadata: Metadata = {
-  title: 'Nursing Contract & Salary Blog | Nurse Salary Intelligence',
-  description: 'Expert guidance on nursing contracts, salary negotiation, and red flag clauses. Written for RNs navigating offer letters and travel contracts.',
+  title: 'Nurse Salary Guides 2026 | Pay by State, City & Specialty',
+  description: 'Comprehensive nurse salary guides covering RN pay by state, city, and specialty. Data-driven insights for 2026 — compare markets, certifications, and career paths.',
 };
 
 const categoryColors: Record<string, string> = {
@@ -32,9 +32,9 @@ export default function BlogPage() {
       <SiteNav />
       <header className="bg-white border-b border-gray-200 shadow-sm pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <h1 className="text-3xl font-bold text-gray-900">Nursing Contract & Salary Blog</h1>
+          <h1 className="text-3xl font-bold text-gray-900">Nurse Salary Guides</h1>
           <p className="text-gray-500 mt-2 text-sm">
-            Know what you&apos;re signing. Know what to negotiate.
+            Data-driven salary guides by state, city, and specialty — updated for 2026.
           </p>
         </div>
       </header>

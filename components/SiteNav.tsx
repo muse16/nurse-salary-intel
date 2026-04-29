@@ -8,7 +8,7 @@ const navLinks = [
   { label: 'Dashboard', href: '/#dashboard' },
   { label: 'Salaries', href: '/#browse' },
   { label: 'BSN vs RN', href: '/salary/bsn-vs-rn' },
-  { label: 'Blog', href: '/blog' },
+  { label: 'Salary Guides', href: '/blog' },
   { label: 'Contract Audit', href: '/audit' },
 ];
 
