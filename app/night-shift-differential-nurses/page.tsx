@@ -4,13 +4,13 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Night Shift Nurse Salary 2026: How Much More Do Night Nurses Make?',
+  title: 'How Much More Do Night Shift Nurses Make? 2026 Pay Guide',
   description:
-    'Night shift nurse salary in 2026: RNs earn $10K\u2013$25K more per year with differentials. See pay by state, real take-home math, and whether nights are worth it.',
+    'Night shift nurses earn $4\u2013$10/hr more in 2026 \u2014 that\u2019s up to $25K extra per year. See differential rates by state, real take-home math, and whether nights are worth it.',
   alternates: { canonical: 'https://nursesalaryintel.com/night-shift-differential-nurses' },
   openGraph: {
-    title: 'Night Shift Nurse Salary 2026: How Much More Do Night Nurses Make?',
-    description: 'Night shift RNs earn $10K\u2013$25K more/year. Pay by state, take-home math, and the full trade-off breakdown.',
+    title: 'How Much More Do Night Shift Nurses Make? 2026 Pay Guide',
+    description: 'Night shift nurses earn $4\u2013$10/hr more in 2026 \u2014 up to $25K extra/year. Pay by state, take-home math, and the full trade-off breakdown.',
     url: 'https://nursesalaryintel.com/night-shift-differential-nurses',
   },
 };

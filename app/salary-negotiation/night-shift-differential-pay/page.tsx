@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Night Shift Differential Pay for Nurses 2026 | Rates by Specialty & Hospital',
+  title: 'Night Shift Differential Pay 2026: Rates by Hospital & Specialty',
   description:
-    'How much extra do nurses earn for night shifts? See 2026 night shift differential rates by specialty, hospital system, and state.',
+    'How much is night shift differential for nurses in 2026? See exact rates by hospital system, specialty, and state — plus tips to negotiate yours higher.',
 };
 
 const author = { name: 'NurseSalaryIntel Editorial Team', link: '/about' };
