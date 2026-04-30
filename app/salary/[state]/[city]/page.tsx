@@ -409,6 +409,3 @@ export default async function CityPage({ params }: PageProps) {
     </div>
   );
 }
-    </div>
-  );
-}
