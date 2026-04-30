@@ -4,13 +4,13 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'New Grad RN Salary 2026: $62K–$105K + Sign-On Bonus Range',
+  title: 'Entry Level Nurse Salary 2026: What New Grad RNs Actually Make',
   description:
-    'New-grad RNs earn $62,000–$105,000 in 2026 depending on state, plus $5K–$15K sign-on bonuses at most hospitals. See pay by market, top employers, and how to negotiate your first offer.',
+    'Entry-level RNs earn $65,000–$78,000/year nationally in 2026. California new grads start at $90K+. See pay by state, sign-on bonuses, and how to negotiate your first offer.',
   alternates: { canonical: 'https://nursesalaryintel.com/entry-level-nurse-salary' },
   openGraph: {
-    title: 'New Grad RN Salary 2026: $62K–$105K + Sign-On Bonus',
-    description: 'New grads earn $62K–$105K in 2026 + $5–$15K sign-ons. Top markets + negotiation tips.',
+    title: 'Entry Level Nurse Salary 2026: What New Grad RNs Actually Make',
+    description: 'Entry-level RNs earn $65K–$78K nationally in 2026. California starts at $90K+. Pay by state, sign-on bonuses, and negotiation tips.',
     url: 'https://nursesalaryintel.com/entry-level-nurse-salary',
   },
 };
@@ -55,7 +55,7 @@ export default function EntryLevelNurseSalary() {
         { label: 'Home', href: '/' },
         { label: 'Entry Level Nurse Salary' },
       ]}
-      h1="Entry Level Nurse Salary — What New RNs Make in 2026"
+      h1="Entry Level Nurse Salary 2026: What New Grad RNs Actually Make"
       lastUpdated="April 2026"
       author={author}
       sources={sources}
@@ -66,7 +66,7 @@ export default function EntryLevelNurseSalary() {
       faqs={faqs}
     >
       <p>
-        Starting salary for registered nurses varies more than most new grads expect. A new RN in California can earn $90,000+ at a union hospital in the Bay Area. The same new grad in rural Florida might start at $55,000. Understanding where entry-level salaries actually land — and knowing how to negotiate — can be worth $10,000–$20,000 annually from day one.
+        Entry-level RNs earn <strong>$65,000–$78,000/year nationally in 2026</strong>. California new grads are the outlier — Bay Area union hospitals start at $90,000–$105,000. Florida and Texas new grads typically start $58,000–$72,000. The gap between markets is real, and knowing where you land — and how to negotiate — can be worth $10,000–$20,000 from day one.
       </p>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">New Grad RN Salary by State and City (2026)</h2>

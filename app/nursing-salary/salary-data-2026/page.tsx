@@ -4,9 +4,9 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Nurse Salary Statistics 2026: BLS Benchmarks ($89,010 Avg)',
+  title: 'Nurse Salary Statistics 2026: Average RN Pay by State & Specialty',
   description:
-    'Sourced nurse salary stats for 2026 from BLS, AACN, and SHRM. National avg $89,010/yr ($42.80/hr). State rankings, specialty pay, and wage growth — citation-ready with sources.',
+    'Average RN salary is $89,010/yr ($42.80/hr) in 2026. See state rankings, specialty pay, travel nurse earnings, and wage gaps — all sourced from BLS OEWS.',
   alternates: { canonical: 'https://nursesalaryintel.com/nursing-salary/salary-data-2026' },
   openGraph: {
     title: 'Nurse Salary Statistics 2026: BLS Benchmarks ($89K Avg)',
@@ -78,9 +78,9 @@ export default function NurseSalaryData2026() {
         { label: 'Nursing Salary', href: '/nursing-salary/by-specialty-2026' },
         { label: 'Nurse Salary Data 2026' },
       ]}
-      h1="Nurse Salary Data 2026 — Key Statistics & Benchmarks"
+      h1="Average Nurse Salary 2026: Key Statistics by State & Specialty"
       lastUpdated="April 2026"
-      schemaTitle="Nurse Salary Data 2026"
+      schemaTitle="Average Nurse Salary 2026: Key Statistics by State & Specialty"
       schemaDescription="Sourced nurse salary statistics for 2026 including state rankings, specialty pay, travel nurse earnings, and wage gaps."
       schemaUrl="/nursing-salary/salary-data-2026"
       faqs={[
@@ -99,9 +99,10 @@ export default function NurseSalaryData2026() {
       ]}
     >
       <p>
-        This page compiles the most-cited nurse salary statistics for 2026 in one place. All figures are
-        sourced from the Bureau of Labor Statistics OEWS survey or NurseSalaryIntel proprietary data.
-        Journalists, researchers, and educators are welcome to cite these figures with a link back to this page.
+        The average RN salary in the US is <strong>$89,010/year ($42.80/hr)</strong> in 2026, according to
+        BLS OEWS data. That ranges from $62,000 in Mississippi to $124,000 in California — a $62,000 gap
+        between the lowest and highest-paying states. CRNAs top the specialty rankings at $214,000/year.
+        All key figures are compiled below, sourced from BLS OEWS and NurseSalaryIntel data.
       </p>
 
       <div className="bg-primary/5 border-l-4 border-primary rounded-r-lg p-5 my-6">
