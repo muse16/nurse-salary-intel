@@ -23,6 +23,7 @@ const CITY_CANONICAL_OVERRIDES: Record<string, string> = {
   'arizona/phoenix':          'https://nursesalaryintel.com/phoenix-rn-salary-2026',
   'texas/dallas':             'https://nursesalaryintel.com/dallas-rn-salary-2026',
   'texas/houston':            'https://nursesalaryintel.com/houston-rn-salary-2026',
+  'texas/austin':             'https://nursesalaryintel.com/austin-rn-salary-2026',
 };
 
 interface PageProps {
