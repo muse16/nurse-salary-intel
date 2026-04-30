@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const navLinks = [
   { label: 'Dashboard', href: '/#dashboard' },
-  { label: 'Salaries', href: '/#browse' },
+  { label: 'Salary Data', href: '/#browse' },
   { label: 'BSN vs RN', href: '/salary/bsn-vs-rn' },
   { label: 'Salary Guides', href: '/blog' },
   { label: 'Contract Audit', href: '/audit' },
