@@ -105,6 +105,25 @@ const nextConfig: NextConfig = {
         destination: '/nursing-salary/icu-nurse-salary',
         permanent: true,
       },
+
+      // ── Fix 404s: /specialty/* routes don't exist ────────────────────────
+      { source: '/specialty/icu', destination: '/nursing-salary/icu-nurse-salary', permanent: true },
+      { source: '/specialty/emergency-room', destination: '/icu-vs-er-nurse-salary-2026', permanent: true },
+      { source: '/specialty/er', destination: '/icu-vs-er-nurse-salary-2026', permanent: true },
+      { source: '/specialty/travel-nurse', destination: '/travel-nursing/salary-guide-2026', permanent: true },
+      { source: '/specialty/contract', destination: '/travel-nursing/salary-guide-2026', permanent: true },
+      { source: '/specialty/pediatrics', destination: '/pediatric-nurse-salary-2026', permanent: true },
+      { source: '/specialty/psychiatric', destination: '/pmhnp-salary-2026', permanent: true },
+      { source: '/specialty/surgical', destination: '/rn-salary-by-state', permanent: true },
+      { source: '/specialty/dialysis', destination: '/rn-salary-by-state', permanent: true },
+      { source: '/specialty/part-time', destination: '/per-diem-nurse-salary-2026', permanent: true },
+      { source: '/specialty/:path*', destination: '/rn-salary-by-state', permanent: true },
+
+      // ── Fix 404s: /salary/:state (no city) → state hub page ─────────────
+      { source: '/salary/:state', destination: '/rn-salary-by-state/:state', permanent: true },
+
+      // ── Fix 404s: /salary/:state/:city/:specialty (4-level) → city page ──
+      { source: '/salary/:state/:city/:specialty', destination: '/salary/:state/:city', permanent: true },
     ];
   },
 };
