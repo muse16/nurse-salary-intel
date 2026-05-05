@@ -116,16 +116,16 @@ export default function BsnVsRnPage() {
               $10,000 annual gap that compounds into $200K+ over a career. Here&apos;s the full breakdown by credential
               and state, plus an ROI calculator to see your personal return.
             </p>
-            <div className="mt-6 flex flex-wrap gap-6 text-sm">
+            <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm">
               {[
-                { label: 'ADN National Avg', value: '$65K/yr' },
-                { label: 'BSN National Avg', value: '$75K/yr' },
-                { label: 'MSN National Avg', value: '$90K/yr' },
-                { label: 'NP National Avg',  value: '$115K/yr' },
-              ].map(({ label, value }) => (
-                <div key={label} className="text-center">
-                  <div className="text-2xl font-black text-primary">{value}</div>
-                  <div className="text-gray-500 text-xs mt-0.5">{label}</div>
+                { label: 'ADN National Avg', value: '$65K/yr', color: 'text-gray-700' },
+                { label: 'BSN National Avg', value: '$75K/yr', color: 'text-primary' },
+                { label: 'MSN National Avg', value: '$90K/yr', color: 'text-purple-700' },
+                { label: 'NP National Avg',  value: '$115K/yr', color: 'text-green-700' },
+              ].map(({ label, value, color }) => (
+                <div key={label} className="bg-white border border-gray-200 rounded-xl px-4 py-3 text-center shadow-sm">
+                  <div className={`text-2xl font-black ${color}`}>{value}</div>
+                  <div className="text-gray-500 text-xs mt-1">{label}</div>
                 </div>
               ))}
             </div>
