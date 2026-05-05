@@ -135,6 +135,11 @@ export default function BsnVsRnPage() {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
 
+        {/* ROI Calculator — featured at top */}
+        <section>
+          <RoiCalculator />
+        </section>
+
         {/* Salary Table */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-1">
@@ -193,11 +198,6 @@ export default function BsnVsRnPage() {
           <p className="text-xs text-gray-400 mt-2">
             * Salary ranges represent median annual earnings. Actual pay varies by employer, experience, and shift differential.
           </p>
-        </section>
-
-        {/* ROI Calculator */}
-        <section>
-          <RoiCalculator />
         </section>
 
         {/* Top BSN Programs */}
