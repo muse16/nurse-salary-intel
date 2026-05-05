@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
+import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 
 export const metadata: Metadata = {
@@ -118,6 +119,15 @@ export default function PMHNPSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">PMHNP Salary by Work Setting</h2>
+
+      <Image
+        src="/images/pmhnp-salary-2026-comparison.png"
+        alt="Horizontal bar chart comparing 2026 PMHNP salary versus other NP specialties"
+        width={800}
+        height={450}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <p>
         Private practice and telehealth offer the highest earnings for PMHNPs, but employed positions at
         VA medical centers and community mental health centers offer stability, benefits, and Public Service
@@ -131,6 +141,15 @@ export default function PMHNPSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">PMHNP vs. Other NP Specialties</h2>
+
+      <Image
+        src="/images/pmhnp-salary-2026-counseling.png"
+        alt="Psychiatric mental health nurse practitioner listening attentively to a patient in a calm, softly lit counseling room"
+        width={600}
+        height={800}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <SalaryTable
         title="NP Salary by Specialty — Ranked"
         headers={['NP Specialty', 'Avg Annual Salary', 'Notes']}

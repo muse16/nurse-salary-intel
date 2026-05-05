@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
+import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 
 export const metadata: Metadata = {
@@ -103,6 +104,15 @@ export default function MinneapolisRNSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Minneapolis RN Salary by Hospital (2026)</h2>
+
+      <Image
+        src="/images/minneapolis-rn-salary-2026-comparison.png"
+        alt="Bar chart comparing 2026 RN salaries across top Minneapolis hospitals including Mayo Clinic and M Health Fairview"
+        width={800}
+        height={450}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <p>
         MNA-represented hospitals (M Health Fairview, Allina, HealthPartners) generally pay more and offer
         more predictable wage progression than non-union employers. The union&apos;s 2023 strike across the Twin
@@ -116,6 +126,15 @@ export default function MinneapolisRNSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Minneapolis RN Salary by Specialty (2026)</h2>
+
+      <Image
+        src="/images/minneapolis-rn-salary-2026-hospital.png"
+        alt="Registered nurse in navy blue scrubs outside a Minneapolis Minnesota hospital, professional and confident in a healthcare setting"
+        width={600}
+        height={800}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <SalaryTable
         title="Minneapolis RN Salary by Specialty"
         headers={['Specialty', 'Avg Annual Salary', 'Premium Over Med-Surg']}

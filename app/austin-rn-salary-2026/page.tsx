@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
+import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 
 export const metadata: Metadata = {
@@ -116,6 +117,15 @@ export default function AustinRNSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Austin RN Salary by Hospital (2026)</h2>
+
+      <Image
+        src="/images/austin-rn-salary-2026-comparison.png"
+        alt="Bar chart comparing 2026 RN salaries across top Austin hospitals including Ascension Seton and St. David's"
+        width={800}
+        height={450}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <p>
         Dell Seton Medical Center at UT — Austin&apos;s only Level 1 Trauma Center — pays the highest base salaries
         and offers Public Service Loan Forgiveness (PSLF) eligibility as a nonprofit academic medical center.
@@ -129,6 +139,15 @@ export default function AustinRNSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Austin RN Salary by Specialty (2026)</h2>
+
+      <Image
+        src="/images/austin-rn-salary-2026-hospital.png"
+        alt="Registered nurse in scrubs standing confidently outside a modern Austin Texas hospital entrance, warm natural light and professional demeanor"
+        width={600}
+        height={800}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <p>
         Trauma RNs at Dell Seton earn the highest specialty premium. ICU and NICU nurses are the next tier.
         Med-Surg serves as the baseline; all specialties are shown as premiums above it.

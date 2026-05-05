@@ -119,6 +119,9 @@ const nextConfig: NextConfig = {
       { source: '/specialty/part-time', destination: '/per-diem-nurse-salary-2026', permanent: true },
       { source: '/specialty/:path*', destination: '/rn-salary-by-state', permanent: true },
 
+      // ── Fix 404s: misrouted rn-salary-by-state non-state slugs ─────────────
+      { source: '/rn-salary-by-state/bsn-vs-rn', destination: '/salary/bsn-vs-rn', permanent: true },
+
       // ── Fix 404s: /salary/:state (no city) → state hub page ─────────────
       { source: '/salary/:state', destination: '/rn-salary-by-state/:state', permanent: true },
 

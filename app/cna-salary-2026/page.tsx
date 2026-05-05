@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
+import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 
 export const metadata: Metadata = {
@@ -115,6 +116,15 @@ export default function CNASalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">CNA Salary by Work Setting</h2>
+
+      <Image
+        src="/images/cna-salary-2026-comparison.png"
+        alt="Bar chart showing 2026 CNA salary progression from entry-level through the nursing credential ladder to RN and NP"
+        width={800}
+        height={450}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <p>
         Hospital CNAs consistently out-earn their counterparts in nursing homes and assisted living.
         If maximizing CNA pay is the goal, targeting inpatient hospital positions — especially ICU step-down,
@@ -128,6 +138,15 @@ export default function CNASalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">CNA vs. LPN vs. RN: The Career Ladder</h2>
+
+      <Image
+        src="/images/cna-salary-2026-patient-care.png"
+        alt="Certified nursing assistant in scrubs providing compassionate bedside care to a patient in a hospital room, patient-centered care"
+        width={600}
+        height={800}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <p>
         The most impactful financial decision a CNA can make is pursuing the LPN or RN credential. The salary
         jump is immediate and dramatic — an LPN earns $16,800/year more than a CNA, and an RN earns nearly

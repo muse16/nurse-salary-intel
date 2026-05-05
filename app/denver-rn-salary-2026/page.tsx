@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
+import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 
 export const metadata: Metadata = {
@@ -102,6 +103,15 @@ export default function DenverRNSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Denver RN Salary by Hospital (2026)</h2>
+
+      <Image
+        src="/images/denver-rn-salary-2026-comparison.png"
+        alt="Bar chart comparing 2026 RN salaries across top Denver hospitals including UCHealth and SCL Health"
+        width={800}
+        height={450}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <p>
         UCHealth University of Colorado Hospital — Denver&apos;s flagship academic medical center and Level 1
         Trauma Center — pays the highest base salaries and offers PSLF eligibility. Children&apos;s Hospital
@@ -115,6 +125,15 @@ export default function DenverRNSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Denver RN Salary by Specialty (2026)</h2>
+
+      <Image
+        src="/images/denver-rn-salary-2026-hospital.png"
+        alt="Registered nurse in scrubs standing outside a modern Denver Colorado hospital, Rocky Mountains softly visible in the background"
+        width={600}
+        height={800}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <SalaryTable
         title="Denver RN Salary by Specialty"
         headers={['Specialty', 'Avg Annual Salary', 'Premium Over Med-Surg']}

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
+import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 
 export const metadata: Metadata = {
@@ -117,6 +118,15 @@ export default function LPNSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">LPN Salary by Work Setting</h2>
+
+      <Image
+        src="/images/lpn-salary-2026-comparison.png"
+        alt="Horizontal bar chart comparing 2026 LPN salaries across top-paying states"
+        width={800}
+        height={450}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <p>
         Home health agencies and correctional facilities pay LPNs the most. Nursing homes historically
         employed the largest share of LPNs, but home health has surpassed it in both employment volume
@@ -130,6 +140,15 @@ export default function LPNSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">LPN vs. CNA vs. RN: Career Ladder Salary</h2>
+
+      <Image
+        src="/images/lpn-salary-2026-clinic.png"
+        alt="Licensed practical nurse in scrubs reviewing a patient chart at a community health clinic, focused and professional bedside manner"
+        width={600}
+        height={800}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <p>
         The LPN credential sits squarely in the middle of the nursing career ladder. It costs 12–18 months
         and $10,000–$20,000 in tuition, and the salary premium over CNA ($16,800/year) typically recoups

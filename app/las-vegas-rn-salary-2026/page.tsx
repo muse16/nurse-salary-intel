@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
+import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 
 export const metadata: Metadata = {
@@ -102,6 +103,15 @@ export default function LasVegasRNSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Las Vegas RN Salary by Hospital (2026)</h2>
+
+      <Image
+        src="/images/las-vegas-rn-salary-2026-comparison.png"
+        alt="Bar chart comparing 2026 RN salaries across top Las Vegas hospitals including University Medical Center and Sunrise Health"
+        width={800}
+        height={450}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <p>
         UMC is Clark County&apos;s only Level 1 Adult Trauma Center and the public safety net hospital —
         it pays the highest base salaries in Las Vegas. HCA-owned Sunrise and Spring Valley are the two
@@ -115,6 +125,15 @@ export default function LasVegasRNSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Las Vegas RN Salary by Specialty (2026)</h2>
+
+      <Image
+        src="/images/las-vegas-rn-salary-2026-hospital.png"
+        alt="Registered nurse in navy blue scrubs outside a modern Las Vegas Nevada hospital entrance, professional editorial healthcare style"
+        width={600}
+        height={800}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <p>
         Trauma nurses at UMC command the highest specialty premium — the volume and severity of Strip-related
         traumas and the 24/7 mass casualty preparedness create genuine demand for experienced trauma RNs.

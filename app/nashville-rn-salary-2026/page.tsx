@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
+import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 
 export const metadata: Metadata = {
@@ -102,6 +103,15 @@ export default function NashvilleRNSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Nashville RN Salary by Hospital (2026)</h2>
+
+      <Image
+        src="/images/nashville-rn-salary-2026-comparison.png"
+        alt="Bar chart comparing 2026 RN salaries across top Nashville hospitals including Vanderbilt and HCA"
+        width={800}
+        height={450}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <p>
         Vanderbilt dominates the Nashville market for both salary and academic prestige. Its Level 1 Trauma
         Center status and academic medical center pay bands push experienced nurses to $100,000+ — well above
@@ -115,6 +125,15 @@ export default function NashvilleRNSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Nashville RN Salary by Specialty (2026)</h2>
+
+      <Image
+        src="/images/nashville-rn-salary-2026-hospital.png"
+        alt="Registered nurse in scrubs at the entrance of a Nashville Tennessee hospital, confident posture and warm professional lighting"
+        width={600}
+        height={800}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <SalaryTable
         title="Nashville RN Salary by Specialty"
         headers={['Specialty', 'Avg Annual Salary', 'Premium Over Med-Surg']}

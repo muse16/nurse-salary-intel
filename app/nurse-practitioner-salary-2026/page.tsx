@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
+import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 
 export const metadata: Metadata = {
@@ -118,6 +119,15 @@ export default function NursePractitionerSalary2026() {
         source="BLS OEWS 2025 + NurseSalaryIntel 2026 data"
       />
       <div className="not-prose flex flex-wrap gap-3 mt-2">
+
+      <Image
+        src="/images/nurse-practitioner-salary-2026-comparison.png"
+        alt="Horizontal bar chart comparing 2026 nurse practitioner salaries by specialty from PMHNP to FNP"
+        width={800}
+        height={450}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
         <Link href="/fnp-salary-2026" className="text-primary text-sm font-semibold hover:underline">FNP salary breakdown →</Link>
         <Link href="/pmhnp-salary-2026" className="text-primary text-sm font-semibold hover:underline">PMHNP salary breakdown →</Link>
         <Link href="/agnp-salary-2026" className="text-primary text-sm font-semibold hover:underline">AGNP salary breakdown →</Link>
@@ -137,6 +147,15 @@ export default function NursePractitionerSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">NP vs. RN vs. CRNA: Full Career Ladder</h2>
+
+      <Image
+        src="/images/nurse-practitioner-salary-2026-exam-room.png"
+        alt="Nurse practitioner in white coat conducting a thorough patient examination in a clean modern exam room, attentive clinical care"
+        width={600}
+        height={800}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <SalaryTable
         title="Nursing Career Ladder — Credential Salary Comparison"
         headers={['Credential', 'Avg Annual Salary', 'Hourly Rate']}

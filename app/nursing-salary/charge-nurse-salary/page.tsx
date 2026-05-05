@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
+import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
@@ -123,6 +124,15 @@ export default function ChargeNurseSalary() {
         source="NurseSalaryIntel 2026 survey data"
       />
 
+      <Image
+        src="/images/charge-nurse-salary-2026-comparison.png"
+        alt="Grouped bar chart comparing 2026 charge nurse versus staff RN salaries by specialty unit"
+        width={800}
+        height={450}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
+
       <p>
         ICU and ER charge nurses earn the highest premiums ($4–$5/hr) because the clinical decision-making
         load on these units is substantially higher. Med-surg and telemetry charge nurses typically sit at
@@ -141,6 +151,15 @@ export default function ChargeNurseSalary() {
         headers={['Facility Type', 'Typical Differential', 'Approx. Annual Add-On']}
         rows={differentialByFacility}
         source="NurseSalaryIntel 2026 survey data"
+      />
+
+      <Image
+        src="/images/charge-nurse-salary-2026-leadership.png"
+        alt="Charge nurse in scrubs reviewing patient assignments at a busy nursing station, confidently leading the unit team"
+        width={600}
+        height={800}
+        className="rounded-xl w-full"
+        loading="lazy"
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Average Charge Nurse Salary by State (2026)</h2>

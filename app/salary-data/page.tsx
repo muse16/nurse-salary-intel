@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
+import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
@@ -109,6 +110,15 @@ export default function SalaryDataPage() {
       />
 
       {/* Top States Table */}
+
+      <Image
+        src="/images/salary-data-2026-comparison.png"
+        alt="Vertical bar chart showing 2026 nursing salary ladder from CNA through RN to CRNA and NP credentials"
+        width={800}
+        height={450}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <SalaryTable
         title="Highest-Paying States for Nurses — 2026"
         headers={['State', 'Avg. Annual Salary', 'Avg. Hourly Rate']}
@@ -117,6 +127,15 @@ export default function SalaryDataPage() {
       />
 
       {/* Trends */}
+
+      <Image
+        src="/images/salary-data-2026-team.png"
+        alt="Diverse team of nurses in scrubs collaborating at a modern hospital nursing station, professional healthcare teamwork"
+        width={600}
+        height={800}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <h2 className="text-2xl font-bold font-headline text-on-surface">Average RN Salary Trends (2020–2026)</h2>
       <p>
         Nursing salaries have grown 18% nationally since 2020, driven by post-pandemic staffing shortages

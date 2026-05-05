@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
+import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 
 export const metadata: Metadata = {
@@ -100,6 +101,15 @@ export default function FNPSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">FNP Salary by Work Setting</h2>
+
+      <Image
+        src="/images/fnp-salary-2026-comparison.png"
+        alt="Horizontal bar chart comparing 2026 FNP salaries across top-paying states"
+        width={800}
+        height={450}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <p>
         Independent private practice offers the highest earnings for FNPs, but requires business management
         skills and capital. FQHCs and rural health clinics offer a strong combination of competitive pay,
@@ -113,6 +123,15 @@ export default function FNPSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">FNP vs. Other NP Specialties</h2>
+
+      <Image
+        src="/images/fnp-salary-2026-family-care.png"
+        alt="Family nurse practitioner in white coat consulting warmly with a patient family in a comfortable primary care office setting"
+        width={600}
+        height={800}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <p>
         FNP earns less than PMHNP and ACNP but more than most RN specialties. For nurses choosing between
         NP tracks, the specialty decision is one of the most financially significant career choices — a

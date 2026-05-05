@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
+import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 
 export const metadata: Metadata = {
@@ -94,6 +95,15 @@ export default function AGNPSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">AGNP-AC vs. AGNP-PC Salary by Setting</h2>
+
+      <Image
+        src="/images/agnp-salary-2026-comparison.png"
+        alt="Horizontal bar chart comparing 2026 AGNP salaries by practice setting and certification track"
+        width={800}
+        height={450}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <p>
         Acute care AGNPs working in procedural specialties (cardiology, pulmonology, GI) consistently earn
         the most — their billing productivity and procedural involvement justify compensation above standard
@@ -108,6 +118,15 @@ export default function AGNPSalary2026() {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">AGNP vs. FNP: Which Pays More?</h2>
+
+      <Image
+        src="/images/agnp-salary-2026-senior-care.png"
+        alt="Adult-gerontology nurse practitioner reviewing a care plan attentively with an elderly patient in a comfortable clinical setting"
+        width={600}
+        height={800}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
       <p>
         On a primary care basis, FNP and AGNP-PC salaries are nearly identical — both average $122,000–$126,000/year
         nationally. The real salary divergence comes when comparing AGNP-AC (acute care) to FNP: acute care
