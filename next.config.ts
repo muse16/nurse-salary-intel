@@ -123,7 +123,8 @@ const nextConfig: NextConfig = {
       { source: '/rn-salary-by-state/bsn-vs-rn', destination: '/salary/bsn-vs-rn', permanent: true },
 
       // ── Fix 404s: /salary/:state (no city) → state hub page ─────────────
-      { source: '/salary/:state', destination: '/rn-salary-by-state/:state', permanent: true },
+      // Excludes /salary/bsn-vs-rn (real page) to avoid redirect loop
+      { source: '/salary/:state((?!bsn-vs-rn)[^/]+)', destination: '/rn-salary-by-state/:state', permanent: true },
 
       // ── Fix 404s: /salary/:state/:city/:specialty (4-level) → city page ──
       { source: '/salary/:state/:city/:specialty', destination: '/salary/:state/:city', permanent: true },
