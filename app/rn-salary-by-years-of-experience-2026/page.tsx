@@ -5,8 +5,8 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 
 export const metadata: Metadata = {
-  title: 'RN Salary by Years of Experience 2026: How Pay Grows Year by Year',
-  description: 'RN salary grows from $62K–$88K as a new grad to $108K–$140K+ with 10+ years experience. See the full 2026 pay trajectory by specialty, state, and certification.',
+  title: 'RN Salary by Years of Experience (2026): How Much More Do You Earn?',
+  description: 'See exactly how nurse pay increases from new grad to 20+ years. Real BLS data by experience level, specialty, and state.',
   alternates: { canonical: 'https://nursesalaryintel.com/rn-salary-by-years-of-experience-2026' },
 };
 

@@ -5,8 +5,8 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 
 export const metadata: Metadata = {
-  title: 'Nurse Sign-On Bonus Guide 2026: How Much, Who Pays, and How to Negotiate',
-  description: 'Nurse sign-on bonuses average $5,000–$20,000 in 2026. See what ICU, ER, L&D, and travel nurses get, which hospitals pay the most, and how to negotiate before you sign.',
+  title: 'Nurse Sign-On Bonuses 2026: How Much to Expect & How to Negotiate More',
+  description: 'Hospitals are offering $5K–$30K sign-on bonuses. See what\'s normal for your specialty and state — and how to negotiate higher.',
   alternates: { canonical: 'https://nursesalaryintel.com/nurse-sign-on-bonus-guide-2026' },
 };
 

@@ -6,8 +6,8 @@ import SalaryTable from '@/components/SalaryTable';
 import SalaryCalculator from '@/components/SalaryCalculator';
 
 export const metadata: Metadata = {
-  title: 'Pediatric Nurse Salary 2026: $78K–$112K Pay by State, Hospital & Specialty',
-  description: 'Pediatric nurse salary 2026: $78K–$112K depending on state, certification, and unit. See PICU vs floor, sign-on bonuses, top children\'s hospitals & growth path.',
+  title: 'Pediatric Nurse Salary 2026: Hourly Pay, Top States & Hospitals',
+  description: 'Pediatric RNs average $78,000–$95,000/year. See pay by state, experience level, and how it compares to other specialties.',
   alternates: { canonical: 'https://nursesalaryintel.com/pediatric-nurse-salary-2026' },
 };
 

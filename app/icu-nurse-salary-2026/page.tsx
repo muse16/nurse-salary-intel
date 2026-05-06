@@ -4,8 +4,8 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'ICU Nurse Salary 2026: Pay, Requirements, Career Path',
-  description: 'ICU nurse salary 2026: hourly pay, pay by state, CCRN certification impact, requirements, and the full critical-care RN career path.',
+  title: 'ICU Nurse Salary 2026: How Much Do Critical Care RNs Make?',
+  description: 'ICU nurses average $88,000–$105,000/year. See pay by state, experience level, and night shift differential.',
 };
 
 const experienceData = [

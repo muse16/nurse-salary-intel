@@ -5,8 +5,8 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 
 export const metadata: Metadata = {
-  title: 'Seattle RN Salary 2026: $102,740/yr Avg + UW Medicine, Swedish & Virginia Mason Pay',
-  description: 'Seattle RN salary 2026: $102,740/yr average, $49.40/hr — highest-paying major metro in the country. Pay by hospital, sign-on bonuses, and WA state vs. national comparison.',
+  title: 'Seattle RN Salary 2026: What Nurses Earn at UW, Swedish & Virginia Mason',
+  description: 'Seattle RNs average $95,000–$115,000/year — among the highest in the US. See pay by hospital and specialty.',
   alternates: { canonical: 'https://nursesalaryintel.com/seattle-rn-salary-2026' },
 };
 
