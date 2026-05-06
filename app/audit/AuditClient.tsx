@@ -297,15 +297,13 @@ export default function AuditClient() {
             <h3 className="text-lg font-bold text-blue-600 mb-2">Browse Salary Data →</h3>
             <p className="text-gray-700">Compare salaries across cities and hospitals nationwide</p>
           </Link>
-          <a
-            href="https://www.vivian.com/jobs/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/travel-nurse-salary-guide"
             className="border-2 border-green-200 rounded-lg p-6 hover:border-green-400 hover:shadow-md transition-all"
           >
-            <h3 className="text-lg font-bold text-green-600 mb-2">Find Travel Nursing Jobs →</h3>
-            <p className="text-gray-700">Browse 10,000+ travel and staff RN positions on Vivian Health</p>
-          </a>
+            <h3 className="text-lg font-bold text-green-600 mb-2">Travel Nurse Salary Guide →</h3>
+            <p className="text-gray-700">See how much travel nurses earn in every state and specialty</p>
+          </Link>
           <Link
             href="/rn-salary-by-state"
             className="border-2 border-purple-200 rounded-lg p-6 hover:border-purple-400 hover:shadow-md transition-all"

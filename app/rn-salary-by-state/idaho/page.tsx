@@ -123,14 +123,12 @@ export default function IdahoRNSalary() {
         eastern Idaho and the Magic Valley post consistent travel openings, particularly for
         med-surg and critical care nurses.
       </p>
-      <a
-        href="https://www.vivian.com/search?query=Travel+RN+Idaho&utm_source=nursesalaryintel&utm_medium=referral"
-        target="_blank"
-        rel="noopener noreferrer"
+      <Link
+        href="/travel-nurse-salary-guide"
         className="inline-block mt-4 px-6 py-3 gradient-primary text-on-primary rounded-xl font-bold text-sm hover:opacity-90 transition-opacity"
       >
-        Find Travel RN Jobs in Idaho →
-      </a>
+        Travel Nurse Salary Guide →
+      </Link>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Compare Idaho to Neighboring States</h2>
       <div className="grid sm:grid-cols-2 gap-4 mt-4">

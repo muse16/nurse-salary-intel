@@ -119,7 +119,7 @@ export default function MonetizationSlot({ type, city, state }: MonetizationSlot
         {/* Realistic job listings with affiliate links */}
         <div className="space-y-3 mb-4">
           <a
-            href={`https://www.vivian.com/jobs/${city ? `?search=${encodeURIComponent(`${city}, ${state}`)}` : ''}`}
+            href={`https://www.indeed.com/jobs?q=travel+nurse+rn${city ? `&l=${encodeURIComponent(`${city}, ${state}`)}` : ''}`}
             target="_blank"
             rel="noopener noreferrer"
             className="block bg-white rounded-lg p-4 shadow-sm border border-gray-200 hover:border-green-400 hover:shadow-md transition-all"
@@ -182,12 +182,12 @@ export default function MonetizationSlot({ type, city, state }: MonetizationSlot
             See All Nursing Jobs
           </p>
           <a
-            href={`https://www.vivian.com/jobs/${city ? `?search=${encodeURIComponent(`${city}, ${state}`)}` : ''}`}
+            href={`https://www.indeed.com/jobs?q=registered+nurse${city ? `&l=${encodeURIComponent(`${city}, ${state}`)}` : ''}`}
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors text-center text-sm"
           >
-            Browse 10,000+ Positions
+            Browse Nursing Jobs on Indeed
           </a>
           <p className="text-xs text-gray-500 text-center mt-2">
             Apply directly with one click

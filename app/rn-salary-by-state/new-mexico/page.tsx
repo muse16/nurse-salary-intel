@@ -80,14 +80,12 @@ export default function NewMexicoRNSalary() {
         Travel RN assignments in New Mexico typically pay $2,000\u2013$2,800/week. Demand is strongest in
         urban medical centers and specialty units.
       </p>
-      <a
-        href="https://www.vivian.com/search?query=Travel+RN+New+Mexico&utm_source=nursesalaryintel&utm_medium=referral"
-        target="_blank"
-        rel="noopener noreferrer"
+      <Link
+        href="/travel-nurse-salary-guide"
         className="inline-block mt-4 px-6 py-3 gradient-primary text-on-primary rounded-xl font-bold text-sm hover:opacity-90 transition-opacity"
       >
-        Find Travel RN Jobs in New Mexico \u2192
-      </a>
+        Travel Nurse Salary Guide →
+      </Link>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Compare New Mexico to Other States</h2>
       <div className="grid sm:grid-cols-2 gap-4 mt-4">

@@ -13,7 +13,7 @@ type SortDirection = 'asc' | 'desc';
 
 function buildJobUrl(position: NursePosition) {
   const search = encodeURIComponent(`${position.city}, ${position.state}`);
-  return `https://www.vivian.com/jobs/?search=${search}&utm_source=nursesalaryintel&utm_medium=referral`;
+  return `https://www.indeed.com/jobs?q=registered+nurse+rn&l=${search}`;
 }
 
 function SortIcon({ field, sortField, sortDirection }: { field: SortField; sortField: SortField; sortDirection: SortDirection }) {
