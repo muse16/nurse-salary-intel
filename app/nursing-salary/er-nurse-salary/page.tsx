@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
 
 export const metadata: Metadata = {
   title: 'ER Nurse Salary 2026: $89,000/yr Avg ($42.79/hr) + CEN Adds $4,800',
@@ -86,6 +87,27 @@ export default function ERNurseSalary() {
       <Link href="/nursing-salary/icu-nurse-salary" className="text-primary font-semibold hover:underline text-sm">
         Compare with ICU nurse salary →
       </Link>
+
+      {/* ER Nurse Salary by State — full 50-state grid */}
+      <div className="not-prose mt-8 border-t border-outline-variant pt-6">
+        <h2 className="text-xl font-bold font-headline text-on-surface mb-3">
+          ER Nurse Salary by State — All 50 States
+        </h2>
+        <p className="text-on-surface-variant text-sm mb-4">
+          Click any state for a full breakdown of ER nurse pay, experience bands, and local ED market data.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
+          {allStatesData.map(s => (
+            <Link
+              key={s.state}
+              href={`/nursing-salary/er-nurse-salary/${stateToSlug(s.state)}`}
+              className="block p-2 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors text-sm text-primary font-medium"
+            >
+              {s.state}
+            </Link>
+          ))}
+        </div>
+      </div>
     </SEOPageLayout>
   );
 }

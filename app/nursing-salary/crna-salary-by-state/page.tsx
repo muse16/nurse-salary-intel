@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
 
 export const metadata: Metadata = {
   title: 'CRNA Salary by State 2026: $214,200/yr National Avg — California Pays $258K',
@@ -105,6 +106,27 @@ export default function CRNASalaryByState() {
           <span className="font-bold text-primary text-sm">How to Negotiate CRNA Salary →</span>
           <p className="text-xs text-on-surface-variant mt-1">Scripts and tactics for advanced practice roles.</p>
         </Link>
+      </div>
+
+      {/* CRNA Salary by State — full 50-state deep-link grid */}
+      <div className="not-prose mt-8 border-t border-outline-variant pt-6">
+        <h2 className="text-xl font-bold font-headline text-on-surface mb-3">
+          CRNA Salary — Deep Dive by State
+        </h2>
+        <p className="text-on-surface-variant text-sm mb-4">
+          Click any state for CRNA pay by experience level, practice setting, and local anesthesia market data.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
+          {allStatesData.map(s => (
+            <Link
+              key={s.state}
+              href={`/nursing-salary/crna-salary/${stateToSlug(s.state)}`}
+              className="block p-2 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors text-sm text-primary font-medium"
+            >
+              {s.state}
+            </Link>
+          ))}
+        </div>
       </div>
     </SEOPageLayout>
   );

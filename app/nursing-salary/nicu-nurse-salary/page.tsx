@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
 
 export const metadata: Metadata = {
   title: 'NICU Nurse Salary 2026: $84,490/yr Avg + Travel NICU Earns $2,300–$3,000/wk',
@@ -85,8 +86,29 @@ export default function NICUNurseSalary() {
         Many nurses choose NICU for the unique patient population rather than maximizing pay.
       </p>
       <Link href="/nursing-salary/labor-delivery-nurse-salary" className="text-primary font-semibold hover:underline text-sm">
-        Compare with L&D nurse salary →
+        Compare with L&amp;D nurse salary →
       </Link>
+
+      {/* NICU Nurse Salary by State — full 50-state grid */}
+      <div className="not-prose mt-8 border-t border-outline-variant pt-6">
+        <h2 className="text-xl font-bold font-headline text-on-surface mb-3">
+          NICU Nurse Salary by State — All 50 States
+        </h2>
+        <p className="text-on-surface-variant text-sm mb-4">
+          Click any state for NICU nurse pay, RNC-NIC certification premiums, and local neonatal unit data.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
+          {allStatesData.map(s => (
+            <Link
+              key={s.state}
+              href={`/nursing-salary/nicu-nurse-salary/${stateToSlug(s.state)}`}
+              className="block p-2 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors text-sm text-primary font-medium"
+            >
+              {s.state}
+            </Link>
+          ))}
+        </div>
+      </div>
     </SEOPageLayout>
   );
 }

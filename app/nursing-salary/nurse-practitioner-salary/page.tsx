@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
 
 export const metadata: Metadata = {
   title: 'Nurse Practitioner Salary 2026: $126,260/yr + PMHNP Tops $165K',
@@ -107,6 +108,27 @@ export default function NursePractitionerSalary() {
         <Link href="/rn-salary-by-state" className="block p-4 rounded-lg border border-outline-variant hover:border-primary transition-colors">
           <span className="font-bold text-primary text-sm">RN Salary by State →</span>
         </Link>
+      </div>
+
+      {/* NP Salary by State — full 50-state grid */}
+      <div className="not-prose mt-8 border-t border-outline-variant pt-6">
+        <h2 className="text-xl font-bold font-headline text-on-surface mb-3">
+          Nurse Practitioner Salary by State — All 50 States
+        </h2>
+        <p className="text-on-surface-variant text-sm mb-4">
+          Click any state for NP salary by specialty, practice setting, and experience level.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
+          {allStatesData.map(s => (
+            <Link
+              key={s.state}
+              href={`/nursing-salary/nurse-practitioner-salary/${stateToSlug(s.state)}`}
+              className="block p-2 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors text-sm text-primary font-medium"
+            >
+              {s.state}
+            </Link>
+          ))}
+        </div>
       </div>
     </SEOPageLayout>
   );

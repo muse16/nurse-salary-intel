@@ -3,6 +3,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
 
 export const metadata: Metadata = {
   title: 'Charge Nurse Salary 2026: How Much More Than Staff RN?',
@@ -221,6 +222,27 @@ export default function ChargeNurseSalary() {
             <span className="text-on-surface-variant text-xs ml-3">→</span>
           </Link>
         ))}
+      </div>
+
+      {/* Charge Nurse Salary by State — full 50-state grid */}
+      <div className="not-prose mt-8 border-t border-outline-variant pt-6">
+        <h2 className="text-xl font-bold font-headline text-on-surface mb-3">
+          Charge Nurse Salary by State — All 50 States
+        </h2>
+        <p className="text-on-surface-variant text-sm mb-4">
+          Click any state for charge nurse pay by experience, unit type, and local hospital data.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
+          {allStatesData.map(s => (
+            <Link
+              key={s.state}
+              href={`/nursing-salary/charge-nurse-salary/${stateToSlug(s.state)}`}
+              className="block p-2 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors text-sm text-primary font-medium"
+            >
+              {s.state}
+            </Link>
+          ))}
+        </div>
       </div>
     </SEOPageLayout>
   );

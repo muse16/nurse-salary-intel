@@ -132,6 +132,21 @@ export default async function SpecialtyStatePage({ params }: PageProps) {
       : []),
   ];
 
+  // Related specialties: all configs except the current one, up to 6
+  const relatedSpecialties = specialtyConfig
+    .filter(s => s.slug !== specialty)
+    .slice(0, 6)
+    .map(s => ({
+      href: `/nursing-salary/${s.slug}/${stateToSlug(sd.state)}`,
+      label: `${s.shortName} Salary in ${sd.state}`,
+      desc: `${s.shortName} pay, experience bands & certification data`,
+    }));
+
+  // Other states for this specialty: top 8 payers excluding current state
+  const otherStates = allStateSalaries
+    .filter(s => s.state !== sd.state)
+    .slice(0, 8);
+
   return (
     <SEOPageLayout
       breadcrumbs={[
@@ -190,7 +205,7 @@ export default async function SpecialtyStatePage({ params }: PageProps) {
       />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">
-        Certifications & Pay Impact in {sd.state}
+        Certifications &amp; Pay Impact in {sd.state}
       </h2>
       <p>{certNote}</p>
 
@@ -222,6 +237,7 @@ export default async function SpecialtyStatePage({ params }: PageProps) {
             href={`/nursing-salary/${spec.parentPageSlug}`}
             className="text-primary font-semibold hover:underline text-sm"
           >
+            View full {spec.shortName} salary guide — all states, experience levels &amp; certifications →
           </Link>
         </>
       )}
@@ -264,18 +280,42 @@ export default async function SpecialtyStatePage({ params }: PageProps) {
         );
       })()}
 
-      {/* Related Specialties */}
+      {/* Explore this specialty in other states */}
+      <div className="not-prose mt-8 border-t border-outline-variant pt-6">
+        <h2 className="text-xl font-bold font-headline text-on-surface mb-3">
+          {spec.shortName} Salary in Other States
+        </h2>
+        <p className="text-on-surface-variant text-sm mb-4">
+          See how {sd.state} compares to the top-paying states for {spec.shortName}s.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          {otherStates.map(s => (
+            <Link
+              key={s.state}
+              href={`/nursing-salary/${specialty}/${stateToSlug(s.state)}`}
+              className="flex items-center justify-between p-2 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors"
+            >
+              <span className="text-primary font-medium text-xs">{s.state}</span>
+              <span className="text-on-surface-variant text-xs">{formatSalary(s.salary)}</span>
+            </Link>
+          ))}
+        </div>
+        {spec.parentPageSlug && (
+          <p className="text-xs text-on-surface-variant mt-3">
+            <Link href={`/nursing-salary/${spec.parentPageSlug}`} className="text-primary hover:underline">
+              View all 50 states →
+            </Link>
+          </p>
+        )}
+      </div>
+
+      {/* Related Specialties — dynamic, excludes current specialty */}
       <div className="not-prose mt-8 border-t border-outline-variant pt-6">
         <h2 className="text-xl font-bold font-headline text-on-surface mb-3">
           Compare Other Nursing Specialties in {sd.state}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {[
-            { href: `/nursing-salary/icu-nurse-salary/${stateToSlug(sd.state)}`, label: 'ICU Nurse Salary', desc: 'Critical care pay + CCRN premium' },
-            { href: `/nursing-salary/er-nurse-salary/${stateToSlug(sd.state)}`, label: 'ER Nurse Salary', desc: 'Emergency nursing pay' },
-            { href: `/nursing-salary/nicu-nurse-salary/${stateToSlug(sd.state)}`, label: 'NICU Nurse Salary', desc: 'Neonatal ICU pay' },
-            { href: `/nursing-salary/nurse-practitioner-salary/${stateToSlug(sd.state)}`, label: 'NP Salary', desc: 'Nurse Practitioner pay' },
-          ].filter(item => !item.href.includes(`/${specialty}/`)).slice(0, 4).map(({ href, label, desc }) => (
+          {relatedSpecialties.map(({ href, label, desc }) => (
             <Link
               key={href}
               href={href}
@@ -289,6 +329,11 @@ export default async function SpecialtyStatePage({ params }: PageProps) {
             </Link>
           ))}
         </div>
+        <p className="text-xs text-on-surface-variant mt-3">
+          <Link href="/nursing-salary/by-specialty-2026" className="text-primary hover:underline">
+            Compare all nursing specialties →
+          </Link>
+        </p>
       </div>
     </SEOPageLayout>
   );
