@@ -53,6 +53,12 @@ const cityData = [
   { label: 'State Average', avgSalary: '$82,000', hourlyRate: '$39.42/hr' },
 ];
 
+const experienceData = [
+  { label: 'Entry Level (0–2 yrs)', avgSalary: '$62,000–$70,000', hourlyRate: '$30–$34/hr' },
+  { label: 'Mid-Career (3–5 yrs)', avgSalary: '$78,000–$90,000', hourlyRate: '$37–$43/hr' },
+  { label: 'Senior (10+ yrs)', avgSalary: '$92,000–$108,000', hourlyRate: '$44–$52/hr' },
+];
+
 const hospitalData = [
   { label: 'Mayo Clinic Hospital (Phoenix)', avgSalary: '$98,000', note: 'Top payer, highly competitive' },
   { label: 'Banner University Medical Center', avgSalary: '$93,000', note: 'Magnet-designated' },
@@ -147,8 +153,11 @@ export default function ArizonaRNSalary() {
         winter as the retiree population swells (the &quot;snowbird&quot; effect). Weekly travel packages
         range from $2,100 in rural markets to $2,800+ in Phoenix metro ICU and ER contracts.
       </p>
-      <Link href="/travel-nursing/salary-by-state" className="text-primary font-semibold hover:underline text-sm">
-        See travel nurse salaries by state →
+      <Link
+        href="/travel-nurse-salary-guide"
+        className="inline-block mt-4 px-6 py-3 gradient-primary text-on-primary rounded-xl font-bold text-sm hover:opacity-90 transition-opacity"
+      >
+        Travel Nurse Salary Guide →
       </Link>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">How to Increase Your Nursing Salary in Arizona</h2>
@@ -173,7 +182,11 @@ export default function ArizonaRNSalary() {
         </li>
         <li>
           <strong>Specialty certifications:</strong> CCRN, CEN, or CNOR can add $5,000–$12,000 to your base.
-          [AFFILIATE_LINK_CERTIFICATION]
+          See the{' '}
+          <Link href="/nursing-salary/by-specialty-2026" className="text-primary hover:underline">
+            highest-paying nursing specialties guide
+          </Link>
+          {' '}for more detail.
         </li>
       </ul>
 
@@ -218,20 +231,31 @@ export default function ArizonaRNSalary() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Nurse Salary by Experience in Arizona</h2>
       <p>
-        Experience significantly impacts RN pay in Arizona. The gap between new grad and senior nurse salaries has widened in recent years as hospitals compete harder to retain experienced staff.
+        Experience significantly impacts RN pay in Arizona. The gap between new grad and senior nurse salaries has
+        widened in recent years as hospitals compete harder to retain experienced staff. Phoenix metro new grads
+        typically start $4,000–$6,000 above rural counterparts.
       </p>
-      <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
-        <li><strong>Entry level (0–2 years):</strong> $62,000–$70,000/year. Phoenix metro new grads typically start $4,000–$6,000 above rural counterparts.</li>
-        <li><strong>3–5 years experience:</strong> $78,000–$90,000/year. Specialty certifications like CCRN or CEN add $5,000–$10,000 at this stage.</li>
-        <li><strong>10+ years experience:</strong> $92,000–$108,000/year. Senior nurses at Magnet-designated facilities in Phoenix often reach the top of this range.</li>
-      </ul>
+      <SalaryTable
+        title="Arizona RN Salary by Experience (2026)"
+        headers={['Experience Tier', 'Estimated Annual Base', 'Estimated Hourly']}
+        rows={experienceData}
+        source="BLS OEWS 2025 + NurseSalaryIntel data"
+      />
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Night Shift &amp; Overtime Pay in Arizona</h2>
       <p>
-        Arizona hospitals typically offer a night shift differential of 12–20% above base pay. On an $82,000 base salary, that adds roughly $9,800–$16,400/year for nurses who primarily work nights. Weekend differentials generally add an additional 8–15%.
+        Arizona hospitals typically offer a night shift differential of 12–20% above base pay. On an $82,000 base
+        salary, that adds roughly $9,800–$16,400/year for nurses who primarily work nights. Weekend differentials
+        generally add an additional 8–15%. See our complete{' '}
+        <Link href="/salary-negotiation/night-shift-differential-pay" className="text-primary hover:underline font-semibold">
+          night shift differential guide
+        </Link>
+        {' '}for detailed rates by specialty and hospital system.
       </p>
       <p>
-        Overtime in Arizona is paid at 1.5x base hourly rate for hours beyond 40 per week. Nurses working two extra shifts per month can add $8,000–$14,000 annually. During the winter snowbird season, overtime and bonus opportunities increase significantly at Phoenix-area facilities.
+        Overtime in Arizona is paid at 1.5x base hourly rate for hours beyond 40 per week. Nurses working two extra
+        shifts per month can add $8,000–$14,000 annually. During the winter snowbird season, overtime and bonus
+        opportunities increase significantly at Phoenix-area facilities.
       </p>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">RN Salary FAQs — Arizona</h2>

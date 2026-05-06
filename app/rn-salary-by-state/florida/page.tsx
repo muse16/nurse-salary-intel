@@ -57,6 +57,14 @@ const specialtyData = [
   { label: 'Oncology', avgSalary: '$81,000–$93,000', hourlyRate: '$39–$45/hr' },
 ];
 
+const hospitalData = [
+  { label: 'Jackson Health System (Miami)', avgSalary: '$78,000–$96,000', hourlyRate: 'Public system, strong pension' },
+  { label: 'Baptist Health South Florida', avgSalary: '$80,000–$98,000', hourlyRate: 'Magnet-designated, sign-on $5K–$12K' },
+  { label: 'AdventHealth Florida (statewide)', avgSalary: '$76,000–$93,000', hourlyRate: 'Multiple FL locations, tuition support' },
+  { label: 'HCA Florida (statewide)', avgSalary: '$74,000–$90,000', hourlyRate: 'Largest FL employer by bed count' },
+  { label: 'Mayo Clinic Florida (Jacksonville)', avgSalary: '$84,000–$102,000', hourlyRate: 'Top single-site payer in state' },
+];
+
 const author = { name: 'NurseSalaryIntel Editorial Team', link: '/about' };
 const sources = [
   { title: 'BLS Occupational Employment Statistics (OEWS)', url: 'https://www.bls.gov/oes/' },
@@ -153,6 +161,14 @@ export default function FloridaRNSalary() {
       </p>
       <SalaryTable title="Florida RN Specialty Pay (2026)" headers={['Specialty', 'Estimated Annual Base', 'Estimated Hourly']} rows={specialtyData} source="BLS OEWS 2025 + specialty premium data" />
 
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Highest-Paying Hospitals in Florida</h2>
+      <p>
+        Mayo Clinic Florida in Jacksonville is the top-paying single facility in the state. Baptist Health South
+        Florida and AdventHealth are strong Magnet-designated systems offering competitive sign-on bonuses and
+        ongoing differentials. HCA Florida is the largest employer by bed count with facilities across the state.
+      </p>
+      <SalaryTable title="Top Hospitals — Florida Nurse Pay (2026)" headers={['Hospital', 'Avg. RN Salary', 'Notes']} rows={hospitalData} source="NurseSalaryIntel data" />
+
       <h2 className="text-2xl font-bold font-headline text-on-surface">Travel Nursing in Florida</h2>
       <p>
         Florida is a strong travel nursing market, especially Miami, Tampa, and Orlando. While base rates have normalized
@@ -166,6 +182,12 @@ export default function FloridaRNSalary() {
       <p className="text-sm text-on-surface-variant mt-4">
         Travel rates include housing stipend, per diem, and blended hourly. Actual rates vary by facility, specialty, and contract terms.
       </p>
+      <Link
+        href="/travel-nurse-salary-guide"
+        className="inline-block mt-4 px-6 py-3 gradient-primary text-on-primary rounded-xl font-bold text-sm hover:opacity-90 transition-opacity"
+      >
+        Travel Nurse Salary Guide →
+      </Link>
 
       <div className="grid sm:grid-cols-2 gap-4 mt-8">
         <Link href="/rn-salary-by-state/texas" className="block p-4 rounded-lg border border-outline-variant hover:border-primary transition-colors">
@@ -173,6 +195,12 @@ export default function FloridaRNSalary() {
         </Link>
         <Link href="/rn-salary-by-state/highest-paying-states" className="block p-4 rounded-lg border border-outline-variant hover:border-primary transition-colors">
           <span className="font-bold text-primary text-sm">Top 10 Highest-Paying States →</span>
+        </Link>
+        <Link href="/rn-salary-by-state" className="block p-4 rounded-lg border border-outline-variant hover:border-primary transition-colors">
+          <span className="font-bold text-primary text-sm">RN Salary by State →</span>
+        </Link>
+        <Link href="/travel-nurse-salary-guide" className="block p-4 rounded-lg border border-outline-variant hover:border-primary transition-colors">
+          <span className="font-bold text-primary text-sm">Travel Nurse Salary Guide →</span>
         </Link>
       </div>
 
