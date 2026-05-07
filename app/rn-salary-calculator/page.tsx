@@ -61,7 +61,7 @@ function calcFederalTax(taxableIncome: number, mfj: boolean): number {
 
 export default function RNSalaryCalculator() {
   const [annualSalary, setAnnualSalary] = useState('89010');
-  const [state, setState] = useState('Texas');
+  const [state, setState] = useState('Alabama');
   const [filingStatus, setFilingStatus] = useState<'single' | 'mfj'>('single');
   const [retirement401k, setRetirement401k] = useState('6000');
   const [healthInsurance, setHealthInsurance] = useState('2400');
@@ -125,6 +125,15 @@ export default function RNSalaryCalculator() {
         <p className="text-on-surface-variant mb-8">
           Estimate your nursing take-home pay after federal taxes, state taxes, FICA, and pre-tax deductions — with optional night shift differential and overtime.
         </p>
+
+        <Image
+          src="/images/rn-salary-calculator-hero.png"
+          alt="Nurse in scrubs reviewing take-home pay calculations at a desk with salary charts, tax breakdown, and paycheck data displayed around her"
+          width={1200}
+          height={630}
+          className="rounded-xl w-full mb-8"
+          priority
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Input panel */}
