@@ -67,7 +67,7 @@ export default function LasVegasRNSalary2026() {
       breadcrumbs={[
         { label: 'Home', href: '/' },
         { label: 'RN Salary by State', href: '/rn-salary-by-state' },
-        { label: 'Nevada RN Salary' },
+        { label: 'Nevada RN Salary', href: '/rn-salary-by-state/nevada' },
         { label: 'Las Vegas RN Salary 2026' },
       ]}
       h1="Las Vegas RN Salary 2026: How Much Do Nurses Make in Las Vegas, NV?"

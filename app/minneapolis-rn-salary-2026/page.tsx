@@ -67,7 +67,7 @@ export default function MinneapolisRNSalary2026() {
       breadcrumbs={[
         { label: 'Home', href: '/' },
         { label: 'RN Salary by State', href: '/rn-salary-by-state' },
-        { label: 'Minnesota RN Salary' },
+        { label: 'Minnesota RN Salary', href: '/rn-salary-by-state/minnesota' },
         { label: 'Minneapolis RN Salary 2026' },
       ]}
       h1="Minneapolis RN Salary 2026: How Much Do Nurses Make in Minneapolis, MN?"
