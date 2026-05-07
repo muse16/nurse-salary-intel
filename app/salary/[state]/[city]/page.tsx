@@ -76,6 +76,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: CITY_CANONICAL_OVERRIDES[`${state}/${city}`]
         ?? `https://nursesalaryintel.com/salary/${state}/${city}`,
     },
+    robots: { index: false, follow: true },
   };
 }
 
@@ -410,3 +411,5 @@ export default async function CityPage({ params }: PageProps) {
     </div>
   );
 }
+
+    

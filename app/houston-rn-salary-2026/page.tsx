@@ -6,8 +6,8 @@ import SalaryTable from '@/components/SalaryTable';
 import SalaryCalculator from '@/components/SalaryCalculator';
 
 export const metadata: Metadata = {
-  title: 'Houston RN Salary 2026: $82,140/yr Avg + Top Hospitals & Cost of Living',
-  description: 'Houston RN salary 2026: $82,140/yr average, $39.49/hr. See pay by hospital, sign-on bonuses, cost-of-living-adjusted ranking vs Dallas & Austin.',
+  title: 'Houston RN Salary 2026: $82,140/yr — Which Hospital Pays Most?',
+  description: 'Houston RN pay: $82,140/yr avg, $39.49/hr. Methodist vs MD Anderson vs Texas Children\'s — which pays most? Sign-ons up to $15K. Full breakdown vs Dallas + Austin.',
   alternates: { canonical: 'https://nursesalaryintel.com/houston-rn-salary-2026' },
 };
 
@@ -154,6 +154,4 @@ export default function HoustonRNSalary2026() {
 
         <p className="text-sm text-on-surface-variant mt-8"><strong>Sources:</strong> U.S. Bureau of Labor Statistics — OEWS, Houston-The Woodlands-Sugar Land MSA, May 2024; Texas Workforce Commission Healthcare Labor Market Report; Texas Board of Nursing Workforce Statistics; American Association of Colleges of Nursing 2026 Workforce Survey; Houston Methodist, Memorial Hermann, and HCA Houston careers and benefits pages (April 2026). <strong>Methodology:</strong> BLS OEWS May 2024 wages projected at 3.1% annual RN growth; hospital ranges cross-referenced against Glassdoor (n over 250 Houston RN reports) and direct career-page postings collected April 2026. All figures reflect base RN compensation; sign-on bonuses, shift differentials, and certification premiums are noted separately. Not career or financial advice.</p>
       </SEOPageLayout>
-    </>
-  );
-}
+ 

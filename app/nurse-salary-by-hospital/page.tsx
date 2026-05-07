@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { getAllHospitals, getHospitalData, slugify } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Nurse Salary by Hospital (2026): How Much Top Systems Pay RNs',
-  description: 'How much do top hospital systems pay nurses in 2026? See RN salary ranges at Kaiser, HCA, Ascension, Mayo Clinic, NYU Langone, and other major health systems.',
+  title: 'Nurse Salary by Hospital 2026: Kaiser $140K+ vs HCA, Mayo, Ascension',
+  description: 'What Kaiser, HCA, Mayo Clinic, Ascension & 15+ major systems pay RNs in 2026. California Kaiser tops $140K–$165K. See where your hospital ranks.',
 };
 
 const faqs = [
@@ -159,3 +159,4 @@ export default function NurseSalaryByHospital() {
     </SEOPageLayout>
   );
 }
+     

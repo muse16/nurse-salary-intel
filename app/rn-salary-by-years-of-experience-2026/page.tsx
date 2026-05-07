@@ -5,8 +5,8 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 
 export const metadata: Metadata = {
-  title: 'RN Salary by Years of Experience (2026): How Much More Do You Earn?',
-  description: 'See exactly how nurse pay increases from new grad to 20+ years. Real BLS data by experience level, specialty, and state.',
+  title: 'RN Salary by Years of Experience 2026: $62K → $134K Full Progression',
+  description: 'How nurse pay grows year by year: new grad $62K → 5 years $96K → 15 years $134K+. BLS-sourced data by experience level, specialty, and state.',
   alternates: { canonical: 'https://nursesalaryintel.com/rn-salary-by-years-of-experience-2026' },
 };
 
@@ -183,7 +183,4 @@ export default function RNSalaryByExperience2026() {
           <li><a href="https://www.aacnnursing.org/news-information/fact-sheets/nursing-workforce" target="_blank" rel="noopener noreferrer">AACN — Nursing Workforce Fact Sheet</a></li>
           <li><a href="https://www.ncsbn.org/" target="_blank" rel="noopener noreferrer">National Council of State Boards of Nursing (NCSBN)</a></li>
         </ul>
-      </SEOPageLayout>
-    </>
-  );
-}
+      </SE

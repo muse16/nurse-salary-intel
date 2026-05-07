@@ -36,6 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${hospitalData.hospital} RN Salary 2026: Pay, Red Flags & Contracts`,
     description: `${hospitalData.hospital} in ${hospitalData.city}, ${hospitalData.state}: RNs earn $${hospitalData.avgSalary.toLocaleString()}/yr (2026 avg). See pay by unit, contract red flags, and comparison to competing systems.`,
+    robots: { index: false, follow: true },
   };
 }
 
@@ -330,3 +331,5 @@ export default async function HospitalPage({ params }: PageProps) {
     </div>
   );
 }
+
+   

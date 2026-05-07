@@ -42,6 +42,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     alternates: {
       canonical: `/nursing-salary/${specialty}/${state}`,
     },
+    robots: { index: false, follow: true },
   };
 }
 
@@ -333,6 +334,7 @@ export default async function SpecialtyStatePage({ params }: PageProps) {
           <Link href="/nursing-salary/by-specialty-2026" className="text-primary hover:underline">
             Compare all nursing specialties →
           </Link>
+        
         </p>
       </div>
     </SEOPageLayout>
