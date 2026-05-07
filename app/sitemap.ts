@@ -136,6 +136,16 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/icu-nurse-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/nurse-salary-negotiation-scripts-2026', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/highest-paying-states-for-rns-2026', priority: 0.8, changeFrequency: 'monthly' },
+
+  // Week 7 — May 2026
+  { path: '/new-york-city-rn-salary-2026', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/philadelphia-rn-salary-2026', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/san-diego-rn-salary-2026', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/critical-care-nurse-salary-2026', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/or-nurse-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/labor-delivery-nurse-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/travel-nurse-agency-comparison-2026', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/rn-salary-calculator', priority: 0.9, changeFrequency: 'monthly' },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -332,4 +332,3 @@ export default async function HospitalPage({ params }: PageProps) {
   );
 }
 
-   

@@ -183,4 +183,7 @@ export default function RNSalaryByExperience2026() {
           <li><a href="https://www.aacnnursing.org/news-information/fact-sheets/nursing-workforce" target="_blank" rel="noopener noreferrer">AACN — Nursing Workforce Fact Sheet</a></li>
           <li><a href="https://www.ncsbn.org/" target="_blank" rel="noopener noreferrer">National Council of State Boards of Nursing (NCSBN)</a></li>
         </ul>
-      </SE
+      </SEOPageLayout>
+    </>
+  );
+}
