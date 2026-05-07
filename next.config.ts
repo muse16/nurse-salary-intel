@@ -1,5 +1,4 @@
 import type { NextConfig } from "next";
-
 const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
@@ -38,12 +37,6 @@ const nextConfig: NextConfig = {
         destination: '/highest-paying-states-for-rns-2026',
         permanent: true,
       },
-      {
-        source: '/rn-salary-calculator',
-        destination: '/audit',
-        permanent: true,
-      },
-
       // ── Cannibalization fix: state blog posts → canonical state pages ────
       {
         source: '/arizona-rn-salary-2026',
@@ -65,7 +58,6 @@ const nextConfig: NextConfig = {
         destination: '/rn-salary-by-state/new-york',
         permanent: true,
       },
-
       // ── Cannibalization fix: city blog posts → canonical city pages ──────
       {
         source: '/rn-salary-los-angeles-2026',
@@ -93,7 +85,6 @@ const nextConfig: NextConfig = {
         destination: '/salary/arizona/phoenix',
         permanent: true,
       },
-
       // ── Cannibalization fix: specialty blog posts → canonical specialty pages
       {
         source: '/nicu-nurse-salary-2026',
@@ -105,7 +96,6 @@ const nextConfig: NextConfig = {
         destination: '/nursing-salary/icu-nurse-salary',
         permanent: true,
       },
-
       // ── Fix 404s: /specialty/* routes don't exist ────────────────────────
       { source: '/specialty/icu', destination: '/nursing-salary/icu-nurse-salary', permanent: true },
       { source: '/specialty/emergency-room', destination: '/icu-vs-er-nurse-salary-2026', permanent: true },
@@ -118,18 +108,14 @@ const nextConfig: NextConfig = {
       { source: '/specialty/dialysis', destination: '/rn-salary-by-state', permanent: true },
       { source: '/specialty/part-time', destination: '/per-diem-nurse-salary-2026', permanent: true },
       { source: '/specialty/:path*', destination: '/rn-salary-by-state', permanent: true },
-
       // ── Fix 404s: misrouted rn-salary-by-state non-state slugs ─────────────
       { source: '/rn-salary-by-state/bsn-vs-rn', destination: '/salary/bsn-vs-rn', permanent: true },
-
       // ── Fix 404s: /salary/:state (no city) → state hub page ─────────────
       // Excludes /salary/bsn-vs-rn (real page) to avoid redirect loop
       { source: '/salary/:state((?!bsn-vs-rn)[^/]+)', destination: '/rn-salary-by-state/:state', permanent: true },
-
       // ── Fix 404s: /salary/:state/:city/:specialty (4-level) → city page ──
       { source: '/salary/:state/:city/:specialty', destination: '/salary/:state/:city', permanent: true },
     ];
   },
 };
-
 export default nextConfig;
