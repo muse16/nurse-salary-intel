@@ -3,25 +3,25 @@ import SiteNav from '@/components/SiteNav';
 import AuditClient from './AuditClient';
 
 export const metadata: Metadata = {
-  title: 'Nurse Salary Calculator & Contract Red Flag Audit | NurseSalaryIntel',
-  description: 'Use our free nurse salary calculator and contract audit checklist to check your RN pay and identify red flags before signing. Works for travel nurses and staff RNs.',
-  keywords: ['nurse salary calculator', 'nursing contract audit', 'travel nurse contract red flags', 'RN contract checklist', 'nurse contract review'],
+  title: 'Nurse Contract Red Flag Audit 2026 | NurseSalaryIntel',
+  description: 'Free RN contract audit checklist — identify red flags before signing. Covers pay terms, stipends, cancellation clauses, and more. Works for travel nurses and staff RNs.',
+  keywords: ['nursing contract audit', 'travel nurse contract red flags', 'RN contract checklist', 'nurse contract review', 'nursing contract red flags'],
   openGraph: {
-    title: 'Nurse Salary Calculator & Contract Audit Tool',
-    description: 'Free tool for RNs to verify expected salary and identify contract red flags before signing. Covers pay terms, stipends, cancellation clauses, and more.',
+    title: 'Nurse Contract Red Flag Audit Tool',
+    description: 'Free tool for RNs to identify contract red flags before signing. Covers pay terms, stipends, cancellation clauses, and more.',
     url: 'https://nursesalaryintel.com/audit',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Nurse Salary Calculator and Contract Audit Tool',
+        alt: 'Nurse Contract Red Flag Audit Tool',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Nurse Salary Calculator & Contract Audit Tool',
+    title: 'Nurse Contract Red Flag Audit Tool',
     description: 'Free RN contract audit checklist — identify red flags and verify your salary before signing.',
     images: ['/og-image.png'],
   },
@@ -147,12 +147,11 @@ export default function AuditPage() {
       <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <h1 className="text-4xl font-bold mb-4">
-            Free Nurse Salary Calculator &amp; Contract Red Flag Audit
+            Free Nurse Contract Red Flag Audit
           </h1>
           <p className="text-xl text-blue-100">
-            Know what RNs earn in your state — then make sure your contract reflects it.
-            Use this free nurse salary calculator and audit checklist to review each contract
-            section, mark what you find, and get an instant risk score with negotiation guidance.
+            Review each section of your nursing contract, mark what you find, and get an instant
+            risk score with negotiation guidance. Works for travel nurses and staff RNs.
           </p>
         </div>
       </header>
