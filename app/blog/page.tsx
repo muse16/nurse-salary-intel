@@ -10,9 +10,12 @@ export const metadata: Metadata = {
 };
 
 const categoryColors: Record<string, string> = {
-  'Contract Red Flags': 'bg-red-100 text-red-700',
   'Salary Data': 'bg-blue-100 text-blue-700',
+  'Travel Nursing': 'bg-teal-100 text-teal-700',
+  'Specialty Salaries': 'bg-purple-100 text-purple-700',
   'Negotiation': 'bg-green-100 text-green-700',
+  'Contract Red Flags': 'bg-red-100 text-red-700',
+  'Salary Tools': 'bg-amber-100 text-amber-700',
 };
 
 export default function BlogPage() {
@@ -115,7 +118,7 @@ export default function BlogPage() {
             href="/audit"
             className="inline-block bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold py-3 px-8 rounded-xl transition-colors"
           >
-            Start Free Audit
+            Run Free Contract Audit →
           </Link>
         </div>
       </main>
