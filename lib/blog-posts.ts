@@ -4095,7 +4095,7 @@ Thanks,<br>
     readTime: '2 min read',
     focusKeyword: 'rn salary calculator',
     secondaryKeywords: ['nurse salary calculator 2026', 'nursing take home pay calculator', 'rn pay after taxes', 'nurse net salary by state', 'nursing paycheck calculator'],
-    coverImage: '/images/rn-salary-calculator-comparison.png',
+    coverImage: '/images/rn-salary-calculator-hero.png',
     imageAlt: 'Bar chart showing RN take-home pay by state after taxes in 2026, comparing gross salary versus net pay in high-tax and no-tax states',
     metaDescription: 'Free RN salary calculator 2026: estimate your nursing take-home pay after federal taxes, state taxes, FICA, and pre-tax deductions. Covers all 50 states with night shift and overtime.',
     content: '',
