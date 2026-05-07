@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Highest Paying States for RNs 2026: Full Rankings',
-  description: 'The highest paying states for registered nurses in 2026 — full rankings with hourly pay, annual mean, cost-of-living notes, and metro highlights.',
+  description: 'Highest paid states for nurses in 2026 — full rankings with mean annual pay, hourly rates, and cost-of-living notes. See the best paying states for RN jobs by region.',
 };
 
 const author = { name: 'NurseSalaryIntel Editorial Team', link: '/about' };
