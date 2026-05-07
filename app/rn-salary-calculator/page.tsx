@@ -3,6 +3,7 @@
 import { useState, useCallback } from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 // Metadata can't be exported from a client component — wrap in layout pattern
 // We'll handle this via generateMetadata in a server wrapper; for now, inline
@@ -316,6 +317,15 @@ export default function RNSalaryCalculator() {
           <p className="text-on-surface-variant">
             That said, total compensation matters more than tax savings alone. A California Kaiser nurse earning $140,000 under a CNA contract takes home more after California's high taxes than a Texas non-union nurse earning $90,000 tax-free. See our <Link href="/nurse-salary-by-hospital" className="text-primary hover:underline">hospital salary comparison</Link> to benchmark your offer against what comparable hospitals pay in your market.
           </p>
+
+          <Image
+            src="/images/rn-salary-calculator-comparison.png"
+            alt="Bar chart showing average RN take-home pay by state after taxes in 2026, comparing gross salary versus net pay in high-tax and no-tax states"
+            width={800}
+            height={450}
+            className="rounded-xl w-full"
+            loading="lazy"
+          />
 
           <h2 className="text-2xl font-bold font-headline text-on-surface">Benchmark Your Salary</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
