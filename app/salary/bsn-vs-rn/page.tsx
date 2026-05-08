@@ -58,7 +58,7 @@ const faqSchema = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: 'BSN vs RN Salary 2026: Is the $10K/yr Pay Gap Worth It?',
+  headline: 'ADN vs BSN Salary 2026: Is the $10K/yr Pay Gap Worth It?',
   description: 'BSN nurses earn $10,400 more per year than ADN RNs on average in 2026.',
   url: 'https://nursesalaryintel.com/salary/bsn-vs-rn',
   datePublished: '2026-01-01',
@@ -73,7 +73,7 @@ const breadcrumbSchema = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://nursesalaryintel.com' },
     { '@type': 'ListItem', position: 2, name: 'Salary Data', item: 'https://nursesalaryintel.com/salary-data' },
-    { '@type': 'ListItem', position: 3, name: 'BSN vs RN Salary 2026', item: 'https://nursesalaryintel.com/salary/bsn-vs-rn' },
+    { '@type': 'ListItem', position: 3, name: 'ADN vs BSN Salary 2026', item: 'https://nursesalaryintel.com/salary/bsn-vs-rn' },
   ],
 };
 
@@ -173,7 +173,7 @@ export default function BsnVsRnPage() {
               Updated May 2026 &middot; BLS OEWS Data
             </div>
             <h1 className="text-4xl font-black text-gray-900 leading-tight">
-              BSN vs RN Salary 2026:<br className="hidden sm:block" /> Is the $10K/yr Pay Gap Worth It?
+              ADN vs BSN Salary 2026:<br className="hidden sm:block" /> Is the $10K/yr Pay Gap Worth It?
             </h1>
             <p className="mt-4 text-lg text-gray-600">
               ADN nurses average <strong>$65,000/yr</strong> while BSN nurses earn <strong>$75,400/yr</strong> &mdash; a
@@ -211,7 +211,7 @@ export default function BsnVsRnPage() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
 
         <section className="bg-primary-fixed rounded-2xl p-6 border border-primary/10">
-          <h2 className="text-lg font-bold text-on-primary-fixed mb-2">Quick Answer: BSN vs RN Salary Difference</h2>
+          <h2 className="text-lg font-bold text-on-primary-fixed mb-2">Quick Answer: ADN vs BSN Salary Difference</h2>
           <p className="text-on-primary-fixed/90 text-sm leading-relaxed">
             <strong>BSN nurses earn $10,400 more per year than ADN-prepared RNs</strong> on a national average basis in 2026
             ($75,400 vs. $65,000). The gap is widest in California ($14,000/yr). Over a 30-year career, the BSN premium
@@ -225,7 +225,7 @@ export default function BsnVsRnPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">BSN vs ADN Salary Gap by State, 2026</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">ADN vs BSN Salary Gap by State, 2026</h2>
           <Image
             src="/images/bsn-vs-rn-comparison.png"
             alt="Bar chart comparing ADN and BSN annual salaries across 10 states in 2026, showing BSN premium of $9,000 to $14,000 per year depending on state"
@@ -513,7 +513,7 @@ export default function BsnVsRnPage() {
           {' '}/{' '}
           <Link href="/salary-data" className="hover:text-primary">Salary Data</Link>
           {' '}/{' '}
-          <span className="text-gray-700 font-medium">BSN vs RN Salary 2026</span>
+          <span className="text-gray-700 font-medium">ADN vs BSN Salary 2026</span>
         </div>
 
       </main>
