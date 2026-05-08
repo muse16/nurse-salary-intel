@@ -32,7 +32,7 @@ export default function HeroSection() {
             </h1>
 
             <p className="text-on-surface-variant text-xl md:text-2xl leading-relaxed mb-10 max-w-xl">
-              Unbiased salary transparency and contract intelligence designed by nurses, for nurses. Get the data you need to negotiate with authority.
+              Real nurse salary data by state, city, and specialty. Get the data you need to negotiate with authority.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
