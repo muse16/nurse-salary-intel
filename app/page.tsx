@@ -37,8 +37,41 @@ export default function Home() {
     uniqueHospitals
   };
 
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Nurse Salary Intel',
+    alternateName: 'NurseSalaryIntel',
+    url: 'https://nursesalaryintel.com',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://nursesalaryintel.com/images/logo.svg',
+      width: 512,
+      height: 512,
+    },
+    description: 'Transparent nurse salary data, contract intelligence, and career tools for registered nurses. BLS-sourced RN pay by state, city, and specialty — updated for 2026.',
+    foundingDate: '2025',
+    knowsAbout: [
+      'Registered Nurse Salary',
+      'Travel Nurse Pay',
+      'Nursing Contracts',
+      'Nurse Salary by State',
+      'Nurse Salary by Specialty',
+      'Travel Nursing Contract Red Flags',
+    ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer support',
+      email: 'muse16llc@gmail.com',
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
       <HeroSection />
       <HomePage stats={stats} allData={allData} stateData={stateData} />
     </>

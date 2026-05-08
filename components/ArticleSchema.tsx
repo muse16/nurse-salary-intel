@@ -73,6 +73,10 @@ export default function ArticleSchema({
         {
           '@type': type,
           headline: title,
+          speakable: {
+            '@type': 'SpeakableSpecification',
+            cssSelector: ['h1', '.speakable'],
+          },
           description,
           url: baseUrl,
           datePublished: formatDateWithTimezone(datePublished),
@@ -119,6 +123,10 @@ export default function ArticleSchema({
       '@context': 'https://schema.org',
       '@type': type,
       headline: title,
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['h1', '.speakable'],
+      },
       description,
       url: baseUrl,
       datePublished: formatDateWithTimezone(datePublished),
