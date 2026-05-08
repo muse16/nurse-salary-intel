@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'About NurseSalaryIntel | Founder, Mission & Editorial Standards',
-  description: 'NurseSalaryIntel was founded by E. Warner to bring transparent, BLS-sourced nurse salary data to every RN making a career or contract decision. Learn about our mission and methodology.',
+  description: 'NurseSalaryIntel was founded by Courtney Palmer to bring transparent, BLS-sourced nurse salary data to every RN making a career or contract decision. Learn about our mission and methodology.',
   openGraph: {
     title: 'About NurseSalaryIntel | Founder, Mission & Editorial Standards',
-    description: 'Founded by E. Warner. Salary data sourced from BLS OEWS. Insights contributed by practicing nurses in ICU, med-surg, and labor & delivery.',
+    description: 'Founded by Courtney Palmer. Salary data sourced from BLS OEWS. Insights contributed by practicing nurses in ICU, med-surg, and labor & delivery.',
     url: 'https://nursesalaryintel.com/about',
   },
   alternates: { canonical: 'https://nursesalaryintel.com/about' },
@@ -18,14 +18,14 @@ const founderSchema = {
   '@type': 'AboutPage',
   url: 'https://nursesalaryintel.com/about',
   name: 'About NurseSalaryIntel',
-  description: 'NurseSalaryIntel was founded by E. Warner to provide transparent, BLS-sourced nurse salary data and contract intelligence to registered nurses across the United States.',
+  description: 'NurseSalaryIntel was founded by Courtney Palmer to provide transparent, BLS-sourced nurse salary data and contract intelligence to registered nurses across the United States.',
   about: {
     '@type': 'Organization',
     name: 'Nurse Salary Intel',
     url: 'https://nursesalaryintel.com',
     founder: {
       '@type': 'Person',
-      name: 'E. Warner',
+      name: 'Courtney Palmer',
       jobTitle: 'Founder',
     },
   },
@@ -59,7 +59,7 @@ export default function AboutPage() {
           <section className="bg-surface-container-low rounded-2xl p-7 border border-outline-variant/30">
             <h2 className="text-xl font-semibold font-headline text-on-surface mb-4">From the Founder</h2>
             <p>
-              I&apos;m <strong className="text-on-surface">E. Warner</strong>, the founder of NurseSalaryIntel. I built this site because the nurses in my family — across ICU, med-surg, and labor &amp; delivery — kept running into the same problem: salary data online was vague, outdated, or buried behind job listing paywalls.
+              I&apos;m <strong className="text-on-surface">Courtney Palmer</strong>, the founder of NurseSalaryIntel. I built this site because the nurses in my family — across ICU, med-surg, and labor &amp; delivery — kept running into the same problem: salary data online was vague, outdated, or buried behind job listing paywalls.
             </p>
             <p className="mt-4">
               They deserved a resource that gave them real numbers — by state, by city, by specialty — so they could walk into a negotiation or a contract review with actual data behind them, not just a gut feeling.
@@ -67,7 +67,7 @@ export default function AboutPage() {
             <p className="mt-4">
               NurseSalaryIntel exists to be that resource. Every salary figure on this site is sourced from the Bureau of Labor Statistics OEWS survey, cross-referenced against employer job postings, and updated annually. No guesswork. No recruiter spin.
             </p>
-            <p className="mt-6 text-sm font-semibold text-on-surface">— E. Warner, Founder</p>
+            <p className="mt-6 text-sm font-semibold text-on-surface">— Courtney Palmer, Founder</p>
           </section>
 
           {/* Clinical contributors */}
@@ -155,7 +155,7 @@ export default function AboutPage() {
 
           <div className="pt-4 border-t border-outline-variant/20">
             <p className="text-sm text-on-surface-variant/60">
-              NurseSalaryIntel &middot; Founded by E. Warner &middot; Last reviewed May 2026
+              NurseSalaryIntel &middot; Founded by Courtney Palmer &middot; Last reviewed May 2026
             </p>
           </div>
 
