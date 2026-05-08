@@ -5,12 +5,12 @@ import SiteNav from '@/components/SiteNav';
 import RoiCalculator from '@/components/RoiCalculator';
 
 export const metadata: Metadata = {
-  title: 'BSN vs RN Salary 2026: Is the $10K/yr Pay Gap Worth It?',
+  title: 'ADN vs BSN Salary 2026: Is the $10K/yr Pay Gap Worth It?',
   description:
     'BSN nurses earn $10,400 more per year than ADN RNs on average in 2026. See state-by-state pay gap, lifetime ROI, and which hospitals require a BSN for promotion.',
   alternates: { canonical: 'https://nursesalaryintel.com/salary/bsn-vs-rn' },
   openGraph: {
-    title: 'BSN vs RN Salary 2026: Is the $10K/yr Pay Gap Worth It?',
+    title: 'ADN vs BSN Salary 2026: Is the $10K/yr Pay Gap Worth It?',
     description: 'BSN nurses earn $10,400/yr more than ADN RNs. Full state-by-state breakdown + ROI calculator.',
     url: 'https://nursesalaryintel.com/salary/bsn-vs-rn',
   },
@@ -58,7 +58,7 @@ const faqSchema = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: 'BSN vs RN Salary 2026: Is the $10K/yr Pay Gap Worth It?',
+  headline: 'ADN vs BSN Salary 2026: Is the $10K/yr Pay Gap Worth It?',
   description: 'BSN nurses earn $10,400 more per year than ADN RNs on average in 2026.',
   url: 'https://nursesalaryintel.com/salary/bsn-vs-rn',
   datePublished: '2026-01-01',
@@ -73,7 +73,7 @@ const breadcrumbSchema = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://nursesalaryintel.com' },
     { '@type': 'ListItem', position: 2, name: 'Salary Data', item: 'https://nursesalaryintel.com/salary-data' },
-    { '@type': 'ListItem', position: 3, name: 'BSN vs RN Salary 2026', item: 'https://nursesalaryintel.com/salary/bsn-vs-rn' },
+    { '@type': 'ListItem', position: 3, name: 'ADN vs BSN Salary 2026', item: 'https://nursesalaryintel.com/salary/bsn-vs-rn' },
   ],
 };
 
