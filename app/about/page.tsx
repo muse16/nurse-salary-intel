@@ -147,8 +147,8 @@ export default function AboutPage() {
               Spotted an error? Have a suggestion? We read every message.
             </p>
             <p className="mt-3">
-              <a href="mailto:muse16llc@gmail.com" className="text-primary underline hover:opacity-80 font-medium">
-                muse16llc@gmail.com
+              <a href="mailto:support@nursesalaryintel.com" className="text-primary underline hover:opacity-80 font-medium">
+                support@nursesalaryintel.com
               </a>
             </p>
           </section>
