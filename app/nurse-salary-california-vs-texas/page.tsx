@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nurse Salary: California vs Texas (2026) — Which State Pays More?',
@@ -93,6 +94,7 @@ export default function NurseSalaryCaliforniaVsTexas() {
       <p>
         Also worth considering: <Link href="/rn-salary-by-state/arizona" className="text-primary hover:underline">RN salary in Arizona</Link> and <Link href="/rn-salary-by-state/florida" className="text-primary hover:underline">RN salary in Florida</Link> offer no-state-tax advantages with growing healthcare markets and lower housing costs than California.
       </p>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

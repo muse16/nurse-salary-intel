@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import ContractAuditCTA from '@/components/ContractAuditCTA';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Travel Nursing Contract Review Checklist 2026: 15 Must-Check Items',
@@ -97,6 +98,7 @@ export default function TravelContractReview() {
       <Link href="/travel-nursing/contract-red-flags" className="text-primary font-semibold hover:underline text-sm">
         See the 12 biggest contract red flags →
       </Link>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

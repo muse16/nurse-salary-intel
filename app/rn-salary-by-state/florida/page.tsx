@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Florida RN Salary 2026: How Much Do Nurses Make in FL?',
@@ -293,6 +294,7 @@ export default function FloridaRNSalary() {
       <p className="text-sm text-on-surface-variant border-t border-outline-variant pt-4 mt-8">
         <strong>Sources:</strong> US Bureau of Labor Statistics OEWS May 2024 (occupation 29-1141, RN). BLS Occupational Outlook Handbook. Internal methodology: BLS state means projected with 3–4% annual wage-growth assumptions for 2026 estimates. City-level data from BLS metro area summaries and NurseSalaryIntel market research. Figures are estimates; actual pay varies by employer, experience, certifications, location, shift type, and contract terms.
       </p>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

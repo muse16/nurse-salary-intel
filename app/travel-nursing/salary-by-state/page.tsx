@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Travel Nurse Salary by State 2026: $2,000–$3,500 Per Week Ranked',
@@ -97,6 +98,7 @@ export default function TravelNurseSalaryByState() {
           <span className="font-bold text-primary text-sm">Highest-Paying States →</span>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

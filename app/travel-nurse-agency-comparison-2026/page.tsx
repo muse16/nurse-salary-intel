@@ -3,6 +3,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Image from 'next/image';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Best Travel Nurse Agencies 2026: Pay Comparison + Which Agency Pays Most',
@@ -234,6 +235,7 @@ export default function TravelNurseAgencyComparison() {
           <div className="text-sm text-on-surface-variant mt-1">Maximize differential on travel contracts</div>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

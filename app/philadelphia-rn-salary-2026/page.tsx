@@ -3,6 +3,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Image from 'next/image';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Philadelphia RN Salary 2026: $84,200/yr Avg + Penn Medicine vs CHOP Pay',
@@ -260,6 +261,7 @@ export default function PhiladelphiaRNSalary() {
           <div className="text-sm text-on-surface-variant mt-1">CHOP leads the country — see the data</div>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

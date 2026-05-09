@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Chicago RN Salary 2026: $83,580/yr Avg + Northwestern, Rush & U of C Pay',
@@ -229,7 +230,8 @@ export default function ChicagoRNSalary2026() {
           <li><a href="https://www.aacnnursing.org/" target="_blank" rel="noopener noreferrer">American Association of Colleges of Nursing (AACN)</a></li>
           <li><a href="https://www.idfpr.com/profs/nursing.asp" target="_blank" rel="noopener noreferrer">Illinois Department of Financial and Professional Regulation — Nursing</a></li>
         </ul>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

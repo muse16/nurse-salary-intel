@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Travel Nurse vs Staff Nurse Salary 2026: $40K–$60K Gap Explained',
@@ -100,6 +101,7 @@ export default function TravelVsStaffSalary() {
           <p className="text-xs text-on-surface-variant mt-1">Where staff nursing might pay as well as travel.</p>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

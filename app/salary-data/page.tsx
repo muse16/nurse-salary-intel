@@ -3,6 +3,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nursing Salary Database 2026: 10,000+ Real Positions by State and Specialty',
@@ -156,6 +157,7 @@ export default function SalaryDataPage() {
           <span className="text-sm font-semibold text-primary">Negotiation Playbook</span>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

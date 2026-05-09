@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'RN Salary Highest Paying States (2026): Hourly Pay + Highest Paying Cities',
@@ -153,6 +154,7 @@ export default function HighestPayingStates() {
           <p className="text-on-surface-variant"><Link href="/salary/california/san-francisco" className="text-primary hover:underline">Nurse salary in San Francisco</Link> leads nationally at $145,000–$165,000/year, followed by <Link href="/salary/new-york/new-york" className="text-primary hover:underline">nurse salary in New York City</Link> at $112,000–$128,000/year. The Bay Area&apos;s combination of high cost of living, shortages, and union contracts drives the highest nurse pay in the country.</p>
         </div>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

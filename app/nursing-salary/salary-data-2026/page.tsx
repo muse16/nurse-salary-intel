@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nurse Salary Statistics 2026: Average RN Pay by State & Specialty',
@@ -247,6 +248,7 @@ export default function NurseSalaryData2026() {
           <span className="font-bold text-primary text-sm">Salary by Specialty →</span>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

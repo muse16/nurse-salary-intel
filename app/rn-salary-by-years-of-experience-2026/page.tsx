@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'RN Salary by Years of Experience 2026: $62K → $134K Full Progression',
@@ -183,7 +184,8 @@ export default function RNSalaryByExperience2026() {
           <li><a href="https://www.aacnnursing.org/news-information/fact-sheets/nursing-workforce" target="_blank" rel="noopener noreferrer">AACN — Nursing Workforce Fact Sheet</a></li>
           <li><a href="https://www.ncsbn.org/" target="_blank" rel="noopener noreferrer">National Council of State Boards of Nursing (NCSBN)</a></li>
         </ul>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

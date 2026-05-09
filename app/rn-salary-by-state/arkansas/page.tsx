@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Arkansas RN Salary 2026: $67,010/yr — UAMS, Rural Shortage Areas & Loan Repayment',
@@ -132,6 +133,7 @@ export default function ArkansasRNSalary() {
           <p className="text-xs text-on-surface-variant mt-1">Similar market, OKC vs. Little Rock</p>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

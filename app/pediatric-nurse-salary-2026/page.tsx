@@ -4,6 +4,7 @@ import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import SalaryCalculator from '@/components/SalaryCalculator';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Pediatric Nurse Salary 2026: $86,400 Avg + PICU vs Peds ER Pay Gap',
@@ -283,7 +284,8 @@ export default function PediatricNurseSalary2026() {
         <p className="text-sm text-on-surface-variant mt-8">
           <strong>Sources:</strong> U.S. Bureau of Labor Statistics — OEWS, Registered Nurses (29-1141), May 2024; Society of Pediatric Nurses (SPN); Pediatric Nursing Certification Board (PNCB); American Association of Critical-Care Nurses (AACN) — CCRN-Pediatric; Boston Children&apos;s Hospital, Children&apos;s Hospital LA, CHOP, Texas Children&apos;s, Cincinnati Children&apos;s career and benefits pages (April 2026). <strong>Methodology:</strong> Salary figures projected to 2026 using BLS-published wage growth rates. Subspecialty figures aggregated from PNCB workforce data, AACN compensation reports, and verified Glassdoor/Levels.fyi reports (n &gt; 350). Hospital-specific ranges cross-reference each hospital&apos;s published career-page salary postings as of April 2026. Not career or financial advice.
         </p>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

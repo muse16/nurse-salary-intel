@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nurse Overtime Pay 2026: $60+/hr Math + FLSA Rules Decoded',
@@ -108,6 +109,7 @@ export default function NurseOvertimePayGuide() {
           </Link>
         ))}
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

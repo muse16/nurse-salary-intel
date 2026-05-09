@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'How to Become a Nurse Practitioner 2026 | NP Programs, Cost & Salary',
@@ -203,6 +204,7 @@ export default function HowToBecomeNursePractitioner() {
           <span className="font-bold text-primary text-sm">BSN vs RN Salary Comparison →</span>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

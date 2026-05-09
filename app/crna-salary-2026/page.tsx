@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'CRNA Salary 2026: $214,000/yr National Average + Top States & Settings',
@@ -184,7 +185,8 @@ export default function CRNASalary2026() {
           <li><a href="https://www.aana.com/" target="_blank" rel="noopener noreferrer">American Association of Nurse Anesthesiology (AANA) — Compensation & Benefits Report</a></li>
           <li><a href="https://www.aacnnursing.org/" target="_blank" rel="noopener noreferrer">American Association of Colleges of Nursing (AACN)</a></li>
         </ul>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

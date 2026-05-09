@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Seattle RN Salary 2026: What Nurses Earn at UW, Swedish & Virginia Mason',
@@ -182,7 +183,8 @@ export default function SeattleRNSalary2026() {
           <li><a href="https://www.aacnnursing.org/" target="_blank" rel="noopener noreferrer">American Association of Colleges of Nursing (AACN)</a></li>
           <li><a href="https://doh.wa.gov/licenses-permits-and-certificates/nursing-commission" target="_blank" rel="noopener noreferrer">Washington State Nursing Commission</a></li>
         </ul>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

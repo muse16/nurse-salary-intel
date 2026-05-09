@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import Link from 'next/link';
 import { getAllHospitals, getHospitalData, slugify } from '@/lib/data';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nurse Salary by Hospital 2026: Kaiser $140K+ vs HCA, Mayo, Ascension',
@@ -156,6 +157,7 @@ export default function NurseSalaryByHospital() {
       <p className="mt-6">
         See all nurse salary data by location: <Link href="/rn-salary-by-state" className="text-primary hover:underline">RN salary by state</Link> · <Link href="/rn-salary-by-city" className="text-primary hover:underline">RN salary by city</Link> · <Link href="/highest-paying-nursing-specialties" className="text-primary hover:underline">Highest paying specialties</Link>
       </p>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nashville RN Salary 2026: How Much Do Nurses Make in Nashville, TN?',
@@ -167,6 +168,7 @@ export default function NashvilleRNSalary2026() {
           </Link>
         ))}
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

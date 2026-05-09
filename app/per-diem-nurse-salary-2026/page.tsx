@@ -4,6 +4,7 @@ import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import SalaryCalculator from '@/components/SalaryCalculator';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Per Diem Nurse Salary 2026: Is $66.50/hr Worth It? Real Take-Home Math',
@@ -310,7 +311,8 @@ export default function PerDiemNurseSalary2026() {
         <p className="text-sm text-on-surface-variant mt-8">
           <strong>Sources:</strong> U.S. Bureau of Labor Statistics — OEWS, Registered Nurses (29-1141), May 2024; BLS Industry Employment &amp; Wage Data — Healthcare Staffing Services; American Association of Colleges of Nursing — 2026 Nursing Workforce Survey; IRS — Tax Guide for Independent Contractors; Aya Healthcare, CrossCountry, Trusted Health, Nomad Health public rate boards (April 2026). <strong>Methodology:</strong> Per diem rate ranges aggregated from public agency rate boards, hospital float pool postings (n &gt; 200), and verified Glassdoor/Reddit r/nursing self-reported rates (n &gt; 400). All take-home calculations assume 2026 federal tax brackets, average ACA marketplace silver-tier family premium ($14,200/year), and standard self-employment tax rates where applicable. Not career or financial advice.
         </p>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

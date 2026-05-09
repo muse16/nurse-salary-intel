@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'How to Negotiate Nursing Salary 2026: Scripts and Real Numbers',
@@ -98,6 +99,7 @@ export default function HowToNegotiateNursingSalary() {
           <span className="font-bold text-primary text-sm">Salary Database →</span>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

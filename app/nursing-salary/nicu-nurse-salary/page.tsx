@@ -3,6 +3,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'NICU Nurse Salary 2026: $84,490/yr Avg + Travel NICU Earns $2,300–$3,000/wk',
@@ -109,6 +110,7 @@ export default function NICUNurseSalary() {
           ))}
         </div>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

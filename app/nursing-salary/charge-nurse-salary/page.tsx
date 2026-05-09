@@ -4,6 +4,7 @@ import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Charge Nurse Salary 2026: How Much More Do Charge Nurses Make?',
@@ -244,6 +245,7 @@ export default function ChargeNurseSalary() {
           ))}
         </div>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

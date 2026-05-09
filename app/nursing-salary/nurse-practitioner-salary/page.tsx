@@ -3,6 +3,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nurse Practitioner Salary 2026: $126,260/yr + PMHNP Tops $165K',
@@ -130,6 +131,7 @@ export default function NursePractitionerSalary() {
           ))}
         </div>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

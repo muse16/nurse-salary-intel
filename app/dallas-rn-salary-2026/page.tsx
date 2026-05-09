@@ -4,6 +4,7 @@ import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import SalaryCalculator from '@/components/SalaryCalculator';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Dallas RN Salary 2026: $80,910/yr + UT Southwestern, Baylor & Parkland Pay',
@@ -151,7 +152,8 @@ export default function DallasRNSalary2026() {
         </ul>
 
         <p className="text-sm text-on-surface-variant mt-8"><strong>Sources:</strong> U.S. Bureau of Labor Statistics — OEWS, Dallas-Fort Worth-Arlington MSA, May 2024; Texas Workforce Commission Healthcare Labor Market; Texas Board of Nursing Workforce Reports; American Association of Colleges of Nursing 2026 Workforce Survey; UT Southwestern, Baylor Scott &amp; White, Parkland, Texas Health Resources, Methodist Health System career and benefits pages (April 2026). <strong>Methodology:</strong> BLS OEWS May 2024 wages projected at 3.1% annual RN growth; hospital ranges cross-referenced against Glassdoor (n over 280 DFW RN reports) and direct career-page postings. Not career or financial advice.</p>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'New Jersey RN Salary 2026: $93,230/yr — NYC Proximity Premium Explained',
@@ -118,6 +119,7 @@ export default function NewJerseyRNSalary() {
           <p className="text-xs text-on-surface-variant mt-1">Philly corridor comparison</p>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

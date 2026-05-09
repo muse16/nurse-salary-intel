@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Best Online RN to BSN Programs 2026: Accredited, Under $15K, Fast',
@@ -212,6 +213,7 @@ export default function BestRNtoBSNPrograms() {
           <span className="font-bold text-primary text-sm">NP Salary by State →</span>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

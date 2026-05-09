@@ -3,6 +3,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Image from 'next/image';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Critical Care Nurse Salary 2026: $98,400/yr Avg + ICU Pay by State & Cert',
@@ -241,6 +242,7 @@ export default function CriticalCareNurseSalary() {
           <div className="text-sm text-on-surface-variant mt-1">ICU charge differential: $2–$6/hr more</div>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

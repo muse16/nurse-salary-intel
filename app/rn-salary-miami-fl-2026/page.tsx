@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Miami RN Salary 2026: Hourly Pay + Pay by Experience',
@@ -219,7 +220,8 @@ export default function RNSalaryMiami2026() {
         <p className="text-sm text-on-surface-variant mt-8">
           <strong>Sources:</strong> US Bureau of Labor Statistics OEWS, Metropolitan Miami–Fort Lauderdale–Pompano Beach FL, May 2024; Florida Agency for Health Care Administration, workforce publications. Internal methodology: Miami metro mean projected with 3–4% annual wage-growth assumption. Figures are estimates; actual pay varies by employer, experience, location, and contract terms. Not career or financial advice.
         </p>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

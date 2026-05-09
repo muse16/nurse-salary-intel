@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Texas RN Salary 2026: $82,000/yr + Hourly Rates by City',
@@ -194,6 +195,7 @@ export default function TexasRNSalary() {
           <span className="font-bold text-primary text-sm">Travel Nurse Salary Guide →</span>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

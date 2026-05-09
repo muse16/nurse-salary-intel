@@ -3,6 +3,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import RelatedResources from '@/components/RelatedResources';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nursing Salary Hub 2026: Pay by Specialty, Experience & State',
@@ -179,6 +180,7 @@ export default function NursingSalaryHub() {
         items={relatedItems}
         columns={2}
       />
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

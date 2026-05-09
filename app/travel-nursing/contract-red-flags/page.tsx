@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import ContractAuditCTA from '@/components/ContractAuditCTA';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Travel Nursing Contract Red Flags 2026: 12 Warning Signs',
@@ -82,6 +83,7 @@ export default function ContractRedFlags() {
           <p className="text-xs text-on-surface-variant mt-1">Scripts and tactics for fixing red flags.</p>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

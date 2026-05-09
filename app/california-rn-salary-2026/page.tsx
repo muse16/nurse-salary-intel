@@ -3,6 +3,7 @@ import Image from 'next/image';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'California RN Salary 2026: Regional Breakdown & Hourly Pay',
@@ -224,7 +225,8 @@ export default function CaliforniaRNSalary2026() {
         <p className="text-sm text-on-surface-variant mt-8">
           <strong>Sources:</strong> U.S. Bureau of Labor Statistics OEWS, California statewide and metro areas, May 2024; California Nurses Association wage survey data; SEIU healthcare division publications. Internal methodology: BLS mean wages projected with 3–4% annual wage-growth assumption through 2026. All figures are estimates; actual pay varies by employer, experience, location, shift, and contract terms. Not career or financial advice.
         </p>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

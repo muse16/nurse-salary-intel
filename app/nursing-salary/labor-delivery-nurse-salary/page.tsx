@@ -3,6 +3,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Labor and Delivery Nurse Salary 2026: $86,340/yr + California Pays $108K+',
@@ -107,6 +108,7 @@ export default function LaborDeliveryNurseSalary() {
           ))}
         </div>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

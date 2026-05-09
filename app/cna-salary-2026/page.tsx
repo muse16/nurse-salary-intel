@@ -3,6 +3,7 @@ import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'CNA Salary 2026: How Much Do CNAs Make Per Hour & Year?',
@@ -191,6 +192,7 @@ export default function CNASalary2026() {
           </Link>
         ))}
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

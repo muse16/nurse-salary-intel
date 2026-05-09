@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'New York RN Salary 2026: $98,560/yr + Hourly Rates by City',
@@ -196,6 +197,7 @@ export default function NewYorkRNSalary() {
           <span className="font-bold text-primary text-sm">Travel Nurse Salary Guide →</span>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

@@ -3,6 +3,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'ER Nurse Salary 2026: $89,000/yr Avg ($42.79/hr) + CEN Adds $4,800',
@@ -108,6 +109,7 @@ export default function ERNurseSalary() {
           ))}
         </div>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

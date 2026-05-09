@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import Link from 'next/link';
 import { getAllStates, getCitiesByState, getCityData, slugify } from '@/lib/data';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'RN Salary by City 2026: Nurse Pay in Every Major U.S. City',
@@ -126,7 +127,7 @@ export default function RNSalaryByCity() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Browse All Cities by State</h2>
       <p>
-        Select any city below to see 2026 salary data, salary range, top employers, and how the city compares
+        Select any city below to see 2026 salary estimates, salary range, top employers, and how the city compares
         to its state average.
       </p>
 
@@ -179,6 +180,7 @@ export default function RNSalaryByCity() {
           </Link>
         ))}
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

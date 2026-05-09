@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Houston vs Dallas RN Salary 2026: Which Texas City Pays Nurses More?',
@@ -165,7 +166,8 @@ export default function HoustonVsDallasRNSalary2026() {
           <li><a href="https://www.aacnnursing.org/" target="_blank" rel="noopener noreferrer">American Association of Colleges of Nursing (AACN)</a></li>
           <li><a href="https://www.bon.texas.gov/" target="_blank" rel="noopener noreferrer">Texas Board of Nursing</a></li>
         </ul>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Maine RN Salary 2026: $78,920/yr — Oldest State, Highest Nursing Demand',
@@ -130,6 +131,7 @@ export default function MaineRNSalary() {
           <p className="text-xs text-on-surface-variant mt-1">No income tax neighbor</p>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

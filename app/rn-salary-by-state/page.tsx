@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import RelatedResources from '@/components/RelatedResources';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'RN Salary by State 2026: $89,010/yr National Avg — All 50 States',
@@ -237,6 +238,7 @@ export default function RNSalaryByStatePillar() {
         ]}
         columns={2}
       />
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

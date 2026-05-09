@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Registered Nurse Salary Breakdown (2026): Full RN Pay Analysis',
@@ -94,6 +95,7 @@ export default function RegisteredNurseSalaryBreakdown() {
       <p>
         Start by benchmarking your current offer against market rates for your location and specialty. Review your employment contract before signing — mandatory overtime clauses, cancellation penalties, and float pool requirements all affect your real compensation. Use the free <Link href="/audit" className="text-primary hover:underline">contract audit tool</Link> to surface hidden terms in any nurse employment agreement.
       </p>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

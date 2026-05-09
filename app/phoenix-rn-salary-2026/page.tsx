@@ -2,6 +2,7 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Phoenix RN Salary 2026: Metro Pay, Top Hospitals & Arizona Tax Advantage',
@@ -225,7 +226,8 @@ export default function PhoenixRnSalary2026() {
         <p>
           For email scripts, see <Link href="/nurse-salary-negotiation-scripts-2026/" className="text-primary hover:underline">nurse salary negotiation scripts 2026</Link>. For statewide Arizona context, see the <Link href="/arizona-rn-salary-2026/" className="text-primary hover:underline">Arizona RN salary guide</Link>. For NICU specialty pay at Phoenix Children&apos;s, see <Link href="/nicu-nurse-salary-2026/" className="text-primary hover:underline">NICU nurse salary 2026</Link>.
         </p>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

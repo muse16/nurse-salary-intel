@@ -3,6 +3,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import RelatedResources from '@/components/RelatedResources';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Travel Nursing Salary 2026: Pay Packages, Top States & How to Earn More',
@@ -174,6 +175,7 @@ export default function TravelNursingHub() {
         items={relatedItems}
         columns={2}
       />
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

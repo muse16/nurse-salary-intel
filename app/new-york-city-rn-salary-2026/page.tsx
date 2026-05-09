@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'NYC RN Salary 2026: $109,860/yr Avg + NYSNA Union Pay Breakdown',
@@ -279,6 +280,7 @@ export default function NYCRNSalary2026() {
         Cost-of-living index based on C2ER 2026 data. Tax estimates use 2026 IRS brackets and NY DTF rates.
         <em> Last updated May 2026.</em>
       </p>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

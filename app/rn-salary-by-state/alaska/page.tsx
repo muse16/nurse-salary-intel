@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Alaska RN Salary 2026: $96,990/yr + No State Income Tax Advantage',
@@ -118,6 +119,7 @@ export default function AlaskaRNSalary() {
           <p className="text-xs text-on-surface-variant mt-1">Where does Alaska rank?</p>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

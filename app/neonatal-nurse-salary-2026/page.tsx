@@ -2,6 +2,7 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Neonatal Nurse Salary 2026: What Newborn Care Nurses Actually Earn',
@@ -218,7 +219,8 @@ export default function NeonatalNurseSalary2026() {
         <p>
           For the full specialty salary ladder, see <Link href="/highest-paying-nursing-specialties/" className="text-primary hover:underline">highest-paying nursing specialties 2026</Link>. For NP path details, see <Link href="/nursing-salary/how-to-become-nurse-practitioner" className="text-primary hover:underline">how to become a nurse practitioner</Link>.
         </p>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

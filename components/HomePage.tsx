@@ -41,7 +41,7 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
                 </div>
                 <div className="hidden md:flex items-center gap-2 bg-white/10 rounded-xl px-5 py-3 backdrop-blur-sm">
                   <svg className="w-8 h-8 text-yellow-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <div className="text-blue-200 text-xs">Updated with 2026 BLS data</div>
+                  <div className="text-blue-200 text-xs">2026 Salary Estimates</div>
                 </div>
               </div>
               <div className="bg-surface-container-lowest p-8 md:p-12">
@@ -59,7 +59,7 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
             <div>
               <h2 className="font-headline font-extrabold text-3xl text-editorial mb-6">How to Use the Nurse Salary Calculator</h2>
               <p className="text-on-surface-variant text-lg leading-relaxed mb-4">
-                Our nurse salary calculator estimates your RN pay based on four inputs: state, specialty, years of experience, and employment type. Each factor is weighted using 2026 BLS OEWS data combined with real contract data from NurseSalaryIntel&apos;s database of nursing positions.
+                Our nurse salary calculator estimates your RN pay based on four inputs: state, specialty, years of experience, and employment type. Each factor is weighted using the latest available BLS OEWS data (May 2024, published 2025) combined with real contract data from NurseSalaryIntel&apos;s database of nursing positions.
               </p>
               <p className="text-on-surface-variant text-lg leading-relaxed mb-4">
                 To get your estimate, select your state from the dropdown — this sets the baseline pay for your region. Then choose your specialty (ICU, ER, Med-Surg, etc.) and your years of experience. Finally, select whether you are a staff nurse or travel nurse. The calculator applies a specialty multiplier and experience adjustment to generate a personalized salary range.
@@ -214,7 +214,7 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
             {/* Recent Articles */}
             <div>
               <h2 className="font-headline font-extrabold text-3xl text-editorial mb-2">Recent Articles</h2>
-              <p className="text-on-surface-variant text-lg mb-8">In-depth guides updated with 2026 BLS data and real contract intelligence.</p>
+              <p className="text-on-surface-variant text-lg mb-8">In-depth guides built on the latest BLS OEWS data and real contract intelligence.</p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
                   { href: '/entry-level-nurse-salary', title: 'New Grad RN Salary 2026: $62K–$105K + Sign-On Bonus Range', desc: 'Starting pay by state, sign-on bonus breakdowns, first-year trajectory, and negotiation scripts for new grads.' },
@@ -272,7 +272,7 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
                 <div className="border-b border-outline-variant pb-6">
                   <h3 className="font-headline font-bold text-xl text-on-surface mb-3">How accurate is this nurse salary calculator?</h3>
                   <p className="text-on-surface-variant text-lg leading-relaxed">
-                    The calculator uses 2026 BLS OEWS data as the baseline and adjusts it with real contract and position data from NurseSalaryIntel&apos;s database. Results are estimates — actual pay depends on your employer, union status, shift schedule, and negotiated rate. The calculator is most accurate for staff RN roles in major metro areas where we have the most data points. For travel nurse estimates, actual weekly packages vary significantly by agency and contract.
+                    The calculator uses the latest available BLS OEWS data (May 2024) as the baseline and adjusts it with real contract and position data from NurseSalaryIntel&apos;s database. Results are estimates — actual pay depends on your employer, union status, shift schedule, and negotiated rate. The calculator is most accurate for staff RN roles in major metro areas where we have the most data points. For travel nurse estimates, actual weekly packages vary significantly by agency and contract.
                   </p>
                 </div>
                 <div className="border-b border-outline-variant pb-6">

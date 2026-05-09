@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nebraska RN Salary 2026: $69,790/yr — Nebraska Medicine, CHI Health & Rural Incentives',
@@ -130,6 +131,7 @@ export default function NebraskaRNSalary() {
           <p className="text-xs text-on-surface-variant mt-1">Border state comparison, Wichita market</p>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

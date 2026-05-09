@@ -2,6 +2,7 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'NICU Nurse Salary 2026: Hourly Pay, State Breakdown & How to Earn More',
@@ -255,7 +256,8 @@ export default function NicuNurseSalary2026() {
         <p>
           For the full specialty nursing ladder, see <Link href="/highest-paying-nursing-specialties/" className="text-primary hover:underline">highest-paying nursing specialties 2026</Link>. For negotiation scripts, see <Link href="/nurse-salary-negotiation-scripts-2026/" className="text-primary hover:underline">nurse salary negotiation scripts</Link>.
         </p>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

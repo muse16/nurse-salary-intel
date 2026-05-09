@@ -3,6 +3,7 @@ import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'AGNP Salary 2026: Adult-Gerontology NP Pay by State & Track',
@@ -154,6 +155,7 @@ export default function AGNPSalary2026() {
           </Link>
         ))}
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

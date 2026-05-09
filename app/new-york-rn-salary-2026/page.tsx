@@ -3,6 +3,7 @@ import Image from 'next/image';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'New York RN Salary 2026: NYC Pay + Upstate Breakdown',
@@ -199,7 +200,8 @@ export default function NewYorkRNSalary2026() {
         <p className="text-sm text-on-surface-variant mt-8">
           <strong>Sources:</strong> U.S. Bureau of Labor Statistics OEWS, New York state and metro areas, May 2024; New York State Nurses Association collective bargaining disclosures; 1199SEIU wage reports. Internal methodology: BLS mean wages projected with 3–4% annual wage-growth assumption through 2026. All figures are estimates; actual pay varies by employer, experience, location, shift, and contract terms. Not career or financial advice.
         </p>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

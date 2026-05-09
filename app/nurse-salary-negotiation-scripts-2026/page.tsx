@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nurse Salary Negotiation Scripts 2026 (Email + Counteroffer)',
@@ -315,7 +316,8 @@ Best,
         <p className="text-sm text-on-surface-variant mt-8">
           <strong>Sources:</strong> US Bureau of Labor Statistics OEWS, May 2024 (29-1141); Society for Human Resource Management, compensation practices publications. Scripts and ranges are educational guidance, not guarantees of outcome. Actual flexibility varies by employer, state, union status, and individual circumstances. Not career or financial advice.
         </p>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

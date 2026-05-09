@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import ContractAuditCTA from '@/components/ContractAuditCTA';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'How to Negotiate a Travel Nursing Contract 2026: Pay, Stipends and Clauses',
@@ -117,6 +118,7 @@ export default function HowToNegotiateContract() {
           Get the full negotiation playbook →
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

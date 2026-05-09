@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nurse Sign-On Bonuses 2026: How Much to Expect & How to Negotiate More',
@@ -184,7 +185,8 @@ export default function NurseSignOnBonusGuide2026() {
           <li><a href="https://www.aacnnursing.org/news-information/fact-sheets/nursing-shortage" target="_blank" rel="noopener noreferrer">AACN — Nursing Shortage Fact Sheet</a></li>
           <li><a href="https://www.irs.gov/taxtopics/tc419" target="_blank" rel="noopener noreferrer">IRS Topic No. 419 — Gambling Income and Losses (Supplemental Wage Withholding context)</a></li>
         </ul>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

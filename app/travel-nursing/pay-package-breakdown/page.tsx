@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import ContractAuditCTA from '@/components/ContractAuditCTA';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Travel Nurse Pay Package Breakdown 2026: Every Line Item Explained',
@@ -106,6 +107,7 @@ export default function PayPackageBreakdown() {
           Next: 12 contract red flags to check before signing →
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

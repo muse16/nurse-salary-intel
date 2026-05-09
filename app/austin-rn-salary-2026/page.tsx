@@ -3,6 +3,7 @@ import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Austin RN Salary 2026: $86,320/yr + Top Hospital Pay & Negotiation Tips',
@@ -216,6 +217,7 @@ export default function AustinRNSalary2026() {
           </Link>
         ))}
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

@@ -131,7 +131,7 @@ export default function RootLayout({
             "@type": "WebSite",
             "name": "NurseSalaryIntel",
             "url": "https://nursesalaryintel.com",
-            "description": "Free nurse salary calculator and contract audit tool. Compare RN pay by state, specialty, and experience using 2026 BLS data.",
+            "description": "Free nurse salary calculator and contract audit tool. Compare RN pay by state, specialty, and experience using the latest available BLS and market data.",
             "potentialAction": {
               "@type": "SearchAction",
               "target": "https://nursesalaryintel.com/?q={search_term_string}",

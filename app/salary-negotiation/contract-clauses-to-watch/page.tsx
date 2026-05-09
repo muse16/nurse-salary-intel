@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import ContractAuditCTA from '@/components/ContractAuditCTA';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nursing Contract Clauses to Watch 2026: 10 Costly Terms',
@@ -85,6 +86,7 @@ export default function ContractClausesToWatch() {
           <span className="font-bold text-primary text-sm">How to Negotiate Your Contract →</span>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

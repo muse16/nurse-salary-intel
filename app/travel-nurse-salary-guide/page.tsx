@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Travel Nurse Salary Guide 2026: $2,000–$3,500/Week Breakdown',
@@ -83,6 +84,7 @@ export default function TravelNurseSalaryGuide() {
       <p>
         Before your first assignment, work with a travel nurse tax professional to establish a proper tax home and ensure your stipends qualify as tax-free. Improperly structured travel arrangements can result in significant IRS liability — especially if you&apos;re working in your home state or don&apos;t maintain a permanent residence. Review your agency contract carefully and use our <Link href="/audit" className="text-primary hover:underline">contract audit tool</Link> to flag common red flags before signing.
       </p>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

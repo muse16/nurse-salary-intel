@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Massachusetts RN Salary 2026: $103,090/yr + Hourly Rates by City',
@@ -96,6 +97,7 @@ export default function MassachusettsRNSalary() {
           <span className="font-bold text-primary text-sm">Top 10 Highest-Paying States \u2192</span>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

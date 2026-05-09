@@ -3,6 +3,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Image from 'next/image';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'OR Nurse Salary 2026: $102,800/yr Avg + Perioperative Pay by State & Role',
@@ -229,6 +230,7 @@ export default function ORNurseSalary() {
           <div className="text-sm text-on-surface-variant mt-1">Top 10 specialties — CRNA at $214K</div>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

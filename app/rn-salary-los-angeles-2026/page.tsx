@@ -3,6 +3,7 @@ import Image from 'next/image';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Los Angeles RN Salary 2026: Hourly Pay & Benefits Breakdown',
@@ -195,7 +196,8 @@ export default function RNSalaryLosAngeles2026() {
         <p className="text-sm text-on-surface-variant mt-8">
           <strong>Sources:</strong> U.S. Bureau of Labor Statistics OEWS, Los Angeles–Long Beach–Anaheim CA metro, May 2024; California Nurses Association wage publications; SEIU Local 121 and 1021 contract disclosures. Internal methodology: Metro mean wages projected with 3–4% annual wage-growth assumption through 2026. All figures are estimates; actual pay varies by employer, experience, shift, and contract terms. Not career or financial advice.
         </p>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

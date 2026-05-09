@@ -2,6 +2,7 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Boston RN Salary 2026: Hourly Pay, Hospital Breakdown & What You Keep',
@@ -239,7 +240,8 @@ export default function BostonRnSalary2026() {
         <p>
           For copy-paste email scripts, see <Link href="/nurse-salary-negotiation-scripts-2026/" className="text-primary hover:underline">nurse salary negotiation scripts 2026</Link>. For the statewide Massachusetts picture, see the <Link href="/rn-salary-by-state/" className="text-primary hover:underline">RN salary by state guide</Link>.
         </p>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

@@ -12,6 +12,7 @@ import {
   calculateSalary,
 } from '@/lib/bls-data';
 import { getCitiesByState, slugify } from '@/lib/data';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 interface PageProps {
   params: Promise<{ specialty: string; state: string }>;
@@ -337,6 +338,7 @@ export default async function SpecialtyStatePage({ params }: PageProps) {
         
         </p>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

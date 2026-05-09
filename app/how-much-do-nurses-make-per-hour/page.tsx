@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'How Much Do Nurses Make Per Hour? (2026 RN Hourly Pay)',
@@ -101,6 +102,7 @@ export default function HowMuchDoNursesMakePerHour() {
       <p>
         A nurse earning $42/hr on a three-day 12-hour shift schedule earns $78,624 in base pay annually, before any differentials or overtime. With 15% night differential on all shifts, that becomes approximately $90,418. Add one extra overtime shift per week on average and total annual compensation approaches $100,000+ — significantly above what the headline $42/hr rate implies.
       </p>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

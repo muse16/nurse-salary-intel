@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Highest Paying States for RNs 2026: Full Rankings',
@@ -262,7 +263,8 @@ export default function HighestPayingStatesForRNs2026() {
         <p className="text-sm text-on-surface-variant mt-8">
           <strong>Sources:</strong> US Bureau of Labor Statistics OEWS, May 2024 (29-1141), state-level; BLS Occupational Outlook Handbook, Registered Nurses; published state-level cost-of-living composite indexes. Internal methodology: BLS state means projected with 3–4% annual wage-growth assumption; COL adjustments are illustrative. Figures are estimates; actual pay varies by employer, experience, metro, specialty, certification, and shift. Not career or financial advice.
         </p>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

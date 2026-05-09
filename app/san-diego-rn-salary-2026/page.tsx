@@ -3,6 +3,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Image from 'next/image';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'San Diego RN Salary 2026: $104,800/yr Avg + UC San Diego vs. Scripps Pay',
@@ -238,6 +239,7 @@ export default function SanDiegoRNSalary() {
           <div className="text-sm text-on-surface-variant mt-1">Rady Children's and top NICU pay nationally</div>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

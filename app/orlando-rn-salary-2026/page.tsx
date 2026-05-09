@@ -2,6 +2,7 @@
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Orlando RN Salary 2026: Hourly Pay, Hospital Breakdown & Florida Tax Advantage',
@@ -227,7 +228,8 @@ export default function OrlandoRnSalary2026() {
         <p>
           For copy-paste email scripts, see <Link href="/nurse-salary-negotiation-scripts-2026/" className="text-primary hover:underline">nurse salary negotiation scripts 2026</Link>. Run any offer letter through the <Link href="/audit" className="text-primary hover:underline">Contract Red Flag Audit</Link> before signing. For the full Florida picture, see our <Link href="/highest-paying-states-for-rns-2026/" className="text-primary hover:underline">highest-paying states for RNs guide</Link>.
         </p>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

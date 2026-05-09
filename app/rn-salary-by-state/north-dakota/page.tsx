@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'North Dakota RN Salary 2026: $72,140/yr — Sanford Health & No Income Tax',
@@ -117,6 +118,7 @@ export default function NorthDakotaRNSalary() {
           <p className="text-xs text-on-surface-variant mt-1">Similar market, no income tax</p>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

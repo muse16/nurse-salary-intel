@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import RelatedResources from '@/components/RelatedResources';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nurse Salary Negotiation Guide 2026: Scripts, Tactics & Playbooks',
@@ -153,6 +154,7 @@ export default function SalaryNegotiationHub() {
         items={relatedItems}
         columns={2}
       />
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

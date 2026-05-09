@@ -3,6 +3,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import RelatedResources from '@/components/RelatedResources';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Highest-Paying Nursing Specialties 2026: Top 10 (CRNA $214K)',
@@ -115,6 +116,7 @@ export default function HighestPayingNursingSpecialties() {
         ]}
         columns={2}
       />
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

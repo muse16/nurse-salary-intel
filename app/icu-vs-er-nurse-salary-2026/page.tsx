@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'ICU vs ER Nurse Salary 2026: Which Pays More?',
@@ -191,7 +192,8 @@ export default function ICUvsERNurseSalary2026() {
           <li><a href="https://www.aacnnursing.org/" target="_blank" rel="noopener noreferrer">American Association of Colleges of Nursing (AACN)</a></li>
           <li><a href="https://www.ena.org/" target="_blank" rel="noopener noreferrer">Emergency Nurses Association (ENA)</a></li>
         </ul>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Atlanta RN Salary 2026: $71,280/yr Avg + Emory, Grady & Piedmont Pay',
@@ -181,7 +182,8 @@ export default function AtlantaRNSalary2026() {
           <li><a href="https://www.aacnnursing.org/" target="_blank" rel="noopener noreferrer">American Association of Colleges of Nursing (AACN)</a></li>
           <li><a href="https://sos.ga.gov/index.php/licensing/plb/45" target="_blank" rel="noopener noreferrer">Georgia Secretary of State — Nursing Board</a></li>
         </ul>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Idaho RN Salary 2026: $72,160/yr — St. Luke\'s, Boise Boom & Fastest-Growing State',
@@ -141,6 +142,7 @@ export default function IdahoRNSalary() {
           <p className="text-xs text-on-surface-variant mt-1">Portland market vs. Boise comparison</p>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

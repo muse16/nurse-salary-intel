@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Registered Nurse Salary Guide 2026: $89,010/yr National Average',
@@ -242,6 +243,7 @@ export default function RegisteredNurseSalaryGuide() {
           <span className="font-bold text-primary text-sm">Salary Negotiation Playbook →</span>
         </Link>
       </div>
-    </SEOPageLayout>
+        <MethodologyBox />
+</SEOPageLayout>
   );
 }

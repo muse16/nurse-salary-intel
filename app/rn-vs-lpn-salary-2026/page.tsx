@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
+import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'RN vs LPN Salary 2026: RNs Earn $30K+ More — Full Pay & ROI Breakdown',
@@ -167,7 +168,8 @@ export default function RNvsLPNSalary2026() {
         <p>For most career nurses with long-term horizons, however, RN remains the higher-ROI license. See our companion guide on <Link href="/salary/bsn-vs-rn/" className="text-primary hover:underline">BSN vs RN salary</Link> and <Link href="/entry-level-nurse-salary/" className="text-primary hover:underline">Entry Level Nurse Salary 2026</Link>.</p>
 
         <p className="text-sm text-on-surface-variant mt-8"><strong>Sources:</strong> U.S. Bureau of Labor Statistics — OEWS, Registered Nurses (29-1141) and Licensed Practical Nurses (29-2061), May 2024; BLS Employment Projections 2024–2034; American Association of Colleges of Nursing — Nursing Education Statistics 2026; National Council of State Boards of Nursing (NCSBN) — NCLEX Pass Rate Reports. <strong>Methodology:</strong> Salary figures projected to 2026 using BLS-published wage growth rates of 3.1% for RNs and 2.9% for LPNs. Education cost ranges aggregate published tuition data from 80+ accredited nursing programs across all 50 states. 10-year earnings calculations assume continuous full-time employment with average annual COL increases. Not career or financial advice.</p>
-      </SEOPageLayout>
+            <MethodologyBox />
+</SEOPageLayout>
     </>
   );
 }
