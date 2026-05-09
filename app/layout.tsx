@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Manrope } from "next/font/google";
 import Script from "next/script";
 import AssistLoopScript from "./components/AssistLoopScript";
@@ -16,6 +16,11 @@ const manrope = Manrope({
 // ─── REPLACE with your GA4 Measurement ID from analytics.google.com ───────────
 const GA4_ID = "G-MEGH7BGCLK";
 // ─────────────────────────────────────────────────────────────────────────────
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "Nurse Salary Calculator | Free RN Pay Estimator by State & Specialty",

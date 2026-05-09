@@ -2,11 +2,20 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import DataTable from '@/components/DataTable';
-import LiveJobsTable from '@/components/LiveJobsTable';
 import AdSenseSlot from '@/components/AdSenseSlot';
 import SalaryCalculator from '@/components/SalaryCalculator';
-import IntelDashboard from '@/components/IntelDashboard';
+
+const LiveJobsTable = dynamic(() => import('@/components/LiveJobsTable'), {
+  ssr: false,
+  loading: () => <div className="h-48 animate-pulse bg-surface-container rounded-2xl" />,
+});
+
+const IntelDashboard = dynamic(() => import('@/components/IntelDashboard'), {
+  ssr: false,
+  loading: () => <div className="h-64 animate-pulse bg-surface-container rounded-2xl" />,
+});
 import { generateSalaryReportPDF } from '@/lib/pdf-generator';
 import { slugify } from '@/lib/utils';
 import { NursePosition } from '@/lib/types';
