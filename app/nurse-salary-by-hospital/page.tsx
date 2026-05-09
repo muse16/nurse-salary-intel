@@ -6,7 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nurse Salary by Hospital 2026: Kaiser $140K+ vs HCA, Mayo, Ascension',
-  description: 'What Kaiser, HCA, Mayo Clinic, Ascension & 15+ major systems pay RNs in 2026. California Kaiser tops $140K–$165K. See where your hospital ranks.',
+  description: 'Kaiser Permanente nurses earn $140K–$165K in CA. How do HCA, Mayo Clinic, Ascension & 15+ major systems compare? Full hospital-by-hospital RN salary data.',
 };
 
 const faqs = [

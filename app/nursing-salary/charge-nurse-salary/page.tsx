@@ -7,9 +7,9 @@ import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Charge Nurse Salary 2026: How Much More Do Charge Nurses Make?',
+  title: 'Charge Nurse Salary 2026: $82,750/yr — $4K–$10K More Than Staff RN',
   description:
-    'Charge nurses earn $8,000–$15,000 more per year than staff RNs. See pay by state, hospital, and specialty.',
+    'Charge nurses earn $4,000–$10,000 more per year than staff RNs in 2026. ICU charge nurses top $106K. See differential by specialty, state, and hospital type.',
   alternates: { canonical: 'https://nursesalaryintel.com/nursing-salary/charge-nurse-salary' },
   openGraph: {
     title: 'Charge Nurse Salary 2026: How Much More Do Charge Nurses Make?',

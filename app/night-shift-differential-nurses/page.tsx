@@ -5,9 +5,9 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'How Much More Do Night Shift Nurses Make? 2026 Pay Guide',
+  title: 'Night Shift Nurse Salary 2026: $4\u2013$10/hr More = Up to $25K Extra Per Year',
   description:
-    'Night shift nurses earn $4\u2013$10/hr more in 2026 \u2014 that\u2019s up to $25K extra per year. See differential rates by state, real take-home math, and whether nights are worth it.',
+    'Night shift nurses earn $4\u2013$10/hr more in 2026 \u2014 up to $25K extra per year. Differential rates by state, real take-home math, and whether nights are worth the trade-off.',
   alternates: { canonical: 'https://nursesalaryintel.com/night-shift-differential-nurses' },
   openGraph: {
     title: 'How Much More Do Night Shift Nurses Make? 2026 Pay Guide',

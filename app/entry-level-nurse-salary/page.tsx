@@ -5,12 +5,12 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Entry Level Nurse Salary 2026: What New Grad RNs Actually Make',
+  title: 'Entry-Level Nurse Salary 2026: $65K–$105K + Best States for New Grads',
   description:
     'Entry-level RNs earn $65,000–$78,000/year nationally in 2026. California new grads start at $90K+. See pay by state, sign-on bonuses, and how to negotiate your first offer.',
   alternates: { canonical: 'https://nursesalaryintel.com/entry-level-nurse-salary' },
   openGraph: {
-    title: 'Entry Level Nurse Salary 2026: What New Grad RNs Actually Make',
+    title: 'Entry-Level Nurse Salary 2026: $65K–$105K + Best States for New Grads',
     description: 'Entry-level RNs earn $65K–$78K nationally in 2026. California starts at $90K+. Pay by state, sign-on bonuses, and negotiation tips.',
     url: 'https://nursesalaryintel.com/entry-level-nurse-salary',
   },

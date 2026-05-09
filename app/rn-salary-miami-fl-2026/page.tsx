@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Miami RN Salary 2026: Hourly Pay + Pay by Experience',
-  description: 'Miami RN salary 2026: hourly pay, pay by experience, hospital-system pay notes, differentials, and how Miami compares to the rest of Florida.',
+  title: 'Miami RN Salary 2026: $90,000–$97,000/yr + Jackson Health & Baptist Pay',
+  description: 'Miami RNs earn $90,000–$97,000/yr in 2026 — Florida\'s highest-paying metro. Jackson Health, Baptist, UM/Sylvester breakdown + ICU, ER & L&D specialty rates.',
 };
 
 const experienceData = [
