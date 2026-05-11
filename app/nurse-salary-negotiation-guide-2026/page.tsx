@@ -78,23 +78,40 @@ const schema = {
   ],
 };
 
+const faqs = [
+  {
+    question: 'Can RNs negotiate salary?',
+    answer: "Yes — though the room for negotiation depends on the employer's pay structure. Experienced RNs, APRNs, and nurses moving to new employers typically have the most leverage. New grads often face fixed pay grids, but can still negotiate sign-on bonuses, shift differentials, and PTO.",
+  },
+  {
+    question: 'What percentage of nurses negotiate salary?',
+    answer: "According to Nurse.com's 2022 Salary Research Report (more than 2,500 nurses surveyed), only 18% of RNs always negotiate at each new job. About 30% never negotiate at all. APRNs are most likely to negotiate (52%), followed by LPNs (41%) and male RNs (40%).",
+  },
+  {
+    question: 'What is negotiable in a nursing job offer beyond base salary?',
+    answer: 'Beyond base pay, nurses can often negotiate shift differential rates, sign-on bonus amounts and vesting timelines, tuition reimbursement caps, relocation assistance, PTO accrual rates, shift preferences, and charge nurse or preceptor differential eligibility.',
+  },
+  {
+    question: 'When is the best time for a nurse to negotiate salary?',
+    answer: 'The best moment is after you receive a written offer but before you sign. At that point, the employer has committed to hiring you — giving you maximum leverage. Waiting until after you sign eliminates most negotiating power.',
+  },
+];
+
 export default function NurseSalaryNegotiationPage() {
   return (
     <SEOPageLayout
-      title="30% of Nurses Never Negotiate Salary — Here's What the Data Says to Do"
-      description="A Nurse.com survey of more than 2,500 RNs found 30% never negotiate. APRNs who do earn measurably more. Here's what hospital recruiters and nurse coaches say actually works."
-      focusKeyword="nurse salary negotiation"
-      secondaryKeywords={[
-        'how to negotiate nursing salary',
-        'RN salary negotiation tips 2026',
-        'nursing job offer negotiation',
-        'nurse salary negotiation tactics',
-        'what is negotiable in a nursing offer',
-        'nursing sign-on bonus negotiation',
+      breadcrumbs={[
+        { label: 'Home', href: '/' },
+        { label: 'Salary Guides', href: '/blog/' },
+        { label: 'Nurse Salary Negotiation Guide 2026' },
       ]}
+      h1="30% of Nurses Never Negotiate Salary — Here's What the Data Says to Do"
       lastUpdated="May 2026"
       schemaType="Article"
-      schema={schema}
+      schemaTitle="30% of Nurses Never Negotiate Salary — Here's What the Data Says to Do"
+      schemaDescription="A Nurse.com survey of more than 2,500 RNs found 30% never negotiate salary. Real recruiter insights and step-by-step tactics for your next nursing job offer."
+      schemaUrl="/nurse-salary-negotiation-guide-2026"
+      faqs={faqs}
     >
       {/* Hero image — owner generates */}
       <Image
