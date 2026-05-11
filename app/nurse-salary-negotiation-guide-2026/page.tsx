@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { SEOPageLayout } from '@/components/SEOPageLayout';
+import SEOPageLayout from '@/components/SEOPageLayout';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
