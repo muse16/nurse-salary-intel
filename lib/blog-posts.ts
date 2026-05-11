@@ -166,7 +166,7 @@ const allBlogPosts: BlogPost[] = [
     `,
   },
   {
-    slug: 'travel-nurse-vs-staff-nurse-salary-2026',
+    slug: 'travel-nurse-vs-staff-nurse-salary-2026-v1',
     title: 'Travel Nurse vs Staff Nurse Salary 2026: The Real Numbers',
     date: '2026-04-01',
     excerpt: 'Travel nurses earn more — but after taxes, housing, and gaps between contracts, is the math actually better? We broke down the real numbers.',
