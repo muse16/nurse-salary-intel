@@ -32,7 +32,7 @@ const allBlogPosts: BlogPost[] = [
     readTime: '5 min read',
     focusKeyword: 'how nurse salary estimates are calculated',
     secondaryKeywords: ['BLS OEWS nurse salary data', 'nurse salary data methodology', 'NurseSalaryIntel data sources', 'how accurate are nurse salary estimates'],
-    coverImage: '/images/how-we-calculate-nurse-salary-estimates-hero.png',
+    coverImage: '/images/how-we-calculate-nurse-salary-estimates-hero_compressed.png',
     imageAlt: 'Researcher reviewing BLS salary data and nursing compensation charts at a desk',
     metaDescription: 'NurseSalaryIntel salary estimates start with BLS OEWS data (May 2024), cross-referenced with job postings and regional conditions. Full methodology and limitations explained.',
     href: '/how-we-calculate-nurse-salary-estimates',
@@ -100,7 +100,7 @@ const allBlogPosts: BlogPost[] = [
       'nursing sign-on bonus negotiation',
       'nurse salary negotiation tactics',
     ],
-    coverImage: '/images/nurse-salary-negotiation-guide-2026-hero.png',
+    coverImage: '/images/nurse-salary-negotiation-guide-2026-hero_compressed.png',
     imageAlt: 'Nurse reviewing a job offer with a hospital recruiter in a professional office setting',
     metaDescription:
       'Only 18% of RNs always negotiate salary — 30% never ask at all. See what hospital recruiters and nurse coaches say actually works, backed by data from more than 2,500 nurses.',
