@@ -1,189 +1,196 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
+import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Atlanta RN Salary 2026: $71,280/yr Avg + Emory, Grady & Piedmont Pay',
-  description: 'Atlanta RN salary 2026: $71,280/yr average, $34.27/hr. Pay by hospital, sign-on bonuses, Georgia vs. national comparison, and specialty premiums.',
+  title: 'Atlanta RN Salary 2026: How Much Do Nurses Make in Atlanta, GA?',
+  description:
+    'Atlanta RNs earn $79,000/yr ($37.98/hr) on average in 2026. See pay at Emory Healthcare, Grady Memorial, Northside Hospital, Piedmont, and Wellstar — with Georgia tax analysis.',
   alternates: { canonical: 'https://nursesalaryintel.com/atlanta-rn-salary-2026' },
+  openGraph: {
+    title: 'Atlanta RN Salary 2026: $79,000/yr Avg',
+    description: 'Atlanta nurse salary by hospital, specialty, and experience — with Georgia cost-of-living and tax context.',
+    url: 'https://nursesalaryintel.com/atlanta-rn-salary-2026',
+  },
 };
 
+const faqs = [
+  {
+    question: 'What is the average RN salary in Atlanta, GA in 2026?',
+    answer: "Atlanta RNs earn an average of $79,000/year ($37.98/hr) in 2026, below the national average of $89,010. Georgia has a flat 5.49% state income tax for 2026. However, Atlanta's lower cost of living — particularly housing — partially offsets the nominal pay gap. Emory Healthcare pays the highest base salaries in the market.",
+  },
+  {
+    question: 'What hospitals pay nurses the most in Atlanta?',
+    answer: "Emory Healthcare pays Atlanta's highest RN salaries ($80,000–$100,000), followed by Children's Healthcare of Atlanta ($78,000–$98,000) and Northside Hospital ($77,000–$96,000). Grady Memorial Hospital offers PSLF eligibility as a public safety-net hospital, which can be worth $50,000+ in loan forgiveness for nurses with federal student loans.",
+  },
+  {
+    question: 'Is Atlanta a good city for nurses?',
+    answer: "Atlanta has a growing and diversified healthcare market anchored by Emory, Wellstar, and Piedmont health systems. Cost of living is considerably lower than West Coast or Northeast markets. For nurses prioritizing loan forgiveness, Grady Memorial is one of the best PSLF opportunities in the Southeast.",
+  },
+  {
+    question: 'What is Georgia state income tax for nurses in 2026?',
+    answer: "Georgia has a flat 5.49% state income tax for 2026. On a $79,000 Atlanta RN salary, that's approximately $4,337/year in state taxes. This is a notable factor when comparing Atlanta offers to Texas or Florida jobs at similar or slightly lower nominal salaries.",
+  },
+];
+
 const experienceData = [
-  { label: 'Entry-Level (0–2 yrs)', avgSalary: '$57,600 – $65,200', hourlyRate: '$27.70 – $31.40/hr' },
-  { label: 'Mid-Career (5–10 yrs)', avgSalary: '$72,800 – $84,600', hourlyRate: '$35.00 – $40.70/hr' },
-  { label: 'Senior (10+ yrs)', avgSalary: '$86,200 – $104,400', hourlyRate: '$41.40 – $50.20/hr' },
-  { label: 'Top 10% earners', avgSalary: '$112,600+', hourlyRate: '$54.10+/hr' },
+  { label: 'Entry-Level (0–2 yrs)', avgSalary: '$60,000 – $67,000', hourlyRate: '$28.85 – $32.21/hr' },
+  { label: 'Mid-Career (3–7 yrs)', avgSalary: '$74,000 – $88,000', hourlyRate: '$35.58 – $42.31/hr' },
+  { label: 'Senior (8+ yrs)', avgSalary: '$86,000 – $104,000', hourlyRate: '$41.35 – $50.00/hr' },
+  { label: 'Top 10% earners', avgSalary: '$108,000+', hourlyRate: '$51.92+/hr' },
 ];
 
 const hospitalData = [
-  { label: 'Emory University Hospital', avgSalary: '$70,200 – $98,600', hourlyRate: 'Sign-on: $8K–$15K' },
-  { label: 'Grady Memorial Hospital', avgSalary: '$67,800 – $92,400', hourlyRate: 'PSLF eligible; Level 1 trauma' },
-  { label: 'Piedmont Atlanta Hospital', avgSalary: '$68,400 – $94,200', hourlyRate: 'Sign-on: $6K–$12K' },
-  { label: 'Children\'s Healthcare of Atlanta', avgSalary: '$69,600 – $96,800', hourlyRate: 'Pediatric premium' },
-  { label: 'Northside Hospital Atlanta', avgSalary: '$67,200 – $91,600', hourlyRate: 'OB/L&D premium' },
-  { label: 'WellStar Health System', avgSalary: '$65,800 – $88,400', hourlyRate: 'Suburban network' },
-  { label: 'Piedmont Henry / Fayette', avgSalary: '$63,400 – $84,200', hourlyRate: 'Southern suburbs' },
+  { label: 'Emory Healthcare', avgSalary: '$80,000 – $100,000', hourlyRate: 'Magnet; top base pay in market' },
+  { label: "Children's Healthcare of Atlanta", avgSalary: '$78,000 – $98,000', hourlyRate: 'Top pediatric system in SE' },
+  { label: 'Northside Hospital', avgSalary: '$77,000 – $96,000', hourlyRate: 'Strong L&D and oncology pay' },
+  { label: 'Piedmont Healthcare', avgSalary: '$76,000 – $94,000', hourlyRate: 'Multiple metro Atlanta locations' },
+  { label: 'Wellstar Health System', avgSalary: '$74,000 – $92,000', hourlyRate: 'Largest health system in GA' },
+  { label: 'Grady Memorial Hospital', avgSalary: '$72,000 – $88,000', hourlyRate: 'Public; Level 1 Trauma; PSLF eligible' },
 ];
 
 const specialtyData = [
-  { label: 'Med-Surg / Floor', avgSalary: '$67,400', hourlyRate: 'Base' },
-  { label: 'Telemetry', avgSalary: '$70,600', hourlyRate: '+$3,200' },
-  { label: 'L&D', avgSalary: '$74,800', hourlyRate: '+$7,400' },
-  { label: 'OR / Surgical', avgSalary: '$75,900', hourlyRate: '+$8,500' },
-  { label: 'ER', avgSalary: '$76,400', hourlyRate: '+$9,000' },
-  { label: 'ICU / CCU', avgSalary: '$78,200', hourlyRate: '+$10,800' },
-  { label: 'NICU', avgSalary: '$76,800', hourlyRate: '+$9,400' },
-  { label: 'Trauma (Level 1)', avgSalary: '$82,600', hourlyRate: '+$15,200' },
+  { label: 'Med-Surg', avgSalary: '$71,000', hourlyRate: 'Base' },
+  { label: 'L&D', avgSalary: '$77,000', hourlyRate: '+$6,000' },
+  { label: 'ER', avgSalary: '$81,000', hourlyRate: '+$10,000' },
+  { label: 'OR / Surgical', avgSalary: '$80,000', hourlyRate: '+$9,000' },
+  { label: 'ICU / Critical Care', avgSalary: '$84,000', hourlyRate: '+$13,000' },
+  { label: 'NICU', avgSalary: '$80,500', hourlyRate: '+$9,500' },
+  { label: 'CRNA (Certified)', avgSalary: '$198,000+', hourlyRate: 'Advanced practice' },
 ];
-
-const cityComparison = [
-  { label: 'Atlanta, GA', avgSalary: '$71,280', hourlyRate: 'COL Index 104' },
-  { label: 'Charlotte, NC', avgSalary: '$69,800', hourlyRate: 'COL Index 96' },
-  { label: 'Nashville, TN', avgSalary: '$70,400', hourlyRate: 'COL Index 99' },
-  { label: 'Miami, FL', avgSalary: '$74,200', hourlyRate: 'COL Index 123' },
-  { label: 'National Average', avgSalary: '$89,010', hourlyRate: 'COL Index 100' },
-];
-
-const faqs = [
-  { question: 'What is the average RN salary in Atlanta in 2026?', answer: 'The average registered nurse salary in Atlanta is $71,280/year ($34.27/hour) in 2026, based on BLS OEWS data for the Atlanta-Sandy Springs-Roswell MSA. This is about 20% below the national mean, but Georgia\'s low state income tax (5.49% flat) and lower cost of living narrow the real-dollar gap.' },
-  { question: 'Which Atlanta hospital pays nurses the most?', answer: 'Emory University Hospital leads at $70,200–$98,600 base for specialty roles, with Grady Memorial (Level 1 trauma) close behind at $67,800–$92,400. Emory offers the strongest academic advancement pathway; Grady offers PSLF eligibility for nurses with federal student loans.' },
-  { question: 'Why does Atlanta pay nurses less than the national average?', answer: 'Georgia has a lower cost of living than the national average (COL index ~104 for Atlanta), and the state has historically had lower union density in healthcare. Wages are market-driven with less collective bargaining pressure than Northeast or West Coast cities.' },
-  { question: 'How do sign-on bonuses work in Atlanta?', answer: 'Atlanta hospitals offer competitive sign-ons, particularly for ICU, ER, OR, and L&D. Emory leads at $8K–$15K for 2-year commitments in critical care. Children\'s Healthcare of Atlanta is aggressive for pediatric specialty nurses. Most commitments require 2 years; early departure triggers prorated clawback.' },
-  { question: 'Is Atlanta growing as a nursing market?', answer: 'Yes. Georgia\'s population is growing 1.5% annually — faster than the national rate — driving hospital expansion across the Atlanta metro. Emory and Piedmont have both opened new facilities since 2023, increasing demand for experienced RNs across all specialties.' },
-  { question: 'How much do travel nurses make in Atlanta?', answer: 'Travel RNs in Atlanta typically earn $42–$62/hr ($87,000–$128,000/year annualized), significantly above local staff rates. Demand is highest at Grady (trauma), Children\'s Healthcare (PICU), and Emory (oncology/transplant).' },
-];
-
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://nursesalaryintel.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Salary Guides', item: 'https://nursesalaryintel.com/blog/' },
-    { '@type': 'ListItem', position: 3, name: 'Atlanta RN Salary 2026', item: 'https://nursesalaryintel.com/atlanta-rn-salary-2026/' },
-  ],
-};
 
 export default function AtlantaRNSalary2026() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <SEOPageLayout
-        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Salary Guides', href: '/blog' }, { label: 'Atlanta RN Salary 2026' }]}
-        h1="Atlanta RN Salary 2026: What Nurses Earn at Emory, Grady & Children's Healthcare"
-        lastUpdated="April 2026"
-        schemaTitle="Atlanta RN Salary 2026: $71,280/yr Avg + Emory, Grady & Piedmont Pay"
-        schemaDescription="Atlanta RN salary 2026: $71,280/yr average, $34.27/hr. Pay by hospital, sign-on bonuses, Georgia vs. national comparison, and specialty premiums."
-        schemaUrl="/atlanta-rn-salary-2026/"
-        faqs={faqs}
-      >
-        <p>
-          The average <strong>registered nurse salary in Atlanta is $71,280/year ($34.27/hour)</strong> in 2026.
-          That&apos;s 20% below the national mean — but Atlanta&apos;s COL-adjusted pay is more competitive than
-          the headline suggests. A flat 5.49% Georgia income tax (vs. California&apos;s 9.3%+) and housing costs
-          well below the coasts mean Atlanta RNs keep more of each dollar. Meanwhile, the metro&apos;s rapid
-          population growth is pushing hospitals to compete harder on sign-ons and specialty premiums.
+    <SEOPageLayout
+      breadcrumbs={[
+        { label: 'Home', href: '/' },
+        { label: 'RN Salary by State', href: '/rn-salary-by-state' },
+        { label: 'Georgia RN Salary', href: '/rn-salary-by-state/georgia' },
+        { label: 'Atlanta RN Salary 2026' },
+      ]}
+      h1="Atlanta RN Salary 2026: How Much Do Nurses Make in Atlanta, Georgia?"
+      lastUpdated="May 2026"
+      schemaTitle="Atlanta RN Salary 2026"
+      schemaDescription="Average RN salary in Atlanta, GA by hospital, specialty, and experience level in 2026."
+      schemaUrl="/atlanta-rn-salary-2026"
+      faqs={faqs}
+    >
+      <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
+        <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
+        <p className="text-on-surface text-base">
+          <strong>Atlanta RNs earn $79,000/year ($37.98/hr)</strong> on average in 2026 — below the national
+          average but with a meaningfully <strong>lower cost of living</strong> than comparable metros.
+          New grads start at <strong>$60,000–$67,000</strong>; senior ICU and trauma nurses reach
+          <strong> $104,000–$108,000</strong>. Emory Healthcare pays the market top; Grady Memorial offers
+          one of the Southeast&apos;s best PSLF opportunities.
         </p>
+      </div>
 
-        <Image
-          src="/images/atlanta-rn-salary-2026-hospital.png"
-          alt="Atlanta registered nurse in scrubs reviewing tablet outside Emory University Hospital entrance"
-          width={800}
-          height={450}
-          className="rounded-xl w-full"
-          loading="lazy"
-        />
+      <Image
+        src="/images/atlanta-rn-salary-2026-hero_compressed.png"
+        alt="Registered nurse in scrubs standing outside a modern Atlanta Georgia hospital entrance with the city skyline softly visible in the background"
+        width={1200}
+        height={630}
+        className="rounded-xl w-full"
+        priority
+      />
 
-        <h2 className="text-2xl font-bold font-headline text-on-surface">Atlanta RN Salary at a Glance (2026)</h2>
+      <p>
+        Atlanta&apos;s healthcare market is one of the fastest-growing in the Southeast, anchored by Emory
+        Healthcare, Wellstar Health System, Piedmont Healthcare, and the nationally recognized Children&apos;s
+        Healthcare of Atlanta. While nominal salaries sit below the national average, Atlanta&apos;s cost of
+        living — particularly housing — runs considerably below West Coast and Northeast markets, making
+        real purchasing power more competitive than it first appears.
+      </p>
 
-        <SalaryTable
-          title="Atlanta RN Salary by Experience Level"
-          headers={['Experience Level', 'Avg. Annual Salary', 'Avg. Hourly Rate']}
-          rows={experienceData}
-          source="BLS OEWS 2025, Atlanta-Sandy Springs-Roswell MSA + NurseSalaryIntel 2026 projections"
-        />
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Atlanta RN Salary by Experience Level (2026)</h2>
+      <SalaryTable
+        title="Atlanta RN Salary by Years of Experience"
+        headers={['Experience Level', 'Annual Salary Range', 'Hourly Rate']}
+        rows={experienceData}
+        source="NurseSalaryIntel 2026 estimates based on BLS OEWS May 2024 data"
+      />
 
-        <h2 className="text-2xl font-bold font-headline text-on-surface">Atlanta RN Pay by Hospital</h2>
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Atlanta RN Salary by Hospital (2026)</h2>
 
-        <SalaryTable
-          title="Top Atlanta Hospitals — RN Base Pay 2026"
-          headers={['Hospital / System', 'Base RN Range', 'Notable']}
-          rows={hospitalData}
-          source="NurseSalaryIntel hospital data, 2026"
-        />
+      <Image
+        src="/images/atlanta-rn-salary-2026-comparison.png"
+        alt="Bar chart comparing 2026 RN salaries at Atlanta hospitals including Emory Healthcare, Grady Memorial, and Northside Hospital versus national average"
+        width={800}
+        height={450}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
 
-        <h2 className="text-2xl font-bold font-headline text-on-surface">Atlanta RN Salary by Specialty</h2>
+      <p>
+        Emory Healthcare — Atlanta&apos;s flagship academic system and the only Magnet-designated hospital in
+        the city — pays the highest base salaries and draws nurses interested in research, academics, and
+        clinical advancement. Grady Memorial Hospital is Atlanta&apos;s public safety-net hospital and Level 1
+        Trauma Center: base pay is on the lower end of the market, but it qualifies for Public Service
+        Loan Forgiveness, which can mean $50,000+ in federal loan forgiveness for nurses with significant
+        student debt.
+      </p>
 
-        <SalaryTable
-          title="Atlanta RN Pay by Specialty (2026)"
-          headers={['Specialty', 'Avg. Atlanta Salary', 'Premium vs. Base']}
-          rows={specialtyData}
-          source="NurseSalaryIntel survey data, 2026"
-        />
+      <SalaryTable
+        title="Nurse Salary by Hospital in Atlanta, GA"
+        headers={['Hospital', 'RN Salary Range', 'Notes']}
+        rows={hospitalData}
+        source="NurseSalaryIntel 2026 hospital data"
+      />
 
-        <Image
-          src="/images/atlanta-rn-salary-2026-comparison.png"
-          alt="Bar chart comparing 2026 average RN salaries in Atlanta, Charlotte, Nashville, Miami, and the national average"
-          width={800}
-          height={450}
-          className="rounded-xl w-full"
-          loading="lazy"
-        />
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Atlanta RN Salary by Specialty (2026)</h2>
 
-        <h2 className="text-2xl font-bold font-headline text-on-surface">Atlanta vs. Southeast Metros</h2>
+      <Image
+        src="/images/atlanta-rn-salary-2026-hospital_compressed.png"
+        alt="Registered nurse in scrubs reviewing patient charts in a modern Atlanta Georgia hospital corridor, professional clinical environment"
+        width={600}
+        height={800}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
 
-        <SalaryTable
-          title="RN Salary — Atlanta vs. Southeast Cities (2026)"
-          headers={['City', 'Avg. Annual Salary', 'Cost of Living']}
-          rows={cityComparison}
-          source="BLS OEWS 2025 + NurseSalaryIntel 2026 projections"
-        />
+      <SalaryTable
+        title="Atlanta RN Salary by Specialty"
+        headers={['Specialty', 'Avg Annual Salary', 'Premium Over Med-Surg']}
+        rows={specialtyData}
+        source="NurseSalaryIntel 2026 data"
+      />
 
-        <h2 className="text-2xl font-bold font-headline text-on-surface">Sign-On Bonuses in Atlanta (2026)</h2>
-        <ul>
-          <li><strong>Med-Surg / Telemetry:</strong> $3,000 – $7,000 (1-year commitment)</li>
-          <li><strong>L&D / OR / NICU:</strong> $6,000 – $12,000 (2-year commitment)</li>
-          <li><strong>ICU / ER:</strong> $8,000 – $15,000 (2-year commitment)</li>
-          <li><strong>Trauma / Pediatric Specialty:</strong> $10,000 – $18,000 (2-year commitment)</li>
-        </ul>
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Georgia Income Tax and Take-Home Pay</h2>
+      <p>
+        Georgia has a flat 5.49% state income tax for 2026. On a $79,000 Atlanta RN salary, that&apos;s
+        approximately $4,337/year — roughly $361/month in state taxes. When comparing an Atlanta offer to a
+        job in Texas or Florida at the same gross salary, add that amount back to the no-tax state offer for
+        a true comparison. At $83,000 gross in Houston (no income tax), a nurse nets about $4,000 more per
+        year than in Atlanta at the same gross — enough to cover several months of rent differential.
+      </p>
+      <p>
+        For nurses with significant federal student loans, Grady Memorial&apos;s PSLF eligibility can flip the
+        math entirely. If you qualify for PSLF, $50,000+ in loan forgiveness over 10 years can outweigh
+        several years of the Georgia tax burden.
+      </p>
 
-        <Image
-          src="/images/atlanta-rn-salary-2026-team.png"
-          alt="Diverse nursing team collaborating in hallway of modern Atlanta hospital system"
-          width={800}
-          height={450}
-          className="rounded-xl w-full"
-          loading="lazy"
-        />
-
-        <h2 className="text-2xl font-bold font-headline text-on-surface">Related Salary Guides</h2>
-        <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
-          {[
-            { href: '/rn-salary-by-state/georgia', label: 'Georgia RN Salary (Full State)', desc: 'Statewide data — all cities' },
-            { href: '/nursing-salary/icu-nurse-salary/georgia', label: 'ICU Nurse Salary in Georgia', desc: 'Critical care pay statewide' },
-            { href: '/orlando-rn-salary-2026', label: 'Orlando RN Salary 2026', desc: 'Compare Southeast markets' },
-            { href: '/rn-salary-miami-fl-2026', label: 'Miami RN Salary 2026', desc: 'South Florida nursing market' },
-          ].map(({ href, label, desc }) => (
-            <Link key={href} href={href} className="flex items-center justify-between p-3 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors">
-              <div>
-                <p className="text-sm font-semibold text-primary">{label}</p>
-                <p className="text-xs text-on-surface-variant">{desc}</p>
-              </div>
-              <span className="text-on-surface-variant text-xs ml-3">→</span>
-            </Link>
-          ))}
-        </div>
-
-        <h2 className="text-2xl font-bold font-headline text-on-surface">Sources</h2>
-        <ul>
-          <li><a href="https://www.bls.gov/oes/current/oes291141.htm" target="_blank" rel="noopener noreferrer">BLS OEWS — Registered Nurses, Atlanta-Sandy Springs-Roswell MSA</a></li>
-          <li><a href="https://www.aacnnursing.org/" target="_blank" rel="noopener noreferrer">American Association of Colleges of Nursing (AACN)</a></li>
-          <li><a href="https://sos.ga.gov/index.php/licensing/plb/45" target="_blank" rel="noopener noreferrer">Georgia Secretary of State — Nursing Board</a></li>
-        </ul>
-            <MethodologyBox />
-</SEOPageLayout>
-    </>
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Related Salary Guides</h2>
+      <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
+        {[
+          { href: '/rn-salary-by-state', label: 'RN Salary by State', desc: 'All 50 states ranked' },
+          { href: '/icu-nurse-salary-2026', label: 'ICU Nurse Salary 2026', desc: 'Critical care pay nationwide' },
+          { href: '/nurse-salary-negotiation-guide-2026', label: 'Nurse Salary Negotiation Guide', desc: 'How to ask for more and get it' },
+          { href: '/houston-rn-salary-2026', label: 'Houston RN Salary 2026', desc: 'Compare Atlanta vs. Houston pay' },
+        ].map(({ href, label, desc }) => (
+          <Link key={href} href={href} className="flex items-center justify-between p-3 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors">
+            <div>
+              <p className="text-sm font-semibold text-primary">{label}</p>
+              <p className="text-xs text-on-surface-variant">{desc}</p>
+            </div>
+            <span className="text-on-surface-variant text-xs ml-3">→</span>
+          </Link>
+        ))}
+      </div>
+      <MethodologyBox />
+    </SEOPageLayout>
   );
 }

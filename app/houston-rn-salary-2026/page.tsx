@@ -1,161 +1,192 @@
-﻿import type { Metadata } from 'next';
-import Image from 'next/image';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import SEOPageLayout from '@/components/SEOPageLayout';
+import Image from 'next/image';
 import SalaryTable from '@/components/SalaryTable';
-import SalaryCalculator from '@/components/SalaryCalculator';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Houston RN Salary 2026: $82,140/yr — Which Hospital Pays Most?',
-  description: 'Houston RN pay: $82,140/yr avg, $39.49/hr. Methodist vs MD Anderson vs Texas Children\'s — which pays most? Sign-ons up to $15K. Full breakdown vs Dallas + Austin.',
+  title: 'Houston RN Salary 2026: How Much Do Nurses Make in Houston, TX?',
+  description:
+    'Houston RNs earn $83,500/yr ($40.14/hr) on average in 2026. See pay at Houston Methodist, Memorial Hermann, Texas Medical Center, and HCA — plus no state income tax advantage.',
   alternates: { canonical: 'https://nursesalaryintel.com/houston-rn-salary-2026' },
+  openGraph: {
+    title: 'Houston RN Salary 2026: $83,500/yr Avg — No State Income Tax',
+    description: 'Houston nurse salary by hospital, specialty, and experience — with Texas tax advantage analysis.',
+    url: 'https://nursesalaryintel.com/houston-rn-salary-2026',
+  },
 };
 
+const faqs = [
+  {
+    question: 'What is the average RN salary in Houston, TX in 2026?',
+    answer: 'Houston RNs earn an average of $83,500/year ($40.14/hr) in 2026, below the national average of $89,010. However, Texas has no state income tax — adding $3,500–$5,500 to effective take-home pay compared to states like Colorado or Georgia. Houston Methodist and the Texas Medical Center complex pay at the top of the local market.',
+  },
+  {
+    question: 'What hospitals pay nurses the most in Houston?',
+    answer: "Houston Methodist pays Houston's highest RN base salaries ($85,000–$108,000), followed by Texas Medical Center system hospitals ($82,000–$100,000) and Memorial Hermann ($80,000–$98,000). HCA Houston Healthcare offers aggressive sign-on bonuses of $10,000–$20,000 for specialty nurses.",
+  },
+  {
+    question: 'Does Texas have state income tax for nurses?',
+    answer: "No — Texas has no state income tax. On an $83,500 Houston RN salary, that's $0 in state taxes vs. $3,700+ in Colorado (4.4% flat) or $4,200+ in Georgia. The no-tax advantage makes Houston's nominal salary more competitive than it first appears when comparing to higher-paying but higher-taxed states.",
+  },
+  {
+    question: 'Is Houston a good city for nurses?',
+    answer: "Yes — Houston is home to the Texas Medical Center, the world's largest medical complex, with 60+ institutions and 106,000+ employees. The nursing job market is large and stable, cost of living is moderate by major-metro standards, and the no-state-income-tax advantage boosts real take-home pay meaningfully.",
+  },
+];
+
 const experienceData = [
-  { label: 'Entry-Level (0–2 yrs)', avgSalary: '$66,500 – $74,800', hourlyRate: '$32.00 – $36.00/hr' },
-  { label: 'Mid-Career (5–10 yrs)', avgSalary: '$84,200 – $97,500', hourlyRate: '$40.50 – $46.90/hr' },
-  { label: 'Senior (10+ yrs)', avgSalary: '$98,000 – $118,400', hourlyRate: '$47.10 – $56.90/hr' },
-  { label: 'Top 10% earners', avgSalary: '$122,460+', hourlyRate: '$58.90+/hr' },
+  { label: 'Entry-Level (0–2 yrs)', avgSalary: '$62,000 – $70,000', hourlyRate: '$29.81 – $33.65/hr' },
+  { label: 'Mid-Career (3–7 yrs)', avgSalary: '$78,000 – $92,000', hourlyRate: '$37.50 – $44.23/hr' },
+  { label: 'Senior (8+ yrs)', avgSalary: '$90,000 – $110,000', hourlyRate: '$43.27 – $52.88/hr' },
+  { label: 'Top 10% earners', avgSalary: '$115,000+', hourlyRate: '$55.29+/hr' },
 ];
 
 const hospitalData = [
-  { label: 'Houston Methodist Hospital', avgSalary: '$78,500 – $104,200', hourlyRate: 'Sign-on: $10K–$15K' },
-  { label: 'Memorial Hermann–TMC', avgSalary: '$76,200 – $98,800', hourlyRate: 'Sign-on: $8K–$14K' },
-  { label: 'MD Anderson Cancer Center', avgSalary: '$80,200 – $108,500', hourlyRate: 'Oncology premium' },
-  { label: 'Baylor St. Luke\'s Medical', avgSalary: '$74,800 – $96,500', hourlyRate: 'Cardiac premium' },
-  { label: 'Texas Children\'s Hospital', avgSalary: '$77,800 – $101,300', hourlyRate: 'Pediatric premium' },
-  { label: 'HCA Houston Healthcare', avgSalary: '$72,400 – $94,800', hourlyRate: 'Aggressive sign-ons' },
-  { label: 'Harris Health (LBJ, Ben Taub)', avgSalary: '$74,600 – $93,200', hourlyRate: 'PSLF eligible' },
+  { label: 'Houston Methodist Hospital', avgSalary: '$85,000 – $108,000', hourlyRate: 'Magnet; top base pay in market' },
+  { label: 'Texas Medical Center hospitals', avgSalary: '$82,000 – $100,000', hourlyRate: "World's largest medical complex" },
+  { label: 'Memorial Hermann Health System', avgSalary: '$80,000 – $98,000', hourlyRate: 'Level 1 Trauma; strong sign-ons' },
+  { label: 'HCA Houston Healthcare', avgSalary: '$76,000 – $95,000', hourlyRate: 'Sign-on: $10K–$20K for specialty' },
+  { label: 'UTHealth Houston', avgSalary: '$78,000 – $96,000', hourlyRate: 'PSLF eligible; academic system' },
+  { label: 'Harris Health System', avgSalary: '$72,000 – $88,000', hourlyRate: 'Public system; PSLF eligible' },
 ];
 
 const specialtyData = [
-  { label: 'Med-Surg / Floor', avgSalary: '$77,400', hourlyRate: 'Base' },
-  { label: 'L&D', avgSalary: '$84,500', hourlyRate: '+$7,100' },
-  { label: 'OR / Surgical', avgSalary: '$86,200', hourlyRate: '+$8,800' },
-  { label: 'ER', avgSalary: '$87,900', hourlyRate: '+$10,500' },
-  { label: 'ICU / CCU', avgSalary: '$89,400', hourlyRate: '+$12,000' },
-  { label: 'Cath Lab', avgSalary: '$92,300', hourlyRate: '+$14,900' },
-  { label: 'Trauma (Level 1)', avgSalary: '$94,700', hourlyRate: '+$17,300' },
+  { label: 'Med-Surg', avgSalary: '$74,000', hourlyRate: 'Base' },
+  { label: 'L&D', avgSalary: '$80,500', hourlyRate: '+$6,500' },
+  { label: 'ER', avgSalary: '$84,000', hourlyRate: '+$10,000' },
+  { label: 'OR / Surgical', avgSalary: '$83,500', hourlyRate: '+$9,500' },
+  { label: 'ICU / Critical Care', avgSalary: '$87,000', hourlyRate: '+$13,000' },
+  { label: 'NICU', avgSalary: '$84,500', hourlyRate: '+$10,500' },
+  { label: 'CRNA (Certified)', avgSalary: '$205,000+', hourlyRate: 'Advanced practice' },
 ];
-
-const cityComparison = [
-  { label: 'Austin', avgSalary: '$86,320', hourlyRate: 'COL Index 119' },
-  { label: 'Houston', avgSalary: '$82,140', hourlyRate: 'COL Index 96' },
-  { label: 'Dallas', avgSalary: '$80,910', hourlyRate: 'COL Index 102' },
-  { label: 'San Antonio', avgSalary: '$76,580', hourlyRate: 'COL Index 91' },
-];
-
-const faqs = [
-  { question: 'What is the average RN salary in Houston in 2026?', answer: 'The average registered nurse salary in Houston, TX is $82,140/year ($39.49/hour) per the most recent BLS OEWS data, projected to 2026. New grads start near $66,500–$74,800, while senior specialty RNs earn $98,000–$118,400.' },
-  { question: 'Which Houston hospital pays nurses the most?', answer: 'MD Anderson Cancer Center tops the range at $80,200–$108,500 base for oncology specialty roles. Houston Methodist and Memorial Hermann TMC follow at $78,500–$104,200 and $76,200–$98,800 respectively. Specialty certifications (CCRN, OCN, BMTCN) shift offers materially.' },
-  { question: 'Is Houston a good city for nurses?', answer: 'Yes — when measured by cost-of-living-adjusted pay. Houston\'s effective RN compensation ($85,560 COL-adjusted) outperforms Dallas, Austin, and most coastal cities for take-home dollar value. The Texas Medical Center concentration also offers exceptional career mobility.' },
-  { question: 'How much do new graduate RNs make in Houston?', answer: 'New grad RNs in Houston earn $66,500–$74,800/year ($32.00–$36.00/hr) in their first role. Most large systems require completion of a 12-month residency program before placement on specialty units. Sign-on bonuses for new grads typically range $3,000–$7,500.' },
-  { question: 'What\'s the difference between Houston and Dallas RN pay?', answer: 'Houston averages $82,140 vs. Dallas $80,910 — a $1,230/year edge for Houston. Houston\'s Texas Medical Center cluster drives more specialty premiums than Dallas, but Dallas has slightly lower housing costs in some submarkets.' },
-  { question: 'Do Houston nurses get sign-on bonuses?', answer: 'Yes — almost universally for any specialty experience. ICU, ER, OR, L&D, and trauma roles typically offer $7,500–$20,000 with a 1–2 year commitment. Med-surg and telemetry roles offer $3,000–$10,000.' },
-  { question: 'How fast can a Houston RN get to $100K?', answer: 'Realistically, 4–6 years if you specialize. The fastest paths: ICU + CCRN (year 4 = ~$96K), ER + CEN (year 4–5 = ~$94K), or L&D + RNC-OB (year 5 = ~$92K). Adding nights/weekends differential typically adds $12,000–$18,000/year.' },
-  { question: 'Are Houston RN unions a factor in pay?', answer: 'Limited. Texas is a right-to-work state, and the Texas Medical Center hospitals are largely non-union. National Nurses United and Texas Nurses Association advocate at the state policy level but don\'t bargain hospital contracts in Houston.' },
-];
-
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://nursesalaryintel.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://nursesalaryintel.com/blog/' },
-    { '@type': 'ListItem', position: 3, name: 'Houston RN Salary 2026', item: 'https://nursesalaryintel.com/houston-rn-salary-2026/' },
-  ],
-};
 
 export default function HoustonRNSalary2026() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <SEOPageLayout
-        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Blog', href: '/blog/' }, { label: 'Houston RN Salary 2026' }]}
-        h1="Houston RN Salary 2026: What Registered Nurses Actually Earn at the World's Largest Medical Center"
-        lastUpdated="April 27, 2026"
-        schemaTitle="Houston RN Salary 2026: $82,140/yr Avg + Top Hospitals & Cost of Living"
-        schemaDescription="Houston RN salary 2026: $82,140/yr average, $39.49/hr. See pay by hospital, sign-on bonuses, cost-of-living-adjusted ranking vs Dallas & Austin."
-        schemaUrl="/houston-rn-salary-2026/"
-        faqs={faqs}
-      >
-        <Image src="/images/houston-rn-salary-2026-hero.png" alt="Houston registered nurse walking toward Texas Medical Center skyline at dusk, illustrating 2026 RN salary guide" width={1200} height={630} className="w-full rounded-lg mb-6" priority />
+    <SEOPageLayout
+      breadcrumbs={[
+        { label: 'Home', href: '/' },
+        { label: 'RN Salary by State', href: '/rn-salary-by-state' },
+        { label: 'Texas RN Salary', href: '/rn-salary-by-state/texas' },
+        { label: 'Houston RN Salary 2026' },
+      ]}
+      h1="Houston RN Salary 2026: How Much Do Nurses Make in Houston, Texas?"
+      lastUpdated="May 2026"
+      schemaTitle="Houston RN Salary 2026"
+      schemaDescription="Average RN salary in Houston, TX by hospital, specialty, and experience level in 2026."
+      schemaUrl="/houston-rn-salary-2026"
+      faqs={faqs}
+    >
+      <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
+        <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
+        <p className="text-on-surface text-base">
+          <strong>Houston RNs earn $83,500/year ($40.14/hr)</strong> on average in 2026 — below the national average,
+          but <strong>Texas has no state income tax</strong>, adding $3,500–$5,500 to effective take-home pay vs.
+          comparable states. New grads start at <strong>$62,000–$70,000</strong>; senior specialty nurses reach
+          <strong> $110,000–$115,000+</strong>. Houston Methodist and the Texas Medical Center pay the market top.
+        </p>
+      </div>
 
-        <p>The average <strong>registered nurse salary in Houston, TX is $82,140 per year ($39.49/hour)</strong> as of 2026 — about 4% above the Texas state average of $78,830 and within 8% of the U.S. national mean of $89,010. But that headline number hides a wide spread: Houston Methodist, Memorial Hermann, and the Texas Medical Center cluster pay senior ICU and ER nurses well past $108,000 a year, while ambulatory and clinic roles can sit closer to $68,000.</p>
-        <p>Here&apos;s the full breakdown — by hospital, specialty, experience, and what your dollar actually buys you in Houston.</p>
+      <Image
+        src="/images/houston-rn-salary-2026-hero_compressed.png"
+        alt="Confident registered nurse in navy scrubs standing outside a modern Houston Texas hospital entrance with warm Texas sunlight"
+        width={1200}
+        height={630}
+        className="rounded-xl w-full"
+        priority
+      />
 
-        <Image src="/images/houston-rn-salary-2026-context.png" alt="Registered nurse reviewing patient chart on tablet in Houston hospital corridor" width={600} height={800} className="w-full rounded-lg my-6" loading="lazy" />
+      <p>
+        Houston is home to the Texas Medical Center — the world&apos;s largest medical complex, with more than
+        60 institutions and 106,000 employees. That concentration of healthcare creates one of the most
+        competitive nursing job markets in the country. Combine that with Texas&apos;s zero state income tax, and
+        Houston&apos;s salary picture looks considerably stronger than raw numbers suggest.
+      </p>
 
-        <h2 className="text-2xl font-bold font-headline text-on-surface">Houston RN Salary by Experience (2026)</h2>
-        <SalaryTable title="Houston RN Pay by Experience Tier (2026)" headers={['Experience Level', 'Est. Annual Salary', 'Est. Hourly Rate']} rows={experienceData} source="BLS OEWS Houston-The Woodlands-Sugar Land MSA, May 2024, projected 3.1% annually." />
-        <p>Houston RNs earn roughly $3,300 more per year than the average Texas RN and about $6,870 less than the U.S. mean. The gap to the national average shrinks dramatically once you factor in cost of living — Houston&apos;s COL index sits near 96 (national = 100), so a Houston RN&apos;s effective purchasing power often exceeds that of an East Coast or West Coast colleague making $20,000+ more on paper.</p>
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Houston RN Salary by Experience Level (2026)</h2>
+      <SalaryTable
+        title="Houston RN Salary by Years of Experience"
+        headers={['Experience Level', 'Annual Salary Range', 'Hourly Rate']}
+        rows={experienceData}
+        source="NurseSalaryIntel 2026 estimates based on BLS OEWS May 2024 data"
+      />
 
-        <h2 className="text-2xl font-bold font-headline text-on-surface">Estimate Your Houston RN Salary</h2>
-        <p>Use our calculator to model your projected salary by specialty, state, and experience level. Houston-specific figures derive from the Texas state baseline plus the cost-of-living adjustment described above.</p>
-        <div className="bg-surface-container-lowest rounded-xl p-6 my-6 border border-outline-variant">
-          <SalaryCalculator />
-        </div>
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Houston RN Salary by Hospital (2026)</h2>
 
-        <h2 className="text-2xl font-bold font-headline text-on-surface">Houston RN Pay by Hospital (Top Employers)</h2>
-        <SalaryTable title="Houston Top Hospital RN Salary Ranges (2026)" headers={['Hospital / System', 'Base RN Range', 'Notes']} rows={hospitalData} source="Glassdoor (verified Houston RN reports, n over 250) + hospital career pages, April 2026." />
-        <p>The Texas Medical Center is the largest medical complex on Earth — 60+ institutions, more than 106,000 employees. <strong>Houston Methodist Hospital</strong> consistently ranks in the U.S. News top 20 hospitals nationally, with Magnet-designated shared-governance pay structure. <strong>MD Anderson Cancer Center</strong> sits at the top of Houston&apos;s salary band because of oncology premiums — but the role is highly specialized and competitive. CCRN, OCN, or BMTCN certifications meaningfully shift offers. Note: the upper end of each hospital&apos;s base range generally requires specialty-unit placement, completed clinical ladder advancement, and 5+ years of acute experience — entry to mid-tier offers typically land in the lower 60–70% of each band.</p>
+      <Image
+        src="/images/houston-rn-salary-2026-comparison.png"
+        alt="Bar chart comparing 2026 RN salaries at Houston hospitals including Houston Methodist, Memorial Hermann, and HCA versus national average"
+        width={800}
+        height={450}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
 
-        <h2 className="text-2xl font-bold font-headline text-on-surface">Houston RN Pay by Specialty</h2>
-        <SalaryTable title="Houston RN Specialty Pay (2026)" headers={['Specialty', 'Avg Houston Salary', 'Premium vs Base']} rows={specialtyData} source="Specialty premium estimates based on BLS OES classifications and verified Houston market reports." />
+      <p>
+        Houston Methodist is consistently the highest-paying system in the Houston market, with a Magnet
+        designation and some of the strongest nurse retention programs in Texas. The Texas Medical Center
+        institutions — including UTHealth, Memorial Hermann, and Harris Health — offer a range from public-system
+        pay with PSLF eligibility to academic medical center salaries with strong sign-on incentives.
+      </p>
 
-        <Image src="/images/houston-rn-salary-2026-comparison-chart.png" alt="Bar chart comparing 2026 RN average salary across Houston, Dallas, Austin, San Antonio, and U.S. national mean" width={700} height={500} className="w-full rounded-lg my-6" loading="lazy" />
+      <SalaryTable
+        title="Nurse Salary by Hospital in Houston, TX"
+        headers={['Hospital', 'RN Salary Range', 'Notes']}
+        rows={hospitalData}
+        source="NurseSalaryIntel 2026 hospital data"
+      />
 
-        <h2 className="text-2xl font-bold font-headline text-on-surface">Sign-On Bonuses + Shift Differentials in Houston</h2>
-        <p>Houston hospitals are aggressive on sign-on bonuses for hard-to-fill specialties. Typical 2026 ranges:</p>
-        <ul className="list-disc pl-6 space-y-1">
-          <li><strong>Med-Surg:</strong> $3,000–$7,500 (1-year commitment)</li>
-          <li><strong>Telemetry / Step-Down:</strong> $5,000–$10,000</li>
-          <li><strong>L&amp;D / OR:</strong> $7,500–$12,000</li>
-          <li><strong>ICU / ER:</strong> $10,000–$15,000 (2-year commitment most common)</li>
-          <li><strong>Trauma / Cath Lab:</strong> $12,000–$20,000</li>
-        </ul>
-        <p><strong>Shift differentials</strong> add meaningfully to base. Most Houston hospitals pay:</p>
-        <ul className="list-disc pl-6 space-y-1">
-          <li>Evening shift (3p–11p): +$2.25–$3.50/hr</li>
-          <li>Night shift (11p–7a): +$4.00–$6.50/hr</li>
-          <li>Weekend differential: +$2.00–$4.00/hr (sometimes stacks with evening/night)</li>
-          <li>Charge nurse stipend: +$2.50–$4.00/hr or flat $200/shift</li>
-        </ul>
-        <p>A full-time night-shift ICU RN with 5 years&apos; experience and CCRN certification can realistically clear <strong>$96,000–$108,000</strong> in total comp before sign-on bonus, OT, or call pay.</p>
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Houston RN Salary by Specialty (2026)</h2>
 
-        <h2 className="text-2xl font-bold font-headline text-on-surface">Cost of Living: Is Houston RN Pay Actually Worth It?</h2>
-        <p>Houston&apos;s cost of living index is roughly 96 (national = 100). Housing is the biggest swing factor — median home price around $325,000 versus the national $440,000, with no Texas state income tax meaning more take-home dollars compared to nominally higher-paying states.</p>
-        <p>A Houston RN earning $82,140 takes home approximately $66,500 after federal taxes (no state tax). A San Francisco Bay Area RN earning $145,000 takes home about $93,500 after federal and California state taxes — but housing costs in SF are 2.6× Houston&apos;s, so the real lifestyle dollar value of the Houston package is closer to $90,000 SF-equivalent.</p>
+      <Image
+        src="/images/houston-rn-salary-2026-hospital_compressed.png"
+        alt="Two registered nurses in scrubs reviewing patient monitors in a modern Houston Texas hospital ICU, professional clinical setting"
+        width={600}
+        height={800}
+        className="rounded-xl w-full"
+        loading="lazy"
+      />
 
-        <h2 className="text-2xl font-bold font-headline text-on-surface">Houston vs Dallas vs Austin: Which Texas City Pays RNs Best?</h2>
-        <SalaryTable title="Texas City RN Pay Comparison (2026)" headers={['City', 'Avg RN Salary', 'COL Context']} rows={cityComparison} source="BLS OEWS metro area data + COL Index from BEA Regional Price Parities." />
-        <p><strong>Houston wins on COL-adjusted pay</strong> despite Austin&apos;s higher nominal number. Austin&apos;s housing premium (median $565,000) and rapid cost growth since 2021 have eroded its advantage for healthcare workers. For a deeper comparison, see <Link href="/texas-rn-salary-2026/" className="text-primary hover:underline">Texas RN Salary 2026</Link> and <Link href="/dallas-rn-salary-2026/" className="text-primary hover:underline">Dallas RN Salary 2026</Link>.</p>
+      <SalaryTable
+        title="Houston RN Salary by Specialty"
+        headers={['Specialty', 'Avg Annual Salary', 'Premium Over Med-Surg']}
+        rows={specialtyData}
+        source="NurseSalaryIntel 2026 data"
+      />
 
-        <Image src="/images/houston-rn-salary-2026-team.png" alt="Diverse Houston nursing team collaborating in hospital break room, illustrating Texas Medical Center workforce" width={600} height={800} className="w-full rounded-lg my-6" loading="lazy" />
+      <h2 className="text-2xl font-bold font-headline text-on-surface">The Texas Tax Advantage: What It Means for Your Take-Home Pay</h2>
+      <p>
+        Texas has no state income tax — one of only nine states in the US. On an $83,500 Houston salary, that
+        means $0 in state taxes vs. $3,720 in Colorado, $4,585 in Georgia, or $7,090 in California. When
+        comparing a Houston offer to a seemingly higher-paying job in a taxed state, add that difference back
+        before deciding. A $90,000 salary in Denver after Colorado&apos;s 4.4% flat tax nets roughly $86,280 —
+        barely more than Houston&apos;s average after accounting for taxes, and with a higher cost of living.
+      </p>
+      <p>
+        Houston&apos;s cost of living is also moderate by major-metro standards — housing costs significantly
+        less than Austin, Denver, Seattle, or any California market. That combination of no state income tax
+        and lower housing costs makes Houston one of the stronger markets for real nurse purchasing power.
+      </p>
 
-        <h2 className="text-2xl font-bold font-headline text-on-surface">How to Negotiate Your Houston Hospital Offer</h2>
-        <p>Houston is a multi-offer market for any nurse with 1+ year of acute-care experience and a specialty cert. Recruiters consistently report leaving 5–12% on the table when nurses don&apos;t negotiate.</p>
-        <p><strong>Three Houston-specific levers:</strong></p>
-        <ol className="list-decimal pl-6 space-y-2">
-          <li><strong>Use TMC competition.</strong> Methodist, Memorial Hermann, and HCA actively recruit from each other. Mentioning a competing offer (with documentation) reliably moves base $2–4/hr.</li>
-          <li><strong>Push for shift commitment premiums.</strong> If you commit to nights or weekends for 12 months, ask for a +$1.50/hr &ldquo;shift commitment differential&rdquo; on top of the standard differential.</li>
-          <li><strong>Negotiate cert reimbursement before salary.</strong> Most Houston systems reimburse $2,500–$5,000/year for continuing education and specialty certs — easier to win than a pure salary bump.</li>
-        </ol>
-        <p>For full negotiation scripts, see our <Link href="/nurse-salary-negotiation-scripts-2026/" className="text-primary hover:underline">Nurse Salary Negotiation Scripts 2026</Link> guide.</p>
-
-        <h2 className="text-2xl font-bold font-headline text-on-surface">Career Growth Path for Houston RNs</h2>
-        <ul className="list-disc pl-6 space-y-1">
-          <li><strong>Year 1:</strong> New grad on med-surg or telemetry, $66,500–$74,800. Most large systems rotate new grads through a residency for the first 12 months.</li>
-          <li><strong>Year 2–3:</strong> Move to a specialty unit (ICU, ER, L&amp;D), $76,000–$86,000. Pursue CCRN/CEN/RNC-OB certifications.</li>
-          <li><strong>Year 4–6:</strong> Charge nurse, preceptor, or specialty senior, $88,000–$98,000. Many begin BSN-to-MSN bridge or NP school.</li>
-          <li><strong>Year 7–10:</strong> Lead clinical, educator, or specialty director, $98,000–$118,000. NP graduates earn $115,000–$145,000.</li>
-          <li><strong>Year 10+:</strong> CRNA ($210K+), NP director, hospital administrator ($125K–$180K).</li>
-        </ul>
-
-        <p className="text-sm text-on-surface-variant mt-8"><strong>Sources:</strong> U.S. Bureau of Labor Statistics — OEWS, Houston-The Woodlands-Sugar Land MSA, May 2024; Texas Workforce Commission Healthcare Labor Market Report; Texas Board of Nursing Workforce Statistics; American Association of Colleges of Nursing 2026 Workforce Survey; Houston Methodist, Memorial Hermann, and HCA Houston careers and benefits pages (April 2026). <strong>Methodology:</strong> BLS OEWS May 2024 wages projected at 3.1% annual RN growth; hospital ranges cross-referenced against Glassdoor (n over 250 Houston RN reports) and direct career-page postings collected April 2026. All figures reflect base RN compensation; sign-on bonuses, shift differentials, and certification premiums are noted separately. Not career or financial advice.</p>
-            <MethodologyBox />
-</SEOPageLayout>
-    </>
+      <h2 className="text-2xl font-bold font-headline text-on-surface">Related Salary Guides</h2>
+      <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
+        {[
+          { href: '/rn-salary-by-state', label: 'RN Salary by State', desc: 'All 50 states ranked' },
+          { href: '/icu-nurse-salary-2026', label: 'ICU Nurse Salary 2026', desc: 'Critical care pay nationwide' },
+          { href: '/nurse-salary-negotiation-guide-2026', label: 'Nurse Salary Negotiation Guide', desc: 'How to ask for more and get it' },
+          { href: '/austin-rn-salary-2026', label: 'Austin RN Salary 2026', desc: 'Compare Houston vs. Austin pay' },
+        ].map(({ href, label, desc }) => (
+          <Link key={href} href={href} className="flex items-center justify-between p-3 rounded-lg border border-outline-variant hover:border-primary hover:bg-surface-container-low transition-colors">
+            <div>
+              <p className="text-sm font-semibold text-primary">{label}</p>
+              <p className="text-xs text-on-surface-variant">{desc}</p>
+            </div>
+            <span className="text-on-surface-variant text-xs ml-3">→</span>
+          </Link>
+        ))}
+      </div>
+      <MethodologyBox />
+    </SEOPageLayout>
   );
 }
