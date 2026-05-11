@@ -14,7 +14,7 @@ const BULLETS = [
   'Word-for-word counter-offer emails for each red flag clause',
   'Scripts for negotiating with recruiters by phone',
   'Legal addendum language to modify bad clauses',
-  'What to say if they push back or say \u201cit\u2019s standard\u201d',
+  'What to say if they push back or say "it's standard"',
 ];
 
 function headlineFor(heading: string | undefined, redFlagCount: number | undefined) {

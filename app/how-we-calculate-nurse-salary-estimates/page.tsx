@@ -44,7 +44,7 @@ export default function HowWeCalculatePage() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Salary Data', href: '/salary-data' },
+        { label: 'Salary Guides', href: '/blog' },
         { label: 'How We Calculate Salary Estimates' },
       ]}
       h1="How NurseSalaryIntel Calculates Nurse Salary Estimates"

@@ -17,11 +17,11 @@ const faqs = [
   },
   {
     question: 'What is the highest-paying nursing job in Pennsylvania?',
-    answer: 'CRNAs in Pennsylvania typically earn $180,000\u2013$220,000/year. Nurse Practitioners average $115,000\u2013$130,000, and ICU nurses average $80,000\u2013$105,000 depending on location.',
+    answer: 'CRNAs in Pennsylvania typically earn $180,000–$220,000/year. Nurse Practitioners average $115,000–$130,000, and ICU nurses average $80,000–$105,000 depending on location.',
   },
   {
     question: 'Do travel nurses earn more in Pennsylvania?',
-    answer: 'Yes. Travel RNs in Pennsylvania typically earn $2,000\u2013$2,800/week on assignment \u2014 significantly above staff nurse pay.',
+    answer: 'Yes. Travel RNs in Pennsylvania typically earn $2,000–$2,800/week on assignment — significantly above staff nurse pay.',
   },
   {
     question: 'What is the job outlook for nurses in Pennsylvania?',
@@ -44,7 +44,7 @@ export default function PennsylvaniaRNSalary() {
         { label: 'RN Salary by State', href: '/rn-salary-by-state' },
         { label: 'Pennsylvania' },
       ]}
-      h1="RN Salary in Pennsylvania \u2014 2026 Nurse Pay Guide"
+      h1="RN Salary in Pennsylvania — 2026 Nurse Pay Guide"
       lastUpdated="April 2026"
       schemaTitle="RN Salary in Pennsylvania 2026"
       schemaDescription="Pennsylvania RN salary by city for 2026, based on BLS data."
@@ -68,8 +68,8 @@ export default function PennsylvaniaRNSalary() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Night Shift Pay in Pennsylvania</h2>
       <p>
-        Pennsylvania hospitals typically offer night shift differentials of 10\u201318% above base pay.
-        On a $79,750 base salary, consistent night shift work adds approximately $7,975\u2013$14,355/year.{' '}
+        Pennsylvania hospitals typically offer night shift differentials of 10–18% above base pay.
+        On a $79,750 base salary, consistent night shift work adds approximately $7,975–$14,355/year.{' '}
         <Link href="/salary-negotiation/night-shift-differential-pay" className="text-primary hover:underline font-semibold">
           See our complete night shift differential guide
         </Link>
@@ -78,7 +78,7 @@ export default function PennsylvaniaRNSalary() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Travel Nursing in Pennsylvania</h2>
       <p>
-        Travel RN assignments in Pennsylvania typically pay $2,000\u2013$2,800/week. Demand is strongest in
+        Travel RN assignments in Pennsylvania typically pay $2,000–$2,800/week. Demand is strongest in
         urban medical centers and specialty units.
       </p>
       <Link

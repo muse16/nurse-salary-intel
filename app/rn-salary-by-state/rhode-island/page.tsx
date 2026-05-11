@@ -17,11 +17,11 @@ const faqs = [
   },
   {
     question: 'What is the highest-paying nursing job in Rhode Island?',
-    answer: 'CRNAs in Rhode Island typically earn $180,000\u2013$220,000/year. Nurse Practitioners average $115,000\u2013$130,000, and ICU nurses average $80,000\u2013$105,000 depending on location.',
+    answer: 'CRNAs in Rhode Island typically earn $180,000–$220,000/year. Nurse Practitioners average $115,000–$130,000, and ICU nurses average $80,000–$105,000 depending on location.',
   },
   {
     question: 'Do travel nurses earn more in Rhode Island?',
-    answer: 'Yes. Travel RNs in Rhode Island typically earn $2,000\u2013$2,800/week on assignment \u2014 significantly above staff nurse pay.',
+    answer: 'Yes. Travel RNs in Rhode Island typically earn $2,000–$2,800/week on assignment — significantly above staff nurse pay.',
   },
   {
     question: 'What is the job outlook for nurses in Rhode Island?',
@@ -44,7 +44,7 @@ export default function RhodeIslandRNSalary() {
         { label: 'RN Salary by State', href: '/rn-salary-by-state' },
         { label: 'Rhode Island' },
       ]}
-      h1="RN Salary in Rhode Island \u2014 2026 Nurse Pay Guide"
+      h1="RN Salary in Rhode Island — 2026 Nurse Pay Guide"
       lastUpdated="April 2026"
       schemaTitle="RN Salary in Rhode Island 2026"
       schemaDescription="Rhode Island RN salary by city for 2026, based on BLS data."
@@ -68,8 +68,8 @@ export default function RhodeIslandRNSalary() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Night Shift Pay in Rhode Island</h2>
       <p>
-        Rhode Island hospitals typically offer night shift differentials of 10\u201318% above base pay.
-        On a $88,030 base salary, consistent night shift work adds approximately $8,803\u2013$15,845/year.{' '}
+        Rhode Island hospitals typically offer night shift differentials of 10–18% above base pay.
+        On a $88,030 base salary, consistent night shift work adds approximately $8,803–$15,845/year.{' '}
         <Link href="/salary-negotiation/night-shift-differential-pay" className="text-primary hover:underline font-semibold">
           See our complete night shift differential guide
         </Link>
@@ -78,7 +78,7 @@ export default function RhodeIslandRNSalary() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Travel Nursing in Rhode Island</h2>
       <p>
-        Travel RN assignments in Rhode Island typically pay $2,000\u2013$2,800/week. Demand is strongest in
+        Travel RN assignments in Rhode Island typically pay $2,000–$2,800/week. Demand is strongest in
         urban medical centers and specialty units.
       </p>
       <Link

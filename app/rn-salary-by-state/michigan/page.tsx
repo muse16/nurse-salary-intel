@@ -17,11 +17,11 @@ const faqs = [
   },
   {
     question: 'What is the highest-paying nursing job in Michigan?',
-    answer: 'CRNAs in Michigan typically earn $180,000\u2013$220,000/year. Nurse Practitioners average $115,000\u2013$130,000, and ICU nurses average $80,000\u2013$105,000 depending on location.',
+    answer: 'CRNAs in Michigan typically earn $180,000–$220,000/year. Nurse Practitioners average $115,000–$130,000, and ICU nurses average $80,000–$105,000 depending on location.',
   },
   {
     question: 'Do travel nurses earn more in Michigan?',
-    answer: 'Yes. Travel RNs in Michigan typically earn $2,000\u2013$2,800/week on assignment \u2014 significantly above staff nurse pay.',
+    answer: 'Yes. Travel RNs in Michigan typically earn $2,000–$2,800/week on assignment — significantly above staff nurse pay.',
   },
   {
     question: 'What is the job outlook for nurses in Michigan?',
@@ -44,7 +44,7 @@ export default function MichiganRNSalary() {
         { label: 'RN Salary by State', href: '/rn-salary-by-state' },
         { label: 'Michigan' },
       ]}
-      h1="RN Salary in Michigan \u2014 2026 Nurse Pay Guide"
+      h1="RN Salary in Michigan — 2026 Nurse Pay Guide"
       lastUpdated="April 2026"
       schemaTitle="RN Salary in Michigan 2026"
       schemaDescription="Michigan RN salary by city for 2026, based on BLS data."
@@ -68,8 +68,8 @@ export default function MichiganRNSalary() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Night Shift Pay in Michigan</h2>
       <p>
-        Michigan hospitals typically offer night shift differentials of 10\u201318% above base pay.
-        On a $79,830 base salary, consistent night shift work adds approximately $7,983\u2013$14,369/year.{' '}
+        Michigan hospitals typically offer night shift differentials of 10–18% above base pay.
+        On a $79,830 base salary, consistent night shift work adds approximately $7,983–$14,369/year.{' '}
         <Link href="/salary-negotiation/night-shift-differential-pay" className="text-primary hover:underline font-semibold">
           See our complete night shift differential guide
         </Link>
@@ -78,7 +78,7 @@ export default function MichiganRNSalary() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Travel Nursing in Michigan</h2>
       <p>
-        Travel RN assignments in Michigan typically pay $2,000\u2013$2,800/week. Demand is strongest in
+        Travel RN assignments in Michigan typically pay $2,000–$2,800/week. Demand is strongest in
         urban medical centers and specialty units.
       </p>
       <Link

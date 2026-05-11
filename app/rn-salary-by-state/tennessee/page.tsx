@@ -17,11 +17,11 @@ const faqs = [
   },
   {
     question: 'What is the highest-paying nursing job in Tennessee?',
-    answer: 'CRNAs in Tennessee typically earn $180,000\u2013$220,000/year. Nurse Practitioners average $115,000\u2013$130,000, and ICU nurses average $80,000\u2013$105,000 depending on location.',
+    answer: 'CRNAs in Tennessee typically earn $180,000–$220,000/year. Nurse Practitioners average $115,000–$130,000, and ICU nurses average $80,000–$105,000 depending on location.',
   },
   {
     question: 'Do travel nurses earn more in Tennessee?',
-    answer: 'Yes. Travel RNs in Tennessee typically earn $2,000\u2013$2,800/week on assignment \u2014 significantly above staff nurse pay.',
+    answer: 'Yes. Travel RNs in Tennessee typically earn $2,000–$2,800/week on assignment — significantly above staff nurse pay.',
   },
   {
     question: 'What is the job outlook for nurses in Tennessee?',
@@ -44,7 +44,7 @@ export default function TennesseeRNSalary() {
         { label: 'RN Salary by State', href: '/rn-salary-by-state' },
         { label: 'Tennessee' },
       ]}
-      h1="RN Salary in Tennessee \u2014 2026 Nurse Pay Guide"
+      h1="RN Salary in Tennessee — 2026 Nurse Pay Guide"
       lastUpdated="April 2026"
       schemaTitle="RN Salary in Tennessee 2026"
       schemaDescription="Tennessee RN salary by city for 2026, based on BLS data."
@@ -68,8 +68,8 @@ export default function TennesseeRNSalary() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Night Shift Pay in Tennessee</h2>
       <p>
-        Tennessee hospitals typically offer night shift differentials of 10\u201318% above base pay.
-        On a $69,560 base salary, consistent night shift work adds approximately $6,956\u2013$12,521/year.{' '}
+        Tennessee hospitals typically offer night shift differentials of 10–18% above base pay.
+        On a $69,560 base salary, consistent night shift work adds approximately $6,956–$12,521/year.{' '}
         <Link href="/salary-negotiation/night-shift-differential-pay" className="text-primary hover:underline font-semibold">
           See our complete night shift differential guide
         </Link>
@@ -78,7 +78,7 @@ export default function TennesseeRNSalary() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Travel Nursing in Tennessee</h2>
       <p>
-        Travel RN assignments in Tennessee typically pay $2,000\u2013$2,800/week. Demand is strongest in
+        Travel RN assignments in Tennessee typically pay $2,000–$2,800/week. Demand is strongest in
         urban medical centers and specialty units.
       </p>
       <Link

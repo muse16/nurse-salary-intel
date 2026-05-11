@@ -118,7 +118,7 @@ const allBlogPosts: BlogPost[] = [
     secondaryKeywords: ['nursing contract red flags 2026', 'non compete nurse enforceability', 'nurse non-compete push back'],
     coverImage: '/blog/non-compete-clause-nursing-contract_compressed.png',
     imageAlt: 'Nurse reviewing a non-compete clause in a nursing contract with a pen',
-    metaDescription: 'Non-compete clauses in nursing contracts can block you from working locally for 1–2 years. Learn what the language means, whether it\u2019s enforceable in your state, and the exact counter-offer to push back.',
+    metaDescription: 'Non-compete clauses in nursing contracts can block you from working locally for 1–2 years. Learn what the language means, whether it's enforceable in your state, and the exact counter-offer to push back.',
     content: `
 <p>You got the offer. The salary looks good. But buried on page 4 of the contract, there it is: a non-compete clause. Before you sign anything, you need to understand exactly what you're agreeing to.</p>
 
@@ -176,7 +176,7 @@ const allBlogPosts: BlogPost[] = [
     secondaryKeywords: ['travel nurse salary 2026', 'staff RN salary 2026', 'travel nurse take home pay'],
     coverImage: '/blog/travel-nurse-vs-staff-nurse-salary-2026_compressed.png',
     imageAlt: 'Travel nurse vs staff nurse salary comparison with stethoscope and paycheck',
-    metaDescription: 'Travel nurses can gross $2,800+ per week \u2014 but after taxes, housing, and contract gaps, staff nurses often keep more. Full 2026 take-home comparison.',
+    metaDescription: 'Travel nurses can gross $2,800+ per week — but after taxes, housing, and contract gaps, staff nurses often keep more. Full 2026 take-home comparison.',
     content: `
 <p>The pitch for travel nursing sounds irresistible: $3,000/week, housing included, work when you want. But after taxes, gaps between contracts, and the hidden costs of the travel lifestyle — does it actually pay more than a staff position? We ran the numbers.</p>
 
@@ -242,7 +242,7 @@ const allBlogPosts: BlogPost[] = [
     secondaryKeywords: ['new grad RN sign on bonus', 'nursing salary negotiation scripts', 'sign on bonus negotiation email'],
     coverImage: '/blog/how-to-negotiate-sign-on-bonus-nursing_compressed.png',
     imageAlt: 'New grad nurse negotiating a sign-on bonus at a hospital offer meeting',
-    metaDescription: 'New grad RNs can absolutely negotiate a sign-on bonus \u2014 most just don\u2019t ask. Use these word-for-word email and phone scripts to get $5K\u2013$15K more.',
+    metaDescription: 'New grad RNs can absolutely negotiate a sign-on bonus — most just don't ask. Use these word-for-word email and phone scripts to get $5K–$15K more.',
     content: `
 <p>Most new graduate nurses assume sign-on bonuses are only for experienced RNs. They're wrong. Hospitals facing staffing shortages are offering sign-on packages to new grads — but they won't volunteer the information. You have to ask.</p>
 
@@ -309,7 +309,7 @@ Looking forward to hearing from you."
     secondaryKeywords: ['nursing contract red flags 2026', 'travel nurse contract warning signs', 'RN offer letter clauses'],
     coverImage: '/blog/nursing-contract-red-flags-checklist_compressed.png',
     imageAlt: '10 travel nursing contract red flags highlighted on an offer letter',
-    metaDescription: 'A 2026 checklist of 10 nursing contract red flags \u2014 cancellation clauses, stipend traps, missed differentials \u2014 with exact language to watch for and how to negotiate each one.',
+    metaDescription: 'A 2026 checklist of 10 nursing contract red flags — cancellation clauses, stipend traps, missed differentials — with exact language to watch for and how to negotiate each one.',
     content: `
 <p>A nursing offer letter is a legal document. Most nurses sign it within 48 hours of receiving it without reading every clause. That's how hospitals end up paying back bonuses they spent, stuck in units they hate, or blocked from working locally after they leave. Here are the 10 clauses you need to check before you sign anything — the same 10 we screen for in the free Contract Red Flag Audit.</p>
 
@@ -426,7 +426,7 @@ Looking forward to hearing from you."
     secondaryKeywords: ['IRS travel nurse stipend', 'tax-free housing nurse', 'tax home travel nursing'],
     coverImage: '/blog/travel-nurse-housing-stipend-tax-rules_compressed.png',
     imageAlt: 'Travel nurse reviewing housing stipend tax rules with IRS form 1040 and calculator',
-    metaDescription: 'IRS rules decide whether your travel nurse housing stipend is tax-free or adds $8K\u2013$15K to your tax bill. Learn the tax home test and what disqualifies a stipend.',
+    metaDescription: 'IRS rules decide whether your travel nurse housing stipend is tax-free or adds $8K–$15K to your tax bill. Learn the tax home test and what disqualifies a stipend.',
     content: `
 <p>The tax-free housing stipend is the financial engine of travel nursing. It's why a travel nurse earning $120,000 gross can take home nearly as much as a staff nurse earning $130,000. But it's also the most misunderstood — and most audited — aspect of travel nurse compensation. Get it wrong, and the IRS can bill you for years of back taxes.</p>
 
@@ -493,7 +493,7 @@ Looking forward to hearing from you."
     secondaryKeywords: ['new grad RN salary by state', 'first year nurse salary 2026', 'starting RN salary'],
     coverImage: '/blog/new-grad-rn-salary-by-state-2026_compressed.png',
     imageAlt: 'New grad RN starting her first shift with state-by-state salary data overlay',
-    metaDescription: '2026 new grad RN starting salary by state \u2014 California ($110K) to Alabama ($58K). See which states pay the most and where first-year nurses keep the most after cost of living.',
+    metaDescription: '2026 new grad RN starting salary by state — California ($110K) to Alabama ($58K). See which states pay the most and where first-year nurses keep the most after cost of living.',
     content: `
 <p>Your starting salary as a new grad RN depends more on where you work than what specialty you choose. The difference between the highest and lowest-paying states exceeds $30,000 per year. Here's what the data shows for 2026.</p>
 
@@ -560,7 +560,7 @@ Looking forward to hearing from you."
     secondaryKeywords: ['quit travel nursing contract early', 'travel nurse cancellation clause', 'break travel contract consequences'],
     coverImage: '/blog/breaking-travel-nursing-contract-consequences_compressed.png',
     imageAlt: 'Nurse reviewing travel nursing contract cancellation clause with a pen',
-    metaDescription: 'Breaking a travel nursing contract can cost $0 or $10K+ \u2014 it depends on the cancellation, housing, and recruiter clauses. Learn the real penalties and how to exit cleanly.',
+    metaDescription: 'Breaking a travel nursing contract can cost $0 or $10K+ — it depends on the cancellation, housing, and recruiter clauses. Learn the real penalties and how to exit cleanly.',
     content: `
 <p>Life happens. Facilities cancel contracts. Agencies change terms. Family emergencies occur. Whatever the reason, breaking a travel nursing contract early is more common than agencies let on — and the financial and professional consequences depend almost entirely on how your contract is written.</p>
 
@@ -624,7 +624,7 @@ Looking forward to hearing from you."
     secondaryKeywords: ['free nurse contract review', 'travel nurse negotiation scripts', 'nursing contract checklist'],
     coverImage: '/blog/nursing-contract-audit-kit-what-it-includes_compressed.png',
     imageAlt: 'Nursing contract audit kit with checklist, red flag guide, and negotiation scripts',
-    metaDescription: 'What\u2019s inside the free Nursing Contract Audit Kit: the full clause checklist, red-flag guide, and word-for-word negotiation scripts used to fix travel and staff nurse contracts.',
+    metaDescription: 'What's inside the free Nursing Contract Audit Kit: the full clause checklist, red-flag guide, and word-for-word negotiation scripts used to fix travel and staff nurse contracts.',
     content: `
 <p>Most nurses sign their contracts without a careful read. That\'s how bad clauses sneak through — unpaid orientation, floating requirements, vague cancellation terms, non-competes. The <a href="/contract-audit" style="color:#2563eb;font-weight:600;">Free Contract Audit Kit</a> is a self-service review tool built to catch them before you sign.</p>
 
@@ -4194,4 +4194,3 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
 
 export function getAllSlugs(): string[] {
   return blogPosts.filter((p) => !p.href).map((p) => p.slug);
-}
