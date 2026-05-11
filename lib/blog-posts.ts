@@ -3853,7 +3853,7 @@ Thanks,<br>
     content: '',
   },
   {
-    slug: 'houston-rn-salary-2026',
+    slug: 'houston-rn-salary-2026-v1',
     href: '/houston-rn-salary-2026/',
     title: 'Houston RN Salary 2026: $82,140/yr Avg + Top Hospitals & Cost of Living',
     date: '2026-04-29',
@@ -3929,7 +3929,7 @@ Thanks,<br>
     content: '',
   },
   {
-    slug: 'seattle-rn-salary-2026',
+    slug: 'seattle-rn-salary-2026-v1',
     href: '/seattle-rn-salary-2026/',
     title: 'Seattle RN Salary 2026: $102,740/yr Average + No-Tax Take-Home Math',
     date: '2026-04-29',
@@ -3944,7 +3944,7 @@ Thanks,<br>
     content: '',
   },
   {
-    slug: 'atlanta-rn-salary-2026',
+    slug: 'atlanta-rn-salary-2026-v1',
     href: '/atlanta-rn-salary-2026/',
     title: 'Atlanta RN Salary 2026: $71,280/yr Average + Emory, Grady, and Piedmont Pay',
     date: '2026-04-29',
