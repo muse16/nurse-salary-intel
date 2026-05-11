@@ -83,7 +83,7 @@ export default function PhiladelphiaRNSalary() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Salary Guides', href: '/salary-guides' },
+        { label: 'Salary Guides', href: '/blog' },
         { label: 'Philadelphia RN Salary 2026' },
       ]}
       h1="Philadelphia RN Salary 2026: What Nurses Actually Earn in the City of Brotherly Love"

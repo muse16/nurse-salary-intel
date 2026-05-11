@@ -83,7 +83,7 @@ export default function SanDiegoRNSalary() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Salary Guides', href: '/salary-guides' },
+        { label: 'Salary Guides', href: '/blog' },
         { label: 'San Diego RN Salary 2026' },
       ]}
       h1="San Diego RN Salary 2026: What Nurses Earn in America's Finest City"

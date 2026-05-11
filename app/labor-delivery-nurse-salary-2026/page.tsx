@@ -77,7 +77,7 @@ export default function LaborDeliveryNurseSalary() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Salary Guides', href: '/salary-guides' },
+        { label: 'Salary Guides', href: '/blog' },
         { label: 'Labor & Delivery Nurse Salary 2026' },
       ]}
       h1="Labor & Delivery Nurse Salary 2026: What L&D RNs Earn by State, Hospital, and Certification"

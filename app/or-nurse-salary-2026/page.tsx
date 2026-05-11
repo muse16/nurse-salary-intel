@@ -77,7 +77,7 @@ export default function ORNurseSalary() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Salary Guides', href: '/salary-guides' },
+        { label: 'Salary Guides', href: '/blog' },
         { label: 'OR Nurse Salary 2026' },
       ]}
       h1="OR Nurse Salary 2026: What Perioperative Nurses Earn by State, Role, and Certification"

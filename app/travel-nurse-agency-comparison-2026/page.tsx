@@ -67,7 +67,7 @@ export default function TravelNurseAgencyComparison() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Salary Guides', href: '/salary-guides' },
+        { label: 'Salary Guides', href: '/blog' },
         { label: 'Travel Nurse Agency Comparison 2026' },
       ]}
       h1="Best Travel Nurse Agencies 2026: Pay Comparison, Contract Terms & How to Negotiate"

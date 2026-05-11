@@ -71,7 +71,7 @@ const schema = {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://nursesalaryintel.com' },
-        { '@type': 'ListItem', position: 2, name: 'Salary Guides', item: 'https://nursesalaryintel.com/salary-guides' },
+        { '@type': 'ListItem', position: 2, name: 'Salary Guides', item: 'https://nursesalaryintel.com/blog' },
         { '@type': 'ListItem', position: 3, name: 'Nurse Salary Negotiation Guide 2026', item: 'https://nursesalaryintel.com/nurse-salary-negotiation-guide-2026' },
       ],
     },
