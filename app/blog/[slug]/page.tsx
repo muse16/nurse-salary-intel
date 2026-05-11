@@ -63,7 +63,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       <header className="bg-white border-b border-gray-200 shadow-sm pt-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <Link href="/blog" className="text-blue-600 hover:text-blue-700 font-semibold mb-3 inline-block text-sm">
-            ← Back to Blog
+            ← Back to Salary Guides
           </Link>
         </div>
       </header>
