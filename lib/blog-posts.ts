@@ -4194,3 +4194,4 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
 
 export function getAllSlugs(): string[] {
   return blogPosts.filter((p) => !p.href).map((p) => p.slug);
+}
