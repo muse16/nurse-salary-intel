@@ -109,6 +109,7 @@ export default function HonorHealthRNSalary2026() {
         schemaTitle="HonorHealth RN Salary 2026: Pay, Differentials & Negotiation Guide"
         schemaDescription="HonorHealth RN salary 2026: $36–$54/hr base, up to $18K sign-on. Compare pay by unit, shift differentials, and how HonorHealth stacks up against Banner and Mayo Clinic AZ."
         schemaUrl="/honorhealth-rn-salary-2026/"
+        datePublished="2026-05-09"
         faqs={faqs}
       >
 

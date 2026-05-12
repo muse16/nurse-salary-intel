@@ -53,6 +53,35 @@ export const metadata: Metadata = {
   },
 };
 
+// Pre-computed JSON-LD strings — extracted here so JSX parser isn't confused by nested object literals
+const DATASET_SCHEMA_JSON = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "US Nurse Salary Data by State and Specialty 2026",
+  "description": "Comprehensive nurse salary data for all 50 US states and 12 nursing specialties, sourced from the Bureau of Labor Statistics (BLS) Occupational Employment and Wage Statistics (May 2024).",
+  "url": "https://nursesalaryintel.com",
+  "creator": { "@type": "Organization", "name": "NurseSalaryIntel", "url": "https://nursesalaryintel.com" },
+  "dateModified": "2026-05-01",
+  "license": "https://nursesalaryintel.com",
+  "variableMeasured": ["Average annual nurse salary", "Minimum nurse salary", "Maximum nurse salary", "Nurse employment level by state", "Cost of living index by state"],
+  "spatialCoverage": "United States",
+  "temporalCoverage": "2026",
+  "keywords": ["nurse salary", "RN salary", "travel nurse pay", "nurse practitioner salary", "CRNA salary", "nursing salary by state", "healthcare wages"],
+});
+
+const WEBSITE_SCHEMA_JSON = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "NurseSalaryIntel",
+  "url": "https://nursesalaryintel.com",
+  "description": "Free nurse salary calculator and contract audit tool. Compare RN pay by state, specialty, and experience using the latest available BLS and market data.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://nursesalaryintel.com/?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -66,6 +95,12 @@ export default function RootLayout({
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         {/* fonts.googleapis.com / fonts.gstatic.com removed — next/font self-hosts Manrope at build time */}
+
+        {/* AEO: Dataset Schema — static JSON-LD, no JS execution */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: DATASET_SCHEMA_JSON }} />
+
+        {/* AEO: WebSite Schema with SearchAction — static JSON-LD, no JS execution */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: WEBSITE_SCHEMA_JSON }} />
       </head>
       <body className={`${manrope.variable} antialiased`}>
         {children}
@@ -97,53 +132,6 @@ export default function RootLayout({
         {/* AssistLoop Widget */}
         <AssistLoopScript />
 
-        {/* AEO: Dataset Schema — marks salary data as a citable dataset */}
-        <Script id="dataset-schema" type="application/ld+json" strategy="afterInteractive">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Dataset",
-            "name": "US Nurse Salary Data by State and Specialty 2026",
-            "description": "Comprehensive nurse salary data for all 50 US states and 12 nursing specialties, sourced from the 2026 Bureau of Labor Statistics (BLS) Occupational Employment and Wage Statistics.",
-            "url": "https://nursesalaryintel.com",
-            "creator": {
-              "@type": "Organization",
-              "name": "NurseSalaryIntel",
-              "url": "https://nursesalaryintel.com"
-            },
-            "dateModified": "2026-04-12",
-            "license": "https://nursesalaryintel.com",
-            "variableMeasured": [
-              "Average annual nurse salary",
-              "Minimum nurse salary",
-              "Maximum nurse salary",
-              "Nurse employment level by state",
-              "Cost of living index by state"
-            ],
-            "spatialCoverage": "United States",
-            "temporalCoverage": "2026",
-            "keywords": [
-              "nurse salary", "RN salary", "travel nurse pay",
-              "nurse practitioner salary", "CRNA salary",
-              "nursing salary by state", "healthcare wages"
-            ]
-          })}
-        </Script>
-
-        {/* AEO: WebSite Schema with SearchAction */}
-        <Script id="website-schema" type="application/ld+json" strategy="afterInteractive">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "NurseSalaryIntel",
-            "url": "https://nursesalaryintel.com",
-            "description": "Free nurse salary calculator and contract audit tool. Compare RN pay by state, specialty, and experience using the latest available BLS and market data.",
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://nursesalaryintel.com/?q={search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
-          })}
-        </Script>
       </body>
     </html>
   );

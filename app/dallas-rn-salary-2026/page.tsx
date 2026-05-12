@@ -91,7 +91,7 @@ export default function DallasRNSalary2026() {
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">Dallas RN Salary by Experience (2026)</h2>
         <SalaryTable title="Dallas RN Pay by Experience Tier (2026)" headers={['Experience Level', 'Est. Annual Salary', 'Est. Hourly Rate']} rows={experienceData} source="BLS OEWS Dallas-Fort Worth-Arlington MSA, May 2024, projected 3.1% annually." />
-        <p>Dallas RN pay sits between Houston ($82,140) and Austin ($86,320) on the Texas city ladder, but UT Southwestern and Baylor Scott &amp; White&apos;s specialty premiums push senior ICU, OR, and cath lab nurses well past $110,000.</p>
+        <p>Dallas RN pay sits between Houston ($82,140) and Austin ($86,320) on the Texas city ladder, but UT Southwestern and Baylor Scott &amp; White&apos;s specialty premiums push senior ICU, OR, and cath lab nurses well past $110,000. For statewide context, see the complete <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">Texas RN salary guide</Link>.</p>
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">Estimate Your Dallas RN Salary</h2>
         <p>Use our calculator to model your projected salary by specialty, state, and experience level. Dallas-specific figures derive from the Texas state baseline plus the COL adjustment.</p>
@@ -150,6 +150,9 @@ export default function DallasRNSalary2026() {
           <li><strong>Year 5–6:</strong> Begin BSN-to-DNP or MSN at UT Arlington, Baylor, or Texas Woman&apos;s University. Most Dallas systems offer $5,250/year tuition reimbursement; UT Southwestern offers up to $10,000.</li>
           <li><strong>Year 7+:</strong> NP graduate. Family Practice NP: $108,000–$125,000. Acute Care NP: $118,000–$140,000. Psych NP: $128,000–$155,000.</li>
         </ul>
+
+        <h2 className="text-2xl font-bold font-headline text-on-surface">Highest-Paying Dallas Specialties</h2>
+        <p>Cath lab and trauma are the top earners in DFW, but the fastest salary growth is in ICU and OR roles where CCRN and CNOR certifications add $3,000–$5,500/year. See how Dallas specialty pay compares nationally in the <Link href="/highest-paying-nursing-specialties" className="text-primary hover:underline">highest-paying nursing specialties guide</Link>.</p>
 
         <p className="text-sm text-on-surface-variant mt-8"><strong>Sources:</strong> U.S. Bureau of Labor Statistics — OEWS, Dallas-Fort Worth-Arlington MSA, May 2024; Texas Workforce Commission Healthcare Labor Market; Texas Board of Nursing Workforce Reports; American Association of Colleges of Nursing 2026 Workforce Survey; UT Southwestern, Baylor Scott &amp; White, Parkland, Texas Health Resources, Methodist Health System career and benefits pages (April 2026). <strong>Methodology:</strong> BLS OEWS May 2024 wages projected at 3.1% annual RN growth; hospital ranges cross-referenced against Glassdoor (n over 280 DFW RN reports) and direct career-page postings. Not career or financial advice.</p>
             <MethodologyBox />

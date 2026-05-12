@@ -132,8 +132,7 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/rn-salary-by-years-of-experience-2026', priority: 0.9, changeFrequency: 'monthly' },
 
   // Week 1 editorial posts — April 2026
-  { path: '/rn-salary-miami-fl-2026', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/icu-nurse-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  // Note: /rn-salary-miami-fl-2026 and /icu-nurse-salary-2026 removed - 301 redirects in next.config.ts
   { path: '/nurse-salary-negotiation-scripts-2026', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/highest-paying-states-for-rns-2026', priority: 0.8, changeFrequency: 'monthly' },
 

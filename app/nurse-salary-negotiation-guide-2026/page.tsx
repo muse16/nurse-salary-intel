@@ -111,6 +111,7 @@ export default function NurseSalaryNegotiationPage() {
       schemaTitle="30% of Nurses Never Negotiate Salary — Here's What the Data Says to Do"
       schemaDescription="A Nurse.com survey of more than 2,500 RNs found 30% never negotiate salary. Real recruiter insights and step-by-step tactics for your next nursing job offer."
       schemaUrl="/nurse-salary-negotiation-guide-2026"
+      datePublished="2026-05-09"
       faqs={faqs}
     >
       {/* Hero image — owner generates */}

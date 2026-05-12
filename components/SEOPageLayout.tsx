@@ -41,6 +41,10 @@ interface SEOPageLayoutProps {
   schemaUrl: string;
   faqs: FAQItem[];
   children: React.ReactNode;
+  /** Page-specific hero image path for schema (e.g. /images/florida-rn-salary-2026-hero_compressed.png) */
+  heroImage?: string;
+  /** Override datePublished in ArticleSchema (ISO date string, e.g. "2026-05-09") */
+  datePublished?: string;
   /** Pass the full state name (e.g. "Arizona") to auto-render a Top Cities section */
   stateName?: string;
   /** Pass the state slug (e.g. "arizona") for city URL generation */
@@ -64,6 +68,8 @@ export default function SEOPageLayout({
   schemaUrl,
   faqs,
   children,
+  heroImage,
+  datePublished,
   stateName,
   stateSlug,
   specialtySlug,
@@ -86,6 +92,8 @@ export default function SEOPageLayout({
         type={schemaType}
         faqs={faqs}
         lastUpdated={lastUpdated}
+        image={heroImage}
+        datePublished={datePublished}
       />
 
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">

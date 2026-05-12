@@ -76,6 +76,7 @@ export default function AtlantaRNSalary2026() {
       schemaTitle="Atlanta RN Salary 2026"
       schemaDescription="Average RN salary in Atlanta, GA by hospital, specialty, and experience level in 2026."
       schemaUrl="/atlanta-rn-salary-2026"
+      datePublished="2026-05-09"
       faqs={faqs}
     >
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">

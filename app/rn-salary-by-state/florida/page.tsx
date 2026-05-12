@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
@@ -13,6 +14,14 @@ export const metadata: Metadata = {
     title: 'Florida RN Salary 2026: How Much Do Nurses Make in FL?',
     description: 'Florida RNs earn $76,450–$96,000/year in 2026. Salary by city, experience, specialty, and the no-tax advantage explained.',
     url: 'https://nursesalaryintel.com/rn-salary-by-state/florida',
+    images: [
+      {
+        url: '/images/florida-rn-salary-2026-hero_compressed.png',
+        width: 1200,
+        height: 630,
+        alt: 'Florida RN salary 2026 — nurse pay by city, experience, and specialty',
+      },
+    ],
   },
 };
 
@@ -92,6 +101,7 @@ export default function FloridaRNSalary() {
       schemaUrl="/rn-salary-by-state/florida"
       stateName="Florida"
       stateSlug="florida"
+      heroImage="/images/florida-rn-salary-2026-hero_compressed.png"
       faqs={faqs}
     >
       <p>
@@ -128,11 +138,12 @@ export default function FloridaRNSalary() {
         average, while panhandle and rural regions sit 10–15% below. Urban hospital systems with higher acuity and teaching affiliations consistently pay more.
       </p>
       <SalaryTable title="RN Salary by Florida City (2026)" headers={['Metro Area', 'Avg. Annual Salary', 'Avg. Hourly Rate']} rows={cityData} source="BLS OEWS 2025 + NurseSalaryIntel data" />
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src="/images/florida-rn-salary-2026-cities.png"
-        alt="Bar chart comparing 2026 mean hourly RN pay across Florida metros"
-        className="w-full rounded-lg border border-outline-variant my-6"
+        alt="Bar chart comparing 2026 mean hourly RN pay across Florida metros including Miami, Naples, Tampa, Orlando, and Jacksonville"
+        width={800}
+        height={450}
+        className="rounded-xl w-full my-6"
         loading="lazy"
       />
 
@@ -148,11 +159,12 @@ export default function FloridaRNSalary() {
         to most other states. Combined with no estate tax, Florida is particularly attractive for retirement planning.
       </p>
 
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src="/images/florida-rn-salary-2026-notax.png"
-        alt="Florida no state income tax illustrated impact on RN take-home pay"
-        className="w-full rounded-lg border border-outline-variant my-6"
+        alt="Illustration of Florida no state income tax benefit on RN take-home pay compared to high-tax states"
+        width={800}
+        height={450}
+        className="rounded-xl w-full my-6"
         loading="lazy"
       />
 

@@ -14,6 +14,8 @@ interface ArticleSchemaProps {
   type?: 'Article' | 'HowTo';
   faqs?: FAQItem[];
   lastUpdated?: string;
+  /** Page-specific hero image path (relative, e.g. /images/florida-rn-salary-2026-hero_compressed.png). Defaults to /images/hero-nurse.jpg */
+  image?: string;
 }
 
 export default function ArticleSchema({
@@ -25,7 +27,9 @@ export default function ArticleSchema({
   type = 'Article',
   faqs,
   lastUpdated,
+  image,
 }: ArticleSchemaProps) {
+  const schemaImage = image ? `${BASE}${image}` : `${BASE}/images/hero-nurse.jpg`;
   const getDateModified = () => {
     if (dateModified) return dateModified;
     if (lastUpdated) {
@@ -83,7 +87,7 @@ export default function ArticleSchema({
           dateModified: formatDateWithTimezone(finalDateModified),
           image: {
             '@type': 'ImageObject',
-            url: `${BASE}/images/hero-nurse.jpg`,
+            url: schemaImage,
             width: 1200,
             height: 630,
           },

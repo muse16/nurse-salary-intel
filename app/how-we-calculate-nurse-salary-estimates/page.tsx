@@ -52,6 +52,7 @@ export default function HowWeCalculatePage() {
       schemaTitle="How NurseSalaryIntel Calculates Nurse Salary Estimates"
       schemaDescription="Transparent methodology behind NurseSalaryIntel salary estimates — BLS OEWS sourcing, job posting cross-referencing, regional adjustments, and clear limitations."
       schemaUrl="/how-we-calculate-nurse-salary-estimates"
+      datePublished="2026-05-09"
       faqs={faqs}
     >
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
