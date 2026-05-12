@@ -16,14 +16,19 @@ import type { Metadata } from 'next';
  * city-level blog post is published.
  */
 const CITY_CANONICAL_OVERRIDES: Record<string, string> = {
-  'california/los-angeles':   'https://nursesalaryintel.com/rn-salary-los-angeles-2026',
-  'florida/miami':            'https://nursesalaryintel.com/rn-salary-miami-fl-2026',
-  'massachusetts/boston':     'https://nursesalaryintel.com/boston-rn-salary-2026',
-  'florida/orlando':          'https://nursesalaryintel.com/orlando-rn-salary-2026',
-  'arizona/phoenix':          'https://nursesalaryintel.com/phoenix-rn-salary-2026',
+  // Texas city editorial posts (live, rich Template A pages)
   'texas/dallas':             'https://nursesalaryintel.com/dallas-rn-salary-2026',
   'texas/houston':            'https://nursesalaryintel.com/houston-rn-salary-2026',
   'texas/austin':             'https://nursesalaryintel.com/austin-rn-salary-2026',
+  // Week-05 / Week-07 editorial posts
+  'washington/seattle':       'https://nursesalaryintel.com/seattle-rn-salary-2026',
+  'georgia/atlanta':          'https://nursesalaryintel.com/atlanta-rn-salary-2026',
+  'illinois/chicago':         'https://nursesalaryintel.com/chicago-rn-salary-2026',
+  'new-york/new-york':        'https://nursesalaryintel.com/new-york-city-rn-salary-2026',
+  'pennsylvania/philadelphia': 'https://nursesalaryintel.com/philadelphia-rn-salary-2026',
+  'california/san-diego':     'https://nursesalaryintel.com/san-diego-rn-salary-2026',
+  // NOTE: LA, Miami, Boston, Orlando, Phoenix blog posts were redirected back to
+  // the programmatic pages -- those canonical overrides were circular and have been removed.
 };
 
 interface PageProps {
