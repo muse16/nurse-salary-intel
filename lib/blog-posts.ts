@@ -118,7 +118,7 @@ const allBlogPosts: BlogPost[] = [
     secondaryKeywords: ['nursing contract red flags 2026', 'non compete nurse enforceability', 'nurse non-compete push back'],
     coverImage: '/blog/non-compete-clause-nursing-contract_compressed.png',
     imageAlt: 'Nurse reviewing a non-compete clause in a nursing contract with a pen',
-    metaDescription: 'Non-compete clauses in nursing contracts can block you from working locally for 1–2 years. Learn what the language means, whether it's enforceable in your state, and the exact counter-offer to push back.',
+    metaDescription: `Non-compete clauses in nursing contracts can block you from working locally for 1–2 years. Learn what the language means, whether it's enforceable in your state, and the exact counter-offer to push back.`,
     content: `
 <p>You got the offer. The salary looks good. But buried on page 4 of the contract, there it is: a non-compete clause. Before you sign anything, you need to understand exactly what you're agreeing to.</p>
 
@@ -242,7 +242,7 @@ const allBlogPosts: BlogPost[] = [
     secondaryKeywords: ['new grad RN sign on bonus', 'nursing salary negotiation scripts', 'sign on bonus negotiation email'],
     coverImage: '/blog/how-to-negotiate-sign-on-bonus-nursing_compressed.png',
     imageAlt: 'New grad nurse negotiating a sign-on bonus at a hospital offer meeting',
-    metaDescription: 'New grad RNs can absolutely negotiate a sign-on bonus — most just don't ask. Use these word-for-word email and phone scripts to get $5K–$15K more.',
+    metaDescription: `New grad RNs can absolutely negotiate a sign-on bonus — most just don't ask. Use these word-for-word email and phone scripts to get $5K–$15K more.`,
     content: `
 <p>Most new graduate nurses assume sign-on bonuses are only for experienced RNs. They're wrong. Hospitals facing staffing shortages are offering sign-on packages to new grads — but they won't volunteer the information. You have to ask.</p>
 
@@ -624,7 +624,7 @@ Looking forward to hearing from you."
     secondaryKeywords: ['free nurse contract review', 'travel nurse negotiation scripts', 'nursing contract checklist'],
     coverImage: '/blog/nursing-contract-audit-kit-what-it-includes_compressed.png',
     imageAlt: 'Nursing contract audit kit with checklist, red flag guide, and negotiation scripts',
-    metaDescription: 'What's inside the free Nursing Contract Audit Kit: the full clause checklist, red-flag guide, and word-for-word negotiation scripts used to fix travel and staff nurse contracts.',
+    metaDescription: `What’s inside the free Nursing Contract Audit Kit: the full clause checklist, red-flag guide, and word-for-word negotiation scripts used to fix travel and staff nurse contracts.`,
     content: `
 <p>Most nurses sign their contracts without a careful read. That\'s how bad clauses sneak through — unpaid orientation, floating requirements, vague cancellation terms, non-competes. The <a href="/contract-audit" style="color:#2563eb;font-weight:600;">Free Contract Audit Kit</a> is a self-service review tool built to catch them before you sign.</p>
 
