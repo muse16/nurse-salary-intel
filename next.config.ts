@@ -2,6 +2,12 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
+  experimental: {
+    // Tree-shake icon/component libraries — removes unused exports at build time
+    optimizePackageImports: ['lucide-react'],
+    // Inline critical CSS to eliminate render-blocking stylesheet (biggest LCP win)
+    optimizeCss: true,
+  },
   images: {
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 31536000,
