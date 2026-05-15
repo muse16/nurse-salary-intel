@@ -199,12 +199,14 @@ export default function ShiftDifferentialNursePay2026() {
         not offered unless asked.
       </p>
 
-      <blockquote className="border-l-4 border-primary pl-4 italic text-on-surface-variant my-6">
-        &ldquo;I did not realize until my third job that I could ask about orientation structure. My last
-        hospital put me on day rates for 12 weeks — I lost about $3,800 in differential income I would have
-        earned on nights. Now I always ask upfront whether that&apos;s negotiable.&rdquo;
-        <footer className="mt-2 text-sm not-italic">— ICU nurse, 9 years experience, Midwest</footer>
-      </blockquote>
+      <p>
+        A pattern that comes up repeatedly in nurse salary discussions: orientation periods that default to
+        day rates cost night-shift hires $2,000–$4,000 in lost differential income over a 10–12 week
+        orientation. Many nurses don&apos;t know this is negotiable until their second or third job. At
+        systems with any flexibility, asking specifically about orientation structure — and whether night
+        differential applies during training — costs you nothing and can meaningfully change your first-year
+        take-home pay.
+      </p>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Related Guides</h2>
       <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">

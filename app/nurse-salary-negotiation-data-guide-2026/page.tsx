@@ -177,11 +177,11 @@ export default function NurseSalaryNegotiationDataGuide2026() {
       </p>
 
       <blockquote className="border-l-4 border-primary pl-4 italic text-on-surface-variant my-6">
-        &ldquo;I pulled three ICU job postings from hospitals in my metro before my review. All three showed
-        ranges $8,000–$12,000 above what I was making. I brought the printouts to my manager and said,
-        &lsquo;I&rsquo;m not looking to leave, but I need you to understand what the market is paying.&rsquo;
-        I got $9,000.&rdquo;
-        <footer className="mt-2 text-sm not-italic">— ICU nurse, Pacific Northwest, 7 years experience</footer>
+        &ldquo;If what you&apos;re asking for is realistic, what&apos;s wrong with showing that you value
+        yourself enough to ask for a little? If you&apos;re going to ask for more, you&apos;d better have
+        a response to tell them why you deserve it and look them straight in the eye, don&apos;t bat an eye,
+        and tell them exactly how amazing you are.&rdquo;
+        <footer className="mt-2 text-sm not-italic">— Keith Carlson, BSN, RN, NC-BC, board-certified nurse coach (<a href="https://www.indeed.com/career-advice/pay-salary/nurse-negotiation-guide" className="underline" target="_blank" rel="noopener noreferrer">via Indeed</a>)</footer>
       </blockquote>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Step 4: Factor in Cost of Living — Not Just Gross Salary</h2>
