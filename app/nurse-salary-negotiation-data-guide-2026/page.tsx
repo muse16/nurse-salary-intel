@@ -93,6 +93,7 @@ export default function NurseSalaryNegotiationDataGuide2026() {
         alt="Registered nurse in scrubs sitting across from a hospital HR manager reviewing salary documents in a professional office setting"
         width={1200}
         height={630}
+        sizes="(max-width: 1024px) 100vw, 896px"
         className="rounded-xl w-full"
         priority
       />
@@ -134,6 +135,7 @@ export default function NurseSalaryNegotiationDataGuide2026() {
         alt="Bar chart showing RN specialty salary premiums above Med-Surg baseline for ICU, OR, ER, L&D, trauma, and NICU nurses"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -159,6 +161,7 @@ export default function NurseSalaryNegotiationDataGuide2026() {
         alt="Nurse in scrubs reviewing salary research documents on a laptop at a hospital workstation"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

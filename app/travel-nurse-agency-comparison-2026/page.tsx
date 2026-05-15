@@ -90,6 +90,7 @@ export default function TravelNurseAgencyComparison() {
         alt="Travel nurse with a rolling suitcase arriving at a hospital entrance in a new city, wearing scrubs and badge, golden hour light suggesting movement and independence"
         width={1200}
         height={630}
+        sizes="(max-width: 1024px) 100vw, 896px"
         className="rounded-xl w-full"
         priority
       />
@@ -117,6 +118,7 @@ export default function TravelNurseAgencyComparison() {
         alt="Bar chart showing average weekly travel nurse pay packages by specialty in 2026, with California ICU leading at $4,000–$5,200 per week"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -140,6 +142,7 @@ export default function TravelNurseAgencyComparison() {
         alt="Travel nurse reviewing a contract on a tablet in a hospital break room, professional setting with nursing badge visible and natural light"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

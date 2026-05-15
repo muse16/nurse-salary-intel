@@ -152,6 +152,9 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/cleveland-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/nurse-salary-negotiation-data-guide-2026', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/shift-differential-nurse-pay-2026', priority: 0.9, changeFrequency: 'monthly' },
+
+  // Week 10 — May 2026
+  { path: '/travel-nurse-pay-calculator', priority: 0.9, changeFrequency: 'monthly' },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -126,6 +126,7 @@ export default function PMHNPSalary2026() {
         alt="Horizontal bar chart comparing 2026 PMHNP salary versus other NP specialties"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -148,6 +149,7 @@ export default function PMHNPSalary2026() {
         alt="Psychiatric mental health nurse practitioner listening attentively to a patient in a calm, softly lit counseling room"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

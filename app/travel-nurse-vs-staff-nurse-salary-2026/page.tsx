@@ -85,6 +85,7 @@ export default function TravelVsStaffNurseSalary2026() {
           alt="Split image showing a travel nurse with rolling luggage outside a hospital versus a staff nurse badge-in at a home facility"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />
@@ -123,6 +124,7 @@ export default function TravelVsStaffNurseSalary2026() {
           alt="Side-by-side bar chart comparing annual travel nurse and staff nurse take-home pay after taxes and housing costs"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />

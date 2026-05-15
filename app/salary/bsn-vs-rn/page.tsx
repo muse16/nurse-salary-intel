@@ -203,6 +203,7 @@ export default function BsnVsRnPage() {
           alt="Nursing graduate in white coat holding diploma outside hospital, representing BSN degree attainment and career advancement for RNs in 2026"
           width={1200}
           height={630}
+          sizes="(max-width: 1024px) 100vw, 896px"
           className="rounded-xl w-full"
           priority
         />
@@ -231,6 +232,7 @@ export default function BsnVsRnPage() {
             alt="Bar chart comparing ADN and BSN annual salaries across 10 states in 2026, showing BSN premium of $9,000 to $14,000 per year depending on state"
             width={800}
             height={450}
+            sizes="(max-width: 1024px) 100vw, 800px"
             className="rounded-xl w-full"
             loading="lazy"
           />
@@ -345,6 +347,7 @@ export default function BsnVsRnPage() {
             alt="Nurse in scrubs reviewing educational materials at hospital nursing station, representing career advancement through RN-to-BSN bridge program"
             width={600}
             height={800}
+            sizes="(max-width: 1024px) 100vw, 448px"
             className="rounded-xl w-full"
             loading="lazy"
           />

@@ -119,6 +119,7 @@ export default function NYCRNSalary2026() {
         alt="Registered nurse in scrubs standing outside a major New York City hospital at dusk, city skyline in background, editorial healthcare photography style"
         width={1200}
         height={630}
+        sizes="(max-width: 1024px) 100vw, 896px"
         className="rounded-xl w-full"
         priority
       />
@@ -150,6 +151,7 @@ export default function NYCRNSalary2026() {
         alt="Bar chart comparing 2026 RN salaries at top New York City hospitals including NYU Langone, NY-Presbyterian, Mount Sinai, and Memorial Sloan Kettering"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -175,6 +177,7 @@ export default function NYCRNSalary2026() {
         alt="Two nurses in scrubs reviewing a patient monitor in a softly lit NYC hospital ICU room, professional and focused, clinical setting"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

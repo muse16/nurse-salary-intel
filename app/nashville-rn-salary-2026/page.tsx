@@ -110,6 +110,7 @@ export default function NashvilleRNSalary2026() {
         alt="Bar chart comparing 2026 RN salaries across top Nashville hospitals including Vanderbilt and HCA"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -132,6 +133,7 @@ export default function NashvilleRNSalary2026() {
         alt="Registered nurse in scrubs at the entrance of a Nashville Tennessee hospital, confident posture and warm professional lighting"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

@@ -83,6 +83,7 @@ export default function NurseSignOnBonusGuide2026() {
           alt="Nurse reviewing a job offer letter and sign-on bonus details at a desk"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />
@@ -114,6 +115,7 @@ export default function NurseSignOnBonusGuide2026() {
           alt="Map of the United States showing nurse sign-on bonus ranges by state with highest amounts highlighted in California, Washington, and New York"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />
@@ -149,6 +151,7 @@ export default function NurseSignOnBonusGuide2026() {
           alt="Nurse in professional attire across a desk from a hospital HR recruiter during a salary negotiation discussion"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-lazy w-full rounded-xl"
           loading="lazy"
         />

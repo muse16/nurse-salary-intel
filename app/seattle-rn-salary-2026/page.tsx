@@ -94,6 +94,7 @@ export default function SeattleRNSalary2026() {
         alt="Registered nurse in navy scrubs standing outside a modern Seattle Washington hospital with the Puget Sound visible in the background"
         width={1200}
         height={630}
+        sizes="(max-width: 1024px) 100vw, 896px"
         className="rounded-xl w-full"
         priority
       />
@@ -121,6 +122,7 @@ export default function SeattleRNSalary2026() {
         alt="Bar chart comparing 2026 RN salaries at Seattle hospitals including UW Medical Center, Seattle Children's, and Swedish Health versus national average"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -146,6 +148,7 @@ export default function SeattleRNSalary2026() {
         alt="Two registered nurses in scrubs collaborating over a patient chart in a bright modern Seattle hospital unit"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

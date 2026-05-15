@@ -117,6 +117,7 @@ export default function SalaryDataPage() {
         alt="Vertical bar chart showing 2026 nursing salary ladder from CNA through RN to CRNA and NP credentials"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -134,6 +135,7 @@ export default function SalaryDataPage() {
         alt="Diverse team of nurses in scrubs collaborating at a modern hospital nursing station, professional healthcare teamwork"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

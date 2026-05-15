@@ -102,6 +102,7 @@ export default function AGNPSalary2026() {
         alt="Horizontal bar chart comparing 2026 AGNP salaries by practice setting and certification track"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -125,6 +126,7 @@ export default function AGNPSalary2026() {
         alt="Adult-gerontology nurse practitioner reviewing a care plan attentively with an elderly patient in a comfortable clinical setting"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

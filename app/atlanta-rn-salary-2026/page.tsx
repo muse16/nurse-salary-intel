@@ -95,6 +95,7 @@ export default function AtlantaRNSalary2026() {
         alt="Registered nurse in scrubs standing outside a modern Atlanta Georgia hospital entrance with the city skyline softly visible in the background"
         width={1200}
         height={630}
+        sizes="(max-width: 1024px) 100vw, 896px"
         className="rounded-xl w-full"
         priority
       />
@@ -122,6 +123,7 @@ export default function AtlantaRNSalary2026() {
         alt="Bar chart comparing 2026 RN salaries at Atlanta hospitals including Emory Healthcare, Grady Memorial, and Northside Hospital versus national average"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -149,6 +151,7 @@ export default function AtlantaRNSalary2026() {
         alt="Registered nurse in scrubs reviewing patient charts in a modern Atlanta Georgia hospital corridor, professional clinical environment"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

@@ -77,7 +77,8 @@ export default function RNvsLPNSalary2026() {
         schemaUrl="/rn-vs-lpn-salary-2026/"
         faqs={faqs}
       >
-        <Image src="/images/rn-vs-lpn-salary-2026-hero.png" alt="RN vs LPN side-by-side comparison showing 2026 salary difference between registered and licensed practical nurses" width={1200} height={630} className="w-full rounded-lg mb-6" priority />
+        <Image src="/images/rn-vs-lpn-salary-2026-hero.png" alt="RN vs LPN side-by-side comparison showing 2026 salary difference between registered and licensed practical nurses" width={1200} height={630}
+          sizes="(max-width: 1024px) 100vw, 896px" className="w-full rounded-lg mb-6" priority />
 
         <p><strong>Registered Nurses (RNs) earn $89,010 per year on average in 2026, while Licensed Practical Nurses (LPNs) earn $59,730</strong> — a $29,280 gap, or 49% higher pay for RNs. Hourly, that&apos;s $42.79 for RNs versus $28.72 for LPNs. The pay gap looks larger than the education gap (1–2 extra years), which is why most nurses ask the same question: is the RN path actually worth the time and tuition?</p>
         <p>Short answer: usually yes, with the ROI breaking even by year 3 in most states. Here&apos;s the full math, including the states where the gap is widest, the LPN-to-RN bridge programs that close the gap fastest, and the situations where staying as an LPN actually makes more financial sense.</p>
@@ -137,7 +138,8 @@ export default function RNvsLPNSalary2026() {
         </ul>
         <p>The pay gap reflects this scope gap. RNs carry more liability and decision-making, which the market prices in. For a comparison of advancement paths, see <Link href="/nursing-salary/icu-nurse-salary/" className="text-primary hover:underline">ICU Nurse Salary</Link> and <Link href="/nursing-salary/er-nurse-salary/" className="text-primary hover:underline">ER Nurse Salary</Link> — two specialty pay caps RNs can reach but LPNs cannot.</p>
 
-        <Image src="/images/rn-vs-lpn-roi-illustration.png" alt="Nursing students studying for LPN-to-RN bridge program illustrating 2026 education ROI pathway" width={600} height={800} className="w-full rounded-lg my-6" loading="lazy" />
+        <Image src="/images/rn-vs-lpn-roi-illustration.png" alt="Nursing students studying for LPN-to-RN bridge program illustrating 2026 education ROI pathway" width={600} height={800}
+          sizes="(max-width: 1024px) 100vw, 448px" className="w-full rounded-lg my-6" loading="lazy" />
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">LPN to RN Bridge Programs (Worth It?)</h2>
         <p>LPN-to-RN bridge programs let you skip foundational nursing courses already covered in your LPN training. Most bridges are 12–18 months and add 30–40 credit hours.</p>

@@ -108,6 +108,7 @@ export default function FNPSalary2026() {
         alt="Horizontal bar chart comparing 2026 FNP salaries across top-paying states"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -130,6 +131,7 @@ export default function FNPSalary2026() {
         alt="Family nurse practitioner in white coat consulting warmly with a patient family in a comfortable primary care office setting"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

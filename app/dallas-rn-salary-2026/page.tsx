@@ -82,12 +82,14 @@ export default function DallasRNSalary2026() {
         schemaUrl="/dallas-rn-salary-2026/"
         faqs={faqs}
       >
-        <Image src="/images/dallas-rn-salary-2026-hero.png" alt="Dallas RN salary 2026 hero graphic with Texas-themed geometric design highlighting nurse compensation data" width={1200} height={630} className="w-full rounded-lg mb-6" priority />
+        <Image src="/images/dallas-rn-salary-2026-hero.png" alt="Dallas RN salary 2026 hero graphic with Texas-themed geometric design highlighting nurse compensation data" width={1200} height={630}
+          sizes="(max-width: 1024px) 100vw, 896px" className="w-full rounded-lg mb-6" priority />
 
         <p>The average <strong>registered nurse salary in Dallas, TX is $80,910 per year ($38.90/hour)</strong> as of 2026 — about 2% above the Texas state average and within striking distance of the U.S. national mean of $89,010. Dallas-Fort Worth (DFW) is the fourth-largest metro in the country and home to four of the top 30 academic medical centers in Texas, which means real specialty premium opportunities for nurses willing to certify and commit.</p>
         <p>Here&apos;s the full Dallas RN compensation picture — by hospital, specialty, experience tier, and across the DFW metroplex.</p>
 
-        <Image src="/images/dallas-rn-salary-2026-uniformed-nurse.png" alt="Registered nurse in Dallas hospital lobby illustrating 2026 DFW RN compensation guide" width={600} height={800} className="w-full rounded-lg my-6" loading="lazy" />
+        <Image src="/images/dallas-rn-salary-2026-uniformed-nurse.png" alt="Registered nurse in Dallas hospital lobby illustrating 2026 DFW RN compensation guide" width={600} height={800}
+          sizes="(max-width: 1024px) 100vw, 448px" className="w-full rounded-lg my-6" loading="lazy" />
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">Dallas RN Salary by Experience (2026)</h2>
         <SalaryTable title="Dallas RN Pay by Experience Tier (2026)" headers={['Experience Level', 'Est. Annual Salary', 'Est. Hourly Rate']} rows={experienceData} source="BLS OEWS Dallas-Fort Worth-Arlington MSA, May 2024, projected 3.1% annually." />
@@ -140,7 +142,8 @@ export default function DallasRNSalary2026() {
         </ol>
         <p>For step-by-step scripts, see our <Link href="/nurse-salary-negotiation-scripts-2026/" className="text-primary hover:underline">Nurse Salary Negotiation Scripts 2026</Link> guide.</p>
 
-        <Image src="/images/dallas-rn-salary-2026-icu-team.png" alt="ICU nursing team at Dallas hospital nursing station representing specialty pay tiers in DFW" width={600} height={800} className="w-full rounded-lg my-6" loading="lazy" />
+        <Image src="/images/dallas-rn-salary-2026-icu-team.png" alt="ICU nursing team at Dallas hospital nursing station representing specialty pay tiers in DFW" width={600} height={800}
+          sizes="(max-width: 1024px) 100vw, 448px" className="w-full rounded-lg my-6" loading="lazy" />
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">Career Trajectory: Dallas RN to Nurse Practitioner</h2>
         <p>Many Dallas RNs target an NP transition by year 5–7. Typical path:</p>

@@ -94,6 +94,7 @@ export default function HoustonRNSalary2026() {
         alt="Confident registered nurse in navy scrubs standing outside a modern Houston Texas hospital entrance with warm Texas sunlight"
         width={1200}
         height={630}
+        sizes="(max-width: 1024px) 100vw, 896px"
         className="rounded-xl w-full"
         priority
       />
@@ -120,6 +121,7 @@ export default function HoustonRNSalary2026() {
         alt="Bar chart comparing 2026 RN salaries at Houston hospitals including Houston Methodist, Memorial Hermann, and HCA versus national average"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -145,6 +147,7 @@ export default function HoustonRNSalary2026() {
         alt="Two registered nurses in scrubs reviewing patient monitors in a modern Houston Texas hospital ICU, professional clinical setting"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

@@ -114,6 +114,7 @@ export default function CaliforniaRNSalary2026() {
           alt="California RN salary heat map showing highest-paying regions in Bay Area, Los Angeles, and San Diego."
           width={1200}
           height={630}
+          sizes="(max-width: 1024px) 100vw, 896px"
           className="w-full rounded-lg mb-6"
           priority
         />

@@ -71,6 +71,7 @@ export default function HowWeCalculatePage() {
         alt="NurseSalaryIntel team member reviewing BLS salary data on a laptop with nursing salary charts and data sources visible"
         width={1200}
         height={630}
+        sizes="(max-width: 1024px) 100vw, 896px"
         className="rounded-xl w-full"
         priority
       />
@@ -126,6 +127,7 @@ export default function HowWeCalculatePage() {
         alt="Horizontal bar chart showing the approximate weight of each data source in NurseSalaryIntel salary estimates: BLS OEWS 60%, job postings 25%, regional adjustments 10%, nurse-reported data 5%"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -159,6 +161,7 @@ export default function HowWeCalculatePage() {
         alt="NurseSalaryIntel researcher at a desk reviewing nursing salary data sources including BLS reports and hospital job postings on a computer"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

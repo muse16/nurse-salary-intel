@@ -124,6 +124,7 @@ export default function AustinRNSalary2026() {
         alt="Bar chart comparing 2026 RN salaries across top Austin hospitals including Ascension Seton and St. David's"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -146,6 +147,7 @@ export default function AustinRNSalary2026() {
         alt="Registered nurse in scrubs standing confidently outside a modern Austin Texas hospital entrance, warm natural light and professional demeanor"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

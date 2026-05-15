@@ -123,6 +123,7 @@ export default function CNASalary2026() {
         alt="Bar chart showing 2026 CNA salary progression from entry-level through the nursing credential ladder to RN and NP"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -145,6 +146,7 @@ export default function CNASalary2026() {
         alt="Certified nursing assistant in scrubs providing compassionate bedside care to a patient in a hospital room, patient-centered care"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

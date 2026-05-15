@@ -120,6 +120,7 @@ export default function NurseSalaryNegotiationPage() {
         alt="Nurse in scrubs reviewing a job offer at a desk with a hospital recruiter in a professional office setting"
         width={1200}
         height={630}
+        sizes="(max-width: 1024px) 100vw, 896px"
         className="rounded-xl w-full"
         priority
       />
@@ -169,6 +170,7 @@ export default function NurseSalaryNegotiationPage() {
         alt="Bar chart showing percentage of nurses who negotiate salary by role: APRNs 52%, male RNs 40%, LPNs 41%, all RNs 31%, 30% never negotiate — Source: Nurse.com 2022 Survey"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -197,6 +199,7 @@ export default function NurseSalaryNegotiationPage() {
         alt="Registered nurse reviewing compensation documents with a hospital HR recruiter in a professional office, collaborative conversation about nursing salary offer"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

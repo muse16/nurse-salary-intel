@@ -113,6 +113,7 @@ export default function RNSalaryLosAngeles2026() {
           alt="Los Angeles skyline with RN salary data overlaid showing average pay by hospital system."
           width={1200}
           height={630}
+          sizes="(max-width: 1024px) 100vw, 896px"
           className="w-full rounded-lg mb-6"
           priority
         />

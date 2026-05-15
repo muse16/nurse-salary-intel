@@ -106,6 +106,7 @@ export default function SanDiegoRNSalary() {
         alt="Registered nurse in navy scrubs standing outside a modern San Diego hospital entrance with palm trees and clear blue sky in the background"
         width={1200}
         height={630}
+        sizes="(max-width: 1024px) 100vw, 896px"
         className="rounded-xl w-full"
         priority
       />
@@ -133,6 +134,7 @@ export default function SanDiegoRNSalary() {
         alt="Bar chart comparing RN salaries at San Diego hospitals including UCSD Health, Kaiser, Scripps, Sharp, and Rady Children's in 2026"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -156,6 +158,7 @@ export default function SanDiegoRNSalary() {
         alt="Nurse and physician collaborating over a patient chart in a bright, modern San Diego hospital room with large windows overlooking the city"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

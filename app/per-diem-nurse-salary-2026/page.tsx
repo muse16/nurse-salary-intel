@@ -129,6 +129,7 @@ export default function PerDiemNurseSalary2026() {
           alt="Per diem nurse salary 2026 hero graphic with clock and dollar sign motif representing hourly flexible nursing pay"
           width={1200}
           height={630}
+          sizes="(max-width: 1024px) 100vw, 896px"
           className="w-full rounded-lg mb-6"
           priority
         />
@@ -145,6 +146,7 @@ export default function PerDiemNurseSalary2026() {
           alt="Per diem registered nurse reviewing flexible shift schedule at hospital nursing station"
           width={600}
           height={400}
+          sizes="(max-width: 1024px) 100vw, 448px"
           className="w-full rounded-lg my-6"
           loading="lazy"
         />
@@ -292,6 +294,7 @@ export default function PerDiemNurseSalary2026() {
           alt="Per diem nurse arriving for ER shift representing high-rate specialty per diem pay in 2026"
           width={600}
           height={400}
+          sizes="(max-width: 1024px) 100vw, 448px"
           className="w-full rounded-lg my-6"
           loading="lazy"
         />

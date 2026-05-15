@@ -111,6 +111,7 @@ export default function MinneapolisRNSalary2026() {
         alt="Bar chart comparing 2026 RN salaries across top Minneapolis hospitals including Mayo Clinic and M Health Fairview"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -133,6 +134,7 @@ export default function MinneapolisRNSalary2026() {
         alt="Registered nurse in navy blue scrubs outside a Minneapolis Minnesota hospital, professional and confident in a healthcare setting"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

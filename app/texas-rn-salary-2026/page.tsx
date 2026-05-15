@@ -113,6 +113,7 @@ export default function TexasRNSalary2026() {
           alt="Texas RN salary 2026 map showing Houston, Dallas, and Austin as top-paying metro areas."
           width={1200}
           height={630}
+          sizes="(max-width: 1024px) 100vw, 896px"
           className="w-full rounded-lg mb-6"
           priority
         />

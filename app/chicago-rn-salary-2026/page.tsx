@@ -91,6 +91,7 @@ export default function ChicagoRNSalary2026() {
           alt="Registered nurse reviewing patient chart at workstation inside modern Chicago academic medical center"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />
@@ -138,6 +139,7 @@ export default function ChicagoRNSalary2026() {
           alt="Bar chart comparing 2026 average RN salaries in Chicago, Minneapolis, Detroit, Indianapolis, and national average"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />
@@ -195,6 +197,7 @@ export default function ChicagoRNSalary2026() {
           alt="Diverse team of Chicago nurses collaborating at nursing station in busy academic hospital"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />

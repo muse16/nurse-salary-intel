@@ -106,6 +106,7 @@ export default function BaltimoreRNSalary2026() {
         alt="Registered nurse in navy scrubs standing outside a modern Baltimore Maryland hospital with the Inner Harbor visible in the background"
         width={1200}
         height={630}
+        sizes="(max-width: 1024px) 100vw, 896px"
         className="rounded-xl w-full"
         priority
       />
@@ -134,6 +135,7 @@ export default function BaltimoreRNSalary2026() {
         alt="Bar chart comparing 2026 RN salaries at Baltimore hospitals including Johns Hopkins, UMMC, MedStar Franklin Square, and Mercy Medical versus national average"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -159,6 +161,7 @@ export default function BaltimoreRNSalary2026() {
         alt="Two registered nurses in scrubs reviewing a patient chart in a bright modern Baltimore hospital unit"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

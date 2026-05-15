@@ -106,6 +106,7 @@ export default function PhiladelphiaRNSalary() {
         alt="Registered nurse in navy scrubs standing outside a Philadelphia hospital entrance with city skyline visible in the background"
         width={1200}
         height={630}
+        sizes="(max-width: 1024px) 100vw, 896px"
         className="rounded-xl w-full"
         priority
       />
@@ -133,6 +134,7 @@ export default function PhiladelphiaRNSalary() {
         alt="Bar chart comparing Philadelphia RN salaries at major hospitals including Penn Medicine, CHOP, Jefferson, Temple, and Main Line Health in 2026"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -156,6 +158,7 @@ export default function PhiladelphiaRNSalary() {
         alt="Two nurses in scrubs reviewing a patient chart in a modern Philadelphia hospital hallway with natural light and clean clinical environment"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

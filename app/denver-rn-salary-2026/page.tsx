@@ -110,6 +110,7 @@ export default function DenverRNSalary2026() {
         alt="Bar chart comparing 2026 RN salaries across top Denver hospitals including UCHealth and SCL Health"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -132,6 +133,7 @@ export default function DenverRNSalary2026() {
         alt="Registered nurse in scrubs standing outside a modern Denver Colorado hospital, Rocky Mountains softly visible in the background"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

@@ -129,6 +129,7 @@ export default function PediatricNurseSalary2026() {
           alt="Pediatric nurse in colorful scrubs interacting with young patient illustrating 2026 children's hospital RN compensation"
           width={1200}
           height={630}
+          sizes="(max-width: 1024px) 100vw, 896px"
           className="w-full rounded-lg mb-6"
           priority
         />
@@ -145,6 +146,7 @@ export default function PediatricNurseSalary2026() {
           alt="PICU nurse adjusting equipment in pediatric intensive care unit, illustrating high-acuity specialty pay"
           width={600}
           height={400}
+          sizes="(max-width: 1024px) 100vw, 448px"
           className="w-full rounded-lg my-6"
           loading="lazy"
         />
@@ -256,6 +258,7 @@ export default function PediatricNurseSalary2026() {
           alt="Pediatric nursing team at children's hospital station representing career growth and specialty pathways"
           width={600}
           height={400}
+          sizes="(max-width: 1024px) 100vw, 448px"
           className="w-full rounded-lg my-6"
           loading="lazy"
         />

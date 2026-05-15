@@ -113,6 +113,7 @@ export default function ArizonaRNSalary2026() {
           alt="Arizona RN salary 2026 map with Phoenix showing $85K–$98K average annual pay."
           width={1200}
           height={630}
+          sizes="(max-width: 1024px) 100vw, 896px"
           className="w-full rounded-lg mb-6"
           priority
         />

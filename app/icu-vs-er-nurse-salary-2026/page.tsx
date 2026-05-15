@@ -83,6 +83,7 @@ export default function ICUvsERNurseSalary2026() {
           alt="Split image showing ICU nurse monitoring patient vitals versus ER nurse triaging in emergency department representing the 2026 salary comparison"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />
@@ -113,6 +114,7 @@ export default function ICUvsERNurseSalary2026() {
           alt="Bar chart comparing ICU and ER nurse average salaries by experience level from entry to senior in 2026"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />
@@ -157,6 +159,7 @@ export default function ICUvsERNurseSalary2026() {
           alt="ICU and emergency nursing teams collaborating during a patient handoff in a hospital corridor"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />

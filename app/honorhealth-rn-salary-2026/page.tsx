@@ -119,6 +119,7 @@ export default function HonorHealthRNSalary2026() {
           alt="Registered nurse in scrubs outside a modern Scottsdale Arizona hospital entrance, warm desert light, HonorHealth RN salary guide 2026"
           width={1200}
           height={630}
+          sizes="(max-width: 1024px) 100vw, 896px"
           className="rounded-xl w-full mb-6"
           priority
         />
@@ -149,6 +150,7 @@ export default function HonorHealthRNSalary2026() {
           alt="Bar chart comparing mid-career RN hourly pay at HonorHealth vs Banner Health, Mayo Clinic AZ, Valleywise, and Dignity Health in the Phoenix metro"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full my-6"
           loading="lazy"
         />
@@ -182,6 +184,7 @@ export default function HonorHealthRNSalary2026() {
           alt="Two registered nurses reviewing patient monitors in a modern Scottsdale Arizona ICU, representing HonorHealth critical care compensation"
           width={600}
           height={800}
+          sizes="(max-width: 1024px) 100vw, 448px"
           className="rounded-xl w-full my-6"
           loading="lazy"
         />

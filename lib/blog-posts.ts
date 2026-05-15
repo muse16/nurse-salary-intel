@@ -23,6 +23,22 @@ export interface BlogPost {
 }
 
 const allBlogPosts: BlogPost[] = [
+  // ── Week-10 ────────────────────────────────────────────────────────────────
+  {
+    slug: 'travel-nurse-pay-calculator',
+    title: 'Travel Nurse Pay Calculator 2026 | Blended Rate + Take-Home',
+    date: '2026-05-15',
+    excerpt: 'Free travel nurse pay calculator. Enter your contract details to estimate weekly take-home pay, blended hourly rate, and tax-free stipend value — and compare two contracts side by side.',
+    category: 'Salary Tools',
+    readTime: '3 min',
+    focusKeyword: 'travel nurse pay calculator',
+    secondaryKeywords: ['travel nurse take home pay calculator', 'travel nurse blended rate calculator', 'compare travel nurse contracts', 'travel nurse stipend calculator', 'travel nurse weekly pay 2026'],
+    coverImage: '/images/travel-nurse-pay-calculator-hero.webp',
+    imageAlt: 'Travel nurse with rolling suitcase standing outside a hospital entrance reviewing her phone with a confident expression',
+    metaDescription: 'Free travel nurse pay calculator. Estimate weekly take-home, blended hourly rate, and tax-free stipend value for any contract. Compare two offers side by side.',
+    href: '/travel-nurse-pay-calculator',
+    content: '',
+  },
   // ── Week-09 ────────────────────────────────────────────────────────────────
   {
     slug: 'shift-differential-nurse-pay-2026',

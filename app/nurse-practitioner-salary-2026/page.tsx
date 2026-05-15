@@ -126,6 +126,7 @@ export default function NursePractitionerSalary2026() {
         alt="Horizontal bar chart comparing 2026 nurse practitioner salaries by specialty from PMHNP to FNP"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -154,6 +155,7 @@ export default function NursePractitionerSalary2026() {
         alt="Nurse practitioner in white coat conducting a thorough patient examination in a clean modern exam room, attentive clinical care"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

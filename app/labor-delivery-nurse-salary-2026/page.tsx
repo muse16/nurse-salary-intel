@@ -100,6 +100,7 @@ export default function LaborDeliveryNurseSalary() {
         alt="Labor and delivery nurse in light blue scrubs standing in a bright, modern hospital birth center with natural light coming through large windows"
         width={1200}
         height={630}
+        sizes="(max-width: 1024px) 100vw, 896px"
         className="rounded-xl w-full"
         priority
       />
@@ -127,6 +128,7 @@ export default function LaborDeliveryNurseSalary() {
         alt="Bar chart comparing labor and delivery nurse salaries at major hospital systems in 2026, with Kaiser California and Sharp Mary Birch leading at $112,000–$136,000"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -147,6 +149,7 @@ export default function LaborDeliveryNurseSalary() {
         alt="Labor and delivery nurse supporting a patient during labor in a warm, modern birth room with supportive lighting and medical monitoring equipment"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

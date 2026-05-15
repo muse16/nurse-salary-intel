@@ -110,6 +110,7 @@ export default function LasVegasRNSalary2026() {
         alt="Bar chart comparing 2026 RN salaries across top Las Vegas hospitals including University Medical Center and Sunrise Health"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -132,6 +133,7 @@ export default function LasVegasRNSalary2026() {
         alt="Registered nurse in navy blue scrubs outside a modern Las Vegas Nevada hospital entrance, professional editorial healthcare style"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

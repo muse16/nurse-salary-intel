@@ -143,6 +143,7 @@ export default function FloridaRNSalary() {
         alt="Bar chart comparing 2026 mean hourly RN pay across Florida metros including Miami, Naples, Tampa, Orlando, and Jacksonville"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full my-6"
         loading="lazy"
       />
@@ -164,6 +165,7 @@ export default function FloridaRNSalary() {
         alt="Illustration of Florida no state income tax benefit on RN take-home pay compared to high-tax states"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full my-6"
         loading="lazy"
       />

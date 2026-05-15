@@ -131,6 +131,7 @@ export default function ChargeNurseSalary() {
         alt="Grouped bar chart comparing 2026 charge nurse versus staff RN salaries by specialty unit"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -160,6 +161,7 @@ export default function ChargeNurseSalary() {
         alt="Charge nurse in scrubs reviewing patient assignments at a busy nursing station, confidently leading the unit team"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

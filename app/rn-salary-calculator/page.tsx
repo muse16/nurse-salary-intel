@@ -131,6 +131,7 @@ export default function RNSalaryCalculator() {
           alt="Nurse in scrubs reviewing take-home pay calculations at a desk with salary charts, tax breakdown, and paycheck data displayed around her"
           width={1200}
           height={630}
+          sizes="(max-width: 1024px) 100vw, 896px"
           className="rounded-xl w-full mb-8"
           priority
         />
@@ -332,6 +333,7 @@ export default function RNSalaryCalculator() {
             alt="Bar chart showing average RN take-home pay by state after taxes in 2026, comparing gross salary versus net pay in high-tax and no-tax states"
             width={800}
             height={450}
+            sizes="(max-width: 1024px) 100vw, 800px"
             className="rounded-xl w-full"
             loading="lazy"
           />

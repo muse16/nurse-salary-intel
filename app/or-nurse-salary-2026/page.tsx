@@ -100,6 +100,7 @@ export default function ORNurseSalary() {
         alt="Operating room nurse in surgical scrubs and cap preparing a sterile instrument tray in a modern hospital operating room with bright surgical lighting"
         width={1200}
         height={630}
+        sizes="(max-width: 1024px) 100vw, 896px"
         className="rounded-xl w-full"
         priority
       />
@@ -127,6 +128,7 @@ export default function ORNurseSalary() {
         alt="Bar chart comparing OR nurse salaries at major hospital systems in 2026, with Kaiser California leading at $120,000–$145,000 and national average at $102,800"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -147,6 +149,7 @@ export default function ORNurseSalary() {
         alt="Surgical team including nurses and surgeon in a modern operating room preparing for a robotic-assisted procedure with da Vinci equipment visible"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

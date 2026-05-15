@@ -105,6 +105,7 @@ export default function PortlandRNSalary2026() {
         alt="Registered nurse in navy scrubs standing outside a modern Portland Oregon hospital with the Willamette River visible in the background"
         width={1200}
         height={630}
+        sizes="(max-width: 1024px) 100vw, 896px"
         className="rounded-xl w-full"
         priority
       />
@@ -133,6 +134,7 @@ export default function PortlandRNSalary2026() {
         alt="Bar chart comparing 2026 RN salaries at Portland Oregon hospitals including OHSU, Legacy Emanuel, Providence Portland, and PeaceHealth Southwest versus national average"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -158,6 +160,7 @@ export default function PortlandRNSalary2026() {
         alt="Two registered nurses in scrubs collaborating at a workstation in a bright modern Portland Oregon hospital"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

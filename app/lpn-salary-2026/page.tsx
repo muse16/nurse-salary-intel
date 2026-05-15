@@ -125,6 +125,7 @@ export default function LPNSalary2026() {
         alt="Horizontal bar chart comparing 2026 LPN salaries across top-paying states"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -147,6 +148,7 @@ export default function LPNSalary2026() {
         alt="Licensed practical nurse in scrubs reviewing a patient chart at a community health clinic, focused and professional bedside manner"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

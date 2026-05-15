@@ -97,6 +97,7 @@ export default function RNSalaryByExperience2026() {
           alt="Registered nurse with 10 years of experience in clinical leadership role reviewing patient charts with newer nursing staff"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />
@@ -134,6 +135,7 @@ export default function RNSalaryByExperience2026() {
           alt="Line chart showing RN salary growth curves by specialty from new grad through 15 years of experience in 2026"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />

@@ -80,6 +80,7 @@ export default function HoustonVsDallasRNSalary2026() {
           alt="Split comparison graphic showing Houston Texas Medical Center skyline vs Dallas downtown skyline representing the 2026 RN salary comparison"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />
@@ -114,6 +115,7 @@ export default function HoustonVsDallasRNSalary2026() {
           alt="Side-by-side bar chart comparing Houston and Dallas average RN salaries by specialty including ICU, ER, L&D, and trauma"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />

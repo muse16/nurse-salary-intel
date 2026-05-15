@@ -84,6 +84,7 @@ export default function CRNASalary2026() {
           alt="CRNA nurse anesthetist in surgical cap and mask preparing anesthesia equipment in modern operating room"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />
@@ -128,6 +129,7 @@ export default function CRNASalary2026() {
           alt="Bar chart comparing CRNA average salary across practice settings: independent practice, private group, hospital employed, outpatient, and academic"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />

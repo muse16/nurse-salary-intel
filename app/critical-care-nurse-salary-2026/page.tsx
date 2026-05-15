@@ -106,6 +106,7 @@ export default function CriticalCareNurseSalary() {
         alt="Critical care nurse in scrubs monitoring patient vital signs on multiple screens in a modern hospital ICU with blue-toned clinical lighting"
         width={1200}
         height={630}
+        sizes="(max-width: 1024px) 100vw, 896px"
         className="rounded-xl w-full"
         priority
       />
@@ -133,6 +134,7 @@ export default function CriticalCareNurseSalary() {
         alt="Horizontal bar chart showing critical care nurse salary ranges by state in 2026, with California leading at $125,000–$148,000 and national average at $98,400"
         width={800}
         height={450}
+        sizes="(max-width: 1024px) 100vw, 800px"
         className="rounded-xl w-full"
         loading="lazy"
       />
@@ -156,6 +158,7 @@ export default function CriticalCareNurseSalary() {
         alt="Two ICU nurses in scrubs collaborating at a nursing station surrounded by patient monitoring equipment in a modern intensive care unit"
         width={600}
         height={800}
+        sizes="(max-width: 1024px) 100vw, 448px"
         className="rounded-xl w-full"
         loading="lazy"
       />

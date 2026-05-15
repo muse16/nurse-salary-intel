@@ -83,6 +83,7 @@ export default function NewGradRNSalary2026() {
           alt="New graduate registered nurse in white coat holding diploma outside nursing school building"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />
@@ -114,6 +115,7 @@ export default function NewGradRNSalary2026() {
           alt="Chart showing new grad RN salary ranges by state including California, Washington, Texas, Florida, Georgia and national average"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />
@@ -153,6 +155,7 @@ export default function NewGradRNSalary2026() {
           alt="New graduate nurse being welcomed by experienced nursing team at hospital orientation"
           width={800}
           height={450}
+          sizes="(max-width: 1024px) 100vw, 800px"
           className="rounded-xl w-full"
           loading="lazy"
         />
