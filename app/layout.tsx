@@ -106,10 +106,10 @@ export default function RootLayout({
         {children}
         <SiteFooter />
 
-        {/* AdSense — afterInteractive keeps it off the critical path */}
+        {/* AdSense — lazyOnload defers until page is idle, reduces TBT on mobile */}
         <Script
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4487629215570224"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           crossOrigin="anonymous"
         />
 
