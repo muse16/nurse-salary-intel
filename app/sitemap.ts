@@ -145,6 +145,13 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/labor-delivery-nurse-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/travel-nurse-agency-comparison-2026', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/rn-salary-calculator', priority: 0.9, changeFrequency: 'monthly' },
+
+  // Week 9 — May 2026
+  { path: '/baltimore-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/portland-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/cleveland-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/nurse-salary-negotiation-data-guide-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/shift-differential-nurse-pay-2026', priority: 0.9, changeFrequency: 'monthly' },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
