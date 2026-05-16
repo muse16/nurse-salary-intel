@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'How to Negotiate a Travel Nursing Contract 2026: Pay, Stipends and Clauses',
+  title: 'How to Negotiate a Travel Nursing Contract 2026: Scripts',
   description:
     'Step-by-step guide to negotiating travel nursing contracts in 2026. Raise pay, increase stipends, remove bad clauses, and use competing offers as leverage.',
 };

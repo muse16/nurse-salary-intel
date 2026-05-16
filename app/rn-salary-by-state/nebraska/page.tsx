@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Nebraska RN Salary 2026: $69,790/yr — Nebraska Medicine, CHI Health & Rural Incentives',
+  title: 'Nebraska RN Salary 2026: $69,790/yr — Omaha & Rural Incentives',
   description:
     'Nebraska RNs average $69,790/yr ($33.55/hr) in 2026. See pay by city, Nebraska Medicine vs. CHI Health rates, rural shortage area loan repayment, and Omaha market analysis.',
 };

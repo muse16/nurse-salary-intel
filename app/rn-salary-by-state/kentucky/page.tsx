@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Kentucky RN Salary 2026: $69,480/yr — Louisville, Lexington & Loan Repayment',
+  title: 'Kentucky RN Salary 2026: $69,480/yr — Louisville & Loan Repayment',
   description:
     'Kentucky RNs average $69,480/yr ($33.40/hr) in 2026. See pay at Norton Healthcare, Baptist Health, UK HealthCare — plus rural shortage loan repayment up to $50K.',
 };

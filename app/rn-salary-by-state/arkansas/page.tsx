@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Arkansas RN Salary 2026: $67,010/yr — UAMS, Rural Shortage Areas & Loan Repayment',
+  title: 'Arkansas RN Salary 2026: $67,010/yr — UAMS & Rural Loan Repayment',
   description:
     'Arkansas RNs average $67,010/yr ($32.22/hr) in 2026. See pay by city, UAMS vs. Arkansas Children\'s rates, extensive rural HPSA loan repayment programs, and why demand is outpacing supply.',
 };

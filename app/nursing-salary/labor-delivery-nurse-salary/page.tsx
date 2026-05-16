@@ -6,7 +6,7 @@ import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Labor and Delivery Nurse Salary 2026: $86,340/yr + California Pays $108K+',
+  title: 'L&D Nurse Salary 2026: $86,340/yr + California Pays $108K+',
   description:
     'L&D nurses average $86,340/yr ($41.51/hr) in 2026. California pays $108K+. See pay by state, shift differentials, and the L&D vs NICU vs ER salary comparison.',
 };

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'North Dakota RN Salary 2026: $72,140/yr — Sanford Health & No Income Tax',
+  title: 'North Dakota RN Salary 2026: $72,140/yr — No Income Tax',
   description:
     'North Dakota RNs average $72,140/yr ($34.68/hr) in 2026 with no state income tax. See pay by city, Sanford Health rates, rural shortage area bonuses, and loan repayment options.',
 };

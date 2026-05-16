@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Maine RN Salary 2026: $78,920/yr — Oldest State, Highest Nursing Demand',
+  title: 'Maine RN Salary 2026: $78,920/yr — High Nursing Demand',
   description:
     'Maine RNs average $78,920/yr ($37.94/hr) in 2026. See pay by city, MaineHealth vs. Northern Light rates, rural shortage bonuses, and why demand is surging in the oldest US state.',
 };

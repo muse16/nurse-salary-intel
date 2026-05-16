@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Travel Nurse Pay by Specialty 2026: ICU $3,200/wk, OR $3,000, ER $2,900',
+  title: 'Travel Nurse Pay by Specialty 2026: ICU $3,200/wk, OR $3,000/wk',
   description:
     '2026 travel nurse pay by specialty: ICU/CCRN earns $3,000–$3,500/wk, OR $2,800–$3,200, ER $2,800–$3,000, NICU $2,600–$3,000, L&D $2,500–$2,900. Full state-by-state data.',
 };

@@ -6,7 +6,7 @@ import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'NICU Nurse Salary 2026: $84,490/yr Avg + Travel NICU Earns $2,300–$3,000/wk',
+  title: 'NICU Nurse Salary 2026: $84,490/yr + Travel NICU $2,300–$3,000/wk',
   description:
     'NICU nurses earn $84,490/yr ($40.62/hr) in 2026. Travel NICU RNs make $2,300–$3,000/week. See pay by state, RNC-NIC certification premium, and job outlook through 2030.',
 };

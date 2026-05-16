@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Idaho RN Salary 2026: $72,160/yr — St. Luke\'s, Boise Boom & Fastest-Growing State',
+  title: 'Idaho RN Salary 2026: $72,160/yr — St. Luke\'s & Boise Growth',
   description:
     'Idaho RNs average $72,160/yr ($34.69/hr) in 2026. See pay by city, St. Luke\'s vs. Saint Alphonsus rates, rural shortage bonuses, and why Idaho\'s population boom is driving nursing demand.',
 };

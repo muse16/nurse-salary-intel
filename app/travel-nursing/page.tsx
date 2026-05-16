@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Travel Nursing Salary 2026: Pay Packages, Top States & How to Earn More',
+  title: 'Travel Nursing Salary 2026: Pay Packages & Top States',
   description:
     'Travel nurses earn $90,000–$150,000+/year. Explore 2026 pay packages, top-paying states, specialty premiums, contract red flags, and how to evaluate any travel assignment.',
   alternates: { canonical: 'https://nursesalaryintel.com/travel-nursing' },

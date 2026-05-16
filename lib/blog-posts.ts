@@ -16,6 +16,8 @@ export interface BlogPost {
   imageAlt: string;
   /** Optional override for <meta name="description">. Falls back to excerpt. */
   metaDescription?: string;
+  /** Optional short title for <title> tag (≤51 chars). Falls back to title. Use when title > 51 chars. */
+  metaTitle?: string;
   /** If true, post is hidden from the public blog index and not returned by getPostBySlug/getAllSlugs. */
   draft?: boolean;
   /** If set, the blog listing card links here instead of /blog/[slug]. Post is excluded from static slug generation. */
@@ -27,6 +29,7 @@ const allBlogPosts: BlogPost[] = [
   {
     slug: 'travel-nurse-pay-calculator',
     title: 'Travel Nurse Pay Calculator 2026 | Blended Rate + Take-Home',
+    metaTitle: 'Travel Nurse Pay Calculator 2026',
     date: '2026-05-15',
     excerpt: 'Free travel nurse pay calculator. Enter your contract details to estimate weekly take-home pay, blended hourly rate, and tax-free stipend value — and compare two contracts side by side.',
     category: 'Salary Tools',
@@ -43,6 +46,7 @@ const allBlogPosts: BlogPost[] = [
   {
     slug: 'shift-differential-nurse-pay-2026',
     title: 'Shift Differential Nurse Pay 2026: How Much Night & Weekend Shifts Add to RN Salary',
+    metaTitle: 'Nurse Shift Differential Pay 2026: Night & Weekend',
     date: '2026-05-14',
     excerpt: 'Night shift differential adds $4–$12/hr to RN pay — $7,200–$21,600/year for full-time night nurses. See rates by hospital system, how differentials stack, and what to negotiate at hire.',
     category: 'Salary Data',
@@ -58,6 +62,7 @@ const allBlogPosts: BlogPost[] = [
   {
     slug: 'nurse-salary-negotiation-data-guide-2026',
     title: 'How to Use BLS Data to Negotiate Your Nurse Salary in 2026',
+    metaTitle: 'Why 30% of Nurses Never Negotiate Salary',
     date: '2026-05-14',
     excerpt: 'Most nurses negotiate blind. Here is exactly how to pull BLS OEWS data, job posting ranges, and cost-of-living benchmarks to walk into any offer conversation with hard numbers — and what to say.',
     category: 'Negotiation',
@@ -73,6 +78,7 @@ const allBlogPosts: BlogPost[] = [
   {
     slug: 'cleveland-rn-salary-2026',
     title: 'Cleveland RN Salary 2026: How Much Do Nurses Make in Cleveland, OH?',
+    metaTitle: 'Cleveland RN Salary 2026: What Nurses Earn',
     date: '2026-05-14',
     excerpt: 'Cleveland RNs earn $74,000/yr in 2026 — below the national average, but with a cost of living 15–20% below the US average. Cleveland Clinic pays $78K–$98K with strong benefits and PSLF eligibility.',
     category: 'Salary Data',
@@ -88,6 +94,7 @@ const allBlogPosts: BlogPost[] = [
   {
     slug: 'portland-rn-salary-2026',
     title: 'Portland RN Salary 2026: How Much Do Nurses Make in Portland, OR?',
+    metaTitle: 'Portland RN Salary 2026: What Nurses Earn',
     date: '2026-05-14',
     excerpt: 'Portland RNs earn $109,000/yr in 2026 — well above the national average. OHSU and Legacy Emanuel top the market. Oregon\'s 8.75–9.9% income tax is the key variable to model before comparing offers.',
     category: 'Salary Data',
@@ -103,6 +110,7 @@ const allBlogPosts: BlogPost[] = [
   {
     slug: 'baltimore-rn-salary-2026',
     title: 'Baltimore RN Salary 2026: How Much Do Nurses Make in Baltimore, MD?',
+    metaTitle: 'Baltimore RN Salary 2026: What Nurses Earn',
     date: '2026-05-14',
     excerpt: 'Baltimore RNs earn $89,000/yr in 2026. Johns Hopkins pays $88K–$110K; UMMC Shock Trauma adds trauma differentials. Maryland state + Baltimore City income tax (up to 9%) is the critical take-home variable.',
     category: 'Salary Data',
@@ -119,6 +127,7 @@ const allBlogPosts: BlogPost[] = [
   {
     slug: 'how-we-calculate-nurse-salary-estimates',
     title: 'How NurseSalaryIntel Calculates Nurse Salary Estimates',
+    metaTitle: 'How NurseSalaryIntel Calculates Salary Estimates',
     date: '2026-05-10',
     excerpt: 'Every salary figure on this site starts with BLS OEWS data, cross-referenced against job postings and regional conditions. Here is exactly how our 2026 estimates are built — and what they cannot tell you.',
     category: 'Salary Data',
@@ -134,6 +143,7 @@ const allBlogPosts: BlogPost[] = [
   {
     slug: 'houston-rn-salary-2026',
     title: 'Houston RN Salary 2026: How Much Do Nurses Make in Houston, TX?',
+    metaTitle: 'Houston RN Salary 2026: What Nurses Earn',
     date: '2026-05-10',
     excerpt: 'Houston RNs earn $83,500/yr on average in 2026. Texas has no state income tax — adding thousands to real take-home pay. See pay at Houston Methodist, Memorial Hermann, and the Texas Medical Center.',
     category: 'Salary Data',
@@ -149,6 +159,7 @@ const allBlogPosts: BlogPost[] = [
   {
     slug: 'seattle-rn-salary-2026',
     title: 'Seattle RN Salary 2026: How Much Do Nurses Make in Seattle, WA?',
+    metaTitle: 'Seattle RN Salary 2026: What Nurses Earn',
     date: '2026-05-10',
     excerpt: "Seattle RNs earn $110,000/yr — among the highest in the US. Washington has no state income tax. See pay at UW Medical Center, Seattle Children's, Swedish Health, and Virginia Mason.",
     category: 'Salary Data',
@@ -164,6 +175,7 @@ const allBlogPosts: BlogPost[] = [
   {
     slug: 'atlanta-rn-salary-2026',
     title: 'Atlanta RN Salary 2026: How Much Do Nurses Make in Atlanta, GA?',
+    metaTitle: 'Atlanta RN Salary 2026: What Nurses Earn',
     date: '2026-05-10',
     excerpt: "Atlanta RNs earn $79,000/yr on average in 2026 with a lower cost of living than comparable metros. Grady Memorial offers one of the Southeast's best PSLF opportunities. See pay at Emory, Northside, and Wellstar.",
     category: 'Salary Data',
@@ -179,6 +191,7 @@ const allBlogPosts: BlogPost[] = [
   {
     slug: 'nurse-salary-negotiation-guide-2026',
     title: '30% of Nurses Never Negotiate Salary — Here\'s What the Data Says to Do',
+    metaTitle: 'Nurse Salary Negotiation Guide 2026',
     date: '2026-05-09',
     excerpt:
       'A Nurse.com survey of 2,500+ RNs found 30% never negotiate salary, yet APRNs who do earn significantly more. Real recruiter insights and step-by-step tactics for your next offer.',
@@ -203,6 +216,7 @@ const allBlogPosts: BlogPost[] = [
   {
     slug: 'non-compete-clause-nursing-contract',
     title: 'What Is a Non-Compete Clause in a Nursing Contract? (And Should You Sign It)',
+    metaTitle: 'Non-Compete Clauses in Nursing Contracts Explained',
     date: '2026-04-01',
     excerpt: 'Non-compete clauses are showing up more in nursing offers. Here\'s exactly what they mean, what to watch out for, and how to push back.',
     category: 'Contract Red Flags',
@@ -261,6 +275,7 @@ const allBlogPosts: BlogPost[] = [
   {
     slug: 'travel-nurse-vs-staff-nurse-salary-2026-v1',
     title: 'Travel Nurse vs Staff Nurse Salary 2026: The Real Numbers',
+    metaTitle: 'Travel vs Staff Nurse Salary 2026: Real Numbers',
     date: '2026-04-01',
     excerpt: 'Travel nurses earn more — but after taxes, housing, and gaps between contracts, is the math actually better? We broke down the real numbers.',
     category: 'Travel Nursing',
@@ -327,6 +342,7 @@ const allBlogPosts: BlogPost[] = [
   {
     slug: 'how-to-negotiate-sign-on-bonus-nursing',
     title: 'How to Negotiate a Sign-On Bonus as a New Grad RN (Scripts Included)',
+    metaTitle: 'Negotiate a Nursing Sign-On Bonus as a New Grad',
     date: '2026-04-01',
     excerpt: 'Yes, new grads can negotiate sign-on bonuses. Here\'s exactly how to ask — including the word-for-word email that works.',
     category: 'Negotiation',
@@ -394,6 +410,7 @@ Looking forward to hearing from you."
   {
     slug: 'nursing-contract-red-flags-checklist',
     title: '10 Nursing Contract Red Flags to Check Before You Sign (2026)',
+    metaTitle: '10 Nursing Contract Red Flags to Check (2026)',
     date: '2026-04-01',
     excerpt: 'Most nurses sign without reading. These 10 clauses can cost you thousands — or trap you in a job you can\'t leave.',
     category: 'Contract Red Flags',
@@ -446,6 +463,7 @@ Looking forward to hearing from you."
   {
     slug: 'icu-travel-nurse-salary-2026',
     title: 'ICU Travel Nurse Salary 2026: What You Can Actually Make',
+    metaTitle: 'ICU Travel Nurse Salary 2026: Real Earnings',
     date: '2026-03-28',
     excerpt: 'ICU is one of the highest-paying specialties in travel nursing. Here\'s what top packages look like, what to watch out for, and how to negotiate your next contract.',
     category: 'Travel Nursing',
@@ -511,6 +529,7 @@ Looking forward to hearing from you."
   {
     slug: 'travel-nurse-housing-stipend-tax-rules',
     title: 'Travel Nurse Housing Stipend: Is Yours Tax-Free? (IRS Rules Explained)',
+    metaTitle: 'Travel Nurse Housing Stipend: IRS Tax Rules',
     date: '2026-03-25',
     excerpt: 'A taxable housing stipend can cost you $8,000–$15,000/year in extra taxes. Here\'s how to know if yours qualifies — and what to do if it doesn\'t.',
     category: 'Contract Red Flags',
@@ -578,6 +597,7 @@ Looking forward to hearing from you."
   {
     slug: 'new-grad-rn-salary-by-state-2026',
     title: 'New Grad RN Salary by State 2026: What to Expect in Your First Year',
+    metaTitle: 'New Grad RN Salary by State 2026',
     date: '2026-03-20',
     excerpt: 'Starting salaries for new grad RNs vary by over $30,000 depending on state. Here\'s what you can realistically expect — and which states pay the most.',
     category: 'Salary Data',
@@ -645,6 +665,7 @@ Looking forward to hearing from you."
   {
     slug: 'breaking-travel-nursing-contract-consequences',
     title: 'What Happens If You Break a Travel Nursing Contract?',
+    metaTitle: 'Breaking a Travel Nursing Contract: Consequences',
     date: '2026-03-15',
     excerpt: 'Leaving a travel contract early can cost you thousands — or nothing. It depends entirely on how the contract is written. Here\'s what to know before you sign.',
     category: 'Contract Red Flags',
@@ -709,6 +730,7 @@ Looking forward to hearing from you."
   {
     slug: 'nursing-contract-audit-kit-what-it-includes',
     title: 'Free Nursing Contract Audit Kit: What\'s Inside and Who Should Use It',
+    metaTitle: 'Nursing Contract Audit Kit: What\'s Included',
     date: '2026-04-14',
     excerpt: 'A clause-by-clause review kit for travel and staff nurse contracts — checklist, red-flag guide, and word-for-word negotiation scripts. Free download.',
     category: 'Contract Red Flags',
@@ -772,6 +794,7 @@ Looking forward to hearing from you."
   {
     slug: 'travel-nurse-salary-by-state-2026',
     title: 'Travel Nurse Salary by State 2026: All 50 States Ranked',
+    metaTitle: 'Travel Nurse Salary by State 2026: 50 States',
     date: '2026-04-15',
     excerpt: 'See what travel nurses actually earn in every state in 2026 — weekly pay, taxable vs stipend breakdown, and the top 10 states to work right now.',
     category: 'Travel Nursing',
@@ -932,6 +955,7 @@ Looking forward to hearing from you."
   {
     slug: 'crna-salary-by-state-2026',
     title: 'CRNA Salary by State 2026: Highest and Lowest Paying States',
+    metaTitle: 'CRNA Salary by State 2026: Best & Worst States',
     date: '2026-04-15',
     excerpt: 'Certified Registered Nurse Anesthetists earn six figures in every state — but the spread from top to bottom is over $100,000. Here\'s the full 2026 breakdown.',
     category: 'Salary Data',
@@ -1099,6 +1123,7 @@ Looking forward to hearing from you."
   {
     slug: 'how-to-negotiate-travel-nursing-contract',
     title: 'How to Negotiate a Travel Nursing Contract: Scripts That Actually Work',
+    metaTitle: 'Negotiate a Travel Nursing Contract: Scripts',
     date: '2026-04-15',
     excerpt: 'Most travel nurses sign the first offer. Here\'s the exact process — with phone scripts and email templates — to negotiate every part of a travel contract.',
     category: 'Negotiation',
@@ -1225,6 +1250,7 @@ Thanks,<br>
   {
     slug: 'travel-nurse-pay-package-breakdown',
     title: 'Travel Nurse Pay Package Breakdown: Taxable vs Tax-Free Stipends',
+    metaTitle: 'Travel Nurse Pay Package: Taxable vs Tax-Free',
     date: '2026-04-15',
     excerpt: 'A $2,400/week travel contract can take home more than $2,800/week — or less than $1,800 — depending on the pay package. Here\'s how to decode it.',
     category: 'Travel Nursing',
@@ -1399,6 +1425,7 @@ Thanks,<br>
   {
     slug: 'rn-salary-by-state-2026',
     title: 'RN Salary by State 2026: Complete 50-State Guide',
+    metaTitle: 'RN Salary by State 2026: 50-State Guide',
     date: '2026-04-15',
     excerpt: 'What registered nurses actually earn in every state in 2026 — base pay, cost-of-living adjusted rankings, and where new grads should consider relocating.',
     category: 'Salary Data',
@@ -1611,6 +1638,7 @@ Thanks,<br>
   {
     slug: 'np-salary-guide-2026',
     title: 'Nurse Practitioner Salary Guide 2026: Every Specialty Ranked',
+    metaTitle: 'Nurse Practitioner Salary 2026: Every Specialty',
     date: '2026-04-15',
     excerpt: 'NP pay varies by $70,000+ across specialties. Here\'s what every NP track earns in 2026 — plus which pay more than others for the same credential.',
     category: 'Salary Data',
@@ -1780,6 +1808,7 @@ Thanks,<br>
   {
     slug: 'california-nurse-salary-2026',
     title: 'California Nurse Salary 2026: Highest Pay in the Nation (And What It Takes Home)',
+    metaTitle: 'California Nurse Salary 2026: Highest in Nation',
     date: '2026-04-15',
     excerpt: 'California RNs earn more than any other state — but taxes, cost of living, and contract traps can cut that advantage fast. Here\'s the full picture.',
     category: 'Salary Data',
@@ -2491,6 +2520,7 @@ Thanks,<br>
   {
     slug: 'night-shift-differential-pay',
     title: 'Night Shift Differentials: What Nurses Are Actually Owed (2026)',
+    metaTitle: 'Night Shift Differentials: What Nurses Are Owed',
     date: '2026-04-15',
     excerpt: 'Night shift nurses leave thousands on the table when differentials are poorly written into their contracts. Here\'s what 2026 night differentials look like and how to negotiate them.',
     category: 'Negotiation',
@@ -2944,6 +2974,7 @@ Thanks,<br>
   {
     slug: 'nursing-salary-by-specialty-2026',
     title: 'Nursing Salary by Specialty 2026: Complete Pay Guide for Every Role',
+    metaTitle: 'Nursing Salary by Specialty 2026: Every Role',
     date: '2026-04-15',
     excerpt: 'From CRNA at $214K–$260K to home health at $72K–$95K — the definitive 2026 guide to nursing salary by specialty covers every major role, travel rates, and the fastest paths to higher pay.',
     category: 'Salary Data',
@@ -4130,6 +4161,7 @@ Thanks,<br>
     slug: 'travel-nurse-vs-staff-nurse-salary-2026',
     href: '/travel-nurse-vs-staff-nurse-salary-2026/',
     title: 'Travel Nurse vs Staff Nurse Salary 2026: Which Pays More After Taxes?',
+    metaTitle: 'Travel vs Staff Nurse Salary 2026: Real Numbers',
     date: '2026-04-29',
     excerpt: 'Travel nurses gross $95,000-$130,000/year vs staff nurses at $77,600. After housing costs and benefit gaps, the real net advantage is $15,000-$35,000. The actual after-tax math nurses use to decide.',
     category: 'Travel Nursing',

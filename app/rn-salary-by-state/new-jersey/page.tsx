@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'New Jersey RN Salary 2026: $93,230/yr — NYC Proximity Premium Explained',
+  title: 'New Jersey RN Salary 2026: $93,230/yr — NYC Premium Explained',
   description:
     'New Jersey RNs average $93,230/yr ($44.82/hr) in 2026 — one of the top 5 states nationally. See pay by city, top employers RWJBarnabas & Hackensack Meridian, and the NJ income tax impact.',
 };

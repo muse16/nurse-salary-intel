@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Nurse Salary by Specialty 2026: CRNA $214K, ICU $95K, ER $89K — Full Rankings',
+  title: 'Nurse Salary by Specialty 2026: CRNA $214K, ICU $95K, ER $89K',
   description:
     'CRNAs earn $214K, ICU nurses $95K, ER nurses $89K in 2026. Full salary rankings for 20+ nursing specialties with hourly rates and BLS data.',
 };

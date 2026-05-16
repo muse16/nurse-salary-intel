@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Highest Paying States (2026): Hourly Pay + Highest Paying Cities',
+  title: 'Highest Paying States for RNs (2026): Pay + Top Cities',
   description:
     'See the average RN salary in the highest paying states for 2026. Compare hourly pay, top cities, and earning potential for registered nurses.',
 };

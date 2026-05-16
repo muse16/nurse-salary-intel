@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const keywords = [post.focusKeyword, ...(post.secondaryKeywords ?? [])];
   const url = `https://nursesalaryintel.com/blog/${post.slug}`;
   return {
-    title: `${post.title} | Nurse Salary Intelligence`,
+    title: `${post.metaTitle ?? post.title} | NurseSalaryIntel`,
     description,
     keywords,
     alternates: { canonical: url },

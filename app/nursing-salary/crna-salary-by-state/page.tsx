@@ -6,7 +6,7 @@ import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'CRNA Salary by State 2026: $214,200/yr National Avg — California Pays $258K',
+  title: 'CRNA Salary by State 2026: $214,200/yr Avg — California $258K',
   description:
     'CRNAs earn $214,200/yr nationally in 2026. California tops out at $258K. See all 50 states ranked, how CRNA pay compares to anesthesiologists, and strategies to maximize earnings.',
 };
