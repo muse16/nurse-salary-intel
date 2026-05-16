@@ -45,7 +45,7 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
               <div className="bg-gradient-to-r from-primary to-blue-800 px-8 md:px-12 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                 <div>
                   <span className="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full mb-2 uppercase tracking-wide">Free Tool — No Sign-Up Required</span>
-                  <h1 className="font-headline font-bold text-2xl md:text-3xl text-white">Nurse Salary Calculator</h1>
+                  <h2 className="font-headline font-bold text-2xl md:text-3xl text-white">Nurse Salary Calculator</h2>
                   <p className="text-blue-100 text-sm mt-1">Estimate your RN pay by state, specialty, and experience using real BLS data.</p>
                 </div>
                 <div className="hidden md:flex items-center gap-2 bg-white/10 rounded-xl px-5 py-3 backdrop-blur-sm">
