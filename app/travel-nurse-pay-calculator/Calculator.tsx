@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
+import SiteNav from '@/components/SiteNav';
 import { calculateContract, getStateTaxRate, getStateList } from './calculateContract';
 import { DEFAULT_CONTRACT_A, DEFAULT_CONTRACT_B } from './types';
 import type { ContractInputs, ContractResults } from './types';
@@ -476,7 +477,8 @@ export default function TravelNurseCalculator() {
 
   return (
     <div className="min-h-screen bg-surface">
-      <div className={`${compareMode ? 'max-w-5xl' : 'max-w-4xl'} mx-auto px-4 py-8 transition-all duration-300`}>
+      <SiteNav />
+      <div className={`${compareMode ? 'max-w-5xl' : 'max-w-4xl'} mx-auto px-4 pb-8 pt-24 transition-all duration-300`}>
 
         {/* Breadcrumbs */}
         <nav className="text-sm text-on-surface-variant mb-6" aria-label="Breadcrumb">

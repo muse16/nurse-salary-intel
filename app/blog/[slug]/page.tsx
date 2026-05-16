@@ -115,19 +115,6 @@ export default async function BlogPostPage({ params }: PageProps) {
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
-        {/* Free audit teaser + unified $9 CTA */}
-        <div className="mt-8 bg-gradient-to-br from-blue-900 to-indigo-900 rounded-2xl p-7 text-white">
-          <h2 className="text-xl font-bold mb-2">Free Contract Red Flag Audit</h2>
-          <p className="text-blue-200 text-sm mb-5">
-            Review your offer letter clause by clause. Get a risk score in 3 minutes — no email required.
-          </p>
-          <Link
-            href="/audit"
-            className="inline-block bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold py-2.5 px-6 rounded-xl transition-colors text-sm"
-          >
-            Start Free Audit
-          </Link>
-        </div>
         <ContractAuditCTA variant="banner" />
 
         {/* Ad mid */}
