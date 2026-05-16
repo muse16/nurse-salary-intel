@@ -102,6 +102,9 @@ const nextConfig: NextConfig = {
         destination: '/nursing-salary/icu-nurse-salary',
         permanent: true,
       },
+      // ── Fix 404s: Bing-reported travel nursing URLs ──────────────────────
+      { source: '/travel-nursing-pay-2026', destination: '/travel-nursing/salary-guide-2026', permanent: true },
+      { source: '/nursing-salary/travel-nurse-salary', destination: '/travel-nursing/salary-guide-2026', permanent: true },
       // ── Fix 404s: /specialty/* routes don't exist ────────────────────────
       { source: '/specialty/icu', destination: '/nursing-salary/icu-nurse-salary', permanent: true },
       { source: '/specialty/emergency-room', destination: '/icu-vs-er-nurse-salary-2026', permanent: true },
