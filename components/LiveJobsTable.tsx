@@ -7,21 +7,29 @@ export default function LiveJobsTable() {
   const [jobs, setJobs] = useState<LiveJob[]>([]);
   const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(true);
+  const [loadingMore, setLoadingMore] = useState(false);
+  const [page, setPage] = useState(1);
   const [error, setError] = useState('');
   const [roleSearch, setRoleSearch] = useState('');
   const [locationSearch, setLocationSearch] = useState('');
   const [query, setQuery] = useState({ what: 'registered nurse', where: '' });
 
+  // Initial / new-search fetch — replaces the list
   const fetchJobs = useCallback(async () => {
     setLoading(true);
     setError('');
     try {
-      const params = new URLSearchParams({ what: query.what, ...(query.where && { where: query.where }) });
+      const params = new URLSearchParams({
+        what: query.what,
+        ...(query.where && { where: query.where }),
+        page: '1',
+      });
       const res = await fetch(`/api/jobs?${params}`);
       const data = await res.json();
       if (data.error) throw new Error(data.error);
       setJobs(data.jobs);
       setTotal(data.total);
+      setPage(1);
     } catch (err: any) {
       setError(err.message || 'Failed to load jobs');
     } finally {
@@ -30,6 +38,28 @@ export default function LiveJobsTable() {
   }, [query]);
 
   useEffect(() => { fetchJobs(); }, [fetchJobs]);
+
+  // Load more — appends to existing list
+  const handleLoadMore = async () => {
+    setLoadingMore(true);
+    try {
+      const nextPage = page + 1;
+      const params = new URLSearchParams({
+        what: query.what,
+        ...(query.where && { where: query.where }),
+        page: String(nextPage),
+      });
+      const res = await fetch(`/api/jobs?${params}`);
+      const data = await res.json();
+      if (data.error) throw new Error(data.error);
+      setJobs(prev => [...prev, ...data.jobs]);
+      setPage(nextPage);
+    } catch {
+      // silently fail — user can try again
+    } finally {
+      setLoadingMore(false);
+    }
+  };
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -53,6 +83,8 @@ export default function LiveJobsTable() {
     return `${days}d ago`;
   };
 
+  const hasMore = jobs.length < total;
+
   return (
     <div className="overflow-hidden rounded-2xl ghost-border bg-surface-container-lowest shadow-sm">
       <div className="px-6 pt-6 pb-2">
@@ -75,7 +107,7 @@ export default function LiveJobsTable() {
           />
           <input
             type="text"
-            placeholder='City or state'
+            placeholder="City or state"
             value={locationSearch}
             onChange={e => setLocationSearch(e.target.value)}
             className="sm:w-44 bg-surface-container-low border-none rounded-xl py-3 px-4 focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all text-on-surface placeholder:text-outline outline-none text-sm"
@@ -153,9 +185,31 @@ export default function LiveJobsTable() {
         )}
       </div>
 
+      {/* Footer: count + load more */}
       {!loading && !error && (
-        <div className="px-6 py-4 text-sm text-on-surface-variant bg-surface-container-low/50">
-          Showing {jobs.length} of {total.toLocaleString()} live listings
+        <div className="px-6 py-4 bg-surface-container-low/50 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <span className="text-sm text-on-surface-variant">
+            Showing {jobs.length.toLocaleString()} of {total.toLocaleString()} live listings
+          </span>
+          {hasMore && (
+            <button
+              onClick={handleLoadMore}
+              disabled={loadingMore}
+              className="inline-flex items-center gap-2 gradient-primary text-on-primary px-5 py-2.5 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+            >
+              {loadingMore ? (
+                <>
+                  <svg className="animate-spin w-4 h-4" fill="none" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+                  </svg>
+                  Loading…
+                </>
+              ) : (
+                'Load more listings'
+              )}
+            </button>
+          )}
         </div>
       )}
     </div>
