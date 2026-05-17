@@ -4,6 +4,7 @@ import { useState, useCallback } from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import SiteNav from '@/components/SiteNav';
 
 // Metadata can't be exported from a client component — wrap in layout pattern
 // We'll handle this via generateMetadata in a server wrapper; for now, inline
@@ -110,7 +111,8 @@ export default function RNSalaryCalculator() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <SiteNav />
+      <div className="max-w-4xl mx-auto px-4 pb-8 pt-24">
         {/* Breadcrumbs */}
         <nav className="text-sm text-on-surface-variant mb-6" aria-label="Breadcrumb">
           <ol className="flex flex-wrap gap-1">

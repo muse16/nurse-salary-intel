@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'NICU Nurse Salary 2026: Hourly Pay, State Breakdown & How to Earn More',
+  title: 'NICU Nurse Salary 2026: Hourly Pay, State Breakdown & Earn More',
   description: 'NICU nurse salary 2026: $80,000–$115,000/year, $38–$55/hr. State-by-state pay breakdown, RNC-NIC certification impact, shift differentials, and top-paying hospitals.',
   alternates: { canonical: 'https://nursesalaryintel.com/nicu-nurse-salary-2026' },
 };

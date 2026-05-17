@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Critical Care Nurse Salary 2026: $98,400/yr Avg + ICU Pay by State & Cert',
+  title: 'Critical Care Nurse Salary 2026: $98,400/yr + ICU Pay by State',
   description: 'Critical care nurse salary 2026: $98,400/yr avg nationally. ICU RN pay by state, hospital system, and CCRN certification — plus how to earn $130K+ in the ICU.',
 };
 

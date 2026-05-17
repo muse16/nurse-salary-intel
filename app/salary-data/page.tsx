@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Nursing Salary Database 2026: 10,000+ Real Positions by State and Specialty',
+  title: 'Nursing Salary Database 2026: Real Pay by State & Specialty',
   description:
     'Browse the most complete nursing salary database. Filter by state, city, specialty, and experience level. Updated monthly with BLS and real-world contract data.',
   openGraph: {

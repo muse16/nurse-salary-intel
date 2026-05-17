@@ -5,7 +5,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: '30% of Nurses Never Negotiate Salary — Here\'s What the Data Says to Do | NurseSalaryIntel',
+  title: '30% of Nurses Never Negotiate Salary — What the Data Says to Do',
   description:
     'A Nurse.com survey of more than 2,500 RNs found 30% never negotiate salary, yet APRNs who do earn significantly more. Real recruiter insights and step-by-step tactics for your next offer.',
   openGraph: {

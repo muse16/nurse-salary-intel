@@ -7,7 +7,7 @@ import SalaryCalculator from '@/components/SalaryCalculator';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Per Diem Nurse Salary 2026: Is $66.50/hr Worth It? Real Take-Home Math',
+  title: 'Per Diem Nurse Salary 2026: Is $66.50/hr Worth It? Take-Home Math',
   description: 'Per diem RN averages $66.50/hr nationally ($55–$95/hr by state). Does the premium beat staff pay after self-funding benefits? Full take-home math breakdown.',
   alternates: { canonical: 'https://nursesalaryintel.com/per-diem-nurse-salary-2026' },
 };

@@ -6,7 +6,7 @@ import SalaryTable from '@/components/SalaryTable';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'CRNA Salary 2026: $214,000/yr National Average + Top States & Settings',
+  title: 'CRNA Salary 2026: $214,000/yr Avg + Top States & Settings',
   description: 'CRNA salary 2026: $214,000/yr national average ($102.88/hr). See pay by state, practice setting, DNAP vs. MSN, and whether CRNA school is worth the investment.',
   alternates: { canonical: 'https://nursesalaryintel.com/crna-salary-2026' },
 };

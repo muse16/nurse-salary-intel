@@ -6,7 +6,7 @@ import SalaryTable from '@/components/SalaryTable';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Nurse Sign-On Bonuses 2026: How Much to Expect & How to Negotiate More',
+  title: 'Nurse Sign-On Bonuses 2026: How Much to Expect & Negotiate More',
   description: 'Hospitals are offering $5K–$30K sign-on bonuses. See what\'s normal for your specialty and state — and how to negotiate higher.',
   alternates: { canonical: 'https://nursesalaryintel.com/nurse-sign-on-bonus-guide-2026' },
 };

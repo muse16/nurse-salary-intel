@@ -6,7 +6,7 @@ import SalaryTable from '@/components/SalaryTable';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'New Grad RN Salary 2026: $62K–$88K First-Year Pay by State + Sign-On Bonuses',
+  title: 'New Grad RN Salary 2026: $62K–$88K First-Year Pay by State',
   description: 'New graduate RN salary 2026: $62,000–$88,000 depending on state. See first-year pay by state, sign-on bonuses, residency stipends, and how to maximize your first offer.',
   alternates: { canonical: 'https://nursesalaryintel.com/new-grad-rn-salary-2026' },
 };

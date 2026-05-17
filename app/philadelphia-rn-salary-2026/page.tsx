@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Philadelphia RN Salary 2026: $84,200/yr Avg + Penn Medicine vs CHOP Pay',
+  title: 'Philadelphia RN Salary 2026: $84,200/yr + Penn Medicine vs CHOP',
   description: 'Philadelphia RN salary 2026: $84,200/yr avg ($40.48/hr). See pay at Penn Medicine, CHOP, Jefferson, and Temple — plus city wage tax take-home math and travel nurse rates.',
 };
 

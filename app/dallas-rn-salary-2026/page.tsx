@@ -7,7 +7,7 @@ import SalaryCalculator from '@/components/SalaryCalculator';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Dallas RN Salary 2026: $80,910/yr + UT Southwestern, Baylor & Parkland Pay',
+  title: 'Dallas RN Salary 2026: $80,910/yr + Top Hospital Pay',
   description: 'Dallas RN salary 2026: $80,910 avg, $38.90/hr. Compare pay at UT Southwestern, Baylor Scott & White, Parkland, plus Fort Worth, sign-ons & negotiation tips.',
   alternates: { canonical: 'https://nursesalaryintel.com/dallas-rn-salary-2026' },
 };

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Miami RN Salary 2026: $90,000–$97,000/yr + Jackson Health & Baptist Pay',
+  title: 'Miami RN Salary 2026: $90K–$97K/yr + Jackson Health & Baptist Pay',
   description: 'Miami RNs earn $90,000–$97,000/yr in 2026 — Florida\'s highest-paying metro. Jackson Health, Baptist, UM/Sylvester breakdown + ICU, ER & L&D specialty rates.',
 };
 

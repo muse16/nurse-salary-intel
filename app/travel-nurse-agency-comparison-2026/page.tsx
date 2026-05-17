@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Best Travel Nurse Agencies 2026: Pay Comparison + Which Agency Pays Most',
+  title: 'Best Travel Nurse Agencies 2026: Pay Comparison & Top Picks',
   description: 'Best travel nurse agencies 2026 ranked by pay, transparency, and contract terms. Compare AMN, Aya, FlexCare, Atlas, and 8 more — plus how to negotiate your package.',
 };
 

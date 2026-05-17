@@ -6,7 +6,7 @@ import SalaryTable from '@/components/SalaryTable';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Chicago RN Salary 2026: $83,580/yr Avg + Northwestern, Rush & U of C Pay',
+  title: 'Chicago RN Salary 2026: $83,580/yr + Top Hospital Pay',
   description: 'Chicago RN salary 2026: $83,580/yr average, $40.18/hr. Pay by hospital, sign-on bonuses, specialty premiums, and how Chicago compares to other Midwest metros.',
   alternates: { canonical: 'https://nursesalaryintel.com/chicago-rn-salary-2026' },
 };

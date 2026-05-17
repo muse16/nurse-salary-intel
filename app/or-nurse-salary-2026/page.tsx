@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'OR Nurse Salary 2026: $102,800/yr Avg + Perioperative Pay by State & Role',
+  title: 'OR Nurse Salary 2026: $102,800/yr + Perioperative Pay by State',
   description: 'OR nurse (perioperative RN) salary 2026: $102,800/yr national avg. Pay by state, hospital, scrub vs. circulator role, CNOR certification differential, and travel rates.',
 };
 

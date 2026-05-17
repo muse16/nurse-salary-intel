@@ -6,7 +6,7 @@ import SalaryTable from '@/components/SalaryTable';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Austin RN Salary 2026: $86,320/yr + Top Hospital Pay & Negotiation Tips',
+  title: 'Austin RN Salary 2026: $86,320/yr + Hospital Pay & Tips',
   description: 'Austin RN salary 2026: $86,320 avg, $41.50/hr. Compare pay at St. David\'s, Ascension Dell Seton, and UT Health Austin — plus cost-of-living reality check.',
   alternates: { canonical: 'https://nursesalaryintel.com/austin-rn-salary-2026' },
   openGraph: {
