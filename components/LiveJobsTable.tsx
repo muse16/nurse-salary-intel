@@ -8,7 +8,8 @@ export default function LiveJobsTable() {
   const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-  const [search, setSearch] = useState('');
+  const [roleSearch, setRoleSearch] = useState('');
+  const [locationSearch, setLocationSearch] = useState('');
   const [query, setQuery] = useState({ what: 'registered nurse', where: '' });
 
   const fetchJobs = useCallback(async () => {
@@ -32,7 +33,10 @@ export default function LiveJobsTable() {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    setQuery({ what: search || 'registered nurse', where: '' });
+    setQuery({
+      what: roleSearch.trim() || 'registered nurse',
+      where: locationSearch.trim(),
+    });
   };
 
   const formatSalary = (min: number | null, max: number | null) => {
@@ -61,13 +65,20 @@ export default function LiveJobsTable() {
         <p className="text-sm text-on-surface-variant mb-4">Real openings with direct apply links</p>
 
         {/* Search */}
-        <form onSubmit={handleSearch} className="flex gap-2 mb-2">
+        <form onSubmit={handleSearch} className="flex flex-col sm:flex-row gap-2 mb-2">
           <input
             type="text"
-            placeholder='e.g. "ICU nurse", "travel RN", "CRNA"'
-            value={search}
-            onChange={e => setSearch(e.target.value)}
+            placeholder='Role: e.g. "ICU nurse", "travel RN", "CRNA"'
+            value={roleSearch}
+            onChange={e => setRoleSearch(e.target.value)}
             className="flex-1 bg-surface-container-low border-none rounded-xl py-3 px-4 focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all text-on-surface placeholder:text-outline outline-none text-sm"
+          />
+          <input
+            type="text"
+            placeholder='City or state'
+            value={locationSearch}
+            onChange={e => setLocationSearch(e.target.value)}
+            className="sm:w-44 bg-surface-container-low border-none rounded-xl py-3 px-4 focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all text-on-surface placeholder:text-outline outline-none text-sm"
           />
           <button
             type="submit"

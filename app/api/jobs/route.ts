@@ -51,16 +51,21 @@ export async function GET(request: NextRequest) {
 
     const data = await res.json();
 
-    const jobs: LiveJob[] = (data.results || []).map((job: any) => ({
-      id: job.id,
-      title: job.title,
-      company: job.company?.display_name || 'Unknown',
-      location: job.location?.display_name || '',
-      salary_min: job.salary_min || null,
-      salary_max: job.salary_max || null,
-      apply_url: job.redirect_url,
-      posted: job.created,
-    }));
+    // Post-filter: only keep nursing-related jobs
+    const NURSE_RE = /\b(nurse|nursing|rn|lpn|cna|crna|cnm|np|nicu|icu nurse|picu|pacu|l&d|labor|midwi|practitioner|anestheti)\b/i;
+
+    const jobs: LiveJob[] = (data.results || [])
+      .filter((job: any) => NURSE_RE.test(job.title || ''))
+      .map((job: any) => ({
+        id: job.id,
+        title: job.title,
+        company: job.company?.display_name || 'Unknown',
+        location: job.location?.display_name || '',
+        salary_min: job.salary_min || null,
+        salary_max: job.salary_max || null,
+        apply_url: job.redirect_url,
+        posted: job.created,
+      }));
 
     return NextResponse.json({ jobs, total: data.count });
   } catch (err) {
