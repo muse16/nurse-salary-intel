@@ -128,7 +128,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             <h2 className="text-lg font-bold text-gray-900 mb-4">Related Articles</h2>
             <div className="space-y-4">
               {related.map((p) => (
-                <Link key={p.slug} href={`/blog/${p.slug}`} className="block group">
+                <Link key={p.slug} href={p.href ?? `/blog/${p.slug}`} className="block group">
                   <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 hover:border-blue-300 hover:shadow-md transition-all">
                     <div className="flex items-center gap-2 mb-2">
                       <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${categoryColors[p.category] ?? 'bg-gray-100 text-gray-600'}`}>
