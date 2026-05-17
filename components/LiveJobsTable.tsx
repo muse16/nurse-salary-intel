@@ -10,6 +10,8 @@ export default function LiveJobsTable() {
   const [loadingMore, setLoadingMore] = useState(false);
   const [page, setPage] = useState(1);
   const [error, setError] = useState('');
+  const [sortKey, setSortKey] = useState<'title' | 'location' | 'salary' | 'posted'>('posted');
+  const [sortDir, setSortDir] = useState<'asc' | 'desc'>('desc');
   const [roleSearch, setRoleSearch] = useState('');
   const [locationSearch, setLocationSearch] = useState('');
   const [query, setQuery] = useState({ what: 'registered nurse', where: '' });
@@ -68,6 +70,32 @@ export default function LiveJobsTable() {
       where: locationSearch.trim(),
     });
   };
+
+  const handleSort = (key: typeof sortKey) => {
+    if (sortKey === key) {
+      setSortDir(d => d === 'asc' ? 'desc' : 'asc');
+    } else {
+      setSortKey(key);
+      setSortDir(key === 'salary' ? 'desc' : 'asc');
+    }
+  };
+
+  const sortedJobs = [...jobs].sort((a, b) => {
+    let cmp = 0;
+    if (sortKey === 'title') {
+      cmp = a.title.localeCompare(b.title);
+    } else if (sortKey === 'location') {
+      cmp = a.location.localeCompare(b.location);
+    } else if (sortKey === 'salary') {
+      const aVal = a.salary_min ?? a.salary_max ?? 0;
+      const bVal = b.salary_min ?? b.salary_max ?? 0;
+      cmp = aVal - bVal;
+    } else {
+      // posted
+      cmp = new Date(a.posted).getTime() - new Date(b.posted).getTime();
+    }
+    return sortDir === 'asc' ? cmp : -cmp;
+  });
 
   const formatSalary = (min: number | null, max: number | null) => {
     if (!min && !max) return 'Not listed';
@@ -141,15 +169,30 @@ export default function LiveJobsTable() {
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="bg-surface-container">
-                <th className="px-6 py-5 font-bold text-on-surface-variant text-sm uppercase tracking-wider">Position & Company</th>
-                <th className="px-6 py-5 font-bold text-on-surface-variant text-sm uppercase tracking-wider">Location</th>
-                <th className="px-6 py-5 font-bold text-on-surface-variant text-sm uppercase tracking-wider">Salary</th>
-                <th className="px-6 py-5 font-bold text-on-surface-variant text-sm uppercase tracking-wider">Posted</th>
+                {([
+                  { key: 'title', label: 'Position & Company' },
+                  { key: 'location', label: 'Location' },
+                  { key: 'salary', label: 'Salary' },
+                  { key: 'posted', label: 'Posted' },
+                ] as const).map(col => (
+                  <th
+                    key={col.key}
+                    onClick={() => handleSort(col.key)}
+                    className="px-6 py-5 font-bold text-on-surface-variant text-sm uppercase tracking-wider cursor-pointer select-none hover:text-on-surface transition-colors"
+                  >
+                    <span className="inline-flex items-center gap-1.5">
+                      {col.label}
+                      <span className="text-xs opacity-50">
+                        {sortKey === col.key ? (sortDir === 'asc' ? '▲' : '▼') : '⇅'}
+                      </span>
+                    </span>
+                  </th>
+                ))}
                 <th className="px-6 py-5 font-bold text-on-surface-variant text-sm uppercase tracking-wider">Action</th>
               </tr>
             </thead>
             <tbody>
-              {jobs.map((job, idx) => (
+              {sortedJobs.map((job, idx) => (
                 <tr
                   key={job.id}
                   className={`hover:bg-surface-container-low transition-colors ${
