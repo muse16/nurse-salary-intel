@@ -19,17 +19,25 @@ export default function ContactForm() {
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState<Status>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('sending');
 
-    // Build a mailto link with prefilled fields and open it
-    const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
-    const mailtoUrl = `mailto:support@nursesalaryintel.com?subject=${encodeURIComponent(subject || 'Contact from NurseSalaryIntel.com')}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoUrl;
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, subject, message }),
+      });
 
-    // Mark as sent after a short delay
-    setTimeout(() => setStatus('sent'), 800);
+      if (res.ok) {
+        setStatus('sent');
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
   };
 
   const inputClass =
@@ -39,13 +47,29 @@ export default function ContactForm() {
     return (
       <div className="rounded-2xl bg-surface-container-low border border-outline-variant/30 p-8 text-center">
         <div className="text-3xl mb-3">✉️</div>
-        <p className="font-semibold text-on-surface text-lg mb-1">Message ready to send</p>
-        <p className="text-on-surface-variant text-sm">Your email client should have opened with the message pre-filled. Hit send to submit.</p>
+        <p className="font-semibold text-on-surface text-lg mb-1">Your email has been sent.</p>
+        <p className="text-on-surface-variant text-sm">We&apos;ll get back to you as soon as possible.</p>
         <button
           onClick={() => { setStatus('idle'); setName(''); setEmail(''); setSubject(''); setMessage(''); }}
           className="mt-4 text-primary underline text-sm hover:opacity-80"
         >
           Send another message
+        </button>
+      </div>
+    );
+  }
+
+  if (status === 'error') {
+    return (
+      <div className="rounded-2xl bg-surface-container-low border border-outline-variant/30 p-8 text-center">
+        <div className="text-3xl mb-3">⚠️</div>
+        <p className="font-semibold text-on-surface text-lg mb-1">Something went wrong.</p>
+        <p className="text-on-surface-variant text-sm">Please try again or email us directly at support@nursesalaryintel.com.</p>
+        <button
+          onClick={() => setStatus('idle')}
+          className="mt-4 text-primary underline text-sm hover:opacity-80"
+        >
+          Try again
         </button>
       </div>
     );
@@ -121,12 +145,8 @@ export default function ContactForm() {
         disabled={status === 'sending'}
         className="gradient-primary text-on-primary px-6 py-3 rounded-xl font-bold text-sm shadow-sm hover:shadow-md transition-all disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        {status === 'sending' ? 'Opening email…' : 'Send Message'}
+        {status === 'sending' ? 'Sending…' : 'Send Message'}
       </button>
-
-      <p className="text-xs text-on-surface-variant">
-        This will open your default email client with the message pre-filled. Your email is not stored on our servers.
-      </p>
     </form>
   );
 }
