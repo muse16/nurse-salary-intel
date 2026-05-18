@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import SiteNav from '@/components/SiteNav';
 import Link from 'next/link';
+import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -32,8 +33,13 @@ export default function ContactPage() {
 
           <hr className="border-outline-variant/20 my-8" />
 
+          <h2 className="text-xl font-semibold font-headline text-on-surface mt-8 mb-3">Send Us a Message</h2>
+          <ContactForm />
+
+          <hr className="border-outline-variant/20 my-8" />
+
           <h2 className="text-xl font-semibold font-headline text-on-surface mt-8 mb-3">Email</h2>
-          <p>The best way to contact us is by email:</p>
+          <p>Prefer to email directly? Reach us at:</p>
           <p>
             <a href="mailto:support@nursesalaryintel.com" className="text-primary underline hover:opacity-80 font-semibold text-lg">
               support@nursesalaryintel.com
@@ -108,7 +114,7 @@ export default function ContactPage() {
           <hr className="border-outline-variant/20 my-8" />
 
           <p className="text-sm text-on-surface-variant/70">
-            Last Updated: April 23, 2026<br />
+            Last Updated: May 2026<br />
             Contact:{' '}
             <a href="mailto:support@nursesalaryintel.com" className="text-primary underline hover:opacity-80">
               support@nursesalaryintel.com

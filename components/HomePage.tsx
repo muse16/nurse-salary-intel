@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import DataTable from '@/components/DataTable';
-import AdSenseSlot from '@/components/AdSenseSlot';
 import SalaryCalculator from '@/components/SalaryCalculator';
 
 const LiveJobsTable = dynamic(() => import('@/components/LiveJobsTable'), {
@@ -357,13 +356,6 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
           </div>
         </section>
 
-        {/* ── AD SLOT 1 — between calculator and positions ── */}
-        <div className="py-4 px-6 bg-surface-container-low">
-          <div className="max-w-7xl mx-auto">
-            <AdSenseSlot position="header" />
-          </div>
-        </div>
-
         {/* ── POSITIONS TABLE ────────────────────────────── */}
         <section id="positions" className="py-24 px-6 bg-surface-container-low scroll-mt-20">
           <div className="max-w-7xl mx-auto">
@@ -374,13 +366,6 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
             <LiveJobsTable />
           </div>
         </section>
-
-        {/* ── AD SLOT 2 — between positions and browse ── */}
-        <div className="py-4 px-6 bg-surface">
-          <div className="max-w-7xl mx-auto">
-            <AdSenseSlot position="mid-content" />
-          </div>
-        </div>
 
         {/* ── BROWSE SALARIES BY LOCATION — City Image Cards ── */}
         <section id="browse" className="py-24 px-6 bg-surface scroll-mt-20">

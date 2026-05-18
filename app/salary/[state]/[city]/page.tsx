@@ -3,7 +3,6 @@ import DataTable from '@/components/DataTable';
 import MonetizationSlot from '@/components/MonetizationSlot';
 import PremiumAuditCTA from '@/components/PremiumAuditCTA';
 import RecommendedGear from '@/components/RecommendedGear';
-import AdSenseSlot from '@/components/AdSenseSlot';
 import SiteNav from '@/components/SiteNav';
 import Link from 'next/link';
 import { notFound, redirect } from 'next/navigation';
@@ -224,9 +223,6 @@ export default async function CityPage({ params }: PageProps) {
                 </p>
               </div>
             </div>
-
-            {/* AdSense — one placement, mid-content only */}
-            <AdSenseSlot position="mid-content" />
 
             {/* Data Table */}
             <DataTable data={cityData.positions} title="Nursing Positions" />

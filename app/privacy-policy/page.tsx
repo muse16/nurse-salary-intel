@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
             At <strong className="text-on-surface">www.nursesalaryintel.com</strong>, we respect your privacy and are committed to being transparent about the information we collect and how it is used.
           </p>
           <p>This Privacy Policy explains what data we collect, how we use it, and what choices you have as a visitor.</p>
-          <p className="font-semibold text-on-surface">Last Updated: April 23, 2026</p>
+          <p className="font-semibold text-on-surface">Last Updated: May 2026</p>
 
           <hr className="border-outline-variant/20 my-8" />
 
@@ -118,9 +118,11 @@ export default function PrivacyPolicyPage() {
           <ul className="list-disc pl-6 space-y-1">
             <li>Google Analytics (traffic measurement)</li>
             <li>Google AdSense (advertising)</li>
-            <li>Website hosting providers and performance tools</li>
+            <li>AssistLoop (AI chat support widget — may log conversation text to provide responses)</li>
+            <li>Vercel (website hosting and performance)</li>
+            <li>Adzuna (live job listing data)</li>
           </ul>
-          <p>These third-party providers may collect data according to their own privacy policies.</p>
+          <p>These third-party providers may collect data according to their own privacy policies. The AssistLoop chat widget loads an external script from assistloop.ai and processes any messages you send through it on their servers.</p>
 
           <hr className="border-outline-variant/20 my-8" />
 
@@ -199,7 +201,7 @@ export default function PrivacyPolicyPage() {
 
           <hr className="border-outline-variant/20 my-8" />
 
-          <p className="text-sm text-on-surface-variant/70">&copy; 2026 www.nursesalaryintel.com. All rights reserved.</p>
+          <p className="text-sm text-on-surface-variant/70">Last Updated: May 2026 &mdash; &copy; 2026 www.nursesalaryintel.com. All rights reserved.</p>
         </div>
       </main>
     </div>

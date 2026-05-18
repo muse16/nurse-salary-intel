@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import AdSenseSlot from '@/components/AdSenseSlot';
 import SiteNav from '@/components/SiteNav';
 import ContractAuditCTA from '@/components/ContractAuditCTA';
 
@@ -106,9 +105,6 @@ export default async function BlogPostPage({ params }: PageProps) {
           </figure>
         )}
 
-        {/* Ad before content */}
-        <AdSenseSlot position="blog-top" />
-
         {/* Article body */}
         <article
           className="blog-article bg-white rounded-2xl shadow-sm border border-gray-100 px-6 sm:px-10 py-10"
@@ -116,11 +112,6 @@ export default async function BlogPostPage({ params }: PageProps) {
         />
 
         <ContractAuditCTA variant="banner" />
-
-        {/* Ad mid */}
-        <div className="mt-8">
-          <AdSenseSlot position="blog-mid" />
-        </div>
 
         {/* Related posts */}
         {related.length > 0 && (

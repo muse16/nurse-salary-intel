@@ -3,7 +3,6 @@ import DataTable from '@/components/DataTable';
 import MonetizationSlot from '@/components/MonetizationSlot';
 import PremiumAuditCTA from '@/components/PremiumAuditCTA';
 import RecommendedGear from '@/components/RecommendedGear';
-import AdSenseSlot from '@/components/AdSenseSlot';
 import SiteNav from '@/components/SiteNav';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -122,11 +121,6 @@ export default async function HospitalPage({ params }: PageProps) {
           </p>
         </div>
       </header>
-
-      {/* AdSense Header Banner */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <AdSenseSlot position="header" />
-      </div>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Key Stats */}
@@ -261,11 +255,6 @@ export default async function HospitalPage({ params }: PageProps) {
           </div>
         </div>
 
-        {/* Mid-content AdSense */}
-        <div className="mb-8">
-          <AdSenseSlot position="mid-content" />
-        </div>
-
         {/* Data Table and Monetization */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
           <div className="lg:col-span-2">
@@ -275,9 +264,6 @@ export default async function HospitalPage({ params }: PageProps) {
             />
           </div>
           <div className="space-y-6">
-            {/* AdSense Sidebar */}
-            <AdSenseSlot position="sidebar" />
-
             <MonetizationSlot type="jobs" city={hospitalData.city} state={hospitalData.state} />
             <MonetizationSlot type="education" city={hospitalData.city} state={hospitalData.state} />
 
