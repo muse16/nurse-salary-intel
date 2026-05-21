@@ -40,6 +40,7 @@ const allBlogPosts: BlogPost[] = [
     imageAlt: 'Psychiatric nurse in navy scrubs sitting with a patient in a calm well-lit mental health unit — professional clinical setting',
     metaDescription: 'Psychiatric nurses earn $81,000–$89,000/yr on average in 2026. See psych RN pay by state, setting, and experience — plus how inpatient vs. outpatient affects your take-home.',
     href: '/psychiatric-nurse-salary-2026',
+    content: '',
   },
   {
     slug: 'tampa-rn-salary-2026',
@@ -55,6 +56,7 @@ const allBlogPosts: BlogPost[] = [
     imageAlt: 'Registered nurse in navy scrubs standing outside a modern Tampa Florida hospital with palm trees and a clear sky in the background',
     metaDescription: 'Tampa RNs earn $73,000/yr ($35.10/hr) on average in 2026. TGH pays $75K–$96K. See salary by hospital, specialty, and experience — with Florida no-income-tax take-home analysis.',
     href: '/tampa-rn-salary-2026',
+    content: '',
   },
   {
     slug: 'oncology-nurse-salary-2026',
@@ -70,6 +72,7 @@ const allBlogPosts: BlogPost[] = [
     imageAlt: 'Oncology nurse in scrubs reviewing a patient chart in a modern cancer center infusion unit — professional clinical setting with natural light',
     metaDescription: 'Oncology nurses earn $78,000–$98,000/yr in 2026. See onc RN pay by setting, state, and certification — including NCI cancer centers vs. community hospitals.',
     href: '/oncology-nurse-salary-2026',
+    content: '',
   },
   {
     slug: 'detroit-rn-salary-2026',
@@ -85,6 +88,7 @@ const allBlogPosts: BlogPost[] = [
     imageAlt: 'Registered nurse in scrubs standing outside a modern Detroit Michigan hospital — professional and confident with urban skyline in the soft background',
     metaDescription: 'Detroit RNs earn $82,000/yr ($39.42/hr) on average in 2026. Henry Ford Health pays $80K–$102K. See salary by hospital, specialty, and experience — with Michigan tax breakdown.',
     href: '/detroit-rn-salary-2026',
+    content: '',
   },
   {
     slug: 'bsn-nurse-salary-career-paths-2026',
@@ -100,6 +104,7 @@ const allBlogPosts: BlogPost[] = [
     imageAlt: 'BSN nurse in white coat reviewing a career development plan at a hospital desk — professional setting with natural light and confident expression',
     metaDescription: 'BSN nurses have more high-paying options than most realize. See 8 career paths over $85K in 2026 — from ICU and CRNA to travel nursing, informatics, and NP — with real salary ranges.',
     href: '/bsn-nurse-salary-career-paths-2026',
+    content: '',
   },
   // ── Week-10 ────────────────────────────────────────────────────────────────
   {
