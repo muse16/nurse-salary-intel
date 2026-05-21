@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'NurseSalaryIntel Contact Form <onboarding@resend.dev>',
+        from: 'NurseSalaryIntel <noreply@nursesalaryintel.com>',
         to: ['support@nursesalaryintel.com'],
         reply_to: email,
         subject: subject ? `[Contact] ${subject}` : '[Contact] Message from NurseSalaryIntel.com',
