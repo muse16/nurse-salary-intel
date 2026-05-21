@@ -155,6 +155,13 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
 
   // Week 10 — May 2026
   { path: '/travel-nurse-pay-calculator', priority: 0.9, changeFrequency: 'monthly' },
+
+  // Week 11 — May 2026
+  { path: '/psychiatric-nurse-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/tampa-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/oncology-nurse-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/detroit-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/bsn-nurse-salary-career-paths-2026', priority: 0.85, changeFrequency: 'monthly' },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
