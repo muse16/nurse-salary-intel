@@ -6,13 +6,13 @@ import SalaryTable from '@/components/SalaryTable';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Seattle RN Salary 2026: How Much Do Nurses Make in Seattle, WA?',
+  title: 'Seattle RN Salary 2026: $110,000/yr + UW vs Swedish Pay Gap',
   description:
-    'Seattle RNs earn $110,000/yr ($52.88/hr) on average in 2026 — among the highest in the US. See pay at UW Medical Center, Swedish Health, Virginia Mason, and Seattle Children\'s.',
+    'Seattle RNs earn $110,000/yr in 2026 — among the highest in the US. See pay at UW Medical Center, Swedish, Virginia Mason, and Seattle Children\'s by specialty.',
   alternates: { canonical: 'https://nursesalaryintel.com/seattle-rn-salary-2026' },
   openGraph: {
-    title: "Seattle RN Salary 2026: $110,000/yr — Among America's Highest",
-    description: 'Seattle nurse salary by hospital, specialty, and experience — with Washington state tax and cost-of-living analysis.',
+    title: 'Seattle RN Salary 2026: $110,000/yr + UW vs Swedish Pay Gap',
+    description: 'Seattle RN pay by hospital, specialty, and experience — with Washington no-income-tax analysis.',
     url: 'https://nursesalaryintel.com/seattle-rn-salary-2026',
   },
 };

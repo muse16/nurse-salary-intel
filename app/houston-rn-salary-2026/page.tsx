@@ -6,13 +6,13 @@ import SalaryTable from '@/components/SalaryTable';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Houston RN Salary 2026: How Much Do Nurses Make in Houston, TX?',
+  title: 'Houston RN Salary 2026: $83,500/yr + Top Texas Hospitals Ranked',
   description:
-    'Houston RNs earn $83,500/yr ($40.14/hr) on average in 2026. See pay at Houston Methodist, Memorial Hermann, Texas Medical Center, and HCA — plus no state income tax advantage.',
+    'Houston RNs earn $83,500/yr in 2026 — zero state income tax. Pay at Houston Methodist, Memorial Hermann, HCA, and Texas Children\'s by specialty and experience.',
   alternates: { canonical: 'https://nursesalaryintel.com/houston-rn-salary-2026' },
   openGraph: {
-    title: 'Houston RN Salary 2026: $83,500/yr Avg — No State Income Tax',
-    description: 'Houston nurse salary by hospital, specialty, and experience — with Texas tax advantage analysis.',
+    title: 'Houston RN Salary 2026: $83,500/yr + Top Texas Hospitals Ranked',
+    description: 'Houston RN pay by hospital, specialty, and experience — with Texas no-income-tax advantage breakdown.',
     url: 'https://nursesalaryintel.com/houston-rn-salary-2026',
   },
 };

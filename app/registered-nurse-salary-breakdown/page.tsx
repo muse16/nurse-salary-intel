@@ -5,8 +5,9 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Registered Nurse Salary Breakdown (2026): Full RN Pay Analysis',
-  description: 'Complete breakdown of registered nurse salary in 2026. See base pay, differentials, overtime, benefits value, and total compensation by state and specialty.',
+  title: 'RN Salary Breakdown 2026: $89,010 Avg + All 9 Pay Components',
+  description: 'Full RN salary breakdown for 2026: base pay, shift differentials, overtime, sign-on bonuses, benefits value, and total compensation by state and specialty.',
+  alternates: { canonical: 'https://nursesalaryintel.com/registered-nurse-salary-breakdown' },
 };
 
 const totalCompData = [

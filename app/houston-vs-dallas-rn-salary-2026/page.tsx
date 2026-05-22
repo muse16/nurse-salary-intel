@@ -6,8 +6,8 @@ import SalaryTable from '@/components/SalaryTable';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Houston vs Dallas RN Salary 2026: Which Texas City Pays Nurses More?',
-  description: 'Houston RNs average $82,140/yr vs Dallas $80,910/yr in 2026. Full comparison: hospitals, specialties, cost of living, sign-on bonuses, and which city wins for nurses.',
+  title: 'Houston vs Dallas RN Salary 2026: $82,140 vs $80,910 Compared',
+  description: 'Houston RNs earn $82,140/yr vs Dallas $80,910/yr in 2026. Compare hospitals, specialties, sign-on bonuses, cost of living, and which Texas city wins for nurses.',
   alternates: { canonical: 'https://nursesalaryintel.com/houston-vs-dallas-rn-salary-2026' },
 };
 

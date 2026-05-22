@@ -6,12 +6,12 @@ import SalaryTable from '@/components/SalaryTable';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Shift Differential Nurse Pay 2026: What Night & Weekend Shifts Add',
+  title: 'Nurse Shift Differential 2026: Night Pay Adds $8K–$25K/yr',
   description:
-    'Night shift differential adds $4–$12/hr to RN pay — $8,000–$25,000/year for full-time night nurses. See rates by hospital system, specialty, and how to negotiate your differential.',
+    'Night shift differential adds $4–$12/hr to RN pay — $8,000–$25,000/yr for full-time nights. See rates by hospital system, specialty, and how to negotiate it.',
   alternates: { canonical: 'https://nursesalaryintel.com/shift-differential-nurse-pay-2026' },
   openGraph: {
-    title: 'Shift Differential Nurse Pay 2026: What Night & Weekend Shifts Actually Add to Your Salary',
+    title: 'Nurse Shift Differential 2026: Night Pay Adds $8K–$25K/yr',
     description: 'Night differential adds $8,000–$25,000/year. See rates by system, specialty, and how to negotiate it into your offer.',
     url: 'https://nursesalaryintel.com/shift-differential-nurse-pay-2026',
   },
