@@ -83,7 +83,7 @@ export default function CriticalCareNurseSalary() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Salary Guides', href: '/blog' },
+        { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' },
         { label: 'Critical Care Nurse Salary 2026' },
       ]}
       h1="Critical Care Nurse Salary 2026: ICU Pay by State, Hospital System, and Certification"

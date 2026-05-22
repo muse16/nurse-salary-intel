@@ -54,7 +54,7 @@ export default function ICUvsERNurseSalary2026() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SEOPageLayout
-        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Salary Guides', href: '/blog' }, { label: 'ICU vs ER Nurse Salary 2026' }]}
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' }, { label: 'ICU vs ER Nurse Salary 2026' }]}
         h1="ICU vs ER Nurse Salary 2026: Which Specialty Pays More?"
         lastUpdated="April 2026"
         schemaTitle="ICU vs ER Nurse Salary 2026: Which Pays More?"

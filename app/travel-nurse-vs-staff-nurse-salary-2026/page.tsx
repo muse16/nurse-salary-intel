@@ -55,7 +55,7 @@ export default function TravelVsStaffNurseSalary2026() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SEOPageLayout
-        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Salary Guides', href: '/blog' }, { label: 'Travel vs Staff Nurse Salary 2026' }]}
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Travel Nursing', href: '/travel-nursing' }, { label: 'Travel vs Staff Nurse Salary 2026' }]}
         h1="Travel Nurse vs Staff Nurse Salary 2026: Which Pays More After Taxes?"
         lastUpdated="April 2026"
         schemaTitle="Travel Nurse vs Staff Nurse Salary 2026"

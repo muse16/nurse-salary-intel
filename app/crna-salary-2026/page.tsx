@@ -63,7 +63,7 @@ export default function CRNASalary2026() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SEOPageLayout
-        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Salary Guides', href: '/blog' }, { label: 'CRNA Salary 2026' }]}
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' }, { label: 'CRNA Salary 2026' }]}
         h1="CRNA Salary 2026: $214,000 National Average — Is Nurse Anesthesia School Worth It?"
         lastUpdated="April 2026"
         schemaTitle="CRNA Salary 2026: $214,000/yr National Average + Top States & Settings"

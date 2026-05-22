@@ -71,7 +71,7 @@ export default function ChicagoRNSalary2026() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SEOPageLayout
-        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Salary Guides', href: '/blog' }, { label: 'Chicago RN Salary 2026' }]}
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'RN Salary by City', href: '/rn-salary-by-city' }, { label: 'Chicago RN Salary 2026' }]}
         h1="Chicago RN Salary 2026: What Registered Nurses Earn at Northwestern, Rush & Beyond"
         lastUpdated="April 2026"
         schemaTitle="Chicago RN Salary 2026: $83,580/yr Avg + Northwestern, Rush & U of C Pay"

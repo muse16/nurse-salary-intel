@@ -100,7 +100,7 @@ export default function HonorHealthRNSalary2026() {
       <SEOPageLayout
         breadcrumbs={[
           { label: 'Home', href: '/' },
-          { label: 'Salary Guides', href: '/blog/' },
+          { label: 'RN Salary by Hospital', href: '/nurse-salary-by-hospital' },
           { label: 'HonorHealth RN Salary 2026' },
         ]}
         h1="HonorHealth RN Salary 2026: Pay Rates, Differentials & How to Negotiate"

@@ -60,7 +60,7 @@ export default function HoustonVsDallasRNSalary2026() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SEOPageLayout
-        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Salary Guides', href: '/blog' }, { label: 'Houston vs Dallas RN Salary 2026' }]}
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'RN Salary by City', href: '/rn-salary-by-city' }, { label: 'Houston vs Dallas RN Salary 2026' }]}
         h1="Houston vs Dallas RN Salary 2026: Which Texas City Actually Pays Nurses More?"
         lastUpdated="April 2026"
         schemaTitle="Houston vs Dallas RN Salary 2026: Which Texas City Pays Nurses More?"
