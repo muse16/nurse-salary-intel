@@ -45,7 +45,7 @@ export default function NursingSalaryBySpecialty() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Nursing Salary', href: '/nursing-salary/by-specialty-2026' },
+        { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' },
         { label: 'By Specialty 2026' },
       ]}
       h1="Nursing Salary by Specialty — 2026 Complete Guide"

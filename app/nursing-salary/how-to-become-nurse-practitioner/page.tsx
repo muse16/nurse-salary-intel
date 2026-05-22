@@ -77,7 +77,7 @@ export default function HowToBecomeNursePractitioner() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Nursing Salary', href: '/nursing-salary/by-specialty-2026' },
+        { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' },
         { label: 'How to Become a Nurse Practitioner' },
       ]}
       h1="How to Become a Nurse Practitioner in 2026 — Complete Pathway Guide"

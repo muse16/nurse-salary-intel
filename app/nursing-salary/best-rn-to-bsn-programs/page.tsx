@@ -98,7 +98,7 @@ export default function BestRNtoBSNPrograms() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Nursing Salary', href: '/nursing-salary/by-specialty-2026' },
+        { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' },
         { label: 'Best RN to BSN Programs' },
       ]}
       h1="Best Online RN to BSN Programs 2026 — Accredited & Affordable"

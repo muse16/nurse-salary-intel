@@ -84,7 +84,7 @@ export default function ChargeNurseSalary() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Nursing Salary', href: '/nursing-salary/by-specialty-2026' },
+        { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' },
         { label: 'Charge Nurse Salary' },
       ]}
       h1="Charge Nurse Salary 2026: How Much More Do Charge Nurses Make vs. Staff RN?"

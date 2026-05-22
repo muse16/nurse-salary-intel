@@ -85,7 +85,7 @@ export default function RegisteredNurseSalaryGuide() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Nursing Salary', href: '/nursing-salary/by-specialty-2026' },
+        { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' },
         { label: 'Registered Nurse Salary Guide' },
       ]}
       h1="Registered Nurse Salary Guide 2026 — Complete RN Pay Data"

@@ -42,7 +42,7 @@ export default function ICUNurseSalary() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Nursing Salary', href: '/nursing-salary/by-specialty-2026' },
+        { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' },
         { label: 'ICU Nurse Salary' },
       ]}
       h1="ICU Nurse Salary 2026: Pay, Growth & How to Earn More"

@@ -33,7 +33,7 @@ export default function LaborDeliveryNurseSalary() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Nursing Salary', href: '/nursing-salary/by-specialty-2026' },
+        { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' },
         { label: 'L&D Nurse Salary' },
       ]}
       h1="Labor and Delivery Nurse Salary 2026: Complete Pay Guide"

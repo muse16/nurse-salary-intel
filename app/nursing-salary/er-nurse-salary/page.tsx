@@ -34,7 +34,7 @@ export default function ERNurseSalary() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Nursing Salary', href: '/nursing-salary/by-specialty-2026' },
+        { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' },
         { label: 'ER Nurse Salary' },
       ]}
       h1="ER Nurse Salary 2026: Pay, Demand & Growth"

@@ -100,7 +100,7 @@ export default function NicuNurseSalary2026() {
       <SEOPageLayout
         breadcrumbs={[
           { label: 'Home', href: '/' },
-          { label: 'Nursing Salary', href: '/nursing-salary/' },
+          { label: 'Nursing Specialties', href: '/nursing-salary/' },
           { label: 'NICU Nurse Salary 2026' },
         ]}
         h1="NICU Nurse Salary 2026: Hourly Pay, State Breakdown & How to Earn More"

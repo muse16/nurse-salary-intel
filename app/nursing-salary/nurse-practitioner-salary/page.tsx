@@ -45,7 +45,7 @@ export default function NursePractitionerSalary() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Nursing Salary', href: '/nursing-salary/by-specialty-2026' },
+        { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' },
         { label: 'Nurse Practitioner Salary' },
       ]}
       h1="Nurse Practitioner Salary 2026: Pay by State & Specialty"

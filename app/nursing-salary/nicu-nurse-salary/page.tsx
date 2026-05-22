@@ -33,7 +33,7 @@ export default function NICUNurseSalary() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Nursing Salary', href: '/nursing-salary/by-specialty-2026' },
+        { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' },
         { label: 'NICU Nurse Salary' },
       ]}
       h1="NICU Nurse Salary 2026: What Neonatal Nurses Earn"

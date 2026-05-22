@@ -106,7 +106,7 @@ export default function NursingSalaryHub() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Nursing Salary' },
+        { label: 'Nursing Specialties' },
       ]}
       h1="Nursing Salary Hub — 2026 Complete Guide"
       lastUpdated="April 2026"

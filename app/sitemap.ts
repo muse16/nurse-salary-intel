@@ -162,6 +162,13 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/oncology-nurse-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/detroit-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/bsn-nurse-salary-career-paths-2026', priority: 0.85, changeFrequency: 'monthly' },
+
+  // Week 12 — May 2026
+  { path: '/nurse-salary-cost-of-living-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/nurse-salary-by-age-experience-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/bayhealth-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/san-francisco-rn-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/er-nurse-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

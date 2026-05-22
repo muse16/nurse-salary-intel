@@ -81,7 +81,7 @@ export default function NursePractitionerSalary2026() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Nursing Salary', href: '/nursing-salary/by-specialty-2026' },
+        { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' },
         { label: 'Nurse Practitioner Salary 2026' },
       ]}
       h1="Nurse Practitioner Salary 2026: How Much Do NPs Make?"

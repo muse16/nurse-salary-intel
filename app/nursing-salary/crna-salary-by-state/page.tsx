@@ -37,7 +37,7 @@ export default function CRNASalaryByState() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Nursing Salary', href: '/nursing-salary/by-specialty-2026' },
+        { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' },
         { label: 'CRNA Salary by State' },
       ]}
       h1="CRNA Salary by State — 2026 Nurse Anesthetist Pay Data"

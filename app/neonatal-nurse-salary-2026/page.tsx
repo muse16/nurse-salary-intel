@@ -105,7 +105,7 @@ export default function NeonatalNurseSalary2026() {
       <SEOPageLayout
         breadcrumbs={[
           { label: 'Home', href: '/' },
-          { label: 'Nursing Salary', href: '/nursing-salary/' },
+          { label: 'Nursing Specialties', href: '/nursing-salary/' },
           { label: 'Neonatal Nurse Salary 2026' },
         ]}
         h1="Neonatal Nurse Salary 2026: What Newborn Care Nurses Actually Earn"

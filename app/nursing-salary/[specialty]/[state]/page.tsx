@@ -153,7 +153,7 @@ export default async function SpecialtyStatePage({ params }: PageProps) {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Nursing Salary', href: '/nursing-salary/by-specialty-2026' },
+        { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' },
         ...(spec.parentPageSlug
           ? [{ label: `${spec.shortName} Salary`, href: `/nursing-salary/${spec.parentPageSlug}` }]
           : []),
