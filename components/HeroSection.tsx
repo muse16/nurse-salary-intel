@@ -27,28 +27,28 @@ export default function HeroSection() {
             </span>
 
             <h1 className="font-headline font-extrabold text-5xl md:text-7xl text-on-surface text-editorial leading-[1.1] mb-6">
-              Know your worth.<br />
-              <span className="text-primary">Know What to Negotiate.</span>
+              RN Salary Data Nurses<br />
+              <span className="text-primary">Can Actually Use.</span>
             </h1>
 
             <p className="text-on-surface-variant text-xl md:text-2xl leading-relaxed mb-10 max-w-xl">
-              Real nurse salary data by state, city, and specialty. Get the data you need to negotiate with authority.
+              Compare nursing salaries by specialty, location, and experience level.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/audit"
-                className="gradient-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-sunken flex items-center justify-center gap-2 transition-transform hover:-translate-y-0.5"
-              >
-                Run Free Contract Audit
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
-              </Link>
               <a
                 href="#calculator"
+                className="gradient-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-sunken flex items-center justify-center gap-2 transition-transform hover:-translate-y-0.5"
+              >
+                Calculate Your RN Salary
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+              </a>
+              <Link
+                href="/rn-salary-by-state"
                 className="bg-surface-container-lowest border-2 border-primary/20 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-fixed transition-colors flex items-center justify-center"
               >
-                Calculate Salary
-              </a>
+                Browse RN Salaries by State
+              </Link>
             </div>
           </div>
         </div>
