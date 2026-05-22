@@ -49,7 +49,7 @@ export default function SiteNav() {
         </Link>
 
         {/* ── Desktop nav ── */}
-        <div className="hidden xl:flex items-center gap-0.5">
+        <div className="hidden lg:flex items-center gap-0.5">
           {NAV_ITEMS.map(item => (
             <div
               key={item.key}
@@ -86,7 +86,7 @@ export default function SiteNav() {
 
         {/* ── Mobile hamburger ── */}
         <button
-          className="xl:hidden text-on-surface-variant p-2 rounded-lg hover:bg-surface-container transition-colors"
+          className="lg:hidden text-on-surface-variant p-2 rounded-lg hover:bg-surface-container transition-colors"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={mobileOpen}
@@ -325,7 +325,7 @@ export default function SiteNav() {
 
       {/* ── Mobile accordion menu ── */}
       {mobileOpen && (
-        <div className="xl:hidden border-t border-outline-variant/30 bg-white max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden border-t border-outline-variant/30 bg-white max-h-[80vh] overflow-y-auto">
           {NAV_ITEMS.map(item => (
             <div key={item.key} className="border-b border-outline-variant/20">
               <button

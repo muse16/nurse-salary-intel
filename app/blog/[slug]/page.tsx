@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import SiteNav from '@/components/SiteNav';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import ContractAuditCTA from '@/components/ContractAuditCTA';
 
 interface PageProps {
@@ -61,9 +62,10 @@ export default async function BlogPostPage({ params }: PageProps) {
       <SiteNav />
       <header className="bg-white border-b border-gray-200 shadow-sm pt-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <Link href="/blog" className="text-blue-600 hover:text-blue-700 font-semibold mb-3 inline-block text-sm">
-            ← Back to Salary Guides
-          </Link>
+          <Breadcrumbs items={[
+            { label: 'Salary Guides', href: '/blog' },
+            { label: post.title },
+          ]} />
         </div>
       </header>
 
