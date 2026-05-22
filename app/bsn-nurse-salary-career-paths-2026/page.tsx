@@ -70,7 +70,7 @@ export default function BSNNurseSalaryCareerPaths2026() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Salary Guides', href: '/salary-negotiation' },
+        { label: 'Career Guides', href: '/salary-negotiation' },
         { label: 'BSN Nurse Salary & Career Paths 2026' },
       ]}
       h1="BSN Nurse Salary & Career Paths 2026: 8 Directions That Pay Over $85K"

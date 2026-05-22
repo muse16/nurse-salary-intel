@@ -63,7 +63,7 @@ export default function NewGradRNSalary2026() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SEOPageLayout
-        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Salary Guides', href: '/blog' }, { label: 'New Grad RN Salary 2026' }]}
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Career Guides', href: '/blog' }, { label: 'New Grad RN Salary 2026' }]}
         h1="New Grad RN Salary 2026: First-Year Pay, Sign-On Bonuses & the Fastest Path to $100K"
         lastUpdated="April 2026"
         schemaTitle="New Grad RN Salary 2026: $62K–$88K First-Year Pay by State + Sign-On Bonuses"

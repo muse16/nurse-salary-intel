@@ -77,7 +77,7 @@ export default function NurseSalaryByExperience2026() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Salary Guides', href: '/blog' },
+        { label: 'Career Guides', href: '/blog' },
         { label: 'RN Salary by Experience 2026' },
       ]}
       h1="RN Salary by Years of Experience 2026: How Nurse Pay Grows at Every Career Stage"

@@ -78,7 +78,7 @@ export default function NurseSalaryCostOfLiving2026() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Salary Guides', href: '/blog' },
+        { label: 'Career Guides', href: '/blog' },
         { label: 'Nurse Salary Cost of Living 2026' },
       ]}
       h1="Nurse Salary Cost of Living 2026: What Your Pay Actually Buys in 15 Cities"
