@@ -63,6 +63,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       <header className="bg-white border-b border-gray-200 shadow-sm pt-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <Breadcrumbs items={[
+            { label: 'Home', href: '/' },
             { label: 'Salary Guides', href: '/blog' },
             { label: post.title },
           ]} />
