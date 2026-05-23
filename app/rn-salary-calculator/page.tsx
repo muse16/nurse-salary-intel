@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import SiteNav from '@/components/SiteNav';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 // Metadata can't be exported from a client component — wrap in layout pattern
 // We'll handle this via generateMetadata in a server wrapper; for now, inline
@@ -113,13 +114,11 @@ export default function RNSalaryCalculator() {
     <div className="min-h-screen bg-background">
       <SiteNav />
       <div className="max-w-4xl mx-auto px-4 pb-8 pt-24">
-        {/* Breadcrumbs */}
-        <nav className="text-sm text-on-surface-variant mb-6" aria-label="Breadcrumb">
-          <ol className="flex flex-wrap gap-1">
-            <li><Link href="/" className="hover:underline text-primary">Home</Link></li>
-            <li className="before:content-['/'] before:mx-1">RN Salary Calculator</li>
-          </ol>
-        </nav>
+        <Breadcrumbs items={[
+          { label: 'Home', href: '/' },
+          { label: 'Salary Tools', href: '/salary-data' },
+          { label: 'RN Salary Calculator' },
+        ]} />
 
         <h1 className="text-3xl font-bold font-headline text-on-surface mb-2">
           RN Salary Calculator 2026

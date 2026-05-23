@@ -102,7 +102,7 @@ export default function NurseSalaryNegotiationPage() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Career Guides', href: '/blog/' },
+        { label: 'Salary Guides', href: '/blog' },
         { label: 'Nurse Salary Negotiation Guide 2026' },
       ]}
       h1="30% of Nurses Never Negotiate Salary — Here's What the Data Says to Do"

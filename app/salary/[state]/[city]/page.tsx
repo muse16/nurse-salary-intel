@@ -4,6 +4,7 @@ import MonetizationSlot from '@/components/MonetizationSlot';
 import PremiumAuditCTA from '@/components/PremiumAuditCTA';
 import RecommendedGear from '@/components/RecommendedGear';
 import SiteNav from '@/components/SiteNav';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { notFound, redirect } from 'next/navigation';
 import type { Metadata } from 'next';
@@ -141,21 +142,9 @@ export default async function CityPage({ params }: PageProps) {
     "url": `https://nursesalaryintel.com/salary/${state}/${city}`
   };
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nursesalaryintel.com" },
-      { "@type": "ListItem", "position": 2, "name": "RN Salary by State", "item": "https://nursesalaryintel.com/rn-salary-by-state" },
-      { "@type": "ListItem", "position": 3, "name": `${cityData.state} RN Salary`, "item": `https://nursesalaryintel.com/rn-salary-by-state/${state}` },
-      { "@type": "ListItem", "position": 4, "name": `${cityData.city} Nurse Salary`, "item": `https://nursesalaryintel.com/salary/${state}/${city}` }
-    ]
-  };
-
   return (
     <div className="min-h-screen bg-gray-50">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <SiteNav />
       {/* Header */}
@@ -171,6 +160,12 @@ export default async function CityPage({ params }: PageProps) {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <Breadcrumbs items={[
+          { label: 'Home', href: '/' },
+          { label: 'RN Salary by State', href: '/rn-salary-by-state' },
+          { label: `${cityData.state} RN Salary`, href: `/rn-salary-by-state/${state}` },
+          { label: `${cityData.city} Nurse Salary` },
+        ]} />
 
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">

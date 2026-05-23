@@ -54,7 +54,7 @@ export default function NurseSignOnBonusGuide2026() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SEOPageLayout
-        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Career Guides', href: '/blog' }, { label: 'Nurse Sign-On Bonus Guide 2026' }]}
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Salary Guides', href: '/blog' }, { label: 'Nurse Sign-On Bonus Guide 2026' }]}
         h1="Nurse Sign-On Bonus Guide 2026: How Much, Who Pays, and How to Negotiate"
         lastUpdated="April 2026"
         schemaTitle="Nurse Sign-On Bonus Guide 2026"

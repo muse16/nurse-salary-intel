@@ -64,7 +64,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <Breadcrumbs items={[
             { label: 'Home', href: '/' },
-            { label: 'Career Guides', href: '/blog' },
+            { label: 'Salary Guides', href: '/blog' },
             { label: post.title },
           ]} />
         </div>
@@ -137,10 +137,4 @@ export default async function BlogPostPage({ params }: PageProps) {
                 </Link>
               ))}
             </div>
-          </div>
-        )}
-
-      </main>
-    </div>
-  );
-}
+ 

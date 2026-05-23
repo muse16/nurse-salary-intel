@@ -66,7 +66,7 @@ export default function RNSalaryByExperience2026() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <SEOPageLayout
-        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Career Guides', href: '/blog' }, { label: 'RN Salary by Years of Experience 2026' }]}
+        breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'Salary Guides', href: '/blog' }, { label: 'RN Salary by Years of Experience 2026' }]}
         h1="RN Salary by Years of Experience 2026: Full Career Pay Trajectory"
         lastUpdated="April 2026"
         schemaTitle="RN Salary by Years of Experience 2026"

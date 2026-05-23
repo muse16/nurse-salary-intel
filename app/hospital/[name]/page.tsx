@@ -4,6 +4,7 @@ import MonetizationSlot from '@/components/MonetizationSlot';
 import PremiumAuditCTA from '@/components/PremiumAuditCTA';
 import RecommendedGear from '@/components/RecommendedGear';
 import SiteNav from '@/components/SiteNav';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
@@ -61,16 +62,6 @@ export default async function HospitalPage({ params }: PageProps) {
     "url": `https://nursesalaryintel.com/hospital/${name}`
   };
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nursesalaryintel.com" },
-      { "@type": "ListItem", "position": 2, "name": "Hospital Salary Data", "item": "https://nursesalaryintel.com/nurse-salary-by-hospital" },
-      { "@type": "ListItem", "position": 3, "name": hospitalData.hospital, "item": `https://nursesalaryintel.com/hospital/${name}` }
-    ]
-  };
-
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -107,7 +98,6 @@ export default async function HospitalPage({ params }: PageProps) {
   return (
     <div className="min-h-screen bg-gray-50">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <SiteNav />
       {/* Header */}
@@ -123,6 +113,11 @@ export default async function HospitalPage({ params }: PageProps) {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <Breadcrumbs items={[
+          { label: 'Home', href: '/' },
+          { label: 'Nurse Salary by Hospital', href: '/nurse-salary-by-hospital' },
+          { label: `${hospitalData.hospital}` },
+        ]} />
         {/* Key Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="bg-white rounded-lg shadow p-6">

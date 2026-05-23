@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import SiteNav from '@/components/SiteNav';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import RoiCalculator from '@/components/RoiCalculator';
 
 export const metadata: Metadata = {
@@ -162,7 +163,6 @@ export default function BsnVsRnPage() {
     <div className="min-h-screen bg-gray-50">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <SiteNav />
 
@@ -210,6 +210,12 @@ export default function BsnVsRnPage() {
       </div>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+
+        <Breadcrumbs items={[
+          { label: 'Home', href: '/' },
+          { label: 'Salary Data', href: '/salary-data' },
+          { label: 'ADN vs BSN Salary 2026' },
+        ]} />
 
         <section className="bg-primary-fixed rounded-2xl p-6 border border-primary/10">
           <h2 className="text-lg font-bold text-on-primary-fixed mb-2">Quick Answer: ADN vs BSN Salary Difference</h2>
@@ -511,13 +517,6 @@ export default function BsnVsRnPage() {
           <p className="mt-2 text-xs">Last updated: May 2026. By <Link href="/about" className="text-primary hover:underline">NurseSalaryIntel Editorial Team</Link>.</p>
         </section>
 
-        <div className="text-sm text-gray-500">
-          <Link href="/" className="hover:text-primary">Home</Link>
-          {' '}/{' '}
-          <Link href="/salary-data" className="hover:text-primary">Salary Data</Link>
-          {' '}/{' '}
-          <span className="text-gray-700 font-medium">ADN vs BSN Salary 2026</span>
-        </div>
 
       </main>
     </div>
