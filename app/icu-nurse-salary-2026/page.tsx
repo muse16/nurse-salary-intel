@@ -3,6 +3,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
+import { TravelPayDisclaimer } from '@/components/TravelPayDisclaimer';
 
 export const metadata: Metadata = {
   title: 'ICU Nurse Salary 2026: $98,680/yr Est. + Best-Paying States',
@@ -69,7 +70,7 @@ const faqs = [
   },
   {
     question: 'How much does a travel ICU nurse make?',
-    answer: 'Approximately $2,300–$3,100/week blended gross in 2026 for standard 13-week contracts, with high-cost markets at the top end.',
+    answer: 'Approximately $2,300–$3,100/week total package (taxable base + non-taxable housing and meal stipends) for standard 13-week contracts, with high-cost markets at the top end. This is not directly comparable to staff annual salary — travelers fund their own benefits and must maintain a qualifying tax home.',
   },
   {
     question: 'Do ICU nurses get paid more than ER nurses?',
@@ -205,7 +206,7 @@ export default function ICUNurseSalary2026() {
           <li><strong>CRNA</strong> — requires 1+ year ICU experience, doctoral degree (DNAP/DNP), 2026 estimates $195,000–$280,000+</li>
           <li><strong>Acute Care NP (AGACNP)</strong> — MSN/DNP, 2026 estimates $125,000–$160,000+</li>
           <li><strong>Clinical Nurse Specialist (CNS)</strong> — MSN/DNP, focuses on unit-level practice improvement</li>
-          <li><strong>Travel ICU</strong> — $2,300–$3,100/week blended gross for 13-week contracts</li>
+          <li><strong>Travel ICU</strong> — $2,300–$3,100/week total package (taxable base + non-taxable stipends) for 13-week contracts; not directly comparable to staff base pay</li>
         </ul>
 
         {/* eslint-disable-next-line @next/next/no-img-element */}

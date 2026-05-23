@@ -4,6 +4,7 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
 import { MethodologyBox } from '@/components/MethodologyBox';
+import { TravelPayDisclaimer } from '@/components/TravelPayDisclaimer';
 
 export const metadata: Metadata = {
   title: 'ER Nurse Salary 2026: $89,000/yr Est. ($42.79/hr) + CEN Adds $4,800',
@@ -71,9 +72,10 @@ export default function ERNurseSalary() {
         salaries. Level I trauma centers increasingly prefer or require CEN certification.
       </p>
 
+            <TravelPayDisclaimer />
       <h2 className="text-2xl font-bold font-headline text-on-surface">ER Travel Nurse Salary</h2>
       <p>
-        ER travel nurses earn $2,400–$3,200/week ($125,000–$166,000 annualized). Urban Level I trauma centers
+        ER travel nurses earn $2,400–$3,200/week (total package: taxable base + non-taxable stipends — not comparable to staff annual salary). Urban Level I trauma centers
         pay the most, while rural ERs offer lower rates but often include housing.
       </p>
       <Link href="/travel-nursing/salary-by-specialty" className="text-primary font-semibold hover:underline text-sm">

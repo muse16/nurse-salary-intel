@@ -4,6 +4,7 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
 import { MethodologyBox } from '@/components/MethodologyBox';
+import { TravelPayDisclaimer } from '@/components/TravelPayDisclaimer';
 
 export const metadata: Metadata = {
   title: 'ICU Nurse Salary 2026: $95,000/yr Est. + CCRN Adds $5,200/yr',
@@ -77,9 +78,10 @@ export default function ICUNurseSalary() {
         CCRN is required for most CRNA program admissions.
       </p>
 
+            <TravelPayDisclaimer />
       <h2 className="text-2xl font-bold font-headline text-on-surface">ICU Travel Nurse vs. Staff ICU Salary</h2>
       <p>
-        ICU travel nurses earn $2,600–$3,500/week ($135,000–$182,000 annualized), compared to staff ICU nurses
+        ICU travel nurses earn $2,600–$3,500/week (total package: taxable base + non-taxable stipends). For context, staff ICU nurses
         at $95,270. That&apos;s a 40–90% premium, though travel nurses sacrifice benefits and job stability.
       </p>
       <Link href="/travel-nursing/salary-by-specialty" className="text-primary font-semibold hover:underline text-sm">

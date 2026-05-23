@@ -4,6 +4,7 @@ import SalaryTable from '@/components/SalaryTable';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
+import { TravelPayDisclaimer } from '@/components/TravelPayDisclaimer';
 
 export const metadata: Metadata = {
   title: 'OR Nurse Salary 2026: $102,800/yr + Perioperative Pay by State',
@@ -177,6 +178,7 @@ export default function ORNurseSalary() {
         CNOR certification, offered by AORN's Competency and Credentialing Institute (CCI), is the gold standard for OR nursing. Achieving it requires 2 years of perioperative experience and passing a 200-question exam. For nurses planning a long OR career, the investment pays back many times over — not just through direct differentials but through access to charge nurse, educator, and leadership roles that are often reserved for certified nurses.
       </p>
 
+            <TravelPayDisclaimer />
       <h2 className="text-2xl font-bold font-headline text-on-surface">OR Travel Nurse Pay (2026)</h2>
       <p>
         OR travel nurses are among the highest-compensated travelers in any specialty. The perioperative training gap — new OR nurses take 6–12 months to orient, and experienced OR nurses rarely move between systems without some re-orientation — creates persistent agency demand that keeps bill rates elevated.

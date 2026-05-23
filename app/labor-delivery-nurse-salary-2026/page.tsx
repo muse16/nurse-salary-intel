@@ -4,6 +4,7 @@ import SalaryTable from '@/components/SalaryTable';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
+import { TravelPayDisclaimer } from '@/components/TravelPayDisclaimer';
 
 export const metadata: Metadata = {
   title: 'Labor & Delivery Nurse Salary 2026: $96,800/yr Est. + L&D Pay by State',
@@ -177,6 +178,7 @@ export default function LaborDeliveryNurseSalary() {
         The C-EFM (Electronic Fetal Monitoring) certification deserves particular attention. EFM interpretation is a core daily competency for every L&D nurse, and hospitals increasingly require it for hiring and promotion. Earning C-EFM signals to employers that your fetal surveillance skills have been objectively validated — reducing liability exposure and justifying a pay differential. At a Magnet hospital, stacking RNC-OB and C-EFM can add <strong>$5,000–$9,000/year</strong> to base.
       </p>
 
+            <TravelPayDisclaimer />
       <h2 className="text-2xl font-bold font-headline text-on-surface">L&D Travel Nurse Pay (2026)</h2>
       <p>
         Labor and delivery travel nurses are in consistent national demand — the 1:1 nurse-to-patient ratio during active labor means every birth that starts before adequate staffing is in place creates immediate agency need. The L&D travel market is also notably active in the Southwest and Southeast, where birth rates are high and new grad pipelines are thin.

@@ -4,6 +4,7 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
 import { MethodologyBox } from '@/components/MethodologyBox';
+import { TravelPayDisclaimer } from '@/components/TravelPayDisclaimer';
 
 export const metadata: Metadata = {
   title: 'L&D Nurse Salary 2026: $86,340/yr + California Pays $108K+',
@@ -70,9 +71,10 @@ export default function LaborDeliveryNurseSalary() {
         preferred by high-volume delivery centers.
       </p>
 
+            <TravelPayDisclaimer />
       <h2 className="text-2xl font-bold font-headline text-on-surface">L&D Travel Nurse Salary</h2>
       <p>
-        L&D travel nurses earn $2,300–$3,100/week ($120,000–$161,000 annualized). High-volume delivery units
+        L&D travel nurses earn $2,300–$3,100/week (total package: taxable base + non-taxable stipends — not directly comparable to staff annual salary). High-volume delivery units
         in urban areas pay the best rates.
       </p>
       <Link href="/travel-nursing/salary-by-specialty" className="text-primary font-semibold hover:underline text-sm">

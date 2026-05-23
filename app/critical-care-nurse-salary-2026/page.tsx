@@ -4,6 +4,7 @@ import SalaryTable from '@/components/SalaryTable';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
+import { TravelPayDisclaimer } from '@/components/TravelPayDisclaimer';
 
 export const metadata: Metadata = {
   title: 'Critical Care Nurse Salary 2026: $98,400/yr + ICU Pay by State',
@@ -186,6 +187,7 @@ export default function CriticalCareNurseSalary() {
         The math on CCRN is straightforward: the exam costs roughly $270 (AACN member price), requires 1,750 hours of direct ICU care, and recertifies every 3 years. At a $6,000/year differential — the midpoint of the range — a nurse who holds CCRN for 10 years nets <strong>$60,000 more in cumulative earnings</strong> than a non-certified peer at the same step level. For nurses at non-Magnet hospitals where no direct differential is paid, CCRN still improves hiring odds and position on the salary band at the next employer.
       </p>
 
+            <TravelPayDisclaimer />
       <h2 className="text-2xl font-bold font-headline text-on-surface">Critical Care Travel Nurse Pay (2026)</h2>
       <p>
         ICU travel nursing consistently commands the highest bill rates of any non-CRNA nursing role. The combination of 1:2 ratios (which limit overtime alternatives), high acuity, and a relatively small pool of qualified travelers creates persistent premium pricing.

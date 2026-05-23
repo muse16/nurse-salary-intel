@@ -4,6 +4,8 @@ import Image from 'next/image';
 import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import { MethodologyBox } from '@/components/MethodologyBox';
+import { TravelPayDisclaimer } from '@/components/TravelPayDisclaimer';
+// placeholder-remove from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'ER Nurse Salary 2026: $92,800/yr Est. + CEN Adds $4,800/yr',
@@ -41,7 +43,7 @@ const faqs = [
   {
     question: 'How much do travel ER nurses make per week?',
     answer:
-      'Travel ER nurses earn $2,400–$3,200/week in 2026 ($125,000–$166,000 annualized on a 52-week basis). Level I trauma center contracts in high-demand markets pay at the top of this range. Weekly rates vary significantly by contract type — ask your recruiter to break out the taxable hourly rate from the housing stipend, as they have different financial implications.',
+      'Travel ER nurses earn $2,400–$3,200/week (total package: taxable base + non-taxable housing and meal stipends). Level I trauma center contracts in high-demand markets pay at the top of this range. Weekly rates vary significantly by contract type — ask your recruiter to break out the taxable base hourly rate from the non-taxable stipends, as they have different tax and financial implications.',
   },
 ];
 
@@ -192,14 +194,10 @@ export default function ERNurseSalary2026() {
         produces the most competitive total compensation offers in emergency nursing.
       </p>
 
+      <TravelPayDisclaimer />
       <h2 className="text-2xl font-bold font-headline text-on-surface">Travel ER Nurse Salary (2026)</h2>
       <p>
-        Travel ER nurses earn $2,400–$3,200/week on contract in 2026, annualizing to $125,000–$166,000 for
-        nurses who maintain continuous contracts. Level 1 trauma center placements in California, New York,
-        and Washington command the top of the range. When evaluating a travel contract, always ask the
-        recruiter to break out the taxable hourly rate from the non-taxable housing and meal stipends — the
-        blended rate can obscure the actual taxable income, which affects Social Security, retirement
-        contributions, and qualifying income calculations.
+        Travel ER nurses earn $2,400–$3,200/week (total package: taxable base + non-taxable housing and meal stipends). Level I trauma center placements in California, New York, and Washington command the top of the range. When evaluating a contract, ask the recruiter to break out the taxable base hourly rate from the non-taxable stipends — the blended rate can obscure actual taxable income, which affects Social Security, retirement contributions, and qualifying income calculations. See the <a href="/travel-nurse-vs-staff-nurse-salary-2026" className="text-primary hover:underline">Travel vs. Staff Nurse Salary guide</a> for a full comparison.
       </p>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">ER vs. ICU: Which Specialty Pays More?</h2>

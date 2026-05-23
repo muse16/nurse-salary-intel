@@ -3,6 +3,7 @@ import SEOPageLayout from '@/components/SEOPageLayout';
 import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
+import { TravelPayDisclaimer } from '@/components/TravelPayDisclaimer';
 
 export const metadata: Metadata = {
   title: 'NICU Nurse Salary 2026: Hourly Pay, State Breakdown & Earn More',
@@ -56,7 +57,7 @@ const faqs = [
   },
   {
     question: 'How do travel NICU nurse salaries compare to staff pay?',
-    answer: 'Travel NICU assignments typically pay $2,000–$3,000/week total package (housing stipend + base), which can equal $100,000–$156,000 annualized. However, this is not steady income year-round and lacks benefits.',
+    answer: 'Travel NICU assignments typically pay $2,000–$3,000/week total package (taxable base + non-taxable housing and meal stipends). This is not directly comparable to staff annual salary — contracts run 13 weeks with unpaid gaps, and travelers fund their own benefits and tax-home costs.',
   },
   {
     question: 'Can a new grad go straight into the NICU?',
@@ -211,7 +212,7 @@ export default function NicuNurseSalary2026() {
                 { type: 'Academic medical center (coastal)', bonus: '$10,000 – $25,000', commitment: '1–2 years' },
                 { type: 'Academic medical center (inland/South)', bonus: '$5,000 – $15,000', commitment: '1–2 years' },
                 { type: 'Community hospital with NICU', bonus: '$3,000 – $10,000', commitment: '1 year' },
-                { type: 'Travel NICU assignment', bonus: '$2,000 – $5,000/contract', commitment: 'Contract-based' },
+                { type: 'Travel NICU (contract bonus)', bonus: '$2,000 – $5,000/contract', commitment: 'Per 13-wk contract; not staff pay' },
               ].map((row, i) => (
                 <tr key={row.type} className={`border-t border-outline-variant ${i % 2 === 0 ? 'bg-surface-container-lowest' : 'bg-surface-container-low'}`}>
                   <td className="px-4 py-3 font-medium text-on-surface">{row.type}</td>

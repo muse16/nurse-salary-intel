@@ -217,7 +217,7 @@ export default function PhiladelphiaRNSalary() {
         <li><strong>NICU travel (CHOP-adjacent facilities):</strong> $3,500–$4,200/week</li>
       </ul>
       <p className="mt-3">
-        Travel nurses working in Philadelphia on 13-week contracts who maintain a tax home outside the area qualify for tax-free housing and meal stipends — which can add <strong>$800–$1,200/week</strong> in non-taxable income on top of the taxable base. On an annualized basis, that brings total travel nurse compensation to <strong>$135,000–$185,000/year</strong> for specialty nurses willing to work consecutive Philadelphia contracts.
+        Travel nurses working in Philadelphia on 13-week contracts who maintain a tax home outside the area qualify for tax-free housing and meal stipends — which can add <strong>$800–$1,200/week</strong> in non-taxable income on top of the taxable base. That non-taxable stipend adds meaningful take-home value per contract — but is not directly comparable to staff annual salary, as travelers fund their own benefits and tax-home costs.
       </p>
       <p>
         Compare agency offerings: <Link href="/travel-nurse-agency-comparison-2026" className="text-primary hover:underline">Best travel nurse agencies 2026</Link> · <Link href="/travel-nurse-salary-guide" className="text-primary hover:underline">Travel nurse salary guide</Link>

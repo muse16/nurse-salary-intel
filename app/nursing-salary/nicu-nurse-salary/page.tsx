@@ -4,6 +4,7 @@ import SalaryTable from '@/components/SalaryTable';
 import Link from 'next/link';
 import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
 import { MethodologyBox } from '@/components/MethodologyBox';
+import { TravelPayDisclaimer } from '@/components/TravelPayDisclaimer';
 
 export const metadata: Metadata = {
   title: 'NICU Nurse Salary 2026: $84,490/yr + Travel NICU $2,300–$3,000/wk',
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 const faqs = [
   { question: 'How much do NICU nurses make?', answer: 'The national average NICU nurse salary is $84,490/year ($40.62/hr). Experience and certification can push this to $95,000–$105,000 in high-paying states.' },
   { question: 'Is NICU a good nursing specialty for pay?', answer: 'NICU pays above the overall RN average but slightly less than ICU and ER. The trade-off is a more predictable patient population and strong emotional rewards for nurses who love working with neonates.' },
-  { question: 'Do NICU travel nurses make more?', answer: 'Yes — NICU travel nurses earn $2,300–$3,000/week ($120,000–$156,000 annualized), which is 40–85% more than staff NICU nurses.' },
+  { question: 'Do NICU travel nurses make more?', answer: 'Yes — NICU travel nurses typically earn $2,300–$3,000/week total package (taxable base + non-taxable housing and meal stipends). This is not directly comparable to staff annual salary: travel packages exclude employer benefits, require maintaining a qualifying tax home, and include unpaid gaps between 13-week contracts.' },
   { question: 'What certifications do NICU nurses need?', answer: 'RNC-NIC (Neonatal Intensive Care Nursing) is the primary certification, adding $4,500/year on average. NRP (Neonatal Resuscitation Program) certification is typically required for hire.' },
 ];
 
@@ -72,6 +73,7 @@ export default function NICUNurseSalary() {
         and is increasingly expected for senior NICU positions.
       </p>
 
+            <TravelPayDisclaimer />
       <h2 className="text-2xl font-bold font-headline text-on-surface">NICU Travel Nurse Salary</h2>
       <p>
         NICU travel nurses earn $2,300–$3,000/week — 40–85% more than staff positions. Level III/IV NICU
