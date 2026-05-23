@@ -8,11 +8,11 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Nursing Salary Database 2026: Real Pay by State & Specialty',
   description:
-    'Browse the most complete nursing salary database. Filter by state, city, specialty, and experience level. Updated monthly with BLS and real-world contract data.',
+    'Browse the most complete nursing salary database. Filter by state, city, specialty, and experience level. Reviewed regularly and updated as BLS data and market conditions change.',
   openGraph: {
     title: 'Nursing Salary Database 2026 | NurseSalaryIntel',
     description:
-      'Browse the most complete nursing salary database. Filter by state, city, specialty, and experience level. Updated monthly with BLS and real-world data.',
+      'Browse the most complete nursing salary database. Filter by state, city, specialty, and experience level. Reviewed regularly and updated as BLS data and market conditions change.',
     url: 'https://nursesalaryintel.com/salary-data',
   },
 };
@@ -26,7 +26,7 @@ const faqs = [
   {
     question: 'How often is the database updated?',
     answer:
-      'We update salary data monthly with new BLS releases and continuously integrate real-world contract data from travel nursing assignments.',
+      'We review and update salary data whenever BLS releases new figures and as market conditions change — integrating real-world contract data from travel nursing assignments on an ongoing basis.',
   },
   {
     question: 'Does this include travel nursing pay?',
@@ -78,8 +78,7 @@ export default function SalaryDataPage() {
     >
       <p>
         Browse the most comprehensive nursing salary database available. Our data covers registered nurses,
-        advanced practice nurses, and travel nurses across all 50 states — updated monthly with BLS data
-        and real-world contract information.
+        advanced practice nurses, and travel nurses across all 50 states — reviewed regularly and updated as new BLS figures and market conditions change.
       </p>
 
       {/* Quick Links */}
@@ -99,7 +98,7 @@ export default function SalaryDataPage() {
       <p>
         We combine three data sources for accuracy: Bureau of Labor Statistics (BLS) Occupational Employment
         and Wage Statistics, real-world pay packages from travel nursing agencies, and self-reported salary
-        surveys from our nurse community. Data is cross-referenced and updated monthly.
+        surveys from our nurse community. Data is cross-referenced and reviewed as new information becomes available.
       </p>
 
       {/* Top Specialties Table */}

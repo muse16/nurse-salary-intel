@@ -214,8 +214,7 @@ export default function NurseSalaryData2026() {
           state-level RN, NP, CRNA, and CNM wage data. 2025 release (covering 2024 survey period).
         </li>
         <li>
-          <strong>NurseSalaryIntel proprietary data:</strong> Compiled from travel nurse contract
-          postings, staffing agency rate sheets, and nursing community salary surveys (2024–2026).
+          <strong>Compiled from public sources:</strong> Travel nurse contract postings, staffing agency rate sheets, and nursing community salary surveys (2024–2026). Collection methodology: aggregation of publicly available compensation data; sample sizes and coverage vary by specialty and geography.
         </li>
         <li>
           <strong>AAMC / HRSA:</strong> Nursing shortage and workforce projection figures.
