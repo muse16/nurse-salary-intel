@@ -137,4 +137,9 @@ export default async function BlogPostPage({ params }: PageProps) {
                 </Link>
               ))}
             </div>
- 
+           </div>
+        )}
+      </main>
+    </div>
+  );
+}
