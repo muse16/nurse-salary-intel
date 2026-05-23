@@ -80,7 +80,7 @@ export default function ERNurseSalary2026() {
     <SEOPageLayout
       breadcrumbs={[
         { label: 'Home', href: '/' },
-        { label: 'Specialty Salaries', href: '/nursing-salary/by-specialty-2026' },
+        { label: 'Nursing Specialties', href: '/nursing-salary/by-specialty-2026' },
         { label: 'ER Nurse Salary 2026' },
       ]}
       h1="ER Nurse Salary 2026: Pay by State, CEN Premium, and How to Reach $100K in the ED"
