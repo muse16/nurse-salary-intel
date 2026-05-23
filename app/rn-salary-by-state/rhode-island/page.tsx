@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Rhode Island RN Salary 2026: $88,030/yr + Hourly Rates by City',
   description:
-    'Rhode Island RNs average $88,030/yr ($42.32/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Rhode Island RNs average $88,030/yr ($42.32/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Rhode Island?',
-    answer: 'The average RN salary in Rhode Island is $88,030/year ($42.32/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Rhode Island is $88,030/year ($42.32/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Rhode Island?',
@@ -54,7 +54,7 @@ export default function RhodeIslandRNSalary() {
       faqs={faqs}
     >
       <p>
-        Rhode Island registered nurses earn an average of $88,030/year ($42.32/hr) in 2026.
+        Rhode Island registered nurses earn an average of $88,030/year ($42.32/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

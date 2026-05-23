@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: 'Austin RN salary 2026: $86,320 avg, $41.50/hr. Compare pay at St. David\'s, Ascension Dell Seton, and UT Health Austin — plus cost-of-living reality check.',
   alternates: { canonical: 'https://nursesalaryintel.com/austin-rn-salary-2026' },
   openGraph: {
-    title: 'Austin RN Salary 2026: $86,320/yr Avg',
+    title: 'Austin RN Salary 2026: $86,320/yr Est.',
     description: 'Austin nurse salary by hospital, specialty, and experience — with COL-adjusted take-home math.',
     url: 'https://nursesalaryintel.com/austin-rn-salary-2026',
   },
@@ -55,7 +55,7 @@ const cityComparison = [
 const faqs = [
   {
     question: 'What is the average RN salary in Austin, TX in 2026?',
-    answer: 'Austin RNs earn an average of $86,320/year ($41.50/hr) in 2026. New grads start at $67,000–$75,500; experienced nurses (10+ years) earn $98,500–$118,000. Dell Seton and UT Health Austin pay at the top of the market.',
+    answer: 'Austin RNs earn an average of $86,320/year ($41.50/hr). New grads start at $67,000–$75,500; experienced nurses (10+ years) earn $98,500–$118,000. Dell Seton and UT Health Austin pay at the top of the market.',
   },
   {
     question: 'Is Austin a good city for nurses?',
@@ -95,7 +95,7 @@ export default function AustinRNSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>Austin RNs earn $86,320/year ($41.50/hr)</strong> on average in 2026 — above the
+          <strong>Austin RNs earn $86,320/year ($41.50/hr)</strong> based on the latest BLS data — above the
           Texas state average of $77,800 but the highest cost-of-living of any major Texas city.
           New grads start at <strong>$67,000–$75,500</strong>; ICU and trauma nurses reach <strong>$91,000–$122,000</strong>.
           No state income tax adds $5,000–$9,000 in annual take-home.

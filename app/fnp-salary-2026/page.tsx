@@ -8,7 +8,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'FNP Salary 2026: How Much Do Family Nurse Practitioners Make?',
   description:
-    'FNPs earn $122,000/yr ($58.65/hr) on average in 2026. See family nurse practitioner salary by state, setting, and how FNP compares to PMHNP, ACNP, and CRNA.',
+    'FNPs earn $122,000/yr ($58.65/hr) based on the latest BLS data. See family nurse practitioner salary by state, setting, and how FNP compares to PMHNP, ACNP, and CRNA.',
   alternates: { canonical: 'https://nursesalaryintel.com/fnp-salary-2026' },
   openGraph: {
     title: 'FNP Salary 2026: Family Nurse Practitioner Pay by State',
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: 'How much more does an FNP make than a staff RN?',
-    answer: 'FNPs earn $122,000/year vs. $89,010/year for staff RNs — a difference of $32,990/year (37% more). The MSN degree typically takes 2–3 years and costs $30,000–$70,000, with the salary premium recovering that investment in about 1–2 years.',
+    answer: 'FNPs earn $122,000/year vs. approximately $89,000/year for staff RNs — a difference of $32,990/year (37% more). The MSN degree typically takes 2–3 years and costs $30,000–$70,000, with the salary premium recovering that investment in about 1–2 years.',
   },
   {
     question: 'Can FNPs work in urgent care?',
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     question: 'What state pays FNPs the most?',
-    answer: 'California pays FNPs the most at $155,000/year in 2026, followed by Washington ($144,000) and New Jersey ($140,000). Full practice authority states consistently pay more, as FNPs can operate independently and bill directly.',
+    answer: 'California pays FNPs the most at $155,000/year, followed by Washington ($144,000) and New Jersey ($140,000). Full practice authority states consistently pay more, as FNPs can operate independently and bill directly.',
   },
 ];
 

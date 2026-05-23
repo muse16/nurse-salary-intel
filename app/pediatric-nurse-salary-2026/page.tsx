@@ -7,7 +7,7 @@ import SalaryCalculator from '@/components/SalaryCalculator';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Pediatric Nurse Salary 2026: $86,400 Avg + PICU vs Peds ER Pay Gap',
+  title: 'Pediatric Nurse Salary 2026: $86,400 Est. + PICU vs Peds ER Pay Gap',
   description: 'Pediatric RNs average $86,400/yr. PICU tops $104K, peds oncology $98K. See pay by subspecialty, state, hospital system, and how to climb the scale.',
   alternates: { canonical: 'https://nursesalaryintel.com/pediatric-nurse-salary-2026' },
 };
@@ -62,7 +62,7 @@ const certData = [
 const faqs = [
   {
     question: 'What is the average pediatric nurse salary in 2026?',
-    answer: '$84,250/year ($40.50/hour) on average — slightly below the all-RN national average of $89,010. PICU nurses earn $96,500–$112,000+; pediatric ambulatory clinic nurses average $74,500. State and hospital are the biggest swing factors.',
+    answer: '$84,250/year ($40.50/hour) on average — slightly below the all-RN national average of approximately $89,000. PICU nurses earn $96,500–$112,000+; pediatric ambulatory clinic nurses average $74,500. State and hospital are the biggest swing factors.',
   },
   {
     question: 'Do pediatric nurses make less than adult ICU nurses?',
@@ -82,7 +82,7 @@ const faqs = [
   },
   {
     question: 'How much does a Pediatric Nurse Practitioner make?',
-    answer: '$115,400–$158,400 in 2026 depending on subspecialty. Primary Care PNPs (PC-PNP) average $115K–$128K. Acute Care PNPs (AC-PNP) and pediatric specialty NPs (cardiac, oncology) average $128K–$158K. Pediatric Hospitalist NPs are the highest-paid at $142K–$162K.',
+    answer: '$115,400–$158,400 depending on subspecialty. Primary Care PNPs (PC-PNP) average $115K–$128K. Acute Care PNPs (AC-PNP) and pediatric specialty NPs (cardiac, oncology) average $128K–$158K. Pediatric Hospitalist NPs are the highest-paid at $142K–$162K.',
   },
   {
     question: 'Are pediatric nurses in demand?',
@@ -135,7 +135,7 @@ export default function PediatricNurseSalary2026() {
         />
 
         <p>
-          The average <strong>pediatric registered nurse earns $84,250 per year ($40.50/hour)</strong> in 2026 — slightly below the all-RN national average of $89,010. But that floor figure hides one of the widest specialty pay spreads in nursing: <strong>PICU and pediatric oncology nurses with CCRN-Pediatric certification earn $96,500–$112,000</strong>, while ambulatory pediatric clinics average closer to $74,500. Top-paying children&apos;s hospitals like Boston Children&apos;s, Children&apos;s Hospital LA, and CHOP add another 8–14% premium on top.
+          The average <strong>pediatric registered nurse earns $84,250 per year ($40.50/hour)</strong> in 2026 — slightly below the all-RN national average of approximately $89,000. But that floor figure hides one of the widest specialty pay spreads in nursing: <strong>PICU and pediatric oncology nurses with CCRN-Pediatric certification earn $96,500–$112,000</strong>, while ambulatory pediatric clinics average closer to $74,500. Top-paying children&apos;s hospitals like Boston Children&apos;s, Children&apos;s Hospital LA, and CHOP add another 8–14% premium on top.
         </p>
         <p>
           Here&apos;s the complete pediatric nursing compensation picture — by subspecialty, by state, by hospital, and by certification.

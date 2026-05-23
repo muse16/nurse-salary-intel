@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Maryland RN Salary 2026: $84,820/yr + Hourly Rates by City',
   description:
-    'Maryland RNs average $84,820/yr ($40.78/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Maryland RNs average $84,820/yr ($40.78/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Maryland?',
-    answer: 'The average RN salary in Maryland is $84,820/year ($40.78/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Maryland is $84,820/year ($40.78/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Maryland?',
@@ -54,7 +54,7 @@ export default function MarylandRNSalary() {
       faqs={faqs}
     >
       <p>
-        Maryland registered nurses earn an average of $84,820/year ($40.78/hr) in 2026.
+        Maryland registered nurses earn an average of $84,820/year ($40.78/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

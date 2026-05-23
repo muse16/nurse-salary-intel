@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Pennsylvania RN Salary 2026: $79,750/yr + Hourly Rates by City',
   description:
-    'Pennsylvania RNs average $79,750/yr ($38.34/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Pennsylvania RNs average $79,750/yr ($38.34/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Pennsylvania?',
-    answer: 'The average RN salary in Pennsylvania is $79,750/year ($38.34/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Pennsylvania is $79,750/year ($38.34/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Pennsylvania?',
@@ -54,7 +54,7 @@ export default function PennsylvaniaRNSalary() {
       faqs={faqs}
     >
       <p>
-        Pennsylvania registered nurses earn an average of $79,750/year ($38.34/hr) in 2026.
+        Pennsylvania registered nurses earn an average of $79,750/year ($38.34/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

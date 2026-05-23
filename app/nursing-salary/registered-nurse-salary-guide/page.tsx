@@ -5,16 +5,16 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Registered Nurse Salary Guide 2026: $89,010/yr National Average',
+  title: 'Registered Nurse Salary Guide 2026: approximately $89,000/yr National Average',
   description:
-    '2026 RN salary guide: $89,010/yr national average ($42.79/hr). See pay by all 50 states, 15+ specialties, 5 experience levels, and care settings — sourced from BLS OEWS.',
+    '2026 RN salary guide: approximately $89,000/yr national average ($42.79/hr). See pay by all 50 states, 15+ specialties, 5 experience levels, and care settings — sourced from BLS OEWS.',
 };
 
 const faqs = [
   {
     question: 'What is the average registered nurse salary in 2026?',
     answer:
-      'The average RN salary in the United States is $89,010/year ($42.80/hr) in 2026, according to BLS data. Salaries range from $65,000 for new grads in low-cost states to over $140,000 for experienced nurses in California.',
+      'The average RN salary in the United States is approximately $89,000/year ($42.80/hr), according to BLS data. Salaries range from $65,000 for new grads in low-cost states to over $140,000 for experienced nurses in California.',
   },
   {
     question: 'Which state pays RNs the most?',
@@ -96,7 +96,7 @@ export default function RegisteredNurseSalaryGuide() {
       faqs={faqs}
     >
       <p>
-        The average registered nurse salary in the United States is <strong>$89,010/year ($42.80/hr)</strong> in
+        The average registered nurse salary in the United States is <strong>approximately $89,000/year ($42.80/hr)</strong> in
         2026. But that average conceals a $62,000 range — from $62,000 in Mississippi to over $124,000 in
         California. This guide breaks down RN pay by state, specialty, experience, and care setting so you
         know exactly what you should be earning.

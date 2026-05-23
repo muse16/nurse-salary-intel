@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Kentucky RN Salary 2026: $69,480/yr — Louisville & Loan Repayment',
   description:
-    'Kentucky RNs average $69,480/yr ($33.40/hr) in 2026. See pay at Norton Healthcare, Baptist Health, UK HealthCare — plus rural shortage loan repayment up to $50K.',
+    'Kentucky RNs average $69,480/yr ($33.40/hr). See pay at Norton Healthcare, Baptist Health, UK HealthCare — plus rural shortage loan repayment up to $50K.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Kentucky?',
-    answer: 'The average RN salary in Kentucky is $69,480/year ($33.40/hr) in 2026 — below the national average, but with a cost of living index of approximately 88 and a flat 4.5% state income tax. Louisville nurses at Norton Healthcare and Baptist Health earn significantly more than the state average ($73,500–$82,000).',
+    answer: 'The average RN salary in Kentucky is $69,480/year ($33.40/hr) — below the national average, but with a cost of living index of approximately 88 and a flat 4.5% state income tax. Louisville nurses at Norton Healthcare and Baptist Health earn significantly more than the state average ($73,500–$82,000).',
   },
   {
     question: 'Which Kentucky hospitals pay nurses the most?',

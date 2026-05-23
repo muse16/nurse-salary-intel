@@ -8,7 +8,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Portland RN Salary 2026: How Much Do Nurses Make in Portland, OR?',
   description:
-    'Portland RNs earn $109,000/yr ($52.40/hr) on average in 2026. OHSU pays $102K–$125K. See salary by hospital, specialty, and experience — with Oregon tax and cost-of-living analysis.',
+    'Portland RNs earn $109,000/yr ($52.40/hr) based on the latest BLS data. OHSU pays $102K–$125K. See salary by hospital, specialty, and experience — with Oregon tax and cost-of-living analysis.',
   alternates: { canonical: 'https://nursesalaryintel.com/portland-rn-salary-2026' },
   openGraph: {
     title: 'Portland RN Salary 2026: $109,000/yr at OHSU & Legacy Health',
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: 'What is the average RN salary in Portland, OR in 2026?',
     answer:
-      'Portland RNs earn an average of $109,000/year ($52.40/hr) in 2026 — among the highest in the Pacific Northwest and well above the national average. OHSU (Oregon Health & Science University) pays the top of the market at $102,000–$125,000 for experienced nurses. Oregon\'s high income tax rate (up to 9.9%) significantly affects take-home pay.',
+      'Portland RNs earn an average of $109,000/year ($52.40/hr) — among the highest in the Pacific Northwest and well above the national average. OHSU (Oregon Health & Science University) pays the top of the market at $102,000–$125,000 for experienced nurses. Oregon\'s high income tax rate (up to 9.9%) significantly affects take-home pay.',
   },
   {
     question: 'What hospitals pay nurses the most in Portland?',
@@ -92,7 +92,7 @@ export default function PortlandRNSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>Portland RNs earn $109,000/year ($52.40/hr)</strong> on average in 2026 — well above the national
+          <strong>Portland RNs earn $109,000/year ($52.40/hr)</strong> based on the latest BLS data — well above the national
           average and among the highest in the Pacific Northwest. OHSU and Legacy Emanuel top the market at{' '}
           <strong>$102,000–$125,000</strong>. New grads start at <strong>$85,000–$96,000</strong>; senior ICU and
           burn nurses reach <strong>$116,000–$135,000+</strong>. Oregon&apos;s 8.75–9.9% state income tax is the

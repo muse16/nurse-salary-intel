@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Colorado RN Salary 2026: $82,010/yr + Hourly Rates by City',
   description:
-    'Colorado RNs average $82,010/yr ($39.43/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Colorado RNs average $82,010/yr ($39.43/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Colorado?',
-    answer: 'The average RN salary in Colorado is $82,010/year ($39.43/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Colorado is $82,010/year ($39.43/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Colorado?',
@@ -54,7 +54,7 @@ export default function ColoradoRNSalary() {
       faqs={faqs}
     >
       <p>
-        Colorado registered nurses earn an average of $82,010/year ($39.43/hr) in 2026.
+        Colorado registered nurses earn an average of $82,010/year ($39.43/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

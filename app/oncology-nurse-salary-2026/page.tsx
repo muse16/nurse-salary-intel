@@ -8,7 +8,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Oncology Nurse Salary 2026: What Cancer RNs Really Earn',
   description:
-    'Oncology nurses earn $78,000–$98,000/yr in 2026. See onc RN pay by setting, state, and certification — including NCI cancer centers vs. community hospitals.',
+    'Oncology nurses earn $78,000–$98,000/yr. See onc RN pay by setting, state, and certification — including NCI cancer centers vs. community hospitals.',
   alternates: { canonical: 'https://nursesalaryintel.com/oncology-nurse-salary-2026' },
   openGraph: {
     title: 'Oncology Nurse Salary 2026: NCI Centers vs. Community Hospitals',
@@ -91,7 +91,7 @@ export default function OncologyNurseSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          Oncology RNs earn <strong>$82,000–$92,000/year ($39.42–$44.23/hr)</strong> on average nationally in 2026.
+          Oncology RNs earn <strong>$82,000–$92,000/year ($39.42–$44.23/hr)</strong> based on the latest BLS data nationally.
           NCI-designated cancer centers pay <strong>$90,000–$118,000</strong> for experienced oncology nurses.
           OCN certification adds a <strong>$2,000–$6,000/year differential</strong> at most systems; BMTCN commands
           the highest premium at transplant-capable centers. Oncology nurses earn{' '}

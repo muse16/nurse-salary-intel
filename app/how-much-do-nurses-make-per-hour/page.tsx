@@ -22,7 +22,7 @@ const hourlyByState = [
 const faqs = [
   {
     question: 'What is the national average hourly wage for nurses?',
-    answer: 'The national average RN hourly rate is approximately $42.88/hr in 2026, based on a mean annual salary of $89,010. California RNs lead at $59.62/hr; Mississippi RNs are at the bottom at approximately $31.88/hr. Specialty, union status, and shift differential all affect actual take-home hourly earnings.',
+    answer: 'The national average RN hourly rate is approximately $42.88/hr in 2026, based on a mean annual salary of approximately $89,000. California RNs lead at $59.62/hr; Mississippi RNs are at the bottom at approximately $31.88/hr. Specialty, union status, and shift differential all affect actual take-home hourly earnings.',
   },
   {
     question: 'How much do nurses make per hour in California vs Texas?',

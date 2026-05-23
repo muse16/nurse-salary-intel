@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Indiana RN Salary 2026: $72,080/yr + Hourly Rates by City',
   description:
-    'Indiana RNs average $72,080/yr ($34.65/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Indiana RNs average $72,080/yr ($34.65/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Indiana?',
-    answer: 'The average RN salary in Indiana is $72,080/year ($34.65/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Indiana is $72,080/year ($34.65/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Indiana?',
@@ -54,7 +54,7 @@ export default function IndianaRNSalary() {
       faqs={faqs}
     >
       <p>
-        Indiana registered nurses earn an average of $72,080/year ($34.65/hr) in 2026.
+        Indiana registered nurses earn an average of $72,080/year ($34.65/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

@@ -38,7 +38,7 @@ const hospitalData = [
 const faqs = [
   {
     question: 'What is the average RN salary in Boston in 2026?',
-    answer: 'Boston RNs average $105,000–$122,000/year in 2026 at major academic centers. New grads start at $88,000–$100,000; senior RNs with specialty certifications can exceed $130,000 with differentials.',
+    answer: 'Boston RNs average $105,000–$122,000/year at major academic centers. New grads start at $88,000–$100,000; senior RNs with specialty certifications can exceed $130,000 with differentials.',
   },
   {
     question: 'Which Boston hospital pays nurses the most?',

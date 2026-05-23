@@ -8,10 +8,10 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Minneapolis RN Salary 2026: How Much Do Nurses Make in Minneapolis?',
   description:
-    'Minneapolis RNs earn $85,000/yr ($40.87/hr) on average in 2026. See pay at Mayo Clinic, M Health Fairview, and Allina — plus Minnesota\'s strong union contracts explained.',
+    'Minneapolis RNs earn $85,000/yr ($40.87/hr) based on the latest BLS data. See pay at Mayo Clinic, M Health Fairview, and Allina — plus Minnesota\'s strong union contracts explained.',
   alternates: { canonical: 'https://nursesalaryintel.com/minneapolis-rn-salary-2026' },
   openGraph: {
-    title: 'Minneapolis RN Salary 2026: $85,000/yr Avg',
+    title: 'Minneapolis RN Salary 2026: $85,000/yr Est.',
     description: 'Minneapolis nurse salary by hospital, union contracts, and specialty for 2026.',
     url: 'https://nursesalaryintel.com/minneapolis-rn-salary-2026',
   },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is the average RN salary in Minneapolis in 2026?',
-    answer: 'Minneapolis RNs earn an average of $85,000/year ($40.87/hr) in 2026, near the national average of $89,010. Minnesota Nurses Association (MNA) contracts at major hospital systems set strong wage floors, and experienced nurses at Mayo Clinic Rochester and M Health Fairview can reach $100,000–$120,000/year.',
+    answer: 'Minneapolis RNs earn an average of $85,000/year ($40.87/hr), near the national average of approximately $89,000. Minnesota Nurses Association (MNA) contracts at major hospital systems set strong wage floors, and experienced nurses at Mayo Clinic Rochester and M Health Fairview can reach $100,000–$120,000/year.',
   },
   {
     question: 'Are Minneapolis nurses unionized?',
@@ -81,7 +81,7 @@ export default function MinneapolisRNSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>Minneapolis RNs earn $85,000/year ($40.87/hr)</strong> on average in 2026.
+          <strong>Minneapolis RNs earn $85,000/year ($40.87/hr)</strong> based on the latest BLS data.
           Strong <strong>Minnesota Nurses Association (MNA) union contracts</strong> at Allina,
           M Health Fairview, and HealthPartners set competitive wage floors.
           Senior nurses at major systems reach <strong>$100,000–$122,000/year</strong>.

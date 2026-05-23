@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Michigan RN Salary 2026: $79,830/yr + Hourly Rates by City',
   description:
-    'Michigan RNs average $79,830/yr ($38.38/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Michigan RNs average $79,830/yr ($38.38/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Michigan?',
-    answer: 'The average RN salary in Michigan is $79,830/year ($38.38/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Michigan is $79,830/year ($38.38/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Michigan?',
@@ -54,7 +54,7 @@ export default function MichiganRNSalary() {
       faqs={faqs}
     >
       <p>
-        Michigan registered nurses earn an average of $79,830/year ($38.38/hr) in 2026.
+        Michigan registered nurses earn an average of $79,830/year ($38.38/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

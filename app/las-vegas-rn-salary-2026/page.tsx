@@ -8,10 +8,10 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Las Vegas RN Salary 2026: How Much Do Nurses Make in Las Vegas?',
   description:
-    'Las Vegas RNs earn $85,500/yr ($41.11/hr) on average in 2026. See pay at UMC, Sunrise, and Valley hospitals — plus Nevada\'s no-income-tax advantage explained.',
+    'Las Vegas RNs earn $85,500/yr ($41.11/hr) based on the latest BLS data. See pay at UMC, Sunrise, and Valley hospitals — plus Nevada\'s no-income-tax advantage explained.',
   alternates: { canonical: 'https://nursesalaryintel.com/las-vegas-rn-salary-2026' },
   openGraph: {
-    title: 'Las Vegas RN Salary 2026: $85,500/yr Avg',
+    title: 'Las Vegas RN Salary 2026: $85,500/yr Est.',
     description: 'Las Vegas nurse salary by hospital, specialty, and Nevada\'s no-income-tax advantage.',
     url: 'https://nursesalaryintel.com/las-vegas-rn-salary-2026',
   },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is the average RN salary in Las Vegas, NV in 2026?',
-    answer: 'Las Vegas RNs earn an average of $85,500/year ($41.11/hr) in 2026, near the national average of $89,010. Nevada\'s zero state income tax means Las Vegas nurses take home $4,000–$7,000 more per year than nurses earning the same gross salary in a high-tax state. University Medical Center (UMC) and Sunrise Hospital pay the highest base salaries in the market.',
+    answer: 'Las Vegas RNs earn an average of $85,500/year ($41.11/hr), near the national average of approximately $89,000. Nevada\'s zero state income tax means Las Vegas nurses take home $4,000–$7,000 more per year than nurses earning the same gross salary in a high-tax state. University Medical Center (UMC) and Sunrise Hospital pay the highest base salaries in the market.',
   },
   {
     question: 'Does Nevada have state income tax for nurses?',
@@ -81,7 +81,7 @@ export default function LasVegasRNSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>Las Vegas RNs earn $85,500/year ($41.11/hr)</strong> on average in 2026.
+          <strong>Las Vegas RNs earn $85,500/year ($41.11/hr)</strong> based on the latest BLS data.
           <strong> No state income tax</strong> adds $4,000–$7,000/year in real take-home.
           UMC (Level 1 Trauma) pays <strong>$88,000–$114,000/year</strong>.
           Travel nurses earn <strong>$2,400–$3,200/week</strong> all-in.

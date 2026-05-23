@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is the night shift nurse salary in 2026?',
-    answer: 'Night shift RNs earn $88,000–$110,000/year on average in 2026 when differential pay is included, compared to $77,600 for day-shift RNs. The premium comes from night shift differentials of 10–25% stacked on top of base pay.',
+    answer: 'Night shift RNs earn $88,000–$110,000/year based on the latest BLS data when differential pay is included, compared to $77,600 for day-shift RNs. The premium comes from night shift differentials of 10–25% stacked on top of base pay.',
   },
   {
     question: 'How much more do night shift nurses make than day shift?',
@@ -67,7 +67,7 @@ export default function NightShiftDifferential() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>Night shift nurses earn $88,000–$110,000/year</strong> on average in 2026 — roughly
+          <strong>Night shift nurses earn $88,000–$110,000/year</strong> based on the latest BLS data — roughly
           <strong> $10,000–$25,000 more</strong> than day-shift RNs at the same facility.
           The premium comes from shift differentials of <strong>10–25% above base pay</strong>, stacked on top of
           base salary. California night nurses average $118,000–$132,000; Texas and Florida night nurses earn $82,000–$98,000.

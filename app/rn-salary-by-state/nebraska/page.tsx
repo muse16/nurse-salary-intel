@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Nebraska RN Salary 2026: $69,790/yr — Omaha & Rural Incentives',
   description:
-    'Nebraska RNs average $69,790/yr ($33.55/hr) in 2026. See pay by city, Nebraska Medicine vs. CHI Health rates, rural shortage area loan repayment, and Omaha market analysis.',
+    'Nebraska RNs average $69,790/yr ($33.55/hr). See pay by city, Nebraska Medicine vs. CHI Health rates, rural shortage area loan repayment, and Omaha market analysis.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Nebraska?',
-    answer: 'The average RN salary in Nebraska is $69,790/year ($33.55/hr) in 2026. Omaha nurses at Nebraska Medicine and CHI Health earn $73,500–$82,000, significantly above the state average. Nebraska\'s low cost of living (index ~87) improves real take-home relative to the nominal pay.',
+    answer: 'The average RN salary in Nebraska is $69,790/year ($33.55/hr). Omaha nurses at Nebraska Medicine and CHI Health earn $73,500–$82,000, significantly above the state average. Nebraska\'s low cost of living (index ~87) improves real take-home relative to the nominal pay.',
   },
   {
     question: 'What is the biggest hospital employer in Nebraska?',

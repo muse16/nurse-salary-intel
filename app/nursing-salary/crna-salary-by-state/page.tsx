@@ -6,13 +6,13 @@ import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'CRNA Salary by State 2026: $214,200/yr Avg — California $258K',
+  title: 'CRNA Salary by State 2026: $214,200/yr Est. — California $258K',
   description:
     'CRNAs earn $214,200/yr nationally in 2026. California tops out at $258K. See all 50 states ranked, how CRNA pay compares to anesthesiologists, and strategies to maximize earnings.',
 };
 
 const faqs = [
-  { question: 'How much do CRNAs make a year?', answer: 'The national average CRNA salary is $214,200 in 2026. Top earners in high-cost states like California and New York exceed $250,000. Even the lowest-paying states offer $175,000+.' },
+  { question: 'How much do CRNAs make a year?', answer: 'The national average CRNA salary is $214,200. Top earners in high-cost states like California and New York exceed $250,000. Even the lowest-paying states offer $175,000+.' },
   { question: 'What state pays CRNAs the most?', answer: 'California ($258,000), New York ($247,000), and Oregon ($242,000) pay CRNAs the most. However, after cost of living adjustment, Wyoming, Montana, and North Dakota offer excellent purchasing power.' },
   { question: 'Is CRNA the highest-paid nursing role?', answer: 'Yes. CRNA is consistently the highest-paid nursing specialty, earning nearly double what most nurse practitioners make and 2.5x the average RN salary.' },
   { question: 'How long does it take to become a CRNA?', answer: 'It takes 7–8 years minimum: BSN (4 years), 1–2 years ICU experience, then a 3-year DNP/DNAP program. Total education investment is significant but the salary return is the highest in nursing.' },

@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'West Virginia RN Salary 2026: $68,950/yr + Hourly Rates by City',
   description:
-    'West Virginia RNs average $68,950/yr ($33.15/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'West Virginia RNs average $68,950/yr ($33.15/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in West Virginia?',
-    answer: 'The average RN salary in West Virginia is $68,950/year ($33.15/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in West Virginia is $68,950/year ($33.15/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in West Virginia?',
@@ -54,7 +54,7 @@ export default function WestVirginiaRNSalary() {
       faqs={faqs}
     >
       <p>
-        West Virginia registered nurses earn an average of $68,950/year ($33.15/hr) in 2026.
+        West Virginia registered nurses earn an average of $68,950/year ($33.15/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

@@ -6,11 +6,11 @@ import SalaryTable from '@/components/SalaryTable';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'NYC RN Salary 2026: $109,860/yr Avg + NYSNA Union Pay Breakdown',
+  title: 'NYC RN Salary 2026: $109,860/yr Est. + NYSNA Union Pay Breakdown',
   description: 'New York City RN salary 2026: $109,860/yr avg ($52.82/hr). See pay at NYU Langone, NY-Presbyterian, Mount Sinai, MSK — plus union step scales and real take-home after NYC taxes.',
   alternates: { canonical: 'https://nursesalaryintel.com/new-york-city-rn-salary-2026' },
   openGraph: {
-    title: 'NYC RN Salary 2026: $109,860/yr Avg',
+    title: 'NYC RN Salary 2026: $109,860/yr Est.',
     description: 'New York City nurse salary by hospital, union step, specialty, and real take-home after state + city taxes.',
     url: 'https://nursesalaryintel.com/new-york-city-rn-salary-2026',
   },
@@ -66,7 +66,7 @@ const cityComparison = [
 const faqs = [
   {
     question: 'What is the average RN salary in New York City in 2026?',
-    answer: 'NYC RNs earn an average of $109,860/year ($52.82/hr) in 2026, making it one of the highest nominal salaries in the US. However, after New York State income tax (up to 8.82%), NYC city income tax (3.876%), and a cost-of-living index of 187, the real purchasing power is closer to $58,700 on a national baseline.',
+    answer: 'NYC RNs earn an average of $109,860/year ($52.82/hr), making it one of the highest nominal salaries in the US. However, after New York State income tax (up to 8.82%), NYC city income tax (3.876%), and a cost-of-living index of 187, the real purchasing power is closer to $58,700 on a national baseline.',
   },
   {
     question: 'Do NYC nurses get union pay scales?',
@@ -106,7 +106,7 @@ export default function NYCRNSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>NYC RNs earn $109,860/year ($52.82/hr)</strong> on average in 2026 — one of the highest nominal
+          <strong>NYC RNs earn $109,860/year ($52.82/hr)</strong> based on the latest BLS data — one of the highest nominal
           salaries in the US. But after New York State tax, NYC city tax, and a cost-of-living index of 187,
           the real take-home is about <strong>$71,360/year</strong>. Most major hospital systems are
           <strong> NYSNA union</strong> with step scales that push senior nurses to <strong>$145,000–$175,000</strong>.

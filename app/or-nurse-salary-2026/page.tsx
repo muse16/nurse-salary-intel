@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is the average OR nurse salary in 2026?',
-    answer: 'Operating room (perioperative) nurses earn an average of $102,800/year ($49.42/hour) nationally in 2026 — about 15.5% above the overall RN average of $89,010. OR nurses in California lead the country at $120,000–$145,000, driven by CNA union contracts and the state\'s mandatory staffing rules. The OR specialty premium reflects the high technical skill required, strict sterile technique protocols, and the limited pool of nurses trained in perioperative care.',
+    answer: 'Operating room (perioperative) nurses earn an average of $102,800/year ($49.42/hour) nationally in 2026 — about 15.5% above the overall RN average of approximately $89,000. OR nurses in California lead the country at $120,000–$145,000, driven by CNA union contracts and the state\'s mandatory staffing rules. The OR specialty premium reflects the high technical skill required, strict sterile technique protocols, and the limited pool of nurses trained in perioperative care.',
   },
   {
     question: 'What is the difference in pay between a scrub nurse and a circulating nurse?',

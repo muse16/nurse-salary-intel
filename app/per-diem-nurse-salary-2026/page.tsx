@@ -189,7 +189,7 @@ export default function PerDiemNurseSalary2026() {
 
         <h3 className="text-xl font-bold font-headline text-on-surface">Staff RN Total Compensation (Full-Time, U.S. Average)</h3>
         <ul className="list-disc pl-6 space-y-1">
-          <li>Base salary: $89,010</li>
+          <li>Base salary: approximately $89,000</li>
           <li>Health insurance employer contribution: $14,200/year</li>
           <li>401(k) employer match: $4,500/year</li>
           <li>PTO + holiday value: $7,000/year</li>

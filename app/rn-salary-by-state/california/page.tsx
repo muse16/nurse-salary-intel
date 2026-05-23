@@ -7,11 +7,11 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'California RN Salary 2026: $124,000/yr + Hourly Rates by City',
   description:
-    'California RNs average $124,000/yr ($59.62/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'California RNs average $124,000/yr ($59.62/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
-  { question: 'How much do RNs make in California?', answer: 'The average RN salary in California is $124,000/year ($59.62/hr) in 2026 — the highest in the nation. Experienced nurses at major systems like Kaiser and UCSF earn $140,000–$170,000.' },
+  { question: 'How much do RNs make in California?', answer: 'The average RN salary in California is $124,000/year ($59.62/hr) — the highest in the nation. Experienced nurses at major systems like Kaiser and UCSF earn $140,000–$170,000.' },
   { question: 'What is the starting RN salary in California?', answer: 'New grad RNs in California start at $85,000–$105,000/year depending on metro area. New grads in the Bay Area and LA command the highest starting rates.' },
   { question: 'Is California the highest-paying state for nurses?', answer: 'Yes, California has been the highest-paying state for RNs for over a decade. Strong union contracts, mandatory nurse-to-patient ratios, and severe shortages drive pay up.' },
   { question: 'Is it worth being a nurse in California with the high cost of living?', answer: 'For most nurses, yes — but location matters. San Francisco and LA nurse pay is offset by extreme housing costs. Sacramento, San Diego, and Central Valley cities offer better real purchasing power.' },
@@ -170,7 +170,7 @@ export default function CaliforniaRNSalary() {
       <div className="space-y-4">
         <div>
           <p className="font-semibold text-on-surface">What is the average RN salary in California?</p>
-          <p className="text-on-surface-variant">The average RN salary in California is $124,000/year ($59.62/hr) in 2026 — the highest of any state. Experienced nurses at major Bay Area systems earn $140,000–$170,000. Compare with <Link href="/rn-salary-by-state/new-york" className="text-primary hover:underline">RN salary in New York</Link> or <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">RN salary in Texas</Link> for a no-tax alternative. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to compare by specialty.</p>
+          <p className="text-on-surface-variant">The average RN salary in California is $124,000/year ($59.62/hr) — the highest of any state. Experienced nurses at major Bay Area systems earn $140,000–$170,000. Compare with <Link href="/rn-salary-by-state/new-york" className="text-primary hover:underline">RN salary in New York</Link> or <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">RN salary in Texas</Link> for a no-tax alternative. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to compare by specialty.</p>
         </div>
         <div>
           <p className="font-semibold text-on-surface">How much do nurses make per hour in California?</p>

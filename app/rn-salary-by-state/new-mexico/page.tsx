@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'New Mexico RN Salary 2026: $78,210/yr + Hourly Rates by City',
   description:
-    'New Mexico RNs average $78,210/yr ($37.60/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'New Mexico RNs average $78,210/yr ($37.60/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in New Mexico?',
-    answer: 'The average RN salary in New Mexico is $78,210/year ($37.60/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in New Mexico is $78,210/year ($37.60/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in New Mexico?',
@@ -54,7 +54,7 @@ export default function NewMexicoRNSalary() {
       faqs={faqs}
     >
       <p>
-        New Mexico registered nurses earn an average of $78,210/year ($37.60/hr) in 2026.
+        New Mexico registered nurses earn an average of $78,210/year ($37.60/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

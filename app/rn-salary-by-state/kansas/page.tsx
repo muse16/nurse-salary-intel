@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Kansas RN Salary 2026: $68,130/yr + Hourly Rates by City',
   description:
-    'Kansas RNs average $68,130/yr ($32.76/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Kansas RNs average $68,130/yr ($32.76/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Kansas?',
-    answer: 'The average RN salary in Kansas is $68,130/year ($32.76/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Kansas is $68,130/year ($32.76/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Kansas?',
@@ -54,7 +54,7 @@ export default function KansasRNSalary() {
       faqs={faqs}
     >
       <p>
-        Kansas registered nurses earn an average of $68,130/year ($32.76/hr) in 2026.
+        Kansas registered nurses earn an average of $68,130/year ($32.76/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

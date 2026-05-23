@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Alaska RN Salary 2026: $96,990/yr + No State Income Tax Advantage',
   description:
-    'Alaska RNs average $96,990/yr ($46.63/hr) in 2026 with zero state income tax. See pay by city, remote location premiums, and why Alaska is a top travel nurse destination.',
+    'Alaska RNs average $96,990/yr ($46.63/hr) with zero state income tax. See pay by city, remote location premiums, and why Alaska is a top travel nurse destination.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Alaska?',
-    answer: 'The average RN salary in Alaska is $96,990/year ($46.63/hr) in 2026. Alaska has no state income tax, so nurses keep significantly more of that than counterparts in high-tax states. Anchorage nurses at Providence and Alaska Regional earn $103,000–$115,000 for experienced roles.',
+    answer: 'The average RN salary in Alaska is $96,990/year ($46.63/hr). Alaska has no state income tax, so nurses keep significantly more of that than counterparts in high-tax states. Anchorage nurses at Providence and Alaska Regional earn $103,000–$115,000 for experienced roles.',
   },
   {
     question: 'Does Alaska have state income tax for nurses?',
@@ -63,7 +63,7 @@ export default function AlaskaRNSalary() {
     >
       <p>
         Alaska RNs earn an average of <strong>$96,990/year ($46.63/hr)</strong> in 2026 — above the
-        national average of $89,010, with zero state income tax amplifying every paycheck. The combination
+        national average of approximately $89,000, with zero state income tax amplifying every paycheck. The combination
         of high base pay, no state tax, and remote location premiums makes Alaska one of the most
         financially compelling markets for nurses willing to relocate. Anchorage&apos;s Providence Alaska
         Medical Center and the Alaska Native Medical Center are the anchor employers, with experienced

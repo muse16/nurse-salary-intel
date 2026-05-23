@@ -7,7 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Chicago RN Salary 2026: $83,580/yr + Northwestern vs Rush Pay',
-  description: 'Chicago RNs earn $83,580/yr in 2026. Pay at Northwestern, Rush, UChicago, and Advocate — plus sign-on bonuses, specialty premiums, and Midwest comparisons.',
+  description: 'Chicago RNs earn an estimated $83,580/yr. Pay at Northwestern, Rush, UChicago, and Advocate — plus sign-on bonuses, specialty premiums, and Midwest comparisons.',
   alternates: { canonical: 'https://nursesalaryintel.com/chicago-rn-salary-2026' },
 };
 
@@ -48,7 +48,7 @@ const cityComparison = [
 ];
 
 const faqs = [
-  { question: 'What is the average RN salary in Chicago in 2026?', answer: 'The average registered nurse salary in Chicago is $83,580/year ($40.18/hour) in 2026, based on BLS OEWS data for the Chicago-Naperville-Elgin MSA. New grads start at $67,800–$76,200 while senior specialty RNs earn $99,600–$121,000.' },
+  { question: 'What is the average RN salary in Chicago in 2026?', answer: 'The average registered nurse salary in Chicago is $83,580/year ($40.18/hour) based on BLS OEWS data for the Chicago-Naperville-Elgin MSA. New grads start at $67,800–$76,200 while senior specialty RNs earn $99,600–$121,000.' },
   { question: 'Which Chicago hospital pays nurses the most?', answer: 'Northwestern Memorial Hospital tops the range at $81,400–$108,600 base for specialty roles. Rush University Medical Center and University of Chicago Medicine follow closely at $79,800–$104,500 and $80,200–$106,300 respectively. Trauma, ICU, and OR specialties command the highest premiums.' },
   { question: 'Is Chicago a good city for nurses?', answer: 'Yes, with caveats. Chicago offers strong hospital systems, Magnet hospitals, and academic medical centers with excellent career development. Illinois has a higher cost of living than most Midwest cities (COL index ~107), but also no city income tax specific to nurses, and competitive sign-on bonuses.' },
   { question: 'How much do new grad RNs make in Chicago?', answer: 'New grad RNs in Chicago earn $67,800–$76,200/year ($32.60–$36.60/hr). Most major systems run 12–18 month residency programs. Sign-on bonuses for new grads typically run $5,000–$10,000 at academic medical centers.' },
@@ -81,7 +81,7 @@ export default function ChicagoRNSalary2026() {
       >
         <p>
           The average <strong>registered nurse salary in Chicago is $83,580/year ($40.18/hour)</strong> in 2026 —
-          about 6% below the national mean of $89,010 but well above the Illinois state average of $80,190.
+          about 6% below the national mean of approximately $89,000 but well above the Illinois state average of $80,190.
           Chicago&apos;s academic medical centers — Northwestern, Rush, and U of C — push senior specialty nurses
           past $108,000, while suburban systems compete hard with sign-on bonuses hitting $18,000 for critical care.
         </p>

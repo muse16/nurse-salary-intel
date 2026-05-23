@@ -38,7 +38,7 @@ const hospitalData = [
 const faqs = [
   {
     question: 'What is the average RN salary in Orlando in 2026?',
-    answer: 'Orlando RNs average $78,000–$92,000/year in 2026. Senior RNs with specialty certifications at Orlando Health or AdventHealth can reach $100,000+ with night differentials and bonuses.',
+    answer: 'Orlando RNs average $78,000–$92,000/year. Senior RNs with specialty certifications at Orlando Health or AdventHealth can reach $100,000+ with night differentials and bonuses.',
   },
   {
     question: 'Which Orlando hospital pays nurses the most?',

@@ -8,7 +8,7 @@ import RoiCalculator from '@/components/RoiCalculator';
 export const metadata: Metadata = {
   title: 'ADN vs BSN Salary 2026: Is the $10K/yr Pay Gap Worth It?',
   description:
-    'BSN nurses earn $10,400 more per year than ADN RNs on average in 2026. See state-by-state pay gap, lifetime ROI, and which hospitals require a BSN for promotion.',
+    'BSN nurses earn $10,400 more per year than ADN RNs based on the latest BLS data. See state-by-state pay gap, lifetime ROI, and which hospitals require a BSN for promotion.',
   alternates: { canonical: 'https://nursesalaryintel.com/salary/bsn-vs-rn' },
   openGraph: {
     title: 'ADN vs BSN Salary 2026: Is the $10K/yr Pay Gap Worth It?',
@@ -60,7 +60,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
   headline: 'ADN vs BSN Salary 2026: Is the $10K/yr Pay Gap Worth It?',
-  description: 'BSN nurses earn $10,400 more per year than ADN RNs on average in 2026.',
+  description: 'BSN nurses earn $10,400 more per year than ADN RNs based on the latest BLS data.',
   url: 'https://nursesalaryintel.com/salary/bsn-vs-rn',
   datePublished: '2026-01-01',
   dateModified: '2026-05-06',

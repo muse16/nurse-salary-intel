@@ -8,11 +8,11 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Florida RN Salary 2026: How Much Do Nurses Make in FL?',
   description:
-    'Florida RNs earn $76,450–$96,000/year in 2026. See salary by city, experience, and specialty — plus the no-state-income-tax advantage explained.',
+    'Florida RNs earn $76,450–$96,000/year. See salary by city, experience, and specialty — plus the no-state-income-tax advantage explained.',
   alternates: { canonical: 'https://nursesalaryintel.com/rn-salary-by-state/florida' },
   openGraph: {
     title: 'Florida RN Salary 2026: How Much Do Nurses Make in FL?',
-    description: 'Florida RNs earn $76,450–$96,000/year in 2026. Salary by city, experience, specialty, and the no-tax advantage explained.',
+    description: 'Florida RNs earn $76,450–$96,000/year. Salary by city, experience, specialty, and the no-tax advantage explained.',
     url: 'https://nursesalaryintel.com/rn-salary-by-state/florida',
     images: [
       {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-  { question: 'How much do nurses make in Florida?', answer: 'The average RN salary in Florida is $76,450/year ($36.75/hr) in 2026. Depending on metro, experience, and specialty, Florida RNs can earn $58,000–$105,000+/year.' },
+  { question: 'How much do nurses make in Florida?', answer: 'The average RN salary in Florida is $76,450/year ($36.75/hr). Depending on metro, experience, and specialty, Florida RNs can earn $58,000–$105,000+/year.' },
   { question: 'Is Florida a good state for nursing jobs?', answer: 'Florida has strong demand due to an aging population and growing retiree base. Pay is below the national average, but no state income tax and strong job availability offset this. Best for nurses valuing lifestyle and stability over maximum pay.' },
   { question: 'What is the highest-paying nursing job in Florida?', answer: 'CRNAs earn $192,000+/year. NPs average $112,000. Specialty nurses (ICU, ER, OR) earn $81,000–$96,000/year, 15–20% above med-surg base.' },
   { question: 'Does Florida\'s no-income-tax benefit offset lower base pay?', answer: 'Partially. A Florida nurse earning $76,450 keeps more take-home than a similar earner in a high-tax state. But the nominal gap versus top-paying states (CA, MA, WA) is real. Model the full picture before deciding.' },
@@ -289,7 +289,7 @@ export default function FloridaRNSalary() {
       <div className="space-y-4">
         <div>
           <p className="font-semibold text-on-surface">What is the average RN salary in Florida?</p>
-          <p className="text-on-surface-variant">The average RN salary in Florida is $76,450/year ($36.75/hr) in 2026 — below the national average of $89,010. For higher-paying no-tax alternatives, see <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">RN salary in Texas</Link>. For the nation&apos;s highest pay, compare <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link>. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to estimate Florida pay.</p>
+          <p className="text-on-surface-variant">The average RN salary in Florida is $76,450/year ($36.75/hr) — below the national average of approximately $89,000. For higher-paying no-tax alternatives, see <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">RN salary in Texas</Link>. For the nation&apos;s highest pay, compare <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link>. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to estimate Florida pay.</p>
         </div>
         <div>
           <p className="font-semibold text-on-surface">How much do nurses make per hour in Florida?</p>

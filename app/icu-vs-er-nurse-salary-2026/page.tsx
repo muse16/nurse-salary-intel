@@ -7,7 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'ICU vs ER Nurse Salary 2026: $95,200 vs $92,800 — Full Breakdown',
-  description: 'ICU nurses earn $95,200/yr vs ER nurses $92,800/yr in 2026. Compare hourly rates, shift differentials, sign-on bonuses, and which specialty pays more long-term.',
+  description: 'ICU nurses earn $95,200/yr vs ER nurses $92,800/yr. Compare hourly rates, shift differentials, sign-on bonuses, and which specialty pays more long-term.',
   alternates: { canonical: 'https://nursesalaryintel.com/icu-vs-er-nurse-salary-2026' },
 };
 

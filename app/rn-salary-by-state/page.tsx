@@ -5,14 +5,14 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'RN Salary by State 2026: $89,010/yr National Avg — All 50 States',
+  title: 'RN Salary by State 2026: approximately $89,000/yr National Avg — All 50 States',
   description:
-    'RN salaries range $64K–$124K depending on state. 2026 national avg: $89,010/yr ($42.79/hr). Compare all 50 states, top cities, and specialty premiums in one place.',
+    'RN salaries range $64K–$124K depending on state. 2026 national avg: approximately $89,000/yr ($42.79/hr). Compare all 50 states, top cities, and specialty premiums in one place.',
 };
 
 const faqs = [
   { question: 'What state pays nurses the most?', answer: 'California pays RNs the most at an average of $124,000/year. Hawaii ($106,530), Oregon ($102,700), Washington ($100,890), and New York ($98,560) round out the top five.' },
-  { question: 'What is the average RN salary in the US?', answer: 'The national average RN salary in 2026 is $89,010/year ($42.79/hour), according to BLS data combined with NurseSalaryIntel contract data.' },
+  { question: 'What is the average RN salary in the US?', answer: 'The national average RN salary in 2026 is approximately $89,000/year ($42.79/hour), according to BLS data combined with NurseSalaryIntel contract data.' },
   { question: 'Which states have the highest nurse demand?', answer: 'Texas, California, Florida, New York, and Pennsylvania have the highest absolute nurse demand. However, per-capita shortages are worst in rural Western and Southern states.' },
   { question: 'Does cost of living cancel out high nurse salaries?', answer: 'Partially, yes. After cost of living adjustment, California and New York drop significantly. Washington, Oregon, Nevada, and Texas offer better real purchasing power when you factor in housing, taxes, and groceries.' },
   { question: 'Are RN salaries going up or down in 2026?', answer: 'RN salaries continue to rise in 2026, up approximately 4% year-over-year. Growth is driven by persistent nursing shortages and increasing patient acuity.' },
@@ -212,7 +212,7 @@ export default function RNSalaryByStatePillar() {
       <div className="space-y-4">
         <div>
           <p className="font-semibold text-on-surface">What is the average RN salary in the United States?</p>
-          <p className="text-on-surface-variant">The national average RN salary is $89,010/year ($42.79/hr) in 2026, per BLS OEWS data. <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link> leads at $124,000, followed by Hawaii and Oregon above $100,000/year. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to estimate your own pay.</p>
+          <p className="text-on-surface-variant">The national average RN salary is approximately $89,000/year ($42.79/hr), per BLS OEWS data. <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link> leads at $124,000, followed by Hawaii and Oregon above $100,000/year. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to estimate your own pay.</p>
         </div>
         <div>
           <p className="font-semibold text-on-surface">How much do nurses make per hour in the United States?</p>

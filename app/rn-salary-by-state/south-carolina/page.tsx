@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'South Carolina RN Salary 2026: $70,760/yr + Hourly Rates by City',
   description:
-    'South Carolina RNs average $70,760/yr ($34.02/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'South Carolina RNs average $70,760/yr ($34.02/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in South Carolina?',
-    answer: 'The average RN salary in South Carolina is $70,760/year ($34.02/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in South Carolina is $70,760/year ($34.02/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in South Carolina?',
@@ -54,7 +54,7 @@ export default function SouthCarolinaRNSalary() {
       faqs={faqs}
     >
       <p>
-        South Carolina registered nurses earn an average of $70,760/year ($34.02/hr) in 2026.
+        South Carolina registered nurses earn an average of $70,760/year ($34.02/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

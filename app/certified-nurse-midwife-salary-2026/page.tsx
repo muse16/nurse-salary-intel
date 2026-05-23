@@ -8,7 +8,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Certified Nurse Midwife Salary 2026: CNM Pay by State',
   description:
-    'CNMs earn $120,880/year on average in 2026. See certified nurse midwife salary by state, setting, and how CNM pay compares to OB/GYN NPs and labor nurses.',
+    'CNMs earn $120,880/year based on the latest BLS data. See certified nurse midwife salary by state, setting, and how CNM pay compares to OB/GYN NPs and labor nurses.',
   alternates: { canonical: 'https://nursesalaryintel.com/certified-nurse-midwife-salary-2026' },
   openGraph: {
     title: 'Certified Nurse Midwife Salary 2026',
@@ -101,7 +101,7 @@ export default function CertifiedNurseMidwifeSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>Certified nurse midwives earn $120,880/year ($58.11/hr)</strong> on average nationally in 2026 —
+          <strong>Certified nurse midwives earn $120,880/year ($58.11/hr)</strong> based on the latest BLS data nationally —
           roughly <strong>$35,000/year more than L&D RNs</strong> with the same clinical setting.
           California CNMs lead all states at <strong>$148,000/year</strong>. CNMs with full practice authority
           and independent birth centers can earn <strong>$145,000+</strong>.

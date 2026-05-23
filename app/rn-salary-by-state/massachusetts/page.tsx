@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Massachusetts RN Salary 2026: $103,090/yr + Hourly Rates by City',
   description:
-    'Massachusetts RNs average $103,090/yr ($49.56/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Massachusetts RNs average $103,090/yr ($49.56/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Massachusetts?',
-    answer: 'The average RN salary in Massachusetts is $103,090/year ($49.56/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Massachusetts is $103,090/year ($49.56/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Massachusetts?',
@@ -54,7 +54,7 @@ export default function MassachusettsRNSalary() {
       faqs={faqs}
     >
       <p>
-        Massachusetts registered nurses earn an average of $103,090/year ($49.56/hr) in 2026.
+        Massachusetts registered nurses earn an average of $103,090/year ($49.56/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

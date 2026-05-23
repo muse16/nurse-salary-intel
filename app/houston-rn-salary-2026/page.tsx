@@ -8,7 +8,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Houston RN Salary 2026: $83,500/yr + Top Texas Hospitals Ranked',
   description:
-    'Houston RNs earn $83,500/yr in 2026 — zero state income tax. Pay at Houston Methodist, Memorial Hermann, HCA, and Texas Children\'s by specialty and experience.',
+    'Houston RNs earn an estimated $83,500/yr — zero state income tax. Pay at Houston Methodist, Memorial Hermann, HCA, and Texas Children\'s by specialty and experience.',
   alternates: { canonical: 'https://nursesalaryintel.com/houston-rn-salary-2026' },
   openGraph: {
     title: 'Houston RN Salary 2026: $83,500/yr + Top Texas Hospitals Ranked',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is the average RN salary in Houston, TX in 2026?',
-    answer: 'Houston RNs earn an average of $83,500/year ($40.14/hr) in 2026, below the national average of $89,010. However, Texas has no state income tax — adding $3,500–$5,500 to effective take-home pay compared to states like Colorado or Georgia. Houston Methodist and the Texas Medical Center complex pay at the top of the local market.',
+    answer: 'Houston RNs earn an average of $83,500/year ($40.14/hr), below the national average of approximately $89,000. However, Texas has no state income tax — adding $3,500–$5,500 to effective take-home pay compared to states like Colorado or Georgia. Houston Methodist and the Texas Medical Center complex pay at the top of the local market.',
   },
   {
     question: 'What hospitals pay nurses the most in Houston?',
@@ -82,7 +82,7 @@ export default function HoustonRNSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>Houston RNs earn $83,500/year ($40.14/hr)</strong> on average in 2026 — below the national average,
+          <strong>Houston RNs earn $83,500/year ($40.14/hr)</strong> based on the latest BLS data — below the national average,
           but <strong>Texas has no state income tax</strong>, adding $3,500–$5,500 to effective take-home pay vs.
           comparable states. New grads start at <strong>$62,000–$70,000</strong>; senior specialty nurses reach
           <strong> $110,000–$115,000+</strong>. Houston Methodist and the Texas Medical Center pay the market top.

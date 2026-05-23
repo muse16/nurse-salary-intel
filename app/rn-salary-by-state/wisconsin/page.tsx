@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Wisconsin RN Salary 2026: $78,140/yr + Hourly Rates by City',
   description:
-    'Wisconsin RNs average $78,140/yr ($37.57/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Wisconsin RNs average $78,140/yr ($37.57/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Wisconsin?',
-    answer: 'The average RN salary in Wisconsin is $78,140/year ($37.57/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Wisconsin is $78,140/year ($37.57/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Wisconsin?',
@@ -54,7 +54,7 @@ export default function WisconsinRNSalary() {
       faqs={faqs}
     >
       <p>
-        Wisconsin registered nurses earn an average of $78,140/year ($37.57/hr) in 2026.
+        Wisconsin registered nurses earn an average of $78,140/year ($37.57/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

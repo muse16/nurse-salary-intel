@@ -8,7 +8,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Cleveland RN Salary 2026: How Much Do Nurses Make in Cleveland, OH?',
   description:
-    'Cleveland RNs earn $74,000/yr ($35.58/hr) on average in 2026. Cleveland Clinic pays $78K–$98K. See salary by hospital, specialty, and cost-of-living adjusted pay vs. major US cities.',
+    'Cleveland RNs earn $74,000/yr ($35.58/hr) based on the latest BLS data. Cleveland Clinic pays $78K–$98K. See salary by hospital, specialty, and cost-of-living adjusted pay vs. major US cities.',
   alternates: { canonical: 'https://nursesalaryintel.com/cleveland-rn-salary-2026' },
   openGraph: {
     title: 'Cleveland RN Salary 2026: $74,000/yr — Strong Purchasing Power at Cleveland Clinic',
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: 'What is the average RN salary in Cleveland, OH in 2026?',
     answer:
-      "Cleveland RNs earn an average of $74,000/year ($35.58/hr) in 2026 — below the national average on paper, but Cleveland's cost of living is roughly 15–20% below the national average, which significantly improves real purchasing power. Cleveland Clinic — one of the world's top-ranked hospitals — pays $78,000–$98,000 for experienced nurses.",
+      "Cleveland RNs earn an average of $74,000/year ($35.58/hr) — below the national average on paper, but Cleveland's cost of living is roughly 15–20% below the national average, which significantly improves real purchasing power. Cleveland Clinic — one of the world's top-ranked hospitals — pays $78,000–$98,000 for experienced nurses.",
   },
   {
     question: 'What hospitals pay nurses the most in Cleveland?',
@@ -92,7 +92,7 @@ export default function ClevelandRNSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>Cleveland RNs earn $74,000/year ($35.58/hr)</strong> on average in 2026 — below the national
+          <strong>Cleveland RNs earn $74,000/year ($35.58/hr)</strong> based on the latest BLS data — below the national
           average in raw dollars, but Cleveland&apos;s cost of living is{' '}
           <strong>15–20% below the national average</strong>, making the real purchasing power competitive.
           Cleveland Clinic pays <strong>$78,000–$98,000</strong> for experienced nurses. Cardiovascular and CVICU

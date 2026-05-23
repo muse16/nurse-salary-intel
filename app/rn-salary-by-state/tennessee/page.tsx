@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Tennessee RN Salary 2026: $69,560/yr + Hourly Rates by City',
   description:
-    'Tennessee RNs average $69,560/yr ($33.44/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Tennessee RNs average $69,560/yr ($33.44/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Tennessee?',
-    answer: 'The average RN salary in Tennessee is $69,560/year ($33.44/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Tennessee is $69,560/year ($33.44/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Tennessee?',
@@ -54,7 +54,7 @@ export default function TennesseeRNSalary() {
       faqs={faqs}
     >
       <p>
-        Tennessee registered nurses earn an average of $69,560/year ($33.44/hr) in 2026.
+        Tennessee registered nurses earn an average of $69,560/year ($33.44/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

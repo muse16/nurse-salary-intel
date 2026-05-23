@@ -8,11 +8,11 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'NICU Nurse Salary 2026: $84,490/yr + Travel NICU $2,300–$3,000/wk',
   description:
-    'NICU nurses earn $84,490/yr ($40.62/hr) in 2026. Travel NICU RNs make $2,300–$3,000/week. See pay by state, RNC-NIC certification premium, and job outlook through 2030.',
+    'NICU nurses earn $84,490/yr ($40.62/hr). Travel NICU RNs make $2,300–$3,000/week. See pay by state, RNC-NIC certification premium, and job outlook through 2030.',
 };
 
 const faqs = [
-  { question: 'How much do NICU nurses make?', answer: 'The national average NICU nurse salary is $84,490/year ($40.62/hr) in 2026. Experience and certification can push this to $95,000–$105,000 in high-paying states.' },
+  { question: 'How much do NICU nurses make?', answer: 'The national average NICU nurse salary is $84,490/year ($40.62/hr). Experience and certification can push this to $95,000–$105,000 in high-paying states.' },
   { question: 'Is NICU a good nursing specialty for pay?', answer: 'NICU pays above the overall RN average but slightly less than ICU and ER. The trade-off is a more predictable patient population and strong emotional rewards for nurses who love working with neonates.' },
   { question: 'Do NICU travel nurses make more?', answer: 'Yes — NICU travel nurses earn $2,300–$3,000/week ($120,000–$156,000 annualized), which is 40–85% more than staff NICU nurses.' },
   { question: 'What certifications do NICU nurses need?', answer: 'RNC-NIC (Neonatal Intensive Care Nursing) is the primary certification, adding $4,500/year on average. NRP (Neonatal Resuscitation Program) certification is typically required for hire.' },

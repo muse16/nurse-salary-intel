@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Washington RN Salary 2026: $97,960/yr + Hourly Rates by City',
   description:
-    'Washington RNs average $97,960/yr ($47.10/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Washington RNs average $97,960/yr ($47.10/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Washington?',
-    answer: 'The average RN salary in Washington is $97,960/year ($47.10/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Washington is $97,960/year ($47.10/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Washington?',
@@ -54,7 +54,7 @@ export default function WashingtonRNSalary() {
       faqs={faqs}
     >
       <p>
-        Washington registered nurses earn an average of $97,960/year ($47.10/hr) in 2026.
+        Washington registered nurses earn an average of $97,960/year ($47.10/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

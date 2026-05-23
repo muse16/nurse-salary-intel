@@ -5,19 +5,19 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Nurse Salary Data 2026: $89,010 Avg — All 50 States & Specialties',
+  title: 'Nurse Salary Data 2026: approximately $89,000 — All 50 States & Specialties',
   description:
-    'Average RN salary is $89,010/yr ($42.80/hr) in 2026. State rankings, specialty pay, travel nurse earnings, and wage gaps — all sourced from BLS OEWS.',
+    'Average RN salary is approximately $89,000/yr ($42.80/hr). State rankings, specialty pay, travel nurse earnings, and wage gaps — all sourced from BLS OEWS.',
   alternates: { canonical: 'https://nursesalaryintel.com/nursing-salary/salary-data-2026' },
   openGraph: {
-    title: 'Nurse Salary Statistics 2026: BLS Benchmarks ($89K Avg)',
+    title: 'Nurse Salary Statistics 2026: BLS Benchmarks ($89K Est.)',
     description: 'State, specialty, hourly, and wage-growth nurse pay stats. Sourced + citation-ready.',
     url: 'https://nursesalaryintel.com/nursing-salary/salary-data-2026',
   },
 };
 
 const headlineStats = [
-  { stat: 'Average RN salary (national)', value: '$89,010 / year', source: 'BLS OEWS 2025' },
+  { stat: 'Average RN salary (national)', value: 'approximately $89,000 / year', source: 'BLS OEWS 2025' },
   { stat: 'Average RN hourly rate', value: '$42.80 / hr', source: 'BLS OEWS 2025' },
   { stat: 'Highest-paid state (California)', value: '$124,000 / year', source: 'BLS OEWS 2025' },
   { stat: 'Lowest-paid state (Mississippi)', value: '$62,000 / year', source: 'BLS OEWS 2025' },
@@ -87,11 +87,11 @@ export default function NurseSalaryData2026() {
       faqs={[
         {
           question: 'What is the average nurse salary in the US in 2026?',
-          answer: 'The average RN salary in the United States is $89,010/year ($42.80/hr) in 2026, according to BLS OEWS data. This ranges from $62,000 in Mississippi to $124,000 in California.',
+          answer: 'The average RN salary in the United States is approximately $89,000/year ($42.80/hr), according to BLS OEWS data. This ranges from $62,000 in Mississippi to $124,000 in California.',
         },
         {
           question: 'How much more do California nurses make than the national average?',
-          answer: 'California RNs earn $124,000/year — $35,000 (65%) more than the national average of $89,010. California has been the highest-paying state for nurses for over a decade, driven by mandatory staffing ratios and strong union contracts.',
+          answer: 'California RNs earn $124,000/year — $35,000 (65%) more than the national average of approximately $89,000. California has been the highest-paying state for nurses for over a decade, driven by mandatory staffing ratios and strong union contracts.',
         },
         {
           question: 'What is the pay gap between the highest and lowest paying states for nurses?',
@@ -100,7 +100,7 @@ export default function NurseSalaryData2026() {
       ]}
     >
       <p>
-        The average RN salary in the US is <strong>$89,010/year ($42.80/hr)</strong> in 2026, according to
+        The average RN salary in the US is <strong>approximately $89,000/year ($42.80/hr)</strong> in 2026, according to
         BLS OEWS data. That ranges from $62,000 in Mississippi to $124,000 in California — a $62,000 gap
         between the lowest and highest-paying states. CRNAs top the specialty rankings at $214,000/year.
         All key figures are compiled below, sourced from BLS OEWS and NurseSalaryIntel data.
@@ -141,7 +141,7 @@ export default function NurseSalaryData2026() {
       <h2 className="text-2xl font-bold font-headline text-on-surface">Top 10 Highest-Paying States for Nurses (2026)</h2>
       <p>
         California leads the nation at $124,000/year. The top 10 states all pay above the national average
-        of $89,010 — most are coastal, unionized, or both.
+        of approximately $89,000 — most are coastal, unionized, or both.
       </p>
 
       <SalaryTable

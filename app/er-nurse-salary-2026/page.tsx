@@ -6,12 +6,12 @@ import SalaryTable from '@/components/SalaryTable';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'ER Nurse Salary 2026: $92,800/yr Avg + CEN Adds $4,800/yr',
+  title: 'ER Nurse Salary 2026: $92,800/yr Est. + CEN Adds $4,800/yr',
   description:
-    'ER nurses earn $92,800/yr in 2026. Pay by state, CEN certification premium, Level 1 trauma differentials, and travel ER nurse weekly rates.',
+    'ER nurses earn an estimated $92,800/yr. Pay by state, CEN certification premium, Level 1 trauma differentials, and travel ER nurse weekly rates.',
   alternates: { canonical: 'https://nursesalaryintel.com/er-nurse-salary-2026' },
   openGraph: {
-    title: 'ER Nurse Salary 2026: $92,800/yr Avg + CEN Adds $4,800/yr',
+    title: 'ER Nurse Salary 2026: $92,800/yr Est. + CEN Adds $4,800/yr',
     description: 'ER nurse pay by state, hospital, specialty tier, and experience — with CEN certification premium and travel rates.',
     url: 'https://nursesalaryintel.com/er-nurse-salary-2026',
   },
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: 'What is the average ER nurse salary in 2026?',
     answer:
-      'Emergency room nurses earn an average of $92,800/year ($44.62/hr) in 2026 — approximately 4% above the overall RN national average of $89,010 (BLS OEWS May 2024). California leads at $116,000–$125,000/year. CEN certification adds an average of $4,800/year on top of base pay. Travel ER nurses earn $2,400–$3,200/week on contract.',
+      'Emergency room nurses earn an average of $92,800/year ($44.62/hr) — approximately 4% above the overall RN national average of $89,010 (BLS OEWS May 2024). California leads at $116,000–$125,000/year. CEN certification adds an average of $4,800/year on top of base pay. Travel ER nurses earn $2,400–$3,200/week on contract.',
   },
   {
     question: 'How much does CEN certification add to ER nurse salary?',
@@ -94,7 +94,7 @@ export default function ERNurseSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          Emergency room nurses earn <strong>$92,800/year ($44.62/hr)</strong> on average in 2026, roughly 4%
+          Emergency room nurses earn <strong>$92,800/year ($44.62/hr)</strong> based on the latest BLS data, roughly 4%
           above the general RN average. California ER nurses exceed <strong>$116,000/year</strong>. CEN
           certification adds <strong>~$4,800/year</strong>. A Level 1 trauma ER nurse on nights with CEN can
           realistically clear <strong>$110,000–$118,000</strong> in total compensation before overtime.
@@ -204,7 +204,7 @@ export default function ERNurseSalary2026() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">ER vs. ICU: Which Specialty Pays More?</h2>
       <p>
-        ICU nurses earn approximately $95,200/year on average in 2026, versus $92,800 for ER nurses — a
+        ICU nurses earn approximately $95,200/year based on the latest BLS data, versus $92,800 for ER nurses — a
         nominal gap of about $2,400 annually in favor of ICU. The gap widens at senior levels, where
         CCRN-certified ICU nurses at academic medical centers consistently outpace their ER counterparts
         by $5,000–$10,000 in base pay. However, ER nurses often have higher overtime earnings due to

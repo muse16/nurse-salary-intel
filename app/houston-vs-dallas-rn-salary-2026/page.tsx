@@ -7,7 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Houston vs Dallas RN Salary 2026: $82,140 vs $80,910 Compared',
-  description: 'Houston RNs earn $82,140/yr vs Dallas $80,910/yr in 2026. Compare hospitals, specialties, sign-on bonuses, cost of living, and which Texas city wins for nurses.',
+  description: 'Houston RNs earn $82,140/yr vs Dallas $80,910/yr. Compare hospitals, specialties, sign-on bonuses, cost of living, and which Texas city wins for nurses.',
   alternates: { canonical: 'https://nursesalaryintel.com/houston-vs-dallas-rn-salary-2026' },
 };
 

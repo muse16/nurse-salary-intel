@@ -8,10 +8,10 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Atlanta RN Salary 2026: How Much Do Nurses Make in Atlanta, GA?',
   description:
-    'Atlanta RNs earn $79,000/yr ($37.98/hr) on average in 2026. See pay at Emory Healthcare, Grady Memorial, Northside Hospital, Piedmont, and Wellstar — with Georgia tax analysis.',
+    'Atlanta RNs earn $79,000/yr ($37.98/hr) based on the latest BLS data. See pay at Emory Healthcare, Grady Memorial, Northside Hospital, Piedmont, and Wellstar — with Georgia tax analysis.',
   alternates: { canonical: 'https://nursesalaryintel.com/atlanta-rn-salary-2026' },
   openGraph: {
-    title: 'Atlanta RN Salary 2026: $79,000/yr Avg',
+    title: 'Atlanta RN Salary 2026: $79,000/yr Est.',
     description: 'Atlanta nurse salary by hospital, specialty, and experience — with Georgia cost-of-living and tax context.',
     url: 'https://nursesalaryintel.com/atlanta-rn-salary-2026',
   },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is the average RN salary in Atlanta, GA in 2026?',
-    answer: "Atlanta RNs earn an average of $79,000/year ($37.98/hr) in 2026, below the national average of $89,010. Georgia has a flat 5.49% state income tax for 2026. However, Atlanta's lower cost of living — particularly housing — partially offsets the nominal pay gap. Emory Healthcare pays the highest base salaries in the market.",
+    answer: "Atlanta RNs earn an average of $79,000/year ($37.98/hr), below the national average of approximately $89,000. Georgia has a flat 5.49% state income tax for 2026. However, Atlanta's lower cost of living — particularly housing — partially offsets the nominal pay gap. Emory Healthcare pays the highest base salaries in the market.",
   },
   {
     question: 'What hospitals pay nurses the most in Atlanta?',
@@ -82,7 +82,7 @@ export default function AtlantaRNSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>Atlanta RNs earn $79,000/year ($37.98/hr)</strong> on average in 2026 — below the national
+          <strong>Atlanta RNs earn $79,000/year ($37.98/hr)</strong> based on the latest BLS data — below the national
           average but with a meaningfully <strong>lower cost of living</strong> than comparable metros.
           New grads start at <strong>$60,000–$67,000</strong>; senior ICU and trauma nurses reach
           <strong> $104,000–$108,000</strong>. Emory Healthcare pays the market top; Grady Memorial offers

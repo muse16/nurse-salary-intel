@@ -6,14 +6,14 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Labor & Delivery Nurse Salary 2026: $96,800/yr Avg + L&D Pay by State',
+  title: 'Labor & Delivery Nurse Salary 2026: $96,800/yr Est. + L&D Pay by State',
   description: 'Labor and delivery nurse salary 2026: $96,800/yr national avg. L&D RN pay by state, hospital, inpatient obstetrics vs. high-risk, RNC-OB cert differential, and travel rates.',
 };
 
 const faqs = [
   {
     question: 'What is the average labor and delivery nurse salary in 2026?',
-    answer: 'Labor and delivery (L&D) nurses earn an average of $96,800/year ($46.54/hour) nationally in 2026 — about 8.8% above the overall RN average of $89,010. California L&D nurses lead the country at $112,000–$136,000, driven by CNA union contracts. High-risk obstetrics (MFM/antepartum) nurses typically earn 8–12% more than standard L&D nurses due to the added complexity of maternal-fetal medicine cases.',
+    answer: 'Labor and delivery (L&D) nurses earn an average of $96,800/year ($46.54/hour) nationally in 2026 — about 8.8% above the overall RN average of approximately $89,000. California L&D nurses lead the country at $112,000–$136,000, driven by CNA union contracts. High-risk obstetrics (MFM/antepartum) nurses typically earn 8–12% more than standard L&D nurses due to the added complexity of maternal-fetal medicine cases.',
   },
   {
     question: 'What is RNC-OB certification and how much does it increase pay?',

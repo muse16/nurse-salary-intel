@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Hawaii RN Salary 2026: $113,060/yr + Hourly Rates by City',
   description:
-    'Hawaii RNs average $113,060/yr ($54.36/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Hawaii RNs average $113,060/yr ($54.36/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Hawaii?',
-    answer: 'The average RN salary in Hawaii is $113,060/year ($54.36/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Hawaii is $113,060/year ($54.36/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Hawaii?',
@@ -54,7 +54,7 @@ export default function HawaiiRNSalary() {
       faqs={faqs}
     >
       <p>
-        Hawaii registered nurses earn an average of $113,060/year ($54.36/hr) in 2026.
+        Hawaii registered nurses earn an average of $113,060/year ($54.36/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

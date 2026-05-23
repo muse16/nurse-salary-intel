@@ -6,9 +6,9 @@ import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'ER Nurse Salary 2026: $89,000/yr Avg ($42.79/hr) + CEN Adds $4,800',
+  title: 'ER Nurse Salary 2026: $89,000/yr Est. ($42.79/hr) + CEN Adds $4,800',
   description:
-    'ER nurses average $89,000/yr ($42.79/hr) in 2026 — 15% above the RN average. See pay by state, how CEN certification adds $4,800/yr, and travel ER nurse weekly rates.',
+    'ER nurses average $89,000/yr ($42.79/hr) — 15% above the RN average. See pay by state, how CEN certification adds $4,800/yr, and travel ER nurse weekly rates.',
 };
 
 const faqs = [
@@ -48,12 +48,12 @@ export default function ERNurseSalary() {
     >
       <p>
         Emergency room nurses are the frontline of acute care — and their pay reflects it. In 2026, ER nurses
-        earn an average of $89,010/year, with strong growth driven by increasing ED volumes and nursing shortages.
+        earn an average of approximately $89,000/year, with strong growth driven by increasing ED volumes and nursing shortages.
       </p>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Average ER Nurse Salary in 2026</h2>
       <p>
-        The national average ER nurse salary is <strong>$89,010/year ($42.79/hr)</strong>, approximately 15% above
+        The national average ER nurse salary is <strong>approximately $89,000/year ($42.79/hr)</strong>, approximately 15% above
         the overall RN average.
       </p>
 

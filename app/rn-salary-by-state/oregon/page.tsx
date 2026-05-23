@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Oregon RN Salary 2026: $98,630/yr + Hourly Rates by City',
   description:
-    'Oregon RNs average $98,630/yr ($47.42/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Oregon RNs average $98,630/yr ($47.42/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Oregon?',
-    answer: 'The average RN salary in Oregon is $98,630/year ($47.42/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Oregon is $98,630/year ($47.42/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Oregon?',
@@ -54,7 +54,7 @@ export default function OregonRNSalary() {
       faqs={faqs}
     >
       <p>
-        Oregon registered nurses earn an average of $98,630/year ($47.42/hr) in 2026.
+        Oregon registered nurses earn an average of $98,630/year ($47.42/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'RN Salary Breakdown 2026: $89,010 Avg + All 9 Pay Components',
+  title: 'RN Salary Breakdown 2026: approximately $89,000 + All 9 Pay Components',
   description: 'Full RN salary breakdown for 2026: base pay, shift differentials, overtime, sign-on bonuses, benefits value, and total compensation by state and specialty.',
   alternates: { canonical: 'https://nursesalaryintel.com/registered-nurse-salary-breakdown' },
 };

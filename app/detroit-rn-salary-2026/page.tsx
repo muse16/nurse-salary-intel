@@ -8,10 +8,10 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Detroit RN Salary 2026: How Much Do Nurses Make in Detroit, MI?',
   description:
-    'Detroit RNs earn $82,000/yr ($39.42/hr) on average in 2026. Henry Ford Health pays $80K–$102K. See salary by hospital, specialty, and experience — with Michigan tax breakdown.',
+    'Detroit RNs earn $82,000/yr ($39.42/hr) based on the latest BLS data. Henry Ford Health pays $80K–$102K. See salary by hospital, specialty, and experience — with Michigan tax breakdown.',
   alternates: { canonical: 'https://nursesalaryintel.com/detroit-rn-salary-2026' },
   openGraph: {
-    title: 'Detroit RN Salary 2026: $82,000/yr Average + Hospital Comparison',
+    title: 'Detroit RN Salary 2026: $82,000/yr Estimated + Hospital Comparison',
     description: 'Detroit nurse salary by hospital, specialty, and experience — with Michigan income tax take-home analysis.',
     url: 'https://nursesalaryintel.com/detroit-rn-salary-2026',
   },
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: 'What is the average RN salary in Detroit, MI in 2026?',
     answer:
-      'Detroit RNs earn an average of $82,000/year ($39.42/hr) in 2026, based on latest available BLS OEWS data (May 2024). The Detroit-Warren-Dearborn MSA runs slightly above the Michigan state average of $76,000/year, reflecting the concentration of major academic and specialty hospital systems in the metro.',
+      'Detroit RNs earn an average of $82,000/year ($39.42/hr), based on latest available BLS OEWS data (May 2024). The Detroit-Warren-Dearborn MSA runs slightly above the Michigan state average of $76,000/year, reflecting the concentration of major academic and specialty hospital systems in the metro.',
   },
   {
     question: 'Which hospitals pay nurses the most in Detroit?',
@@ -92,7 +92,7 @@ export default function DetroitRNSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          Detroit RNs earn <strong>$82,000/year ($39.42/hr)</strong> on average in 2026 — above the Michigan state
+          Detroit RNs earn <strong>$82,000/year ($39.42/hr)</strong> based on the latest BLS data — above the Michigan state
           average of $76,000/year. Henry Ford Health leads the market at <strong>$80,000–$102,000</strong>.
           Michigan&apos;s flat <strong>4.25% state income tax</strong> is among the more straightforward in the
           Midwest, and Detroit&apos;s low cost of living means the purchasing power of an $82,000 salary stretches

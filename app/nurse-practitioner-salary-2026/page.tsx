@@ -6,12 +6,12 @@ import SalaryTable from '@/components/SalaryTable';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Nurse Practitioner Salary 2026: $126K Avg + Pay by Specialty & State',
+  title: 'Nurse Practitioner Salary 2026: $126K Est. + Pay by Specialty & State',
   description:
-    'NPs earn $126,000/yr ($60.58/hr) on average in 2026. See NP salary by specialty (FNP, PMHNP, ACNP), state rankings, and how NP pay compares to RN and physician.',
+    'NPs earn $126,000/yr ($60.58/hr) based on the latest BLS data. See NP salary by specialty (FNP, PMHNP, ACNP), state rankings, and how NP pay compares to RN and physician.',
   alternates: { canonical: 'https://nursesalaryintel.com/nurse-practitioner-salary-2026' },
   openGraph: {
-    title: 'Nurse Practitioner Salary 2026: $126K Avg',
+    title: 'Nurse Practitioner Salary 2026: $126K Est.',
     description: 'NP salary by specialty, state, and setting — with FNP, PMHNP, ACNP, and CRNA comparisons.',
     url: 'https://nursesalaryintel.com/nurse-practitioner-salary-2026',
   },
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: 'How much more does an NP make than an RN?',
-    answer: 'NPs earn $126,000/year on average vs. $89,010/year for RNs — a difference of $36,990/year (41% more). The MSN degree required for NP practice typically takes 2–3 years beyond RN licensure and costs $30,000–$80,000, but the salary premium pays for graduate school within 1–2 years.',
+    answer: 'NPs earn $126,000/year on average vs. approximately $89,000/year for RNs — a difference of $36,990/year (41% more). The MSN degree required for NP practice typically takes 2–3 years beyond RN licensure and costs $30,000–$80,000, but the salary premium pays for graduate school within 1–2 years.',
   },
   {
     question: 'Can nurse practitioners make $200,000 a year?',
@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     question: 'Which state pays nurse practitioners the most?',
-    answer: 'California pays NPs the most at $161,000/year ($77.40/hr) in 2026. Washington ($148,000), New Jersey ($145,000), and New York ($142,000) round out the top four. All four states have strong union contracts or independent NP practice authority that supports higher pay.',
+    answer: 'California pays NPs the most at $161,000/year ($77.40/hr). Washington ($148,000), New Jersey ($145,000), and New York ($142,000) round out the top four. All four states have strong union contracts or independent NP practice authority that supports higher pay.',
   },
 ];
 

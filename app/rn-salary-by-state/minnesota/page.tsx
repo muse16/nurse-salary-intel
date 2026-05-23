@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Minnesota RN Salary 2026: $86,110/yr + Hourly Rates by City',
   description:
-    'Minnesota RNs average $86,110/yr ($41.40/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Minnesota RNs average $86,110/yr ($41.40/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Minnesota?',
-    answer: 'The average RN salary in Minnesota is $86,110/year ($41.40/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Minnesota is $86,110/year ($41.40/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Minnesota?',
@@ -54,7 +54,7 @@ export default function MinnesotaRNSalary() {
       faqs={faqs}
     >
       <p>
-        Minnesota registered nurses earn an average of $86,110/year ($41.40/hr) in 2026.
+        Minnesota registered nurses earn an average of $86,110/year ($41.40/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

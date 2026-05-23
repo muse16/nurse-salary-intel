@@ -7,11 +7,11 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Texas RN Salary 2026: $82,000/yr + Hourly Rates by City',
   description:
-    'Texas RNs average $82,000/yr ($39.42/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Texas RNs average $82,000/yr ($39.42/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
-  { question: 'How much do nurses make in Texas?', answer: 'The average RN salary in Texas is $81,510/year ($39.19/hr) in 2026. Metro areas like Houston, Dallas, and Austin pay $85,000–$95,000 for experienced nurses.' },
+  { question: 'How much do nurses make in Texas?', answer: 'The average RN salary in Texas is $81,510/year ($39.19/hr). Metro areas like Houston, Dallas, and Austin pay $85,000–$95,000 for experienced nurses.' },
   { question: 'What city in Texas pays nurses the most?', answer: 'Houston pays Texas RNs the most at $87,500/year, driven by the Texas Medical Center. Dallas-Fort Worth and Austin are close behind.' },
   { question: 'Is Texas good for nursing jobs?', answer: 'Yes. Texas has no state income tax, strong population growth, and one of the largest healthcare economies in the country. Texas consistently has 15,000+ open RN positions.' },
   { question: 'How does Texas nurse pay compare to California?', answer: 'California RNs earn $42,500 more per year on average. But after California state income tax (up to 13.3%) and higher cost of living, Texas nurses often have equivalent take-home pay with lower expenses.' },
@@ -169,7 +169,7 @@ export default function TexasRNSalary() {
       <div className="space-y-4">
         <div>
           <p className="font-semibold text-on-surface">What is the average RN salary in Texas?</p>
-          <p className="text-on-surface-variant">The average RN salary in Texas is $81,510/year ($39.19/hr) in 2026. Houston metro nurses average $84,000–$94,000, and experienced specialty nurses often exceed $95,000. Compare with <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link> or <Link href="/rn-salary-by-state/florida" className="text-primary hover:underline">RN salary in Florida</Link>. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to model Texas pay.</p>
+          <p className="text-on-surface-variant">The average RN salary in Texas is $81,510/year ($39.19/hr). Houston metro nurses average $84,000–$94,000, and experienced specialty nurses often exceed $95,000. Compare with <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link> or <Link href="/rn-salary-by-state/florida" className="text-primary hover:underline">RN salary in Florida</Link>. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to model Texas pay.</p>
         </div>
         <div>
           <p className="font-semibold text-on-surface">How much do nurses make per hour in Texas?</p>

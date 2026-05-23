@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Wyoming RN Salary 2026: $71,730/yr + Hourly Rates by City',
   description:
-    'Wyoming RNs average $71,730/yr ($34.49/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Wyoming RNs average $71,730/yr ($34.49/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Wyoming?',
-    answer: 'The average RN salary in Wyoming is $71,730/year ($34.49/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Wyoming is $71,730/year ($34.49/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Wyoming?',
@@ -54,7 +54,7 @@ export default function WyomingRNSalary() {
       faqs={faqs}
     >
       <p>
-        Wyoming registered nurses earn an average of $71,730/year ($34.49/hr) in 2026.
+        Wyoming registered nurses earn an average of $71,730/year ($34.49/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

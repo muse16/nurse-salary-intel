@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Mississippi RN Salary 2026: $64,320/yr + Hourly Rates by City',
   description:
-    'Mississippi RNs average $64,320/yr ($30.92/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Mississippi RNs average $64,320/yr ($30.92/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Mississippi?',
-    answer: 'The average RN salary in Mississippi is $64,320/year ($30.92/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Mississippi is $64,320/year ($30.92/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Mississippi?',
@@ -54,7 +54,7 @@ export default function MississippiRNSalary() {
       faqs={faqs}
     >
       <p>
-        Mississippi registered nurses earn an average of $64,320/year ($30.92/hr) in 2026.
+        Mississippi registered nurses earn an average of $64,320/year ($30.92/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

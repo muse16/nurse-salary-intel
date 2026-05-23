@@ -6,9 +6,9 @@ import { stateData as allStatesData, stateToSlug } from '@/lib/bls-data';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'ICU Nurse Salary 2026: $95,000/yr Avg + CCRN Adds $5,200/yr',
+  title: 'ICU Nurse Salary 2026: $95,000/yr Est. + CCRN Adds $5,200/yr',
   description:
-    'ICU nurses average $95,000/yr ($45.80/hr) in 2026 — 20% above the RN average. CCRN certification adds $5,200/yr. See pay by state, experience, and how to earn more in critical care.',
+    'ICU nurses average $95,000/yr ($45.80/hr) — 20% above the RN average. CCRN certification adds $5,200/yr. See pay by state, experience, and how to earn more in critical care.',
 };
 
 const faqs = [

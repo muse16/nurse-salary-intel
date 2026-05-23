@@ -8,7 +8,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'CNA Salary 2026: How Much Do CNAs Make Per Hour & Year?',
   description:
-    'CNAs earn $38,200/yr ($18.37/hr) on average in 2026. See CNA pay by state, setting, and experience — plus how much more LPNs and RNs make.',
+    'CNAs earn $38,200/yr ($18.37/hr) based on the latest BLS data. See CNA pay by state, setting, and experience — plus how much more LPNs and RNs make.',
   alternates: { canonical: 'https://nursesalaryintel.com/cna-salary-2026' },
   openGraph: {
     title: 'CNA Salary 2026: How Much Do CNAs Make?',
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: 'What state pays CNAs the most?',
-    answer: 'California pays CNAs the most at an average of $51,000/year ($24.52/hr) in 2026. Washington ($48,000), Alaska ($47,000), and New York ($45,000) round out the top four highest-paying states for CNAs.',
+    answer: 'California pays CNAs the most at an average of $51,000/year ($24.52/hr). Washington ($48,000), Alaska ($47,000), and New York ($45,000) round out the top four highest-paying states for CNAs.',
   },
   {
     question: 'Do hospital CNAs make more than nursing home CNAs?',
@@ -91,7 +91,7 @@ export default function CNASalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>CNAs earn $38,200/year ($18.37/hr)</strong> on average nationally in 2026.
+          <strong>CNAs earn $38,200/year ($18.37/hr)</strong> based on the latest BLS data nationally.
           Hospital CNAs earn more ($42,500/yr) than nursing home CNAs ($34,200/yr).
           California tops the state rankings at <strong>$51,000/year</strong>.
           The jump to LPN adds <strong>$16,800/year</strong>; the jump to RN adds <strong>$39,800/year</strong>.

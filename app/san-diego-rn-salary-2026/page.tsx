@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is the average RN salary in San Diego in 2026?',
-    answer: 'Registered nurses in San Diego earn an average of $104,800/year ($50.38/hour) in 2026, based on BLS OEWS data for the San Diego-Chula Vista-Carlsbad MSA. That puts San Diego above the national average of $89,010 but about $40,000–$50,000 below Kaiser Permanente nurses in the Bay Area. UC San Diego Health and Scripps Health lead the local market, with experienced nurses earning $110,000–$138,000.',
+    answer: 'Registered nurses in San Diego earn an average of $104,800/year ($50.38/hour) based on BLS OEWS data for the San Diego-Chula Vista-Carlsbad MSA. That puts San Diego above the national average of approximately $89,000 but about $40,000–$50,000 below Kaiser Permanente nurses in the Bay Area. UC San Diego Health and Scripps Health lead the local market, with experienced nurses earning $110,000–$138,000.',
   },
   {
     question: 'Does California CNA union coverage apply in San Diego?',

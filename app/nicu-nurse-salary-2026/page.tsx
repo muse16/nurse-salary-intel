@@ -134,7 +134,7 @@ export default function NicuNurseSalary2026() {
         />
 
         <p>
-          The national mean for all RNs in 2026 is approximately $89,010/year. NICU nurses typically earn <strong>8–18% above general RN pay</strong> — a premium driven by specialty skill complexity, high acuity, and the emotional demands of the role.
+          The national mean for all RNs in 2026 is approximately $89,000/year. NICU nurses typically earn <strong>8–18% above general RN pay</strong> — a premium driven by specialty skill complexity, high acuity, and the emotional demands of the role.
         </p>
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">NICU Nurse Salary by State (2026 Estimates)</h2>

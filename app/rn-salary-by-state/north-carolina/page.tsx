@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'North Carolina RN Salary 2026: $72,970/yr + Hourly Rates by City',
   description:
-    'North Carolina RNs average $72,970/yr ($35.08/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'North Carolina RNs average $72,970/yr ($35.08/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in North Carolina?',
-    answer: 'The average RN salary in North Carolina is $72,970/year ($35.08/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in North Carolina is $72,970/year ($35.08/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in North Carolina?',
@@ -54,7 +54,7 @@ export default function NorthCarolinaRNSalary() {
       faqs={faqs}
     >
       <p>
-        North Carolina registered nurses earn an average of $72,970/year ($35.08/hr) in 2026.
+        North Carolina registered nurses earn an average of $72,970/year ($35.08/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

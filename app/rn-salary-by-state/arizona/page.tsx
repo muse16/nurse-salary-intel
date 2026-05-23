@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://nursesalaryintel.com/rn-salary-by-state/arizona' },
   openGraph: {
     title: 'Arizona RN Salary 2026: $39.42/hr + Phoenix vs Tucson',
-    description: 'AZ RN pay $82,000/yr in 2026. City pay gaps + top employers (Mayo, Banner, HonorHealth).',
+    description: 'AZ RN pay $82,000/yr. City pay gaps + top employers (Mayo, Banner, HonorHealth).',
     url: 'https://nursesalaryintel.com/rn-salary-by-state/arizona',
   },
 };
@@ -20,7 +20,7 @@ const faqs = [
   {
     question: 'How much do RNs make in Arizona?',
     answer:
-      'The average RN salary in Arizona is $82,000/year ($39.42/hr) in 2026. Phoenix metro nurses earn the most, averaging $88,000–$96,000 at major systems like Banner Health and Mayo Clinic.',
+      'The average RN salary in Arizona is $82,000/year ($39.42/hr). Phoenix metro nurses earn the most, averaging $88,000–$96,000 at major systems like Banner Health and Mayo Clinic.',
   },
   {
     question: 'What is the starting RN salary in Arizona?',
@@ -263,7 +263,7 @@ export default function ArizonaRNSalary() {
       <div className="space-y-4">
         <div>
           <p className="font-semibold text-on-surface">What is the average RN salary in Arizona?</p>
-          <p className="text-on-surface-variant">The average RN salary in Arizona is $82,000/year ($39.42/hr) in 2026. Phoenix metro nurses earn $84,000–$96,000 depending on facility and specialty. Compare with <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link> or <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">RN salary in Texas</Link> for context. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to estimate Arizona pay by specialty.</p>
+          <p className="text-on-surface-variant">The average RN salary in Arizona is $82,000/year ($39.42/hr). Phoenix metro nurses earn $84,000–$96,000 depending on facility and specialty. Compare with <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link> or <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">RN salary in Texas</Link> for context. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to estimate Arizona pay by specialty.</p>
         </div>
         <div>
           <p className="font-semibold text-on-surface">How much do nurses make per hour in Arizona?</p>

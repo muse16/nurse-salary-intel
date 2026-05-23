@@ -8,7 +8,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Seattle RN Salary 2026: $110,000/yr + UW vs Swedish Pay Gap',
   description:
-    'Seattle RNs earn $110,000/yr in 2026 — among the highest in the US. See pay at UW Medical Center, Swedish, Virginia Mason, and Seattle Children\'s by specialty.',
+    'Seattle RNs earn an estimated $110,000/yr — among the highest in the US. See pay at UW Medical Center, Swedish, Virginia Mason, and Seattle Children\'s by specialty.',
   alternates: { canonical: 'https://nursesalaryintel.com/seattle-rn-salary-2026' },
   openGraph: {
     title: 'Seattle RN Salary 2026: $110,000/yr + UW vs Swedish Pay Gap',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is the average RN salary in Seattle, WA in 2026?',
-    answer: "Seattle RNs earn an average of $110,000/year ($52.88/hr) in 2026 — among the highest nominal RN salaries in the US. Washington state has no income tax, which preserves more of that pay. UW Medical Center and Seattle Children's Hospital pay at the top of the market ($112,000–$130,000+ for experienced nurses).",
+    answer: "Seattle RNs earn an average of $110,000/year ($52.88/hr) — among the highest nominal RN salaries in the US. Washington state has no income tax, which preserves more of that pay. UW Medical Center and Seattle Children's Hospital pay at the top of the market ($112,000–$130,000+ for experienced nurses).",
   },
   {
     question: 'What hospitals pay nurses the most in Seattle?',
@@ -82,7 +82,7 @@ export default function SeattleRNSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>Seattle RNs earn $110,000/year ($52.88/hr)</strong> on average in 2026 — among the highest
+          <strong>Seattle RNs earn $110,000/year ($52.88/hr)</strong> based on the latest BLS data — among the highest
           nominal nurse salaries in the US. Washington has <strong>no state income tax</strong>, preserving more of
           that pay. New grads start at <strong>$85,000–$95,000</strong>; senior ICU and trauma nurses reach
           <strong> $130,000–$138,000+</strong>. UW Medical Center and Seattle Children&apos;s pay the market top.

@@ -8,7 +8,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: "Women's Health NP Salary 2026: WHNP Pay by State & Setting",
   description:
-    "Women's health NPs earn $122,000/year on average in 2026. See WHNP salary by state, setting, and how it compares to CNM, OB/GYN NP, and general FNP pay.",
+    "Women's health NPs earn $122,000/year based on the latest BLS data. See WHNP salary by state, setting, and how it compares to CNM, OB/GYN NP, and general FNP pay.",
   alternates: { canonical: 'https://nursesalaryintel.com/whnp-salary-2026' },
   openGraph: {
     title: "Women's Health NP (WHNP) Salary 2026",
@@ -101,7 +101,7 @@ export default function WHNPSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>Women&apos;s health NPs earn $122,000/year</strong> on average nationally in 2026.
+          <strong>Women&apos;s health NPs earn $122,000/year</strong> based on the latest BLS data nationally.
           California WHNPs lead all states at <strong>$145,000/year</strong>. Fertility clinic
           WHNPs are the highest earners in the specialty — often reaching <strong>$135,000+</strong>
           with bonus structures tied to patient cycles. Comparable to CNM pay with a different clinical scope.

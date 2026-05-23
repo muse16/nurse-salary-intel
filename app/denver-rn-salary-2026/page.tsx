@@ -8,10 +8,10 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Denver RN Salary 2026: How Much Do Nurses Make in Denver, CO?',
   description:
-    'Denver RNs earn $84,500/yr ($40.63/hr) on average in 2026. See pay at UCHealth, SCL Health, Children\'s Colorado, and Denver Health — plus cost-of-living analysis.',
+    'Denver RNs earn $84,500/yr ($40.63/hr) based on the latest BLS data. See pay at UCHealth, SCL Health, Children\'s Colorado, and Denver Health — plus cost-of-living analysis.',
   alternates: { canonical: 'https://nursesalaryintel.com/denver-rn-salary-2026' },
   openGraph: {
-    title: 'Denver RN Salary 2026: $84,500/yr Avg',
+    title: 'Denver RN Salary 2026: $84,500/yr Est.',
     description: 'Denver nurse salary by hospital, specialty, and experience — with Colorado cost-of-living context.',
     url: 'https://nursesalaryintel.com/denver-rn-salary-2026',
   },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is the average RN salary in Denver, CO in 2026?',
-    answer: 'Denver RNs earn an average of $84,500/year ($40.63/hr) in 2026, slightly below the national average of $89,010. Colorado\'s cost of living (index ~118 in Denver) partially offsets the nominal pay. UCHealth and Children\'s Colorado pay at the top of the market ($90,000–$115,000 for experienced nurses).',
+    answer: 'Denver RNs earn an average of $84,500/year ($40.63/hr), slightly below the national average of approximately $89,000. Colorado\'s cost of living (index ~118 in Denver) partially offsets the nominal pay. UCHealth and Children\'s Colorado pay at the top of the market ($90,000–$115,000 for experienced nurses).',
   },
   {
     question: 'What hospitals pay nurses the most in Denver?',
@@ -81,7 +81,7 @@ export default function DenverRNSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>Denver RNs earn $84,500/year ($40.63/hr)</strong> on average in 2026.
+          <strong>Denver RNs earn $84,500/year ($40.63/hr)</strong> based on the latest BLS data.
           New grads start at <strong>$66,000–$73,000</strong>; senior ICU and trauma nurses reach <strong>$95,000–$118,000</strong>.
           UCHealth and Children&apos;s Colorado pay the market top.
           Colorado&apos;s 4.4% flat income tax reduces take-home vs. no-tax states at equivalent gross pay.

@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Ohio RN Salary 2026: $76,190/yr + Hourly Rates by City',
   description:
-    'Ohio RNs average $76,190/yr ($36.63/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Ohio RNs average $76,190/yr ($36.63/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Ohio?',
-    answer: 'The average RN salary in Ohio is $76,190/year ($36.63/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Ohio is $76,190/year ($36.63/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Ohio?',
@@ -54,7 +54,7 @@ export default function OhioRNSalary() {
       faqs={faqs}
     >
       <p>
-        Ohio registered nurses earn an average of $76,190/year ($36.63/hr) in 2026.
+        Ohio registered nurses earn an average of $76,190/year ($36.63/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Idaho RN Salary 2026: $72,160/yr — St. Luke\'s & Boise Growth',
   description:
-    'Idaho RNs average $72,160/yr ($34.69/hr) in 2026. See pay by city, St. Luke\'s vs. Saint Alphonsus rates, rural shortage bonuses, and why Idaho\'s population boom is driving nursing demand.',
+    'Idaho RNs average $72,160/yr ($34.69/hr). See pay by city, St. Luke\'s vs. Saint Alphonsus rates, rural shortage bonuses, and why Idaho\'s population boom is driving nursing demand.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Idaho?',
-    answer: 'The average RN salary in Idaho is $72,160/year ($34.69/hr) in 2026. Boise nurses at St. Luke\'s Health System earn $76,000–$85,000, while rural areas pay less. Idaho\'s rapid population growth is tightening the nursing labor market and pushing salaries upward faster than most Midwest or Mountain West peers.',
+    answer: 'The average RN salary in Idaho is $72,160/year ($34.69/hr). Boise nurses at St. Luke\'s Health System earn $76,000–$85,000, while rural areas pay less. Idaho\'s rapid population growth is tightening the nursing labor market and pushing salaries upward faster than most Midwest or Mountain West peers.',
   },
   {
     question: 'What is the biggest hospital in Idaho?',

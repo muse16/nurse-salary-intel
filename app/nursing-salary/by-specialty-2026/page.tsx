@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-  { question: 'What is the highest-paying nursing specialty?', answer: 'CRNA (Certified Registered Nurse Anesthetist) is the highest-paying nursing specialty, with an average salary of $214,200/year in 2026. Nurse Practitioners are second at $126,260/year.' },
+  { question: 'What is the highest-paying nursing specialty?', answer: 'CRNA (Certified Registered Nurse Anesthetist) is the highest-paying nursing specialty, with an average salary of $214,200/year. Nurse Practitioners are second at $126,260/year.' },
   { question: 'Do nursing specialties require additional certifications?', answer: 'Most specialties have optional certifications that increase pay: CCRN for ICU, CEN for ER, CNOR for OR, RNC-NIC for NICU. Advanced practice roles (CRNA, NP) require graduate degrees and national certification.' },
   { question: 'How much do CRNA nurses make?', answer: 'CRNAs earn an average of $214,200/year nationally, with top earners in states like California and New York exceeding $250,000. This requires a Doctor of Nursing Practice (DNP) or equivalent.' },
   { question: 'Which nursing specialty has the best work-life balance?', answer: 'Outpatient specialties (dermatology, allergy, primary care NP) offer the best work-life balance with regular hours and no nights/weekends, though they typically pay less than acute care specialties.' },

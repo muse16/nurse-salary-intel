@@ -8,7 +8,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Baltimore RN Salary 2026: How Much Do Nurses Make in Baltimore, MD?',
   description:
-    'Baltimore RNs earn $89,000/yr ($42.79/hr) on average in 2026. Johns Hopkins pays $88K–$110K. See salary by hospital, specialty, and experience — with Maryland tax breakdown.',
+    'Baltimore RNs earn $89,000/yr ($42.79/hr) based on the latest BLS data. Johns Hopkins pays $88K–$110K. See salary by hospital, specialty, and experience — with Maryland tax breakdown.',
   alternates: { canonical: 'https://nursesalaryintel.com/baltimore-rn-salary-2026' },
   openGraph: {
     title: 'Baltimore RN Salary 2026: $89,000/yr at Johns Hopkins & UMMC',
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: 'What is the average RN salary in Baltimore, MD in 2026?',
     answer:
-      'Baltimore RNs earn an average of $89,000/year ($42.79/hr) in 2026, roughly in line with the national average. Johns Hopkins Hospital pays $88,000–$110,000 for experienced nurses. The University of Maryland Shock Trauma Center adds trauma differentials that push ICU and ER nurses meaningfully above the base.',
+      'Baltimore RNs earn an average of $89,000/year ($42.79/hr), roughly in line with the national average. Johns Hopkins Hospital pays $88,000–$110,000 for experienced nurses. The University of Maryland Shock Trauma Center adds trauma differentials that push ICU and ER nurses meaningfully above the base.',
   },
   {
     question: 'What hospitals pay nurses the most in Baltimore?',
@@ -92,7 +92,7 @@ export default function BaltimoreRNSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>Baltimore RNs earn $89,000/year ($42.79/hr)</strong> on average in 2026 — roughly at the national
+          <strong>Baltimore RNs earn $89,000/year ($42.79/hr)</strong> based on the latest BLS data — roughly at the national
           average, with Johns Hopkins and UMMC anchoring the top of the market at{' '}
           <strong>$88,000–$110,000</strong>. New grads start at <strong>$68,000–$78,000</strong>; senior ICU and
           trauma nurses can reach <strong>$103,000–$115,000+</strong> with specialty differentials.

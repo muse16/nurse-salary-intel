@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is the average critical care nurse salary in 2026?',
-    answer: 'Critical care (ICU) nurses earn an average of $98,400/year ($47.31/hour) nationally in 2026, roughly 10.5% above the overall RN average of $89,010. The premium reflects higher acuity, mandatory 1:2 nurse-to-patient ratios, and the clinical complexity of managing ventilated, hemodynamically unstable patients. California ICU nurses lead the country at $125,000–$148,000 for experienced staff, while ICU nurses in lower-cost states like Mississippi and Arkansas average $64,000–$72,000.',
+    answer: 'Critical care (ICU) nurses earn an average of $98,400/year ($47.31/hour) nationally in 2026, roughly 10.5% above the overall RN average of approximately $89,000. The premium reflects higher acuity, mandatory 1:2 nurse-to-patient ratios, and the clinical complexity of managing ventilated, hemodynamically unstable patients. California ICU nurses lead the country at $125,000–$148,000 for experienced staff, while ICU nurses in lower-cost states like Mississippi and Arkansas average $64,000–$72,000.',
   },
   {
     question: 'Does CCRN certification increase ICU nurse pay?',

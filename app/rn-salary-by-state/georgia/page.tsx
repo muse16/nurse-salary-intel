@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Georgia RN Salary 2026: $75,080/yr + Hourly Rates by City',
   description:
-    'Georgia RNs average $75,080/yr ($36.10/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Georgia RNs average $75,080/yr ($36.10/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Georgia?',
-    answer: 'The average RN salary in Georgia is $75,080/year ($36.10/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Georgia is $75,080/year ($36.10/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Georgia?',
@@ -54,7 +54,7 @@ export default function GeorgiaRNSalary() {
       faqs={faqs}
     >
       <p>
-        Georgia registered nurses earn an average of $75,080/year ($36.10/hr) in 2026.
+        Georgia registered nurses earn an average of $75,080/year ($36.10/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

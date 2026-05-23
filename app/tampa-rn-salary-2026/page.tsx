@@ -8,10 +8,10 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Tampa RN Salary 2026: How Much Do Nurses Make in Tampa, FL?',
   description:
-    'Tampa RNs earn $73,000/yr ($35.10/hr) on average in 2026. TGH pays $75K–$96K. See salary by hospital, specialty, and experience — with Florida no-income-tax take-home analysis.',
+    'Tampa RNs earn $73,000/yr ($35.10/hr) based on the latest BLS data. TGH pays $75K–$96K. See salary by hospital, specialty, and experience — with Florida no-income-tax take-home analysis.',
   alternates: { canonical: 'https://nursesalaryintel.com/tampa-rn-salary-2026' },
   openGraph: {
-    title: 'Tampa RN Salary 2026: $73,000/yr Average + No State Income Tax',
+    title: 'Tampa RN Salary 2026: $73,000/yr Estimated + No State Income Tax',
     description: 'Tampa nurse salary by hospital, specialty, and experience — with Florida no-income-tax take-home breakdown.',
     url: 'https://nursesalaryintel.com/tampa-rn-salary-2026',
   },
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: 'What is the average RN salary in Tampa, FL in 2026?',
     answer:
-      "Tampa RNs earn an average of $73,000/year ($35.10/hr) in 2026, based on latest available BLS OEWS data (May 2024). That is slightly below the national average of $89,000 on a gross basis, but Florida's lack of state income tax meaningfully improves take-home pay relative to states like California or New York.",
+      "Tampa RNs earn an average of $73,000/year ($35.10/hr), based on latest available BLS OEWS data (May 2024). That is slightly below the national average of $89,000 on a gross basis, but Florida's lack of state income tax meaningfully improves take-home pay relative to states like California or New York.",
   },
   {
     question: 'Which hospital pays nurses the most in Tampa?',
@@ -92,7 +92,7 @@ export default function TampaRNSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          Tampa RNs earn <strong>$73,000/year ($35.10/hr)</strong> on average in 2026. Tampa General Hospital leads
+          Tampa RNs earn <strong>$73,000/year ($35.10/hr)</strong> based on the latest BLS data. Tampa General Hospital leads
           the market at <strong>$75,000–$96,000</strong>, and Moffitt Cancer Center adds oncology premiums for
           specialty nurses. Florida&apos;s <strong>zero state income tax</strong> meaningfully improves take-home
           vs. comparably-salaried states — a nurse earning $73,000 in Tampa keeps roughly{' '}

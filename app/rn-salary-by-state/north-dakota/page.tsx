@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'North Dakota RN Salary 2026: $72,140/yr — No Income Tax',
   description:
-    'North Dakota RNs average $72,140/yr ($34.68/hr) in 2026 with no state income tax. See pay by city, Sanford Health rates, rural shortage area bonuses, and loan repayment options.',
+    'North Dakota RNs average $72,140/yr ($34.68/hr) with no state income tax. See pay by city, Sanford Health rates, rural shortage area bonuses, and loan repayment options.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in North Dakota?',
-    answer: 'The average RN salary in North Dakota is $72,140/year ($34.68/hr) in 2026 — below the national average but with no state income tax and a low cost of living (index ~88). After adjusting for taxes and COL, North Dakota nurses take home competitively relative to the national picture.',
+    answer: 'The average RN salary in North Dakota is $72,140/year ($34.68/hr) — below the national average but with no state income tax and a low cost of living (index ~88). After adjusting for taxes and COL, North Dakota nurses take home competitively relative to the national picture.',
   },
   {
     question: 'Does North Dakota have state income tax for nurses?',

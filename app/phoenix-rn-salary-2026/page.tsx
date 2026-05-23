@@ -38,7 +38,7 @@ const hospitalData = [
 const faqs = [
   {
     question: 'What is the average RN salary in Phoenix in 2026?',
-    answer: 'Phoenix RNs earn $85,000–$98,000/year on average in 2026. Mayo Clinic Scottsdale is the highest-paying anchor at $90,000–$105,000. The statewide Arizona mean is $82,000–$95,000.',
+    answer: 'Phoenix RNs earn $85,000–$98,000/year based on the latest BLS data. Mayo Clinic Scottsdale is the highest-paying anchor at $90,000–$105,000. The statewide Arizona mean is $82,000–$95,000.',
   },
   {
     question: 'Which Phoenix hospital pays nurses the most?',

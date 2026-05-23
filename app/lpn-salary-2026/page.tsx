@@ -8,7 +8,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'LPN Salary 2026: How Much Do LPNs Make Per Hour & Year?',
   description:
-    'LPNs earn $55,000/yr ($26.44/hr) on average in 2026. See LPN pay by state, setting, and how it compares to CNA and RN — plus the fastest path to higher pay.',
+    'LPNs earn $55,000/yr ($26.44/hr) based on the latest BLS data. See LPN pay by state, setting, and how it compares to CNA and RN — plus the fastest path to higher pay.',
   alternates: { canonical: 'https://nursesalaryintel.com/lpn-salary-2026' },
   openGraph: {
     title: 'LPN Salary 2026: How Much Do LPNs Make?',
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     question: 'What state pays LPNs the most?',
-    answer: 'Alaska pays LPNs the most at $62,000/year ($29.81/hr) in 2026, followed by California ($70,000), Massachusetts ($66,000), and Washington ($64,000). High cost-of-living states dominate the top of the rankings.',
+    answer: 'Alaska pays LPNs the most at $62,000/year ($29.81/hr), followed by California ($70,000), Massachusetts ($66,000), and Washington ($64,000). High cost-of-living states dominate the top of the rankings.',
   },
   {
     question: 'Is LPN worth it over CNA?',
@@ -92,7 +92,7 @@ export default function LPNSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>LPNs earn $55,000/year ($26.44/hr)</strong> on average nationally in 2026 —
+          <strong>LPNs earn $55,000/year ($26.44/hr)</strong> based on the latest BLS data nationally —
           <strong> $16,800/year more than CNAs</strong> and <strong>$23,000–$31,000/year less than RNs</strong>.
           California LPNs top the state rankings at <strong>$70,000/year</strong>.
           Home health and correctional facilities pay the most by work setting.

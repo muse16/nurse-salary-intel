@@ -7,7 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'RN vs LPN Salary 2026: RNs Earn $30K+ More — Full Pay & ROI Breakdown',
-  description: 'RN vs LPN salary 2026: RNs earn $89,010/yr, LPNs $59,730 — a $29,280 gap. Compare hourly pay, education ROI, hours, and 5-year earnings with full math.',
+  description: 'RN vs LPN salary 2026: RNs earn approximately $89,000/yr, LPNs $59,730 — a $29,280 gap. Compare hourly pay, education ROI, hours, and 5-year earnings with full math.',
   alternates: { canonical: 'https://nursesalaryintel.com/rn-vs-lpn-salary-2026' },
 };
 
@@ -44,7 +44,7 @@ const educationData = [
 ];
 
 const faqs = [
-  { question: 'How much more does an RN make than an LPN?', answer: '$29,280 more per year on average in 2026 — RN $89,010 vs LPN $59,730. Hourly, that\'s $42.79 vs $28.72, a $14.07/hr gap. The difference grows with experience: senior RNs earn $39,800+ more than senior LPNs.' },
+  { question: 'How much more does an RN make than an LPN?', answer: '$29,280 more per year based on the latest BLS data — RN approximately $89,000 vs LPN $59,730. Hourly, that\'s $42.79 vs $28.72, a $14.07/hr gap. The difference grows with experience: senior RNs earn $39,800+ more than senior LPNs.' },
   { question: 'Is becoming an RN worth it over an LPN?', answer: 'For most career-track nurses, yes. The pay gap pays back even an $80,000 BSN within 18–36 months in most states. Exceptions: if you\'re in a low-gap rural state, plan to work in long-term care/hospice, or need to start earning within 12 months.' },
   { question: 'How long does it take to go from LPN to RN?', answer: '12–18 months for an LPN-to-ADN bridge program (NCLEX-RN eligible at completion). 24–36 months for an LPN-to-BSN bridge. Many programs are part-time or online and let you continue working as an LPN during the bridge.' },
   { question: 'Can an LPN make as much as an RN?', answer: 'Rarely. Top-paying LPN roles (correctional nursing, IV-certified LPN in select states) can hit $76,000–$80,000, which is at or above entry-level RN pay in low-pay states. But the LPN ceiling is fixed by scope of practice — you cannot match a senior specialty RN\'s $110K+ as an LPN.' },
@@ -73,17 +73,17 @@ export default function RNvsLPNSalary2026() {
         h1="RN vs LPN Salary 2026: The $29,280 Pay Gap, Decoded"
         lastUpdated="April 27, 2026"
         schemaTitle="RN vs LPN Salary 2026: RNs Earn $30K+ More — Full Pay & ROI Breakdown"
-        schemaDescription="RN vs LPN salary 2026: RNs earn $89,010/yr, LPNs $59,730 — a $29,280 gap. Compare hourly pay, education ROI, hours, and 5-year earnings with full math."
+        schemaDescription="RN vs LPN salary 2026: RNs earn approximately $89,000/yr, LPNs $59,730 — a $29,280 gap. Compare hourly pay, education ROI, hours, and 5-year earnings with full math."
         schemaUrl="/rn-vs-lpn-salary-2026/"
         faqs={faqs}
       >
         <Image src="/images/rn-vs-lpn-salary-2026-hero.png" alt="RN vs LPN side-by-side comparison showing 2026 salary difference between registered and licensed practical nurses" width={1200} height={630}
           sizes="(max-width: 1024px) 100vw, 896px" className="w-full rounded-lg mb-6" priority />
 
-        <p><strong>Registered Nurses (RNs) earn $89,010 per year on average in 2026, while Licensed Practical Nurses (LPNs) earn $59,730</strong> — a $29,280 gap, or 49% higher pay for RNs. Hourly, that&apos;s $42.79 for RNs versus $28.72 for LPNs. The pay gap looks larger than the education gap (1–2 extra years), which is why most nurses ask the same question: is the RN path actually worth the time and tuition?</p>
+        <p><strong>Registered Nurses (RNs) earn approximately $89,000 per year based on the latest BLS data, while Licensed Practical Nurses (LPNs) earn $59,730</strong> — a $29,280 gap, or 49% higher pay for RNs. Hourly, that&apos;s $42.79 for RNs versus $28.72 for LPNs. The pay gap looks larger than the education gap (1–2 extra years), which is why most nurses ask the same question: is the RN path actually worth the time and tuition?</p>
         <p>Short answer: usually yes, with the ROI breaking even by year 3 in most states. Here&apos;s the full math, including the states where the gap is widest, the LPN-to-RN bridge programs that close the gap fastest, and the situations where staying as an LPN actually makes more financial sense.</p>
 
-        <Image src="/images/rn-vs-lpn-salary-comparison-chart.png" alt="Bar chart comparing 2026 RN salary $89,010 vs LPN salary $59,730 annual and hourly pay" width={700} height={500} className="w-full rounded-lg my-6" loading="lazy" />
+        <Image src="/images/rn-vs-lpn-salary-comparison-chart.png" alt="Bar chart comparing 2026 RN salary approximately $89,000 vs LPN salary $59,730 annual and hourly pay" width={700} height={500} className="w-full rounded-lg my-6" loading="lazy" />
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">RN vs LPN at a Glance (2026)</h2>
         <SalaryTable title="RN vs LPN Comparison Overview (2026)" headers={['Metric', 'Pay', 'Gap']} rows={overviewData} source="BLS OEWS, May 2024 + 2026 projection (3.1% RN / 2.9% LPN)." />
@@ -95,7 +95,7 @@ export default function RNvsLPNSalary2026() {
         <h2 className="text-2xl font-bold font-headline text-on-surface">Hourly Rate Comparison: Per Shift Math</h2>
         <p>Most RN and LPN roles are hourly W-2 — your real take-home is hourly × hours × shift differential, not the headline annual figure.</p>
         <ul className="list-disc pl-6 space-y-1">
-          <li><strong>RN base:</strong> $42.79/hr × 2,080 hours = $89,010/year (full-time, no OT)</li>
+          <li><strong>RN base:</strong> $42.79/hr × 2,080 hours = approximately $89,000/year (full-time, no OT)</li>
           <li><strong>LPN base:</strong> $28.72/hr × 2,080 hours = $59,730/year</li>
         </ul>
         <p><strong>Per shift (12 hours):</strong> RN earns $513 vs LPN $345 — a $168/shift gap. Across 13 shifts/month, that&apos;s <strong>$2,184/month or $26,200/year</strong> before differentials and overtime.</p>

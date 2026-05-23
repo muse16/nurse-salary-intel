@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Missouri RN Salary 2026: $71,390/yr + Hourly Rates by City',
   description:
-    'Missouri RNs average $71,390/yr ($34.32/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Missouri RNs average $71,390/yr ($34.32/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Missouri?',
-    answer: 'The average RN salary in Missouri is $71,390/year ($34.32/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Missouri is $71,390/year ($34.32/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Missouri?',
@@ -54,7 +54,7 @@ export default function MissouriRNSalary() {
       faqs={faqs}
     >
       <p>
-        Missouri registered nurses earn an average of $71,390/year ($34.32/hr) in 2026.
+        Missouri registered nurses earn an average of $71,390/year ($34.32/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

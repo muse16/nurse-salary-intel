@@ -7,11 +7,11 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'New York RN Salary 2026: $98,560/yr + Hourly Rates by City',
   description:
-    'New York RNs average $98,560/yr ($47.38/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'New York RNs average $98,560/yr ($47.38/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
-  { question: 'How much do nurses make in New York?', answer: 'The average RN salary in New York is $98,560/year ($47.38/hr) in 2026. NYC RNs earn $110,000+ on average, while upstate RNs average $82,000–$88,000.' },
+  { question: 'How much do nurses make in New York?', answer: 'The average RN salary in New York is $98,560/year ($47.38/hr). NYC RNs earn $110,000+ on average, while upstate RNs average $82,000–$88,000.' },
   { question: 'Do NYC nurses get paid more than upstate NY?', answer: 'Yes — NYC RNs earn approximately $22,000–$28,000 more per year than upstate RNs. However, housing costs in NYC are 3x higher than upstate, largely offsetting the premium.' },
   { question: 'What is the starting RN salary in New York?', answer: 'New grad RNs in NYC start at $85,000–$95,000/year. Upstate new grads start at $65,000–$75,000. Major systems like NYU Langone and Mount Sinai offer the highest starting rates.' },
   { question: 'Is nursing worth it in NYC with the high cost of living?', answer: 'For most nurses, yes — but only if you accept smaller housing or commute from NJ/CT. Unionized hospitals (NYSNA) offer significant pay and benefit protections that mitigate COL pressure.' },
@@ -171,7 +171,7 @@ export default function NewYorkRNSalary() {
       <div className="space-y-4">
         <div>
           <p className="font-semibold text-on-surface">What is the average RN salary in New York?</p>
-          <p className="text-on-surface-variant">The average RN salary in New York is $98,560/year ($47.38/hr) in 2026. NYC nurses average $110,000–$125,000, while upstate markets average $80,000–$92,000. Compare with <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link> or the cost-adjusted value of <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">RN salary in Texas</Link>. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to model NY pay by specialty.</p>
+          <p className="text-on-surface-variant">The average RN salary in New York is $98,560/year ($47.38/hr). NYC nurses average $110,000–$125,000, while upstate markets average $80,000–$92,000. Compare with <Link href="/rn-salary-by-state/california" className="text-primary hover:underline">RN salary in California</Link> or the cost-adjusted value of <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">RN salary in Texas</Link>. Use our <Link href="/" className="text-primary hover:underline">nurse salary calculator</Link> to model NY pay by specialty.</p>
         </div>
         <div>
           <p className="font-semibold text-on-surface">How much do nurses make per hour in New York?</p>

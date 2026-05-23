@@ -8,7 +8,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'AGNP Salary 2026: Adult-Gerontology NP Pay by State & Track',
   description:
-    'AGNPs earn $126,000/yr ($60.58/hr) on average in 2026. See adult-gerontology NP salary by state, primary vs. acute care track, and how AGNP compares to FNP and PMHNP.',
+    'AGNPs earn $126,000/yr ($60.58/hr) based on the latest BLS data. See adult-gerontology NP salary by state, primary vs. acute care track, and how AGNP compares to FNP and PMHNP.',
   alternates: { canonical: 'https://nursesalaryintel.com/agnp-salary-2026' },
   openGraph: {
     title: 'AGNP Salary 2026: Adult-Gerontology NP Pay',
@@ -74,7 +74,7 @@ export default function AGNPSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>AGNPs earn $126,000/year ($60.58/hr)</strong> on average in 2026.
+          <strong>AGNPs earn $126,000/year ($60.58/hr)</strong> based on the latest BLS data.
           Acute care track AGNPs (AGNP-AC) earn <strong>$138,000–$148,000/year</strong> in hospital settings.
           Primary care track AGNPs (AGNP-PC) earn <strong>$115,000–$155,000/year</strong> depending on
           practice setting and state. California leads at <strong>$158,000/year</strong>.

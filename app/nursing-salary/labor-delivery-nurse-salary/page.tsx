@@ -8,11 +8,11 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'L&D Nurse Salary 2026: $86,340/yr + California Pays $108K+',
   description:
-    'L&D nurses average $86,340/yr ($41.51/hr) in 2026. California pays $108K+. See pay by state, shift differentials, and the L&D vs NICU vs ER salary comparison.',
+    'L&D nurses average $86,340/yr ($41.51/hr). California pays $108K+. See pay by state, shift differentials, and the L&D vs NICU vs ER salary comparison.',
 };
 
 const faqs = [
-  { question: 'How much do L&D nurses make?', answer: 'The national average L&D nurse salary is $86,340/year ($41.51/hr) in 2026. In high-paying states like California, L&D nurses earn $108,000+.' },
+  { question: 'How much do L&D nurses make?', answer: 'The national average L&D nurse salary is $86,340/year ($41.51/hr). In high-paying states like California, L&D nurses earn $108,000+.' },
   { question: 'Is labor and delivery nursing a good career?', answer: 'L&D is one of the most personally rewarding nursing specialties with good pay and strong demand. It pays above the RN average and offers a clear career path to NP (CNM) or NICU.' },
   { question: 'Do L&D nurses work 12-hour shifts?', answer: 'Yes, most L&D nurses work three 12-hour shifts per week (36 hours). Night shift and weekend differentials add $3–$6/hr to base pay.' },
   { question: 'What certifications help L&D nurses earn more?', answer: 'RNC-OB (Inpatient Obstetric Nursing) certification adds $4,000–$5,000/year. C-EFM (Electronic Fetal Monitoring) is also valued and may qualify for a differential.' },

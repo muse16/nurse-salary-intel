@@ -32,7 +32,7 @@ const bonusByState = [
 ];
 
 const faqs = [
-  { question: 'What is the average nurse sign-on bonus in 2026?', answer: 'Nurse sign-on bonuses average $5,000–$20,000 in 2026 depending on specialty, experience, and location. ICU and ER nurses at major academic medical centers command $15,000–$30,000. New grad bonuses for residency programs typically range $6,000–$15,000. Rural and critical access hospitals often pay the highest bonuses ($15,000–$25,000+) to attract nurses to underserved areas.' },
+  { question: 'What is the average nurse sign-on bonus in 2026?', answer: 'Nurse sign-on bonuses average $5,000–$20,000 depending on specialty, experience, and location. ICU and ER nurses at major academic medical centers command $15,000–$30,000. New grad bonuses for residency programs typically range $6,000–$15,000. Rural and critical access hospitals often pay the highest bonuses ($15,000–$25,000+) to attract nurses to underserved areas.' },
   { question: 'Do you have to pay back a sign-on bonus if you leave early?', answer: 'Yes — almost always. Sign-on bonuses include a clawback provision: if you leave before the commitment period (typically 1–2 years), you must repay a prorated portion. Leaving at 6 months of a 2-year commitment = repay 75%. Read the repayment schedule carefully; some are linear, others step down at 6- or 12-month intervals.' },
   { question: 'Can you negotiate a nurse sign-on bonus?', answer: 'Yes, and most nurses don\'t ask. Effective negotiating points: competing offers, specialty certifications (CCRN, CEN add leverage), relocation costs, willingness to take a longer commitment, or starting sooner. HR has more flexibility on sign-ons than base pay — it\'s a one-time cost vs. a permanent pay increase.' },
   { question: 'Are nurse sign-on bonuses taxed?', answer: 'Yes — sign-on bonuses are taxed as ordinary income, often withheld at a flat 22% supplemental rate. You may receive a partial refund at tax time depending on your effective rate. Note: if you repay a clawback, the IRS allows you to deduct it in the repayment year, which can reduce the net tax impact.' },
@@ -66,7 +66,7 @@ export default function NurseSignOnBonusGuide2026() {
         <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
           <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
           <p className="text-on-surface text-base">
-            <strong>Nurse sign-on bonuses average $5,000–$20,000 in 2026.</strong> ICU and ER nurses at major academic
+            <strong>Nurse sign-on bonuses average $5,000–$20,000.</strong> ICU and ER nurses at major academic
             medical centers earn <strong>$15,000–$30,000</strong>. New grad residency bonuses run <strong>$6,000–$15,000</strong>.
             All bonuses come with 1–2 year clawback commitments and are taxed as ordinary income.
           </p>

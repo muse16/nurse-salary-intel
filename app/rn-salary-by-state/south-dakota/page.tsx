@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'South Dakota RN Salary 2026: $64,920/yr + Hourly Rates by City',
   description:
-    'South Dakota RNs average $64,920/yr ($31.21/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'South Dakota RNs average $64,920/yr ($31.21/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in South Dakota?',
-    answer: 'The average RN salary in South Dakota is $64,920/year ($31.21/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in South Dakota is $64,920/year ($31.21/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in South Dakota?',
@@ -54,7 +54,7 @@ export default function SouthDakotaRNSalary() {
       faqs={faqs}
     >
       <p>
-        South Dakota registered nurses earn an average of $64,920/year ($31.21/hr) in 2026.
+        South Dakota registered nurses earn an average of $64,920/year ($31.21/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

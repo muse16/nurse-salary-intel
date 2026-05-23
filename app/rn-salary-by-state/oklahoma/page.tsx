@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Oklahoma RN Salary 2026: $67,150/yr + Hourly Rates by City',
   description:
-    'Oklahoma RNs average $67,150/yr ($32.28/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Oklahoma RNs average $67,150/yr ($32.28/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Oklahoma?',
-    answer: 'The average RN salary in Oklahoma is $67,150/year ($32.28/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Oklahoma is $67,150/year ($32.28/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Oklahoma?',
@@ -54,7 +54,7 @@ export default function OklahomaRNSalary() {
       faqs={faqs}
     >
       <p>
-        Oklahoma registered nurses earn an average of $67,150/year ($32.28/hr) in 2026.
+        Oklahoma registered nurses earn an average of $67,150/year ($32.28/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

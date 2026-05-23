@@ -8,11 +8,11 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Nurse Practitioner Salary 2026: $126,260/yr + PMHNP Tops $165K',
   description:
-    'NPs earn $126,260/yr ($60.70/hr) in 2026. PMHNPs earn $140K–$165K. See NP salary by state and specialty (FNP, PMHNP, AGNP) — plus ROI vs. remaining staff RN.',
+    'NPs earn $126,260/yr ($60.70/hr). PMHNPs earn $140K–$165K. See NP salary by state and specialty (FNP, PMHNP, AGNP) — plus ROI vs. remaining staff RN.',
 };
 
 const faqs = [
-  { question: 'How much do nurse practitioners make?', answer: 'The national average NP salary is $126,260/year ($60.70/hr) in 2026. Salaries range from $105,000 in lower-paying states to $155,000+ in California and New York.' },
+  { question: 'How much do nurse practitioners make?', answer: 'The national average NP salary is $126,260/year ($60.70/hr). Salaries range from $105,000 in lower-paying states to $155,000+ in California and New York.' },
   { question: 'Which NP specialty pays the most?', answer: 'Psychiatric-Mental Health NPs (PMHNPs) earn the most at $140,000–$165,000/year, driven by severe mental health provider shortages. Acute Care NPs and Emergency NPs also command premium pay.' },
   { question: 'Do NPs make more than RNs?', answer: 'Yes — NPs earn approximately $37,000–$50,000 more per year than the average RN. The investment in graduate education typically pays for itself within 3–5 years.' },
   { question: 'What state pays nurse practitioners the most?', answer: 'California ($155,000), New York ($145,000), and New Jersey ($142,000) pay NPs the most. States with full practice authority may offer higher NP salaries due to expanded scope.' },

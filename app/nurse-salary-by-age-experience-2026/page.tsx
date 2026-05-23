@@ -109,7 +109,7 @@ export default function NurseSalaryByExperience2026() {
       />
 
       <p>
-        The national average registered nurse salary of <strong>$89,010/year</strong> (BLS OEWS May 2024) obscures a
+        The national average registered nurse salary of <strong>approximately $89,000/year</strong> (BLS OEWS May 2024) obscures a
         wide range that depends heavily on where you are in your career. A nurse with 1 year of med-surg experience
         and a nurse with 12 years of ICU experience are both captured in that average — but their actual salaries
         are separated by $40,000–$50,000. Understanding how pay grows — and what drives the biggest jumps — is

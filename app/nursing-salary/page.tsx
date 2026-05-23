@@ -34,7 +34,7 @@ const faqs = [
   {
     question: 'What is the average nursing salary in the US in 2026?',
     answer:
-      'The national average RN salary is $89,010/year ($42.79/hour) in 2026, per BLS OEWS data. That average includes all experience levels and specialties. ICU, ER, and advanced practice nurses (NPs, CRNAs) earn significantly above average. New graduates and Med-Surg nurses typically earn below the national mean.',
+      'The national average RN salary is approximately $89,000/year ($42.79/hour) in 2026, per BLS OEWS data. That average includes all experience levels and specialties. ICU, ER, and advanced practice nurses (NPs, CRNAs) earn significantly above average. New graduates and Med-Surg nurses typically earn below the national mean.',
   },
   {
     question: 'What nursing specialty pays the most?',
@@ -116,7 +116,7 @@ export default function NursingSalaryHub() {
       faqs={faqs}
     >
       <p>
-        The national average RN salary is $89,010/year — but that number obscures a $148,000 range between
+        The national average RN salary is approximately $89,000/year — but that number obscures a $148,000 range between
         the lowest-paid nurse role (CNA-adjacent new grad in Mississippi) and the highest (CRNA in California).
         This hub organizes nursing salary data by specialty, experience, and state, and links to detailed
         guides for every major role.

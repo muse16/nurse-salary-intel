@@ -7,7 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Travel Nurse vs Staff Nurse Salary 2026: Which Pays More?',
-  description: 'Travel nurses earn $95,000–$130,000/yr vs staff nurses at $77,600/yr in 2026. See the real after-tax math, hidden costs of travel, and when staff nursing wins.',
+  description: 'Travel nurses earn $95,000–$130,000/yr vs staff nurses at $77,600/yr. See the real after-tax math, hidden costs of travel, and when staff nursing wins.',
   alternates: { canonical: 'https://nursesalaryintel.com/travel-nurse-vs-staff-nurse-salary-2026' },
 };
 
@@ -59,7 +59,7 @@ export default function TravelVsStaffNurseSalary2026() {
         h1="Travel Nurse vs Staff Nurse Salary 2026: Which Pays More After Taxes?"
         lastUpdated="April 2026"
         schemaTitle="Travel Nurse vs Staff Nurse Salary 2026"
-        schemaDescription="Travel nurses earn $95K–$130K vs staff nurses at $77,600 in 2026. Real after-tax math, housing costs, benefit gaps, and when staff nursing wins financially."
+        schemaDescription="Travel nurses earn $95K–$130K vs staff nurses at $77,600. Real after-tax math, housing costs, benefit gaps, and when staff nursing wins financially."
         schemaUrl="/travel-nurse-vs-staff-nurse-salary-2026/"
         faqs={faqs}
       >

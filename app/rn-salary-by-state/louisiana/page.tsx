@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Louisiana RN Salary 2026: $69,980/yr + Hourly Rates by City',
   description:
-    'Louisiana RNs average $69,980/yr ($33.65/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'Louisiana RNs average $69,980/yr ($33.65/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Louisiana?',
-    answer: 'The average RN salary in Louisiana is $69,980/year ($33.65/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in Louisiana is $69,980/year ($33.65/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in Louisiana?',
@@ -54,7 +54,7 @@ export default function LouisianaRNSalary() {
       faqs={faqs}
     >
       <p>
-        Louisiana registered nurses earn an average of $69,980/year ($33.65/hr) in 2026.
+        Louisiana registered nurses earn an average of $69,980/year ($33.65/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>

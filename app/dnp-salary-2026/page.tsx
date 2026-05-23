@@ -8,7 +8,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'DNP Salary 2026: Doctor of Nursing Practice Pay by Specialty',
   description:
-    'DNP-prepared nurses earn $118,000–$214,000/year in 2026. See DNP salary by specialty, the premium over MSN, and whether the doctoral degree pays for itself.',
+    'DNP-prepared nurses earn $118,000–$214,000/year. See DNP salary by specialty, the premium over MSN, and whether the doctoral degree pays for itself.',
   alternates: { canonical: 'https://nursesalaryintel.com/dnp-salary-2026' },
   openGraph: {
     title: 'DNP Salary 2026: Doctor of Nursing Practice Pay',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'How much does a DNP make in 2026?',
-    answer: 'DNP-prepared nurses earn $118,000–$214,000/year in 2026 depending on specialty. DNP-CRNAs are the highest earners at $214,000/year on average. DNP-NPs in clinical specialties average $128,000–$148,000/year. DNP nurse administrators and educators typically earn $110,000–$125,000/year.',
+    answer: 'DNP-prepared nurses earn $118,000–$214,000/year depending on specialty. DNP-CRNAs are the highest earners at $214,000/year on average. DNP-NPs in clinical specialties average $128,000–$148,000/year. DNP nurse administrators and educators typically earn $110,000–$125,000/year.',
   },
   {
     question: 'Does a DNP get paid more than an MSN?',

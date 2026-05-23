@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Maine RN Salary 2026: $78,920/yr — High Nursing Demand',
   description:
-    'Maine RNs average $78,920/yr ($37.94/hr) in 2026. See pay by city, MaineHealth vs. Northern Light rates, rural shortage bonuses, and why demand is surging in the oldest US state.',
+    'Maine RNs average $78,920/yr ($37.94/hr). See pay by city, MaineHealth vs. Northern Light rates, rural shortage bonuses, and why demand is surging in the oldest US state.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Maine?',
-    answer: 'The average RN salary in Maine is $78,920/year ($37.94/hr) in 2026. Portland-area nurses at Maine Medical Center earn more ($83,000–$93,000), while rural northern Maine pays less. Maine has among the highest per-capita demand for nurses in the US due to its rapidly aging population.',
+    answer: 'The average RN salary in Maine is $78,920/year ($37.94/hr). Portland-area nurses at Maine Medical Center earn more ($83,000–$93,000), while rural northern Maine pays less. Maine has among the highest per-capita demand for nurses in the US due to its rapidly aging population.',
   },
   {
     question: 'Why is nursing in Maine in such high demand?',

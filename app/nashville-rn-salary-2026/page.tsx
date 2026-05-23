@@ -8,10 +8,10 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Nashville RN Salary 2026: How Much Do Nurses Make in Nashville, TN?',
   description:
-    'Nashville RNs earn $72,800/yr ($35.00/hr) on average in 2026. See pay at Vanderbilt, HCA, and Saint Thomas — plus why Nashville is a top travel nurse market.',
+    'Nashville RNs earn $72,800/yr ($35.00/hr) based on the latest BLS data. See pay at Vanderbilt, HCA, and Saint Thomas — plus why Nashville is a top travel nurse market.',
   alternates: { canonical: 'https://nursesalaryintel.com/nashville-rn-salary-2026' },
   openGraph: {
-    title: 'Nashville RN Salary 2026: $72,800/yr Avg',
+    title: 'Nashville RN Salary 2026: $72,800/yr Est.',
     description: 'Nashville nurse salary by hospital, specialty, and why it\'s a top travel nurse destination.',
     url: 'https://nursesalaryintel.com/nashville-rn-salary-2026',
   },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is the average RN salary in Nashville, TN in 2026?',
-    answer: 'Nashville RNs earn an average of $72,800/year ($35.00/hr) in 2026 — below the national average of $89,010 but with no state income tax and a cost of living near the national average. Vanderbilt University Medical Center pays the highest base salaries in the market ($80,000–$105,000 for experienced nurses).',
+    answer: 'Nashville RNs earn an average of $72,800/year ($35.00/hr) — below the national average of approximately $89,000 but with no state income tax and a cost of living near the national average. Vanderbilt University Medical Center pays the highest base salaries in the market ($80,000–$105,000 for experienced nurses).',
   },
   {
     question: 'Why is Nashville a top travel nurse market?',
@@ -81,7 +81,7 @@ export default function NashvilleRNSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>Nashville RNs earn $72,800/year ($35.00/hr)</strong> on average in 2026 — below
+          <strong>Nashville RNs earn $72,800/year ($35.00/hr)</strong> based on the latest BLS data — below
           the national average but with <strong>no state income tax</strong> and a moderate cost of living.
           Vanderbilt University Medical Center pays <strong>$80,000–$105,000/year</strong>.
           Travel nurses in Nashville earn <strong>$2,000–$2,800/week</strong> all-in.

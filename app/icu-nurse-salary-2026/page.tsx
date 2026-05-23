@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'ICU Nurse Salary 2026: $98,680/yr Avg + Best-Paying States',
-  description: 'ICU nurses earn $88,000–$114,500/yr in 2026. See CCRN certification premium, night shift differential, pay by state, and how to negotiate critical care offers.',
+  title: 'ICU Nurse Salary 2026: $98,680/yr Est. + Best-Paying States',
+  description: 'ICU nurses earn $88,000–$114,500/yr. See CCRN certification premium, night shift differential, pay by state, and how to negotiate critical care offers.',
   alternates: { canonical: 'https://nursesalaryintel.com/icu-nurse-salary-2026' },
 };
 

@@ -8,7 +8,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Psychiatric Nurse Salary 2026: What Psych RNs Really Earn',
   description:
-    'Psychiatric nurses earn $78,000–$95,000/yr on average in 2026. See psych RN pay by state, setting, and experience — plus how inpatient vs. outpatient affects your take-home.',
+    'Psychiatric nurses earn $78,000–$95,000/yr based on the latest BLS data. See psych RN pay by state, setting, and experience — plus how inpatient vs. outpatient affects your take-home.',
   alternates: { canonical: 'https://nursesalaryintel.com/psychiatric-nurse-salary-2026' },
   openGraph: {
     title: 'Psychiatric Nurse Salary 2026: What Psych RNs Really Earn',

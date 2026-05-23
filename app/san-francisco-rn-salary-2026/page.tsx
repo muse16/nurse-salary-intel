@@ -21,7 +21,7 @@ const faqs = [
   {
     question: 'What is the average RN salary in San Francisco in 2026?',
     answer:
-      'San Francisco RNs earn an average of $133,340/year ($64.11/hr) in 2026, based on BLS OEWS data for the San Francisco-Oakland-Hayward MSA. This is the highest metropolitan area RN salary in the United States. UCSF Medical Center and Kaiser Permanente Northern California pay at the top of the local market, with senior specialty nurses exceeding $160,000 at union-contract rates.',
+      'San Francisco RNs earn an average of $133,340/year ($64.11/hr), based on BLS OEWS data for the San Francisco-Oakland-Hayward MSA. This is the highest metropolitan area RN salary in the United States. UCSF Medical Center and Kaiser Permanente Northern California pay at the top of the local market, with senior specialty nurses exceeding $160,000 at union-contract rates.',
   },
   {
     question: 'What hospitals pay nurses the most in San Francisco?',
@@ -41,7 +41,7 @@ const faqs = [
   {
     question: 'What do new grad RNs make in San Francisco?',
     answer:
-      'New grad RNs in San Francisco typically earn $88,000–$100,000/year in 2026 — more than experienced nurses in many other states. CNA-covered facilities like UCSF and Kaiser have union minimums that protect new grad pay. Most Bay Area hospitals run 12–18 month residency programs, and nurses are typically paid full hourly rates from day one of employment.',
+      'New grad RNs in San Francisco typically earn $88,000–$100,000/year — more than experienced nurses in many other states. CNA-covered facilities like UCSF and Kaiser have union minimums that protect new grad pay. Most Bay Area hospitals run 12–18 month residency programs, and nurses are typically paid full hourly rates from day one of employment.',
   },
 ];
 
@@ -99,7 +99,7 @@ export default function SanFranciscoRNSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          <strong>San Francisco RNs earn $133,340/year ($64.11/hr)</strong> on average in 2026 — the highest
+          <strong>San Francisco RNs earn $133,340/year ($64.11/hr)</strong> based on the latest BLS data — the highest
           metropolitan area RN salary in the United States (BLS OEWS May 2024). UCSF and Kaiser Permanente
           pay senior specialty nurses <strong>$148,000–$170,000+</strong> at CNA union rates. New grads start
           at <strong>$88,000–$100,000</strong>. California's 11%+ effective income tax and extreme housing

@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'New Jersey RN Salary 2026: $93,230/yr — NYC Premium Explained',
   description:
-    'New Jersey RNs average $93,230/yr ($44.82/hr) in 2026 — one of the top 5 states nationally. See pay by city, top employers RWJBarnabas & Hackensack Meridian, and the NJ income tax impact.',
+    'New Jersey RNs average $93,230/yr ($44.82/hr) — one of the top 5 states nationally. See pay by city, top employers RWJBarnabas & Hackensack Meridian, and the NJ income tax impact.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in New Jersey?',
-    answer: 'The average RN salary in New Jersey is $93,230/year ($44.82/hr) in 2026 — ranking among the top 5 states nationally. Newark and Jersey City nurses near NYC earn significantly more, with experienced specialty RNs reaching $110,000+.',
+    answer: 'The average RN salary in New Jersey is $93,230/year ($44.82/hr) — ranking among the top 5 states nationally. Newark and Jersey City nurses near NYC earn significantly more, with experienced specialty RNs reaching $110,000+.',
   },
   {
     question: 'Why does New Jersey pay nurses so much?',
@@ -65,7 +65,7 @@ export default function NewJerseyRNSalary() {
         New Jersey RNs earn an average of <strong>$93,230/year ($44.82/hr)</strong> in 2026 — ranking
         among the top 5 states nationally. The state&apos;s proximity to New York City is the primary wage
         driver: NJ hospitals must compete with Manhattan salaries to retain staff, pushing base pay
-        significantly above the national average of $89,010. Newark and Jersey City nurses — particularly
+        significantly above the national average of approximately $89,000. Newark and Jersey City nurses — particularly
         those at RWJBarnabas and Hackensack Meridian — routinely see offers in the $98,000–$110,000
         range for experienced specialty roles.
       </p>

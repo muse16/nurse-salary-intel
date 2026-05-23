@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Arkansas RN Salary 2026: $67,010/yr — UAMS & Rural Loan Repayment',
   description:
-    'Arkansas RNs average $67,010/yr ($32.22/hr) in 2026. See pay by city, UAMS vs. Arkansas Children\'s rates, extensive rural HPSA loan repayment programs, and why demand is outpacing supply.',
+    'Arkansas RNs average $67,010/yr ($32.22/hr). See pay by city, UAMS vs. Arkansas Children\'s rates, extensive rural HPSA loan repayment programs, and why demand is outpacing supply.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in Arkansas?',
-    answer: 'The average RN salary in Arkansas is $67,010/year ($32.22/hr) in 2026 — below the national average, but with a very low cost of living (index ~85) and some of the most extensive rural loan repayment programs in the South. Little Rock nurses at UAMS and Arkansas Children\'s Hospital earn $71,000–$79,000.',
+    answer: 'The average RN salary in Arkansas is $67,010/year ($32.22/hr) — below the national average, but with a very low cost of living (index ~85) and some of the most extensive rural loan repayment programs in the South. Little Rock nurses at UAMS and Arkansas Children\'s Hospital earn $71,000–$79,000.',
   },
   {
     question: 'What is the top-paying hospital in Arkansas?',

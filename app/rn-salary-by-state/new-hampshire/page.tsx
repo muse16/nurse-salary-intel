@@ -7,13 +7,13 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'New Hampshire RN Salary 2026: $82,920/yr + Hourly Rates by City',
   description:
-    'New Hampshire RNs average $82,920/yr ($39.87/hr) in 2026. See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+    'New Hampshire RNs average $82,920/yr ($39.87/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
 };
 
 const faqs = [
   {
     question: 'How much do nurses make in New Hampshire?',
-    answer: 'The average RN salary in New Hampshire is $82,920/year ($39.87/hr) in 2026. Rates vary by city, specialty, and experience level.',
+    answer: 'The average RN salary in New Hampshire is $82,920/year ($39.87/hr). Rates vary by city, specialty, and experience level.',
   },
   {
     question: 'What is the highest-paying nursing job in New Hampshire?',
@@ -54,7 +54,7 @@ export default function NewHampshireRNSalary() {
       faqs={faqs}
     >
       <p>
-        New Hampshire registered nurses earn an average of $82,920/year ($39.87/hr) in 2026.
+        New Hampshire registered nurses earn an average of $82,920/year ($39.87/hr).
         Below, we break down pay by city and top earning opportunities using Bureau of Labor Statistics
         2024 data with 2026 projections.
       </p>
