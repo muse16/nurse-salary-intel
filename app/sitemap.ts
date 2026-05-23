@@ -169,6 +169,13 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/bayhealth-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/san-francisco-rn-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/er-nurse-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+
+  // Week 13 — May 2026
+  { path: '/certified-nurse-midwife-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/aesthetic-nurse-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/dnp-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/whnp-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/flight-nurse-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
