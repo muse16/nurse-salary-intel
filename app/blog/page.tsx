@@ -18,15 +18,24 @@ const categoryColors: Record<string, string> = {
   'Salary Tools': 'bg-amber-100 text-amber-700',
 };
 
+// Display-only label overrides — internal category strings in blog-posts.ts are unchanged
+const categoryDisplayNames: Record<string, string> = {
+  'Specialty Salaries': 'Nursing Specialties',
+};
+
+// Categories hidden from the blog index (accessible elsewhere in nav)
+const hiddenCategories = new Set(['Salary Tools']);
+
 export default function BlogPage() {
   const sorted = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   // Only the first post with a cover image is above fold on mobile — give it priority
   const firstCoverSlug = sorted.find(p => p.coverImage)?.slug;
 
-  const categories = Array.from(new Set(sorted.map(p => p.category)));
+  const categories = Array.from(new Set(sorted.map(p => p.category))).filter(c => !hiddenCategories.has(c));
   const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-');
   const categoryCounts = categories.map(c => ({
     name: c,
+    displayName: categoryDisplayNames[c] ?? c,
     count: sorted.filter(p => p.category === c).length,
   }));
 
@@ -35,7 +44,7 @@ export default function BlogPage() {
       <SiteNav />
       <header className="bg-white border-b border-gray-200 shadow-sm pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <h1 className="text-3xl font-bold text-gray-900">Nurse Salary Guides</h1>
+          <h1 className="text-3xl font-bold text-gray-900">Salary Guides</h1>
           <p className="text-gray-500 mt-2 text-sm">
             Data-driven salary guides by state, city, and specialty — updated for 2026.
           </p>
@@ -47,13 +56,13 @@ export default function BlogPage() {
         <div className="mb-10">
           <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Browse by Category</h2>
           <div className="flex flex-wrap gap-2">
-            {categoryCounts.map(({ name, count }) => (
+            {categoryCounts.map(({ name, displayName, count }) => (
               <a
                 key={name}
                 href={`#${slugify(name)}`}
                 className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold border-2 border-transparent hover:border-blue-300 transition-all ${categoryColors[name] ?? 'bg-gray-100 text-gray-700'}`}
               >
-                {name}
+                {displayName}
                 <span className="text-xs opacity-70">({count})</span>
               </a>
             ))}
@@ -63,7 +72,7 @@ export default function BlogPage() {
         {categories.map((cat) => (
           <section key={cat} id={slugify(cat)} className="mb-12 scroll-mt-24">
             <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
-              <span className={`text-xs font-semibold px-3 py-1 rounded-full ${categoryColors[cat] ?? 'bg-gray-100 text-gray-600'}`}>{cat}</span>
+              <span className={`text-xs font-semibold px-3 py-1 rounded-full ${categoryColors[cat] ?? 'bg-gray-100 text-gray-600'}`}>{categoryDisplayNames[cat] ?? cat}</span>
             </h2>
             <div className="space-y-6">
               {sorted.filter(p => p.category === cat).map((post) => (
@@ -84,7 +93,7 @@ export default function BlogPage() {
                 <div className="p-7">
                   <div className="flex items-center gap-3 mb-3">
                     <span className={`text-xs font-semibold px-3 py-1 rounded-full ${categoryColors[post.category] ?? 'bg-gray-100 text-gray-600'}`}>
-                      {post.category}
+                      {categoryDisplayNames[post.category] ?? post.category}
                     </span>
                     <span className="text-xs text-gray-400">{post.readTime}</span>
                     <span className="text-xs text-gray-400">
