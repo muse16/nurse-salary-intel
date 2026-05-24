@@ -30,7 +30,7 @@ const faqs = [
   {
     question: 'Is Arizona a good state for nurses?',
     answer:
-      'Arizona is a high-growth state for nursing with above-average demand due to rapid population growth and a large retiree population. Pay is below the national average, but cost of living runs 40–50% below California's coastal metros.',
+      'Arizona is a high-growth state for nursing with above-average demand due to rapid population growth and a large retiree population. Pay is below the national average, but cost of living runs 40–50% below coastal California.',
   },
   {
     question: 'How does Arizona compare to California for nursing pay?',
