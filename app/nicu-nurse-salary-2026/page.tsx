@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     question: 'Do NICU nurses make more than other nurses?',
-    answer: 'NICU nurses typically earn 8–18% above general RN rates and comparable to ICU nurses. They earn significantly less than advanced practice nurses (NNPs, CRNAs) and more than med-surg or general floor nurses.',
+    answer: 'NICU nurses typically earn 8–18% above general RN rates and comparable to ICU nurses. They earn $30,000–$90,000/year less than advanced practice nurses (NNPs, CRNAs) and $8,000–$15,000/year more than med-surg or general floor nurses.',
   },
   {
     question: 'Is the RNC-NIC certification worth getting?',

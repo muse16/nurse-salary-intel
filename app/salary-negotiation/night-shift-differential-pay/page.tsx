@@ -124,7 +124,7 @@ export default function NightShiftDifferential() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Night Shift Differential by Specialty</h2>
       <p>
-        Differential rates vary significantly by specialty. ICU and ER nurses — who staff the most demanding
+        Differential rates vary by $2–$5/hr depending on specialty. ICU and ER nurses — who staff the most demanding
         overnight units — command the highest differentials. Med/Surg and OR nurses typically sit at the lower
         end of the range.
       </p>

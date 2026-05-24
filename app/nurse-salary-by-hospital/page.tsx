@@ -79,7 +79,7 @@ export default function NurseSalaryByHospital() {
           <strong>Texas Medical Center (Houston):</strong> The largest medical complex in the world. Memorial Hermann, Houston Methodist, and MD Anderson pay experienced nurses $84,000–$102,000. Houston Methodist is consistently among the highest-paying Texas employers. Texas&apos;s no-income-tax status enhances effective take-home. See <Link href="/rn-salary-by-state/texas" className="text-primary hover:underline">Texas RN salary data</Link>.
         </li>
         <li>
-          <strong>Mayo Clinic (Rochester, MN / Phoenix, AZ / Jacksonville, FL):</strong> Pay varies significantly by campus. Rochester nurses average $82,000–$96,000. Mayo Phoenix nurses average $82,000–$92,000 with no state income tax in Arizona. Mayo Jacksonville runs similar to Florida averages at $76,000–$86,000.
+          <strong>Mayo Clinic (Rochester, MN / Phoenix, AZ / Jacksonville, FL):</strong> Pay varies by $5,000–$15,000 depending on campus. Rochester nurses average $82,000–$96,000. Mayo Phoenix nurses average $82,000–$92,000 with no state income tax in Arizona. Mayo Jacksonville runs similar to Florida averages at $76,000–$86,000.
         </li>
       </ul>
 

@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: 'What about no-income-tax states?',
-    answer: "Texas, Florida, Tennessee, Nevada, Washington, and a few others have no state income tax. They don't top nominal rankings but improve significantly on take-home.",
+    answer: "Texas, Florida, Tennessee, Nevada, Washington, and a few others have no state income tax. They don't top nominal rankings but can add $4,000–$8,000/year in take-home at typical RN salaries.",
   },
   {
     question: 'Which state has the lowest RN pay?',
@@ -124,7 +124,7 @@ export default function HighestPayingStatesForRNs2026() {
         faqs={faqs}
       >
         <p>
-          The highest paying states for registered nurses in 2026 are <strong>California ($148,000–$158,000+ mean), Hawaii ($122,000+), Oregon ($117,000+), Washington ($114,000+), and Alaska ($113,000+)</strong>, based on BLS May 2024 OEWS data adjusted for 3–4% projected annual wage growth. The gap between the highest-paying state and the median state is over <strong>$40,000 per year</strong>. Cost of living meaningfully changes the effective ranking — Texas, Florida, and Tennessee improve significantly on a take-home basis.
+          The highest paying states for registered nurses in 2026 are <strong>California ($148,000–$158,000+ mean), Hawaii ($122,000+), Oregon ($117,000+), Washington ($114,000+), and Alaska ($113,000+)</strong>, based on BLS May 2024 OEWS data adjusted for 3–4% projected annual wage growth. The gap between the highest-paying state and the median state is over <strong>$40,000 per year</strong>. Cost of living meaningfully changes the effective ranking — Texas, Florida, and Tennessee jump 5–8 spots on a take-home basis.
         </p>
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">How We Built the Rankings</h2>

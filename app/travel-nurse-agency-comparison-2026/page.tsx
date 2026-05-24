@@ -96,7 +96,7 @@ export default function TravelNurseAgencyComparison() {
       />
 
       <p>
-        Travel nursing has matured significantly since the pandemic-era pay peak. The $10,000/week rates of 2021–2022 are gone, but 2026 travel nurse pay remains substantially above pre-pandemic levels — and well above staff nurse rates in most markets. A California ICU traveler clearing <strong>$4,200–$5,000/week</strong> earns $175,000–$200,000+ annualized, tax-free stipends included.
+        Travel nursing has settled considerably since the pandemic-era pay peak. The $10,000/week rates of 2021–2022 are gone, but 2026 travel nurse pay remains substantially above pre-pandemic levels — and well above staff nurse rates in most markets. A California ICU traveler clearing <strong>$4,200–$5,000/week</strong> earns $175,000–$200,000+ annualized, tax-free stipends included.
       </p>
       <p>
         The agency you work with matters — but not in the way most nurses assume. The question isn't "which agency is best?" It's "which agency is offering the best package for this specific contract at this specific facility?" Those answers change weekly. The travel nurses who earn the most treat agencies as distribution channels, not partners — submitting their profile to multiple agencies simultaneously and letting competition drive the best offer to the top.

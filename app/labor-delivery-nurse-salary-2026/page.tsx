@@ -192,7 +192,7 @@ export default function LaborDeliveryNurseSalary() {
         <li><strong>High-risk MFM travel premium:</strong> add $200–$500/week above standard L&D rates</li>
       </ul>
       <p className="mt-3">
-        L&D travelers who hold RNC-OB and C-EFM certifications are significantly easier to place in high-bill-rate California contracts — many hospitals require or strongly prefer certified travelers. See our <Link href="/travel-nurse-agency-comparison-2026" className="text-primary hover:underline">travel nurse agency comparison</Link> for agencies with the deepest L&D inventory.
+        L&D travelers who hold RNC-OB and C-EFM certifications are much easier to place in high-bill-rate California contracts — many hospitals require or strongly prefer certified travelers. See our <Link href="/travel-nurse-agency-comparison-2026" className="text-primary hover:underline">travel nurse agency comparison</Link> for agencies with the deepest L&D inventory.
       </p>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">How to Maximize Your L&D Salary</h2>

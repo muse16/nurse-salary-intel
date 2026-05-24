@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     question: 'What is the CFRN certification?',
-    answer: 'The Certified Flight Registered Nurse (CFRN) is a specialty certification offered by the Board of Certification for Emergency Nursing (BCEN). It validates competency in air medical transport including critical care, trauma, and prehospital assessment. Most programs require CFRN or its progress toward within 12–18 months of hire. Certification significantly improves job prospects and may add $2,000–$5,000/year in pay.',
+    answer: 'The Certified Flight Registered Nurse (CFRN) is a specialty certification offered by the Board of Certification for Emergency Nursing (BCEN). It validates competency in air medical transport including critical care, trauma, and prehospital assessment. Most programs require CFRN or its progress toward within 12–18 months of hire. Certification is often required within 12–18 months of hire and may add $2,000–$5,000/year in pay.',
   },
   {
     question: 'Do flight nurses work in helicopters and planes?',

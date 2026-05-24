@@ -142,7 +142,7 @@ export default function BSNNurseSalaryCareerPaths2026() {
       </p>
       <p>
         ICU experience also unlocks two of the highest-paying paths from a BSN: travel nursing (which pays
-        significantly more for ICU-qualified nurses than med-surg) and CRNA programs (which require 1–2 years
+        30–50% more for ICU-qualified nurses than med-surg) and CRNA programs (which require 1–2 years
         of critical care experience before you can even apply).
       </p>
 
@@ -173,7 +173,7 @@ export default function BSNNurseSalaryCareerPaths2026() {
       <p>
         The ROI math is strong for nurses who complete it. A CRNA earning $214,000 vs. a staff RN earning $85,000
         sees a $129,000/year income difference — enough to recover program costs in under 2 years and compound
-        significantly over a career. The bottleneck is getting into a CRNA program, which requires competitive
+        by $100,000+ over a career. The bottleneck is getting into a CRNA program, which requires competitive
         GPA, strong ICU experience, and GRE scores at most institutions.
       </p>
 

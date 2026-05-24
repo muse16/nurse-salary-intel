@@ -34,7 +34,7 @@ const faqs = [
   {
     question: 'What is the average nursing salary in the US in 2026?',
     answer:
-      'The national average RN salary is approximately $89,000/year ($42.79/hour) in 2026, per BLS OEWS data. That average includes all experience levels and specialties. ICU, ER, and advanced practice nurses (NPs, CRNAs) earn significantly above average. New graduates and Med-Surg nurses typically earn below the national mean.',
+      'The national average RN salary is approximately $89,000/year ($42.79/hour) in 2026, per BLS OEWS data. That average includes all experience levels and specialties. ICU and ER nurses earn 4–8% above the national average; CRNAs earn more than double at $214,000/year. New graduates and Med-Surg nurses typically earn below the national mean.',
   },
   {
     question: 'What nursing specialty pays the most?',
@@ -145,7 +145,7 @@ export default function NursingSalaryHub() {
       </p>
       <p>
         Union step systems — most common in California, New York, and New England — provide automatic
-        annual step increases that significantly compress the experience-to-pay gap compared to at-will
+        annual step increases that shrink the experience-to-pay gap by 30–40% compared to at-will
         employment states. If you&apos;re in a union hospital, understand your step schedule: that systematic
         progression is worth tens of thousands over a 10-year period.
       </p>

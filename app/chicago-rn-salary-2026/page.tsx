@@ -156,7 +156,7 @@ export default function ChicagoRNSalary2026() {
         <p>
           Chicago pays the most of any Midwest metro — but also has the highest cost of living in the region.
           Nurses relocating from Indianapolis or Detroit see a nominal salary increase that largely offsets the
-          higher housing costs. However, Chicago&apos;s academic medical center concentration means significantly
+          higher housing costs. However, Chicago&apos;s academic medical center concentration means considerably
           better career development, specialty access, and promotion velocity than smaller Midwest markets.
         </p>
 

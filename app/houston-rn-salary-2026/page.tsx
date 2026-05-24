@@ -168,7 +168,7 @@ export default function HoustonRNSalary2026() {
         barely more than Houston&apos;s average after accounting for taxes, and with a higher cost of living.
       </p>
       <p>
-        Houston&apos;s cost of living is also moderate by major-metro standards — housing costs significantly
+        Houston&apos;s cost of living is also moderate by major-metro standards — housing costs run 20–30%
         less than Austin, Denver, Seattle, or any California market. That combination of no state income tax
         and lower housing costs makes Houston one of the stronger markets for real nurse purchasing power.
       </p>

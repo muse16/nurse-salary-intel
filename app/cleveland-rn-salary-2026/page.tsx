@@ -21,7 +21,7 @@ const faqs = [
   {
     question: 'What is the average RN salary in Cleveland, OH in 2026?',
     answer:
-      "Cleveland RNs earn an average of $74,000/year ($35.58/hr) — below the national average on paper, but Cleveland's cost of living is roughly 15–20% below the national average, which significantly improves real purchasing power. Cleveland Clinic — one of the world's top-ranked hospitals — pays $78,000–$98,000 for experienced nurses.",
+      "Cleveland RNs earn an average of $74,000/year ($35.58/hr) — below the national average on paper, but Cleveland's cost of living is roughly 15–20% below the national average, which adds roughly 15–20% in real purchasing power relative to the nominal salary. Cleveland Clinic — one of the world's top-ranked hospitals — pays $78,000–$98,000 for experienced nurses.",
   },
   {
     question: 'What hospitals pay nurses the most in Cleveland?',
@@ -116,7 +116,7 @@ export default function ClevelandRNSalary2026() {
         hospitals in the world for cardiology, urology, and gastroenterology — drives strong specialty demand and
         pays nursing salaries that exceed the regional average. University Hospitals and MetroHealth complete a
         trifecta of major systems that compete for experienced nurses across all specialties. The headline salary
-        number is lower than coastal cities, but the cost-of-living story changes the math significantly.
+        number is lower than coastal cities, but the cost-of-living story adds roughly 15–20% in real value to every paycheck.
       </p>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Cleveland RN Salary by Experience Level (2026)</h2>

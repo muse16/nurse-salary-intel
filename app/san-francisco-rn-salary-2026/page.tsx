@@ -36,7 +36,7 @@ const faqs = [
   {
     question: 'Does California have strong union protections for nurses?',
     answer:
-      'California is one of the strongest union states for nurses in the country. The California Nurses Association (CNA) represents nurses at UCSF, Kaiser, Sutter, and many other major Bay Area systems. CNA contracts include mandatory nurse-to-patient ratios (the strictest in the US at 1:1 or 1:2 for ICU/PICU), negotiated step scales, and shift differentials significantly above non-union market rates.',
+      'California is one of the strongest union states for nurses in the country. The California Nurses Association (CNA) represents nurses at UCSF, Kaiser, Sutter, and many other major Bay Area systems. CNA contracts include mandatory nurse-to-patient ratios (the strictest in the US at 1:1 or 1:2 for ICU/PICU), negotiated step scales, and shift differentials running $5–$8/hr above non-union market rates.',
   },
   {
     question: 'What do new grad RNs make in San Francisco?',
@@ -103,7 +103,7 @@ export default function SanFranciscoRNSalary2026() {
           metropolitan area RN salary in the United States (BLS OEWS May 2024). UCSF and Kaiser Permanente
           pay senior specialty nurses <strong>$148,000–$170,000+</strong> at CNA union rates. New grads start
           at <strong>$88,000–$100,000</strong>. California's 11%+ effective income tax and extreme housing
-          costs significantly reduce real purchasing power versus the nominal figure.
+          costs consume roughly 35–40% more of take-home pay than the national average, reducing real purchasing power well below the headline number.
         </p>
       </div>
 
@@ -200,7 +200,7 @@ export default function SanFranciscoRNSalary2026() {
       </p>
       <p>
         The calculation looks better for senior nurses at $155,000–$170,000 — the absolute dollar surplus
-        after taxes is still substantial even at high COL. It also improves significantly for nurses who own
+        after taxes is still substantial even at high COL. The picture improves for nurses who own
         homes (purchased before the current market) or share housing costs. For nurses relocating into the
         market on today's rental prices, the math is hardest in the first 3–5 years.
       </p>

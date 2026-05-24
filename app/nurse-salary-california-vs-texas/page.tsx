@@ -49,7 +49,7 @@ export default function NurseSalaryCaliforniaVsTexas() {
       faqs={faqs}
     >
       <p>
-        California vs Texas is the defining debate in nurse compensation. California offers the highest gross RN salary in the nation at $124,000/year. Texas offers no state income tax, dramatically lower cost of living, and a massive, growing job market at $81,510/year. The $42,490 gross gap narrows significantly after taxes and shrinks further when adjusted for housing costs. Which state is actually better for nurses depends on your priorities.
+        California vs Texas is the defining debate in nurse compensation. California offers the highest gross RN salary in the nation at $124,000/year. Texas offers no state income tax, dramatically lower cost of living, and a massive, growing job market at $81,510/year. The $42,490 gross gap narrows to roughly $20,000–$28,000 after taxes and shrinks further when adjusted for housing costs. Which state is actually better for nurses depends on your priorities.
       </p>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Gross Salary, Taxes, and Net Take-Home</h2>

@@ -112,7 +112,7 @@ export default function TampaRNSalary2026() {
 
       <p>
         Tampa sits at the center of one of Florida&apos;s fastest-growing healthcare markets. The metro has grown
-        significantly in population over the past decade, and major systems like Tampa General Hospital, AdventHealth,
+        by more than 25% in population over the past decade, and major systems like Tampa General Hospital, AdventHealth,
         and BayCare have expanded to keep pace. Moffitt Cancer Center — one of only 56 NCI-designated comprehensive
         cancer centers in the US — adds a high-paying oncology tier that most Florida markets lack. For nurses
         weighing Florida options, Tampa offers the strongest combination of system diversity, specialty opportunity,
@@ -190,7 +190,7 @@ export default function TampaRNSalary2026() {
       <h2 className="text-2xl font-bold font-headline text-on-surface">Tampa vs. Orlando vs. Miami: Which Florida Market Pays Best?</h2>
       <p>
         The three major Florida nurse markets are tightly clustered in gross pay: Tampa averages $73,000, Orlando
-        $72,000, Miami $75,000. Miami&apos;s slight gross edge is partially offset by its significantly higher cost
+        $72,000, Miami $75,000. Miami&apos;s slight gross edge is partially offset by its roughly 15–20% higher cost
         of living — Miami housing runs 25–30% more expensive than Tampa. Orlando benefits from Disney and Universal
         healthcare employment and unique per-diem structures, but its base RN pay is the lowest of the three.
       </p>

@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     question: 'How much does an LPN make a year?',
-    answer: 'The average LPN annual salary is $55,000/year nationally in 2026. California LPNs average $70,000/year; Mississippi LPNs average $42,000/year. Experience and work setting significantly impact earnings within the same state.',
+    answer: 'The average LPN annual salary is $55,000/year nationally in 2026. California LPNs average $70,000/year; Mississippi LPNs average $42,000/year. Experience and work setting can shift pay by $10,000–$15,000 within the same state.',
   },
   {
     question: 'How much more does an RN make than an LPN?',
@@ -101,7 +101,7 @@ export default function LPNSalary2026() {
 
       <p>
         LPNs (Licensed Practical Nurses) — called LVNs in California and Texas — are essential to
-        clinical care in nursing homes, home health, and outpatient settings. Pay varies significantly
+        clinical care in nursing homes, home health, and outpatient settings. Pay varies by $10,000–$20,000
         by state and employer type. Here&apos;s the full 2026 breakdown.
       </p>
 

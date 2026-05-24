@@ -135,7 +135,7 @@ export default function HonorHealthRNSalary2026() {
         {/* ── Offer breakdown table ── */}
         <h2 className="text-2xl font-bold font-headline text-on-surface mt-8 mb-2">Full Compensation Breakdown: What HonorHealth Actually Pays</h2>
         <p className="text-on-surface-variant mb-4">
-          Base pay is only part of the picture. For most HonorHealth nurses, differentials and bonuses add <strong>$12,000–$22,000/year</strong> on top of base — and that gap widens significantly if you work nights consistently.
+          Base pay is only part of the picture. For most HonorHealth nurses, differentials and bonuses add <strong>$12,000–$22,000/year</strong> on top of base — and that gap grows by $8,000–$15,000/year if you work nights consistently.
         </p>
         <SalaryTable
           title="HonorHealth RN Compensation Components (2026)"
@@ -168,7 +168,7 @@ export default function HonorHealthRNSalary2026() {
         />
 
         <p className="text-on-surface-variant mt-2 mb-6">
-          <strong>Cath lab and interventional radiology</strong> sit at the top of the HonorHealth pay scale — and are worth targeting if you have the background. The system has expanded its cardiovascular service line significantly since 2022, and demand for experienced cath lab RNs in Scottsdale outpaces supply. That dynamic gives experienced candidates real negotiating leverage on both base and sign-on.
+          <strong>Cath lab and interventional radiology</strong> sit at the top of the HonorHealth pay scale — and are worth targeting if you have the background. The system has expanded its cardiovascular service line substantially since 2022, and demand for experienced cath lab RNs in Scottsdale outpaces supply. That dynamic gives experienced candidates real negotiating leverage on both base and sign-on.
         </p>
 
         {/* ── Composite scenario note ── */}

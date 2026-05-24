@@ -83,7 +83,7 @@ export default function HowMuchDoNursesMakePerHour() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">How Shift Differentials Add to Your Hourly Rate</h2>
       <p>
-        Base hourly rate is only part of what nurses actually earn per hour worked. Shift differentials, overtime premiums, and specialty stipends significantly increase effective hourly earnings:
+        Base hourly rate is only part of what nurses actually earn per hour worked. Shift differentials, overtime premiums, and specialty stipends can add $4–$12/hr to effective hourly earnings:
       </p>
       <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
         <li><strong>Night shift differential:</strong> Adds 10–25% to base hourly — approximately $4–$15/hr depending on your base rate and employer</li>

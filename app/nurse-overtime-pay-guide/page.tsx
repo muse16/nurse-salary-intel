@@ -74,7 +74,7 @@ export default function NurseOvertimePayGuide() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Overtime Pay by State and Salary Level</h2>
       <p>
-        The dollar value of overtime varies significantly by state because it&apos;s calculated on base pay:
+        The dollar value of overtime varies by $8–$20/hr depending on state, because it&apos;s calculated on base pay:
       </p>
       <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
         <li><strong>California nurses ($59.62/hr avg):</strong> Overtime rate $89.43/hr; double-time $119.24/hr</li>

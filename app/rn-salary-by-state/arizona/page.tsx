@@ -30,7 +30,7 @@ const faqs = [
   {
     question: 'Is Arizona a good state for nurses?',
     answer:
-      'Arizona is a high-growth state for nursing with above-average demand due to rapid population growth and a large retiree population. Pay is below the national average, but cost of living is significantly lower than coastal states.',
+      'Arizona is a high-growth state for nursing with above-average demand due to rapid population growth and a large retiree population. Pay is below the national average, but cost of living runs 40–50% below California's coastal metros.',
   },
   {
     question: 'How does Arizona compare to California for nursing pay?',
@@ -232,7 +232,7 @@ export default function ArizonaRNSalary() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Nurse Salary by Experience in Arizona</h2>
       <p>
-        Experience significantly impacts RN pay in Arizona. The gap between new grad and senior nurse salaries has
+        Experience drives a $20,000–$30,000 pay gap in Arizona. The gap between new grad and senior nurse salaries has
         widened in recent years as hospitals compete harder to retain experienced staff. Phoenix metro new grads
         typically start $4,000–$6,000 above rural counterparts.
       </p>

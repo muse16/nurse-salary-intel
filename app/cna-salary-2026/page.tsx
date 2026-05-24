@@ -99,7 +99,7 @@ export default function CNASalary2026() {
       </div>
 
       <p>
-        CNAs are the backbone of bedside care — but CNA pay varies significantly by state, employer type,
+        CNAs are the backbone of bedside care — but CNA pay varies by $10,000–$25,000 depending on state, employer type,
         and shift. Here&apos;s exactly what CNAs earn in 2026, where pay is highest, and how the career ladder
         stacks up financially.
       </p>

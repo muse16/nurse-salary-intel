@@ -58,7 +58,7 @@ const systemExamples = [
   { label: 'UW Medical Center (Seattle, WA)', avgSalary: '$8.00 – $10.50/hr night', hourlyRate: 'WSNA union contract' },
   { label: 'Cleveland Clinic (OH)', avgSalary: '$3.50 – $6.50/hr night', hourlyRate: 'Non-union; policy-based' },
   { label: 'Johns Hopkins (Baltimore, MD)', avgSalary: '$4.50 – $7.00/hr night', hourlyRate: 'Varies by unit and shift window' },
-  { label: 'HCA Healthcare (multiple)', avgSalary: '$3.00 – $5.50/hr night', hourlyRate: 'Varies significantly by market' },
+  { label: 'HCA Healthcare (multiple)', avgSalary: '$3.00 – $5.50/hr night', hourlyRate: 'Varies by market — $3–$5.50/hr' },
   { label: 'Kaiser Permanente (CA/OR/WA)', avgSalary: '$7.00 – $12.00/hr night', hourlyRate: 'Union; among highest in country' },
 ];
 

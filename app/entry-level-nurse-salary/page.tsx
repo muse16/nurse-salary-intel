@@ -251,7 +251,7 @@ export default function EntryLevelNurseSalary() {
       </ul>
 
       <p className="mt-6">
-        Before accepting your first offer, have your contract reviewed. New grad contracts often contain cancellation penalties, mandatory overtime clauses, and float pool requirements that significantly affect your first-year experience. Use our free <Link href="/audit" className="text-primary hover:underline">contract audit tool</Link> to flag these terms before you sign.
+        Before accepting your first offer, have your contract reviewed. New grad contracts often contain cancellation penalties, mandatory overtime clauses, and float pool requirements that can reshape your entire first-year schedule and unit placement. Use our free <Link href="/audit" className="text-primary hover:underline">contract audit tool</Link> to flag these terms before you sign.
       </p>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Explore More Salary Topics</h2>

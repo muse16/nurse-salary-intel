@@ -36,7 +36,7 @@ const faqs = [
   {
     question: 'Is Baltimore a good city for RN salary vs. cost of living?',
     answer:
-      "Baltimore's cost of living is moderate — roughly 10–15% above the national average, significantly lower than DC (35 miles away) or New York. Housing is a particular value: median rent runs $1,400–$1,800/month versus $2,200+ in DC proper. For nurses who want Mid-Atlantic academic hospital access without DC prices, Baltimore is a strong option.",
+      "Baltimore's cost of living is moderate — roughly 10–15% above the national average — about 20 points below DC (35 miles away) and well below New York. Housing is a particular value: median rent runs $1,400–$1,800/month versus $2,200+ in DC proper. For nurses who want Mid-Atlantic academic hospital access without DC prices, Baltimore is a strong option.",
   },
   {
     question: 'Do Baltimore nurses get sign-on bonuses in 2026?',
@@ -191,7 +191,7 @@ export default function BaltimoreRNSalary2026() {
       <h2 className="text-2xl font-bold font-headline text-on-surface">Baltimore Salary vs. Cost of Living</h2>
       <p>
         Baltimore&apos;s cost of living is moderate by mid-Atlantic standards — roughly 10–15% above the national
-        average, but significantly lower than Washington DC (35 miles south) or Philadelphia. Median rent in
+        average, but well below Washington DC (35 miles south) or Philadelphia. Median rent in
         Baltimore City runs $1,400–$1,800/month for a one-bedroom; suburban Baltimore County and Anne Arundel County
         offer comparable housing at similar or lower prices.
       </p>

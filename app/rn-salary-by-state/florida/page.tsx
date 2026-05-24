@@ -134,7 +134,7 @@ export default function FloridaRNSalary() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">RN Salary by Florida City (2026)</h2>
       <p>
-        Pay varies significantly across Florida — high-paying South Florida metros (Miami, Naples) sit 8–12% above the state
+        Pay varies by 8–12% across Florida — high-paying South Florida metros (Miami, Naples) sit 8–12% above the state
         average, while panhandle and rural regions sit 10–15% below. Urban hospital systems with higher acuity and teaching affiliations consistently pay more.
       </p>
       <SalaryTable title="RN Salary by Florida City (2026)" headers={['Metro Area', 'Avg. Annual Salary', 'Avg. Hourly Rate']} rows={cityData} source="BLS OEWS 2025 + NurseSalaryIntel data" />
@@ -264,7 +264,7 @@ export default function FloridaRNSalary() {
       <h2 className="text-2xl font-bold font-headline text-on-surface">Florida vs. Other No-Tax States</h2>
       <p>
         Among states with no income tax, Texas pays RNs roughly $81,510/year — about $5,000 above Florida&apos;s
-        BLS mean. Washington State leads no-tax states at $100,890/year, but housing costs are significantly higher.
+        BLS mean. Washington State leads no-tax states at $100,890/year, but housing costs run 20–30% higher.
         Nevada ($90,210/year) and Arizona ($82,000/year) also sit above Florida on gross pay. Florida&apos;s unique
         advantage is the combination of no-tax status, a large travel-nursing market driven by seasonal population
         swings, and strong year-round demand from a large retiree base.

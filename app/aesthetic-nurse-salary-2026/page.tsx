@@ -189,7 +189,7 @@ export default function AestheticNurseSalary2026() {
         Most aesthetic employers want 1–2 years of clinical RN experience before hiring. Beyond that,
         a hands-on injection training course (typically $2,000–$5,000 for a reputable 2–3 day program
         through AAAMS, IPSA, or similar) is the expected entry credential. Some employers will pay for
-        this training as part of onboarding. NPs have significantly more latitude for independent
+        this training as part of onboarding. NPs have considerably more latitude for independent
         practice in aesthetics and generally start at higher pay bands.
       </p>
 

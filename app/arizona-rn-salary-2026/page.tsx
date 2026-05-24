@@ -66,7 +66,7 @@ const faqs = [
   },
   {
     question: 'How does Arizona RN salary compare to California?',
-    answer: 'California pays more nominally ($132K vs $86K), but after taxes (AZ 2.5% vs CA 9.3–13.3%) and cost of living (AZ housing ~50–60% cheaper than coastal CA), the real purchasing-power gap narrows significantly. Many California RNs relocate to Phoenix specifically for this reason.',
+    answer: 'California pays more nominally ($132K vs $86K), but after taxes (AZ 2.5% vs CA 9.3–13.3%) and cost of living (AZ housing ~50–60% cheaper than coastal CA), the real purchasing-power gap narrows to under $10,000/year. Many California RNs relocate to Phoenix specifically for this reason.',
   },
   {
     question: 'What shift differentials do Banner Health and HonorHealth pay?',

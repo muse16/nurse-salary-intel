@@ -36,7 +36,7 @@ const faqs = [
   {
     question: 'What data sources should I use before negotiating a travel nurse contract?',
     answer:
-      'For travel contracts, BLS data is a starting point but agency blended rates vary significantly. Compare the all-in package: base hourly + non-taxed stipends (housing, meals, incidentals) + completion bonuses. Use Vivian Health and NurseRecruiter to compare packages for the same location across multiple agencies. The taxable base rate is critical — it must meet or exceed the BLS median for that MSA to be IRS-defensible.',
+      'For travel contracts, BLS data is a starting point but agency blended rates vary by $300–$700/week for the same location and specialty. Compare the all-in package: base hourly + non-taxed stipends (housing, meals, incidentals) + completion bonuses. Use Vivian Health and NurseRecruiter to compare packages for the same location across multiple agencies. The taxable base rate is critical — it must meet or exceed the BLS median for that MSA to be IRS-defensible.',
   },
   {
     question: 'Should I mention a competing offer when negotiating my nurse salary?',

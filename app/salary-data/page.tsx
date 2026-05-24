@@ -142,7 +142,7 @@ export default function SalaryDataPage() {
       <p>
         Nursing salaries have grown 18% nationally since 2020, driven by post-pandemic staffing shortages
         and increased demand for specialized care. Travel nursing pay peaked in 2022 and has normalized
-        but remains significantly above pre-pandemic levels. The national average RN salary in 2026 is approximately $89,000.
+        but remains well above pre-pandemic levels — roughly 15–20% higher in most markets. The national average RN salary in 2026 is approximately $89,000.
       </p>
 
       {/* Cross-links */}

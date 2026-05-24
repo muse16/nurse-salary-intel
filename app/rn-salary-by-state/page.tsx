@@ -14,7 +14,7 @@ const faqs = [
   { question: 'What state pays nurses the most?', answer: 'California pays RNs the most at an average of $124,000/year. Hawaii ($106,530), Oregon ($102,700), Washington ($100,890), and New York ($98,560) round out the top five.' },
   { question: 'What is the average RN salary in the US?', answer: 'The national average RN salary in 2026 is approximately $89,000/year ($42.79/hour), according to BLS data combined with NurseSalaryIntel contract data.' },
   { question: 'Which states have the highest nurse demand?', answer: 'Texas, California, Florida, New York, and Pennsylvania have the highest absolute nurse demand. However, per-capita shortages are worst in rural Western and Southern states.' },
-  { question: 'Does cost of living cancel out high nurse salaries?', answer: 'Partially, yes. After cost of living adjustment, California and New York drop significantly. Washington, Oregon, Nevada, and Texas offer better real purchasing power when you factor in housing, taxes, and groceries.' },
+  { question: 'Does cost of living cancel out high nurse salaries?', answer: 'Partially, yes. After cost of living adjustment, California and New York drop 10–15 spots in real-pay rankings. Washington, Oregon, Nevada, and Texas offer better real purchasing power when you factor in housing, taxes, and groceries.' },
   { question: 'Are RN salaries going up or down in 2026?', answer: 'RN salaries continue to rise in 2026, up approximately 4% year-over-year. Growth is driven by persistent nursing shortages and increasing patient acuity.' },
 ];
 

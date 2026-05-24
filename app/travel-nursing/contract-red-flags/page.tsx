@@ -20,7 +20,7 @@ const faqs = [
 
 const redFlags = [
   { title: 'Vague Cancellation Clauses', desc: 'The facility can cancel your contract at any time, but you face penalties for leaving early. Look for: mutual cancellation terms, equal notice periods, and written penalty caps.' },
-  { title: 'Low or Missing Housing Stipends', desc: 'Stipend significantly below GSA rates for the assignment location. Compare your offered stipend against GSA per diem rates — if it\'s more than 20% below, push back.' },
+  { title: 'Low or Missing Housing Stipends', desc: 'Stipend more than 20% below GSA rates for the assignment location. Compare your offered stipend against GSA per diem rates — if it\'s more than 20% below, push back.' },
   { title: 'Mandatory Floating to Other Units', desc: 'Contract allows the facility to float you to any unit regardless of your competency. Negotiate a clause limiting floating to units within your specialty area.' },
   { title: 'Unpaid Orientation Periods', desc: 'Some contracts exclude orientation days from your billable hours. Confirm that orientation is paid at your full contract rate from day one.' },
   { title: 'Excessive Early Termination Penalties', desc: 'Penalties over $5,000 for early termination, especially without mutual terms. Reasonable penalties are $1,000–$2,500 with equal application to both parties.' },

@@ -14,7 +14,7 @@ const faqs = [
   { question: 'Are non-compete clauses enforceable for nurses?', answer: 'Enforceability varies by state. California, North Dakota, and Oklahoma generally don\'t enforce them. Other states enforce narrow, reasonable non-competes. The FTC has moved to ban most non-competes nationally — check current status before signing.' },
   { question: 'What is a standard cancellation penalty?', answer: 'Reasonable cancellation penalties are $1,000–$2,500, applied equally to both parties. Anything over $5,000 — especially if only applied to you — is a red flag.' },
   { question: 'Can I refuse to float to another unit?', answer: 'It depends on your contract. If floating is specified as a condition of employment, refusing can be grounds for termination. Always negotiate floating limits in writing before signing.' },
-  { question: 'What if my contract doesn\'t mention overtime?', answer: 'Federal FLSA law requires 1.5x overtime for hours over 40/week for non-exempt employees. But without explicit contract language, you may only receive overtime on the taxable base rate, not the blended rate — costing you significantly.' },
+  { question: 'What if my contract doesn\'t mention overtime?', answer: 'Federal FLSA law requires 1.5x overtime for hours over 40/week for non-exempt employees. But without explicit contract language, you may only receive overtime on the taxable base rate, not the blended rate — cutting overtime earnings by $8–$15/hr on every extra shift.' },
 ];
 
 const clauses = [

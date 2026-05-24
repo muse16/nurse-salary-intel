@@ -465,7 +465,7 @@ export default function BsnVsRnPage() {
               },
               {
                 q: 'Can I get a BSN while working full-time as a nurse?',
-                a: 'Yes. Online RN-to-BSN programs are specifically designed for working nurses. WGU, Chamberlain, and GCU offer fully asynchronous coursework. Most nurses complete 6-12 credit hours per semester while working 32-40 hours per week. Hospital tuition reimbursement ($2,500-$5,250/yr) can significantly offset cost.',
+                a: 'Yes. Online RN-to-BSN programs are specifically designed for working nurses. WGU, Chamberlain, and GCU offer fully asynchronous coursework. Most nurses complete 6-12 credit hours per semester while working 32-40 hours per week. Hospital tuition reimbursement ($2,500–$5,250/yr) can cover half or more of program costs.',
               },
             ].map(({ q, a }, i) => (
               <div key={i} className={i > 0 ? 'pt-5' : ''}>

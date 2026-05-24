@@ -31,7 +31,7 @@ const faqs = [
   {
     question: 'How does Detroit RN pay compare to other Midwest cities?',
     answer:
-      'Detroit ($82,000) compares favorably to Cleveland ($80,000) and Indianapolis ($76,000), and is below Chicago ($89,000) and Minneapolis ($91,000). Detroit\'s cost of living is among the lowest of any major US metro, which significantly improves purchasing power relative to its gross salary. Housing in Detroit suburbs runs $1,100–$1,600/month for a one-bedroom — substantially below Midwest peers.',
+      'Detroit ($82,000) compares favorably to Cleveland ($80,000) and Indianapolis ($76,000), and is below Chicago ($89,000) and Minneapolis ($91,000). Detroit\'s cost of living is among the lowest of any major US metro, which adds roughly 15–20% in real purchasing power relative to its gross salary. Housing in Detroit suburbs runs $1,100–$1,600/month for a one-bedroom — substantially below Midwest peers.',
   },
   {
     question: 'What is the take-home pay for a Detroit RN after Michigan taxes?',
@@ -96,7 +96,7 @@ export default function DetroitRNSalary2026() {
           average of $76,000/year. Henry Ford Health leads the market at <strong>$80,000–$102,000</strong>.
           Michigan&apos;s flat <strong>4.25% state income tax</strong> is among the more straightforward in the
           Midwest, and Detroit&apos;s low cost of living means the purchasing power of an $82,000 salary stretches
-          significantly further than the same gross pay in Chicago, Minneapolis, or any coastal market.
+          roughly 15–20% further in real terms than the same gross pay in Chicago, Minneapolis, or any coastal market.
         </p>
       </div>
 

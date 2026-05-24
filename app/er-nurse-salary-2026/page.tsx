@@ -33,7 +33,7 @@ const faqs = [
   {
     question: 'Do ER nurses make more than ICU nurses?',
     answer:
-      'Generally no — ICU nurses earn approximately $2,000–$5,000 more per year than ER nurses on base salary. However, ER nurses often have higher overtime income due to unpredictable census volumes and mandatory coverage. In total compensation (base + overtime + differential), the gap narrows significantly. Both specialties pay well above the floor nursing average.',
+      'Generally no — ICU nurses earn approximately $2,000–$5,000 more per year than ER nurses on base salary. However, ER nurses often have higher overtime income due to unpredictable census volumes and mandatory coverage. In total compensation (base + overtime + differential), the gap typically narrows to under $2,000/year in total earnings. Both specialties pay well above the floor nursing average.',
   },
   {
     question: 'What is the highest-paying state for ER nurses?',
@@ -43,7 +43,7 @@ const faqs = [
   {
     question: 'How much do travel ER nurses make per week?',
     answer:
-      'Travel ER nurses earn $2,400–$3,200/week (total package: taxable base + non-taxable housing and meal stipends). Level I trauma center contracts in high-demand markets pay at the top of this range. Weekly rates vary significantly by contract type — ask your recruiter to break out the taxable base hourly rate from the non-taxable stipends, as they have different tax and financial implications.',
+      'Travel ER nurses earn $2,400–$3,200/week (total package: taxable base + non-taxable housing and meal stipends). Level I trauma center contracts in high-demand markets pay at the top of this range. Weekly rates shift by $400–$800/week depending on contract type — ask your recruiter to break out the taxable base hourly rate from the non-taxable stipends, as they have different tax and financial implications.',
   },
 ];
 
@@ -114,11 +114,10 @@ export default function ERNurseSalary2026() {
       />
 
       <p>
-        Emergency nursing is one of the highest-demand specialties in acute care — and the pay reflects it.
-        ER nurses earn above the general RN average at every experience level, driven by the specialty complexity
-        of emergency triage, high patient volume, and 24/7 coverage requirements that produce consistent
-        night-shift and overtime income. For nurses considering the ED as a specialty, or evaluating their
-        current ER compensation against the market, the 2026 data tells a clear story.
+        ER nurses earn about 4% above the general RN average — $92,800 versus $89,000 nationally. That gap
+        holds at every experience level, and it compounds fast. Night differential, CEN certification, and
+        Level 1 trauma premiums can push a mid-career ER nurse past $110,000 without a single hour of overtime.
+        This page breaks down where that money comes from and what it actually takes to get there.
       </p>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">ER Nurse Salary by State (2026)</h2>
@@ -141,10 +140,9 @@ export default function ERNurseSalary2026() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">ER Nurse Salary by Experience Level</h2>
       <p>
-        Emergency nursing salary scales closely with years of experience and specialty volume. The jump from
-        new grad to mid-career is steep — ER nurses who accumulate Level 1 or Level 2 trauma volume in years
-        2–5 see the most significant pay acceleration. CEN certification typically becomes achievable at 2
-        years of ER experience (the eligibility threshold) and consistently moves nurses up one or two pay steps.
+        ER pay climbs fast in years 2–5. Nurses who accumulate Level 1 or Level 2 trauma volume in that window —
+        and sit for the CEN at the two-year eligibility mark — typically jump one or two full pay steps ahead of
+        peers who stayed on lower-acuity units. The table below shows what each stage looks like in dollars.
       </p>
 
       <SalaryTable
@@ -169,7 +167,7 @@ export default function ERNurseSalary2026() {
       <p>
         Base salary is only part of the ER nurse compensation picture. The table below shows how different
         premium components stack for a full-time night-shift ER nurse at a Level 1 trauma center with CEN
-        certification. These are national averages — actual rates vary significantly by employer and market.
+        certification. These are national averages — actual rates vary by $3–$6/hr depending on employer and market.
       </p>
 
       <SalaryTable
@@ -187,11 +185,10 @@ export default function ERNurseSalary2026() {
         toxicology, cardiovascular, respiratory, and neurological emergencies across a 175-question format.
       </p>
       <p>
-        Beyond the stipend, CEN opens specific doors: Level 1 trauma centers often list it as preferred or
-        required for charge roles, TCRN (Trauma Certified Registered Nurse) adds a second certification
-        premium where available, and travel nurse agencies frequently offer premium placement to CEN-certified
-        ER nurses. The combination of CEN + TNCC (Trauma Nursing Core Course) is the resume stack that
-        produces the most competitive total compensation offers in emergency nursing.
+        CEN also opens charge eligibility at Level 1 centers — many list it as required, not just preferred.
+        It stacks with TCRN for a second certification differential, and travel agencies routinely offer
+        priority placement to CEN holders. If you're building for maximum pay: CEN + TNCC is the combination
+        that shows up most in top-paying ER contracts.
       </p>
 
       <TravelPayDisclaimer />
@@ -247,3 +244,4 @@ export default function ERNurseSalary2026() {
     </SEOPageLayout>
   );
 }
+                                                                                                                                                                                                                                                                                                                                         

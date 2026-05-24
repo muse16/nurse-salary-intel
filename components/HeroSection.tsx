@@ -23,7 +23,7 @@ export default function HeroSection() {
         <div className="relative z-20 max-w-7xl mx-auto px-6 w-full py-20">
           <div className="max-w-2xl">
             <span className="inline-flex items-center px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-wider mb-6">
-              Empowering Healthcare Careers
+              Free · No Sign-Up Required
             </span>
 
             <h1 className="font-headline font-extrabold text-5xl md:text-7xl text-on-surface text-editorial leading-[1.1] mb-6">

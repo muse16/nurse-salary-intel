@@ -181,7 +181,7 @@ export default function RNSalaryLosAngeles2026() {
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">LA vs. the Rest of California</h2>
         <p>
-          LA metro sits below the SF Bay Area in mean pay but significantly above the rest of California. For the full statewide comparison, see <Link href="/california-rn-salary-2026/" className="text-primary hover:underline">California RN Salary 2026</Link>. For how California compares to other high-paying states, see <Link href="/highest-paying-states-for-rns-2026/" className="text-primary hover:underline">Highest Paying States for RNs 2026</Link>.
+          LA metro sits below the SF Bay Area in mean pay but roughly $15,000–$25,000/year above the rest of California. For the full statewide comparison, see <Link href="/california-rn-salary-2026/" className="text-primary hover:underline">California RN Salary 2026</Link>. For how California compares to other high-paying states, see <Link href="/highest-paying-states-for-rns-2026/" className="text-primary hover:underline">Highest Paying States for RNs 2026</Link>.
         </p>
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">How to Evaluate and Negotiate an LA Offer</h2>

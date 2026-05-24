@@ -21,7 +21,7 @@ const faqs = [
   {
     question: 'What is the average RN salary in Portland, OR in 2026?',
     answer:
-      'Portland RNs earn an average of $109,000/year ($52.40/hr) — among the highest in the Pacific Northwest and well above the national average. OHSU (Oregon Health & Science University) pays the top of the market at $102,000–$125,000 for experienced nurses. Oregon\'s high income tax rate (up to 9.9%) significantly affects take-home pay.',
+      'Portland RNs earn an average of $109,000/year ($52.40/hr) — among the highest in the Pacific Northwest and well above the national average. OHSU (Oregon Health & Science University) pays the top of the market at $102,000–$125,000 for experienced nurses. Oregon\'s high income tax rate (up to 9.9%) reduces take-home by roughly $8,000–$12,000/year at typical RN salaries.',
   },
   {
     question: 'What hospitals pay nurses the most in Portland?',
@@ -41,7 +41,7 @@ const faqs = [
   {
     question: 'What is the cost of living like for Portland nurses?',
     answer:
-      "Portland's cost of living has risen significantly over the past decade — housing costs roughly 25–30% above the national average, though it remains below Seattle and San Francisco. Median rent for a one-bedroom in Portland proper runs $1,600–$2,000/month. Combined with Oregon's high income tax, nurses net less purchasing power than the $109,000 headline suggests.",
+      "Portland's cost of living has risen roughly 25–30% over the past decade — housing costs roughly 25–30% above the national average, though it remains below Seattle and San Francisco. Median rent for a one-bedroom in Portland proper runs $1,600–$2,000/month. Combined with Oregon's high income tax, nurses net less purchasing power than the $109,000 headline suggests.",
   },
 ];
 

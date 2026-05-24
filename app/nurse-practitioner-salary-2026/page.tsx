@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'How much do nurse practitioners make in 2026?',
-    answer: 'Nurse practitioners earn an average of $126,000/year ($60.58/hr) nationally in 2026, according to BLS OEWS data. NP salaries range from $105,000 in lower-paying states to $160,000+ in California. Specialty and practice setting significantly affect earnings within the same state.',
+    answer: 'Nurse practitioners earn an average of $126,000/year ($60.58/hr) nationally in 2026, according to BLS OEWS data. NP salaries range from $105,000 in lower-paying states to $160,000+ in California. Specialty and practice setting shift earnings by $15,000–$30,000 within the same state.',
   },
   {
     question: 'What is the highest-paying NP specialty?',

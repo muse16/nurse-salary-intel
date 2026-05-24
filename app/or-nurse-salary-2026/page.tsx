@@ -197,7 +197,7 @@ export default function ORNurseSalary() {
       <h2 className="text-2xl font-bold font-headline text-on-surface">How to Earn $130,000+ as an OR Staff Nurse</h2>
       <ul className="list-disc pl-6 space-y-3 text-on-surface-variant">
         <li>
-          <strong>Get trained on robotic surgery:</strong> Request or pursue da Vinci training at your current hospital. If your facility doesn't have a robotic program, the skill makes you significantly more attractive to systems that do — and the pay premium at those systems is real.
+          <strong>Get trained on robotic surgery:</strong> Request or pursue da Vinci training at your current hospital. If your facility doesn't have a robotic program, the skill makes you a strong candidate at systems that do — and the pay premium at those systems is real.
         </li>
         <li>
           <strong>Pursue CNOR and CRNFA:</strong> CNOR is a must. CRNFA is the high-leverage move — the path from staff OR nurse to first assistant is the clearest route to $140,000+ without leaving the bedside or pursuing a graduate degree.

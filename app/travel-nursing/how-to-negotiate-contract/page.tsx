@@ -88,7 +88,7 @@ export default function HowToNegotiateContract() {
       <h2 className="text-2xl font-bold font-headline text-on-surface">When to Walk Away from a Contract</h2>
       <p>
         Walk away if: the agency refuses to put negotiated terms in writing, the contract has one-sided cancellation
-        clauses they won&apos;t modify, stipends are significantly below GSA rates, or the recruiter pressures you to
+        clauses they won&apos;t modify, stipends are more than 20% below GSA rates, or the recruiter pressures you to
         sign immediately. Good contracts don&apos;t require pressure tactics.
       </p>
 

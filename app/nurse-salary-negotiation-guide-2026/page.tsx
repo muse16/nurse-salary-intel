@@ -7,11 +7,11 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: '30% of Nurses Never Negotiate Salary — What the Data Says to Do',
   description:
-    'A Nurse.com survey of more than 2,500 RNs found 30% never negotiate salary, yet APRNs who do earn significantly more. Real recruiter insights and step-by-step tactics for your next offer.',
+    'A Nurse.com survey of more than 2,500 RNs found 30% never negotiate salary, yet APRNs who negotiate earn thousands more annually. Real recruiter insights and step-by-step tactics for your next offer.',
   openGraph: {
     title: '30% of Nurses Never Negotiate Salary — Here\'s What the Data Says to Do',
     description:
-      'A Nurse.com survey of more than 2,500 RNs found 30% never negotiate salary, yet APRNs who do earn significantly more. Real recruiter insights and step-by-step tactics.',
+      'A Nurse.com survey of more than 2,500 RNs found 30% never negotiate salary, yet APRNs who negotiate earn thousands more annually. Real recruiter insights and step-by-step tactics.',
     images: [{ url: '/images/nurse-salary-negotiation-guide-2026-hero_compressed.png', width: 1200, height: 630 }],
   },
 };
@@ -138,7 +138,7 @@ export default function NurseSalaryNegotiationPage() {
       </div>
 
       <p className="text-on-surface leading-relaxed">
-        Most nurses rank salary as the number one factor in job satisfaction. Yet when the offer arrives, a third of them sign without asking for anything more. That gap — between what nurses want and what they ask for — costs real money over a career. Here's what the data shows, what hospital recruiters actually say, and the specific moves that get results.
+        Most nurses rank salary as the number one factor in job satisfaction. Yet when the offer arrives, a third of them sign without asking for anything more. That gap costs real money — not just on the first paycheck, but compounded across every raise and step increase that follows.
       </p>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface mt-8 mb-4">What the Survey Data Actually Shows</h2>
@@ -352,3 +352,4 @@ export default function NurseSalaryNegotiationPage() {
     </SEOPageLayout>
   );
 }
+                                                                            

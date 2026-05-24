@@ -222,7 +222,7 @@ function ContractPanel({ label, contract, onChange }: ContractPanelProps) {
         </div>
         {!contract.hasTaxHome && (
           <p className="text-xs text-error mt-2 font-medium">
-            ⚠️ Without a qualifying tax home, all stipends are treated as taxable income — significantly reducing take-home.
+            ⚠️ Without a qualifying tax home, all stipends are treated as taxable income — adding $10,000–$20,000 to your annual tax bill.
           </p>
         )}
         {contract.hasTaxHome && (

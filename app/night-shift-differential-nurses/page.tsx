@@ -80,7 +80,7 @@ export default function NightShiftDifferential() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Night Shift Nurse Salary by State (2026)</h2>
       <p>
-        Night shift nurse salary varies significantly by state. The table below shows base RN pay alongside estimated total compensation with a 15% overnight differential included:
+        Night shift nurse salary varies by $15,000–$35,000 depending on state. The table below shows base RN pay alongside estimated total compensation with a 15% overnight differential included:
       </p>
       <SalaryTable
         title="Night Shift RN Salary by State (2026)"

@@ -117,7 +117,7 @@ export default function RNSalaryByCity() {
         </li>
         <li>
           <strong><Link href="/salary/washington/seattle" className="text-primary hover:underline">Seattle, WA</Link>:</strong>{' '}
-          $98,000–$112,000/year. No state income tax boosts effective take-home significantly.
+          $98,000–$112,000/year. No state income tax adds $4,000–$8,000/year in effective take-home.
         </li>
         <li>
           <strong><Link href="/salary/texas/houston" className="text-primary hover:underline">Houston, TX</Link>:</strong>{' '}

@@ -24,11 +24,11 @@ const faqs = [
   },
   {
     question: 'Does a DNP get paid more than an MSN?',
-    answer: 'Yes — but the premium varies significantly by specialty. DNP-NPs earn roughly $5,000–$15,000/year more than MSN-NPs in comparable clinical roles. The doctoral premium is strongest in academic and administrative positions ($15,000–$25,000/year) and weakest in high-demand clinical specialties where the MSN already commands a high salary.',
+    answer: 'Yes — but the premium ranges from under $5,000/year to over $25,000/year depending on specialty. DNP-NPs earn roughly $5,000–$15,000/year more than MSN-NPs in comparable clinical roles. The doctoral premium is strongest in academic and administrative positions ($15,000–$25,000/year) and weakest in high-demand clinical specialties where the MSN already commands a high salary.',
   },
   {
     question: 'Is a DNP worth it financially?',
-    answer: 'For most clinical NPs, the DNP\'s ROI is modest at the bedside — but it unlocks leadership, academic, and independent practice positions that often pay significantly more. DNP programs cost $25,000–$60,000 on average. At a $10,000/year salary premium, break-even is 3–6 years. For CRNAs, DNP programs are increasingly required and the premium is built into the base salary.',
+    answer: 'For most clinical NPs, the DNP\'s ROI is modest at the bedside — but it unlocks leadership, academic, and independent practice positions that often pay $15,000–$25,000/year more. DNP programs cost $25,000–$60,000 on average. At a $10,000/year salary premium, break-even is 3–6 years. For CRNAs, DNP programs are increasingly required and the premium is built into the base salary.',
   },
   {
     question: 'What is the highest paying DNP specialty?',
@@ -110,7 +110,7 @@ export default function DNPSalary2026() {
       <p>
         The Doctor of Nursing Practice is the fastest-growing doctoral credential in U.S. healthcare.
         Whether the degree pays for itself depends entirely on which path you take it down. A DNP-CRNA
-        earns more than most physicians. A DNP nurse educator at a community college earns significantly
+        earns more than most physicians. A DNP nurse educator at a community college earns considerably
         less than a staff RN in California. Specialty selection matters far more than the letters after
         your name.
       </p>
@@ -184,7 +184,7 @@ export default function DNPSalary2026() {
         and CNO roles: hospitals increasingly require a doctoral degree for chief nursing officer
         positions, where the premium over MSN-prepared candidates is $15,000–$25,000/year. Third,
         academic positions at research universities: tenure-track faculty roles typically require a
-        doctoral credential and pay significantly more than community college instructor positions.
+        doctoral credential and pay $15,000–$25,000/year more than community college instructor positions.
       </p>
       <p>
         For staff NPs in primary care or urgent care settings, the DNP adds credential credibility

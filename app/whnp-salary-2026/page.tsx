@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     question: "Is WHNP or FNP better for salary?",
-    answer: "FNPs have broader practice scope and more job availability nationally, which gives them flexibility and consistent employment. WHNPs command a specialty premium in women's health-focused settings — particularly fertility clinics and private OB/GYN practices. Average salaries are comparable ($120K–$126K), but top-earning WHNPs in high-revenue fertility practices can significantly exceed average FNP pay.",
+    answer: "FNPs have broader practice scope and more job availability nationally, which gives them flexibility and consistent employment. WHNPs command a specialty premium in women's health-focused settings — particularly fertility clinics and private OB/GYN practices. Average salaries are comparable ($120K–$126K), but top-earning WHNPs in high-revenue fertility practices can earn $15,000–$30,000/year above average FNP pay.",
   },
 ];
 

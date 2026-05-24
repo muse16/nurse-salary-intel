@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     question: "What's the difference between a neonatal nurse and a NICU nurse?",
-    answer: 'NICU nursing is a subset of neonatal nursing. All NICU nurses are neonatal nurses, but not all neonatal nurses work in the NICU. Mother-baby and well-baby nursery nurses care for healthy newborns; NICU nurses care for the critically ill. Pay is significantly higher in the NICU.',
+    answer: 'NICU nursing is a subset of neonatal nursing. All NICU nurses are neonatal nurses, but not all neonatal nurses work in the NICU. Mother-baby and well-baby nursery nurses care for healthy newborns; NICU nurses care for the critically ill. NICU nurses earn 8–15% above well-baby and mother-baby nursery nurses.',
   },
   {
     question: 'What state pays neonatal nurses the most?',

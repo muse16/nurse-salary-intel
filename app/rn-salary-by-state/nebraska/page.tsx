@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'How much do nurses make in Nebraska?',
-    answer: 'The average RN salary in Nebraska is $69,790/year ($33.55/hr). Omaha nurses at Nebraska Medicine and CHI Health earn $73,500–$82,000, significantly above the state average. Nebraska\'s low cost of living (index ~87) improves real take-home relative to the nominal pay.',
+    answer: 'The average RN salary in Nebraska is $69,790/year ($33.55/hr). Omaha nurses at Nebraska Medicine and CHI Health earn $73,500–$82,000 — up to $12,000 above the state average. Nebraska\'s low cost of living (index ~87) improves real take-home relative to the nominal pay.',
   },
   {
     question: 'What is the biggest hospital employer in Nebraska?',
@@ -111,7 +111,7 @@ export default function NebraskaRNSalary() {
         Travel RN assignments in Nebraska pay <strong>$1,900–$2,600/week</strong>. Nebraska Medicine
         and CHI Health Creighton are the primary travel markets in Omaha. Rural critical access hospitals
         throughout the Sandhills and Panhandle post consistent openings for specialty travelers, often
-        with housing stipends that significantly boost net pay.
+        with housing stipends that can add $12,000–$18,000/year to net pay.
       </p>
       <Link
         href="/travel-nurse-salary-guide"

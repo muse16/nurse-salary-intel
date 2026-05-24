@@ -14,7 +14,7 @@ const faqs = [
   { question: 'What state pays nurses the highest salary?', answer: 'California pays nurses the highest at $124,000/year. This is nearly $18,000 more than the second-highest state (Hawaii) and $35,000 above the national average.' },
   { question: 'Which state is best for nurses after cost of living?', answer: 'After cost of living adjustment, Washington, Nevada, and Texas offer the best real purchasing power for nurses. These states combine solid salaries with no state income tax and lower housing costs.' },
   { question: 'Are nurse salaries increasing in 2026?', answer: 'Yes — nurse salaries continue to grow in 2026, averaging 4% year-over-year gains. States with the most severe shortages (California, Nevada, Alaska) are seeing 5–7% annual increases.' },
-  { question: 'Should I relocate for a higher nursing salary?', answer: 'Relocation can significantly boost earnings, but consider total take-home pay after taxes and living costs. A 20% raw salary increase may net only 5–10% more after moving expenses, state taxes, and COL differences.' },
+  { question: 'Should I relocate for a higher nursing salary?', answer: 'Relocation can add $10,000–$30,000/year in gross earnings, but consider total take-home pay after taxes and living costs. A 20% raw salary increase may net only 5–10% more after moving expenses, state taxes, and COL differences.' },
 ];
 
 const rawTop10 = [
@@ -111,7 +111,7 @@ export default function HighestPayingStates() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">Highest Paying Cities in the Top-Paying States</h2>
       <p>
-        Within the highest-paying states, pay varies significantly by metro area. Urban centers with major academic medical systems and strong union representation offer the most competitive nurse salaries in the country.
+        Within the highest-paying states, pay varies by $15,000–$30,000 by metro area. Urban centers with major academic medical systems and strong union representation offer the most competitive nurse salaries in the country.
       </p>
       <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
         <li><strong>San Francisco, CA:</strong> $145,000–$165,000/year ($70–$79/hr)</li>
@@ -127,7 +127,7 @@ export default function HighestPayingStates() {
       </p>
       <ul className="list-disc pl-6 space-y-2 text-on-surface-variant">
         <li><strong>Entry level (0–2 years):</strong> $75,000–$100,000 in the top-paying states. California new grads start at $85,000–$100,000; Hawaii at $78,000–$88,000.</li>
-        <li><strong>3–5 years experience:</strong> $105,000–$130,000 in top-paying states. Union step increases in California and New York accelerate pay growth significantly at this stage.</li>
+        <li><strong>3–5 years experience:</strong> $105,000–$130,000 in top-paying states. Union step increases in California and New York add $3,000–$6,000/year at this stage.</li>
         <li><strong>10+ years experience:</strong> $130,000–$175,000+ in top-paying states. Senior nurses at UCSF, NYU Langone, and Swedish Medical Center in Seattle reach the upper end of this range.</li>
       </ul>
 

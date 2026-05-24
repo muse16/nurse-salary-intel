@@ -20,7 +20,7 @@ const faqs = [
   { question: 'How much do travel nurses make per hour in 2026?', answer: 'The average travel nurse earns $50–$65/hour in 2026, depending on specialty and location. High-demand specialties like ICU and OR can earn $70–$85/hour. These rates include the taxable hourly base plus the blended value of tax-free stipends.' },
   { question: 'What is the highest-paying travel nurse specialty?', answer: 'CVOR (cardiovascular operating room) and ECMO specialist travel nurses earn the highest rates, often $3,500–$4,500/week. ICU, OR, and ER travel nurses are also consistently high earners.' },
   { question: 'Do travel nurses get benefits?', answer: 'Most travel nursing agencies offer health insurance, dental, vision, and 401(k) plans. Coverage typically starts on day one of your assignment. However, benefits vary by agency — compare plans before choosing.' },
-  { question: 'How are travel nurse stipends taxed?', answer: 'Housing and M&IE stipends are tax-free if you maintain a tax home (a permanent residence you pay for). If you don\'t have a tax home, stipends become taxable income, significantly reducing your take-home pay.' },
+  { question: 'How are travel nurse stipends taxed?', answer: 'Housing and M&IE stipends are tax-free if you maintain a tax home (a permanent residence you pay for). If you don\'t have a tax home, stipends become taxable income, potentially adding $10,000–$20,000 to your annual taxable income.' },
   { question: 'Is travel nursing still worth it in 2026?', answer: 'Yes, but the landscape has changed. While crisis-rate contracts ($5,000+/week) are rare, travel nurses still earn 20–50% more than staff nurses. The key is choosing the right specialty, location, and agency.' },
   { question: 'How do I compare travel nursing agencies?', answer: 'Compare agencies on: base hourly rate, stipend amounts, health insurance quality, cancellation policies, recruiter responsiveness, and contract transparency. Use our salary data to verify that offered rates match market rates.' },
 ];
@@ -72,7 +72,7 @@ export default function TravelNurseSalaryGuide() {
       <h2 className="text-2xl font-bold font-headline text-on-surface">Average Travel Nurse Salary in 2026</h2>
       <p>
         The national average travel nurse salary in 2026 is <strong>$2,600/week</strong> ($135,200 annualized), including
-        base pay and tax-free stipends. This varies significantly by specialty, location, and agency. High-demand
+        base pay and tax-free stipends. This varies by 30–50% depending on specialty, location, and agency. High-demand
         specialties like ICU and OR command $3,000–$3,500/week in top-paying states.
       </p>
 

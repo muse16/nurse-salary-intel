@@ -80,7 +80,7 @@ export default function CaliforniaRNSalary() {
       <p>
         California has the highest new graduate starting salaries in the nation. Union contracts at systems like
         Kaiser Permanente, UCSF, and Cedars-Sinai provide structured step increases that accelerate pay growth
-        significantly with experience.
+        by $20,000–$40,000 with experience.
       </p>
       <SalaryTable
         title="California RN Salary by Experience (2026)"
@@ -131,7 +131,7 @@ export default function CaliforniaRNSalary() {
       <h2 className="text-2xl font-bold font-headline text-on-surface">Highest-Paying Nursing Specialties in California</h2>
       <p>
         In California, CRNAs earn $258,000, Nurse Practitioners $155,000, and ICU nurses $125,000. Every specialty
-        pays significantly above the national average due to mandatory ratios, union coverage, and chronic staffing
+        pays 30–40% above the national average due to mandatory ratios, union coverage, and chronic staffing
         shortages.
       </p>
 

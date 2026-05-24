@@ -16,7 +16,7 @@ const faqs = [
   { question: 'How much do ER nurses make an hour?', answer: 'The national average ER nurse hourly rate is $42.79 in 2026. Rates range from $35/hr in lower-paying states to $55+/hr in California. Night and weekend differentials add $3–$7/hr.' },
   { question: 'Do ER nurses get paid more than floor nurses?', answer: 'Yes — ER nurses earn approximately $11,000–$15,000 more per year than med-surg nurses, reflecting the higher acuity and unpredictability of emergency care.' },
   { question: 'Is CEN certification worth it for pay?', answer: 'CEN certification adds an average of $4,800/year to ER nurse salaries. It also opens doors to travel nursing and leadership positions that pay even more.' },
-  { question: 'What is the highest-paying state for ER nurses?', answer: 'California leads at $116,000/year for ER nurses. Hawaii, Oregon, Washington, and Massachusetts also pay significantly above the national average.' },
+  { question: 'What is the highest-paying state for ER nurses?', answer: 'California leads at $116,000/year for ER nurses. Hawaii, Oregon, Washington, and Massachusetts pay $10,000–$25,000/year above the national average.' },
 ];
 
 const stateData = [

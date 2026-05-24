@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'How much does a certified nurse midwife make in 2026?',
-    answer: 'Certified nurse midwives (CNMs) earn an average of $120,880/year ($58.11/hour) nationally according to the latest available BLS OEWS data (May 2024, published 2025). California CNMs top the state rankings at approximately $148,000/year. Pay varies significantly by state, practice setting, and delivery volume.',
+    answer: 'Certified nurse midwives (CNMs) earn an average of $120,880/year ($58.11/hour) nationally according to the latest available BLS OEWS data (May 2024, published 2025). California CNMs top the state rankings at approximately $148,000/year. Pay varies by $30,000–$40,000 depending on state, practice setting, and delivery volume.',
   },
   {
     question: 'How much does a nurse midwife make per hour?',
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: 'Is a nurse midwife salary higher than a labor and delivery RN?',
-    answer: 'Yes — significantly. L&D RNs average $82,000–$90,000/year while CNMs average $120,880/year, a premium of roughly $31,000–$39,000/year. The CNM credential requires a master\'s or doctoral degree (MSN or DNP) plus national certification, which accounts for the salary gap.',
+    answer: 'Yes — by about $31,000–$39,000/year. L&D RNs average $82,000–$90,000/year while CNMs average $120,880/year, a premium of roughly $31,000–$39,000/year. The CNM credential requires a master\'s or doctoral degree (MSN or DNP) plus national certification, which accounts for the salary gap.',
   },
   {
     question: 'What degree do you need to become a certified nurse midwife?',

@@ -139,7 +139,7 @@ export default function NYCRNSalary2026() {
         source="BLS OEWS 2025, NYSNA contract data 2026"
       />
       <p>
-        Entry-level NYC nurses ($78K–$92K) start significantly higher than the national new-grad average of
+        Entry-level NYC nurses ($78K–$92K) start $10,000–$20,000 above the national new-grad average of
         $62K–$88K, largely because NYSNA contracts set binding wage floors. Step increases of 3–5%/year mean
         a nurse hired at $80,000 reaches $95,000–$100,000 by year five without any promotion.
       </p>
@@ -197,7 +197,7 @@ export default function NYCRNSalary2026() {
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">NYC Nurse Take-Home Pay After Taxes (2026)</h2>
       <p>
-        NYC nurses face a three-layer tax burden that significantly reduces take-home pay: federal income tax,
+        NYC nurses face a three-layer tax burden that cuts take-home pay by 30–38%: federal income tax,
         New York State income tax (up to 10.9% at the highest bracket), and New York City income tax (3.876%
         for residents). On a $109,860 gross salary:
       </p>
@@ -242,7 +242,7 @@ export default function NYCRNSalary2026() {
       </ul>
       <p className="mt-3">
         Non-union systems (primarily Northwell) offer more flexible scheduling and sometimes higher starting
-        bonuses, but lack the guaranteed step increases that compound significantly over a career.
+        bonuses, but lack the guaranteed step increases that compound by $2,000–$5,000/year over a career.
       </p>
 
       <h2 className="text-2xl font-bold font-headline text-on-surface">NYC Travel Nurse Pay (2026)</h2>

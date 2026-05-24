@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     question: 'Is New York a good state for RN pay?',
-    answer: 'Nominally yes — second-highest in the nation. But New York state tax (6–10.9%) plus NYC city tax (3.88%) significantly reduces take-home. A Texas nurse at $88,000 and a NYC nurse at $105,000 may net similar after-tax income.',
+    answer: 'Nominally yes — second-highest in the nation. But New York state tax (6–10.9%) plus NYC city tax (3.88%) cuts take-home by $12,000–$18,000/year. A Texas nurse at $88,000 and a NYC nurse at $105,000 may net similar after-tax income.',
   },
   {
     question: 'Do NYC nurses have union protection?',
@@ -121,7 +121,7 @@ export default function NewYorkRNSalary2026() {
         />
 
         <p>
-          New York ranks <strong>second in the nation for RN pay</strong> — but the headline number masks two very different markets. New York City metro RNs earn an estimated <strong>$52–$62/hr base ($108,000–$128,000/year)</strong> at major academic health systems, while upstate markets (Buffalo, Rochester, Albany) are closer to national norms at $75,000–$90,000. Add New York&apos;s 6–10.9% state income tax and NYC&apos;s 3.88% city tax, and the take-home picture changes significantly. Here&apos;s what New York nurses actually earn — and keep — in 2026.
+          New York ranks <strong>second in the nation for RN pay</strong> — but the headline number masks two very different markets. New York City metro RNs earn an estimated <strong>$52–$62/hr base ($108,000–$128,000/year)</strong> at major academic health systems, while upstate markets (Buffalo, Rochester, Albany) are closer to national norms at $75,000–$90,000. Add New York&apos;s 6–10.9% state income tax and NYC&apos;s 3.88% city tax, and taxes claim 30–38% of the gross. Here&apos;s what New York nurses actually earn — and keep — in 2026.
         </p>
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">NYC RN Salary by Major Hospital System (2026)</h2>
