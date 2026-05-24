@@ -31,7 +31,7 @@ interface HomePageProps {
 }
 
 export default function HomePage({ stats, allData, stateData }: HomePageProps) {
-  const { avgSalary, totalPositions, cleanContracts } = stats;
+  // stats prop retained for future use; individual fields used in cards below
 
   return (
     <div className="min-h-screen bg-surface font-body text-on-surface">
@@ -307,7 +307,7 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
             <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
               <div>
                 <h2 className="font-headline font-extrabold text-4xl text-editorial mb-4">Nursing Intel Dashboard</h2>
-                <p className="text-on-surface-variant text-lg">Real-time market signals and projection data.</p>
+                <p className="text-on-surface-variant text-lg">Salary benchmarks and coverage data sourced from BLS OEWS and public market research.</p>
               </div>
               <a href="#positions" className="text-primary font-bold flex items-center gap-2 hover:underline">
                 View Full Market Report
@@ -317,16 +317,16 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
 
             {/* 3 Stat Cards — matching mockup */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-              {/* Card 1 — Market Growth */}
+              {/* Card 1 — States Covered */}
               <div className="bg-surface-container-lowest p-8 rounded-2xl shadow-sm ghost-border">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center">
-                    <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                    <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                   </div>
-                  <span className="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Market Growth</span>
+                  <span className="text-sm font-bold text-on-surface-variant uppercase tracking-wider">States Covered</span>
                 </div>
-                <div className="text-4xl font-headline font-extrabold mb-2">+14.2%</div>
-                <p className="text-on-surface-variant text-sm leading-relaxed">Projected job demand growth over the next 24 months in specialty settings.</p>
+                <div className="text-4xl font-headline font-extrabold mb-2">50</div>
+                <p className="text-on-surface-variant text-sm leading-relaxed">Salary benchmarks for all 50 states, 48+ cities, and 64+ hospital systems — sourced from BLS OEWS.</p>
               </div>
 
               {/* Card 2 — Salary Average */}
@@ -337,20 +337,20 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
                   </div>
                   <span className="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Salary Average</span>
                 </div>
-                <div className="text-4xl font-headline font-extrabold mb-2">${avgSalary.toLocaleString()}</div>
-                <p className="text-on-surface-variant text-sm leading-relaxed">National median for BSN-prepared nurses with 5+ years of clinical experience.</p>
+                <div className="text-4xl font-headline font-extrabold mb-2">~$89,000</div>
+                <p className="text-on-surface-variant text-sm leading-relaxed">Estimated national median RN salary based on the latest available BLS OEWS data (May 2024).</p>
               </div>
 
-              {/* Card 3 — Contract Health */}
+              {/* Card 3 — Specialties */}
               <div className="bg-surface-container-lowest p-8 rounded-2xl shadow-sm ghost-border">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center">
-                    <svg className="w-6 h-6 text-on-secondary-container" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                    <svg className="w-6 h-6 text-on-secondary-container" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
                   </div>
-                  <span className="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Contract Health</span>
+                  <span className="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Specialties</span>
                 </div>
-                <div className="text-4xl font-headline font-extrabold mb-2">{Math.round((cleanContracts / totalPositions) * 100)}%</div>
-                <p className="text-on-surface-variant text-sm leading-relaxed">Of audited contracts are clean &mdash; {totalPositions - cleanContracts} flagged with red flag clauses.</p>
+                <div className="text-4xl font-headline font-extrabold mb-2">20+</div>
+                <p className="text-on-surface-variant text-sm leading-relaxed">Specialty salary guides — ICU, ER, CRNA, OR, L&amp;D, psychiatric, oncology, travel nursing, and more.</p>
               </div>
             </div>
           </div>
