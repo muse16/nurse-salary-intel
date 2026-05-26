@@ -4,6 +4,7 @@ import Script from "next/script";
 import AssistLoopScript from "./components/AssistLoopScript";
 import { Analytics } from "@vercel/analytics/next";
 import SiteFooter from "@/components/SiteFooter";
+import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -105,6 +106,7 @@ export default function RootLayout({
       <body className={`${manrope.variable} antialiased`}>
         {children}
         <SiteFooter />
+        <CookieConsent />
 
         {/* AdSense — lazyOnload defers until page is idle, reduces TBT on mobile */}
         <Script
