@@ -16,6 +16,7 @@ export default function SiteFooter() {
           <Link href="/disclaimer" className="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100 underline decoration-primary/30 text-sm">Disclaimer</Link>
           <Link href="/terms" className="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100 underline decoration-primary/30 text-sm">Terms of Service</Link>
           <Link href="/contact" className="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100 underline decoration-primary/30 text-sm">Contact</Link>
+          <Link href="/site-map" className="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100 underline decoration-primary/30 text-sm">Site Map</Link>
         </nav>
       </div>
     </footer>
