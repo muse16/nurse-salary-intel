@@ -262,7 +262,7 @@ export default function NYCRNSalary2026() {
       <h2 className="text-2xl font-bold font-headline text-on-surface">Related Salary Guides</h2>
       <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
         {[
-          { href: '/rn-salary-by-state/new-york', label: 'New York State RN Salary 2026', desc: 'Statewide averages + upstate vs NYC' },
+          { href: '/new-jersey-rn-salary-2026', label: 'New Jersey RN Salary 2026', desc: 'Cross-river comparison — NJ vs Manhattan pay' },
           { href: '/philadelphia-rn-salary-2026', label: 'Philadelphia RN Salary 2026', desc: 'Best cost-adjusted metro on the East Coast' },
           { href: '/boston-rn-salary-2026', label: 'Boston RN Salary 2026', desc: 'Academic medical center premium' },
           { href: '/critical-care-nurse-salary-2026', label: 'Critical Care Nurse Salary 2026', desc: 'ICU, MICU, CVICU specialty pay' },

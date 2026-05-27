@@ -213,7 +213,7 @@ export default function DetroitRNSalary2026() {
       <h2 className="text-2xl font-bold font-headline text-on-surface">Related Salary Guides</h2>
       <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
         {[
-          { href: '/rn-salary-by-state', label: 'RN Salary by State', desc: 'All 50 states ranked' },
+          { href: '/michigan-rn-salary-2026', label: 'Michigan RN Salary 2026', desc: 'Union vs. non-union pay statewide' },
           { href: '/psychiatric-nurse-salary-2026', label: 'Psychiatric Nurse Salary 2026', desc: 'Psych RN pay — strong in Michigan' },
           { href: '/cleveland-rn-salary-2026', label: 'Cleveland RN Salary 2026', desc: 'Compare Detroit to Cleveland' },
           { href: '/nurse-salary-negotiation-guide-2026', label: 'Nurse Salary Negotiation Guide', desc: 'How to negotiate in a multi-system market' },

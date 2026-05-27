@@ -217,7 +217,7 @@ export default function ERNurseSalary2026() {
         {[
           { href: '/icu-vs-er-nurse-salary-2026', label: 'ICU vs ER Nurse Salary 2026', desc: '$95,200 vs $92,800 — full breakdown' },
           { href: '/icu-nurse-salary-2026', label: 'ICU Nurse Salary 2026', desc: 'Critical care pay + CCRN premium' },
-          { href: '/shift-differential-nurse-pay-2026', label: 'Shift Differential Nurse Pay 2026', desc: 'Night pay adds $8K–$25K/yr' },
+          { href: '/hospice-nurse-salary-2026', label: 'Hospice Nurse Salary 2026', desc: 'Considering a pace change? Hospice pay vs ER' },
           { href: '/nurse-salary-negotiation-guide-2026', label: 'Nurse Salary Negotiation Guide', desc: 'Scripts for any ER offer negotiation' },
         ].map(({ href, label, desc }) => (
           <Link

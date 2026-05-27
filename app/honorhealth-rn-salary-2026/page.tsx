@@ -247,9 +247,9 @@ export default function HonorHealthRNSalary2026() {
             <p className="font-semibold text-on-surface">ICU Nurse Salary 2026</p>
             <p className="text-sm text-on-surface-variant mt-1">Critical care pay by state, certification premiums, and travel contracts.</p>
           </Link>
-          <Link href="/nurse-practitioner-salary-2026/" className="block rounded-xl border border-outline-variant bg-surface-container-low p-4 hover:bg-surface-container transition-colors">
-            <p className="font-semibold text-on-surface">Nurse Practitioner Salary 2026</p>
-            <p className="text-sm text-on-surface-variant mt-1">NP pay by specialty and state — including AZ market data.</p>
+          <Link href="/hca-rn-salary-2026" className="block rounded-xl border border-outline-variant bg-surface-container-low p-4 hover:bg-surface-container transition-colors">
+            <p className="font-semibold text-on-surface">HCA RN Salary 2026</p>
+            <p className="text-sm text-on-surface-variant mt-1">Full pay breakdown at the largest US hospital system — base, differentials, sign-on.</p>
           </Link>
         </div>
 

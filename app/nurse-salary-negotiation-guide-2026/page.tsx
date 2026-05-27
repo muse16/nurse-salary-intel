@@ -326,7 +326,7 @@ export default function NurseSalaryNegotiationPage() {
       <h2 className="text-2xl font-bold font-headline text-on-surface mt-10 mb-4">Related Guides</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {[
-          { href: '/rn-vs-lpn-salary-2026', label: 'RN vs LPN Salary Comparison 2026' },
+          { href: '/hca-rn-salary-2026', label: 'HCA RN Salary 2026 — Full Pay Breakdown' },
           { href: '/nurse-practitioner-salary-2026', label: 'Nurse Practitioner Salary 2026' },
           { href: '/icu-nurse-salary-2026', label: 'ICU Nurse Salary 2026' },
           { href: '/salary-data', label: 'Full Nurse Salary Data by State' },
