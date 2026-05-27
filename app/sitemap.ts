@@ -177,6 +177,13 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/dnp-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/whnp-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/flight-nurse-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+
+  // Week 14 — May 2026
+  { path: '/hca-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/michigan-rn-salary-2026', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/new-jersey-rn-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/hospice-nurse-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/lvn-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
