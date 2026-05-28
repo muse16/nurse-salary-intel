@@ -184,6 +184,12 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/new-jersey-rn-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/hospice-nurse-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/lvn-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  // Week-15
+  { path: '/charge-nurse-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/washington-dc-rn-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/north-carolina-rn-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/dialysis-nurse-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/virginia-rn-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
