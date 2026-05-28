@@ -7,7 +7,6 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Washington DC RN Salary 2026 | NurseSalaryIntel',
-  metaTitle: 'Washington DC RN Salary 2026',
   description:
     'RNs in the Washington DC metro earn around $99,000–$103,000/year in 2026 — among the top 5 metro markets nationally. See pay by hospital, specialty, and experience.',
   alternates: { canonical: 'https://nursesalaryintel.com/washington-dc-rn-salary-2026' },

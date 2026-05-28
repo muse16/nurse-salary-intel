@@ -7,7 +7,6 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'North Carolina RN Salary 2026 | NurseSalaryIntel',
-  metaTitle: 'North Carolina RN Salary 2026',
   description:
     'North Carolina RNs earn $72,970/year on average per BLS OEWS May 2024. Charlotte and Raleigh push above $80K. See pay by city, hospital, and specialty.',
   alternates: { canonical: 'https://nursesalaryintel.com/north-carolina-rn-salary-2026' },

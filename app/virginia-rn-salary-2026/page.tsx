@@ -7,7 +7,6 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Virginia RN Salary 2026 | NurseSalaryIntel',
-  metaTitle: 'Virginia RN Salary 2026',
   description:
     'Virginia RNs earn $77,720/year on average per BLS OEWS May 2024. Northern VA nurses average $90,000–$100,000+. See pay by city, hospital, and specialty.',
   alternates: { canonical: 'https://nursesalaryintel.com/virginia-rn-salary-2026' },
