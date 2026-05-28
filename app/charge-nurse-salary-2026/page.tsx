@@ -136,7 +136,7 @@ export default function ChargeNurseSalary2026() {
       <SalaryTable
         title="Charge Nurse vs. Staff RN Annual Pay by Unit (2026 Estimates)"
         headers={['Role', 'Estimated Annual Pay', 'Annual Premium Over Staff RN']}
-        data={vsStaffRN}
+        rows={vsStaffRN}
       />
 
       {/* Data chart */}
@@ -158,7 +158,7 @@ export default function ChargeNurseSalary2026() {
       <SalaryTable
         title="Charge Nurse Pay Differential by Facility Type"
         headers={['Facility Type', 'Typical Differential', 'Estimated Annual Impact']}
-        data={differentialByFacility}
+        rows={differentialByFacility}
       />
 
       {/* Inline image */}
@@ -180,7 +180,7 @@ export default function ChargeNurseSalary2026() {
       <SalaryTable
         title="Estimated Charge Nurse Salary by State (2026)"
         headers={['State', 'Estimated Annual Salary', 'Estimated Hourly Rate']}
-        data={stateData}
+        rows={stateData}
       />
 
       <h2>What This Means for Your Negotiation</h2>

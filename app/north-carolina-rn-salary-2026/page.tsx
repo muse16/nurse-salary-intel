@@ -124,7 +124,7 @@ export default function NorthCarolinaRNSalary2026() {
       <SalaryTable
         title="North Carolina RN Salary by City (2026 Estimates)"
         headers={['City / Metro Area', 'Estimated Annual Salary', 'Estimated Hourly Rate']}
-        data={cityData}
+        rows={cityData}
       />
 
       {/* Chart */}
@@ -146,7 +146,7 @@ export default function NorthCarolinaRNSalary2026() {
       <SalaryTable
         title="North Carolina RN Salary by Specialty (2026 Estimates)"
         headers={['Specialty', 'Estimated Annual Salary', 'Notes']}
-        data={specialtyData}
+        rows={specialtyData}
       />
 
       {/* Inline image */}
@@ -165,7 +165,7 @@ export default function NorthCarolinaRNSalary2026() {
       <SalaryTable
         title="NC RN Salary vs. Southeast States (BLS OEWS May 2024)"
         headers={['State', 'Mean Annual RN Salary', 'Hourly Rate']}
-        data={stateComparison}
+        rows={stateComparison}
       />
 
       <p>

@@ -123,7 +123,7 @@ export default function DialysisNurseSalary2026() {
       <SalaryTable
         title="Dialysis Nurse Pay by Setting and Employer (2026 Estimates)"
         headers={['Setting / Employer', 'Estimated Annual Salary', 'Estimated Hourly Rate']}
-        data={settingComparison}
+        rows={settingComparison}
       />
 
       {/* Chart */}
@@ -145,7 +145,7 @@ export default function DialysisNurseSalary2026() {
       <SalaryTable
         title="Dialysis Nurse Salary by State (2026 Estimates)"
         headers={['State', 'Estimated Annual Salary', 'Notes']}
-        data={stateData}
+        rows={stateData}
       />
 
       {/* Inline image */}
@@ -167,7 +167,7 @@ export default function DialysisNurseSalary2026() {
       <SalaryTable
         title="Dialysis Nurse Pay by Experience and Role (2026)"
         headers={['Career Stage', 'Estimated Annual Salary', 'Notes']}
-        data={careerPath}
+        rows={careerPath}
       />
 
       <h2>Is Dialysis Nursing Worth the Pay Trade-off?</h2>

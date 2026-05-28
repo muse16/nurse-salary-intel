@@ -126,7 +126,7 @@ export default function WashingtonDCRNSalary2026() {
       <SalaryTable
         title="Washington DC Hospital RN Salary Estimates (2026)"
         headers={['Hospital', 'Estimated Annual Salary Range', 'Estimated Hourly Base']}
-        data={hospitalData}
+        rows={hospitalData}
       />
 
       {/* Chart */}
@@ -148,7 +148,7 @@ export default function WashingtonDCRNSalary2026() {
       <SalaryTable
         title="Washington DC RN Salary by Specialty (2026 Estimates)"
         headers={['Specialty', 'Estimated Annual Salary', 'Notes']}
-        data={specialtyData}
+        rows={specialtyData}
       />
 
       {/* Inline image */}
@@ -166,7 +166,7 @@ export default function WashingtonDCRNSalary2026() {
       <SalaryTable
         title="DC Metro vs. Top US Nursing Markets — RN Salary Comparison"
         headers={['Metro Market', 'Estimated Average RN Salary', 'Notes']}
-        data={metroComparison}
+        rows={metroComparison}
       />
 
       <h2>What Affects RN Pay in DC Most</h2>

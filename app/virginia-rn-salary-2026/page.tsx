@@ -125,7 +125,7 @@ export default function VirginiaRNSalary2026() {
       <SalaryTable
         title="Virginia RN Salary by City and Region (2026 Estimates)"
         headers={['City / Region', 'Estimated Annual Salary', 'Estimated Hourly Rate']}
-        data={cityData}
+        rows={cityData}
       />
 
       {/* Chart */}
@@ -144,7 +144,7 @@ export default function VirginiaRNSalary2026() {
       <SalaryTable
         title="Virginia Hospital RN Salary Estimates (2026)"
         headers={['Hospital / System', 'Estimated Annual Salary', 'Estimated Hourly Base']}
-        data={hospitalData}
+        rows={hospitalData}
       />
 
       {/* Inline image */}
@@ -163,7 +163,7 @@ export default function VirginiaRNSalary2026() {
       <SalaryTable
         title="Virginia RN Salary vs. Mid-Atlantic States (BLS OEWS May 2024)"
         headers={['State', 'Mean Annual RN Salary', 'Hourly Rate']}
-        data={stateComparison}
+        rows={stateComparison}
       />
 
       <p>
