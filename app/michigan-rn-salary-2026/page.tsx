@@ -46,13 +46,13 @@ const faqs = [
 ];
 
 const metroData = [
-  { label: 'Ann Arbor (Michigan Medicine / union)', avgSalary: '$91,400', hourlyRate: '$43.94/hr — academic medical center' },
-  { label: 'Detroit metro (Henry Ford, Corewell East)', avgSalary: '$86,200', hourlyRate: '$41.44/hr' },
-  { label: 'Grand Rapids (Corewell West, Mercy Health)', avgSalary: '$75,800', hourlyRate: '$36.44/hr' },
-  { label: 'Lansing / Mid-Michigan', avgSalary: '$74,100', hourlyRate: '$35.63/hr' },
-  { label: 'Flint / Genesee County', avgSalary: '$70,900', hourlyRate: '$34.09/hr' },
-  { label: 'Michigan state mean', avgSalary: '$78,280', hourlyRate: '$37.63/hr' },
-  { label: 'National RN average', avgSalary: '$89,010', hourlyRate: '$42.80/hr' },
+  { label: 'Ann Arbor (Michigan Medicine / union)', avgSalary: 'around $91,000', hourlyRate: 'around $44/hr — academic medical center' },
+  { label: 'Detroit metro (Henry Ford, Corewell East)', avgSalary: 'around $86,000', hourlyRate: 'around $41.50/hr' },
+  { label: 'Grand Rapids (Corewell West, Mercy Health)', avgSalary: 'around $76,000', hourlyRate: 'around $36.50/hr' },
+  { label: 'Lansing / Mid-Michigan', avgSalary: 'around $74,000', hourlyRate: 'around $35.50/hr' },
+  { label: 'Flint / Genesee County', avgSalary: 'around $71,000', hourlyRate: 'around $34/hr' },
+  { label: 'Michigan state mean', avgSalary: '$78,280', hourlyRate: '$37.63/hr (BLS OEWS May 2024)' },
+  { label: 'National RN average', avgSalary: '$89,010', hourlyRate: '$42.80/hr (BLS OEWS May 2024)' },
 ];
 
 const unionVsNon = [

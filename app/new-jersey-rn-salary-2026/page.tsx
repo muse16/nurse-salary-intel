@@ -51,11 +51,11 @@ const faqs = [
 ];
 
 const metroData = [
-  { label: 'Newark / Jersey City (Northern NJ metro)', avgSalary: '$107,400', hourlyRate: '$51.63/hr' },
-  { label: 'Trenton / Princeton area', avgSalary: '$101,200', hourlyRate: '$48.65/hr' },
-  { label: 'State Mean (New Jersey)', avgSalary: '$99,280', hourlyRate: '$47.73/hr' },
-  { label: 'Camden / South Jersey (Philly metro)', avgSalary: '$95,800', hourlyRate: '$46.06/hr' },
-  { label: 'Shore / Cape May region', avgSalary: '$87,400', hourlyRate: '$42.02/hr' },
+  { label: 'Newark / Jersey City (Northern NJ metro)', avgSalary: 'around $107,000', hourlyRate: 'around $51.50/hr' },
+  { label: 'Trenton / Princeton area', avgSalary: 'around $101,000', hourlyRate: 'around $48.50/hr' },
+  { label: 'State Mean (New Jersey)', avgSalary: '$99,280', hourlyRate: '$47.73/hr (BLS OEWS May 2024)' },
+  { label: 'Camden / South Jersey (Philly metro)', avgSalary: 'around $96,000', hourlyRate: 'around $46/hr' },
+  { label: 'Shore / Cape May region', avgSalary: 'around $87,000', hourlyRate: 'around $42/hr' },
 ];
 
 const regionComparison = [

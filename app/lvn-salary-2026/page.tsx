@@ -62,12 +62,12 @@ const stateData = [
 ];
 
 const settingData = [
-  { label: 'Home Health Services', avgSalary: '$63,800', hourlyRate: 'Highest growth segment' },
-  { label: 'Hospitals (general medical)', avgSalary: '$62,400', hourlyRate: 'Strong benefits + OT' },
-  { label: 'Skilled Nursing Facilities', avgSalary: '$59,200', hourlyRate: 'Charge LVN roles add $2–4/hr' },
-  { label: 'Physician / Clinic Offices', avgSalary: '$56,800', hourlyRate: 'Lower base; better hours' },
-  { label: 'Correctional Facilities', avgSalary: '$66,100', hourlyRate: 'Hazard premium; state benefits' },
-  { label: 'Long-Term / Residential Care', avgSalary: '$55,400', hourlyRate: 'Common entry setting' },
+  { label: 'Home Health Services', avgSalary: 'around $64,000', hourlyRate: 'Highest growth segment' },
+  { label: 'Hospitals (general medical)', avgSalary: 'around $62,000', hourlyRate: 'Strong benefits + OT' },
+  { label: 'Skilled Nursing Facilities', avgSalary: 'around $59,000', hourlyRate: 'Charge LVN roles add $2–4/hr' },
+  { label: 'Physician / Clinic Offices', avgSalary: 'around $57,000', hourlyRate: 'Lower base; better hours' },
+  { label: 'Correctional Facilities', avgSalary: 'around $66,000', hourlyRate: 'Hazard premium; state benefits' },
+  { label: 'Long-Term / Residential Care', avgSalary: 'around $55,000', hourlyRate: 'Common entry setting' },
 ];
 
 const careerData = [

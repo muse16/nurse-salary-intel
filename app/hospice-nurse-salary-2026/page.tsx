@@ -51,22 +51,22 @@ const faqs = [
 ];
 
 const settingData = [
-  { label: 'Hospital Inpatient (general)', avgSalary: '$91,640', hourlyRate: '$44.06/hr — top of range' },
-  { label: 'Government / VA Hospice', avgSalary: '$87,200', hourlyRate: '$41.92/hr + federal benefits' },
-  { label: 'Home Health Agency (large system)', avgSalary: '$82,350', hourlyRate: '$39.59/hr + mileage' },
-  { label: 'Dedicated Hospice Facility', avgSalary: '$79,050', hourlyRate: '$38.00/hr; BLS home health baseline' },
-  { label: 'SNF / Long-Term Care Hospice Unit', avgSalary: '$74,280', hourlyRate: '$35.71/hr' },
-  { label: 'Nonprofit / Community Hospice', avgSalary: '$76,400', hourlyRate: 'PSLF eligible; lower base' },
+  { label: 'Hospital Inpatient (general)', avgSalary: 'around $92,000', hourlyRate: 'around $44/hr — top of range' },
+  { label: 'Government / VA Hospice', avgSalary: 'around $87,000', hourlyRate: 'around $42/hr + federal benefits' },
+  { label: 'Home Health Agency (large system)', avgSalary: 'around $82,000', hourlyRate: 'around $39.50/hr + mileage' },
+  { label: 'Dedicated Hospice Facility', avgSalary: '$79,050', hourlyRate: '$38.00/hr (BLS NAICS 621600 baseline)' },
+  { label: 'SNF / Long-Term Care Hospice Unit', avgSalary: 'around $74,000', hourlyRate: 'around $35.50/hr' },
+  { label: 'Nonprofit / Community Hospice', avgSalary: 'around $76,000', hourlyRate: 'PSLF eligible; lower base' },
 ];
 
 const stateData = [
-  { label: 'California', avgSalary: '$101,300', hourlyRate: '$48.70/hr' },
-  { label: 'Massachusetts', avgSalary: '$94,800', hourlyRate: '$45.58/hr' },
-  { label: 'Washington', avgSalary: '$90,200', hourlyRate: '$43.37/hr' },
-  { label: 'National RN Mean', avgSalary: '$89,010', hourlyRate: '$42.80/hr' },
-  { label: 'Texas', avgSalary: '$76,400', hourlyRate: '$36.73/hr' },
-  { label: 'Florida', avgSalary: '$73,800', hourlyRate: '$35.48/hr' },
-  { label: 'Georgia', avgSalary: '$72,200', hourlyRate: '$34.71/hr' },
+  { label: 'California', avgSalary: 'around $101,000', hourlyRate: 'around $48.50/hr' },
+  { label: 'Massachusetts', avgSalary: 'around $95,000', hourlyRate: 'around $45.50/hr' },
+  { label: 'Washington', avgSalary: 'around $90,000', hourlyRate: 'around $43.50/hr' },
+  { label: 'National RN Mean', avgSalary: '$89,010', hourlyRate: '$42.80/hr (BLS OEWS May 2024)' },
+  { label: 'Texas', avgSalary: 'around $76,000', hourlyRate: 'around $36.50/hr' },
+  { label: 'Florida', avgSalary: 'around $74,000', hourlyRate: 'around $35.50/hr' },
+  { label: 'Georgia', avgSalary: 'around $72,000', hourlyRate: 'around $34.50/hr' },
 ];
 
 const roleData = [
@@ -105,7 +105,7 @@ export default function HospiceNurseSalary2026() {
       <div className="not-prose bg-surface-container-low border border-outline-variant rounded-xl p-5 mb-2">
         <p className="text-sm font-semibold text-on-surface-variant uppercase tracking-wide mb-2">Quick Answer</p>
         <p className="text-on-surface text-base">
-          Hospice nurses earn <strong>$79,050–$91,640/year</strong> in 2026 depending on setting.
+          Hospice nurses earn an estimated <strong>$79,000–$92,000/year</strong> in 2026 depending on setting.
           Home-based case managers average <strong>$79,000–$84,000</strong>; inpatient hospice facility RNs
           earn <strong>$85,000–$95,000</strong>. The national RN mean across all settings is{' '}
           <strong>$89,010/year</strong> per BLS OEWS May 2024.
