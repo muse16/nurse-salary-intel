@@ -1,5 +1,4 @@
 import { getCityData, slugify, unslugify, getAllStates, getCitiesByState } from '@/lib/data';
-import DataTable from '@/components/DataTable';
 import MonetizationSlot from '@/components/MonetizationSlot';
 import PremiumAuditCTA from '@/components/PremiumAuditCTA';
 import RecommendedGear from '@/components/RecommendedGear';
@@ -168,27 +167,22 @@ export default async function CityPage({ params }: PageProps) {
         ]} />
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-4 mb-8 max-w-lg">
           <div className="bg-white rounded-xl shadow-sm p-5 border border-gray-100">
             <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Avg Salary</div>
             <div className="text-2xl font-black text-blue-600">${cityData.avgSalary.toLocaleString()}</div>
           </div>
           <div className="bg-white rounded-xl shadow-sm p-5 border border-gray-100">
-            <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Range</div>
+            <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Salary Range</div>
             <div className="text-base font-bold text-gray-900">
               ${cityData.minSalary.toLocaleString()} – ${cityData.maxSalary.toLocaleString()}
             </div>
           </div>
-          <div className="bg-white rounded-xl shadow-sm p-5 border border-gray-100">
-            <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Positions</div>
-            <div className="text-2xl font-black text-green-600">{cityData.totalPositions}</div>
-          </div>
-          <div className="bg-white rounded-xl shadow-sm p-5 border border-gray-100">
-            <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Clean Contracts</div>
-            <div className="text-2xl font-black text-emerald-600">
-              {cityData.positions.filter(p => p.red_flags === 'None').length}
-            </div>
-          </div>
+        </div>
+
+        {/* Nurse-Approved Gear — full width, high visibility */}
+        <div className="mb-8">
+          <RecommendedGear layout="grid" />
         </div>
 
         {/* Main content + Sidebar */}
@@ -197,63 +191,69 @@ export default async function CityPage({ params }: PageProps) {
           {/* Left — main content */}
           <div className="lg:col-span-2 space-y-8">
 
-            {/* SEO Content */}
+            {/* Experience-based earnings */}
             <div className="bg-white rounded-xl shadow-sm p-7 border border-gray-100">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                Nursing Jobs in {cityData.city}, {cityData.state}
+                RN Salary by Experience in {cityData.city}
               </h2>
-              <div className="text-gray-700 space-y-3 text-sm leading-relaxed">
-                <p>
-                  {cityData.city}, {cityData.state} offers {cityData.totalPositions} tracked nursing positions
-                  with an average salary of <strong>${cityData.avgSalary.toLocaleString()}</strong> and a range
-                  of ${cityData.minSalary.toLocaleString()} to ${cityData.maxSalary.toLocaleString()}.
-                </p>
-                <p>
-                  {cityData.positions.filter(p => p.red_flags === 'None').length} of {cityData.totalPositions} positions
-                  have clean contracts. Before signing, use our free{' '}
-                  <Link href="/audit" className="text-blue-600 hover:underline font-semibold">
-                    Contract Red Flag Audit Tool
-                  </Link>{' '}
-                  to review your offer letter clause by clause.
-                </p>
+              <p className="text-gray-700 text-sm leading-relaxed mb-5">
+                Experience is the single biggest lever on RN pay in {cityData.city}. Here is how earnings typically progress from new grad through senior nurse, based on the local average of <strong>${cityData.avgSalary.toLocaleString()}/year</strong>.
+              </p>
+              <div className="space-y-3">
+                {[
+                  { label: 'New Grad (0–1 yr)', range: `$${Math.round(cityData.avgSalary * 0.75 / 1000) * 1000}–$${Math.round(cityData.avgSalary * 0.85 / 1000) * 1000}`, note: '15–25% below local avg · most start on step pay scales' },
+                  { label: 'Early Career (2–4 yrs)', range: `$${Math.round(cityData.avgSalary * 0.90 / 1000) * 1000}–$${Math.round(cityData.avgSalary * 1.02 / 1000) * 1000}`, note: 'Near local avg · specialty certifications begin to add $5K–$10K' },
+                  { label: 'Mid-Career (5–9 yrs)', range: `$${Math.round(cityData.avgSalary * 1.05 / 1000) * 1000}–$${Math.round(cityData.avgSalary * 1.18 / 1000) * 1000}`, note: 'Above avg · CCRN, CEN, OCN can add $8K–$15K on top' },
+                  { label: 'Senior (10+ yrs)', range: `$${Math.round(cityData.avgSalary * 1.20 / 1000) * 1000}–$${Math.round(cityData.avgSalary * 1.35 / 1000) * 1000}`, note: 'Charge nurse and specialty roles push to the top of this range' },
+                ].map(({ label, range, note }) => (
+                  <div key={label} className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 p-4 rounded-lg bg-gray-50 border border-gray-100">
+                    <div className="text-sm font-bold text-gray-900 w-44 shrink-0">{label}</div>
+                    <div className="text-sm font-black text-blue-600 w-48 shrink-0">{range}</div>
+                    <div className="text-xs text-gray-500">{note}</div>
+                  </div>
+                ))}
               </div>
+              <p className="text-xs text-gray-400 mt-4">
+                Ranges are estimates derived from BLS OEWS state data and regional job posting analysis. Individual pay depends on facility, union status, specialty, and shift type.
+              </p>
             </div>
 
-            {/* Data Table */}
-            <DataTable data={cityData.positions} title="Nursing Positions" />
+            {/* Before You Accept an Offer */}
+            <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
+              <h2 className="text-lg font-bold text-amber-900 mb-3">
+                📋 Before You Accept an Offer in {cityData.city}
+              </h2>
+              <p className="text-amber-800 text-sm mb-4">
+                Most nurses leave money on the table by not negotiating. Here is what to review before signing anything.
+              </p>
+              <ul className="space-y-2 text-sm text-amber-900">
+                {[
+                  'Confirm the base hourly rate matches what was discussed — get it in writing before your start date.',
+                  'Ask specifically about night shift and weekend differentials. In most {city} hospitals these add $4–$8/hr.',
+                  'Check sign-on bonus vesting cliffs. A $10,000 bonus with a 2-year cliff is only valuable if you stay.',
+                  'Negotiate PTO and tuition reimbursement — these are often more flexible than base pay at large systems.',
+                  'Compare the total package, not just base. Benefits, ratios, and schedule matter as much as the hourly rate.',
+                ].map((tip, i) => (
+                  <li key={i} className="flex gap-2">
+                    <span className="text-amber-600 font-bold shrink-0">{i + 1}.</span>
+                    <span>{tip.replace('{city}', cityData.city)}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                href="/nurse-salary-negotiation-guide-2026"
+                className="inline-block mt-5 bg-amber-700 hover:bg-amber-800 text-white font-semibold py-2.5 px-5 rounded-lg transition-colors text-sm"
+              >
+                Read the Full Negotiation Guide →
+              </Link>
+            </div>
 
-            {/* Red Flags Section */}
-            {cityData.positions.some(p => p.red_flags !== 'None') && (
-              <div className="bg-red-50 border border-red-200 rounded-xl p-6">
-                <h2 className="text-lg font-bold text-red-900 mb-3 flex items-center gap-2">
-                  ⚠ Red Flags Detected in {cityData.city}
-                </h2>
-                <p className="text-red-700 text-sm mb-4">
-                  These positions have potentially problematic contract terms. Review carefully before accepting.
-                </p>
-                <div className="space-y-2">
-                  {cityData.positions.filter(p => p.red_flags !== 'None').map((position, idx) => (
-                    <div key={idx} className="bg-white rounded-lg p-4 border border-red-100">
-                      <div className="font-semibold text-gray-900 text-sm">{position.hospital}</div>
-                      <div className="text-xs text-red-600 mt-1">{position.red_flags}</div>
-                    </div>
-                  ))}
-                </div>
-                <Link
-                  href="/audit"
-                  className="inline-block mt-4 bg-red-600 hover:bg-red-700 text-white font-semibold py-2.5 px-5 rounded-lg transition-colors text-sm"
-                >
-                  Run Free Contract Audit
-                </Link>
-              </div>
-            )}
           </div>
 
           {/* Right — sidebar */}
           <div className="space-y-6">
             <PremiumAuditCTA placement="sidebar" />
             <MonetizationSlot type="jobs" city={cityData.city} state={cityData.state} />
-            <RecommendedGear />
           </div>
         </div>
 
