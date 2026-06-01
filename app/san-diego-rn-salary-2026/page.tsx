@@ -7,7 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'San Diego RN Salary 2026: $104,800/yr + UCSD vs. Scripps Pay',
-  description: 'San Diego RN salary 2026: $104,800/yr avg ($50.38/hr). Pay at UCSD Health, Scripps, Sharp, and Kaiser — plus California state license premium and travel nurse rates.',
+  description: 'San Diego RN salary 2026: $104,800/yr avg ($50.38/hr). Pay at UCSD Health, Scripps, Sharp, and Kaiser — plus California state license premium and travel nurse…',
 };
 
 const faqs = [

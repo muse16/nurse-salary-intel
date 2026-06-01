@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'LPN Salary 2026: How Much Do LPNs Make Per Hour & Year?',
-  description:
-    'LPNs earn $55,000/yr ($26.44/hr) based on the latest BLS data. See LPN pay by state, setting, and how it compares to CNA and RN — plus the fastest path to higher pay.',
+  description: 'LPNs earn $55,000/yr ($26.44/hr) based on the latest BLS data. See LPN pay by state, setting, and how it compares to CNA and RN — plus the fastest path to…',
   alternates: { canonical: 'https://nursesalaryintel.com/lpn-salary-2026' },
   openGraph: {
     title: 'LPN Salary 2026: How Much Do LPNs Make?',

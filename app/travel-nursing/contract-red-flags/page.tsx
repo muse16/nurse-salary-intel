@@ -6,8 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Travel Nursing Contract Red Flags 2026: 12 Warning Signs',
-  description:
-    "12 travel nursing contract red flags nurses miss — cancellation penalties, low stipends, unprotected floating, and clauses that quietly cut your take-home pay. Know before you sign.",
+  description: "12 travel nursing contract red flags nurses miss — cancellation penalties, low stipends, unprotected floating, and clauses that quietly cut your take-home…",
 };
 
 const faqs = [

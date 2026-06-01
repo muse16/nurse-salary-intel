@@ -7,7 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Los Angeles RN Salary 2026: Hourly Pay & Benefits Breakdown',
-  description: 'Los Angeles RN salary 2026: $125K–$140K average, $60–$67/hr base. Hospital-by-hospital breakdown with Cedars-Sinai, UCLA, and USC Keck pay data plus sign-on bonuses.',
+  description: 'Los Angeles RN salary 2026: $125K–$140K average, $60–$67/hr base. Hospital-by-hospital breakdown with Cedars-Sinai, UCLA, and USC Keck pay data plus sign-on…',
   alternates: { canonical: 'https://nursesalaryintel.com/rn-salary-los-angeles-2026' },
 };
 

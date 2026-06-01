@@ -6,8 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'South Dakota RN Salary 2026: $64,920/yr + Hourly Rates by City',
-  description:
-    'South Dakota RNs average $64,920/yr ($31.21/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+  description: 'South Dakota RNs average $64,920/yr ($31.21/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next…',
 };
 
 const faqs = [

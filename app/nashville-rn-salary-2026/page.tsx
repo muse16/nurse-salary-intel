@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nashville RN Salary 2026: How Much Do Nurses Make in Nashville, TN?',
-  description:
-    'Nashville RNs earn $72,800/yr ($35.00/hr) based on the latest BLS data. See pay at Vanderbilt, HCA, and Saint Thomas — plus why Nashville is a top travel nurse market.',
+  description: 'Nashville RNs earn $72,800/yr ($35.00/hr) based on the latest BLS data. See pay at Vanderbilt, HCA, and Saint Thomas — plus why Nashville is a top travel…',
   alternates: { canonical: 'https://nursesalaryintel.com/nashville-rn-salary-2026' },
   openGraph: {
     title: 'Nashville RN Salary 2026: $72,800/yr Est.',

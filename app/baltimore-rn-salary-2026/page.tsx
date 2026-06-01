@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Baltimore RN Salary 2026: How Much Do Nurses Make in Baltimore, MD?',
-  description:
-    'Baltimore RNs earn $89,000/yr ($42.79/hr) based on the latest BLS data. Johns Hopkins pays $88K–$110K. See salary by hospital, specialty, and experience — with Maryland tax breakdown.',
+  description: 'Baltimore RNs earn $89,000/yr ($42.79/hr) based on the latest BLS data. Johns Hopkins pays $88K–$110K. See salary by hospital, specialty, and experience …',
   alternates: { canonical: 'https://nursesalaryintel.com/baltimore-rn-salary-2026' },
   openGraph: {
     title: 'Baltimore RN Salary 2026: $89,000/yr at Johns Hopkins & UMMC',

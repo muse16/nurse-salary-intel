@@ -6,8 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Travel Nursing Contract Review Checklist 2026: 15 Must-Check Items',
-  description:
-    'Free 15-point checklist to review your travel nursing contract before signing. Verify pay, stipends, cancellation clauses, and more — or get a $9 professional audit.',
+  description: 'Free 15-point checklist to review your travel nursing contract before signing. Verify pay, stipends, cancellation clauses, and more — or get a $9 professional…',
 };
 
 const faqs = [

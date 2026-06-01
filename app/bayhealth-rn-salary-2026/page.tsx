@@ -8,7 +8,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 export const metadata: Metadata = {
   title: 'Bayhealth RN Salary 2026: What Delaware\'s Top System Pays',
   description:
-    'Bayhealth RNs earn $68K–$96K/yr. Pay by specialty, sign-on bonuses up to $15K, shift differentials, and how Kent Campus compares to Milford.',
+    'Bayhealth RNs earn $68K–$96K/yr. Night shift differential: $1.30/hr (nurse-reported). Sign-on bonuses up to $15K, pay by specialty, Kent vs. Milford campus.',
   alternates: { canonical: 'https://nursesalaryintel.com/bayhealth-rn-salary-2026' },
   openGraph: {
     title: 'Bayhealth RN Salary 2026: What Delaware\'s Top System Pays',
@@ -41,7 +41,7 @@ const faqs = [
   {
     question: 'What shift differential does Bayhealth pay nurses?',
     answer:
-      'Based on nurse-reported figures and job posting data, Bayhealth pays evening differential of approximately $2.50–$3.50/hr and night differential of approximately $4.00–$6.00/hr. Weekend differential of $2.00–$3.00/hr is typically stackable with night differential. These rates are consistent with mid-market Delaware hospital systems and below union-contract rates seen in Pennsylvania and New Jersey.',
+      'Nurse-reported figures indicate Bayhealth pays a night shift differential of $1.30/hr above base rate. Evening and weekend differentials are reported at comparable modest rates. These figures are nurse-reported from job forums and should be verified directly with Bayhealth HR, as shift differential rates can change with contract cycles. For context, union-represented systems in neighboring Pennsylvania and New Jersey pay significantly higher night differentials ($4–$7/hr), which is a factor nurses frequently weigh when comparing Delaware employers.',
   },
 ];
 

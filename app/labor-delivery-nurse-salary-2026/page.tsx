@@ -8,7 +8,7 @@ import { TravelPayDisclaimer } from '@/components/TravelPayDisclaimer';
 
 export const metadata: Metadata = {
   title: 'Labor & Delivery Nurse Salary 2026: $96,800/yr Est. + L&D Pay by State',
-  description: 'Labor and delivery nurse salary 2026: $96,800/yr national avg. L&D RN pay by state, hospital, inpatient obstetrics vs. high-risk, RNC-OB cert differential, and travel rates.',
+  description: 'Labor and delivery nurse salary 2026: $96,800/yr national avg. L&D RN pay by state, hospital, inpatient obstetrics vs. high-risk, RNC-OB cert differential…',
 };
 
 const faqs = [

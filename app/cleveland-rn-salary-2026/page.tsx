@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Cleveland RN Salary 2026: How Much Do Nurses Make in Cleveland, OH?',
-  description:
-    'Cleveland RNs earn $74,000/yr ($35.58/hr) based on the latest BLS data. Cleveland Clinic pays $78K–$98K. See salary by hospital, specialty, and cost-of-living adjusted pay vs. major US cities.',
+  description: 'Cleveland RNs earn $74,000/yr ($35.58/hr) based on the latest BLS data. Cleveland Clinic pays $78K–$98K. See salary by hospital, specialty, and cost-of-living…',
   alternates: { canonical: 'https://nursesalaryintel.com/cleveland-rn-salary-2026' },
   openGraph: {
     title: 'Cleveland RN Salary 2026: $74,000/yr — Strong Purchasing Power at Cleveland Clinic',

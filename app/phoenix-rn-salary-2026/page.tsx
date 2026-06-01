@@ -6,7 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Phoenix RN Salary 2026: Metro Pay, Top Hospitals & AZ Tax Advantage',
-  description: 'Phoenix RN salary 2026: $85,000–$98,000/year average, $41–$47/hr. Banner Health, Mayo Clinic, and HonorHealth pay data, 2.5% flat tax advantage, and Scottsdale vs. Tucson comparison.',
+  description: 'Phoenix RN salary 2026: $85,000–$98,000/year, $41–$47/hr. Mayo Clinic, Banner Health, and HonorHealth pay data plus Arizona\'s 2.5% flat tax advantage.',
   alternates: { canonical: 'https://nursesalaryintel.com/phoenix-rn-salary-2026' },
 };
 

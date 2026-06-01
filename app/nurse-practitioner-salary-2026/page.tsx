@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nurse Practitioner Salary 2026: $126K Est. + Pay by Specialty & State',
-  description:
-    'NPs earn $126,000/yr ($60.58/hr) based on the latest BLS data. See NP salary by specialty (FNP, PMHNP, ACNP), state rankings, and how NP pay compares to RN and physician.',
+  description: 'NPs earn $126,000/yr ($60.58/hr) based on the latest BLS data. See NP salary by specialty (FNP, PMHNP, ACNP), state rankings, and how NP pay compares to RN…',
   alternates: { canonical: 'https://nursesalaryintel.com/nurse-practitioner-salary-2026' },
   openGraph: {
     title: 'Nurse Practitioner Salary 2026: $126K Est.',

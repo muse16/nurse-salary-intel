@@ -6,7 +6,7 @@ import SiteNav from '@/components/SiteNav';
 
 export const metadata: Metadata = {
   title: 'Nurse Salary Guides 2026 | Pay by State, City & Specialty',
-  description: 'Comprehensive nurse salary guides covering RN pay by state, city, and specialty. Data-driven insights for 2026 — compare markets, certifications, and career paths.',
+  description: 'Comprehensive nurse salary guides covering RN pay by state, city, and specialty. Data-driven insights for 2026 — compare markets, certifications, and career…',
 };
 
 const categoryColors: Record<string, string> = {

@@ -6,8 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Arizona RN Salary 2026: $39.42/hr + Phoenix vs Tucson Pay Gap',
-  description:
-    'Arizona RNs earn $82,000/yr ($39.42/hr) average in 2026. Compare Phoenix ($88K), Scottsdale ($92K), and Tucson ($78K) pay, see top hospitals, and what new grads earn.',
+  description: 'Arizona RNs earn $82,000/yr ($39.42/hr) average in 2026. Compare Phoenix ($88K), Scottsdale ($92K), and Tucson ($78K) pay, see top hospitals, and what new…',
   alternates: { canonical: 'https://nursesalaryintel.com/rn-salary-by-state/arizona' },
   openGraph: {
     title: 'Arizona RN Salary 2026: $39.42/hr + Phoenix vs Tucson',

@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Detroit RN Salary 2026: How Much Do Nurses Make in Detroit, MI?',
-  description:
-    'Detroit RNs earn $82,000/yr ($39.42/hr) based on the latest BLS data. Henry Ford Health pays $80K–$102K. See salary by hospital, specialty, and experience — with Michigan tax breakdown.',
+  description: 'Detroit RNs earn $82,000/yr ($39.42/hr) based on the latest BLS data. Henry Ford Health pays $80K–$102K. See salary by hospital, specialty, and experience …',
   alternates: { canonical: 'https://nursesalaryintel.com/detroit-rn-salary-2026' },
   openGraph: {
     title: 'Detroit RN Salary 2026: $82,000/yr Estimated + Hospital Comparison',

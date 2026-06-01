@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Dialysis Nurse Salary 2026 | NurseSalaryIntel',
-  description:
-    'Dialysis nurses earn around $72,000–$88,000/year in 2026. Outpatient clinic vs. hospital-based pay differs by $8,000–$15,000. See rates by state, employer, and certification.',
+  description: 'Dialysis nurses earn around $72,000–$88,000/year in 2026. Outpatient clinic vs. hospital-based pay differs by $8,000–$15,000. See rates by state, employer…',
   alternates: { canonical: 'https://nursesalaryintel.com/dialysis-nurse-salary-2026' },
   openGraph: {
     title: 'Dialysis Nurse Salary 2026: Outpatient vs. Hospital Pay + State Data',

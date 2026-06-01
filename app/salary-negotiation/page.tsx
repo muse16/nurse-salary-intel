@@ -6,8 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nurse Salary Negotiation Guide 2026: Scripts, Tactics & Playbooks',
-  description:
-    'Everything nurses need to negotiate pay confidently — word-for-word scripts, contract clause breakdowns, shift differential math, and step-by-step tactics for new grads and experienced RNs.',
+  description: 'Everything nurses need to negotiate pay confidently — word-for-word scripts, contract clause breakdowns, shift differential math, and step-by-step tactics for…',
   alternates: { canonical: 'https://nursesalaryintel.com/salary-negotiation' },
   openGraph: {
     title: 'Nurse Salary Negotiation Guide 2026: Scripts, Tactics & Playbooks',

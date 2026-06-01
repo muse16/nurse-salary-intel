@@ -6,8 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Travel Nurse vs Staff Nurse Salary 2026: $40K–$60K Gap Explained',
-  description:
-    'Travel nurses earn $40,000–$60,000 more than staff nurses in 2026 — before accounting for housing and benefits. See total comp comparison, retirement trade-offs, and who wins.',
+  description: 'Travel nurses earn $40,000–$60,000 more than staff nurses in 2026 — before accounting for housing and benefits. See total comp comparison, retirement…',
 };
 
 const faqs = [

@@ -6,12 +6,10 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: '30% of Nurses Never Negotiate Salary — What the Data Says to Do',
-  description:
-    'A Nurse.com survey of more than 2,500 RNs found 30% never negotiate salary, yet APRNs who negotiate earn thousands more annually. Real recruiter insights and step-by-step tactics for your next offer.',
+  description: 'A Nurse.com survey of more than 2,500 RNs found 30% never negotiate salary, yet APRNs who negotiate earn thousands more annually. Real recruiter insights and…',
   openGraph: {
     title: '30% of Nurses Never Negotiate Salary — Here\'s What the Data Says to Do',
-    description:
-      'A Nurse.com survey of more than 2,500 RNs found 30% never negotiate salary, yet APRNs who negotiate earn thousands more annually. Real recruiter insights and step-by-step tactics.',
+    description: 'A Nurse.com survey of more than 2,500 RNs found 30% never negotiate salary, yet APRNs who negotiate earn thousands more annually. Real recruiter insights and…',
     images: [{ url: '/images/nurse-salary-negotiation-guide-2026-hero_compressed.png', width: 1200, height: 630 }],
   },
 };

@@ -6,8 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Night Shift Nurse Salary 2026: Up to $25K Extra Per Year',
-  description:
-    'Night shift nurses earn $4–$10/hr more in 2026 — up to $25K extra per year. Differential rates by state, real take-home math, and whether nights are worth the trade-off.',
+  description: 'Night shift nurses earn $4–$10/hr more in 2026 — up to $25K extra per year. Differential rates by state, real take-home math, and whether nights are worth the…',
   alternates: { canonical: 'https://nursesalaryintel.com/night-shift-differential-nurses' },
   openGraph: {
     title: 'How Much More Do Night Shift Nurses Make? 2026 Pay Guide',

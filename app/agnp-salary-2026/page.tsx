@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'AGNP Salary 2026: Adult-Gerontology NP Pay by State & Track',
-  description:
-    'AGNPs earn $126,000/yr ($60.58/hr) based on the latest BLS data. See adult-gerontology NP salary by state, primary vs. acute care track, and how AGNP compares to FNP and PMHNP.',
+  description: 'AGNPs earn $126,000/yr ($60.58/hr) based on the latest BLS data. See adult-gerontology NP salary by state, primary vs. acute care track, and how AGNP compares…',
   alternates: { canonical: 'https://nursesalaryintel.com/agnp-salary-2026' },
   openGraph: {
     title: 'AGNP Salary 2026: Adult-Gerontology NP Pay',

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Nurse Salary Data 2026: approximately $89,000 — All 50 States & Specialties',
+  title: 'Nurse Salary Data 2026: All 50 States & Specialties',
   description:
     'Average RN salary is approximately $89,000/yr ($42.80/hr). State rankings, specialty pay, travel nurse earnings, and wage gaps — all sourced from BLS OEWS.',
   alternates: { canonical: 'https://nursesalaryintel.com/nursing-salary/salary-data-2026' },

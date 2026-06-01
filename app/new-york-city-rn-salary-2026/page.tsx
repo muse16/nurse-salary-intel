@@ -7,7 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'NYC RN Salary 2026: $109,860/yr Est. + NYSNA Union Pay Breakdown',
-  description: 'New York City RN salary 2026: $109,860/yr avg ($52.82/hr). See pay at NYU Langone, NY-Presbyterian, Mount Sinai, MSK — plus union step scales and real take-home after NYC taxes.',
+  description: 'New York City RN salary 2026: $109,860/yr avg ($52.82/hr). See pay at NYU Langone, NY-Presbyterian, Mount Sinai, MSK — plus union step scales and real…',
   alternates: { canonical: 'https://nursesalaryintel.com/new-york-city-rn-salary-2026' },
   openGraph: {
     title: 'NYC RN Salary 2026: $109,860/yr Est.',

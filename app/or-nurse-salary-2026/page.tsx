@@ -8,7 +8,7 @@ import { TravelPayDisclaimer } from '@/components/TravelPayDisclaimer';
 
 export const metadata: Metadata = {
   title: 'OR Nurse Salary 2026: $102,800/yr + Perioperative Pay by State',
-  description: 'OR nurse (perioperative RN) salary 2026: $102,800/yr national avg. Pay by state, hospital, scrub vs. circulator role, CNOR certification differential, and travel rates.',
+  description: 'OR nurse (perioperative RN) salary 2026: $102,800/yr national avg. Pay by state, hospital, scrub vs. circulator role, CNOR certification differential, and…',
 };
 
 const faqs = [

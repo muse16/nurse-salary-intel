@@ -3,8 +3,7 @@ import TravelNurseCalculator from './Calculator';
 
 export const metadata: Metadata = {
   title: 'Travel Nurse Pay Calculator 2026 | Blended Rate + Take-Home',
-  description:
-    'Free travel nurse pay calculator. Enter your contract details to estimate weekly take-home, blended hourly rate, and tax-free stipend value. Compare two contracts side by side.',
+  description: 'Free travel nurse pay calculator. Enter your contract details to estimate weekly take-home, blended hourly rate, and tax-free stipend value. Compare two…',
   openGraph: {
     title: 'Travel Nurse Pay Calculator 2026 | Blended Rate + Take-Home',
     description:

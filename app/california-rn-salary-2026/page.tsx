@@ -7,7 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'California RN Salary 2026: Regional Breakdown & Hourly Pay',
-  description: 'California RN salary 2026: $120K–$145K statewide, hourly rates $57–$70/hr. Regional breakdown for Bay Area, LA, San Diego, and Central Valley with experience tiers.',
+  description: 'California RN salary 2026: $120K–$145K statewide, hourly rates $57–$70/hr. Regional breakdown for Bay Area, LA, San Diego, and Central Valley with experience…',
   alternates: { canonical: 'https://nursesalaryintel.com/california-rn-salary-2026' },
 };
 

@@ -6,8 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Pennsylvania RN Salary 2026: $79,750/yr + Hourly Rates by City',
-  description:
-    'Pennsylvania RNs average $79,750/yr ($38.34/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+  description: 'Pennsylvania RNs average $79,750/yr ($38.34/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next…',
 };
 
 const faqs = [

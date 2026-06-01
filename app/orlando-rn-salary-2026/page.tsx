@@ -6,7 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Orlando RN Salary 2026: Hourly Pay, Hospitals & FL Tax Advantage',
-  description: 'Orlando RN salary 2026: $78,000–$92,000/year average, $38–$44/hr. Orlando Health, AdventHealth, and UCF Health pay data, zero income tax advantage, and sign-on bonus breakdown.',
+  description: 'Orlando RN salary 2026: $78,000–$92,000/year average, $38–$44/hr. Orlando Health, AdventHealth, and UCF Health pay data, zero income tax advantage, and…',
   alternates: { canonical: 'https://nursesalaryintel.com/orlando-rn-salary-2026' },
 };
 

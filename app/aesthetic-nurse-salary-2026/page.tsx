@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Aesthetic Nurse Salary 2026: What Injectors & Med Spa RNs Earn',
-  description:
-    'Aesthetic nurses earn $65,000–$110,000+ in 2026. See pay by role, setting, and commission structure — plus what it actually takes to break into medical aesthetics.',
+  description: 'Aesthetic nurses earn $65,000–$110,000+ in 2026. See pay by role, setting, and commission structure — plus what it actually takes to break into medical…',
   alternates: { canonical: 'https://nursesalaryintel.com/aesthetic-nurse-salary-2026' },
   openGraph: {
     title: 'Aesthetic Nurse Salary 2026',

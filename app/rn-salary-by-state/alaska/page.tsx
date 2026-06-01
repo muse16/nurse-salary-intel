@@ -6,8 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Alaska RN Salary 2026: $96,990/yr + No State Income Tax Advantage',
-  description:
-    'Alaska RNs average $96,990/yr ($46.63/hr) with zero state income tax. See pay by city, remote location premiums, and why Alaska is a top travel nurse destination.',
+  description: 'Alaska RNs average $96,990/yr ($46.63/hr) with zero state income tax. See pay by city, remote location premiums, and why Alaska is a top travel nurse…',
 };
 
 const faqs = [

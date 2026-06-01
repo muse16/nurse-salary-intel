@@ -4,7 +4,7 @@ import AuditClient from './AuditClient';
 
 export const metadata: Metadata = {
   title: 'Nurse Contract Red Flag Audit 2026 | NurseSalaryIntel',
-  description: 'Free RN contract audit checklist — identify red flags before signing. Covers pay terms, stipends, cancellation clauses, and more. Works for travel nurses and staff RNs.',
+  description: 'Free RN contract audit checklist — identify red flags before signing. Covers pay terms, stipends, cancellation clauses, and more. Works for travel nurses and…',
   keywords: ['nursing contract audit', 'travel nurse contract red flags', 'RN contract checklist', 'nurse contract review', 'nursing contract red flags'],
   openGraph: {
     title: 'Nurse Contract Red Flag Audit Tool',
@@ -34,7 +34,7 @@ const howToSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'How to Audit a Nursing Contract for Red Flags',
-  description: 'Use this free nurse salary calculator and contract audit tool to identify red flags in your nursing contract before signing. Works for travel nurses and staff RNs.',
+  description: 'Use this free nurse salary calculator and contract audit tool to identify red flags in your nursing contract before signing. Works for travel nurses and staff…',
   totalTime: 'PT10M',
   step: [
     {

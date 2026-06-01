@@ -6,8 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'North Carolina RN Salary 2026: $72,970/yr + Hourly Rates by City',
-  description:
-    'North Carolina RNs average $72,970/yr ($35.08/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+  description: 'North Carolina RNs average $72,970/yr ($35.08/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next…',
 };
 
 const faqs = [

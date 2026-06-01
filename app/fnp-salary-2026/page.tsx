@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'FNP Salary 2026: How Much Do Family Nurse Practitioners Make?',
-  description:
-    'FNPs earn $122,000/yr ($58.65/hr) based on the latest BLS data. See family nurse practitioner salary by state, setting, and how FNP compares to PMHNP, ACNP, and CRNA.',
+  description: 'FNPs earn $122,000/yr ($58.65/hr) based on the latest BLS data. See family nurse practitioner salary by state, setting, and how FNP compares to PMHNP, ACNP…',
   alternates: { canonical: 'https://nursesalaryintel.com/fnp-salary-2026' },
   openGraph: {
     title: 'FNP Salary 2026: Family Nurse Practitioner Pay by State',

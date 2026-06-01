@@ -6,8 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'South Carolina RN Salary 2026: $70,760/yr + Hourly Rates by City',
-  description:
-    'South Carolina RNs average $70,760/yr ($34.02/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+  description: 'South Carolina RNs average $70,760/yr ($34.02/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next…',
 };
 
 const faqs = [

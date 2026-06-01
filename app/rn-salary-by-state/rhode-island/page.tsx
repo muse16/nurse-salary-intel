@@ -6,8 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Rhode Island RN Salary 2026: $88,030/yr + Hourly Rates by City',
-  description:
-    'Rhode Island RNs average $88,030/yr ($42.32/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+  description: 'Rhode Island RNs average $88,030/yr ($42.32/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next…',
 };
 
 const faqs = [

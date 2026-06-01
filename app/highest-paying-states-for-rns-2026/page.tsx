@@ -5,7 +5,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Highest Paying States for RNs 2026: Full Rankings',
-  description: 'Highest paid states for nurses in 2026 — full rankings with mean annual pay, hourly rates, and cost-of-living notes. See the best paying states for RN jobs by region.',
+  description: 'Highest paid states for nurses in 2026 — full rankings with mean annual pay, hourly rates, and cost-of-living notes. See the best paying states for RN jobs by…',
 };
 
 const author = { name: 'NurseSalaryIntel Editorial Team', link: '/about' };

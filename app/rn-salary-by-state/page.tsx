@@ -5,9 +5,8 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'RN Salary by State 2026: approximately $89,000/yr National Avg — All 50 States',
-  description:
-    'RN salaries range $64K–$124K depending on state. 2026 national avg: approximately $89,000/yr ($42.79/hr). Compare all 50 states, top cities, and specialty premiums in one place.',
+  title: 'RN Salary by State 2026: National Avg + All 50 States',
+  description: 'RN salaries range $64K–$124K depending on state. 2026 national avg: approximately $89,000/yr ($42.79/hr). Compare all 50 states, top cities, and specialty…',
 };
 
 const faqs = [

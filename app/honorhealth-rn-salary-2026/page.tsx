@@ -7,7 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'HonorHealth RN Salary 2026: Pay, Differentials & Negotiation Guide',
-  description: 'HonorHealth RN salary 2026: $36–$54/hr base, up to $18K sign-on. Compare pay by unit, shift differentials, and how HonorHealth stacks up against Banner and Mayo Clinic AZ.',
+  description: 'HonorHealth RN salary 2026: $36–$54/hr base, up to $18K sign-on. Compare pay by unit, shift differentials, and how HonorHealth stacks up against Banner and…',
   alternates: { canonical: 'https://nursesalaryintel.com/honorhealth-rn-salary-2026' },
 };
 

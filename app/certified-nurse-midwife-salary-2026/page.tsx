@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Certified Nurse Midwife Salary 2026: CNM Pay by State',
-  description:
-    'CNMs earn $120,880/year based on the latest BLS data. See certified nurse midwife salary by state, setting, and how CNM pay compares to OB/GYN NPs and labor nurses.',
+  description: 'CNMs earn $120,880/year based on the latest BLS data. See certified nurse midwife salary by state, setting, and how CNM pay compares to OB/GYN NPs and labor…',
   alternates: { canonical: 'https://nursesalaryintel.com/certified-nurse-midwife-salary-2026' },
   openGraph: {
     title: 'Certified Nurse Midwife Salary 2026',

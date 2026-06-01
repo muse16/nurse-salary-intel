@@ -8,8 +8,7 @@ import { TravelPayDisclaimer } from '@/components/TravelPayDisclaimer';
 
 export const metadata: Metadata = {
   title: 'ICU Nurse Salary 2026: $95,000/yr Est. + CCRN Adds $5,200/yr',
-  description:
-    'ICU nurses average $95,000/yr ($45.80/hr) — 20% above the RN average. CCRN certification adds $5,200/yr. See pay by state, experience, and how to earn more in critical care.',
+  description: 'ICU nurses average $95,000/yr ($45.80/hr) — 20% above the RN average. CCRN certification adds $5,200/yr. See pay by state, experience, and how to earn more in…',
 };
 
 const faqs = [

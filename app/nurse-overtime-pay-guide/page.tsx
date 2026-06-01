@@ -5,8 +5,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nurse Overtime Pay 2026: $60+/hr Math + FLSA Rules Decoded',
-  description:
-    'Most RNs earn $60–$95/hr in overtime in 2026 (1.5x base). See FLSA exemption rules, mandatory-OT laws by state, double-time triggers, and how to calculate your take-home.',
+  description: 'Most RNs earn $60–$95/hr in overtime in 2026 (1.5x base). See FLSA exemption rules, mandatory-OT laws by state, double-time triggers, and how to calculate…',
   alternates: { canonical: 'https://nursesalaryintel.com/nurse-overtime-pay-guide' },
   openGraph: {
     title: 'Nurse Overtime Pay 2026: $60+/hr Math + FLSA Decoded',

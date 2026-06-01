@@ -6,12 +6,11 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'How We Calculate Nurse Salary Estimates | NurseSalaryIntel',
-  description:
-    'NurseSalaryIntel salary estimates are built from BLS OEWS data, public job postings, regional cost-of-living adjustments, and nurse-reported compensation. Here is exactly how.',
+  description: 'NurseSalaryIntel salary estimates are built from BLS OEWS data, public job postings, regional cost-of-living adjustments, and nurse-reported compensation…',
   alternates: { canonical: 'https://nursesalaryintel.com/how-we-calculate-nurse-salary-estimates' },
   openGraph: {
     title: 'How We Calculate Nurse Salary Estimates | NurseSalaryIntel',
-    description: 'Transparent methodology behind every nurse salary estimate on NurseSalaryIntel — BLS OEWS sourcing, job posting verification, regional adjustments, and limitations.',
+    description: 'Transparent methodology behind every nurse salary estimate on NurseSalaryIntel — BLS OEWS sourcing, job posting verification, regional adjustments, and…',
     url: 'https://nursesalaryintel.com/how-we-calculate-nurse-salary-estimates',
   },
 };

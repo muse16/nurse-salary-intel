@@ -8,8 +8,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'HCA RN Salary 2026: Full Pay Breakdown by Market',
-  description:
-    'HCA nurses earn $72,000–$104,000/year depending on market and specialty. See base pay, shift differentials, sign-on bonuses, and how HCA compares to Ascension and Tenet.',
+  description: 'HCA nurses earn $72,000–$104,000/year depending on market and specialty. See base pay, shift differentials, sign-on bonuses, and how HCA compares to Ascension…',
   alternates: { canonical: 'https://nursesalaryintel.com/hca-rn-salary-2026' },
   openGraph: {
     title: 'HCA RN Salary 2026: What the Largest Hospital System Pays',

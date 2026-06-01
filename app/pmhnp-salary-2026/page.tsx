@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'PMHNP Salary 2026: How Much Do Psychiatric NPs Make?',
-  description:
-    'PMHNPs earn $138,000/yr ($66.35/hr) based on the latest BLS data — the fastest-growing NP specialty. See pay by state, setting, and how PMHNP compares to FNP and CRNA.',
+  description: 'PMHNPs earn $138,000/yr ($66.35/hr) based on the latest BLS data — the fastest-growing NP specialty. See pay by state, setting, and how PMHNP compares to FNP…',
   alternates: { canonical: 'https://nursesalaryintel.com/pmhnp-salary-2026' },
   openGraph: {
     title: 'PMHNP Salary 2026: Psychiatric NP Pay by State & Setting',

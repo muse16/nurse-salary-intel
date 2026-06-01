@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Michigan RN Salary 2026: Union vs. Non-Union Pay',
-  description:
-    'Michigan RNs earn $78,280/year on average — but Detroit union nurses earn $86,000+. See MI nurse pay by city, hospital, and whether union membership changes the math.',
+  description: 'Michigan RNs earn $78,280/year on average — but Detroit union nurses earn $86,000+. See MI nurse pay by city, hospital, and whether union membership changes…',
   alternates: { canonical: 'https://nursesalaryintel.com/michigan-rn-salary-2026' },
   openGraph: {
     title: 'Michigan RN Salary 2026: Union vs. Non-Union Pay Compared',

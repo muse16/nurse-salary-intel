@@ -7,7 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Texas RN Salary 2026: Hourly Pay + No-Tax Advantage',
-  description: 'Texas RN salary 2026: $80K–$98K average, zero state income tax, Houston vs Dallas vs Austin pay breakdown. Experience tiers, specialty premiums, and sign-on bonus data.',
+  description: 'Texas RN salary 2026: $80K–$98K average, zero state income tax, Houston vs Dallas vs Austin pay breakdown. Experience tiers, specialty premiums, and sign-on…',
   alternates: { canonical: 'https://nursesalaryintel.com/texas-rn-salary-2026' },
 };
 

@@ -6,8 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Massachusetts RN Salary 2026: $103,090/yr + Hourly Rates by City',
-  description:
-    'Massachusetts RNs average $103,090/yr ($49.56/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+  description: 'Massachusetts RNs average $103,090/yr ($49.56/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next…',
 };
 
 const faqs = [

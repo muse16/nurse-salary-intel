@@ -6,8 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Travel Nurse Pay Package Breakdown 2026: Every Line Item Explained',
-  description:
-    'Understand every line in your travel nurse pay package — hourly rate, housing stipend, M&IE per diem, completion bonuses, and how to compare offers across agencies.',
+  description: 'Understand every line in your travel nurse pay package — hourly rate, housing stipend, M&IE per diem, completion bonuses, and how to compare offers across…',
 };
 
 const faqs = [

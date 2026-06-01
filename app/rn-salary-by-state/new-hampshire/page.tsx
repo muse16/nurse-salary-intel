@@ -6,8 +6,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'New Hampshire RN Salary 2026: $82,920/yr + Hourly Rates by City',
-  description:
-    'New Hampshire RNs average $82,920/yr ($39.87/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next contract.',
+  description: 'New Hampshire RNs average $82,920/yr ($39.87/hr). See pay by city, specialty, and experience level — plus sign-on bonuses and how to negotiate your next…',
 };
 
 const faqs = [

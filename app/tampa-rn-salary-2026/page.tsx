@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Tampa RN Salary 2026: How Much Do Nurses Make in Tampa, FL?',
-  description:
-    'Tampa RNs earn $73,000/yr ($35.10/hr) based on the latest BLS data. TGH pays $75K–$96K. See salary by hospital, specialty, and experience — with Florida no-income-tax take-home analysis.',
+  description: 'Tampa RNs earn $73,000/yr ($35.10/hr) based on the latest BLS data. TGH pays $75K–$96K. See salary by hospital, specialty, and experience — with Florida…',
   alternates: { canonical: 'https://nursesalaryintel.com/tampa-rn-salary-2026' },
   openGraph: {
     title: 'Tampa RN Salary 2026: $73,000/yr Estimated + No State Income Tax',

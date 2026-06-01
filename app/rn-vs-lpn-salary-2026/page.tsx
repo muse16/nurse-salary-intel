@@ -7,7 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'RN vs LPN Salary 2026: RNs Earn $30K+ More — Full Pay & ROI Breakdown',
-  description: 'RN vs LPN salary 2026: RNs earn approximately $89,000/yr, LPNs $59,730 — a $29,280 gap. Compare hourly pay, education ROI, hours, and 5-year earnings with full math.',
+  description: 'RN vs LPN salary 2026: RNs earn approximately $89,000/yr, LPNs $59,730 — a $29,280 gap. Compare hourly pay, education ROI, hours, and 5-year earnings with…',
   alternates: { canonical: 'https://nursesalaryintel.com/rn-vs-lpn-salary-2026' },
 };
 

@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Charge Nurse Salary vs RN: How Much More Do You Actually Make?',
-  description:
-    'Charge nurses earn $4,500–$10,000 more per year than staff RNs — but the gap depends heavily on unit, hospital size, and whether you negotiate the differential. Real data by specialty and state.',
+  description: 'Charge nurses earn $4,500–$10,000 more per year than staff RNs — but the gap depends heavily on unit, hospital size, and whether you negotiate the…',
   alternates: { canonical: 'https://nursesalaryintel.com/charge-nurse-salary-2026' },
   openGraph: {
     title: 'Charge Nurse Salary vs RN: How Much More Do You Actually Make?',

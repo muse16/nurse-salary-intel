@@ -7,12 +7,10 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Nursing Salary Database 2026: Real Pay by State & Specialty',
-  description:
-    'Browse the most complete nursing salary database. Filter by state, city, specialty, and experience level. Reviewed regularly and updated as BLS data and market conditions change.',
+  description: 'Browse the most complete nursing salary database. Filter by state, city, specialty, and experience level. Reviewed regularly and updated as BLS data and…',
   openGraph: {
     title: 'Nursing Salary Database 2026 | NurseSalaryIntel',
-    description:
-      'Browse the most complete nursing salary database. Filter by state, city, specialty, and experience level. Reviewed regularly and updated as BLS data and market conditions change.',
+    description: 'Browse the most complete nursing salary database. Filter by state, city, specialty, and experience level. Reviewed regularly and updated as BLS data and…',
     url: 'https://nursesalaryintel.com/salary-data',
   },
 };

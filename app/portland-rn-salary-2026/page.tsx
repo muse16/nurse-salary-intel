@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Portland RN Salary 2026: How Much Do Nurses Make in Portland, OR?',
-  description:
-    'Portland RNs earn $109,000/yr ($52.40/hr) based on the latest BLS data. OHSU pays $102K–$125K. See salary by hospital, specialty, and experience — with Oregon tax and cost-of-living analysis.',
+  description: 'Portland RNs earn $109,000/yr ($52.40/hr) based on the latest BLS data. OHSU pays $102K–$125K. See salary by hospital, specialty, and experience — with Oregon…',
   alternates: { canonical: 'https://nursesalaryintel.com/portland-rn-salary-2026' },
   openGraph: {
     title: 'Portland RN Salary 2026: $109,000/yr at OHSU & Legacy Health',

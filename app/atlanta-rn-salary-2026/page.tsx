@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Atlanta RN Salary 2026: How Much Do Nurses Make in Atlanta, GA?',
-  description:
-    'Atlanta RNs earn $79,000/yr ($37.98/hr) based on the latest BLS data. See pay at Emory Healthcare, Grady Memorial, Northside Hospital, Piedmont, and Wellstar — with Georgia tax analysis.',
+  description: 'Atlanta RNs earn $79,000/yr ($37.98/hr) based on the latest BLS data. See pay at Emory Healthcare, Grady Memorial, Northside Hospital, Piedmont, and Wellstar…',
   alternates: { canonical: 'https://nursesalaryintel.com/atlanta-rn-salary-2026' },
   openGraph: {
     title: 'Atlanta RN Salary 2026: $79,000/yr Est.',

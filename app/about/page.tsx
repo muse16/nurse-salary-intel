@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'About NurseSalaryIntel | Founder, Mission & Editorial Standards',
-  description: 'NurseSalaryIntel was founded by Courtney Palmer to bring transparent, BLS-sourced nurse salary data to every RN making a career or contract decision. Learn about our mission and methodology.',
+  description: 'NurseSalaryIntel was founded by Courtney Palmer to bring transparent, BLS-sourced nurse salary data to every RN making a career or contract decision. Learn…',
   openGraph: {
     title: 'About NurseSalaryIntel | Founder, Mission & Editorial Standards',
     description: 'Founded by Courtney Palmer. Salary data sourced from BLS OEWS. Insights contributed by practicing nurses in ICU, med-surg, and labor & delivery.',
@@ -18,7 +18,7 @@ const founderSchema = {
   '@type': 'AboutPage',
   url: 'https://nursesalaryintel.com/about',
   name: 'About NurseSalaryIntel',
-  description: 'NurseSalaryIntel was founded by Courtney Palmer to provide transparent, BLS-sourced nurse salary data and contract intelligence to registered nurses across the United States.',
+  description: 'NurseSalaryIntel was founded by Courtney Palmer to provide transparent, BLS-sourced nurse salary data and contract intelligence to registered nurses across…',
   about: {
     '@type': 'Organization',
     name: 'Nurse Salary Intel',

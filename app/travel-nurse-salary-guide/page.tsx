@@ -5,8 +5,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'Travel Nurse Salary Guide 2026: $2,000–$3,500/Week Breakdown',
-  description:
-    'How much do travel nurses make in 2026? Weekly pay ranges, highest-paying states, in-demand specialties, how stipends work, and how travel pay compares to staff nursing.',
+  description: 'How much do travel nurses make in 2026? Weekly pay ranges, highest-paying states, in-demand specialties, how stipends work, and how travel pay compares to…',
 };
 
 const faqs = [

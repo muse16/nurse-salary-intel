@@ -7,8 +7,7 @@ import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
   title: 'BSN Nurse Salary & Career Paths 2026: 8 Directions Over $85K',
-  description:
-    'BSN nurses have more high-paying options than most realize. See 8 career paths over $85K in 2026 — from ICU and CRNA to travel nursing, informatics, and NP — with real salary ranges.',
+  description: 'BSN nurses have more high-paying options than most realize. See 8 career paths over $85K in 2026 — from ICU and CRNA to travel nursing, informatics, and NP …',
   alternates: { canonical: 'https://nursesalaryintel.com/bsn-nurse-salary-career-paths-2026' },
   openGraph: {
     title: 'BSN Nurse Salary & Career Paths 2026: 8 Directions Over $85K',
