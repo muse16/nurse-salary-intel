@@ -212,8 +212,8 @@ export default function TampaRNSalary2026() {
       <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
         {[
           { href: '/rn-salary-by-state/florida', label: 'Florida RN Salary 2026', desc: 'Full state breakdown by region' },
-          { href: '/rn-salary-miami-fl-2026', label: 'Miami RN Salary 2026', desc: 'Compare Tampa to Miami pay' },
-          { href: '/orlando-rn-salary-2026', label: 'Orlando RN Salary 2026', desc: 'Tampa vs. Orlando comparison' },
+          { href: '/miami-rn-salary-2026', label: 'Miami RN Salary 2026', desc: "Florida's highest-paying metro — Jackson Health & Baptist pay" },
+          { href: '/jacksonville-rn-salary-2026', label: 'Jacksonville RN Salary 2026', desc: 'Mayo Clinic FL & UF Health pay breakdown' },
           { href: '/oncology-nurse-salary-2026', label: 'Oncology Nurse Salary 2026', desc: 'Moffitt and oncology specialty pay' },
         ].map(({ href, label, desc }) => (
           <Link

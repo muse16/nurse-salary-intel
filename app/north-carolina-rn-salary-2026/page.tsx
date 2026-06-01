@@ -183,9 +183,9 @@ export default function NorthCarolinaRNSalary2026() {
       <h2>Related Guides</h2>
       <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4">
         {[
+          { href: '/raleigh-rn-salary-2026', label: 'Raleigh RN Salary 2026', desc: 'WakeMed, Duke Raleigh & UNC Rex pay breakdown' },
           { href: '/virginia-rn-salary-2026', label: 'Virginia RN Salary 2026', desc: 'Northern VA and Richmond pay breakdown' },
           { href: '/washington-dc-rn-salary-2026', label: 'Washington DC RN Salary 2026', desc: 'Top 5 metro market nationally' },
-          { href: '/travel-nurse-salary-guide', label: 'Travel Nurse Pay Guide', desc: 'How to use your compact license for higher pay' },
           { href: '/nurse-salary-negotiation-guide-2026', label: 'Negotiation Guide', desc: 'Scripts and tactics for NC hospital offers' },
         ].map(({ href, label, desc }) => (
           <Link

@@ -188,8 +188,13 @@ const staticRoutes: { path: string; priority: number; changeFrequency: SitemapEn
   { path: '/charge-nurse-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/washington-dc-rn-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/north-carolina-rn-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/raleigh-rn-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/dialysis-nurse-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/virginia-rn-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/miami-rn-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/jacksonville-rn-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/ucsf-rn-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
+  { path: '/msn-nurse-salary-2026', priority: 0.85, changeFrequency: 'monthly' },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

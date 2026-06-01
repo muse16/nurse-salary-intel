@@ -224,10 +224,10 @@ export default function SanFranciscoRNSalary2026() {
       <h2 className="text-2xl font-bold font-headline text-on-surface">Related Salary Guides</h2>
       <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
         {[
+          { href: '/ucsf-rn-salary-2026', label: 'UCSF RN Salary 2026', desc: 'CNA step scale, differentials & UC pension detail' },
           { href: '/rn-salary-by-state/california', label: 'California RN Salary (Full State Guide)', desc: 'All cities, experience tiers, top employers' },
           { href: '/nurse-salary-cost-of-living-2026', label: 'Nurse Salary & Cost of Living 2026', desc: 'Where $89K actually goes furthest' },
           { href: '/seattle-rn-salary-2026', label: 'Seattle RN Salary 2026', desc: 'High pay + no state income tax' },
-          { href: '/icu-nurse-salary-2026', label: 'ICU Nurse Salary 2026', desc: 'Critical care pay nationwide' },
         ].map(({ href, label, desc }) => (
           <Link
             key={href}

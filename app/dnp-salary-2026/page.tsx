@@ -206,7 +206,7 @@ export default function DNPSalary2026() {
       <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
         {[
           { href: '/crna-salary-2026', label: 'CRNA Salary 2026', desc: 'The top-earning DNP specialty' },
-          { href: '/nurse-practitioner-salary-2026', label: 'NP Salary 2026', desc: 'MSN-NP pay baseline comparison' },
+          { href: '/msn-nurse-salary-2026', label: 'MSN Nurse Salary 2026', desc: 'FNP, PMHNP, CNM — MSN vs. DNP pay comparison' },
           { href: '/pmhnp-salary-2026', label: 'PMHNP Salary 2026', desc: 'Psychiatric NP pay breakdown' },
           { href: '/bsn-nurse-salary-career-paths-2026', label: 'BSN to DNP Career Path', desc: 'Full nursing career ladder' },
         ].map(({ href, label, desc }) => (

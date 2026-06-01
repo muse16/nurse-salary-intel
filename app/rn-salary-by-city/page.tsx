@@ -165,10 +165,10 @@ export default function RNSalaryByCity() {
       <h2 className="text-2xl font-bold font-headline text-on-surface">Related Salary Guides</h2>
       <div className="grid sm:grid-cols-2 gap-4">
         {[
+          { href: '/raleigh-rn-salary-2026', title: 'Raleigh RN Salary 2026', desc: 'Research Triangle pay: WakeMed, Duke Raleigh & UNC Rex breakdown.' },
           { href: '/rn-salary-by-state', title: 'RN Salary by State', desc: 'Compare all 50 states side-by-side with cost-of-living context.' },
           { href: '/nurse-salary-by-hospital', title: 'Nurse Salary by Hospital', desc: 'How major health systems compare — Kaiser, HCA, Mayo, and more.' },
           { href: '/highest-paying-nursing-specialties', title: 'Highest-Paying Specialties', desc: 'CRNA, NP, ICU, ER pay rankings for 2026.' },
-          { href: '/entry-level-nurse-salary', title: 'New Grad RN Salary', desc: 'Starting pay by city, sign-on bonuses, and first-year trajectory.' },
         ].map(({ href, title, desc }) => (
           <Link
             key={href}

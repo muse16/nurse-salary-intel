@@ -148,7 +148,7 @@ export default function FNPSalary2026() {
       <h2 className="text-2xl font-bold font-headline text-on-surface">Related Salary Guides</h2>
       <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
         {[
-          { href: '/nurse-practitioner-salary-2026', label: 'NP Salary Overview 2026', desc: 'All 8 NP specialties compared' },
+          { href: '/msn-nurse-salary-2026', label: 'MSN Nurse Salary 2026', desc: 'All MSN tracks — FNP, PMHNP, CNM, CNS ROI' },
           { href: '/pmhnp-salary-2026', label: 'PMHNP Salary 2026', desc: 'Highest-growth NP specialty' },
           { href: '/agnp-salary-2026', label: 'AGNP Salary 2026', desc: 'Adult-Gerontology NP pay' },
           { href: '/crna-salary-2026', label: 'CRNA Salary 2026', desc: '$214K/yr — top APRN credential' },

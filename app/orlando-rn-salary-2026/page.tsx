@@ -215,7 +215,7 @@ export default function OrlandoRnSalary2026() {
           </table>
         </div>
         <p>
-          See the <Link href="/rn-salary-by-state/florida/" className="text-primary hover:underline">Florida RN salary guide</Link> for statewide context and <Link href="/rn-salary-miami-fl-2026/" className="text-primary hover:underline">Miami RN salary 2026</Link> for the South Florida comparison.
+          See the <Link href="/rn-salary-by-state/florida/" className="text-primary hover:underline">Florida RN salary guide</Link> for statewide context, <Link href="/miami-rn-salary-2026" className="text-primary hover:underline">Miami RN salary 2026</Link> for South Florida, and <Link href="/jacksonville-rn-salary-2026" className="text-primary hover:underline">Jacksonville RN salary 2026</Link> for the northeast Florida market.
         </p>
 
         <h2 className="text-2xl font-bold font-headline text-on-surface">How to Negotiate an RN Salary in Orlando</h2>

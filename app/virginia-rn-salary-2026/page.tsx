@@ -183,7 +183,7 @@ export default function VirginiaRNSalary2026() {
         {[
           { href: '/washington-dc-rn-salary-2026', label: 'Washington DC RN Salary 2026', desc: 'DC metro — top 5 nursing market nationally' },
           { href: '/north-carolina-rn-salary-2026', label: 'North Carolina RN Salary 2026', desc: 'Southern neighbor — compact state comparison' },
-          { href: '/travel-nurse-salary-guide', label: 'Travel Nurse Pay Guide', desc: 'Using your compact license for higher pay' },
+          { href: '/raleigh-rn-salary-2026', label: 'Raleigh RN Salary 2026', desc: 'Research Triangle — WakeMed, Duke & UNC Rex pay' },
           { href: '/nurse-salary-negotiation-guide-2026', label: 'Negotiation Guide', desc: 'Scripts and tactics for Virginia hospital offers' },
         ].map(({ href, label, desc }) => (
           <Link
