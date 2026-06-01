@@ -31,15 +31,15 @@ const methodology =
   'UCSF salary figures are derived from BLS OEWS May 2024 San Francisco–Oakland–Hayward metro mean ($154,230) and CNA contract step-scale data. Step-specific estimates are approximations based on publicly available contract information and nurse-reported compensation. Individual pay depends on step placement, shift, specialty unit, and applicable premiums. All figures are estimates — verify with UCSF HR.';
 
 const offerRows = [
-  { element: 'Base hourly (Step 1 — New Grad)', range: 'Around $66–$72/hr', note: 'CNA union scale; Step 1 entry per current contract' },
-  { element: 'Base hourly (Step 6 — ~5 yrs exp)', range: 'Around $80–$88/hr', note: 'Step progression tied to years at UCSF' },
-  { element: 'Base hourly (Step 10+ — Senior RN)', range: 'Around $92–$100/hr', note: 'Top of CNA step scale at UCSF' },
-  { element: 'Night shift differential', range: 'Around $8.50–$11.00/hr additional', note: 'Among highest in the US; CNA-negotiated' },
-  { element: 'Weekend differential', range: 'Around $4.00–$6.50/hr additional', note: 'Stackable with night differential' },
-  { element: 'Charge RN differential', range: 'Around $3.50–$5.00/hr additional', note: 'Per shift when serving as charge' },
-  { element: 'PTO accrual', range: '20–30 days/yr', note: 'Increases with years of service' },
-  { element: 'Retirement (UC Pension)', range: 'Defined benefit (UCRP)', note: 'Vests after 5 years; significant long-term value' },
-  { element: 'Tuition assistance', range: 'Up to $5,250/yr', note: 'IRS maximum for employer education benefit' },
+  { element: 'Base hourly (Step 1 — New Grad)', range: 'Around $66–$72/hr', notes: 'CNA union scale; Step 1 entry per current contract' },
+  { element: 'Base hourly (Step 6 — ~5 yrs exp)', range: 'Around $80–$88/hr', notes: 'Step progression tied to years at UCSF' },
+  { element: 'Base hourly (Step 10+ — Senior RN)', range: 'Around $92–$100/hr', notes: 'Top of CNA step scale at UCSF' },
+  { element: 'Night shift differential', range: 'Around $8.50–$11.00/hr additional', notes: 'Among highest in the US; CNA-negotiated' },
+  { element: 'Weekend differential', range: 'Around $4.00–$6.50/hr additional', notes: 'Stackable with night differential' },
+  { element: 'Charge RN differential', range: 'Around $3.50–$5.00/hr additional', notes: 'Per shift when serving as charge' },
+  { element: 'PTO accrual', range: '20–30 days/yr', notes: 'Increases with years of service' },
+  { element: 'Retirement (UC Pension)', range: 'Defined benefit (UCRP)', notes: 'Vests after 5 years; significant long-term value' },
+  { element: 'Tuition assistance', range: 'Up to $5,250/yr', notes: 'IRS maximum for employer education benefit' },
 ];
 
 const experienceData = [
@@ -86,7 +86,7 @@ const faqs = [
   {
     question: 'How does UCSF compare to Kaiser SF for nurse pay?',
     answer:
-      "UCSF base pay is typically 5–10% above Kaiser San Francisco, driven by the academic medical center premium. Kaiser SF also has a strong CNA contract, but UCSF step progression and specialty differentials tend to produce higher total compensation for experienced nurses.",
+      'UCSF base pay is typically 5–10% above Kaiser San Francisco, driven by the academic medical center premium. Kaiser SF also has a strong CNA contract, but UCSF step progression and specialty differentials tend to produce higher total compensation for experienced nurses.',
   },
   {
     question: 'Is it hard to get a nursing job at UCSF?',
@@ -101,7 +101,7 @@ const faqs = [
   {
     question: 'What does a new grad RN earn at UCSF?',
     answer:
-      'New graduate RNs at UCSF start at approximately $66–$72/hr (Step 1), translating to $137,000–$150,000/year for full-time day shift. This is roughly double the national new grad average and reflects California\'s cost of living, mandatory nurse staffing ratios, and the CNA contract\'s strong entry-level pay floor.',
+      "New graduate RNs at UCSF start at approximately $66–$72/hr (Step 1), translating to $137,000–$150,000/year for full-time day shift. This is roughly double the national new grad average and reflects California's cost of living, mandatory nurse staffing ratios, and the CNA contract's strong entry-level pay floor.",
   },
 ];
 
@@ -162,7 +162,7 @@ export default function UCSFRNSalaryPage() {
         </p>
 
         <h2>UCSF Nurse Full Compensation Package</h2>
-        <OfferBreakdownTable rows={offerRows} />
+        <OfferBreakdownTable employer="UCSF Health" city="San Francisco, CA" asOf="2026 Est." rows={offerRows} />
 
         <Image
           src="/images/ucsf-rn-salary-2026-comparison.png"
