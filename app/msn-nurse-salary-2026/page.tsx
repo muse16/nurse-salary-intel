@@ -30,31 +30,31 @@ const methodology =
   'MSN salary figures are derived from BLS OEWS May 2024 national and state-level data for nurse practitioners (SOC 29-1171) and nurse midwives (SOC 29-1161), supplemented by the AANP 2024 NP Compensation Survey. Role-specific ranges reflect published specialty differentials. All figures are estimates — individual compensation depends on specialty, setting, experience, and geography.';
 
 const roleData = [
-  { label: 'PMHNP (Psychiatric-Mental Health NP)', avgSalary: 'Around $121,000–$141,000/yr', hourlyRate: '~$58–$68/hr', notes: 'Highest-demand MSN role nationally' },
-  { label: 'FNP (Family Nurse Practitioner)', avgSalary: 'Around $116,000–$135,000/yr', hourlyRate: '~$56–$65/hr', notes: 'Most common MSN-NP track; high volume of openings' },
-  { label: 'CNM (Certified Nurse Midwife)', avgSalary: 'Around $113,000–$130,000/yr', hourlyRate: '~$54–$63/hr', notes: 'Delivery + prenatal care; hospital and birth center settings' },
-  { label: 'AGNP (Adult-Gerontology NP)', avgSalary: 'Around $109,000–$126,000/yr', hourlyRate: '~$52–$61/hr', notes: 'Primary and acute care tracks; growing demand' },
-  { label: 'CNS (Clinical Nurse Specialist)', avgSalary: 'Around $98,000–$118,000/yr', hourlyRate: '~$47–$57/hr', notes: 'System-level role; pay varies widely by setting' },
-  { label: 'Nurse Educator (MSN)', avgSalary: 'Around $78,000–$96,000/yr', hourlyRate: '~$37–$46/hr', notes: 'Academic or hospital-based education roles' },
+  { label: 'PMHNP (Psychiatric-Mental Health NP)', avgSalary: 'Around $121,000–$141,000/yr', hourlyRate: '~$58–$68/hr', note: 'Highest-demand MSN role nationally' },
+  { label: 'FNP (Family Nurse Practitioner)', avgSalary: 'Around $116,000–$135,000/yr', hourlyRate: '~$56–$65/hr', note: 'Most common MSN-NP track; high volume of openings' },
+  { label: 'CNM (Certified Nurse Midwife)', avgSalary: 'Around $113,000–$130,000/yr', hourlyRate: '~$54–$63/hr', note: 'Delivery + prenatal care; hospital and birth center settings' },
+  { label: 'AGNP (Adult-Gerontology NP)', avgSalary: 'Around $109,000–$126,000/yr', hourlyRate: '~$52–$61/hr', note: 'Primary and acute care tracks; growing demand' },
+  { label: 'CNS (Clinical Nurse Specialist)', avgSalary: 'Around $98,000–$118,000/yr', hourlyRate: '~$47–$57/hr', note: 'System-level role; pay varies widely by setting' },
+  { label: 'Nurse Educator (MSN)', avgSalary: 'Around $78,000–$96,000/yr', hourlyRate: '~$37–$46/hr', note: 'Academic or hospital-based education roles' },
 ];
 
 const stateData = [
-  { label: 'California', avgSalary: 'Around $138,000–$160,000/yr', notes: 'PMHNP and FNP highest in US; union premiums in LA/SF' },
-  { label: 'New York', avgSalary: 'Around $126,000–$148,000/yr', notes: 'NYC metro drives state average; strong PMHNP demand' },
-  { label: 'Massachusetts', avgSalary: 'Around $124,000–$145,000/yr', notes: 'Full practice authority; strong academic medical centers' },
-  { label: 'Washington', avgSalary: 'Around $122,000–$142,000/yr', notes: 'Full practice authority; no state income tax' },
-  { label: 'Texas', avgSalary: 'Around $113,000–$132,000/yr', notes: 'Collaborative practice agreement required; no state tax' },
-  { label: 'Florida', avgSalary: 'Around $108,000–$128,000/yr', notes: 'Full practice authority since 2020; growing market' },
-  { label: 'National Average (NP)', avgSalary: '$126,470 (BLS May 2024)', notes: 'BLS SOC 29-1171 national mean' },
+  { label: 'California', avgSalary: 'Around $138,000–$160,000/yr', note: 'PMHNP and FNP highest in US; union premiums in LA/SF' },
+  { label: 'New York', avgSalary: 'Around $126,000–$148,000/yr', note: 'NYC metro drives state average; strong PMHNP demand' },
+  { label: 'Massachusetts', avgSalary: 'Around $124,000–$145,000/yr', note: 'Full practice authority; strong academic medical centers' },
+  { label: 'Washington', avgSalary: 'Around $122,000–$142,000/yr', note: 'Full practice authority; no state income tax' },
+  { label: 'Texas', avgSalary: 'Around $113,000–$132,000/yr', note: 'Collaborative practice agreement required; no state tax' },
+  { label: 'Florida', avgSalary: 'Around $108,000–$128,000/yr', note: 'Full practice authority since 2020; growing market' },
+  { label: 'National Average (NP)', avgSalary: '$126,470 (BLS May 2024)', note: 'BLS SOC 29-1171 national mean' },
 ];
 
 const roiData = [
-  { label: 'BSN RN (National Mean)', avgSalary: '$89,580/yr', notes: 'BLS OEWS May 2024 national mean, SOC 29-1141' },
-  { label: 'MSN — NP Entry (1–2 yrs post-grad)', avgSalary: 'Around $108,000–$118,000/yr', notes: 'Typically 2 years to reach full competency compensation' },
-  { label: 'MSN — NP Mid-Career (5+ yrs)', avgSalary: 'Around $124,000–$140,000/yr', notes: 'Specialty and geographic premium fully realized' },
-  { label: 'Annual pay increase over BSN', avgSalary: 'Around $18,000–$50,000/yr more', notes: 'Wider range reflects specialty choice and geography' },
-  { label: 'Avg MSN program cost (online)', avgSalary: 'Around $30,000–$60,000 total', notes: 'AACN survey; public programs at lower end' },
-  { label: 'Break-even (typical)', avgSalary: 'Around 1.5–3 years post-graduation', notes: 'Depends on salary increase and loan burden' },
+  { label: 'BSN RN (National Mean)', avgSalary: '$89,580/yr', note: 'BLS OEWS May 2024 national mean, SOC 29-1141' },
+  { label: 'MSN — NP Entry (1–2 yrs post-grad)', avgSalary: 'Around $108,000–$118,000/yr', note: 'Typically 2 years to reach full competency compensation' },
+  { label: 'MSN — NP Mid-Career (5+ yrs)', avgSalary: 'Around $124,000–$140,000/yr', note: 'Specialty and geographic premium fully realized' },
+  { label: 'Annual pay increase over BSN', avgSalary: 'Around $18,000–$50,000/yr more', note: 'Wider range reflects specialty choice and geography' },
+  { label: 'Avg MSN program cost (online)', avgSalary: 'Around $30,000–$60,000 total', note: 'AACN survey; public programs at lower end' },
+  { label: 'Break-even (typical)', avgSalary: 'Around 1.5–3 years post-graduation', note: 'Depends on salary increase and loan burden' },
 ];
 
 const faqs = [
@@ -151,7 +151,7 @@ export default function MSNNurseSalaryPage() {
         <SalaryTable
           title="MSN Nurse Salary by Specialty / Role (National Average, 2026)"
           headers={['Role / Specialty', 'Annual Salary', 'Hourly Rate', 'Market Notes']}
-          rows={roleData.map(r => [r.label, r.avgSalary, r.hourlyRate, r.notes])}
+          rows={roleData}
           source="BLS OEWS May 2024: NPs (SOC 29-1171) national mean $126,470; CNMs (SOC 29-1161) national mean $122,450. Role-specific ranges from BLS + AANP 2024 survey. Rounded to nearest $1,000."
         />
 
@@ -169,7 +169,7 @@ export default function MSNNurseSalaryPage() {
         <SalaryTable
           title="MSN NP / CNM Salary by State (2026 Est.)"
           headers={['State', 'Annual Salary Range', 'Notes']}
-          rows={stateData.map(r => [r.label, r.avgSalary, r.notes])}
+          rows={stateData}
           source="BLS OEWS May 2024 state-level NP data + AANP 2024 Compensation Survey. Ranges reflect NP/CNM roles broadly. Rounded to nearest $1,000."
         />
 
@@ -187,7 +187,7 @@ export default function MSNNurseSalaryPage() {
         <SalaryTable
           title="MSN ROI: Pay Increase vs. Degree Cost"
           headers={['Data Point', 'Value', 'Notes']}
-          rows={roiData.map(r => [r.label, r.avgSalary, r.notes])}
+          rows={roiData}
           source="BSN mean: BLS OEWS May 2024. MSN program cost: AACN 2023 survey. Break-even assumes $25,000–$30,000 annual pay increase and $45,000 loan at 5% interest."
         />
 

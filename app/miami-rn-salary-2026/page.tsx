@@ -38,12 +38,12 @@ const experienceData = [
 ];
 
 const hospitalData = [
-  { label: 'Jackson Health System', avgSalary: 'Around $87,000–$102,000/yr', notes: 'Public system; union representation on select units' },
-  { label: 'Baptist Health South Florida', avgSalary: 'Around $88,000–$103,000/yr', notes: 'Top Magnet system; strong sign-on bonuses' },
-  { label: 'UM/Sylvester (UHealth)', avgSalary: 'Around $90,000–$105,000/yr', notes: 'Academic medical center; NCI-designated cancer center' },
-  { label: 'HCA Healthcare (South FL)', avgSalary: 'Around $84,000–$97,000/yr', notes: 'Multiple facilities; travel supplement opportunities' },
-  { label: 'Cleveland Clinic Florida', avgSalary: 'Around $89,000–$104,000/yr', notes: 'Weston campus; strong ICU and cardiology differentials' },
-  { label: 'Memorial Healthcare System', avgSalary: 'Around $85,000–$99,000/yr', notes: 'Broward County; Magnet-designated hospitals' },
+  { label: 'Jackson Health System', avgSalary: 'Around $87,000–$102,000/yr', note: 'Public system; union representation on select units' },
+  { label: 'Baptist Health South Florida', avgSalary: 'Around $88,000–$103,000/yr', note: 'Top Magnet system; strong sign-on bonuses' },
+  { label: 'UM/Sylvester (UHealth)', avgSalary: 'Around $90,000–$105,000/yr', note: 'Academic medical center; NCI-designated cancer center' },
+  { label: 'HCA Healthcare (South FL)', avgSalary: 'Around $84,000–$97,000/yr', note: 'Multiple facilities; travel supplement opportunities' },
+  { label: 'Cleveland Clinic Florida', avgSalary: 'Around $89,000–$104,000/yr', note: 'Weston campus; strong ICU and cardiology differentials' },
+  { label: 'Memorial Healthcare System', avgSalary: 'Around $85,000–$99,000/yr', note: 'Broward County; Magnet-designated hospitals' },
 ];
 
 const specialtyData = [
@@ -158,7 +158,7 @@ export default function MiamiRNSalaryPage() {
         <SalaryTable
           title="Miami RN Salary by Years of Experience"
           headers={['Experience Level', 'Annual Salary', 'Hourly Rate']}
-          rows={experienceData.map(r => [r.label, r.avgSalary, r.hourlyRate])}
+          rows={experienceData}
           source="Derived from BLS OEWS May 2024 Florida statewide data + Miami metro premium. Figures rounded to nearest $500."
         />
 
@@ -176,7 +176,7 @@ export default function MiamiRNSalaryPage() {
         <SalaryTable
           title="Miami Hospital RN Base Salary by System"
           headers={['Hospital / System', 'Base Salary Range', 'Notes']}
-          rows={hospitalData.map(r => [r.label, r.avgSalary, r.notes])}
+          rows={hospitalData}
           source="Estimated from BLS OEWS Miami metro data, job posting analysis, and nurse-reported figures. Ranges reflect median-experienced RNs (3–10 yrs). Rounded to nearest $1,000."
         />
 
@@ -194,7 +194,7 @@ export default function MiamiRNSalaryPage() {
         <SalaryTable
           title="Miami RN Salary by Specialty"
           headers={['Specialty', 'Annual Salary', 'Hourly Rate']}
-          rows={specialtyData.map(r => [r.label, r.avgSalary, r.hourlyRate])}
+          rows={specialtyData}
           source="Derived from BLS OEWS specialty differentials + Miami metro premium. Rounded to nearest $500. CRNA figures from AANA and published job postings."
         />
 
@@ -202,7 +202,7 @@ export default function MiamiRNSalaryPage() {
         <SalaryTable
           title="RN Salary: Miami vs. Florida Cities (2026 Est.)"
           headers={['Metro Area', 'Annual Salary', 'Hourly Rate']}
-          rows={cityComparisonData.map(r => [r.label, r.avgSalary, r.hourlyRate])}
+          rows={cityComparisonData}
           source="BLS OEWS May 2024 Florida statewide mean ($75,990) with metro-level adjustments. All figures estimated and rounded to nearest $500."
         />
 

@@ -31,15 +31,15 @@ const methodology =
   'UCSF salary figures are derived from BLS OEWS May 2024 San Francisco–Oakland–Hayward metro mean ($154,230) and CNA contract step-scale data. Step-specific estimates are approximations based on publicly available contract information and nurse-reported compensation. Individual pay depends on step placement, shift, specialty unit, and applicable premiums. All figures are estimates — verify with UCSF HR.';
 
 const offerRows = [
-  { element: 'Base hourly (Step 1 — New Grad)', range: 'Around $66–$72/hr', notes: 'CNA union scale; Step 1 entry per current contract' },
-  { element: 'Base hourly (Step 6 — ~5 yrs exp)', range: 'Around $80–$88/hr', notes: 'Step progression tied to years at UCSF' },
-  { element: 'Base hourly (Step 10+ — Senior RN)', range: 'Around $92–$100/hr', notes: 'Top of CNA step scale at UCSF' },
-  { element: 'Night shift differential', range: 'Around $8.50–$11.00/hr additional', notes: 'Among highest in the US; CNA-negotiated' },
-  { element: 'Weekend differential', range: 'Around $4.00–$6.50/hr additional', notes: 'Stackable with night differential' },
-  { element: 'Charge RN differential', range: 'Around $3.50–$5.00/hr additional', notes: 'Per shift when serving as charge' },
-  { element: 'PTO accrual', range: '20–30 days/yr', notes: 'Increases with years of service' },
-  { element: 'Retirement (UC Pension)', range: 'Defined benefit (UCRP)', notes: 'Vests after 5 years; significant long-term value' },
-  { element: 'Tuition assistance', range: 'Up to $5,250/yr', notes: 'IRS maximum for employer education benefit' },
+  { element: 'Base hourly (Step 1 — New Grad)', range: 'Around $66–$72/hr', note: 'CNA union scale; Step 1 entry per current contract' },
+  { element: 'Base hourly (Step 6 — ~5 yrs exp)', range: 'Around $80–$88/hr', note: 'Step progression tied to years at UCSF' },
+  { element: 'Base hourly (Step 10+ — Senior RN)', range: 'Around $92–$100/hr', note: 'Top of CNA step scale at UCSF' },
+  { element: 'Night shift differential', range: 'Around $8.50–$11.00/hr additional', note: 'Among highest in the US; CNA-negotiated' },
+  { element: 'Weekend differential', range: 'Around $4.00–$6.50/hr additional', note: 'Stackable with night differential' },
+  { element: 'Charge RN differential', range: 'Around $3.50–$5.00/hr additional', note: 'Per shift when serving as charge' },
+  { element: 'PTO accrual', range: '20–30 days/yr', note: 'Increases with years of service' },
+  { element: 'Retirement (UC Pension)', range: 'Defined benefit (UCRP)', note: 'Vests after 5 years; significant long-term value' },
+  { element: 'Tuition assistance', range: 'Up to $5,250/yr', note: 'IRS maximum for employer education benefit' },
 ];
 
 const experienceData = [
@@ -51,20 +51,20 @@ const experienceData = [
 ];
 
 const specialtyData = [
-  { label: 'CRNA', avgSalary: 'Around $265,000–$310,000/yr', notes: 'UCSF CRNA program; top APRN compensation nationally' },
-  { label: 'ICU / CVICU', avgSalary: 'Around $175,000–$210,000/yr', notes: 'Step differentials + night + charge stacking' },
-  { label: 'OR / Perioperative', avgSalary: 'Around $170,000–$205,000/yr', notes: 'High surgical volume; call pay additional' },
-  { label: 'ER / Emergency', avgSalary: 'Around $168,000–$200,000/yr', notes: 'Level I trauma; night/weekend stacking common' },
-  { label: 'L&D / NICU', avgSalary: 'Around $165,000–$195,000/yr', notes: "UCSF Benioff Children's; high NICU acuity" },
-  { label: 'Med-Surg / Tele', avgSalary: 'Around $150,000–$175,000/yr', notes: 'Base step scale; lower specialty differential' },
+  { label: 'CRNA', avgSalary: 'Around $265,000–$310,000/yr', note: 'UCSF CRNA program; top APRN compensation nationally' },
+  { label: 'ICU / CVICU', avgSalary: 'Around $175,000–$210,000/yr', note: 'Step differentials + night + charge stacking' },
+  { label: 'OR / Perioperative', avgSalary: 'Around $170,000–$205,000/yr', note: 'High surgical volume; call pay additional' },
+  { label: 'ER / Emergency', avgSalary: 'Around $168,000–$200,000/yr', note: 'Level I trauma; night/weekend stacking common' },
+  { label: 'L&D / NICU', avgSalary: 'Around $165,000–$195,000/yr', note: "UCSF Benioff Children's; high NICU acuity" },
+  { label: 'Med-Surg / Tele', avgSalary: 'Around $150,000–$175,000/yr', note: 'Base step scale; lower specialty differential' },
 ];
 
 const sfComparisonData = [
-  { label: 'UCSF Health', avgSalary: 'Around $155,000–$170,000/yr', notes: 'CNA union; academic medical center premium' },
-  { label: 'Kaiser SF (CNA)', avgSalary: 'Around $148,000–$163,000/yr', notes: 'Strong union contract; extensive benefits' },
-  { label: 'Stanford Health Care', avgSalary: 'Around $140,000–$158,000/yr', notes: 'Palo Alto; CRONA union' },
-  { label: 'CPMC / Sutter Health SF', avgSalary: 'Around $130,000–$148,000/yr', notes: 'SEIU-UHW represented' },
-  { label: 'SF Metro Mean (BLS May 2024)', avgSalary: '$154,230/yr', notes: 'BLS OEWS San Francisco MSA mean' },
+  { label: 'UCSF Health', avgSalary: 'Around $155,000–$170,000/yr', note: 'CNA union; academic medical center premium' },
+  { label: 'Kaiser SF (CNA)', avgSalary: 'Around $148,000–$163,000/yr', note: 'Strong union contract; extensive benefits' },
+  { label: 'Stanford Health Care', avgSalary: 'Around $140,000–$158,000/yr', note: 'Palo Alto; CRONA union' },
+  { label: 'CPMC / Sutter Health SF', avgSalary: 'Around $130,000–$148,000/yr', note: 'SEIU-UHW represented' },
+  { label: 'SF Metro Mean (BLS May 2024)', avgSalary: '$154,230/yr', note: 'BLS OEWS San Francisco MSA mean' },
 ];
 
 const faqs = [
@@ -178,7 +178,7 @@ export default function UCSFRNSalaryPage() {
         <SalaryTable
           title="UCSF RN Salary by Step / Experience"
           headers={['Step / Experience Level', 'Annual Salary (Day Shift)', 'Hourly Rate']}
-          rows={experienceData.map(r => [r.label, r.avgSalary, r.hourlyRate])}
+          rows={experienceData}
           source="Derived from CNA contract step scale data and BLS OEWS May 2024 San Francisco metro mean ($154,230). Day shift base only — differentials additional. Rounded to nearest $1,000."
         />
 
@@ -196,7 +196,7 @@ export default function UCSFRNSalaryPage() {
         <SalaryTable
           title="UCSF RN Salary by Specialty (Total Compensation Estimate)"
           headers={['Specialty', 'Total Compensation (Est.)', 'Notes']}
-          rows={specialtyData.map(r => [r.label, r.avgSalary, r.notes])}
+          rows={specialtyData}
           source="Estimated from CNA step-scale base + specialty differentials + night/weekend add-ons where typical. Rounded to nearest $1,000. CRNA from AANA 2024 survey."
         />
 
@@ -204,7 +204,7 @@ export default function UCSFRNSalaryPage() {
         <SalaryTable
           title="RN Salary: UCSF vs. San Francisco Area Hospitals (2026)"
           headers={['Hospital / System', 'Annual Salary Range', 'Notes']}
-          rows={sfComparisonData.map(r => [r.label, r.avgSalary, r.notes])}
+          rows={sfComparisonData}
           source="BLS OEWS May 2024 San Francisco metro ($154,230 mean) + union contract data + job posting analysis. Rounded to nearest $1,000."
         />
 

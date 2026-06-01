@@ -38,11 +38,11 @@ const experienceData = [
 ];
 
 const hospitalData = [
-  { label: 'Mayo Clinic Florida', avgSalary: 'Around $88,000–$105,000/yr', notes: 'National brand premium; strong benefits + retirement match' },
-  { label: 'UF Health Jacksonville', avgSalary: 'Around $82,000–$96,000/yr', notes: 'Level I trauma center; academic pay scale' },
-  { label: 'Baptist Health (Jax)', avgSalary: 'Around $80,000–$93,000/yr', notes: 'Largest local system; Magnet-seeking' },
-  { label: 'Ascension St. Vincent', avgSalary: 'Around $78,000–$91,000/yr', notes: 'Faith-based; competitive PTO and tuition benefits' },
-  { label: 'HCA (Memorial, Orange Park)', avgSalary: 'Around $77,000–$90,000/yr', notes: 'Multiple facilities; travel supplement options' },
+  { label: 'Mayo Clinic Florida', avgSalary: 'Around $88,000–$105,000/yr', note: 'National brand premium; strong benefits + retirement match' },
+  { label: 'UF Health Jacksonville', avgSalary: 'Around $82,000–$96,000/yr', note: 'Level I trauma center; academic pay scale' },
+  { label: 'Baptist Health (Jax)', avgSalary: 'Around $80,000–$93,000/yr', note: 'Largest local system; Magnet-seeking' },
+  { label: 'Ascension St. Vincent', avgSalary: 'Around $78,000–$91,000/yr', note: 'Faith-based; competitive PTO and tuition benefits' },
+  { label: 'HCA (Memorial, Orange Park)', avgSalary: 'Around $77,000–$90,000/yr', note: 'Multiple facilities; travel supplement options' },
 ];
 
 const specialtyData = [
@@ -152,7 +152,7 @@ export default function JacksonvilleRNSalaryPage() {
         <SalaryTable
           title="Jacksonville RN Salary by Years of Experience"
           headers={['Experience Level', 'Annual Salary', 'Hourly Rate']}
-          rows={experienceData.map(r => [r.label, r.avgSalary, r.hourlyRate])}
+          rows={experienceData}
           source="Derived from BLS OEWS May 2024 Florida statewide data + Jacksonville metro adjustment. Figures rounded to nearest $500."
         />
 
@@ -170,7 +170,7 @@ export default function JacksonvilleRNSalaryPage() {
         <SalaryTable
           title="Jacksonville Hospital RN Base Salary by System"
           headers={['Hospital / System', 'Base Salary Range', 'Notes']}
-          rows={hospitalData.map(r => [r.label, r.avgSalary, r.notes])}
+          rows={hospitalData}
           source="Estimated from BLS OEWS Jacksonville metro data, job posting analysis, and nurse-reported figures. Ranges reflect median-experienced RNs (3–10 yrs). Rounded to nearest $1,000."
         />
 
@@ -188,7 +188,7 @@ export default function JacksonvilleRNSalaryPage() {
         <SalaryTable
           title="Jacksonville RN Salary by Specialty"
           headers={['Specialty', 'Annual Salary', 'Hourly Rate']}
-          rows={specialtyData.map(r => [r.label, r.avgSalary, r.hourlyRate])}
+          rows={specialtyData}
           source="Derived from BLS OEWS specialty differentials + Jacksonville metro premium. Rounded to nearest $500. CRNA figures from AANA and published job postings."
         />
 
@@ -196,7 +196,7 @@ export default function JacksonvilleRNSalaryPage() {
         <SalaryTable
           title="RN Salary: Jacksonville vs. Florida Cities (2026 Est.)"
           headers={['Metro Area', 'Annual Salary', 'Hourly Rate']}
-          rows={cityComparisonData.map(r => [r.label, r.avgSalary, r.hourlyRate])}
+          rows={cityComparisonData}
           source="BLS OEWS May 2024 Florida statewide mean ($75,990) with metro-level adjustments. All figures estimated and rounded to nearest $500."
         />
 
