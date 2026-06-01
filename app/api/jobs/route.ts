@@ -54,6 +54,16 @@ export async function GET(request: NextRequest) {
     // Post-filter: only keep nursing-related jobs
     const NURSE_RE = /\b(nurse|nursing|rn|lpn|cna|crna|cnm|np|nicu|icu nurse|picu|pacu|l&d|labor|midwi|practitioner|anestheti)\b/i;
 
+    // Normalize a raw salary value from Adzuna:
+    // - Values < 200 are almost certainly hourly rates → annualize (× 2,080)
+    // - Values outside a realistic nurse range ($30k–$400k) → null
+    const normalizeSalary = (val: number | null | undefined): number | null => {
+      if (!val) return null;
+      const annual = val < 200 ? val * 2080 : val;
+      if (annual < 30000 || annual > 400000) return null;
+      return annual;
+    };
+
     const jobs: LiveJob[] = (data.results || [])
       .filter((job: any) => NURSE_RE.test(job.title || ''))
       .map((job: any) => ({
@@ -61,8 +71,8 @@ export async function GET(request: NextRequest) {
         title: job.title,
         company: job.company?.display_name || 'Unknown',
         location: job.location?.display_name || '',
-        salary_min: job.salary_min || null,
-        salary_max: job.salary_max || null,
+        salary_min: normalizeSalary(job.salary_min),
+        salary_max: normalizeSalary(job.salary_max),
         apply_url: job.redirect_url,
         posted: job.created,
       }));

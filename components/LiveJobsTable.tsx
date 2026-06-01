@@ -122,7 +122,7 @@ export default function LiveJobsTable() {
             Updated hourly
           </span>
         </div>
-        <p className="text-sm text-on-surface-variant mb-4">Real openings with direct apply links</p>
+        <p className="text-sm text-on-surface-variant mb-4">Real openings with direct apply links · <span className="italic">Salary ranges are employer-reported estimates and may vary</span></p>
 
         {/* Search */}
         <form onSubmit={handleSearch} className="flex flex-col sm:flex-row gap-2 mb-2">
