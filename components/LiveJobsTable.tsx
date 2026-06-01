@@ -97,7 +97,10 @@ export default function LiveJobsTable() {
     return sortDir === 'asc' ? cmp : -cmp;
   });
 
-  const formatSalary = (min: number | null, max: number | null) => {
+  const TRAVEL_RE = /\btravel\b/i;
+
+  const formatSalary = (min: number | null, max: number | null, title: string) => {
+    if (TRAVEL_RE.test(title)) return 'Travel rate — see listing';
     if (!min && !max) return 'Not listed';
     if (min && max) return `$${Math.round(min / 1000)}k – $${Math.round(max / 1000)}k`;
     if (min) return `From $${Math.round(min / 1000)}k`;
@@ -205,7 +208,7 @@ export default function LiveJobsTable() {
                   </td>
                   <td className="px-6 py-5 text-on-surface-variant text-sm">{job.location}</td>
                   <td className="px-6 py-5 font-semibold text-on-surface text-sm">
-                    {formatSalary(job.salary_min, job.salary_max)}
+                    {formatSalary(job.salary_min, job.salary_max, job.title)}
                   </td>
                   <td className="px-6 py-5 text-on-surface-variant text-sm">{timeAgo(job.posted)}</td>
                   <td className="px-6 py-5">
