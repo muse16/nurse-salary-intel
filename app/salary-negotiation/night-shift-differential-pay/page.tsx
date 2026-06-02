@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MethodologyBox } from '@/components/MethodologyBox';
 
 export const metadata: Metadata = {
-  title: 'Night Shift Differential Pay 2026: Rates by Hospital & Specialty',
+  title: 'Nurse Night Shift Differential Pay 2026: $4–$7/hr Extra',
   description:
     'How much is night shift differential for nurses in 2026? See exact rates by hospital system, specialty, and state — plus tips to negotiate yours higher.',
 };
