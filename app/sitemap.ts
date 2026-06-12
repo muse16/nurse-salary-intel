@@ -1,6 +1,4 @@
 import type { MetadataRoute } from 'next';
-import { specialtyConfig, stateData, stateToSlug } from '@/lib/bls-data';
-import { getAllStates, getCitiesByState, getAllHospitals, slugify } from '@/lib/data';
 
 const BASE = 'https://nursesalaryintel.com';
 
@@ -207,46 +205,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: r.priority,
   }));
 
-  // Specialty × state pages (12 specialties × 50 states = 600 URLs)
-  const specialtyStateEntries: SitemapEntry[] = [];
-  for (const spec of specialtyConfig) {
-    for (const sd of stateData) {
-      specialtyStateEntries.push({
-        url: `${BASE}/nursing-salary/${spec.slug}/${stateToSlug(sd.state)}`,
-        lastModified,
-        changeFrequency: 'monthly',
-        priority: 0.7,
-      });
-    }
-  }
-
-  // City × state salary pages
-  const cityStateEntries: SitemapEntry[] = [];
-  const states = getAllStates();
-  for (const state of states) {
-    const cities = getCitiesByState(state);
-    for (const city of cities) {
-      cityStateEntries.push({
-        url: `${BASE}/salary/${slugify(state)}/${slugify(city)}`,
-        lastModified,
-        changeFrequency: 'monthly',
-        priority: 0.6,
-      });
-    }
-  }
-
-  // Hospital pages
-  const hospitalEntries: SitemapEntry[] = getAllHospitals().map((hospital) => ({
-    url: `${BASE}/hospital/${slugify(hospital)}`,
-    lastModified,
-    changeFrequency: 'monthly',
-    priority: 0.5,
-  }));
-
-  return [
-    ...staticEntries,
-    ...specialtyStateEntries,
-    ...cityStateEntries,
-    ...hospitalEntries,
-  ];
+  return staticEntries;
 }

@@ -16,7 +16,6 @@ const IntelDashboard = dynamic(() => import('@/components/IntelDashboard'), {
   loading: () => <div className="h-64 animate-pulse bg-surface-container rounded-2xl" />,
 });
 import { generateSalaryReportPDF } from '@/lib/pdf-generator';
-import { slugify } from '@/lib/utils';
 import { NursePosition } from '@/lib/types';
 
 interface HomePageProps {
@@ -30,7 +29,7 @@ interface HomePageProps {
   stateData: Array<{ state: string; cities: string[] }>;
 }
 
-export default function HomePage({ stats, allData, stateData }: HomePageProps) {
+export default function HomePage({ stats, allData }: HomePageProps) {
   // stats prop retained for future use; individual fields used in cards below
 
   return (
@@ -252,14 +251,14 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
               </p>
               <div className="grid sm:grid-cols-2 gap-3">
                 {[
-                  { href: '/salary/california/san-francisco', label: 'RN Salary in San Francisco, CA' },
-                  { href: '/salary/new-york/new-york', label: 'RN Salary in New York City, NY' },
-                  { href: '/salary/texas/houston', label: 'RN Salary in Houston, TX' },
-                  { href: '/salary/texas/dallas', label: 'RN Salary in Dallas, TX' },
-                  { href: '/salary/florida/miami', label: 'RN Salary in Miami, FL' },
-                  { href: '/salary/florida/tampa', label: 'RN Salary in Tampa, FL' },
-                  { href: '/salary/arizona/phoenix', label: 'RN Salary in Phoenix, AZ' },
-                  { href: '/salary/california/los-angeles', label: 'RN Salary in Los Angeles, CA' },
+                  { href: '/san-francisco-rn-salary-2026', label: 'RN Salary in San Francisco, CA' },
+                  { href: '/new-york-city-rn-salary-2026', label: 'RN Salary in New York City, NY' },
+                  { href: '/houston-rn-salary-2026', label: 'RN Salary in Houston, TX' },
+                  { href: '/dallas-rn-salary-2026', label: 'RN Salary in Dallas, TX' },
+                  { href: '/miami-rn-salary-2026', label: 'RN Salary in Miami, FL' },
+                  { href: '/tampa-rn-salary-2026', label: 'RN Salary in Tampa, FL' },
+                  { href: '/seattle-rn-salary-2026', label: 'RN Salary in Seattle, WA' },
+                  { href: '/atlanta-rn-salary-2026', label: 'RN Salary in Atlanta, GA' },
                 ].map(({ href, label }) => (
                   <Link
                     key={href}
@@ -378,14 +377,14 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
             {/* City Image Grid — matching mockup */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
               {[
-                { city: 'San Francisco', state: 'California', avg: '$154,000', img: '/images/city-sf.jpg' },
-                { city: 'New York', state: 'New York', avg: '$128,500', img: '/images/city-ny.jpg' },
-                { city: 'Chicago', state: 'Illinois', avg: '$98,200', img: '/images/city-chicago.jpg' },
-                { city: 'Dallas', state: 'Texas', avg: '$94,200', img: '/images/city-dallas.jpg' },
-              ].map(({ city, state, avg, img }) => (
+                { city: 'San Francisco', avg: '$154,000', img: '/images/city-sf.jpg', href: '/san-francisco-rn-salary-2026' },
+                { city: 'New York', avg: '$128,500', img: '/images/city-ny.jpg', href: '/new-york-city-rn-salary-2026' },
+                { city: 'Chicago', avg: '$98,200', img: '/images/city-chicago.jpg', href: '/chicago-rn-salary-2026' },
+                { city: 'Dallas', avg: '$94,200', img: '/images/city-dallas.jpg', href: '/dallas-rn-salary-2026' },
+              ].map(({ city, avg, img, href }) => (
                 <Link
                   key={city}
-                  href={`/salary/${slugify(state)}/${slugify(city)}`}
+                  href={href}
                   className="group relative overflow-hidden rounded-2xl aspect-square flex flex-col justify-end p-6"
                 >
                   <div className="absolute inset-0 z-0 scale-110 group-hover:scale-100 transition-transform duration-700">
@@ -426,30 +425,6 @@ export default function HomePage({ stats, allData, stateData }: HomePageProps) {
               </Link>
             </div>
 
-            {/* Full State/City Links below */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {stateData.map(({ state, cities }) => (
-                <div key={state} className="bg-surface-container-lowest rounded-2xl p-6 shadow-sm ghost-border hover:shadow-sunken transition-all">
-                  <h3 className="font-headline font-bold text-on-surface mb-4 flex items-center gap-2">
-                    <svg className="w-5 h-5 text-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                    {state}
-                  </h3>
-                  <ul className="space-y-2">
-                    {cities.map(city => (
-                      <li key={city}>
-                        <Link
-                          href={`/salary/${slugify(state)}/${slugify(city)}`}
-                          className="text-sm text-primary hover:text-primary-container hover:underline flex items-center gap-1.5 py-0.5"
-                        >
-                          <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-                          {city}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 

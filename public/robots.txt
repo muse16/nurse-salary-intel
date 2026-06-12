@@ -1,6 +1,10 @@
 # robots.txt for NurseSalaryIntel.com
 
 User-agent: *
+Allow: /salary/bsn-vs-rn
+Disallow: /salary/
+Disallow: /hospital/
+Disallow: /nursing-salary/*/
 Allow: /
 
 # AI Search Agents — explicitly allowed
